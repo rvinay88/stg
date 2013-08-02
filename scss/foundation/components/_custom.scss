@@ -1,0 +1,53 @@
+@mixin border-top-bottom($display-prop, $border-prop){
+    border: solid $primary-color;
+    display: $display-prop;
+    @if $display-prop == block {
+      text-align: center;
+    }
+    @if $border-prop == top{
+        border-width: emCalc(2px) 0 0;
+    }
+    @else if $border-prop == bottom{
+        border-width: 0 0 emCalc(2px);
+    }
+    @else if $border-prop == top-bottom {
+        border-width: emCalc(2px) 0;
+    }
+    @else {
+
+    }
+}
+.border-top{
+  @include border-top-bottom(inline-block, top);
+  }
+.border-bottom{
+  @include border-top-bottom(inline-block, bottom);
+  }
+.border-top-bottom{
+  @include border-top-bottom(inline-block, top-bottom);
+  }
+.border-top-block{
+@include border-top-bottom(block, top);
+}
+.border-bottom-block{
+@include border-top-bottom(block, bottom);
+}
+.border-top-bottom-block{
+@include border-top-bottom(block, top-bottom);
+}
+
+.with-dots:before, .with-dots:after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 49%;
+  width: emCalc(5px);
+  height: emCalc(5px);
+  background: $primary-color;
+}
+.with-dots:before{
+  left: 0.6rem;
+}
+.with-dots:after{
+  right: 0.6rem;
+}

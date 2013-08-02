@@ -14,15 +14,16 @@ $button-display: inline-block !default;
 $button-margin-bottom: emCalc(20) !default;
 
 // We use these to control button text styles.
-$button-font-family: inherit !default;
+$button-font-family: Helvetica !default;
 $button-font-color: #fff !default;
 $button-font-color-alt: #333 !default;
 $button-font-med: emCalc(16) !default;
 $button-font-tny: emCalc(11) !default;
 $button-font-sml: emCalc(13) !default;
 $button-font-lrg: emCalc(20) !default;
-$button-font-weight: bold !default;
+$button-font-weight: normal !default;
 $button-font-align: center !default;
+$button-text-transform: uppercase;
 
 // We use these to control various hover effects.
 $button-function-factor: 10% !default;
@@ -46,8 +47,8 @@ $button-disabled-opacity: 0.6 !default;
 // We use this mixin to create a default button base.
 @mixin button-base($style:true, $display:$button-display) {
   @if $style {
-    border-style: $button-border-style;
-    border-width: $button-border-width;
+    // border-style: $button-border-style;
+    // border-width: $button-border-width;
     cursor: $cursor-pointer-value;
     font-family: $button-font-family;
     font-weight: $button-font-weight;
@@ -56,6 +57,7 @@ $button-disabled-opacity: 0.6 !default;
     position: relative;
     text-decoration: none;
     text-align: $button-font-align;
+    text-transform: $button-text-transform;
   }
   @if $display { display: $display; }
 }
@@ -72,11 +74,12 @@ $button-disabled-opacity: 0.6 !default;
     padding-#{$default-float}: $padding * 2;
 
     // We control the font-size based on mixin input.
-    @if      $padding == $button-med { font-size: $button-font-med; }
-    @else if $padding == $button-tny { font-size: $button-font-tny; }
-    @else if $padding == $button-sml { font-size: $button-font-sml; }
-    @else if $padding == $button-lrg { font-size: $button-font-lrg; }
-    @else                            { font-size: $padding - emCalc(2); }
+    font-size: $button-font-med;
+    // @if      $padding == $button-med { font-size: $button-font-med; }
+    // @else if $padding == $button-tny { font-size: $button-font-tny; }
+    // @else if $padding == $button-sml { font-size: $button-font-sml; }
+    // @else if $padding == $button-lrg { font-size: $button-font-lrg; }
+    // @else                            { font-size: $padding - emCalc(2); }
   }
 
   // We can set $full-width:true to remove side padding extend width.
@@ -147,8 +150,10 @@ $button-disabled-opacity: 0.6 !default;
   }
 
   // We can control how much button radius us used.
-  @if $radius == true { @include radius($button-radius); }
-  @else if $radius { @include radius($radius); }
+  // @if $radius == true { @include radius($button-radius); }
+  // @else if $radius { @include radius($radius); }
+
+  @include radius($button-radius);
 
 }
 

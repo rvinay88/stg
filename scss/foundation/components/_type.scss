@@ -5,11 +5,11 @@ $include-html-type-classes: $include-html-classes !default;
 
 @font-face {
   font-family: futuralight;
-  src: url("../fonts/Futura-Light.woff"); 
+  src: url("../fonts/Futura-Light.woff");
 }
 
 // We use these to control header font styles
-$header-font-weight: bold !default;
+$header-font-weight: normal !default;
 $header-font-style: normal !default;
 $header-font-color: $primary-color !default;
 $header-line-height: 1.4 !default;
@@ -23,7 +23,7 @@ $h2-font-size: emCalc(37) !default;
 $h3-font-size: emCalc(27) !default;
 $h4-font-size: emCalc(23) !default;
 $h5-font-size: emCalc(18) !default;
-$h6-font-size: emCalc(1) !default;
+$h6-font-size: emCalc(15) !default;
 
 // These control how subheaders are styled.
 $subheader-line-height: 1.4 !default;
@@ -40,6 +40,7 @@ $small-font-color: lighten($header-font-color, 30%) !default;
 $paragraph-font-family: Helvetica !default;
 $paragraph-font-weight: normal !default;
 $paragraph-font-size: emCalc(15) !default;
+$paragraph-font-color: $secondary-color;
 $paragraph-line-height: 1.6 !default;
 $paragraph-margin-bottom: emCalc(20) !default;
 $paragraph-aside-font-size: emCalc(14) !default;
@@ -58,9 +59,10 @@ $anchor-font-color: $primary-color !default;
 $anchor-font-color-hover: darken($primary-color, 5%) !default;
 
 // We use these to style the <hr> element
-$hr-border-width: 1px !default;
+$hr-border-width: emCalc(1) !default;
+$hr-thick-border-width: emCalc(2) !default;
 $hr-border-style: solid !default;
-$hr-border-color: #ddd !default;
+$hr-border-color: $primary-color !default;
 $hr-margin: emCalc(20) !default;
 
 // We use these to style lists
@@ -124,6 +126,13 @@ $microformat-abbr-font-decoration: none !default;
   margin-bottom: $subheader-bottom-margin;
 }
 
+%hr-line{
+    border: $hr-border-style $hr-border-color;
+    clear: both;
+    margin: $hr-margin 0 ($hr-margin - emCalc(1));
+    height: 0;
+}
+
 @if $include-html-type-classes != false {
 
   /* Typography resets */
@@ -168,6 +177,7 @@ $microformat-abbr-font-decoration: none !default;
     font-family: $paragraph-font-family;
     font-weight: $paragraph-font-weight;
     font-size: $paragraph-font-size;
+    color: $paragraph-font-color;
     line-height: $paragraph-line-height;
     margin-bottom: $paragraph-margin-bottom;
     text-rendering: $paragraph-text-rendering;
@@ -189,7 +199,7 @@ $microformat-abbr-font-decoration: none !default;
     text-rendering: $header-text-rendering;
     margin-top: $header-top-margin;
     margin-bottom: $header-bottom-margin;
-    line-height: $header-line-height - emCalc(3);
+    line-height: $header-line-height;
 
     small {
       font-size: $small-font-size;
@@ -197,6 +207,11 @@ $microformat-abbr-font-decoration: none !default;
       line-height: 0;
     }
   }
+
+.futuralight{
+  font-family: futuralight;
+  font-weight: bold;
+}
 
   h1 { font-size: $h1-font-size - emCalc(10); }
   h2 { font-size: $h2-font-size - emCalc(10); }
@@ -208,11 +223,13 @@ $microformat-abbr-font-decoration: none !default;
   .subheader { @extend %subheader; }
 
   hr {
-    border: $hr-border-style $hr-border-color;
+    @extend %hr-line;
     border-width: $hr-border-width 0 0;
-    clear: both;
-    margin: $hr-margin 0 ($hr-margin - emCalc(1));
-    height: 0;
+  }
+
+  hr.thick{
+    @extend %hr-line;
+    border-width: $hr-thick-border-width 0 0;
   }
 
   /* Helpful Typography Defaults */
