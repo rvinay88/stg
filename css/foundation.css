@@ -4078,7 +4078,7 @@ kbd {
 /* Inline Lists */
 .inline-list {
   margin: 0 auto 1.0625rem auto;
-  margin-left: -1.375rem;
+  margin-left: 0.625rem;
   margin-right: 0;
   padding: 0;
   list-style: none;
@@ -4086,7 +4086,7 @@ kbd {
   .inline-list > li {
     list-style: none;
     float: left;
-    margin-left: 1.375rem;
+    margin-left: 0.625rem;
     display: block; }
     .inline-list > li > * {
       display: block; }
@@ -4720,6 +4720,7 @@ a.th {
     max-height: none;
     background: white;
     border: solid 1px #cccccc;
+    border-radius: 0.25rem;
     font-size: 16;
     z-index: 99;
     max-width: 200px; }

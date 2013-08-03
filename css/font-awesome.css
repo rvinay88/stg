@@ -65,12 +65,17 @@ a [class*=" icon-"] {
   display: inline-block;
   width: 1.1428571428571428rem;
   text-align: right;
-  padding-right: 0.2857142857142857rem;
 }
 [class^="icon-"].icon-fixed-width.icon-large,
 [class*=" icon-"].icon-fixed-width.icon-large {
   width: 1.4285714285714286rem;
 }
+[class^="icon-"].icon-fixed-width.icon-2x,
+[class*=" icon-"].icon-fixed-width.icon-2x {
+  width: 2.5rem;
+  text-align: center;
+}
+
 .icons-ul {
   margin-left: 2.142857142857143rem;
   list-style-type: none;
@@ -99,7 +104,7 @@ a [class*=" icon-"] {
   color: #000;
 }
 .icon-border {
-  border: solid 1px #eeeeee;
+  border: solid 1px #666;
   padding: .2rem .25rem .15rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -728,6 +733,7 @@ a .icon-flip-vertical:before {
 }
 .icon-shopping-cart:before {
   content: "\f07a";
+  margin-left: -3px;
 }
 .icon-folder-close:before {
   content: "\f07b";

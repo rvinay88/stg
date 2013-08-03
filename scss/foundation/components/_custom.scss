@@ -1,17 +1,17 @@
-@mixin border-top-bottom($display-prop, $border-prop){
+@mixin border-top-bottom($display-prop, $border-prop, $border-thickness: 0.125rem){
     border: solid $primary-color;
     display: $display-prop;
     @if $display-prop == block {
       text-align: center;
     }
     @if $border-prop == top{
-        border-width: emCalc(2px) 0 0;
+        border-width: $border-thickness 0 0;
     }
     @else if $border-prop == bottom{
-        border-width: 0 0 emCalc(2px);
+        border-width: 0 0 $border-thickness;
     }
     @else if $border-prop == top-bottom {
-        border-width: emCalc(2px) 0;
+        border-width: $border-thickness 0;
     }
     @else {
 

@@ -159,7 +159,7 @@ $base-font-size: 100% !default;
 $base-line-height: 150% !default;
 
 // This is the default html and body font-size for the base em value.
-$em-base: 16 !default;
+$em-base: 10 !default;
 
 // It strips the unit of measure and returns it
 @function strip-unit($num) {

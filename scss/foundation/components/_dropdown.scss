@@ -16,7 +16,7 @@ $f-dropdown-bg: #fff !default;
 $f-dropdown-border-style: solid !default;
 $f-dropdown-border-width: 1px !default;
 $f-dropdown-border-color: darken(#fff, 20%) !default;
-
+$f-dropdown-radius: $global-radius;
 // We use these to style the triangle pip.
 $f-dropdown-triangle-size: 6px !default;
 $f-dropdown-triangle-color: #fff !default;
@@ -66,6 +66,7 @@ $f-dropdown-content-padding: emCalc(20) !default;
     max-height: $f-dropdown-max-height;
     background: $f-dropdown-bg;
     border: $f-dropdown-border-style $f-dropdown-border-width $f-dropdown-border-color;
+    border-radius: $f-dropdown-radius;
     font-size: $em-base;
     z-index: 99;
   }
