@@ -7,7 +7,7 @@ $include-html-inline-list-classes: $include-html-classes !default;
 $inline-list-top-margin: 0 !default;
 $inline-list-opposite-margin: 0 !default;
 $inline-list-bottom-margin: emCalc(17) !default;
-$inline-list-default-float-margin: -(emCalc(-10)) !default;
+$inline-list-default-float-margin: -(emCalc(10)) !default;
 
 $inline-list-padding: 0 !default;
 

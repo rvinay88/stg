@@ -91,6 +91,16 @@ textarea {
 select {
   width: 100%; }
 
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a.bold-link {
+    font-weight: bold; }
+  a.no-dec:hover {
+    text-decoration: none; }
+
 /* Grid HTML Classes */
 .row {
   width: 100%;
@@ -1010,7 +1020,7 @@ th.hide-for-touch {
     .large-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
 @font-face {
-  font-family: futuralight;
+  font-family: futura;
   src: url("../fonts/Futura-Light.woff"); }
 
 p.lead {
@@ -1071,7 +1081,8 @@ p {
   font-size: 0.9375rem;
   color: #666666;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
   text-rendering: optimizeLegibility; }
   p aside {
     font-size: 0.875rem;
@@ -1092,8 +1103,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #4d4d4d;
     line-height: 0; }
 
-.futuralight {
-  font-family: futuralight;
+.futura {
+  font-family: futura;
   font-weight: bold; }
 
 h1 {
@@ -1118,7 +1129,7 @@ hr {
   border-width: 0.0625rem 0 0; }
 
 hr.thick {
-  border-width: 0.125rem 0 0; }
+  border-width: 0.2rem 0 0; }
 
 /* Helpful Typography Defaults */
 em,
@@ -1146,7 +1157,8 @@ ol,
 dl {
   font-size: 0.9375rem;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
   list-style-position: outside;
   font-family: Helvetica; }
 
@@ -1196,7 +1208,7 @@ abbr {
 
 /* Blockquotes */
 blockquote {
-  margin: 0 0 1.25rem;
+  margin: 0.625rem 0 0.625rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #dddddd; }
   blockquote cite {
@@ -4078,7 +4090,7 @@ kbd {
 /* Inline Lists */
 .inline-list {
   margin: 0 auto 1.0625rem auto;
-  margin-left: 0.625rem;
+  margin-left: -0.625rem;
   margin-right: 0;
   padding: 0;
   list-style: none;
@@ -4621,36 +4633,27 @@ a.th {
     margin-top: -5px; } }
 .border-top {
   border: solid black;
-  display: inline-block;
-  border-width: 0.125rem 0 0; }
+  border-width: 0.2rem 0 0; }
 
 .border-bottom {
   border: solid black;
-  display: inline-block;
-  border-width: 0 0 0.125rem; }
+  border-width: 0 0 0.2rem; }
 
 .border-top-bottom {
   border: solid black;
-  display: inline-block;
-  border-width: 0.125rem 0; }
+  border-width: 0.2rem 0; }
 
-.border-top-block {
+.border-top-thick {
   border: solid black;
-  display: block;
-  text-align: center;
-  border-width: 0.125rem 0 0; }
+  border-width: 0.4rem 0 0; }
 
-.border-bottom-block {
+.border-bottom-thick {
   border: solid black;
-  display: block;
-  text-align: center;
-  border-width: 0 0 0.125rem; }
+  border-width: 0 0 0.4rem; }
 
-.border-top-bottom-block {
+.border-top-bottom-thick {
   border: solid black;
-  display: block;
-  text-align: center;
-  border-width: 0.125rem 0; }
+  border-width: 0.4rem 0; }
 
 .with-dots:before, .with-dots:after {
   content: "";
@@ -4666,6 +4669,20 @@ a.th {
 
 .with-dots:after {
   right: 0.6rem; }
+
+.designer-heading {
+  display: inline-block;
+  font: futura;
+  font-size: 1.55rem; }
+
+.designer-subtitle {
+  font-size: 1rem; }
+
+.designer-follow {
+  text-transform: uppercase; }
+
+.designer-image {
+  margin-bottom: 1rem; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {

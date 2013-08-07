@@ -342,4 +342,20 @@ a:hover { cursor: $cursor-pointer-value; }
   // Make select elements 100% width by default
   select { width: 100%; }
 
+  a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+    &.bold-link{
+      font-weight: bold;
+    }
+    &.no-dec{
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
 }

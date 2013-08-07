@@ -1,9 +1,5 @@
-@mixin border-top-bottom($display-prop, $border-prop, $border-thickness: 0.125rem){
+@mixin border-top-bottom($border-prop, $border-thickness: 0.2rem){
     border: solid $primary-color;
-    display: $display-prop;
-    @if $display-prop == block {
-      text-align: center;
-    }
     @if $border-prop == top{
         border-width: $border-thickness 0 0;
     }
@@ -18,25 +14,25 @@
     }
 }
 .border-top{
-  @include border-top-bottom(inline-block, top);
+  @include border-top-bottom(top);
   }
 .border-bottom{
-  @include border-top-bottom(inline-block, bottom);
+  @include border-top-bottom(bottom);
   }
 .border-top-bottom{
-  @include border-top-bottom(inline-block, top-bottom);
+  @include border-top-bottom(top-bottom);
   }
 
+$border-thick: 0.4rem;
 
-
-.border-top-block{
-  @include border-top-bottom(block, top);
+.border-top-thick{
+  @include border-top-bottom(top, $border-thick);
   }
-.border-bottom-block{
-  @include border-top-bottom(block, bottom);
+.border-bottom-thick{
+  @include border-top-bottom(bottom, $border-thick);
   }
-.border-top-bottom-block{
-  @include border-top-bottom(block, top-bottom);
+.border-top-bottom-thick{
+  @include border-top-bottom(top-bottom, $border-thick);
   }
 
 
@@ -54,4 +50,21 @@
 }
 .with-dots:after{
   right: 0.6rem;
+}
+
+.designer-heading{
+  display: inline-block;
+  font: futura;
+  font-size: 1.55rem;
+}
+.designer-subtitle{
+  font-size: 1rem;
+}
+
+.designer-follow{
+  text-transform: uppercase;
+}
+
+.designer-image{
+  margin-bottom: 1rem;
 }
