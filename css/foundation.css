@@ -4479,28 +4479,48 @@ ul.pagination {
 
 /* Tables */
 table {
-  background: white;
+  background: #eeeeee;
   margin-bottom: 1.25rem;
-  border: solid 1px #dddddd; }
+  border: 0;
+  border-spacing: 0;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem; }
   table thead,
   table tfoot {
-    background: whitesmoke;
-    font-weight: bold; }
+    background: black;
+    -webkit-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    font-weight: normal; }
     table thead tr th,
     table thead tr td,
     table tfoot tr th,
     table tfoot tr td {
       padding: 0.5rem 0.625rem 0.625rem;
-      font-size: 0.875rem;
-      color: #222222;
-      text-align: left; }
-  table tr th,
-  table tr td {
-    padding: 0.5625rem 0.625rem;
-    font-size: 0.875rem;
-    color: #222222; }
-  table tr.even, table tr.alt, table tr:nth-of-type(even) {
+      font-size: 1rem;
+      color: white;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: normal; }
+      table thead tr th:first-child,
+      table thead tr td:first-child,
+      table tfoot tr th:first-child,
+      table tfoot tr td:first-child {
+        border-top-left-radius: 0.25rem; }
+      table thead tr th:last-child,
+      table thead tr td:last-child,
+      table tfoot tr th:last-child,
+      table tfoot tr td:last-child {
+        border-top-right-radius: 0.25rem; }
+  table.even tr:nth-of-type(even), table.alt tr:nth-of-type(even) {
     background: #f9f9f9; }
+  table tr {
+    margin-bottom: 0.0625rem; }
+    table tr th,
+    table tr td {
+      padding: 0.5625rem 0.625rem;
+      font-size: 1rem;
+      color: #666666;
+      font-weight: normal; }
   table thead tr th,
   table tfoot tr th,
   table tbody tr td,
@@ -4508,6 +4528,8 @@ table {
   table tfoot tr td {
     display: table-cell;
     line-height: 1.125rem; }
+  table.expand {
+    width: 100%; }
 
 /* Image Thumbnails */
 .th {

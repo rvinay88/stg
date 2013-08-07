@@ -26,15 +26,19 @@
 .border-top-bottom{
   @include border-top-bottom(inline-block, top-bottom);
   }
+
+
+
 .border-top-block{
-@include border-top-bottom(block, top);
-}
+  @include border-top-bottom(block, top);
+  }
 .border-bottom-block{
-@include border-top-bottom(block, bottom);
-}
+  @include border-top-bottom(block, bottom);
+  }
 .border-top-bottom-block{
-@include border-top-bottom(block, top-bottom);
-}
+  @include border-top-bottom(block, top-bottom);
+  }
+
 
 .with-dots:before, .with-dots:after{
   content: "";
