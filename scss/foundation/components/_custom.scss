@@ -68,3 +68,17 @@ $border-thick: 0.4rem;
 .designer-image{
   margin-bottom: 1rem;
 }
+
+.icon-footer{
+  &:hover{
+    color: $secondary-color;
+  }
+}
+
+.footer-icons{
+  padding-top: 0.6rem;
+}
+
+.black-bg{
+  background: $primary-color;
+}

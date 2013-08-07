@@ -22,7 +22,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -94,12 +94,21 @@ select {
 a {
   color: black;
   text-decoration: none; }
+  a.white-link {
+    color: white; }
+    a.white-link:hover {
+      color: white; }
   a:hover {
     text-decoration: underline; }
   a.bold-link {
     font-weight: bold; }
   a.no-dec:hover {
     text-decoration: none; }
+
+footer {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle; }
 
 /* Grid HTML Classes */
 .row {
@@ -777,7 +786,7 @@ th.hide-for-touch {
   [class*="block-grid-"] {
     display: block;
     padding: 0;
-    margin: 0 -0.625rem;
+    margin: 0 -0.3125rem;
     *zoom: 1; }
     [class*="block-grid-"]:before, [class*="block-grid-"]:after {
       content: " ";
@@ -788,11 +797,11 @@ th.hide-for-touch {
       display: inline;
       height: auto;
       float: left;
-      padding: 0 0.625rem 1.25rem; }
+      padding: 0 0.3125rem 0.625rem; }
 
   .small-block-grid-1 > li {
     width: 100%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-1 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-1 > li:nth-of-type(1n+1) {
@@ -800,7 +809,7 @@ th.hide-for-touch {
 
   .small-block-grid-2 > li {
     width: 50%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-2 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-2 > li:nth-of-type(2n+1) {
@@ -808,7 +817,7 @@ th.hide-for-touch {
 
   .small-block-grid-3 > li {
     width: 33.33333%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-3 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-3 > li:nth-of-type(3n+1) {
@@ -816,7 +825,7 @@ th.hide-for-touch {
 
   .small-block-grid-4 > li {
     width: 25%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-4 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-4 > li:nth-of-type(4n+1) {
@@ -824,7 +833,7 @@ th.hide-for-touch {
 
   .small-block-grid-5 > li {
     width: 20%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-5 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-5 > li:nth-of-type(5n+1) {
@@ -832,7 +841,7 @@ th.hide-for-touch {
 
   .small-block-grid-6 > li {
     width: 16.66667%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-6 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-6 > li:nth-of-type(6n+1) {
@@ -840,7 +849,7 @@ th.hide-for-touch {
 
   .small-block-grid-7 > li {
     width: 14.28571%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-7 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-7 > li:nth-of-type(7n+1) {
@@ -848,7 +857,7 @@ th.hide-for-touch {
 
   .small-block-grid-8 > li {
     width: 12.5%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-8 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-8 > li:nth-of-type(8n+1) {
@@ -856,7 +865,7 @@ th.hide-for-touch {
 
   .small-block-grid-9 > li {
     width: 11.11111%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-9 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-9 > li:nth-of-type(9n+1) {
@@ -864,7 +873,7 @@ th.hide-for-touch {
 
   .small-block-grid-10 > li {
     width: 10%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-10 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-10 > li:nth-of-type(10n+1) {
@@ -872,7 +881,7 @@ th.hide-for-touch {
 
   .small-block-grid-11 > li {
     width: 9.09091%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-11 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-11 > li:nth-of-type(11n+1) {
@@ -880,7 +889,7 @@ th.hide-for-touch {
 
   .small-block-grid-12 > li {
     width: 8.33333%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .small-block-grid-12 > li:nth-of-type(n) {
       clear: none; }
     .small-block-grid-12 > li:nth-of-type(12n+1) {
@@ -926,7 +935,7 @@ th.hide-for-touch {
 
   .large-block-grid-1 > li {
     width: 100%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-1 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-1 > li:nth-of-type(1n+1) {
@@ -934,7 +943,7 @@ th.hide-for-touch {
 
   .large-block-grid-2 > li {
     width: 50%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-2 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-2 > li:nth-of-type(2n+1) {
@@ -942,7 +951,7 @@ th.hide-for-touch {
 
   .large-block-grid-3 > li {
     width: 33.33333%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-3 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-3 > li:nth-of-type(3n+1) {
@@ -950,7 +959,7 @@ th.hide-for-touch {
 
   .large-block-grid-4 > li {
     width: 25%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-4 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-4 > li:nth-of-type(4n+1) {
@@ -958,7 +967,7 @@ th.hide-for-touch {
 
   .large-block-grid-5 > li {
     width: 20%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-5 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-5 > li:nth-of-type(5n+1) {
@@ -966,7 +975,7 @@ th.hide-for-touch {
 
   .large-block-grid-6 > li {
     width: 16.66667%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-6 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-6 > li:nth-of-type(6n+1) {
@@ -974,7 +983,7 @@ th.hide-for-touch {
 
   .large-block-grid-7 > li {
     width: 14.28571%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-7 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-7 > li:nth-of-type(7n+1) {
@@ -982,7 +991,7 @@ th.hide-for-touch {
 
   .large-block-grid-8 > li {
     width: 12.5%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-8 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-8 > li:nth-of-type(8n+1) {
@@ -990,7 +999,7 @@ th.hide-for-touch {
 
   .large-block-grid-9 > li {
     width: 11.11111%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-9 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-9 > li:nth-of-type(9n+1) {
@@ -998,7 +1007,7 @@ th.hide-for-touch {
 
   .large-block-grid-10 > li {
     width: 10%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-10 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-10 > li:nth-of-type(10n+1) {
@@ -1006,7 +1015,7 @@ th.hide-for-touch {
 
   .large-block-grid-11 > li {
     width: 9.09091%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-11 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-11 > li:nth-of-type(11n+1) {
@@ -1014,7 +1023,7 @@ th.hide-for-touch {
 
   .large-block-grid-12 > li {
     width: 8.33333%;
-    padding: 0 0.625rem 1.25rem; }
+    padding: 0 0.3125rem 0.625rem; }
     .large-block-grid-12 > li:nth-of-type(n) {
       clear: none; }
     .large-block-grid-12 > li:nth-of-type(12n+1) {
@@ -4089,19 +4098,28 @@ kbd {
 
 /* Inline Lists */
 .inline-list {
-  margin: 0 auto 1.0625rem auto;
+  margin: 0 auto 0 auto;
   margin-left: -0.625rem;
   margin-right: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden;
+  vertical-align: middle; }
   .inline-list > li {
     list-style: none;
     float: left;
     margin-left: 0.625rem;
-    display: block; }
+    display: inline; }
     .inline-list > li > * {
-      display: block; }
+      display: inline; }
+
+.inline-list-separator > li:after {
+  content: "|";
+  color: white;
+  margin-left: 0.625rem;
+  display: inline; }
+.inline-list-separator > li:last-child:after {
+  content: ""; }
 
 /* Default Pagination */
 ul.pagination {
@@ -4683,6 +4701,15 @@ a.th {
 
 .designer-image {
   margin-bottom: 1rem; }
+
+.icon-footer:hover {
+  color: #666666; }
+
+.footer-icons {
+  padding-top: 0.6rem; }
+
+.black-bg {
+  background: black; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {

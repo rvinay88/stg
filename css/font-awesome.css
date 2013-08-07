@@ -834,6 +834,7 @@ a .icon-flip-vertical:before {
 }
 .icon-facebook:before {
   content: "\f09a";
+  margin-left: 1rem;
 }
 .icon-github:before {
   content: "\f09b";

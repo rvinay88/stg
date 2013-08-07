@@ -198,7 +198,7 @@ $em-base: 10 !default;
 
 $body-bg: #fff !default;
 $body-font-color: #222 !default;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-family: "Helvetica", Helvetica, Arial, sans-serif !default;
 $body-font-weight: normal !default;
 $body-font-style: normal !default;
 
@@ -345,6 +345,12 @@ a:hover { cursor: $cursor-pointer-value; }
   a{
     color: $primary-color;
     text-decoration: none;
+    &.white-link{
+      color: white;
+      &:hover{
+        color: white;
+      }
+    }
     &:hover{
       text-decoration: underline;
     }
@@ -356,6 +362,12 @@ a:hover { cursor: $cursor-pointer-value; }
         text-decoration: none;
       }
     }
+  }
+
+  footer{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
   }
 
 }

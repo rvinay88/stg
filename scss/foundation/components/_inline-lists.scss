@@ -15,10 +15,10 @@ $inline-list-padding: 0 !default;
 $inline-list-overflow: hidden !default;
 
 // We use this to control the list items
-$inline-list-display: block !default;
+$inline-list-display: inline !default;
 
 // We use this to control any elments within list items
-$inline-list-children-display: block !default;
+$inline-list-children-display: inline !default;
 
 //
 // Inline List Mixins
@@ -26,12 +26,13 @@ $inline-list-children-display: block !default;
 
 // We use this mixin to create inline lists
 @mixin inline-list {
-  margin: $inline-list-top-margin auto $inline-list-bottom-margin auto;
+  margin: $inline-list-top-margin auto 0 auto;
   margin-#{$default-float}: $inline-list-default-float-margin;
   margin-#{$opposite-direction}: $inline-list-opposite-margin;
   padding: $inline-list-padding;
   list-style: none;
   overflow: $inline-list-overflow;
+  vertical-align: middle;
 
   & > li {
     list-style: none;
@@ -48,6 +49,19 @@ $inline-list-children-display: block !default;
   /* Inline Lists */
   .inline-list {
     @include inline-list();
+  }
+  .inline-list-separator{
+    & > li {
+      &:after{
+        content: "|";
+        color: white;
+        margin-left: emCalc(10);
+        display: $inline-list-children-display;
+      }
+      &:last-child:after{
+        content: "";
+      }
+    }
   }
 
 }
