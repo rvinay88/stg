@@ -69,6 +69,12 @@ $border-thick: 0.4rem;
   margin-bottom: 1rem;
 }
 
+.collection-title{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: emCalc(20);
+}
+
 .icon-footer{
   &:hover{
     color: $secondary-color;
@@ -81,4 +87,16 @@ $border-thick: 0.4rem;
 
 .black-bg{
   background: $primary-color;
+}
+
+.black-bar{
+  @extend .black-bg;
+  @extend .futura;
+  display: block;
+  color: white;
+  padding-left: emCalc(10);
+  padding-top: emCalc(10);
+  padding-bottom: emCalc(10);
+  text-transform: uppercase;
+  font-size: emCalc(17);
 }

@@ -29,7 +29,8 @@ $flex-video-widescreen-padding-bottom: 57.25% !default;
   iframe,
   object,
   embed,
-  video {
+  video,
+  img {
     position: absolute;
     top: 0;
     #{$default-float}: 0;

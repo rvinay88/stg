@@ -159,7 +159,7 @@ $base-font-size: 100% !default;
 $base-line-height: 150% !default;
 
 // This is the default html and body font-size for the base em value.
-$em-base: 10 !default;
+$em-base: 0.0625 !default;
 
 // It strips the unit of measure and returns it
 @function strip-unit($num) {
@@ -359,7 +359,7 @@ a:hover { cursor: $cursor-pointer-value; }
     }
     &.no-dec{
       &:hover{
-        text-decoration: none;
+        text-decoration: none !important;
       }
     }
   }

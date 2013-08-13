@@ -6,7 +6,7 @@ $include-html-inline-list-classes: $include-html-classes !default;
 // We use this to control the margins and padding of the inline list.
 $inline-list-top-margin: 0 !default;
 $inline-list-opposite-margin: 0 !default;
-$inline-list-bottom-margin: emCalc(17) !default;
+$inline-list-bottom-margin: 0 !default;
 $inline-list-default-float-margin: -(emCalc(10)) !default;
 
 $inline-list-padding: 0 !default;
@@ -26,7 +26,7 @@ $inline-list-children-display: inline !default;
 
 // We use this mixin to create inline lists
 @mixin inline-list {
-  margin: $inline-list-top-margin auto 0 auto;
+  margin: $inline-list-top-margin auto $inline-list-top-margin auto; //Bottom Margin affects footer
   margin-#{$default-float}: $inline-list-default-float-margin;
   margin-#{$opposite-direction}: $inline-list-opposite-margin;
   padding: $inline-list-padding;

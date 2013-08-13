@@ -103,7 +103,7 @@ a {
   a.bold-link {
     font-weight: bold; }
   a.no-dec:hover {
-    text-decoration: none; }
+    text-decoration: none !important; }
 
 footer {
   width: 100%;
@@ -786,7 +786,7 @@ th.hide-for-touch {
   [class*="block-grid-"] {
     display: block;
     padding: 0;
-    margin: 0 -0.3125rem;
+    margin: 0 0.3125rem;
     *zoom: 1; }
     [class*="block-grid-"]:before, [class*="block-grid-"]:after {
       content: " ";
@@ -1112,8 +1112,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #4d4d4d;
     line-height: 0; }
 
-.futura {
-  font-family: futura;
+.futura, .futura-heading, .black-bar {
+  font-family: futura; }
+
+.futura-heading {
   font-weight: bold; }
 
 h1 {
@@ -1773,6 +1775,18 @@ input[type="radio"],
 select {
   margin: 0 0 1rem 0; }
 
+input[type="checkbox"].r2s {
+  display: none; }
+  input[type="checkbox"].r2s + span {
+    font-family: Helvetica; }
+  input[type="checkbox"].r2s + span:before {
+    font-family: FontAwesome;
+    margin-right: 0.3125rem;
+    content: "\f0c8";
+    font-size: 1.25rem; }
+  input[type="checkbox"].r2s:checked + span:before {
+    content: "\f14a"; }
+
 /* Normalize file input width */
 input[type="file"] {
   width: 100%; }
@@ -2090,7 +2104,8 @@ label.error {
   .flex-video iframe,
   .flex-video object,
   .flex-video embed,
-  .flex-video video {
+  .flex-video video,
+  .flex-video img {
     position: absolute;
     top: 0;
     left: 0;
@@ -2830,7 +2845,7 @@ label.error {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #111111; }
+  background: black; }
   .contain-to-grid .top-bar {
     margin-bottom: 1.875rem; }
 
@@ -2846,7 +2861,7 @@ label.error {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #111111;
+  background: black;
   margin-bottom: 1.875rem; }
   .top-bar ul {
     margin-bottom: 0;
@@ -2917,7 +2932,7 @@ label.error {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #111111; }
+      background: black; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span {
@@ -2935,12 +2950,12 @@ label.error {
     width: 100%;
     height: auto;
     display: block;
-    background: #222222;
+    background: black;
     font-size: 16;
     margin: 0; }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
-    border-bottom: solid 1px #2b2b2b;
+    border-bottom: solid 1px #1a1a1a;
     border-top: solid 1px black;
     clear: both;
     height: 1px;
@@ -2951,12 +2966,13 @@ label.error {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-size: 0.8125rem;
+    font-family: futura;
+    font-size: 1rem;
     font-weight: bold;
-    background: #222222; }
+    background: black; }
     .top-bar-section ul li > a.button {
       background: black;
-      font-size: 0.8125rem; }
+      font-size: 1rem; }
       .top-bar-section ul li > a.button.hover {
         background: black; }
     .top-bar-section ul li > a.button.secondary {
@@ -2971,12 +2987,15 @@ label.error {
       background: #c60f13; }
       .top-bar-section ul li > a.button.alert.hover {
         background: #970b0e; }
-  .top-bar-section ul li.hover > a {
-    background: #090909;
-    color: white; }
+  .top-bar-section ul li:hover > a {
+    background: white;
+    color: black; }
   .top-bar-section ul li.active > a {
-    background: #090909;
+    background: black;
     color: white; }
+    .top-bar-section ul li.active > a:hover > a {
+      background: white;
+      color: black; }
   .top-bar-section .has-form {
     padding: 15px; }
   .top-bar-section .has-dropdown {
@@ -3009,6 +3028,7 @@ label.error {
       height: auto; }
       .top-bar-section .dropdown li a {
         font-weight: normal;
+        text-align: center;
         padding: 8px 15px; }
         .top-bar-section .dropdown li a.parent-link {
           font-weight: bold; }
@@ -3035,7 +3055,7 @@ label.error {
 
 @media only screen and (min-width: 58.75rem) {
   .top-bar {
-    background: #111111;
+    background: black;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -3058,7 +3078,7 @@ label.error {
       position: relative;
       top: 8px; }
     .top-bar.expanded {
-      background: #111111; }
+      background: black; }
 
   .contain-to-grid .top-bar {
     max-width: 82.5rem;
@@ -3081,7 +3101,7 @@ label.error {
     .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #111111; }
+      background: black; }
       .top-bar-section li a:not(.button).hover {
         background: black; }
     .top-bar-section .has-dropdown > a {
@@ -3117,23 +3137,23 @@ label.error {
         line-height: 1;
         white-space: nowrap;
         padding: 7px 15px;
-        background: #1e1e1e; }
+        background: #0d0d0d; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background: #1e1e1e; }
+        background: #0d0d0d; }
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }
     .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
       border-bottom: none;
       border-top: none;
-      border-right: solid 1px #2b2b2b;
+      border-right: solid 1px #1a1a1a;
       border-left: solid 1px black;
       clear: none;
       height: 45px;
       width: 0px; }
     .top-bar-section .has-form {
-      background: #111111;
+      background: black;
       padding: 0 15px;
       height: 45px; }
     .top-bar-section ul.right li .dropdown {
@@ -3143,10 +3163,10 @@ label.error {
         right: 100%; }
 
   .no-js .top-bar-section ul li:hover > a {
-    background: #090909;
-    color: white; }
+    background: white;
+    color: black; }
   .no-js .top-bar-section ul li:active > a {
-    background: #090909;
+    background: black;
     color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     visibility: visible; } }
@@ -4702,14 +4722,28 @@ a.th {
 .designer-image {
   margin-bottom: 1rem; }
 
+.collection-title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.25rem; }
+
 .icon-footer:hover {
   color: #666666; }
 
 .footer-icons {
   padding-top: 0.6rem; }
 
-.black-bg {
+.black-bg, .black-bar {
   background: black; }
+
+.black-bar {
+  display: block;
+  color: white;
+  padding-left: 0.625rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  text-transform: uppercase;
+  font-size: 1.0625rem; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {

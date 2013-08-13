@@ -36,9 +36,9 @@
 Text after an icon to align vertical middle
 ------------------------------*/
 
-.icon-text{
-  line-height: 1.2;
-  font-family: Helvetica;
+.icon-blank{
+  width: 40px;
+  min-height: 41px;
 }
 
 /* FONT AWESOME CORE

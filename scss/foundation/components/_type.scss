@@ -212,6 +212,9 @@ $microformat-abbr-font-decoration: none !default;
 
 .futura{
   font-family: futura;
+}
+.futura-heading{
+  @extend .futura;
   font-weight: bold;
 }
 
