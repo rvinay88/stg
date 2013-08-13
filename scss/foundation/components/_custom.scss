@@ -100,3 +100,15 @@ $border-thick: 0.4rem;
   text-transform: uppercase;
   font-size: emCalc(17);
 }
+
+  .user-setting{
+    color: white;
+  }
+  .user-setting > li {
+    border: 3px solid rgba(#fff, 0.09);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0 !important; //override dropdown menu styles
+    line-height: 1 !important;
+  }
