@@ -7,7 +7,7 @@ $include-html-button-classes: $include-html-classes !default;
 $f-dropdown-max-width: 200px !default;
 $f-dropdown-height: auto !default;
 $f-dropdown-max-height: none !default;
-$f-dropdown-margin-top: 2px !default;
+$f-dropdown-margin-top: 25px !default;
 
 // We use this to control the background color
 $f-dropdown-bg: #fff !default;
@@ -68,7 +68,7 @@ $f-dropdown-content-padding: emCalc(20) !default;
     border: $f-dropdown-border-style $f-dropdown-border-width $f-dropdown-border-color;
     border-radius: $f-dropdown-radius;
     font-size: $em-base;
-    z-index: 99;
+    z-index: 100;
   }
 
   @if $triangle {

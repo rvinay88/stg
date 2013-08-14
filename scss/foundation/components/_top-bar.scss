@@ -15,7 +15,7 @@ $topbar-input-height: 2.45em !default;
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: bold !default;
-$topbar-title-font-size: emCalc(17) !default;
+$topbar-title-font-size: emCalc(15) !default;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: #fff !default;
@@ -30,7 +30,7 @@ $topbar-link-color: #fff !default;
 $topbar-link-color-hover: #000 !default;
 $topbar-link-color-active: #fff !default;
 $topbar-link-weight: normal !default;
-$topbar-link-font-size: emCalc(17) !default;
+$topbar-link-font-size: emCalc(13) !default;
 $topbar-link-hover-lightness: -30% !default; // Darken by 30%
 $topbar-link-bg-hover: #fff !default;
 $topbar-link-bg-active: #000 !default;
@@ -51,7 +51,7 @@ $topbar-menu-icon-color-toggled: #888 !default;
 
 // Transitions and breakpoint styles
 $topbar-transition-speed: 300ms !default;
-$topbar-breakpoint: emCalc(940) !default; // Change to 9999px for always mobile layout
+$topbar-breakpoint: emCalc(740) !default; // Change to 9999px for always mobile layout
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})" !default;
 
 // Divider Styles
@@ -242,8 +242,7 @@ $topbar-sticky-class: ".sticky" !default;
       margin: 0;
       ul{
         padding-bottom: 20px;
-        border: 3px solid rgba(#000, 0.09);
-        border-width: 0 3px 3px 3px;
+        @include box-shadow(0, 0, 1px, rgba(#000,0.9));
         background: $topbar-dropdown-bg;
       }
     }

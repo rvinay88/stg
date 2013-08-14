@@ -1,3 +1,6 @@
+$border-thick: 0.4rem;
+$border-thin: 0.1rem;
+
 @mixin border-top-bottom($border-prop, $border-thickness: 0.2rem){
     border: solid $primary-color;
     @if $border-prop == top{
@@ -23,8 +26,6 @@
   @include border-top-bottom(top-bottom);
   }
 
-$border-thick: 0.4rem;
-
 .border-top-thick{
   @include border-top-bottom(top, $border-thick);
   }
@@ -35,6 +36,15 @@ $border-thick: 0.4rem;
   @include border-top-bottom(top-bottom, $border-thick);
   }
 
+.border-top-thin{
+  @include border-top-bottom(top, $border-thin);
+}
+.border-bottom-thin{
+  @include border-top-bottom(bottom, $border-thin);
+}
+.border-top-bottom-thin{
+  @include border-top-bottom(top-bottom, $border-thin);
+}
 
 .with-dots:before, .with-dots:after{
   content: "";
@@ -103,12 +113,106 @@ $border-thick: 0.4rem;
 
   .user-setting{
     color: white;
+    position: absolute;
+    top: 0;
+    right: emCalc(10);
   }
   .user-setting > li {
-    border: 3px solid rgba(#fff, 0.09);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    border: 3px solid rgba(#fff, 0.25);
+    @include radius(4px);
     padding: 0 !important; //override dropdown menu styles
     line-height: 1 !important;
+    &:hover{
+      border: 3px solid rgba(#fff, 0.35);
+    }
   }
+  .cartno{
+      position: absolute;
+      bottom: 33%;
+      text-align: center;
+      color: black;
+      right: 10.54%;
+      font-weight: bold;
+    }
+.user-setting-content{
+  display: inline-block;
+  margin-right: 2px;
+}
+/*Logo*/
+.logo {
+  background: url(../images/sprite.png) no-repeat;
+  -o-background-size: 360px auto;
+  -moz-background-size: 360px auto;
+  -webkit-background-size: 331px auto;
+  background-size: 331px auto;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 162px;
+  width: 148px;
+  overflow: hidden;
+  text-indent: -9999px;
+  position: absolute;
+  top: 10px;
+  z-index: 98;
+  margin-left: 7%;
+}
+
+.logo a {
+  display: block;
+  height: 100%; }
+
+  // custom dropdown
+.styled-select{
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+}
+  .styled-select select {
+   background: transparent;
+   width: 100%;
+   padding-#{$default-float}: $form-spacing / 2;
+   border: 0;
+   @include radius(4px);
+   background-color: $tertiary-color;
+   height: 42px;
+   -webkit-appearance: none;
+   display: inline-block;
+   font-family: Helvetica;
+   font-size: emCalc(16px);
+   color: $secondary-color;
+   margin: 0 0 $form-spacing 0;
+   }
+// .styled-select {
+//    width: 240px;
+//    height: 34px;
+//    overflow: hidden;
+//    background: url(new_arrow.png) no-repeat right #ddd;
+//    border: 1px solid #ccc;
+//    }
+
+.styled-select:after{
+  font-family: FontAwesome;
+  content: '\F0D7';
+  z-index: 200;
+  display: inline-block;
+  position: absolute;
+  right: emCalc(20);
+  bottom: 45%;
+  pointer-events: none;
+}
+
+.main-holder {
+  width: 100%;
+  @include clearfix;
+  }
+
+.main-holder:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.main-holder .logo {
+  float: left;
+  margin-left: 0;
+  position: static; }

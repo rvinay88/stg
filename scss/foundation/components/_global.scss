@@ -72,6 +72,12 @@ $experimental: true !default;
     box-shadow: $shiny-edge-size $shiny-edge-active-color inset; } }
 }
 
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}
+
 // We use this to add transitions to elements
 @mixin single-transition($property:all, $speed:300ms, $ease:ease-out) {
   @if $experimental {
