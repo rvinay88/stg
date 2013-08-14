@@ -3133,6 +3133,16 @@ label.error {
         border-top-style: solid;
         margin-top: -2.5px;
         top: 22.5px; }
+      .top-bar-section .has-dropdown > a:hover:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: inset 5px;
+        border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+        border-top-style: solid;
+        margin-top: -2.5px;
+        top: 22.5px; }
     .top-bar-section .has-dropdown.moved {
       position: relative; }
       .top-bar-section .has-dropdown.moved > .dropdown {

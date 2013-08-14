@@ -458,6 +458,11 @@ $topbar-sticky-class: ".sticky" !default;
             margin-top: -($topbar-dropdown-toggle-size / 2);
             top: $topbar-height / 2;
           }
+          &:hover:after{
+            @include css-triangle($topbar-dropdown-toggle-size, rgba(#000, $topbar-dropdown-toggle-alpha), top);
+            margin-top: -($topbar-dropdown-toggle-size / 2);
+            top: $topbar-height / 2;
+          }
         }
 
         &.moved { position: relative;
