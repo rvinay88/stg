@@ -346,6 +346,7 @@ $topbar-sticky-class: ".sticky" !default;
 
     // Styling elements inside of dropdowns
     .dropdown {
+      .columns { @include grid-column($columns:$total-columns); }
       position: absolute;
       #{$default-float}: 100%;
       top: 0;

@@ -3039,6 +3039,12 @@ label.error {
     top: 0;
     visibility: hidden;
     z-index: 99; }
+    .top-bar-section .dropdown .columns {
+      position: relative;
+      padding-left: 0.46875rem;
+      padding-right: 0.46875rem;
+      width: 100%;
+      float: left; }
     .top-bar-section .dropdown li {
       width: 100%;
       height: auto;
