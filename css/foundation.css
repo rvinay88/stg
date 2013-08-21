@@ -3065,13 +3065,13 @@ label.error {
       text-align: center; }
 
 .top-bar-js-breakpoint {
-  width: 46.25rem !important;
+  width: 740px !important;
   visibility: hidden; }
 
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 46.25rem) {
+@media only screen and (min-width: 740px) {
   .top-bar {
     background: black;
     *zoom: 1;
@@ -4973,6 +4973,9 @@ a.th {
   -webkit-appearance: none;
   height: 42px;
   margin: 0 0 1rem 0; }
+
+select::-ms-expand {
+  display: none; }
 
 .styled-select:after {
   content: "";

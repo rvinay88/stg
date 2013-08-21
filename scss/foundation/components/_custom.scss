@@ -143,6 +143,9 @@
    height: 42px;
    margin: 0 0 $form-spacing 0;
    }
+   select::-ms-expand {
+    display: none;
+}
 
 .styled-select:after{
   @include css-triangle($topbar-dropdown-toggle-size, rgba(#000, $topbar-dropdown-toggle-alpha), top); //same as the arrows on the menu dropdown
