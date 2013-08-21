@@ -18,87 +18,158 @@
 
 <body>
 
+  <div class="nav">
 
-<nav class="top-bar sticky" data-options="is_hover:true">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
+    <nav class="top-bar" data-options="is_hover:true">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
 
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
 
-  <section class="top-bar-section">
-    <!-- Left Nav Section -->
-    <ul class="left">
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
 
-      <li class="active"><a href="#" class="no-dec">What's New</a></li>
+          <li class="active"><a href="#" class="no-dec">What's New</a></li>
 
-      <li class="has-dropdown">
-        <a href="#" class="no-dec" data-dropdown="drop2">Meet the designers</a>
-        <ul class="dropdown">
-          <li><a href="">Anja</a></li>
-          <li><a href="">Miri</a></li>
-          <li><a href="">Otazu</a></li>
-          <li><a href="">TheP.</a></li>
-          <li><a href="">Giejo</a></li>
-          <li><a href="">Manley</a></li>
-          <li><a href="">Anne Sylvain</a></li>
-          <li><a href="">Emy Mack</a></li>
-          <li><a href="">Constance Boutet</a></li>
-          <li><a href="">Bernard Delettrez</a></li>
-          <li><a href="">Maison About</a></li>
-          <li><a href="">Mes Dames</a></li>
-          <li><a href="">Astrid Sarkissan</a></li>
-          <li><a href="">Gaffer and Fluf</a></li>
-          <li><a href="">Materia Prime</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <a href="#" class="no-dec">Clothing</a>
-        <ul class="dropdown">
+          <li class="has-dropdown">
+            <a href="#" class="no-dec" data-dropdown="drop2">Meet the designers</a>
+            <ul class="dropdown">
+              <li><a href="">Anja</a></li>
+              <li><a href="">Miri</a></li>
+              <li><a href="">Otazu</a></li>
+              <li><a href="">TheP.</a></li>
+              <li><a href="">Giejo</a></li>
+              <li><a href="">Manley</a></li>
+              <li><a href="">Anne Sylvain</a></li>
+              <li><a href="">Emy Mack</a></li>
+              <li><label><a href=""><strong>More</strong></a></label></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" class="no-dec">Clothing</a>
+            <ul class="dropdown">
               <li><a href="#">Dresses</a> </li>
               <li><a href="#">Jackets and Vests</a></li>
               <li><a href="#">Swimwear</a></li>
               <li><a href="#">Tops</a></li>
               <li><a href="#">Bottoms</a></li>
               <li><a href="#">Jumpsuits</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown"><a href="#" class="no-dec">Accessories</a>
-        <ul class="dropdown">
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#" class="no-dec">Accessories</a>
+            <ul class="dropdown">
               <li><a href="#">Jewelery</a> </li>
               <li><a href="#">Bags</a></li>
               <li><a href="#">Sunglasses</a></li>
               <li><a href="#">Shoes</a></li>
               <li><a href="#">Scarves</a></li>
-        </ul>
-      </li>
-      <li><a href="" class="no-dec">Sale</a></li>
-    </ul>
-  </section>
-    <!-- Right Nav Section -->
-</nav>
-      <ul class="inline-list user-setting">
-        <li><a href="" data-dropdown="drop1"><img src="https://profile-a.xx.fbcdn.net/hprofile-ash3/23010_761235354_408881299_n.jpg" height="42" width="42" alt="Vinay Raghu"></a></li>
-        <li><a href="" data-dropdown="drop2"><i class="icon-dollar icon-2x icon-light icon-border icon-fixed-width"></i></a></li>
-        <li class="cart"><a href="" data-dropdown="drop3"><i class="icon-circle icon-2x icon-light icon-border icon-fixed-width"></i><span class="cartno">2</span></a></li>
-      </ul>
-      <div id="drop1" class="f-dropdown content small">
-        <div class="large-12 columns">
-          <div class="large-5 columns"><img src="http://placehold.it/150x150" alt=""></div>
-          <div class="large-7 columns">
-            <p>Welcome Vinay Raghu!</p>
-            <ul class="inline-list">
-              <li><a href="" class="user-setting-content border-top-bottom-thin no-dec">My Account</a></li>
-              <li><a href="" class="user-setting-content border-top-bottom-thin no-dec">Sign Out</a></li>
             </ul>
-            </div>
-            <div class="large-6 columns"></div>
-          </div>
+          </li>
+          <li><a href="" class="no-dec">Sale</a></li>
+        </ul>
+      </section>
+      <!-- Right Nav Section -->
+    </nav>
+    <ul class="inline-list user-setting">
+<!--       <li>
+        <a href="" data-dropdown="drop1" class="no-dec">
+          <span>Vinay Raghu</span>
+          <img src="https://profile-a.xx.fbcdn.net/hprofile-ash3/23010_761235354_408881299_n.jpg" class="user-image" alt="Vinay Raghu">
+        </a>
+      </li> -->
+      <li id="trigger-menu-cart">
+        <i class="icon-circle icon-large inline-icon settings-icon"></i>
+      </li>
+      <li id="trigger-menu-settings">
+        Vinay Raghu
+        <img src="http://placehold.it/40x40" alt="" class="user-img">
+      </li>
+      <!--       <li class="cart"><a href="" data-dropdown="drop3"><i class="icon-circle icon-2x icon-light icon-border icon-fixed-width"></i><span class="cartno">2</span></a></li> -->
+    </ul>
+    <!-- <div id="drop3" class="f-dropdown content medium">
+      <div class="large-12 columns">
+        <div class="large-5 columns"><img src="http://placehold.it/150x150" alt=""></div>
+        <div class="large-7 columns">
+          <p>Welcome Vinay Raghu!</p>
+          <ul class="inline-list">
+            <li><a href="" class="user-setting-content border-top-bottom-thin no-dec">My Account</a></li>
+            <li><a href="" class="user-setting-content border-top-bottom-thin no-dec">Sign Out</a></li>
+          </ul>
+        </div>
+        <div class="large-6 columns"></div>
+      </div>
+    </div> -->
+  </div>
+  <div class="settings-menu" id="menu-settings">
+    <div class="pane-container">
+      <div class="pane-1">
+        <div class="small-6 columns">
+          <a href=""></a><img src="http://placehold.it/150x150" alt="">
+        </div>
+        <div class="small-6 columns">
+          <ul class="no-bullet user-setting-links no-dec">
+            <li><a href="">My Profile</a></li>
+            <li id="trigger-preferences-pane"><a href="">Settings</a></li>
+            <li><a href="">Sign Out</a></li>
+          </ul>
         </div>
       </div>
+      <div class="pane-2">
+        <div class="styled-select">
+          <label>Language</label>
+          <select>
+            <option>Here is the first option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+          </select>
+        </div>
+
+        <div class="styled-select">
+         <label>Currency</label>
+         <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+        </select>
+      </div>
+      <div class="styled-select">
+        <label>Country</label>
+        <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <a href="#" id="trigger-settings-pane">Back</a>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="settings-menu" id="menu-cart">
+  <img src="http://placehold.it/300x300" alt="">
+</div>
+
 <div class="row">
   <div class="large-12 columns">
     <h1 class="logo"><a href="http://runway2street.com">runway2street</a></h1>
@@ -135,13 +206,13 @@
   <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/heroImages/_MG_8859-klein-1328x555-678_1328x556_1.jpg" alt="">
 </div>
 
-	<script>
-  document.write('<script src=' +
-   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-   '.js><\/script>')
-  </script>
+<script>
+document.write('<script src=' +
+ ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+ '.js><\/script>')
+</script>
 
-  <script src="js/foundation.min.js"></script>
+<script src="js/foundation.min.js"></script>
   <!--
 
   <script src="js/foundation/foundation.js"></script>
@@ -180,6 +251,47 @@
 
 <script>
 $(document).foundation();
+</script>
+
+
+// <script>
+//   $(document).click(function(event) {
+//     if (event.target.id === "trigger-menu-settings") {
+//           $('#menu-settings').toggleClass('open');
+//           $('#menu-cart').removeClass('open');
+//     }
+//     else if(event.target.id === "trigger-menu-cart") {
+//           $('#menu-cart').toggleClass('open');
+//           $('#menu-settings').removeClass('open');
+//     }
+//     else {
+//         $('#menu-settings').removeClass('open');
+//         $('#menu-cart').removeClass('open');
+//     }
+// });
+// </script>
+
+<script>
+$('#trigger-menu-settings').click( function() {
+  $('#menu-cart').removeClass('open');
+  $('#menu-settings').toggleClass('open');
+});
+</script>
+<script>
+$('#trigger-menu-cart').click( function() {
+  $('#menu-cart').toggleClass('open');
+  $('#menu-settings').removeClass('open');
+});
+</script>
+<script>
+$('#trigger-preferences-pane').click(function() {
+  $('.pane-1, .pane-2').addClass('slide-left');
+  event.preventDefault();
+});
+$('#trigger-settings-pane').click(function() {
+  $('.pane-1, .pane-2').removeClass('slide-left');
+  event.preventDefault();
+});
 </script>
 </body>
 </html>

@@ -242,7 +242,7 @@ $topbar-sticky-class: ".sticky" !default;
       margin: 0;
       ul{
         padding-bottom: 20px;
-        @include box-shadow(0, 0, 1px, rgba(#000,0.9));
+        @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
         background: $topbar-dropdown-bg;
       }
     }
@@ -346,7 +346,6 @@ $topbar-sticky-class: ".sticky" !default;
 
     // Styling elements inside of dropdowns
     .dropdown {
-      .columns { @include grid-column($columns:$total-columns); }
       position: absolute;
       #{$default-float}: 100%;
       top: 0;
@@ -383,6 +382,7 @@ $topbar-sticky-class: ".sticky" !default;
         color: $topbar-dropdown-label-color;
         font-weight: $topbar-dropdown-label-font-weight;
         font-size: $topbar-dropdown-label-font-size;
+        text-align: center;
       }
     }
   }
@@ -509,7 +509,8 @@ $topbar-sticky-class: ".sticky" !default;
 
           label {
             white-space: nowrap;
-            background: lighten($topbar-bg, 5%);
+            // background: lighten($topbar-bg, 5%);
+            text-align: center;
           }
 
           // Second Level Dropdowns
@@ -575,4 +576,100 @@ $topbar-sticky-class: ".sticky" !default;
 	}
   }
 
+}
+
+  /* Custom Styles */
+.nav{
+  position: relative;
+}
+
+ul.user-setting{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.user-setting > li {
+  padding: emCalc(10px) !important; //override dropdown menu styles
+  color: white;
+  cursor: pointer;
+  &:hover{
+  background-color: lighten($primary-color, 50%);
+  }
+}
+.cartno{
+    position: absolute;
+    bottom: 33%;
+    text-align: center;
+    color: black;
+    right: 10.54%;
+    font-weight: bold;
+  }
+.user-setting-content{
+  display: inline-block;
+  margin-right: 2px;
+}
+
+
+.settings-menu{
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 400px;
+  padding: 10px;
+  @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
+  visibility: hidden;
+  height: 0;
+  @include single-transition(all, 0.2s, ease-in);
+  z-index: 99;
+  background-color: #fff;
+  overflow: hidden;
+  .pane-container{
+    width: 800px;
+  }
+  .pane-1, .pane-2{
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 30px;
+    float: left;
+    background-color: #fff;
+    min-height: emCalc(250px);
+    position: relative;
+    left: 0;
+    @include single-transition(all, 0.2s, ease-in);
+  }
+}
+
+
+.slide-left{
+  position: relative;
+  left: -410px !important;
+}
+
+#menu-cart{
+  overflow-y: auto;
+}
+#trigger-menu-settings {
+  padding: 0.125rem !important;
+  padding-right: 0.625rem !important;
+  font-size: emCalc(12);
+}
+.settings-menu.open{
+  min-height: emCalc(240px) !important;
+  // height: auto;
+  visibility: visible !important;
+}
+.user-setting-links{
+  > li{
+    a{
+      @extend .no-dec;
+      display: block;
+      font-size: $topbar-link-font-size;
+      font-weight: $topbar-link-weight;
+      padding: emCalc(6, 12);
+      &:hover{
+        background-color: rgba(#000, 0.25);
+        }
+    }
+  }
 }

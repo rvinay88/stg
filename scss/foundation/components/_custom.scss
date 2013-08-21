@@ -111,33 +111,7 @@ $border-thin: 0.1rem;
   font-size: emCalc(17);
 }
 
-  .user-setting{
-    color: white;
-    position: absolute;
-    top: 0;
-    right: emCalc(10);
-  }
-  .user-setting > li {
-    border: 3px solid rgba(#fff, 0.25);
-    @include radius(4px);
-    padding: 0 !important; //override dropdown menu styles
-    line-height: 1 !important;
-    &:hover{
-      border: 3px solid rgba(#fff, 0.35);
-    }
-  }
-  .cartno{
-      position: absolute;
-      bottom: 33%;
-      text-align: center;
-      color: black;
-      right: 10.54%;
-      font-weight: bold;
-    }
-.user-setting-content{
-  display: inline-block;
-  margin-right: 2px;
-}
+
 /*Logo*/
 .logo {
   background: url(../images/sprite.png) no-repeat;
@@ -173,6 +147,7 @@ $border-thin: 0.1rem;
    width: 100%;
    padding-#{$default-float}: $form-spacing / 2;
    border: 0;
+   outline: none;
    @include radius(4px);
    background-color: $tertiary-color;
    height: 42px;
@@ -183,23 +158,15 @@ $border-thin: 0.1rem;
    color: $secondary-color;
    margin: 0 0 $form-spacing 0;
    }
-// .styled-select {
-//    width: 240px;
-//    height: 34px;
-//    overflow: hidden;
-//    background: url(new_arrow.png) no-repeat right #ddd;
-//    border: 1px solid #ccc;
-//    }
 
 .styled-select:after{
-  font-family: FontAwesome;
-  content: '\F0D7';
-  z-index: 200;
-  display: inline-block;
+  @include css-triangle($topbar-dropdown-toggle-size, rgba(#000, $topbar-dropdown-toggle-alpha), top); //same as the arrows on the menu dropdown
   position: absolute;
   right: emCalc(20);
-  bottom: 45%;
+  margin-top: -($topbar-dropdown-toggle-size / 2);
+  top: 50%;
   pointer-events: none;
+  @include radius(0);
 }
 
 .main-holder {
