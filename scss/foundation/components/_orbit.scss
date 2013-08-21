@@ -15,7 +15,7 @@ $orbit-nav-bg: rgba(0,0,0,0.6) !default;
 
 // We use these to control the timer styles
 $orbit-timer-bg-old: rgb(0,0,0) !default;
-$orbit-timer-bg: rgba(0,0,0,0.6) !default;
+$orbit-timer-bg: rgba(0,0,0,0) !default;
 
 // We use these to control the bullet nav styles
 $orbit-bullet-nav-color: #999 !default;
@@ -136,7 +136,7 @@ $preloader-class: "preloader" !default;
         @else {
           margin-left: 100%;
         }
-        
+
         &:first-child {
           @if $text-direction == rtl {
           margin-right: 0%;
