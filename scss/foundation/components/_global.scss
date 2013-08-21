@@ -200,6 +200,27 @@ $em-base: 0.0625 !default;
 //   @return $pxWidth / $em-base * 1rem;
 // }
 
+// Border top and bottom Mixins
+
+$border-thick: 0.4rem;
+$border-thin: 0.1rem;
+
+@mixin border-top-bottom($border-prop, $border-thickness: 0.2rem){
+    border: solid $primary-color;
+    @if $border-prop == top{
+        border-width: $border-thickness 0 0;
+    }
+    @else if $border-prop == bottom{
+        border-width: 0 0 $border-thickness;
+    }
+    @else if $border-prop == top-bottom {
+        border-width: $border-thickness 0;
+    }
+    @else {
+
+    }
+}
+
 // We use these to control various global styles
 
 $body-bg: #fff !default;

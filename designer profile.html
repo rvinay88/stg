@@ -17,85 +17,145 @@
 </head>
 
 <body>
-  <nav class="top-bar sticky" data-options="is_hover:true">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
+  <div class="nav">
 
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
+    <nav class="top-bar" data-options="is_hover:true">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
 
-  <section class="top-bar-section">
-    <!-- Left Nav Section -->
-    <ul class="left">
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
 
-      <li class="active"><a href="#" class="no-dec">What's New</a></li>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
 
-      <li class="has-dropdown"><a href="#" class="no-dec">Meet the designers</a>
-        <ul class="dropdown">
-          <li><a href="">Anja</a></li>
-          <li><a href="">Miri</a></li>
-          <li><a href="">Otazu</a></li>
-          <li><a href="">TheP.</a></li>
-          <li><a href="">Giejo</a></li>
-          <li><a href="">Manley</a></li>
-          <li><a href="">Anne Sylvain</a></li>
-          <li><a href="">Emy Mack</a></li>
-          <li><a href="">Constance Boutet</a></li>
-          <li><a href="">Bernard Delettrez</a></li>
-          <li><a href="">Maison About</a></li>
-          <li><a href="">Mes Dames</a></li>
-          <li><a href="">Astrid Sarkissan</a></li>
-          <li><a href="">Gaffer and Fluf</a></li>
-          <li><a href="">Materia Prime</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown"><a href="#" class="no-dec">Clothing</a>
-        <ul class="dropdown">
+          <li class="active"><a href="#" class="no-dec">What's New</a></li>
+
+          <li class="has-dropdown">
+            <a href="#" class="no-dec" data-dropdown="drop2">Meet the designers</a>
+            <ul class="dropdown">
+              <li><a href="">Anja</a></li>
+              <li><a href="">Miri</a></li>
+              <li><a href="">Otazu</a></li>
+              <li><a href="">TheP.</a></li>
+              <li><a href="">Giejo</a></li>
+              <li><a href="">Manley</a></li>
+              <li><a href="">Anne Sylvain</a></li>
+              <li><a href="">Emy Mack</a></li>
+              <li><label><a href=""><strong>More</strong></a></label></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" class="no-dec">Clothing</a>
+            <ul class="dropdown">
               <li><a href="#">Dresses</a> </li>
               <li><a href="#">Jackets and Vests</a></li>
               <li><a href="#">Swimwear</a></li>
               <li><a href="#">Tops</a></li>
               <li><a href="#">Bottoms</a></li>
               <li><a href="#">Jumpsuits</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown"><a href="#" class="no-dec">Accessories</a>
-        <ul class="dropdown">
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#" class="no-dec">Accessories</a>
+            <ul class="dropdown">
               <li><a href="#">Jewelery</a> </li>
               <li><a href="#">Bags</a></li>
               <li><a href="#">Sunglasses</a></li>
               <li><a href="#">Shoes</a></li>
               <li><a href="#">Scarves</a></li>
-        </ul>
-      </li>
-      <li><a href="" class="no-dec">Sale</a></li>
-    </ul>
-  </section>
-    <!-- Right Nav Section -->
-</nav>
-      <ul class="inline-list user-setting">
-        <li><a href="" data-dropdown="drop1"><img src="https://profile-a.xx.fbcdn.net/hprofile-ash3/23010_761235354_408881299_n.jpg" height="42" width="42" alt="Vinay Raghu"></a></li>
-        <li><a href="" data-dropdown="drop2"><i class="icon-dollar icon-2x icon-light icon-border icon-fixed-width"></i></a></li>
-        <li class="cart"><a href="" data-dropdown="drop3"><i class="icon-circle icon-2x icon-light icon-border icon-fixed-width"></i><span class="cartno">2</span></a></li>
-      </ul>
-      <div id="drop1" class="f-dropdown content small">
-        <div class="large-12 columns">
-          <div class="large-5 columns"><img src="http://placehold.it/150x150" alt=""></div>
-          <div class="large-7 columns">
-            <p>Welcome Vinay Raghu!</p>
-            <ul class="inline-list">
-              <li><a href="" class="user-setting-content border-top-bottom-thin no-dec">My Account</a></li>
-              <li><a href="" class="user-setting-content border-top-bottom-thin no-dec">Sign Out</a></li>
             </ul>
-            </div>
-            <div class="large-6 columns"></div>
-          </div>
+          </li>
+          <li><a href="" class="no-dec">Sale</a></li>
+        </ul>
+      </section>
+      <!-- Right Nav Section -->
+    </nav>
+    <ul class="inline-list user-setting">
+<!--       <li>
+        <a href="" data-dropdown="drop1" class="no-dec">
+          <span>Vinay Raghu</span>
+          <img src="https://profile-a.xx.fbcdn.net/hprofile-ash3/23010_761235354_408881299_n.jpg" class="user-image" alt="Vinay Raghu">
+        </a>
+      </li> -->
+      <li id="trigger-menu-cart">
+        <i class="icon-circle icon-large inline-icon settings-icon"></i>
+      </li>
+      <li id="trigger-menu-settings">
+        Vinay Raghu
+        <img src="http://placehold.it/40x40" alt="" class="user-img">
+      </li>
+      <!--       <li class="cart"><a href="" data-dropdown="drop3"><i class="icon-circle icon-2x icon-light icon-border icon-fixed-width"></i><span class="cartno">2</span></a></li> -->
+    </ul>
+  </div>
+  <div class="settings-menu" id="menu-settings">
+    <div class="pane-container">
+      <div class="pane-1">
+        <div class="small-6 columns">
+          <a href=""></a><img src="http://placehold.it/150x150" alt="">
+        </div>
+        <div class="small-6 columns">
+          <ul class="no-bullet user-setting-links no-dec">
+            <li><a href="">My Profile</a></li>
+            <li id="trigger-preferences-pane"><a href="">Settings</a></li>
+            <li><a href="">Sign Out</a></li>
+          </ul>
         </div>
       </div>
-      <div class="clearfix"></div>
+      <div class="pane-2">
+        <div class="styled-select">
+          <label>Language</label>
+          <select>
+            <option>Here is the first option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+            <option>The second option</option>
+          </select>
+        </div>
+
+        <div class="styled-select">
+         <label>Currency</label>
+         <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+        </select>
+      </div>
+      <div class="styled-select">
+        <label>Country</label>
+        <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+          <option>The second option</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <a href="#" id="trigger-settings-pane">Back</a>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="settings-menu" id="menu-cart">
+  <img src="http://placehold.it/300x300" alt="">
+</div>
+
 <div class="row">
   <div class="large-12 columns">
     <div class="main-holder">
@@ -149,9 +209,31 @@
     </div>
     <p></p>
 
-    <h4 class="futura-heading border-top-bottom collection-title">
-      Not for the shy
-    </h4>
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="collection-list">
+          <li class="active">
+            <a href="" class="collection-title">Spring Summer 13</a>
+          </li>
+          <li><a href="" class="collection-title">Awakening</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-4 small-4 columns">
+        <div class="sorting">
+          <ul class="square-inline">
+             <li> Sort by:</li>
+             <li><a href="" class="selected">Price</a></li>
+             <li><a href="">Name</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="large-4 small-4 columns">
+
+      </div>
+    </div>
+    <div class="row">
         <ul class="small-block-grid-2 large-block-grid-4">
           <li class="text-center">
             <img src="http://placehold.it/320x480" alt="" class="border-bottom-thick"><br>
@@ -229,7 +311,7 @@
 
         </ul>
       </div>
-
+  </div>
     </div>
 </div>
   <footer class="black-bg large-12 columns">
@@ -326,6 +408,28 @@ document.write('<script src=' +
 
 <script>
 $(document).foundation();
+</script>
+<script>
+$('#trigger-menu-settings').click( function() {
+  $('#menu-cart').removeClass('open');
+  $('#menu-settings').toggleClass('open');
+});
+</script>
+<script>
+$('#trigger-menu-cart').click( function() {
+  $('#menu-cart').toggleClass('open');
+  $('#menu-settings').removeClass('open');
+});
+</script>
+<script>
+$('#trigger-preferences-pane').click(function() {
+  $('.pane-1, .pane-2').addClass('slide-left');
+  event.preventDefault();
+});
+$('#trigger-settings-pane').click(function() {
+  $('.pane-1, .pane-2').removeClass('slide-left');
+  event.preventDefault();
+});
 </script>
 </body>
 </html>

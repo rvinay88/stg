@@ -1,21 +1,3 @@
-$border-thick: 0.4rem;
-$border-thin: 0.1rem;
-
-@mixin border-top-bottom($border-prop, $border-thickness: 0.2rem){
-    border: solid $primary-color;
-    @if $border-prop == top{
-        border-width: $border-thickness 0 0;
-    }
-    @else if $border-prop == bottom{
-        border-width: 0 0 $border-thickness;
-    }
-    @else if $border-prop == top-bottom {
-        border-width: $border-thickness 0;
-    }
-    @else {
-
-    }
-}
 .border-top{
   @include border-top-bottom(top);
   }
@@ -80,9 +62,14 @@ $border-thin: 0.1rem;
 }
 
 .collection-title{
+  @extend .futura;
+  text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  font-size: emCalc(20);
+  font-size: emCalc(18);
+  padding: emCalc(5px) 0;
+  line-height: emCalc(21px); //From r2s
+  font-weight: bold;
 }
 
 .icon-footer{
@@ -143,19 +130,17 @@ $border-thin: 0.1rem;
       overflow: hidden;
 }
   .styled-select select {
-   background: transparent;
    width: 100%;
    padding-#{$default-float}: $form-spacing / 2;
    border: 0;
    outline: none;
    @include radius(4px);
    background-color: $tertiary-color;
-   height: 42px;
-   -webkit-appearance: none;
-   display: inline-block;
    font-family: Helvetica;
    font-size: emCalc(16px);
    color: $secondary-color;
+   -webkit-appearance: none;
+   height: 42px;
    margin: 0 0 $form-spacing 0;
    }
 
@@ -183,3 +168,10 @@ $border-thin: 0.1rem;
   float: left;
   margin-left: 0;
   position: static; }
+
+.sorting{
+  background-color: $tertiary-color;
+  padding: emCalc(5px);
+  display: inline-block;
+  margin-bottom: .5rem;
+}

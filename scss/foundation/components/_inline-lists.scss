@@ -25,20 +25,37 @@ $inline-list-children-display: inline !default;
 //
 
 // We use this mixin to create inline lists
-@mixin inline-list {
+@mixin inline-list($list-style: none) {
   margin: $inline-list-top-margin auto $inline-list-top-margin auto; //Bottom Margin affects footer
   margin-#{$default-float}: $inline-list-default-float-margin;
   margin-#{$opposite-direction}: $inline-list-opposite-margin;
   padding: $inline-list-padding;
-  list-style: none;
+  @if ($list-style == square ){
+    list-style-type: square;
+  }
+  @else{
+    list-style: $list-style;
+  }
   overflow: $inline-list-overflow;
   vertical-align: middle;
-
   & > li {
-    list-style: none;
+    list-style: $list-style;
+    @if ($list-style == square ){
+      list-style-type: square;
+    }
+
+    @if ($list-style == square ){
+      &:first-child{
+        list-style-type: none !important;
+      }
+    }
+
     float: $default-float;
     margin-#{$default-float}: emCalc(10);
-    display: $inline-list-display;
+    @if ($list-style == none){
+      display: $inline-list-display; //Removing this displays square bullets
+    }
+
     &>* { display: $inline-list-children-display; }
   }
 }
@@ -63,5 +80,40 @@ $inline-list-children-display: inline !default;
       }
     }
   }
+  .square-inline{
+    @include inline-list(square);
+    > li {
+      margin-#{$default-float}: 1.625rem !important;
+    }
+    a{
+      color: $secondary-color;
+    }
+    .selected{
+      font-weight: bold;
+    }
+  }
+}
 
+.collection-list{
+  @include inline-list(square);
+  > li {
+    padding: emCalc(20px) 0;
+    margin-#{$opposite-direction}: 1rem !important;
+    // &:first-child{
+    //   margin-#{$default-float}: 0 !important;
+    // }
+    a{
+      color: $secondary-color !important;
+      &:hover{
+        text-decoration: none;
+        color: $primary-color !important;
+        @include border-top-bottom(top-bottom);
+      }
+    }
+    &.active > a{
+      @include border-top-bottom(top-bottom);
+      color: $primary-color !important;
+    }
+    margin-bottom: 0.5rem;
+  }
 }
