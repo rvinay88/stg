@@ -28,20 +28,31 @@
   @include border-top-bottom(top-bottom, $border-thin);
 }
 
-.with-dots:before, .with-dots:after{
-  content: "";
-  position: absolute;
-  display: inline-block;
-  bottom: 49%;
-  width: emCalc(5px);
-  height: emCalc(5px);
-  background: $primary-color;
+.with-dots
+{
+  &:before, &:after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 49%;
+    width: emCalc(5px);
+    height: emCalc(5px);
+    background: $primary-color;
+  }
+  &:before{
+    left: 0.6rem;
+  }
+  &:after{
+    right: 0.6rem;
+  }
 }
-.with-dots:before{
-  left: 0.6rem;
-}
-.with-dots:after{
-  right: 0.6rem;
+
+.tree-title{
+  @extend .collection-title;
+  @extend .with-dots;
+  @extend .border-top-bottom;
+  width: 100%;
+  text-align: center;
 }
 
 .designer-heading{

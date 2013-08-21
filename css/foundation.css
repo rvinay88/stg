@@ -1112,7 +1112,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #4d4d4d;
     line-height: 0; }
 
-.futura, .futura-heading, .collection-title, .black-bar {
+.futura, .futura-heading, .collection-title, .tree-title, .black-bar {
   font-family: futura; }
 
 .futura-heading {
@@ -4847,7 +4847,7 @@ a.th {
   border: solid black;
   border-width: 0 0 0.2rem; }
 
-.border-top-bottom {
+.border-top-bottom, .tree-title {
   border: solid black;
   border-width: 0.2rem 0; }
 
@@ -4875,7 +4875,7 @@ a.th {
   border: solid black;
   border-width: 0.1rem 0; }
 
-.with-dots:before, .with-dots:after {
+.with-dots:before, .tree-title:before, .with-dots:after, .tree-title:after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -4883,12 +4883,14 @@ a.th {
   width: 0.3125rem;
   height: 0.3125rem;
   background: black; }
-
-.with-dots:before {
+.with-dots:before, .tree-title:before {
   left: 0.6rem; }
-
-.with-dots:after {
+.with-dots:after, .tree-title:after {
   right: 0.6rem; }
+
+.tree-title {
+  width: 100%;
+  text-align: center; }
 
 .designer-heading {
   display: inline-block;
@@ -4904,7 +4906,7 @@ a.th {
 .designer-image {
   margin-bottom: 1rem; }
 
-.collection-title {
+.collection-title, .tree-title {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
