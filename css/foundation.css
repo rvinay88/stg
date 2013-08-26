@@ -2269,7 +2269,8 @@ label.error {
     [data-section='accordion'] > .section.active > .content,
     [data-section='accordion'] > [data-section-region].active > [data-section-content],
     [data-section='accordion'] > [data-section-region].active > .content, .section-container.accordion > section.active > [data-section-content], .section-container.accordion > section.active > .content, .section-container.accordion > .section.active > [data-section-content], .section-container.accordion > .section.active > .content, .section-container.accordion > [data-section-region].active > [data-section-content], .section-container.accordion > [data-section-region].active > .content {
-      display: block; }
+      display: block;
+      margin-top: 0.625rem; }
     [data-section=''] > section:not(.active), [data-section=''] > .section:not(.active), [data-section=''] > [data-section-region]:not(.active), [data-section='auto'] > section:not(.active), [data-section='auto'] > .section:not(.active), [data-section='auto'] > [data-section-region]:not(.active), .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active), .section-container.auto > [data-section-region]:not(.active),
     [data-section='vertical-tabs'] > section:not(.active),
     [data-section='vertical-tabs'] > .section:not(.active),
@@ -2326,7 +2327,7 @@ label.error {
   .section-container.horizontal-nav > .section > .title,
   .section-container.accordion > section > .title,
   .section-container.accordion > .section > .title {
-    background-color: #efefef;
+    background-color: white;
     cursor: pointer;
     border: solid 1px #cccccc; }
     .section-container.auto > section > .title a, .section-container.auto > .section > .title a,
@@ -2338,20 +2339,23 @@ label.error {
     .section-container.horizontal-nav > .section > .title a,
     .section-container.accordion > section > .title a,
     .section-container.accordion > .section > .title a {
-      padding: 0.9375rem;
-      color: #333333;
+      padding: 0.625rem;
+      color: white;
+      text-transform: uppercase;
       font-size: 0.875rem;
-      background: none; }
-    .section-container.auto > section > .title:hover, .section-container.auto > .section > .title:hover,
-    .section-container.vertical-tabs > section > .title:hover,
-    .section-container.vertical-tabs > .section > .title:hover,
-    .section-container.vertical-nav > section > .title:hover,
-    .section-container.vertical-nav > .section > .title:hover,
-    .section-container.horizontal-nav > section > .title:hover,
-    .section-container.horizontal-nav > .section > .title:hover,
-    .section-container.accordion > section > .title:hover,
-    .section-container.accordion > .section > .title:hover {
-      background-color: #e2e2e2; }
+      text-decoration: none;
+      background: #000; }
+      .section-container.auto > section > .title a:hover, .section-container.auto > .section > .title a:hover,
+      .section-container.vertical-tabs > section > .title a:hover,
+      .section-container.vertical-tabs > .section > .title a:hover,
+      .section-container.vertical-nav > section > .title a:hover,
+      .section-container.vertical-nav > .section > .title a:hover,
+      .section-container.horizontal-nav > section > .title a:hover,
+      .section-container.horizontal-nav > .section > .title a:hover,
+      .section-container.accordion > section > .title a:hover,
+      .section-container.accordion > .section > .title a:hover {
+        background-color: white;
+        color: black; }
   .section-container.auto > section > .content, .section-container.auto > .section > .content,
   .section-container.vertical-tabs > section > .content,
   .section-container.vertical-tabs > .section > .content,
@@ -2361,7 +2365,7 @@ label.error {
   .section-container.horizontal-nav > .section > .content,
   .section-container.accordion > section > .content,
   .section-container.accordion > .section > .content {
-    padding: 0.9375rem;
+    padding: 0.625rem;
     background-color: white;
     border: solid 1px #cccccc; }
     .section-container.auto > section > .content > *:last-child, .section-container.auto > .section > .content > *:last-child,
@@ -2394,26 +2398,17 @@ label.error {
     .section-container.accordion > section > .content > *:last-child:not(.flex-video),
     .section-container.accordion > .section > .content > *:last-child:not(.flex-video) {
       padding-bottom: 0; }
-  .section-container.auto > section.active > .title, .section-container.auto > .section.active > .title,
-  .section-container.vertical-tabs > section.active > .title,
-  .section-container.vertical-tabs > .section.active > .title,
-  .section-container.vertical-nav > section.active > .title,
-  .section-container.vertical-nav > .section.active > .title,
-  .section-container.horizontal-nav > section.active > .title,
-  .section-container.horizontal-nav > .section.active > .title,
-  .section-container.accordion > section.active > .title,
-  .section-container.accordion > .section.active > .title {
-    background: #d5d5d5; }
-    .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a,
-    .section-container.vertical-tabs > section.active > .title a,
-    .section-container.vertical-tabs > .section.active > .title a,
-    .section-container.vertical-nav > section.active > .title a,
-    .section-container.vertical-nav > .section.active > .title a,
-    .section-container.horizontal-nav > section.active > .title a,
-    .section-container.horizontal-nav > .section.active > .title a,
-    .section-container.accordion > section.active > .title a,
-    .section-container.accordion > .section.active > .title a {
-      color: #333333; }
+  .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a,
+  .section-container.vertical-tabs > section.active > .title a,
+  .section-container.vertical-tabs > .section.active > .title a,
+  .section-container.vertical-nav > section.active > .title a,
+  .section-container.vertical-nav > .section.active > .title a,
+  .section-container.horizontal-nav > section.active > .title a,
+  .section-container.horizontal-nav > .section.active > .title a,
+  .section-container.accordion > section.active > .title a,
+  .section-container.accordion > .section.active > .title a {
+    background: white;
+    color: black; }
   .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active),
   .section-container.vertical-tabs > section:not(.active),
   .section-container.vertical-tabs > .section:not(.active),
@@ -2451,7 +2446,8 @@ label.error {
   [data-section='tabs'] > section > [data-section-content], [data-section='tabs'] > section > .content, [data-section='tabs'] > .section > [data-section-content], [data-section='tabs'] > .section > .content, [data-section='tabs'] > [data-section-region] > [data-section-content], [data-section='tabs'] > [data-section-region] > .content, .section-container.tabs > section > [data-section-content], .section-container.tabs > section > .content, .section-container.tabs > .section > [data-section-content], .section-container.tabs > .section > .content, .section-container.tabs > [data-section-region] > [data-section-content], .section-container.tabs > [data-section-region] > .content {
     display: none; }
   [data-section='tabs'] > section.active > [data-section-content], [data-section='tabs'] > section.active > .content, [data-section='tabs'] > .section.active > [data-section-content], [data-section='tabs'] > .section.active > .content, [data-section='tabs'] > [data-section-region].active > [data-section-content], [data-section='tabs'] > [data-section-region].active > .content, .section-container.tabs > section.active > [data-section-content], .section-container.tabs > section.active > .content, .section-container.tabs > .section.active > [data-section-content], .section-container.tabs > .section.active > .content, .section-container.tabs > [data-section-region].active > [data-section-content], .section-container.tabs > [data-section-region].active > .content {
-    display: block; }
+    display: block;
+    margin-top: 0.625rem; }
   [data-section='tabs'] > section:not(.active), [data-section='tabs'] > .section:not(.active), [data-section='tabs'] > [data-section-region]:not(.active), .section-container.tabs > section:not(.active), .section-container.tabs > .section:not(.active), .section-container.tabs > [data-section-region]:not(.active) {
     padding: 0 !important; }
   [data-section='tabs'] > section > [data-section-title], [data-section='tabs'] > section > .title, [data-section='tabs'] > .section > [data-section-title], [data-section='tabs'] > .section > .title, [data-section='tabs'] > [data-section-region] > [data-section-title], [data-section='tabs'] > [data-section-region] > .title, .section-container.tabs > section > [data-section-title], .section-container.tabs > section > .title, .section-container.tabs > .section > [data-section-title], .section-container.tabs > .section > .title, .section-container.tabs > [data-section-region] > [data-section-title], .section-container.tabs > [data-section-region] > .title {
@@ -2463,18 +2459,21 @@ label.error {
 .section-container.tabs {
   border: none; }
   .section-container.tabs > section > .title, .section-container.tabs > .section > .title {
-    background-color: #efefef;
+    background-color: white;
     cursor: pointer;
     border: solid 1px #cccccc; }
     .section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
-      padding: 0.9375rem;
-      color: #333333;
+      padding: 0.625rem;
+      color: white;
+      text-transform: uppercase;
       font-size: 0.875rem;
-      background: none; }
-    .section-container.tabs > section > .title:hover, .section-container.tabs > .section > .title:hover {
-      background-color: #e2e2e2; }
+      text-decoration: none;
+      background: #000; }
+      .section-container.tabs > section > .title a:hover, .section-container.tabs > .section > .title a:hover {
+        background-color: white;
+        color: black; }
   .section-container.tabs > section > .content, .section-container.tabs > .section > .content {
-    padding: 0.9375rem;
+    padding: 0.625rem;
     background-color: white;
     border: solid 1px #cccccc; }
     .section-container.tabs > section > .content > *:last-child, .section-container.tabs > .section > .content > *:last-child {
@@ -2483,10 +2482,9 @@ label.error {
       padding-top: 0; }
     .section-container.tabs > section > .content > *:last-child:not(.flex-video), .section-container.tabs > .section > .content > *:last-child:not(.flex-video) {
       padding-bottom: 0; }
-  .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
-    background: white; }
-    .section-container.tabs > section.active > .title a, .section-container.tabs > .section.active > .title a {
-      color: #333333; }
+  .section-container.tabs > section.active > .title a, .section-container.tabs > .section.active > .title a {
+    background: white;
+    color: black; }
   .section-container.tabs > section:not(.active), .section-container.tabs > .section:not(.active) {
     padding: 0 !important; }
   .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
@@ -2509,7 +2507,8 @@ label.error {
     [data-section=''] > section > [data-section-content], [data-section=''] > section > .content, [data-section=''] > .section > [data-section-content], [data-section=''] > .section > .content, [data-section=''] > [data-section-region] > [data-section-content], [data-section=''] > [data-section-region] > .content, [data-section='auto'] > section > [data-section-content], [data-section='auto'] > section > .content, [data-section='auto'] > .section > [data-section-content], [data-section='auto'] > .section > .content, [data-section='auto'] > [data-section-region] > [data-section-content], [data-section='auto'] > [data-section-region] > .content, .section-container.auto > section > [data-section-content], .section-container.auto > section > .content, .section-container.auto > .section > [data-section-content], .section-container.auto > .section > .content, .section-container.auto > [data-section-region] > [data-section-content], .section-container.auto > [data-section-region] > .content {
       display: none; }
     [data-section=''] > section.active > [data-section-content], [data-section=''] > section.active > .content, [data-section=''] > .section.active > [data-section-content], [data-section=''] > .section.active > .content, [data-section=''] > [data-section-region].active > [data-section-content], [data-section=''] > [data-section-region].active > .content, [data-section='auto'] > section.active > [data-section-content], [data-section='auto'] > section.active > .content, [data-section='auto'] > .section.active > [data-section-content], [data-section='auto'] > .section.active > .content, [data-section='auto'] > [data-section-region].active > [data-section-content], [data-section='auto'] > [data-section-region].active > .content, .section-container.auto > section.active > [data-section-content], .section-container.auto > section.active > .content, .section-container.auto > .section.active > [data-section-content], .section-container.auto > .section.active > .content, .section-container.auto > [data-section-region].active > [data-section-content], .section-container.auto > [data-section-region].active > .content {
-      display: block; }
+      display: block;
+      margin-top: 0.625rem; }
     [data-section=''] > section:not(.active), [data-section=''] > .section:not(.active), [data-section=''] > [data-section-region]:not(.active), [data-section='auto'] > section:not(.active), [data-section='auto'] > .section:not(.active), [data-section='auto'] > [data-section-region]:not(.active), .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active), .section-container.auto > [data-section-region]:not(.active) {
       padding: 0 !important; }
     [data-section=''] > section > [data-section-title], [data-section=''] > section > .title, [data-section=''] > .section > [data-section-title], [data-section=''] > .section > .title, [data-section=''] > [data-section-region] > [data-section-title], [data-section=''] > [data-section-region] > .title, [data-section='auto'] > section > [data-section-title], [data-section='auto'] > section > .title, [data-section='auto'] > .section > [data-section-title], [data-section='auto'] > .section > .title, [data-section='auto'] > [data-section-region] > [data-section-title], [data-section='auto'] > [data-section-region] > .title, .section-container.auto > section > [data-section-title], .section-container.auto > section > .title, .section-container.auto > .section > [data-section-title], .section-container.auto > .section > .title, .section-container.auto > [data-section-region] > [data-section-title], .section-container.auto > [data-section-region] > .title {
@@ -2521,18 +2520,21 @@ label.error {
   .section-container.auto {
     border: none; }
     .section-container.auto > section > .title, .section-container.auto > .section > .title {
-      background-color: #efefef;
+      background-color: white;
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
-        padding: 0.9375rem;
-        color: #333333;
+        padding: 0.625rem;
+        color: white;
+        text-transform: uppercase;
         font-size: 0.875rem;
-        background: none; }
-      .section-container.auto > section > .title:hover, .section-container.auto > .section > .title:hover {
-        background-color: #e2e2e2; }
+        text-decoration: none;
+        background: #000; }
+        .section-container.auto > section > .title a:hover, .section-container.auto > .section > .title a:hover {
+          background-color: white;
+          color: black; }
     .section-container.auto > section > .content, .section-container.auto > .section > .content {
-      padding: 0.9375rem;
+      padding: 0.625rem;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.auto > section > .content > *:last-child, .section-container.auto > .section > .content > *:last-child {
@@ -2541,10 +2543,9 @@ label.error {
         padding-top: 0; }
       .section-container.auto > section > .content > *:last-child:not(.flex-video), .section-container.auto > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    .section-container.auto > section.active > .title, .section-container.auto > .section.active > .title {
-      background: white; }
-      .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a {
-        color: #333333; }
+    .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a {
+      background: white;
+      color: black; }
     .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active) {
       padding: 0 !important; }
     .section-container.auto > section.active > .title, .section-container.auto > .section.active > .title {
@@ -2573,7 +2574,8 @@ label.error {
     [data-section='vertical-tabs'] > section > [data-section-content], [data-section='vertical-tabs'] > section > .content, [data-section='vertical-tabs'] > .section > [data-section-content], [data-section='vertical-tabs'] > .section > .content, [data-section='vertical-tabs'] > [data-section-region] > [data-section-content], [data-section='vertical-tabs'] > [data-section-region] > .content, .section-container.vertical-tabs > section > [data-section-content], .section-container.vertical-tabs > section > .content, .section-container.vertical-tabs > .section > [data-section-content], .section-container.vertical-tabs > .section > .content, .section-container.vertical-tabs > [data-section-region] > [data-section-content], .section-container.vertical-tabs > [data-section-region] > .content {
       display: none; }
     [data-section='vertical-tabs'] > section.active > [data-section-content], [data-section='vertical-tabs'] > section.active > .content, [data-section='vertical-tabs'] > .section.active > [data-section-content], [data-section='vertical-tabs'] > .section.active > .content, [data-section='vertical-tabs'] > [data-section-region].active > [data-section-content], [data-section='vertical-tabs'] > [data-section-region].active > .content, .section-container.vertical-tabs > section.active > [data-section-content], .section-container.vertical-tabs > section.active > .content, .section-container.vertical-tabs > .section.active > [data-section-content], .section-container.vertical-tabs > .section.active > .content, .section-container.vertical-tabs > [data-section-region].active > [data-section-content], .section-container.vertical-tabs > [data-section-region].active > .content {
-      display: block; }
+      display: block;
+      margin-top: 0.625rem; }
     [data-section='vertical-tabs'] > section:not(.active), [data-section='vertical-tabs'] > .section:not(.active), [data-section='vertical-tabs'] > [data-section-region]:not(.active), .section-container.vertical-tabs > section:not(.active), .section-container.vertical-tabs > .section:not(.active), .section-container.vertical-tabs > [data-section-region]:not(.active) {
       padding: 0 !important; }
     [data-section='vertical-tabs'] > section > [data-section-title], [data-section='vertical-tabs'] > section > .title, [data-section='vertical-tabs'] > .section > [data-section-title], [data-section='vertical-tabs'] > .section > .title, [data-section='vertical-tabs'] > [data-section-region] > [data-section-title], [data-section='vertical-tabs'] > [data-section-region] > .title, .section-container.vertical-tabs > section > [data-section-title], .section-container.vertical-tabs > section > .title, .section-container.vertical-tabs > .section > [data-section-title], .section-container.vertical-tabs > .section > .title, .section-container.vertical-tabs > [data-section-region] > [data-section-title], .section-container.vertical-tabs > [data-section-region] > .title {
@@ -2589,18 +2591,21 @@ label.error {
   .section-container.vertical-tabs {
     border: none; }
     .section-container.vertical-tabs > section > .title, .section-container.vertical-tabs > .section > .title {
-      background-color: #efefef;
+      background-color: white;
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > .section > .title a {
-        padding: 0.9375rem;
-        color: #333333;
+        padding: 0.625rem;
+        color: white;
+        text-transform: uppercase;
         font-size: 0.875rem;
-        background: none; }
-      .section-container.vertical-tabs > section > .title:hover, .section-container.vertical-tabs > .section > .title:hover {
-        background-color: #e2e2e2; }
+        text-decoration: none;
+        background: #000; }
+        .section-container.vertical-tabs > section > .title a:hover, .section-container.vertical-tabs > .section > .title a:hover {
+          background-color: white;
+          color: black; }
     .section-container.vertical-tabs > section > .content, .section-container.vertical-tabs > .section > .content {
-      padding: 0.9375rem;
+      padding: 0.625rem;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.vertical-tabs > section > .content > *:last-child, .section-container.vertical-tabs > .section > .content > *:last-child {
@@ -2609,16 +2614,15 @@ label.error {
         padding-top: 0; }
       .section-container.vertical-tabs > section > .content > *:last-child:not(.flex-video), .section-container.vertical-tabs > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    .section-container.vertical-tabs > section.active > .title, .section-container.vertical-tabs > .section.active > .title {
-      background: #d5d5d5; }
-      .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a {
-        color: #333333; }
+    .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a {
+      background: white;
+      color: black; }
     .section-container.vertical-tabs > section:not(.active), .section-container.vertical-tabs > .section:not(.active) {
       padding: 0 !important; }
     .section-container.vertical-tabs > section.active, .section-container.vertical-tabs > .section.active {
       padding-left: 12.4375rem; }
       .section-container.vertical-tabs > section.active > .title, .section-container.vertical-tabs > .section.active > .title {
-        background-color: #d5d5d5; }
+        background-color: white; }
 
   [data-section='vertical-nav'], .section-container.vertical-nav {
     width: 100%;
@@ -2646,7 +2650,8 @@ label.error {
       [data-section='vertical-nav'] > section > [data-section-content], [data-section='vertical-nav'] > section > .content, [data-section='vertical-nav'] > .section > [data-section-content], [data-section='vertical-nav'] > .section > .content, [data-section='vertical-nav'] > [data-section-region] > [data-section-content], [data-section='vertical-nav'] > [data-section-region] > .content, .section-container.vertical-nav > section > [data-section-content], .section-container.vertical-nav > section > .content, .section-container.vertical-nav > .section > [data-section-content], .section-container.vertical-nav > .section > .content, .section-container.vertical-nav > [data-section-region] > [data-section-content], .section-container.vertical-nav > [data-section-region] > .content {
         display: none; }
       [data-section='vertical-nav'] > section.active > [data-section-content], [data-section='vertical-nav'] > section.active > .content, [data-section='vertical-nav'] > .section.active > [data-section-content], [data-section='vertical-nav'] > .section.active > .content, [data-section='vertical-nav'] > [data-section-region].active > [data-section-content], [data-section='vertical-nav'] > [data-section-region].active > .content, .section-container.vertical-nav > section.active > [data-section-content], .section-container.vertical-nav > section.active > .content, .section-container.vertical-nav > .section.active > [data-section-content], .section-container.vertical-nav > .section.active > .content, .section-container.vertical-nav > [data-section-region].active > [data-section-content], .section-container.vertical-nav > [data-section-region].active > .content {
-        display: block; }
+        display: block;
+        margin-top: 0.625rem; }
       [data-section='vertical-nav'] > section:not(.active), [data-section='vertical-nav'] > .section:not(.active), [data-section='vertical-nav'] > [data-section-region]:not(.active), .section-container.vertical-nav > section:not(.active), .section-container.vertical-nav > .section:not(.active), .section-container.vertical-nav > [data-section-region]:not(.active) {
         padding: 0 !important; }
       [data-section='vertical-nav'] > section > [data-section-title], [data-section='vertical-nav'] > section > .title, [data-section='vertical-nav'] > .section > [data-section-title], [data-section='vertical-nav'] > .section > .title, [data-section='vertical-nav'] > [data-section-region] > [data-section-title], [data-section='vertical-nav'] > [data-section-region] > .title, .section-container.vertical-nav > section > [data-section-title], .section-container.vertical-nav > section > .title, .section-container.vertical-nav > .section > [data-section-title], .section-container.vertical-nav > .section > .title, .section-container.vertical-nav > [data-section-region] > [data-section-title], .section-container.vertical-nav > [data-section-region] > .title {
@@ -2664,18 +2669,21 @@ label.error {
   .section-container.vertical-nav {
     border: none; }
     .section-container.vertical-nav > section > .title, .section-container.vertical-nav > .section > .title {
-      background-color: #efefef;
+      background-color: white;
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > .title a {
-        padding: 0.9375rem;
-        color: #333333;
+        padding: 0.625rem;
+        color: white;
+        text-transform: uppercase;
         font-size: 0.875rem;
-        background: none; }
-      .section-container.vertical-nav > section > .title:hover, .section-container.vertical-nav > .section > .title:hover {
-        background-color: #e2e2e2; }
+        text-decoration: none;
+        background: #000; }
+        .section-container.vertical-nav > section > .title a:hover, .section-container.vertical-nav > .section > .title a:hover {
+          background-color: white;
+          color: black; }
     .section-container.vertical-nav > section > .content, .section-container.vertical-nav > .section > .content {
-      padding: 0.9375rem;
+      padding: 0.625rem;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.vertical-nav > section > .content > *:last-child, .section-container.vertical-nav > .section > .content > *:last-child {
@@ -2684,10 +2692,9 @@ label.error {
         padding-top: 0; }
       .section-container.vertical-nav > section > .content > *:last-child:not(.flex-video), .section-container.vertical-nav > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    .section-container.vertical-nav > section.active > .title, .section-container.vertical-nav > .section.active > .title {
-      background: #d5d5d5; }
-      .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a {
-        color: #333333; }
+    .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a {
+      background: white;
+      color: black; }
     .section-container.vertical-nav > section:not(.active), .section-container.vertical-nav > .section:not(.active) {
       padding: 0 !important; }
 
@@ -2717,7 +2724,8 @@ label.error {
       [data-section='horizontal-nav'] > section > [data-section-content], [data-section='horizontal-nav'] > section > .content, [data-section='horizontal-nav'] > .section > [data-section-content], [data-section='horizontal-nav'] > .section > .content, [data-section='horizontal-nav'] > [data-section-region] > [data-section-content], [data-section='horizontal-nav'] > [data-section-region] > .content, .section-container.horizontal-nav > section > [data-section-content], .section-container.horizontal-nav > section > .content, .section-container.horizontal-nav > .section > [data-section-content], .section-container.horizontal-nav > .section > .content, .section-container.horizontal-nav > [data-section-region] > [data-section-content], .section-container.horizontal-nav > [data-section-region] > .content {
         display: none; }
       [data-section='horizontal-nav'] > section.active > [data-section-content], [data-section='horizontal-nav'] > section.active > .content, [data-section='horizontal-nav'] > .section.active > [data-section-content], [data-section='horizontal-nav'] > .section.active > .content, [data-section='horizontal-nav'] > [data-section-region].active > [data-section-content], [data-section='horizontal-nav'] > [data-section-region].active > .content, .section-container.horizontal-nav > section.active > [data-section-content], .section-container.horizontal-nav > section.active > .content, .section-container.horizontal-nav > .section.active > [data-section-content], .section-container.horizontal-nav > .section.active > .content, .section-container.horizontal-nav > [data-section-region].active > [data-section-content], .section-container.horizontal-nav > [data-section-region].active > .content {
-        display: block; }
+        display: block;
+        margin-top: 0.625rem; }
       [data-section='horizontal-nav'] > section:not(.active), [data-section='horizontal-nav'] > .section:not(.active), [data-section='horizontal-nav'] > [data-section-region]:not(.active), .section-container.horizontal-nav > section:not(.active), .section-container.horizontal-nav > .section:not(.active), .section-container.horizontal-nav > [data-section-region]:not(.active) {
         padding: 0 !important; }
       [data-section='horizontal-nav'] > section > [data-section-title], [data-section='horizontal-nav'] > section > .title, [data-section='horizontal-nav'] > .section > [data-section-title], [data-section='horizontal-nav'] > .section > .title, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title], [data-section='horizontal-nav'] > [data-section-region] > .title, .section-container.horizontal-nav > section > [data-section-title], .section-container.horizontal-nav > section > .title, .section-container.horizontal-nav > .section > [data-section-title], .section-container.horizontal-nav > .section > .title, .section-container.horizontal-nav > [data-section-region] > [data-section-title], .section-container.horizontal-nav > [data-section-region] > .title {
@@ -2734,21 +2742,24 @@ label.error {
         min-width: 12.5rem; }
 
   .section-container.horizontal-nav {
-    background: #efefef;
+    background: white;
     border: 1px solid #cccccc; }
     .section-container.horizontal-nav > section > .title, .section-container.horizontal-nav > .section > .title {
-      background-color: #efefef;
+      background-color: white;
       cursor: pointer;
       border: solid 1px #cccccc; }
       .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > .title a {
-        padding: 0.9375rem;
-        color: #333333;
+        padding: 0.625rem;
+        color: white;
+        text-transform: uppercase;
         font-size: 0.875rem;
-        background: none; }
-      .section-container.horizontal-nav > section > .title:hover, .section-container.horizontal-nav > .section > .title:hover {
-        background-color: #e2e2e2; }
+        text-decoration: none;
+        background: #000; }
+        .section-container.horizontal-nav > section > .title a:hover, .section-container.horizontal-nav > .section > .title a:hover {
+          background-color: white;
+          color: black; }
     .section-container.horizontal-nav > section > .content, .section-container.horizontal-nav > .section > .content {
-      padding: 0.9375rem;
+      padding: 0.625rem;
       background-color: white;
       border: solid 1px #cccccc; }
       .section-container.horizontal-nav > section > .content > *:last-child, .section-container.horizontal-nav > .section > .content > *:last-child {
@@ -2757,10 +2768,9 @@ label.error {
         padding-top: 0; }
       .section-container.horizontal-nav > section > .content > *:last-child:not(.flex-video), .section-container.horizontal-nav > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    .section-container.horizontal-nav > section.active > .title, .section-container.horizontal-nav > .section.active > .title {
-      background: #d5d5d5; }
-      .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a {
-        color: #333333; }
+    .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a {
+      background: white;
+      color: black; }
     .section-container.horizontal-nav > section:not(.active), .section-container.horizontal-nav > .section:not(.active) {
       padding: 0 !important; } }
 .no-js [data-section], .no-js .section-container {
@@ -2786,7 +2796,8 @@ label.error {
     .no-js [data-section] > section > [data-section-content], .no-js [data-section] > section > .content, .no-js [data-section] > .section > [data-section-content], .no-js [data-section] > .section > .content, .no-js [data-section] > [data-section-region] > [data-section-content], .no-js [data-section] > [data-section-region] > .content, .no-js .section-container > section > [data-section-content], .no-js .section-container > section > .content, .no-js .section-container > .section > [data-section-content], .no-js .section-container > .section > .content, .no-js .section-container > [data-section-region] > [data-section-content], .no-js .section-container > [data-section-region] > .content {
       display: none; }
     .no-js [data-section] > section.active > [data-section-content], .no-js [data-section] > section.active > .content, .no-js [data-section] > .section.active > [data-section-content], .no-js [data-section] > .section.active > .content, .no-js [data-section] > [data-section-region].active > [data-section-content], .no-js [data-section] > [data-section-region].active > .content, .no-js .section-container > section.active > [data-section-content], .no-js .section-container > section.active > .content, .no-js .section-container > .section.active > [data-section-content], .no-js .section-container > .section.active > .content, .no-js .section-container > [data-section-region].active > [data-section-content], .no-js .section-container > [data-section-region].active > .content {
-      display: block; }
+      display: block;
+      margin-top: 0.625rem; }
     .no-js [data-section] > section:not(.active), .no-js [data-section] > .section:not(.active), .no-js [data-section] > [data-section-region]:not(.active), .no-js .section-container > section:not(.active), .no-js .section-container > .section:not(.active), .no-js .section-container > [data-section-region]:not(.active) {
       padding: 0 !important; }
     .no-js [data-section] > section > [data-section-title], .no-js [data-section] > section > .title, .no-js [data-section] > .section > [data-section-title], .no-js [data-section] > .section > .title, .no-js [data-section] > [data-section-region] > [data-section-title], .no-js [data-section] > [data-section-region] > .title, .no-js .section-container > section > [data-section-title], .no-js .section-container > section > .title, .no-js .section-container > .section > [data-section-title], .no-js .section-container > .section > .title, .no-js .section-container > [data-section-region] > [data-section-title], .no-js .section-container > [data-section-region] > .title {
@@ -2794,18 +2805,21 @@ label.error {
 .no-js .section-container {
   border-top: 1px solid #cccccc; }
   .no-js .section-container > section > .title, .no-js .section-container > .section > .title {
-    background-color: #efefef;
+    background-color: white;
     cursor: pointer;
     border: solid 1px #cccccc; }
     .no-js .section-container > section > .title a, .no-js .section-container > .section > .title a {
-      padding: 0.9375rem;
-      color: #333333;
+      padding: 0.625rem;
+      color: white;
+      text-transform: uppercase;
       font-size: 0.875rem;
-      background: none; }
-    .no-js .section-container > section > .title:hover, .no-js .section-container > .section > .title:hover {
-      background-color: #e2e2e2; }
+      text-decoration: none;
+      background: #000; }
+      .no-js .section-container > section > .title a:hover, .no-js .section-container > .section > .title a:hover {
+        background-color: white;
+        color: black; }
   .no-js .section-container > section > .content, .no-js .section-container > .section > .content {
-    padding: 0.9375rem;
+    padding: 0.625rem;
     background-color: white;
     border: solid 1px #cccccc; }
     .no-js .section-container > section > .content > *:last-child, .no-js .section-container > .section > .content > *:last-child {
@@ -2814,10 +2828,9 @@ label.error {
       padding-top: 0; }
     .no-js .section-container > section > .content > *:last-child:not(.flex-video), .no-js .section-container > .section > .content > *:last-child:not(.flex-video) {
       padding-bottom: 0; }
-  .no-js .section-container > section.active > .title, .no-js .section-container > .section.active > .title {
-    background: #d5d5d5; }
-    .no-js .section-container > section.active > .title a, .no-js .section-container > .section.active > .title a {
-      color: #333333; }
+  .no-js .section-container > section.active > .title a, .no-js .section-container > .section.active > .title a {
+    background: white;
+    color: black; }
   .no-js .section-container > section:not(.active), .no-js .section-container > .section:not(.active) {
     padding: 0 !important; }
   .no-js .section-container > section > .title, .no-js .section-container > .section > .title {

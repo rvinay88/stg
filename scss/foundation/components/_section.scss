@@ -9,12 +9,12 @@ $section-content-padding: emCalc(10) !default;
 $section-function-factor: 10% !default;
 
 // These style the titles
-$section-title-color: #333 !default;
-$section-title-color-active: #333 !default;
-$section-title-bg: #efefef !default;
-$section-title-bg-active: darken($section-title-bg, $section-function-factor) !default;
+$section-title-color: #fff !default;
+$section-title-color-active: $primary-color !default;
+$section-title-bg: #fff !default;
+$section-title-bg-active: #fff !default;
 $section-title-bg-active-tabs: #fff !default;
-$section-title-bg-hover: darken($section-title-bg, $section-function-factor / 2) !default;
+$section-title-bg-hover: #fff !default;
 
 // Want to control border size, here ya go!
 $section-border-size: 1px !default;
@@ -113,7 +113,10 @@ $active-region-selector: ".active" !default;
   }
 
   &#{$active-region-selector} {
-    & > [data-section-content], & > #{$content-selector} { display: block; }
+    & > [data-section-content], & > #{$content-selector}
+    { display: block;
+      margin-top: emCalc(10px);
+    }
   }
 
   &:not(#{$active-region-selector}) {
@@ -211,10 +214,15 @@ $active-region-selector: ".active" !default;
 	a {
       padding: $title-padding;
       color: $title-color;
+      text-transform: uppercase;
       font-size: $title-font-size;
-	  background: none;
+      text-decoration: none;
+	    background: #000;
+      &:hover {
+        background-color: $title-bg-hover;
+        color: $primary-color;
+      }
     }
-    &:hover { background-color: $title-bg-hover; }
   }
 
   & > #{$content-selector} {
@@ -229,8 +237,10 @@ $active-region-selector: ".active" !default;
 
   &#{$active-region-selector} {
 	& > #{$title-selector} {
-	  background: $title-bg-active;
-      a { color: $title-color-active; }
+      a {
+        background: $title-bg-active;
+        color: $title-color-active;
+      }
     }
   }
 
