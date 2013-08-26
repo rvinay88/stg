@@ -51,7 +51,6 @@
   @extend .collection-title;
   @extend .with-dots;
   @extend .border-top-bottom;
-  width: 100%;
   text-align: center;
 }
 
@@ -227,3 +226,4 @@
 .user-setting-labels{
   margin-top: emCalc(16);
 }
+
