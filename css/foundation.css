@@ -3252,6 +3252,8 @@ ul.user-setting {
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; }
+  .settings-menu .pane-1 {
+    padding-top: 1.875rem; }
 
 .slide-left {
   position: relative;
@@ -5029,6 +5031,9 @@ a.th {
   margin-bottom: 0.625rem; }
   .in-the-press img {
     margin-top: 0.625rem; }
+
+.user-setting-labels {
+  margin-top: 1rem; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {

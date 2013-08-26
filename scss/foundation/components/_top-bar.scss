@@ -638,6 +638,9 @@ ul.user-setting{
     left: 0;
     @include single-transition(all, 0.2s, ease-in);
   }
+  .pane-1{
+    padding-top: emCalc(30px);
+  }
 }
 
 
