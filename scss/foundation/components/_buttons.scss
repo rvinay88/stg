@@ -153,7 +153,7 @@ $button-disabled-opacity: 0.6 !default;
   // @if $radius == true { @include radius($button-radius); }
   // @else if $radius { @include radius($radius); }
 
-  @include radius($button-radius);
+  // @include radius($button-radius);
 
 }
 

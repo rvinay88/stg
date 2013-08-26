@@ -341,6 +341,7 @@ a:hover { cursor: $cursor-pointer-value; }
   // Miscellaneous useful HTML classes
   .left         { float: left !important; }
   .right        { float: right !important; }
+  .center       { margin: 0 auto; }
   .text-left    { text-align: left !important; }
   .text-right   { text-align: right !important; }
   .text-center  { text-align: center !important; }

@@ -1,0 +1,26 @@
+.comment,
+.comment-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.comment,
+.comment .comment {
+  margin-top: 15px;
+}
+
+.comment:first-child {
+  margin-top: 0;
+}
+
+.comment-object {
+  display: block;
+}
+
+.comment-heading {
+  margin: 0 0 5px;
+}
+
+.comment > .left {
+  margin-right: 10px;
+}
