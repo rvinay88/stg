@@ -50,11 +50,11 @@
   width: 200px !important;
   float: left;
   position: relative;
-  @media screen and (min-width: 768px) and (max-width: 834px) {
-    width: 180px !important;
-  }
-  @media screen and (min-width: 510px) and (max-width: 540px) {
-    width: 250px !important;
+  // @media screen and (min-width: 768px) and (max-width: 834px) {
+  //   width: 180px !important;
+  // }
+  @media screen and (min-width: 500px) and (max-width: 900px) {
+    width: 150px !important;
   }
 }
 .tree-title{
@@ -63,6 +63,9 @@
   @extend .border-top-bottom;
   text-align: center;
   width: 200px;
+  @media only screen and (min-width: 500px) and (max-width: 900px) {
+    width: 150px !important;
+  }
 }
 
 .designer-heading{
@@ -117,6 +120,7 @@
   padding-bottom: emCalc(10);
   text-transform: uppercase;
   font-size: emCalc(17);
+  margin: emCalc(20px) 0;
 }
 
 
@@ -200,6 +204,7 @@
   padding: emCalc(5px);
   display: inline-block;
   margin-bottom: .5rem;
+  width: 117px; //harcoding width so it doesn't stack on smaller screens
 }
 
 
@@ -216,7 +221,12 @@
   // width: 400px;
   margin-bottom: emCalc(10px);
 }
-
+.product-detail{
+  width: 100%;
+  @media #{$medium} {
+    width: 50% !important;
+  }
+}
 .product-detail > img {
   margin-bottom: emCalc(10px);
 }
@@ -239,9 +249,50 @@
   }
 }
 
-
-.user-setting-labels{
-  margin-top: emCalc(16);
+.product-title{
+  text-transform: uppercase;
+  font-size: emCalc(18px);
+  margin-top: emCalc(10px);
 }
 
+.product-sub-title{
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-size: emCalc(14px);
+  line-height: emCalc(20px);
+}
 
+.highlight-text{
+  border: 1px solid black;
+  color: $secondary-color;
+  font-size: emCalc(12px);
+  padding: emCalc(10px);
+  margin: emCalc(16px) 0;
+}
+
+.tab-content{
+  color: $secondary-color;
+}
+
+.product-options{
+  padding: emCalc(8px) 0;
+  @media #{$large} {
+  padding: emCalc(22px) 0;
+  }
+}
+
+.size{
+  padding: emCalc(5px);
+  font-size: emCalc(14px);
+}
+
+.add-buttons{
+  margin-right: 20px;
+}
+
+.long-button{
+  min-width: 185px;
+}
+.med-button{
+  min-width: 150px;
+}

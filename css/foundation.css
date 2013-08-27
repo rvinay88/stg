@@ -3210,12 +3210,9 @@ ul.user-setting {
     background-color: gray; }
 
 .cartno {
-  position: absolute;
-  bottom: 33%;
-  text-align: center;
-  color: black;
-  right: 10.54%;
-  font-weight: bold; }
+  display: inline;
+  color: white;
+  font-size: 0.75rem; }
 
 .user-setting-content {
   display: inline-block;
@@ -3226,7 +3223,6 @@ ul.user-setting {
   top: 45px;
   right: 0;
   width: 400px;
-  padding: 10px;
   height: 0;
   visibility: hidden;
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
@@ -3279,6 +3275,9 @@ ul.user-setting {
   padding: 0.375rem 0.75rem; }
   .user-setting-links > li a:hover {
     background-color: rgba(0, 0, 0, 0.25); }
+
+.user-setting-labels {
+  margin-top: 1rem; }
 
 @-webkit-keyframes rotate {
   from {
@@ -4889,16 +4888,16 @@ a.th {
   width: 200px !important;
   float: left;
   position: relative; }
-  @media screen and (min-width: 768px) and (max-width: 834px) {
+  @media screen and (min-width: 500px) and (max-width: 900px) {
     .tree-holder {
-      width: 180px !important; } }
-  @media screen and (min-width: 510px) and (max-width: 540px) {
-    .tree-holder {
-      width: 250px !important; } }
+      width: 150px !important; } }
 
 .tree-title {
   text-align: center;
   width: 200px; }
+  @media only screen and (min-width: 500px) and (max-width: 900px) {
+    .tree-title {
+      width: 150px !important; } }
 
 .designer-heading {
   display: inline-block;
@@ -4939,7 +4938,8 @@ a.th {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   text-transform: uppercase;
-  font-size: 1.0625rem; }
+  font-size: 1.0625rem;
+  margin: 1.25rem 0; }
 
 /*Logo*/
 .logo {
@@ -5026,7 +5026,8 @@ a.th {
   background-color: #eeeeee;
   padding: 0.3125rem;
   display: inline-block;
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  width: 117px; }
 
 .product-thumbs {
   margin-top: 0 !important; }
@@ -5035,6 +5036,12 @@ a.th {
 
 .product-main {
   margin-bottom: 0.625rem; }
+
+.product-detail {
+  width: 100%; }
+  @media only screen and (min-width: 1280px) {
+    .product-detail {
+      width: 50% !important; } }
 
 .product-detail > img {
   margin-bottom: 0.625rem; }
@@ -5047,8 +5054,45 @@ a.th {
     .in-the-press .hidden-image {
       display: none; } }
 
-.user-setting-labels {
-  margin-top: 1rem; }
+.product-title {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  margin-top: 0.625rem; }
+
+.product-sub-title {
+  text-transform: uppercase;
+  color: #666666;
+  font-size: 0.875rem;
+  line-height: 1.25rem; }
+
+.highlight-text {
+  border: 1px solid black;
+  color: #666666;
+  font-size: 0.75rem;
+  padding: 0.625rem;
+  margin: 1rem 0; }
+
+.tab-content {
+  color: #666666; }
+
+.product-options {
+  padding: 0.5rem 0; }
+  @media only screen and (min-width: 1440px) {
+    .product-options {
+      padding: 1.375rem 0; } }
+
+.size {
+  padding: 0.3125rem;
+  font-size: 0.875rem; }
+
+.add-buttons {
+  margin-right: 20px; }
+
+.long-button {
+  min-width: 185px; }
+
+.med-button {
+  min-width: 150px; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {

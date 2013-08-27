@@ -598,12 +598,9 @@ ul.user-setting{
   }
 }
 .cartno{
-    position: absolute;
-    bottom: 33%;
-    text-align: center;
-    color: black;
-    right: 10.54%;
-    font-weight: bold;
+  display: inline;
+  color: white;
+  font-size: emCalc(12px);
   }
 .user-setting-content{
   display: inline-block;
@@ -616,7 +613,6 @@ ul.user-setting{
   top: 45px;
   right: 0;
   width: 400px;
-  padding: 10px;
   height: 0;
   visibility: hidden;
   @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
@@ -676,4 +672,9 @@ ul.user-setting{
         }
     }
   }
+}
+
+
+.user-setting-labels{
+  margin-top: emCalc(16);
 }
