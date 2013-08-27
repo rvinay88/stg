@@ -46,12 +46,23 @@
     right: 0.6rem;
   }
 }
-
+.tree-holder{
+  width: 200px !important;
+  float: left;
+  position: relative;
+  @media screen and (min-width: 768px) and (max-width: 834px) {
+    width: 180px !important;
+  }
+  @media screen and (min-width: 510px) and (max-width: 540px) {
+    width: 250px !important;
+  }
+}
 .tree-title{
   @extend .collection-title;
   @extend .with-dots;
   @extend .border-top-bottom;
   text-align: center;
+  width: 200px;
 }
 
 .designer-heading{
@@ -221,9 +232,16 @@
   img {
     margin-top: emCalc(10px);
   }
+  .hidden-image{
+    @media screen and (min-width: 984px) and (max-width: 1304px) {
+      display: none;
+    }
+  }
 }
+
 
 .user-setting-labels{
   margin-top: emCalc(16);
 }
+
 

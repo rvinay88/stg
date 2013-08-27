@@ -617,15 +617,16 @@ ul.user-setting{
   right: 0;
   width: 400px;
   padding: 10px;
-  @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
-  visibility: hidden;
   height: 0;
+  visibility: hidden;
+  @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
   @include single-transition(all, 0.2s, ease-in);
-  z-index: 99;
-  background-color: #fff;
+  z-index: 1;
+  background-color: transparent;
   overflow: hidden;
   .pane-container{
     width: 800px;
+    min-height: emCalc(250px);
   }
   .pane-1, .pane-2{
     width: 400px;
@@ -633,10 +634,10 @@ ul.user-setting{
     padding-right: 30px;
     float: left;
     background-color: #fff;
-    min-height: emCalc(250px);
     position: relative;
     left: 0;
     @include single-transition(all, 0.2s, ease-in);
+    min-height: emCalc(250px);
   }
   .pane-1{
     padding-top: emCalc(30px);
