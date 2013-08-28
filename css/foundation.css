@@ -4872,7 +4872,7 @@ a.th {
   border: solid black;
   border-width: 0.1rem 0; }
 
-.with-dots:before, .with-dots:after {
+.with-dots:before, .tree-title:before, .with-dots:after, .tree-title:after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -4880,10 +4880,23 @@ a.th {
   width: 0.3125rem;
   height: 0.3125rem;
   background: black; }
-.with-dots:before {
+.with-dots:before, .tree-title:before {
   left: 0.6rem; }
-.with-dots:after {
+.with-dots:after, .tree-title:after {
   right: 0.6rem; }
+
+.wrapper {
+  width: 100%; }
+
+.tree-holder {
+  min-width: 200px;
+  width: 20%;
+  float: left; }
+
+.catalogue-holder {
+  width: 80%;
+  min-width: 300px;
+  float: right; }
 
 .tree-title {
   text-align: center;

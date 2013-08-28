@@ -46,9 +46,23 @@
     right: 0.6rem;
   }
 }
+.wrapper{
+  width: 100%;
+}
+.tree-holder{
+  min-width: 200px;
+  width: 20%;
+  float: left;
+}
+.catalogue-holder{
+  width: 80%;
+  min-width: 300px;
+  float: right;
+}
 .tree-title{
   @extend .collection-title;
   @extend .border-top-bottom;
+  @extend .with-dots;
   text-align: center;
   width: 100%;
 }
