@@ -375,6 +375,7 @@ a:hover { cursor: $cursor-pointer-value; }
     text-decoration: none;
     &.white-link{
       color: white;
+      font-size: emCalc(14px);
       &:hover{
         color: white;
       }

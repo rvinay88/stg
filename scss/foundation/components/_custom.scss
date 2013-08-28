@@ -46,29 +46,12 @@
     right: 0.6rem;
   }
 }
-.tree-holder{
-  width: 15% !important;
-  float: left;
-  position: relative;
-  left: 5%;
-  // @media screen and (min-width: 768px) and (max-width: 834px) {
-  //   width: 180px !important;
-  // }
-  @media screen and (min-width: 500px) and (max-width: 900px) {
-    width: 150px !important;
-  }
-}
 .tree-title{
   @extend .collection-title;
-  @extend .with-dots;
   @extend .border-top-bottom;
   text-align: center;
-  width: 200px;
-  @media only screen and (min-width: 500px) and (max-width: 900px) {
-    width: 150px !important;
-  }
+  width: 100%;
 }
-
 .designer-heading{
   display: inline-block;
   font: futura;
