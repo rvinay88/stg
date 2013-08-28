@@ -399,3 +399,12 @@ $active-region-selector: ".active" !default;
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .section-container.auto > section > [data-section-title], .section-container.auto > section > .title {
+    margin-top: 1px solid red;
+  }
+  .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a, .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a, .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a, .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a, .section-container.accordion > section.active > .title a, .section-container.accordion > .section.active > .title a{
+     margin-top: 1px solid red;
+  }
+}
