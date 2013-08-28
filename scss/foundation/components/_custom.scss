@@ -47,9 +47,10 @@
   }
 }
 .tree-holder{
-  width: 200px !important;
+  width: 15% !important;
   float: left;
   position: relative;
+  left: 5%;
   // @media screen and (min-width: 768px) and (max-width: 834px) {
   //   width: 180px !important;
   // }
@@ -295,4 +296,16 @@
 }
 .med-button{
   min-width: 150px;
+}
+
+.catalogue {
+  font-size: 80%;
+}
+
+.designer-name{
+  font-size: emCalc(13px);
+  font-weight: bold;
+  &:hover{
+    text-decoration: underline;
+  }
 }

@@ -4885,9 +4885,10 @@ a.th {
   right: 0.6rem; }
 
 .tree-holder {
-  width: 200px !important;
+  width: 15% !important;
   float: left;
-  position: relative; }
+  position: relative;
+  left: 5%; }
   @media screen and (min-width: 500px) and (max-width: 900px) {
     .tree-holder {
       width: 150px !important; } }
@@ -5093,6 +5094,15 @@ a.th {
 
 .med-button {
   min-width: 150px; }
+
+.catalogue {
+  font-size: 80%; }
+
+.designer-name {
+  font-size: 0.8125rem;
+  font-weight: bold; }
+  .designer-name:hover {
+    text-decoration: underline; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {
