@@ -50,19 +50,22 @@
   width: 100%;
 }
 .tree-holder{
-  min-width: 200px;
   width: 20%;
   float: left;
+  @media only screen and (max-width: 768px) {
+    width: 30%;
+  }
 }
 .catalogue-holder{
   width: 80%;
-  min-width: 300px;
   float: right;
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+  }
 }
 .tree-title{
   @extend .collection-title;
   @extend .border-top-bottom;
-  @extend .with-dots;
   text-align: center;
   width: 100%;
 }
