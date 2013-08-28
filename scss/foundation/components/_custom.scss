@@ -280,6 +280,7 @@
   @media #{$large} {
   padding: emCalc(22px) 0;
   }
+  margin-top: emCalc(16px);
 }
 
 .size{
@@ -313,4 +314,14 @@
 .small-text{
   font-size: 80%;
   margin-top: 20px;
+}
+
+.fixed-300{
+  width: 360px;
+}
+.product-charts {
+  padding: emCalc(16px) 0;
+  a {
+    margin-right: emCalc(16px);
+  }
 }
