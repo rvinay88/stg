@@ -5110,6 +5110,10 @@ a.th {
   .designer-name:hover {
     text-decoration: underline; }
 
+.small-text {
+  font-size: 80%;
+  margin-top: 20px; }
+
 @media only screen and (max-width: 767px) {
   .f-dropdown {
     max-width: 100%;
