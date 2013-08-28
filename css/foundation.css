@@ -5121,7 +5121,8 @@ a.th {
 .product-charts {
   padding: 1rem 0; }
   .product-charts a {
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    font-size: 0.875rem; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {
