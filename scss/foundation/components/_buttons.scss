@@ -121,8 +121,8 @@ $button-disabled-opacity: 0.6 !default;
 
     background-color: $bg;
     border-color: darken($bg, $button-function-factor);
-    &:hover,
-    &:focus { background-color: darken($bg, $button-function-factor); }
+    // &:hover,
+    // &:focus { background-color: darken($bg, $button-function-factor); }
 
     // We control the text color for you based on the background color.
     @if $bg-lightness > 70% {
@@ -178,7 +178,7 @@ $button-disabled-opacity: 0.6 !default;
     @include button-size;
     @include button-style;
 
-    &.secondary { @include button-style($bg:$secondary-color); }
+    &.secondary { @include button-style($bg:$tertiary-color); }
     &.success   { @include button-style($bg:$success-color); }
     &.alert     { @include button-style($bg:$alert-color); }
 
@@ -191,7 +191,7 @@ $button-disabled-opacity: 0.6 !default;
     &.right-align { text-align: right; padding-right: emCalc(12); }
 
     &.disabled, &[disabled] { @include button-style($bg:$primary-color, $disabled:true);
-      &.secondary { @include button-style($bg:$secondary-color, $disabled:true); }
+      &.secondary { @include button-style($bg:$tertiary-color, $disabled:true); }
       &.success { @include button-style($bg:$success-color, $disabled:true); }
       &.alert { @include button-style($bg:$alert-color, $disabled:true); }
     }
