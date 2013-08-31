@@ -104,10 +104,13 @@ $inline-list-children-display: inline !default;
     // }
     a{
       color: $secondary-color !important;
+      @extend .collection-title;
+      @include border-top-bottom(top-bottom);
+      border-color: $base-color;
       &:hover{
         text-decoration: none;
         color: $primary-color !important;
-        @include border-top-bottom(top-bottom);
+        border-color: $primary-color;
       }
     }
     &.active > a{

@@ -51,7 +51,7 @@ $topbar-menu-icon-color-toggled: #888 !default;
 
 // Transitions and breakpoint styles
 $topbar-transition-speed: 300ms !default;
-$topbar-breakpoint: 740px !default; // Change to 9999px for always mobile layout
+$topbar-breakpoint: 780px !default; // Change to 9999px for always mobile layout
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})" !default;
 
 // Divider Styles
@@ -677,4 +677,20 @@ ul.user-setting{
 
 .user-setting-labels{
   margin-top: emCalc(16);
+}
+
+.user-img-small{
+  width: 40px;
+  height: 40px;
+}
+
+.user-img{
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 768px){
+    .footer-list{
+         margin-left: 12.5%;
+    }
 }
