@@ -208,6 +208,14 @@
   width: 117px; //harcoding width so it doesn't stack on smaller screens
 }
 
+.pager{
+  float: right;
+  @include clearfix;
+  background-color: $tertiary-color;
+  padding: emCalc(5px);
+  margin-bottom: 0.5rem;
+}
+
 
 .product-thumbs{
   @extend .no-bullet;
