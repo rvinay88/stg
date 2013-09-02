@@ -211,11 +211,11 @@
 /* Paging CSS */
 .paging{
   float: right;
+  margin-right: 10px;
+  margin-bottom: 0.5rem;
   @include clearfix;
   background-color: $tertiary-color;
   padding: emCalc(5px);
-  margin-bottom: 0.5rem;
-  float: right;
   > li {
       float: left;
       list-style: none;
