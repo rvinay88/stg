@@ -136,7 +136,7 @@ a {
   a.bold-link {
     font-weight: bold; }
   /* line 391, foundation/components/_global.scss */
-  a.no-dec:hover, .user-setting-links > li a:hover {
+  a.no-dec:hover, .user-setting-links > li a:hover, .paging .pagerprevious a:hover, .paging .pagernext a:hover {
     text-decoration: none !important; }
 
 /* line 397, foundation/components/_global.scss */
@@ -6166,69 +6166,91 @@ a.th {
   margin-bottom: .5rem;
   width: 117px; }
 
-/* line 211, foundation/components/_custom.scss */
-.pager {
+/* Paging CSS */
+/* line 212, foundation/components/_custom.scss */
+.paging {
   float: right;
   *zoom: 1;
   background-color: #eeeeee;
   padding: 0.3125rem;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  float: right; }
   /* line 127, foundation/components/_global.scss */
-  .pager:before, .pager:after {
+  .paging:before, .paging:after {
     content: " ";
     display: table; }
   /* line 128, foundation/components/_global.scss */
-  .pager:after {
+  .paging:after {
     clear: both; }
+  /* line 219, foundation/components/_custom.scss */
+  .paging > li {
+    float: left;
+    list-style: none; }
 
-/* line 220, foundation/components/_custom.scss */
+/* line 225, foundation/components/_custom.scss */
+.paging .pagerprevious a, .pager .paging .pagerprevious a {
+  margin: 0 4px; }
+  /* line 228, foundation/components/_custom.scss */
+  .paging .pagerprevious a:before, .pager .paging .pagerprevious a:before {
+    font-family: 'FontAwesome';
+    content: "\f137"; }
+
+/* line 234, foundation/components/_custom.scss */
+.paging .pagernext a, .pager .paging .pagernext a {
+  margin: 0 4px; }
+  /* line 237, foundation/components/_custom.scss */
+  .paging .pagernext a:before, .pager .paging .pagernext a:before {
+    font-family: 'FontAwesome';
+    content: "\f138"; }
+
+/* line 244, foundation/components/_custom.scss */
 .product-thumbs {
   margin-top: 0 !important; }
-  /* line 223, foundation/components/_custom.scss */
+  /* line 247, foundation/components/_custom.scss */
   .product-thumbs > li {
     margin-bottom: 0.625rem; }
 
-/* line 228, foundation/components/_custom.scss */
+/* line 252, foundation/components/_custom.scss */
 .product-main {
   margin-bottom: 0.625rem; }
 
-/* line 233, foundation/components/_custom.scss */
+/* line 257, foundation/components/_custom.scss */
 .product-detail {
   width: 100%; }
   @media only screen and (min-width: 1280px) {
-    /* line 233, foundation/components/_custom.scss */
+    /* line 257, foundation/components/_custom.scss */
     .product-detail {
       width: 50% !important; } }
 
-/* line 239, foundation/components/_custom.scss */
+/* line 263, foundation/components/_custom.scss */
 .product-detail > img {
   margin-bottom: 0.625rem; }
 
-/* line 249, foundation/components/_custom.scss */
+/* line 273, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
-  /* line 251, foundation/components/_custom.scss */
+  /* line 275, foundation/components/_custom.scss */
   .in-the-press img {
     margin-top: 0.625rem; }
   @media screen and (min-width: 984px) and (max-width: 1304px) {
-    /* line 254, foundation/components/_custom.scss */
+    /* line 278, foundation/components/_custom.scss */
     .in-the-press .hidden-image {
       display: none; } }
 
-/* line 261, foundation/components/_custom.scss */
+/* line 285, foundation/components/_custom.scss */
 .product-title {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.625rem; }
 
-/* line 267, foundation/components/_custom.scss */
+/* line 291, foundation/components/_custom.scss */
 .product-sub-title {
   text-transform: uppercase;
   color: #666666;
   font-size: 0.875rem;
   line-height: 1.25rem; }
 
-/* line 274, foundation/components/_custom.scss */
+/* line 298, foundation/components/_custom.scss */
 .highlight-text {
   border: 1px solid black;
   color: #666666;
@@ -6236,70 +6258,70 @@ a.th {
   padding: 0.625rem;
   margin: 1rem 0; }
 
-/* line 282, foundation/components/_custom.scss */
+/* line 306, foundation/components/_custom.scss */
 .tab-content {
   color: #666666; }
 
-/* line 286, foundation/components/_custom.scss */
+/* line 310, foundation/components/_custom.scss */
 .product-options {
   padding: 0.5rem 0;
   margin-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    /* line 286, foundation/components/_custom.scss */
+    /* line 310, foundation/components/_custom.scss */
     .product-options {
       padding: 1.375rem 0; } }
 
-/* line 294, foundation/components/_custom.scss */
+/* line 318, foundation/components/_custom.scss */
 .size {
   padding: 0.3125rem;
   font-size: 0.875rem; }
 
-/* line 299, foundation/components/_custom.scss */
+/* line 323, foundation/components/_custom.scss */
 .add-buttons {
   margin-right: 20px; }
 
-/* line 303, foundation/components/_custom.scss */
+/* line 327, foundation/components/_custom.scss */
 .long-button {
   min-width: 185px; }
 
-/* line 306, foundation/components/_custom.scss */
+/* line 330, foundation/components/_custom.scss */
 .med-button {
   min-width: 150px; }
 
-/* line 310, foundation/components/_custom.scss */
+/* line 334, foundation/components/_custom.scss */
 .catalogue {
   font-size: 80%; }
 
-/* line 314, foundation/components/_custom.scss */
+/* line 338, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold; }
-  /* line 317, foundation/components/_custom.scss */
+  /* line 341, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 322, foundation/components/_custom.scss */
+/* line 346, foundation/components/_custom.scss */
 .small-text {
   font-size: 80%;
   margin-top: 20px; }
 
-/* line 327, foundation/components/_custom.scss */
+/* line 351, foundation/components/_custom.scss */
 .fixed-200 {
   width: 200px; }
 
-/* line 330, foundation/components/_custom.scss */
+/* line 354, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
 
-/* line 333, foundation/components/_custom.scss */
+/* line 357, foundation/components/_custom.scss */
 .product-charts {
   padding: 1rem 0; }
-  /* line 335, foundation/components/_custom.scss */
+  /* line 359, foundation/components/_custom.scss */
   .product-charts a {
     margin-right: 1rem;
     font-size: 0.875rem; }
 
-/* line 340, foundation/components/_custom.scss */
+/* line 364, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 

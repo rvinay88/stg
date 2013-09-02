@@ -205,15 +205,39 @@
   padding: emCalc(5px);
   display: inline-block;
   margin-bottom: .5rem;
-  width: 117px; //harcoding width so it doesn't stack on smaller screens
+  width: 117px; //hard coding width so it doesn't stack on smaller screens
 }
 
-.pager{
+/* Paging CSS */
+.paging{
   float: right;
   @include clearfix;
   background-color: $tertiary-color;
   padding: emCalc(5px);
   margin-bottom: 0.5rem;
+  float: right;
+  > li {
+      float: left;
+      list-style: none;
+    }
+}
+
+.paging .pagerprevious a, .pager .paging .pagerprevious a{
+  @extend .no-dec;
+  margin: 0 4px;
+  &:before{
+    font-family: 'FontAwesome';
+    content: "\f137";
+  }
+}
+
+.paging .pagernext a, .pager .paging .pagernext a{
+  @extend .no-dec;
+  margin: 0 4px;
+  &:before{
+    font-family: 'FontAwesome';
+    content: "\f138";
+  }
 }
 
 
