@@ -63,6 +63,11 @@
     width: 70%;
   }
 }
+
+.catalogue-product-name{
+  text-transform: capitalize;
+}
+
 .tree-title{
   @extend .collection-title;
   @extend .border-top-bottom;
@@ -344,12 +349,17 @@
   font-size: 80%;
 }
 
+
 .designer-name{
   font-size: emCalc(13px);
   font-weight: bold;
   &:hover{
     text-decoration: underline;
   }
+}
+
+.designer-about{
+
 }
 
 .small-text{
@@ -373,3 +383,4 @@
 .in-the-press{
   margin-bottom: emCalc(10px);
 }
+
