@@ -200,12 +200,21 @@
   margin-left: 0;
   position: static; }
 
-.sorting{
+.sorting, .price{
   background-color: $tertiary-color;
   padding: emCalc(5px);
   display: inline-block;
   margin-bottom: .5rem;
-  width: 117px; //hard coding width so it doesn't stack on smaller screens
+  margin-left: 10px;
+  margin-top: 10px;
+  // width: 117px; //hard coding width so it doesn't stack on smaller screens
+  > .title {
+    font-size: 80%;
+  }
+  > ul {
+    display: inline-block;
+    @extend .square-inline;
+  }
 }
 
 /* Paging CSS */

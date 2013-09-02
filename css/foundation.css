@@ -5207,7 +5207,7 @@ kbd {
   content: ""; }
 
 /* line 83, foundation/components/_inline-lists.scss */
-.square-inline {
+.square-inline, .sorting > ul, .price > ul {
   margin: 0 auto 0 auto;
   margin-left: -0.625rem;
   margin-right: 0;
@@ -5216,25 +5216,25 @@ kbd {
   overflow: hidden;
   vertical-align: middle; }
   /* line 41, foundation/components/_inline-lists.scss */
-  .square-inline > li {
+  .square-inline > li, .sorting > ul > li, .price > ul > li {
     list-style: square;
     list-style-type: square;
     float: left;
     margin-left: 0.625rem; }
     /* line 48, foundation/components/_inline-lists.scss */
-    .square-inline > li:first-child {
+    .square-inline > li:first-child, .sorting > ul > li:first-child, .price > ul > li:first-child {
       list-style-type: none !important; }
     /* line 59, foundation/components/_inline-lists.scss */
-    .square-inline > li > * {
+    .square-inline > li > *, .sorting > ul > li > *, .price > ul > li > * {
       display: inline; }
   /* line 85, foundation/components/_inline-lists.scss */
-  .square-inline > li {
+  .square-inline > li, .sorting > ul > li, .price > ul > li {
     margin-left: 1.625rem !important; }
   /* line 88, foundation/components/_inline-lists.scss */
-  .square-inline a {
+  .square-inline a, .sorting > ul a, .price > ul a {
     color: #666666; }
   /* line 91, foundation/components/_inline-lists.scss */
-  .square-inline .selected {
+  .square-inline .selected, .sorting > ul .selected, .price > ul .selected {
     font-weight: bold; }
 
 /* line 97, foundation/components/_inline-lists.scss */
@@ -6159,15 +6159,22 @@ a.th {
   position: static; }
 
 /* line 203, foundation/components/_custom.scss */
-.sorting {
+.sorting, .price {
   background-color: #eeeeee;
   padding: 0.3125rem;
   display: inline-block;
   margin-bottom: .5rem;
-  width: 117px; }
+  margin-left: 10px;
+  margin-top: 10px; }
+  /* line 211, foundation/components/_custom.scss */
+  .sorting > .title, .price > .title {
+    font-size: 80%; }
+  /* line 214, foundation/components/_custom.scss */
+  .sorting > ul, .price > ul {
+    display: inline-block; }
 
 /* Paging CSS */
-/* line 212, foundation/components/_custom.scss */
+/* line 221, foundation/components/_custom.scss */
 .paging {
   float: right;
   margin-right: 10px;
@@ -6182,75 +6189,75 @@ a.th {
   /* line 128, foundation/components/_global.scss */
   .paging:after {
     clear: both; }
-  /* line 219, foundation/components/_custom.scss */
+  /* line 228, foundation/components/_custom.scss */
   .paging > li {
     float: left;
     list-style: none; }
 
-/* line 225, foundation/components/_custom.scss */
+/* line 234, foundation/components/_custom.scss */
 .paging .pagerprevious a, .pager .paging .pagerprevious a {
   margin: 0 4px; }
-  /* line 228, foundation/components/_custom.scss */
+  /* line 237, foundation/components/_custom.scss */
   .paging .pagerprevious a:before, .pager .paging .pagerprevious a:before {
     font-family: 'FontAwesome';
     content: "\f137"; }
 
-/* line 234, foundation/components/_custom.scss */
+/* line 243, foundation/components/_custom.scss */
 .paging .pagernext a, .pager .paging .pagernext a {
   margin: 0 4px; }
-  /* line 237, foundation/components/_custom.scss */
+  /* line 246, foundation/components/_custom.scss */
   .paging .pagernext a:before, .pager .paging .pagernext a:before {
     font-family: 'FontAwesome';
     content: "\f138"; }
 
-/* line 244, foundation/components/_custom.scss */
+/* line 253, foundation/components/_custom.scss */
 .product-thumbs {
   margin-top: 0 !important; }
-  /* line 247, foundation/components/_custom.scss */
+  /* line 256, foundation/components/_custom.scss */
   .product-thumbs > li {
     margin-bottom: 0.625rem; }
 
-/* line 252, foundation/components/_custom.scss */
+/* line 261, foundation/components/_custom.scss */
 .product-main {
   margin-bottom: 0.625rem; }
 
-/* line 257, foundation/components/_custom.scss */
+/* line 266, foundation/components/_custom.scss */
 .product-detail {
   width: 100%; }
   @media only screen and (min-width: 1280px) {
-    /* line 257, foundation/components/_custom.scss */
+    /* line 266, foundation/components/_custom.scss */
     .product-detail {
       width: 50% !important; } }
 
-/* line 263, foundation/components/_custom.scss */
+/* line 272, foundation/components/_custom.scss */
 .product-detail > img {
   margin-bottom: 0.625rem; }
 
-/* line 273, foundation/components/_custom.scss */
+/* line 282, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
-  /* line 275, foundation/components/_custom.scss */
+  /* line 284, foundation/components/_custom.scss */
   .in-the-press img {
     margin-top: 0.625rem; }
   @media screen and (min-width: 984px) and (max-width: 1304px) {
-    /* line 278, foundation/components/_custom.scss */
+    /* line 287, foundation/components/_custom.scss */
     .in-the-press .hidden-image {
       display: none; } }
 
-/* line 285, foundation/components/_custom.scss */
+/* line 294, foundation/components/_custom.scss */
 .product-title {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.625rem; }
 
-/* line 291, foundation/components/_custom.scss */
+/* line 300, foundation/components/_custom.scss */
 .product-sub-title {
   text-transform: uppercase;
   color: #666666;
   font-size: 0.875rem;
   line-height: 1.25rem; }
 
-/* line 298, foundation/components/_custom.scss */
+/* line 307, foundation/components/_custom.scss */
 .highlight-text {
   border: 1px solid black;
   color: #666666;
@@ -6258,70 +6265,70 @@ a.th {
   padding: 0.625rem;
   margin: 1rem 0; }
 
-/* line 306, foundation/components/_custom.scss */
+/* line 315, foundation/components/_custom.scss */
 .tab-content {
   color: #666666; }
 
-/* line 310, foundation/components/_custom.scss */
+/* line 319, foundation/components/_custom.scss */
 .product-options {
   padding: 0.5rem 0;
   margin-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    /* line 310, foundation/components/_custom.scss */
+    /* line 319, foundation/components/_custom.scss */
     .product-options {
       padding: 1.375rem 0; } }
 
-/* line 318, foundation/components/_custom.scss */
+/* line 327, foundation/components/_custom.scss */
 .size {
   padding: 0.3125rem;
   font-size: 0.875rem; }
 
-/* line 323, foundation/components/_custom.scss */
+/* line 332, foundation/components/_custom.scss */
 .add-buttons {
   margin-right: 20px; }
 
-/* line 327, foundation/components/_custom.scss */
+/* line 336, foundation/components/_custom.scss */
 .long-button {
   min-width: 185px; }
 
-/* line 330, foundation/components/_custom.scss */
+/* line 339, foundation/components/_custom.scss */
 .med-button {
   min-width: 150px; }
 
-/* line 334, foundation/components/_custom.scss */
+/* line 343, foundation/components/_custom.scss */
 .catalogue {
   font-size: 80%; }
 
-/* line 338, foundation/components/_custom.scss */
+/* line 347, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold; }
-  /* line 341, foundation/components/_custom.scss */
+  /* line 350, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 346, foundation/components/_custom.scss */
+/* line 355, foundation/components/_custom.scss */
 .small-text {
   font-size: 80%;
   margin-top: 20px; }
 
-/* line 351, foundation/components/_custom.scss */
+/* line 360, foundation/components/_custom.scss */
 .fixed-200 {
   width: 200px; }
 
-/* line 354, foundation/components/_custom.scss */
+/* line 363, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
 
-/* line 357, foundation/components/_custom.scss */
+/* line 366, foundation/components/_custom.scss */
 .product-charts {
   padding: 1rem 0; }
-  /* line 359, foundation/components/_custom.scss */
+  /* line 368, foundation/components/_custom.scss */
   .product-charts a {
     margin-right: 1rem;
     font-size: 0.875rem; }
 
-/* line 364, foundation/components/_custom.scss */
+/* line 373, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
