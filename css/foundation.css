@@ -6170,11 +6170,11 @@ a.th {
 /* line 212, foundation/components/_custom.scss */
 .paging {
   float: right;
+  margin-right: 10px;
+  margin-bottom: 0.5rem;
   *zoom: 1;
   background-color: #eeeeee;
-  padding: 0.3125rem;
-  margin-bottom: 0.5rem;
-  float: right; }
+  padding: 0.3125rem; }
   /* line 127, foundation/components/_global.scss */
   .paging:before, .paging:after {
     content: " ";
