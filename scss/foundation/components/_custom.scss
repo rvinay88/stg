@@ -307,6 +307,10 @@
   color: $secondary-color;
   font-size: emCalc(14px);
   line-height: emCalc(20px);
+  strong {
+    font-weight: normal;
+    font-size: 80%;
+  }
 }
 
 .highlight-text{
@@ -383,4 +387,3 @@
 .in-the-press{
   margin-bottom: emCalc(10px);
 }
-

@@ -70,6 +70,7 @@ $preloader-class: "preloader" !default;
     }
 
     .orbit-container { background-color: transparent;
+      max-height: 630px;
 
       // Show images when .orbit-container is loaded
       li { display: block;
@@ -123,10 +124,11 @@ $preloader-class: "preloader" !default;
       margin: 0;
       padding: 0;
       position: relative;
-
+      background-color: $secondary-color;
       img { display: block; max-width: 100%; }
-
+      &>li {height: 774px;}
       &>* {
+
         position: absolute;
         top: 0;
         width: 100%;
@@ -216,48 +218,53 @@ $preloader-class: "preloader" !default;
     .orbit-prev,
     .orbit-next {
       position: absolute;
-      top: 50%;
-      margin-top: -25px;
-      background-color: $orbit-nav-bg-old;
-      background-color: $orbit-nav-bg;
-      width: 50px;
-      height: 60px;
+      top: 0;
+      // margin-top: -25px;
+      // background-color: $orbit-nav-bg-old;
+      // background-color: $orbit-nav-bg;
+      width: 15%;
+      height: 100%;
       line-height: 50px;
-      color: white;
-      text-indent: -9999px !important;
+      // text-indent: -9999px !important;
       z-index: 10;
-
       & > span {
         position: absolute;
         top: 50%;
         margin-top: -16px;
         display: block;
-        width: 0;
-        height: 0;
-        border: inset 16px;
       }
     }
     .orbit-prev { #{$default-float}: 0;
-      & > span {
-        border-#{$opposite-direction}-style: solid;
-        border-color: transparent;
-        border-#{$opposite-direction}-color: #fff;
+      span {
+          &:before{
+            font-family: 'FontAwesome';
+            font-size: 2rem;
+            color: rgba($primary-color, 0.8);
+            content: "\f137";
+        }
       }
-      &:hover > span {
-        border-#{$opposite-direction}-color: #ccc;
+      &:hover {
+        span:before{
+          color: rgba(#000, 1);
+        }
       }
     }
     .orbit-next { #{$opposite-direction}: 0;
-      & > span {
-        border-color: transparent;
-        border-#{$default-float}-style: solid;
-        border-#{$default-float}-color: #fff;
+      span {
+          &:before{
+            font-family: 'FontAwesome';
+            font-size: 2rem;
+            color: rgba($primary-color, 0.8);
+            content: "\f138";
+        }
         #{$default-float}: 50%;
         margin-#{$default-float}: -8px;
       }
-      &:hover > span {
-        border-#{$default-float}-color: #ccc;
+      &:hover {
+      span:before{
+        color: rgba(#000, 1);
       }
+    }
     }
   }
 
