@@ -400,7 +400,8 @@
 }
 
 .small-text{
-  font-size: emCalc(12px);
+  font-size: emCalc(11px);
+  text-transform: uppercase;
   margin-top: 20px;
 }
 
@@ -416,6 +417,10 @@
 }
 .right-margin{
   margin-right: emCalc(10px);
+}
+
+.top-margin {
+  margin-top: emCalc(16px);
 }
 
 .in-the-press{

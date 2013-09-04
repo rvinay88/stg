@@ -22,7 +22,7 @@ $section-border-style: solid !default;
 $section-border-color: #fff !default;
 
 // Font controls
-$section-font-size: emCalc(14) !default;
+$section-font-size: emCalc(12) !default;
 
 // Control the color of the background and some size options
 $section-content-bg: #fff !default;
@@ -227,6 +227,9 @@ $active-region-selector: ".active" !default;
   & > #{$content-selector} {
     padding: $content-padding;
     background-color: $content-bg;
+    > p {
+      font-size: 12px;
+    }
 	  // border: 1px solid grey;
 
     &>*:last-child { margin-bottom: 0; }
