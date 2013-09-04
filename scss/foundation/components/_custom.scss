@@ -236,6 +236,11 @@
     }
 }
 
+.pager {
+  float: right;
+  display: inline-block;
+}
+
 .paging .pagerprevious a, .pager .paging .pagerprevious a{
   @extend .no-dec;
   margin: 0 4px;
