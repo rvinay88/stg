@@ -241,6 +241,7 @@
   > ul {
     display: inline-block;
     @extend .square-inline;
+    float: left;
   }
 }
 
