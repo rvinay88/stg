@@ -74,6 +74,28 @@
   text-align: center;
   width: 100%;
 }
+
+.tree-sub-title {
+    font-family: Helvetica;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+.designer-nav {
+  margin-left: 2rem;
+  li {
+    padding: 3px 0;
+    a {
+      color: $secondary-color;
+      &:hover {
+        font-weight: bold;
+        color: $primary-color;
+      }
+    }
+  }
+}
 .designer-heading{
   display: inline-block;
   font: futura;
@@ -317,6 +339,8 @@
     font-size: 80%;
   }
 }
+
+
 
 .highlight-text{
   border: 1px solid black;
