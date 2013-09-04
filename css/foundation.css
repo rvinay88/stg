@@ -4213,10 +4213,10 @@ ul.user-setting {
         content: "\f137"; }
     /* line 243, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev:hover {
-      background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
-      background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+      background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0001)));
+      background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.1) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
       /* line 250, foundation/components/_orbit.scss */
@@ -4238,10 +4238,10 @@ ul.user-setting {
         content: "\f138"; }
     /* line 267, foundation/components/_orbit.scss */
     .orbit-container .orbit-next:hover {
-      background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
-      background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+      background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.1)));
+      background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 10, 0.5) 100%));
+      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.1) 100%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.1) 100%);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
       /* line 274, foundation/components/_orbit.scss */
@@ -6167,10 +6167,11 @@ a.th {
     font-size: 80%; }
   /* line 241, foundation/components/_custom.scss */
   .sorting > ul, .price > ul {
-    display: inline-block; }
+    display: inline-block;
+    float: left; }
 
 /* Paging CSS */
-/* line 248, foundation/components/_custom.scss */
+/* line 249, foundation/components/_custom.scss */
 .paging {
   float: right;
   margin-right: 10px;
@@ -6185,84 +6186,84 @@ a.th {
   /* line 128, foundation/components/_global.scss */
   .paging:after {
     clear: both; }
-  /* line 255, foundation/components/_custom.scss */
+  /* line 256, foundation/components/_custom.scss */
   .paging > li {
     float: left;
     list-style: none; }
 
-/* line 261, foundation/components/_custom.scss */
+/* line 262, foundation/components/_custom.scss */
 .pager {
   float: right;
   display: inline-block; }
 
-/* line 266, foundation/components/_custom.scss */
+/* line 267, foundation/components/_custom.scss */
 .paging .pagerprevious a, .pager .paging .pagerprevious a {
   margin: 0 4px; }
-  /* line 269, foundation/components/_custom.scss */
+  /* line 270, foundation/components/_custom.scss */
   .paging .pagerprevious a:before, .pager .paging .pagerprevious a:before {
     font-family: 'FontAwesome';
     content: "\f137"; }
 
-/* line 275, foundation/components/_custom.scss */
+/* line 276, foundation/components/_custom.scss */
 .paging .pagernext a, .pager .paging .pagernext a {
   margin: 0 4px; }
-  /* line 278, foundation/components/_custom.scss */
+  /* line 279, foundation/components/_custom.scss */
   .paging .pagernext a:before, .pager .paging .pagernext a:before {
     font-family: 'FontAwesome';
     content: "\f138"; }
 
-/* line 285, foundation/components/_custom.scss */
+/* line 286, foundation/components/_custom.scss */
 .product-thumbs {
   margin-top: 0 !important; }
-  /* line 288, foundation/components/_custom.scss */
+  /* line 289, foundation/components/_custom.scss */
   .product-thumbs > li {
     margin-bottom: 0.625rem; }
 
-/* line 293, foundation/components/_custom.scss */
+/* line 294, foundation/components/_custom.scss */
 .product-main {
   margin-bottom: 0.625rem; }
 
-/* line 298, foundation/components/_custom.scss */
+/* line 299, foundation/components/_custom.scss */
 .product-detail {
   width: 100%; }
   @media only screen and (min-width: 1280px) {
-    /* line 298, foundation/components/_custom.scss */
+    /* line 299, foundation/components/_custom.scss */
     .product-detail {
       width: 50% !important; } }
 
-/* line 304, foundation/components/_custom.scss */
+/* line 305, foundation/components/_custom.scss */
 .product-detail > img {
   margin-bottom: 0.625rem; }
 
-/* line 314, foundation/components/_custom.scss */
+/* line 315, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
-  /* line 316, foundation/components/_custom.scss */
+  /* line 317, foundation/components/_custom.scss */
   .in-the-press img {
     margin-top: 0.625rem; }
   @media screen and (min-width: 984px) and (max-width: 1304px) {
-    /* line 319, foundation/components/_custom.scss */
+    /* line 320, foundation/components/_custom.scss */
     .in-the-press .hidden-image {
       display: none; } }
 
-/* line 326, foundation/components/_custom.scss */
+/* line 327, foundation/components/_custom.scss */
 .product-title {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.625rem; }
 
-/* line 332, foundation/components/_custom.scss */
+/* line 333, foundation/components/_custom.scss */
 .product-sub-title {
   text-transform: uppercase;
   color: #666666;
   font-size: 0.875rem;
   line-height: 1.25rem; }
-  /* line 337, foundation/components/_custom.scss */
+  /* line 338, foundation/components/_custom.scss */
   .product-sub-title strong {
     font-weight: normal;
     font-size: 80%; }
 
-/* line 345, foundation/components/_custom.scss */
+/* line 346, foundation/components/_custom.scss */
 .highlight-text {
   border: 1px solid black;
   color: #666666;
@@ -6270,76 +6271,80 @@ a.th {
   padding: 0.625rem;
   margin: 1rem 0; }
 
-/* line 353, foundation/components/_custom.scss */
+/* line 354, foundation/components/_custom.scss */
 .tab-content {
   color: #666666; }
 
-/* line 357, foundation/components/_custom.scss */
+/* line 358, foundation/components/_custom.scss */
 .product-options {
   padding: 0.5rem 0;
   margin-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    /* line 357, foundation/components/_custom.scss */
+    /* line 358, foundation/components/_custom.scss */
     .product-options {
       padding: 1.375rem 0; } }
 
-/* line 365, foundation/components/_custom.scss */
+/* line 366, foundation/components/_custom.scss */
 .size {
   padding: 0.3125rem;
   font-size: 0.875rem; }
 
-/* line 370, foundation/components/_custom.scss */
+/* line 371, foundation/components/_custom.scss */
 .add-buttons {
   margin-right: 20px; }
 
-/* line 374, foundation/components/_custom.scss */
+/* line 375, foundation/components/_custom.scss */
 .long-button {
   min-width: 185px; }
 
-/* line 377, foundation/components/_custom.scss */
+/* line 378, foundation/components/_custom.scss */
 .med-button {
   min-width: 150px; }
 
-/* line 381, foundation/components/_custom.scss */
+/* line 382, foundation/components/_custom.scss */
 .catalogue {
   font-size: 80%; }
 
-/* line 385, foundation/components/_custom.scss */
+/* line 386, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold; }
-  /* line 388, foundation/components/_custom.scss */
+  /* line 389, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 393, foundation/components/_custom.scss */
+/* line 394, foundation/components/_custom.scss */
 .designer-about {
   height: 84px;
   overflow: hidden; }
 
-/* line 397, foundation/components/_custom.scss */
+/* line 398, foundation/components/_custom.scss */
 .more {
   height: auto !important; }
 
-/* line 401, foundation/components/_custom.scss */
+/* line 402, foundation/components/_custom.scss */
 .small-text {
   font-size: 0.75rem;
   margin-top: 20px; }
 
-/* line 406, foundation/components/_custom.scss */
+/* line 407, foundation/components/_custom.scss */
 .fixed-170 {
   width: 170px;
   margin: 0 0.625rem 1rem 0; }
 
-/* line 410, foundation/components/_custom.scss */
+/* line 411, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
+  @media screen and (max-width: 768px) {
+    /* line 411, foundation/components/_custom.scss */
+    .fixed-360 {
+      margin-top: 1rem; } }
 
-/* line 413, foundation/components/_custom.scss */
+/* line 417, foundation/components/_custom.scss */
 .right-margin {
   margin-right: 0.625rem; }
 
-/* line 417, foundation/components/_custom.scss */
+/* line 421, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
