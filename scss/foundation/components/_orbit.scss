@@ -126,7 +126,6 @@ $preloader-class: "preloader" !default;
       position: relative;
       background-color: $secondary-color;
       img { display: block; max-width: 100%; }
-      &>li {height: 774px;}
       &>* {
 
         position: absolute;
@@ -219,13 +218,9 @@ $preloader-class: "preloader" !default;
     .orbit-next {
       position: absolute;
       top: 0;
-      // margin-top: -25px;
-      // background-color: $orbit-nav-bg-old;
-      // background-color: $orbit-nav-bg;
       width: 15%;
       height: 100%;
       line-height: 50px;
-      // text-indent: -9999px !important;
       z-index: 10;
       & > span {
         position: absolute;
@@ -242,10 +237,19 @@ $preloader-class: "preloader" !default;
             color: rgba($primary-color, 0.8);
             content: "\f137";
         }
+        #{$opposite-direction}: 50%;
+        margin-#{$opposite-direction}: -8px;
       }
       &:hover {
+        background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+        background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+        background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
         span:before{
           color: rgba(#000, 1);
+          background: none;
         }
       }
     }
@@ -261,6 +265,12 @@ $preloader-class: "preloader" !default;
         margin-#{$default-float}: -8px;
       }
       &:hover {
+      background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+      background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
       span:before{
         color: rgba(#000, 1);
       }

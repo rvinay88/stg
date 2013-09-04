@@ -4,22 +4,22 @@
 $include-html-section-classes: $include-html-classes !default;
 
 // We use these to set padding and hover factor
-$section-title-padding: emCalc(10) !default;
+$section-title-padding: emCalc(5) !default;
 $section-content-padding: emCalc(10) !default;
 $section-function-factor: 10% !default;
 
 // These style the titles
-$section-title-color: #fff !default;
+$section-title-color: $primary-color !default;
 $section-title-color-active: $primary-color !default;
 $section-title-bg: #fff !default;
-$section-title-bg-active: #fff !default;
+$section-title-bg-active: $tertiary-color !default;
 $section-title-bg-active-tabs: #fff !default;
 $section-title-bg-hover: #fff !default;
 
 // Want to control border size, here ya go!
 $section-border-size: 1px !default;
 $section-border-style: solid !default;
-$section-border-color: #ccc !default;
+$section-border-color: #fff !default;
 
 // Font controls
 $section-font-size: emCalc(14) !default;
@@ -71,7 +71,7 @@ $active-region-selector: ".active" !default;
 
   // Accordion container border styles
   @if $section-type == accordion {
-    border-top: $section-border-size $section-border-style $section-border-color;
+    border-top: none;
   }
 
   // Tabs container border styles
@@ -115,7 +115,7 @@ $active-region-selector: ".active" !default;
   &#{$active-region-selector} {
     & > [data-section-content], & > #{$content-selector}
     { display: block;
-      margin-top: emCalc(10px);
+      // margin-top: emCalc(10px);
     }
   }
 
@@ -126,7 +126,9 @@ $active-region-selector: ".active" !default;
   // Style for when Accordion
   @if $section-type == accordion {
 	margin: 0;
-    & > [data-section-title], & > #{$title-selector} { width: 100%; }
+    & > [data-section-title], & > #{$title-selector} {
+      width: 100%;
+    }
   }
 
   // Styles for when tabs
@@ -134,8 +136,8 @@ $active-region-selector: ".active" !default;
 
     & > [data-section-title], & > #{$title-selector} {
 	  width: auto;
-      position: absolute;
-      top: 0;
+    position: absolute;
+    top: 0;
 	  #{$default-float}: 0;
     }
   }
@@ -210,17 +212,14 @@ $active-region-selector: ".active" !default;
   & > #{$title-selector} {
     background-color: $title-bg;
     cursor: $cursor-pointer-value;
-	border: $section-border-style $section-border-size $section-border-color;
 	a {
       padding: $title-padding;
       color: $title-color;
       text-transform: uppercase;
       font-size: $title-font-size;
       text-decoration: none;
-	    background: #000;
       &:hover {
-        background-color: $title-bg-hover;
-        color: $primary-color;
+        background-color: $tertiary-color;
       }
     }
   }
@@ -228,7 +227,7 @@ $active-region-selector: ".active" !default;
   & > #{$content-selector} {
     padding: $content-padding;
     background-color: $content-bg;
-	border: $section-border-style $section-border-size $section-border-color;
+	  // border: 1px solid grey;
 
     &>*:last-child { margin-bottom: 0; }
     &>*:first-child { padding-top: 0; }
@@ -239,7 +238,6 @@ $active-region-selector: ".active" !default;
 	& > #{$title-selector} {
       a {
         background: $title-bg-active;
-        color: $title-color-active;
       }
     }
   }
@@ -250,7 +248,7 @@ $active-region-selector: ".active" !default;
 
   // Style for when Accordion
   @if $section-type == accordion {
-    & > #{$title-selector} { border-top: none; }
+    & > #{$title-selector} { border: 1px solid darken($tertiary-color, 20%); }
   }
 
   // Styles for when tabs
@@ -402,9 +400,9 @@ $active-region-selector: ".active" !default;
 
 @media screen and (max-width: 768px) {
   .section-container.auto > section > [data-section-title], .section-container.auto > section > .title {
-    margin-top: 1px solid red;
+    // margin-top: 1px solid red;
   }
   .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a, .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a, .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a, .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a, .section-container.accordion > section.active > .title a, .section-container.accordion > .section.active > .title a{
-     margin-top: 1px solid red;
+     // margin-top: 1px solid red;
   }
 }

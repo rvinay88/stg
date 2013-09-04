@@ -2580,7 +2580,7 @@ label.error {
     height: 100%; }
 
 /* Sections */
-/* line 295, foundation/components/_section.scss */
+/* line 293, foundation/components/_section.scss */
 [data-section=''], [data-section='auto'], .section-container.auto,
 [data-section='vertical-tabs'], .section-container.vertical-tabs,
 [data-section='vertical-nav'], .section-container.vertical-nav,
@@ -2640,7 +2640,7 @@ label.error {
       [data-section='accordion'][data-section-small-style] > .section > [data-section-title],
       [data-section='accordion'][data-section-small-style] > .section > .title, .section-container.accordion[data-section-small-style] > [data-section-region] > [data-section-title], .section-container.accordion[data-section-small-style] > [data-section-region] > .title, .section-container.accordion[data-section-small-style] > section > [data-section-title], .section-container.accordion[data-section-small-style] > section > .title, .section-container.accordion[data-section-small-style] > .section > [data-section-title], .section-container.accordion[data-section-small-style] > .section > .title {
         width: 100% !important; }
-  /* line 297, foundation/components/_section.scss */
+  /* line 295, foundation/components/_section.scss */
   [data-section=''] > section, [data-section=''] > .section, [data-section=''] > [data-section-region], [data-section='auto'] > section, [data-section='auto'] > .section, [data-section='auto'] > [data-section-region], .section-container.auto > section, .section-container.auto > .section, .section-container.auto > [data-section-region],
   [data-section='vertical-tabs'] > section,
   [data-section='vertical-tabs'] > .section,
@@ -2764,8 +2764,7 @@ label.error {
     [data-section='accordion'] > .section.active > .content,
     [data-section='accordion'] > [data-section-region].active > [data-section-content],
     [data-section='accordion'] > [data-section-region].active > .content, .section-container.accordion > section.active > [data-section-content], .section-container.accordion > section.active > .content, .section-container.accordion > .section.active > [data-section-content], .section-container.accordion > .section.active > .content, .section-container.accordion > [data-section-region].active > [data-section-content], .section-container.accordion > [data-section-region].active > .content {
-      display: block;
-      margin-top: 0.625rem; }
+      display: block; }
     /* line 122, foundation/components/_section.scss */
     [data-section=''] > section:not(.active), [data-section=''] > .section:not(.active), [data-section=''] > [data-section-region]:not(.active), [data-section='auto'] > section:not(.active), [data-section='auto'] > .section:not(.active), [data-section='auto'] > [data-section-region]:not(.active), .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active), .section-container.auto > [data-section-region]:not(.active),
     [data-section='vertical-tabs'] > section:not(.active),
@@ -2809,14 +2808,14 @@ label.error {
     [data-section='accordion'] > [data-section-region] > .title, .section-container.accordion > section > [data-section-title], .section-container.accordion > section > .title, .section-container.accordion > .section > [data-section-title], .section-container.accordion > .section > .title, .section-container.accordion > [data-section-region] > [data-section-title], .section-container.accordion > [data-section-region] > .title {
       width: 100%; }
 
-/* line 306, foundation/components/_section.scss */
+/* line 304, foundation/components/_section.scss */
 .section-container.auto,
 .section-container.vertical-tabs,
 .section-container.vertical-nav,
 .section-container.horizontal-nav,
 .section-container.accordion {
-  border-top: 1px solid #cccccc; }
-  /* line 210, foundation/components/_section.scss */
+  border-top: none; }
+  /* line 212, foundation/components/_section.scss */
   .section-container.auto > section > .title, .section-container.auto > .section > .title,
   .section-container.vertical-tabs > section > .title,
   .section-container.vertical-tabs > .section > .title,
@@ -2827,9 +2826,8 @@ label.error {
   .section-container.accordion > section > .title,
   .section-container.accordion > .section > .title {
     background-color: white;
-    cursor: pointer;
-    border: solid 1px #cccccc; }
-    /* line 214, foundation/components/_section.scss */
+    cursor: pointer; }
+    /* line 215, foundation/components/_section.scss */
     .section-container.auto > section > .title a, .section-container.auto > .section > .title a,
     .section-container.vertical-tabs > section > .title a,
     .section-container.vertical-tabs > .section > .title a,
@@ -2839,12 +2837,11 @@ label.error {
     .section-container.horizontal-nav > .section > .title a,
     .section-container.accordion > section > .title a,
     .section-container.accordion > .section > .title a {
-      padding: 0.625rem;
-      color: white;
+      padding: 0.3125rem;
+      color: black;
       text-transform: uppercase;
       font-size: 0.875rem;
-      text-decoration: none;
-      background: #000; }
+      text-decoration: none; }
       /* line 221, foundation/components/_section.scss */
       .section-container.auto > section > .title a:hover, .section-container.auto > .section > .title a:hover,
       .section-container.vertical-tabs > section > .title a:hover,
@@ -2855,9 +2852,8 @@ label.error {
       .section-container.horizontal-nav > .section > .title a:hover,
       .section-container.accordion > section > .title a:hover,
       .section-container.accordion > .section > .title a:hover {
-        background-color: white;
-        color: black; }
-  /* line 228, foundation/components/_section.scss */
+        background-color: #eeeeee; }
+  /* line 227, foundation/components/_section.scss */
   .section-container.auto > section > .content, .section-container.auto > .section > .content,
   .section-container.vertical-tabs > section > .content,
   .section-container.vertical-tabs > .section > .content,
@@ -2868,9 +2864,8 @@ label.error {
   .section-container.accordion > section > .content,
   .section-container.accordion > .section > .content {
     padding: 0.625rem;
-    background-color: white;
-    border: solid 1px #cccccc; }
-    /* line 233, foundation/components/_section.scss */
+    background-color: white; }
+    /* line 232, foundation/components/_section.scss */
     .section-container.auto > section > .content > *:last-child, .section-container.auto > .section > .content > *:last-child,
     .section-container.vertical-tabs > section > .content > *:last-child,
     .section-container.vertical-tabs > .section > .content > *:last-child,
@@ -2881,7 +2876,7 @@ label.error {
     .section-container.accordion > section > .content > *:last-child,
     .section-container.accordion > .section > .content > *:last-child {
       margin-bottom: 0; }
-    /* line 234, foundation/components/_section.scss */
+    /* line 233, foundation/components/_section.scss */
     .section-container.auto > section > .content > *:first-child, .section-container.auto > .section > .content > *:first-child,
     .section-container.vertical-tabs > section > .content > *:first-child,
     .section-container.vertical-tabs > .section > .content > *:first-child,
@@ -2892,7 +2887,7 @@ label.error {
     .section-container.accordion > section > .content > *:first-child,
     .section-container.accordion > .section > .content > *:first-child {
       padding-top: 0; }
-    /* line 235, foundation/components/_section.scss */
+    /* line 234, foundation/components/_section.scss */
     .section-container.auto > section > .content > *:last-child:not(.flex-video), .section-container.auto > .section > .content > *:last-child:not(.flex-video),
     .section-container.vertical-tabs > section > .content > *:last-child:not(.flex-video),
     .section-container.vertical-tabs > .section > .content > *:last-child:not(.flex-video),
@@ -2903,7 +2898,7 @@ label.error {
     .section-container.accordion > section > .content > *:last-child:not(.flex-video),
     .section-container.accordion > .section > .content > *:last-child:not(.flex-video) {
       padding-bottom: 0; }
-  /* line 240, foundation/components/_section.scss */
+  /* line 239, foundation/components/_section.scss */
   .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a,
   .section-container.vertical-tabs > section.active > .title a,
   .section-container.vertical-tabs > .section.active > .title a,
@@ -2913,9 +2908,8 @@ label.error {
   .section-container.horizontal-nav > .section.active > .title a,
   .section-container.accordion > section.active > .title a,
   .section-container.accordion > .section.active > .title a {
-    background: white;
-    color: black; }
-  /* line 247, foundation/components/_section.scss */
+    background: #eeeeee; }
+  /* line 245, foundation/components/_section.scss */
   .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active),
   .section-container.vertical-tabs > section:not(.active),
   .section-container.vertical-tabs > .section:not(.active),
@@ -2926,7 +2920,7 @@ label.error {
   .section-container.accordion > section:not(.active),
   .section-container.accordion > .section:not(.active) {
     padding: 0 !important; }
-  /* line 253, foundation/components/_section.scss */
+  /* line 251, foundation/components/_section.scss */
   .section-container.auto > section > .title, .section-container.auto > .section > .title,
   .section-container.vertical-tabs > section > .title,
   .section-container.vertical-tabs > .section > .title,
@@ -2936,9 +2930,9 @@ label.error {
   .section-container.horizontal-nav > .section > .title,
   .section-container.accordion > section > .title,
   .section-container.accordion > .section > .title {
-    border-top: none; }
+    border: 1px solid #bbbbbb; }
 
-/* line 313, foundation/components/_section.scss */
+/* line 311, foundation/components/_section.scss */
 [data-section='tabs'], .section-container.tabs {
   width: 100%;
   position: relative;
@@ -2960,65 +2954,59 @@ label.error {
     display: none; }
   /* line 117, foundation/components/_section.scss */
   [data-section='tabs'] > section.active > [data-section-content], [data-section='tabs'] > section.active > .content, [data-section='tabs'] > .section.active > [data-section-content], [data-section='tabs'] > .section.active > .content, [data-section='tabs'] > [data-section-region].active > [data-section-content], [data-section='tabs'] > [data-section-region].active > .content, .section-container.tabs > section.active > [data-section-content], .section-container.tabs > section.active > .content, .section-container.tabs > .section.active > [data-section-content], .section-container.tabs > .section.active > .content, .section-container.tabs > [data-section-region].active > [data-section-content], .section-container.tabs > [data-section-region].active > .content {
-    display: block;
-    margin-top: 0.625rem; }
+    display: block; }
   /* line 122, foundation/components/_section.scss */
   [data-section='tabs'] > section:not(.active), [data-section='tabs'] > .section:not(.active), [data-section='tabs'] > [data-section-region]:not(.active), .section-container.tabs > section:not(.active), .section-container.tabs > .section:not(.active), .section-container.tabs > [data-section-region]:not(.active) {
     padding: 0 !important; }
-  /* line 135, foundation/components/_section.scss */
+  /* line 137, foundation/components/_section.scss */
   [data-section='tabs'] > section > [data-section-title], [data-section='tabs'] > section > .title, [data-section='tabs'] > .section > [data-section-title], [data-section='tabs'] > .section > .title, [data-section='tabs'] > [data-section-region] > [data-section-title], [data-section='tabs'] > [data-section-region] > .title, .section-container.tabs > section > [data-section-title], .section-container.tabs > section > .title, .section-container.tabs > .section > [data-section-title], .section-container.tabs > .section > .title, .section-container.tabs > [data-section-region] > [data-section-title], .section-container.tabs > [data-section-region] > .title {
     width: auto;
     position: absolute;
     top: 0;
     left: 0; }
 
-/* line 320, foundation/components/_section.scss */
+/* line 318, foundation/components/_section.scss */
 .section-container.tabs {
   border: none; }
-  /* line 210, foundation/components/_section.scss */
+  /* line 212, foundation/components/_section.scss */
   .section-container.tabs > section > .title, .section-container.tabs > .section > .title {
     background-color: white;
-    cursor: pointer;
-    border: solid 1px #cccccc; }
-    /* line 214, foundation/components/_section.scss */
+    cursor: pointer; }
+    /* line 215, foundation/components/_section.scss */
     .section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
-      padding: 0.625rem;
-      color: white;
+      padding: 0.3125rem;
+      color: black;
       text-transform: uppercase;
       font-size: 0.875rem;
-      text-decoration: none;
-      background: #000; }
+      text-decoration: none; }
       /* line 221, foundation/components/_section.scss */
       .section-container.tabs > section > .title a:hover, .section-container.tabs > .section > .title a:hover {
-        background-color: white;
-        color: black; }
-  /* line 228, foundation/components/_section.scss */
+        background-color: #eeeeee; }
+  /* line 227, foundation/components/_section.scss */
   .section-container.tabs > section > .content, .section-container.tabs > .section > .content {
     padding: 0.625rem;
-    background-color: white;
-    border: solid 1px #cccccc; }
-    /* line 233, foundation/components/_section.scss */
+    background-color: white; }
+    /* line 232, foundation/components/_section.scss */
     .section-container.tabs > section > .content > *:last-child, .section-container.tabs > .section > .content > *:last-child {
       margin-bottom: 0; }
-    /* line 234, foundation/components/_section.scss */
+    /* line 233, foundation/components/_section.scss */
     .section-container.tabs > section > .content > *:first-child, .section-container.tabs > .section > .content > *:first-child {
       padding-top: 0; }
-    /* line 235, foundation/components/_section.scss */
+    /* line 234, foundation/components/_section.scss */
     .section-container.tabs > section > .content > *:last-child:not(.flex-video), .section-container.tabs > .section > .content > *:last-child:not(.flex-video) {
       padding-bottom: 0; }
-  /* line 240, foundation/components/_section.scss */
+  /* line 239, foundation/components/_section.scss */
   .section-container.tabs > section.active > .title a, .section-container.tabs > .section.active > .title a {
-    background: white;
-    color: black; }
-  /* line 247, foundation/components/_section.scss */
+    background: white; }
+  /* line 245, foundation/components/_section.scss */
   .section-container.tabs > section:not(.active), .section-container.tabs > .section:not(.active) {
     padding: 0 !important; }
-  /* line 259, foundation/components/_section.scss */
+  /* line 257, foundation/components/_section.scss */
   .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
     border-bottom: 0; }
 
 @media only screen and (min-width: 768px) {
-  /* line 329, foundation/components/_section.scss */
+  /* line 327, foundation/components/_section.scss */
   [data-section=''], [data-section='auto'], .section-container.auto {
     width: 100%;
     position: relative;
@@ -3040,64 +3028,58 @@ label.error {
       display: none; }
     /* line 117, foundation/components/_section.scss */
     [data-section=''] > section.active > [data-section-content], [data-section=''] > section.active > .content, [data-section=''] > .section.active > [data-section-content], [data-section=''] > .section.active > .content, [data-section=''] > [data-section-region].active > [data-section-content], [data-section=''] > [data-section-region].active > .content, [data-section='auto'] > section.active > [data-section-content], [data-section='auto'] > section.active > .content, [data-section='auto'] > .section.active > [data-section-content], [data-section='auto'] > .section.active > .content, [data-section='auto'] > [data-section-region].active > [data-section-content], [data-section='auto'] > [data-section-region].active > .content, .section-container.auto > section.active > [data-section-content], .section-container.auto > section.active > .content, .section-container.auto > .section.active > [data-section-content], .section-container.auto > .section.active > .content, .section-container.auto > [data-section-region].active > [data-section-content], .section-container.auto > [data-section-region].active > .content {
-      display: block;
-      margin-top: 0.625rem; }
+      display: block; }
     /* line 122, foundation/components/_section.scss */
     [data-section=''] > section:not(.active), [data-section=''] > .section:not(.active), [data-section=''] > [data-section-region]:not(.active), [data-section='auto'] > section:not(.active), [data-section='auto'] > .section:not(.active), [data-section='auto'] > [data-section-region]:not(.active), .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active), .section-container.auto > [data-section-region]:not(.active) {
       padding: 0 !important; }
-    /* line 135, foundation/components/_section.scss */
+    /* line 137, foundation/components/_section.scss */
     [data-section=''] > section > [data-section-title], [data-section=''] > section > .title, [data-section=''] > .section > [data-section-title], [data-section=''] > .section > .title, [data-section=''] > [data-section-region] > [data-section-title], [data-section=''] > [data-section-region] > .title, [data-section='auto'] > section > [data-section-title], [data-section='auto'] > section > .title, [data-section='auto'] > .section > [data-section-title], [data-section='auto'] > .section > .title, [data-section='auto'] > [data-section-region] > [data-section-title], [data-section='auto'] > [data-section-region] > .title, .section-container.auto > section > [data-section-title], .section-container.auto > section > .title, .section-container.auto > .section > [data-section-title], .section-container.auto > .section > .title, .section-container.auto > [data-section-region] > [data-section-title], .section-container.auto > [data-section-region] > .title {
       width: auto;
       position: absolute;
       top: 0;
       left: 0; }
 
-  /* line 336, foundation/components/_section.scss */
+  /* line 334, foundation/components/_section.scss */
   .section-container.auto {
     border: none; }
-    /* line 210, foundation/components/_section.scss */
+    /* line 212, foundation/components/_section.scss */
     .section-container.auto > section > .title, .section-container.auto > .section > .title {
       background-color: white;
-      cursor: pointer;
-      border: solid 1px #cccccc; }
-      /* line 214, foundation/components/_section.scss */
+      cursor: pointer; }
+      /* line 215, foundation/components/_section.scss */
       .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
-        padding: 0.625rem;
-        color: white;
+        padding: 0.3125rem;
+        color: black;
         text-transform: uppercase;
         font-size: 0.875rem;
-        text-decoration: none;
-        background: #000; }
+        text-decoration: none; }
         /* line 221, foundation/components/_section.scss */
         .section-container.auto > section > .title a:hover, .section-container.auto > .section > .title a:hover {
-          background-color: white;
-          color: black; }
-    /* line 228, foundation/components/_section.scss */
+          background-color: #eeeeee; }
+    /* line 227, foundation/components/_section.scss */
     .section-container.auto > section > .content, .section-container.auto > .section > .content {
       padding: 0.625rem;
-      background-color: white;
-      border: solid 1px #cccccc; }
-      /* line 233, foundation/components/_section.scss */
+      background-color: white; }
+      /* line 232, foundation/components/_section.scss */
       .section-container.auto > section > .content > *:last-child, .section-container.auto > .section > .content > *:last-child {
         margin-bottom: 0; }
-      /* line 234, foundation/components/_section.scss */
+      /* line 233, foundation/components/_section.scss */
       .section-container.auto > section > .content > *:first-child, .section-container.auto > .section > .content > *:first-child {
         padding-top: 0; }
-      /* line 235, foundation/components/_section.scss */
+      /* line 234, foundation/components/_section.scss */
       .section-container.auto > section > .content > *:last-child:not(.flex-video), .section-container.auto > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    /* line 240, foundation/components/_section.scss */
+    /* line 239, foundation/components/_section.scss */
     .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a {
-      background: white;
-      color: black; }
-    /* line 247, foundation/components/_section.scss */
+      background: white; }
+    /* line 245, foundation/components/_section.scss */
     .section-container.auto > section:not(.active), .section-container.auto > .section:not(.active) {
       padding: 0 !important; }
-    /* line 259, foundation/components/_section.scss */
+    /* line 257, foundation/components/_section.scss */
     .section-container.auto > section.active > .title, .section-container.auto > .section.active > .title {
       border-bottom: 0; }
 
-  /* line 343, foundation/components/_section.scss */
+  /* line 341, foundation/components/_section.scss */
   [data-section='vertical-tabs'], .section-container.vertical-tabs {
     width: 100%;
     position: relative;
@@ -3129,73 +3111,67 @@ label.error {
       display: none; }
     /* line 117, foundation/components/_section.scss */
     [data-section='vertical-tabs'] > section.active > [data-section-content], [data-section='vertical-tabs'] > section.active > .content, [data-section='vertical-tabs'] > .section.active > [data-section-content], [data-section='vertical-tabs'] > .section.active > .content, [data-section='vertical-tabs'] > [data-section-region].active > [data-section-content], [data-section='vertical-tabs'] > [data-section-region].active > .content, .section-container.vertical-tabs > section.active > [data-section-content], .section-container.vertical-tabs > section.active > .content, .section-container.vertical-tabs > .section.active > [data-section-content], .section-container.vertical-tabs > .section.active > .content, .section-container.vertical-tabs > [data-section-region].active > [data-section-content], .section-container.vertical-tabs > [data-section-region].active > .content {
-      display: block;
-      margin-top: 0.625rem; }
+      display: block; }
     /* line 122, foundation/components/_section.scss */
     [data-section='vertical-tabs'] > section:not(.active), [data-section='vertical-tabs'] > .section:not(.active), [data-section='vertical-tabs'] > [data-section-region]:not(.active), .section-container.vertical-tabs > section:not(.active), .section-container.vertical-tabs > .section:not(.active), .section-container.vertical-tabs > [data-section-region]:not(.active) {
       padding: 0 !important; }
-    /* line 146, foundation/components/_section.scss */
+    /* line 148, foundation/components/_section.scss */
     [data-section='vertical-tabs'] > section > [data-section-title], [data-section='vertical-tabs'] > section > .title, [data-section='vertical-tabs'] > .section > [data-section-title], [data-section='vertical-tabs'] > .section > .title, [data-section='vertical-tabs'] > [data-section-region] > [data-section-title], [data-section='vertical-tabs'] > [data-section-region] > .title, .section-container.vertical-tabs > section > [data-section-title], .section-container.vertical-tabs > section > .title, .section-container.vertical-tabs > .section > [data-section-title], .section-container.vertical-tabs > .section > .title, .section-container.vertical-tabs > [data-section-region] > [data-section-title], .section-container.vertical-tabs > [data-section-region] > .title {
       position: absolute;
       top: 0;
       left: 0;
       width: 12.5rem; }
-    /* line 153, foundation/components/_section.scss */
+    /* line 155, foundation/components/_section.scss */
     [data-section='vertical-tabs'] > section.active, [data-section='vertical-tabs'] > .section.active, [data-section='vertical-tabs'] > [data-section-region].active, .section-container.vertical-tabs > section.active, .section-container.vertical-tabs > .section.active, .section-container.vertical-tabs > [data-section-region].active {
       padding-left: 12.5rem; }
-      /* line 156, foundation/components/_section.scss */
+      /* line 158, foundation/components/_section.scss */
       [data-section='vertical-tabs'] > section.active > [data-section-title], [data-section='vertical-tabs'] > section.active > .title, [data-section='vertical-tabs'] > .section.active > [data-section-title], [data-section='vertical-tabs'] > .section.active > .title, [data-section='vertical-tabs'] > [data-section-region].active > [data-section-title], [data-section='vertical-tabs'] > [data-section-region].active > .title, .section-container.vertical-tabs > section.active > [data-section-title], .section-container.vertical-tabs > section.active > .title, .section-container.vertical-tabs > .section.active > [data-section-title], .section-container.vertical-tabs > .section.active > .title, .section-container.vertical-tabs > [data-section-region].active > [data-section-title], .section-container.vertical-tabs > [data-section-region].active > .title {
         width: 12.5rem; }
 
-  /* line 350, foundation/components/_section.scss */
+  /* line 348, foundation/components/_section.scss */
   .section-container.vertical-tabs {
     border: none; }
-    /* line 210, foundation/components/_section.scss */
+    /* line 212, foundation/components/_section.scss */
     .section-container.vertical-tabs > section > .title, .section-container.vertical-tabs > .section > .title {
       background-color: white;
-      cursor: pointer;
-      border: solid 1px #cccccc; }
-      /* line 214, foundation/components/_section.scss */
+      cursor: pointer; }
+      /* line 215, foundation/components/_section.scss */
       .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > .section > .title a {
-        padding: 0.625rem;
-        color: white;
+        padding: 0.3125rem;
+        color: black;
         text-transform: uppercase;
         font-size: 0.875rem;
-        text-decoration: none;
-        background: #000; }
+        text-decoration: none; }
         /* line 221, foundation/components/_section.scss */
         .section-container.vertical-tabs > section > .title a:hover, .section-container.vertical-tabs > .section > .title a:hover {
-          background-color: white;
-          color: black; }
-    /* line 228, foundation/components/_section.scss */
+          background-color: #eeeeee; }
+    /* line 227, foundation/components/_section.scss */
     .section-container.vertical-tabs > section > .content, .section-container.vertical-tabs > .section > .content {
       padding: 0.625rem;
-      background-color: white;
-      border: solid 1px #cccccc; }
-      /* line 233, foundation/components/_section.scss */
+      background-color: white; }
+      /* line 232, foundation/components/_section.scss */
       .section-container.vertical-tabs > section > .content > *:last-child, .section-container.vertical-tabs > .section > .content > *:last-child {
         margin-bottom: 0; }
-      /* line 234, foundation/components/_section.scss */
+      /* line 233, foundation/components/_section.scss */
       .section-container.vertical-tabs > section > .content > *:first-child, .section-container.vertical-tabs > .section > .content > *:first-child {
         padding-top: 0; }
-      /* line 235, foundation/components/_section.scss */
+      /* line 234, foundation/components/_section.scss */
       .section-container.vertical-tabs > section > .content > *:last-child:not(.flex-video), .section-container.vertical-tabs > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    /* line 240, foundation/components/_section.scss */
+    /* line 239, foundation/components/_section.scss */
     .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a {
-      background: white;
-      color: black; }
-    /* line 247, foundation/components/_section.scss */
+      background: #eeeeee; }
+    /* line 245, foundation/components/_section.scss */
     .section-container.vertical-tabs > section:not(.active), .section-container.vertical-tabs > .section:not(.active) {
       padding: 0 !important; }
-    /* line 267, foundation/components/_section.scss */
+    /* line 265, foundation/components/_section.scss */
     .section-container.vertical-tabs > section.active, .section-container.vertical-tabs > .section.active {
       padding-left: 12.4375rem; }
-      /* line 270, foundation/components/_section.scss */
+      /* line 268, foundation/components/_section.scss */
       .section-container.vertical-tabs > section.active > .title, .section-container.vertical-tabs > .section.active > .title {
-        background-color: white; }
+        background-color: #eeeeee; }
 
-  /* line 357, foundation/components/_section.scss */
+  /* line 355, foundation/components/_section.scss */
   [data-section='vertical-nav'], .section-container.vertical-nav {
     width: 100%;
     position: relative;
@@ -3214,7 +3190,7 @@ label.error {
         /* line 61, foundation/components/_section.scss */
         [data-section='vertical-nav'][data-section-small-style] > [data-section-region] > [data-section-title], [data-section='vertical-nav'][data-section-small-style] > [data-section-region] > .title, [data-section='vertical-nav'][data-section-small-style] > section > [data-section-title], [data-section='vertical-nav'][data-section-small-style] > section > .title, [data-section='vertical-nav'][data-section-small-style] > .section > [data-section-title], [data-section='vertical-nav'][data-section-small-style] > .section > .title, .section-container.vertical-nav[data-section-small-style] > [data-section-region] > [data-section-title], .section-container.vertical-nav[data-section-small-style] > [data-section-region] > .title, .section-container.vertical-nav[data-section-small-style] > section > [data-section-title], .section-container.vertical-nav[data-section-small-style] > section > .title, .section-container.vertical-nav[data-section-small-style] > .section > [data-section-title], .section-container.vertical-nav[data-section-small-style] > .section > .title {
           width: 100% !important; }
-    /* line 359, foundation/components/_section.scss */
+    /* line 357, foundation/components/_section.scss */
     [data-section='vertical-nav'] > section, [data-section='vertical-nav'] > .section, [data-section='vertical-nav'] > [data-section-region], .section-container.vertical-nav > section, .section-container.vertical-nav > .section, .section-container.vertical-nav > [data-section-region] {
       position: relative;
       display: inline-block; }
@@ -3231,19 +3207,18 @@ label.error {
         display: none; }
       /* line 117, foundation/components/_section.scss */
       [data-section='vertical-nav'] > section.active > [data-section-content], [data-section='vertical-nav'] > section.active > .content, [data-section='vertical-nav'] > .section.active > [data-section-content], [data-section='vertical-nav'] > .section.active > .content, [data-section='vertical-nav'] > [data-section-region].active > [data-section-content], [data-section='vertical-nav'] > [data-section-region].active > .content, .section-container.vertical-nav > section.active > [data-section-content], .section-container.vertical-nav > section.active > .content, .section-container.vertical-nav > .section.active > [data-section-content], .section-container.vertical-nav > .section.active > .content, .section-container.vertical-nav > [data-section-region].active > [data-section-content], .section-container.vertical-nav > [data-section-region].active > .content {
-        display: block;
-        margin-top: 0.625rem; }
+        display: block; }
       /* line 122, foundation/components/_section.scss */
       [data-section='vertical-nav'] > section:not(.active), [data-section='vertical-nav'] > .section:not(.active), [data-section='vertical-nav'] > [data-section-region]:not(.active), .section-container.vertical-nav > section:not(.active), .section-container.vertical-nav > .section:not(.active), .section-container.vertical-nav > [data-section-region]:not(.active) {
         padding: 0 !important; }
-      /* line 168, foundation/components/_section.scss */
+      /* line 170, foundation/components/_section.scss */
       [data-section='vertical-nav'] > section > [data-section-title], [data-section='vertical-nav'] > section > .title, [data-section='vertical-nav'] > .section > [data-section-title], [data-section='vertical-nav'] > .section > .title, [data-section='vertical-nav'] > [data-section-region] > [data-section-title], [data-section='vertical-nav'] > [data-section-region] > .title, .section-container.vertical-nav > section > [data-section-title], .section-container.vertical-nav > section > .title, .section-container.vertical-nav > .section > [data-section-title], .section-container.vertical-nav > .section > .title, .section-container.vertical-nav > [data-section-region] > [data-section-title], .section-container.vertical-nav > [data-section-region] > .title {
         position: static;
         width: auto; }
-        /* line 171, foundation/components/_section.scss */
+        /* line 173, foundation/components/_section.scss */
         [data-section='vertical-nav'] > section > [data-section-title] a, [data-section='vertical-nav'] > section > .title a, [data-section='vertical-nav'] > .section > [data-section-title] a, [data-section='vertical-nav'] > .section > .title a, [data-section='vertical-nav'] > [data-section-region] > [data-section-title] a, [data-section='vertical-nav'] > [data-section-region] > .title a, .section-container.vertical-nav > section > [data-section-title] a, .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > [data-section-title] a, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > [data-section-region] > [data-section-title] a, .section-container.vertical-nav > [data-section-region] > .title a {
           display: block; }
-      /* line 174, foundation/components/_section.scss */
+      /* line 176, foundation/components/_section.scss */
       [data-section='vertical-nav'] > section > [data-section-content], [data-section='vertical-nav'] > section > .content, [data-section='vertical-nav'] > .section > [data-section-content], [data-section='vertical-nav'] > .section > .content, [data-section='vertical-nav'] > [data-section-region] > [data-section-content], [data-section='vertical-nav'] > [data-section-region] > .content, .section-container.vertical-nav > section > [data-section-content], .section-container.vertical-nav > section > .content, .section-container.vertical-nav > .section > [data-section-content], .section-container.vertical-nav > .section > .content, .section-container.vertical-nav > [data-section-region] > [data-section-content], .section-container.vertical-nav > [data-section-region] > .content {
         position: absolute;
         top: 0;
@@ -3251,49 +3226,44 @@ label.error {
         z-index: 999;
         min-width: 12.5rem; }
 
-  /* line 364, foundation/components/_section.scss */
+  /* line 362, foundation/components/_section.scss */
   .section-container.vertical-nav {
     border: none; }
-    /* line 210, foundation/components/_section.scss */
+    /* line 212, foundation/components/_section.scss */
     .section-container.vertical-nav > section > .title, .section-container.vertical-nav > .section > .title {
       background-color: white;
-      cursor: pointer;
-      border: solid 1px #cccccc; }
-      /* line 214, foundation/components/_section.scss */
+      cursor: pointer; }
+      /* line 215, foundation/components/_section.scss */
       .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > .title a {
-        padding: 0.625rem;
-        color: white;
+        padding: 0.3125rem;
+        color: black;
         text-transform: uppercase;
         font-size: 0.875rem;
-        text-decoration: none;
-        background: #000; }
+        text-decoration: none; }
         /* line 221, foundation/components/_section.scss */
         .section-container.vertical-nav > section > .title a:hover, .section-container.vertical-nav > .section > .title a:hover {
-          background-color: white;
-          color: black; }
-    /* line 228, foundation/components/_section.scss */
+          background-color: #eeeeee; }
+    /* line 227, foundation/components/_section.scss */
     .section-container.vertical-nav > section > .content, .section-container.vertical-nav > .section > .content {
       padding: 0.625rem;
-      background-color: white;
-      border: solid 1px #cccccc; }
-      /* line 233, foundation/components/_section.scss */
+      background-color: white; }
+      /* line 232, foundation/components/_section.scss */
       .section-container.vertical-nav > section > .content > *:last-child, .section-container.vertical-nav > .section > .content > *:last-child {
         margin-bottom: 0; }
-      /* line 234, foundation/components/_section.scss */
+      /* line 233, foundation/components/_section.scss */
       .section-container.vertical-nav > section > .content > *:first-child, .section-container.vertical-nav > .section > .content > *:first-child {
         padding-top: 0; }
-      /* line 235, foundation/components/_section.scss */
+      /* line 234, foundation/components/_section.scss */
       .section-container.vertical-nav > section > .content > *:last-child:not(.flex-video), .section-container.vertical-nav > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    /* line 240, foundation/components/_section.scss */
+    /* line 239, foundation/components/_section.scss */
     .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a {
-      background: white;
-      color: black; }
-    /* line 247, foundation/components/_section.scss */
+      background: #eeeeee; }
+    /* line 245, foundation/components/_section.scss */
     .section-container.vertical-nav > section:not(.active), .section-container.vertical-nav > .section:not(.active) {
       padding: 0 !important; }
 
-  /* line 371, foundation/components/_section.scss */
+  /* line 369, foundation/components/_section.scss */
   [data-section='horizontal-nav'], .section-container.horizontal-nav {
     width: 100%;
     position: relative;
@@ -3312,7 +3282,7 @@ label.error {
         /* line 61, foundation/components/_section.scss */
         [data-section='horizontal-nav'][data-section-small-style] > [data-section-region] > [data-section-title], [data-section='horizontal-nav'][data-section-small-style] > [data-section-region] > .title, [data-section='horizontal-nav'][data-section-small-style] > section > [data-section-title], [data-section='horizontal-nav'][data-section-small-style] > section > .title, [data-section='horizontal-nav'][data-section-small-style] > .section > [data-section-title], [data-section='horizontal-nav'][data-section-small-style] > .section > .title, .section-container.horizontal-nav[data-section-small-style] > [data-section-region] > [data-section-title], .section-container.horizontal-nav[data-section-small-style] > [data-section-region] > .title, .section-container.horizontal-nav[data-section-small-style] > section > [data-section-title], .section-container.horizontal-nav[data-section-small-style] > section > .title, .section-container.horizontal-nav[data-section-small-style] > .section > [data-section-title], .section-container.horizontal-nav[data-section-small-style] > .section > .title {
           width: 100% !important; }
-    /* line 373, foundation/components/_section.scss */
+    /* line 371, foundation/components/_section.scss */
     [data-section='horizontal-nav'] > section, [data-section='horizontal-nav'] > .section, [data-section='horizontal-nav'] > [data-section-region], .section-container.horizontal-nav > section, .section-container.horizontal-nav > .section, .section-container.horizontal-nav > [data-section-region] {
       position: relative;
       float: left; }
@@ -3329,19 +3299,18 @@ label.error {
         display: none; }
       /* line 117, foundation/components/_section.scss */
       [data-section='horizontal-nav'] > section.active > [data-section-content], [data-section='horizontal-nav'] > section.active > .content, [data-section='horizontal-nav'] > .section.active > [data-section-content], [data-section='horizontal-nav'] > .section.active > .content, [data-section='horizontal-nav'] > [data-section-region].active > [data-section-content], [data-section='horizontal-nav'] > [data-section-region].active > .content, .section-container.horizontal-nav > section.active > [data-section-content], .section-container.horizontal-nav > section.active > .content, .section-container.horizontal-nav > .section.active > [data-section-content], .section-container.horizontal-nav > .section.active > .content, .section-container.horizontal-nav > [data-section-region].active > [data-section-content], .section-container.horizontal-nav > [data-section-region].active > .content {
-        display: block;
-        margin-top: 0.625rem; }
+        display: block; }
       /* line 122, foundation/components/_section.scss */
       [data-section='horizontal-nav'] > section:not(.active), [data-section='horizontal-nav'] > .section:not(.active), [data-section='horizontal-nav'] > [data-section-region]:not(.active), .section-container.horizontal-nav > section:not(.active), .section-container.horizontal-nav > .section:not(.active), .section-container.horizontal-nav > [data-section-region]:not(.active) {
         padding: 0 !important; }
-      /* line 189, foundation/components/_section.scss */
+      /* line 191, foundation/components/_section.scss */
       [data-section='horizontal-nav'] > section > [data-section-title], [data-section='horizontal-nav'] > section > .title, [data-section='horizontal-nav'] > .section > [data-section-title], [data-section='horizontal-nav'] > .section > .title, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title], [data-section='horizontal-nav'] > [data-section-region] > .title, .section-container.horizontal-nav > section > [data-section-title], .section-container.horizontal-nav > section > .title, .section-container.horizontal-nav > .section > [data-section-title], .section-container.horizontal-nav > .section > .title, .section-container.horizontal-nav > [data-section-region] > [data-section-title], .section-container.horizontal-nav > [data-section-region] > .title {
         position: static;
         width: auto; }
-        /* line 192, foundation/components/_section.scss */
+        /* line 194, foundation/components/_section.scss */
         [data-section='horizontal-nav'] > section > [data-section-title] a, [data-section='horizontal-nav'] > section > .title a, [data-section='horizontal-nav'] > .section > [data-section-title] a, [data-section='horizontal-nav'] > .section > .title a, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] a, [data-section='horizontal-nav'] > [data-section-region] > .title a, .section-container.horizontal-nav > section > [data-section-title] a, .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > [data-section-title] a, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > [data-section-region] > [data-section-title] a, .section-container.horizontal-nav > [data-section-region] > .title a {
           display: block; }
-      /* line 195, foundation/components/_section.scss */
+      /* line 197, foundation/components/_section.scss */
       [data-section='horizontal-nav'] > section > [data-section-content], [data-section='horizontal-nav'] > section > .content, [data-section='horizontal-nav'] > .section > [data-section-content], [data-section='horizontal-nav'] > .section > .content, [data-section='horizontal-nav'] > [data-section-region] > [data-section-content], [data-section='horizontal-nav'] > [data-section-region] > .content, .section-container.horizontal-nav > section > [data-section-content], .section-container.horizontal-nav > section > .content, .section-container.horizontal-nav > .section > [data-section-content], .section-container.horizontal-nav > .section > .content, .section-container.horizontal-nav > [data-section-region] > [data-section-content], .section-container.horizontal-nav > [data-section-region] > .content {
         width: auto;
         position: absolute;
@@ -3350,49 +3319,44 @@ label.error {
         z-index: 999;
         min-width: 12.5rem; }
 
-  /* line 378, foundation/components/_section.scss */
+  /* line 376, foundation/components/_section.scss */
   .section-container.horizontal-nav {
     background: white;
-    border: 1px solid #cccccc; }
-    /* line 210, foundation/components/_section.scss */
+    border: 1px solid white; }
+    /* line 212, foundation/components/_section.scss */
     .section-container.horizontal-nav > section > .title, .section-container.horizontal-nav > .section > .title {
       background-color: white;
-      cursor: pointer;
-      border: solid 1px #cccccc; }
-      /* line 214, foundation/components/_section.scss */
+      cursor: pointer; }
+      /* line 215, foundation/components/_section.scss */
       .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > .title a {
-        padding: 0.625rem;
-        color: white;
+        padding: 0.3125rem;
+        color: black;
         text-transform: uppercase;
         font-size: 0.875rem;
-        text-decoration: none;
-        background: #000; }
+        text-decoration: none; }
         /* line 221, foundation/components/_section.scss */
         .section-container.horizontal-nav > section > .title a:hover, .section-container.horizontal-nav > .section > .title a:hover {
-          background-color: white;
-          color: black; }
-    /* line 228, foundation/components/_section.scss */
+          background-color: #eeeeee; }
+    /* line 227, foundation/components/_section.scss */
     .section-container.horizontal-nav > section > .content, .section-container.horizontal-nav > .section > .content {
       padding: 0.625rem;
-      background-color: white;
-      border: solid 1px #cccccc; }
-      /* line 233, foundation/components/_section.scss */
+      background-color: white; }
+      /* line 232, foundation/components/_section.scss */
       .section-container.horizontal-nav > section > .content > *:last-child, .section-container.horizontal-nav > .section > .content > *:last-child {
         margin-bottom: 0; }
-      /* line 234, foundation/components/_section.scss */
+      /* line 233, foundation/components/_section.scss */
       .section-container.horizontal-nav > section > .content > *:first-child, .section-container.horizontal-nav > .section > .content > *:first-child {
         padding-top: 0; }
-      /* line 235, foundation/components/_section.scss */
+      /* line 234, foundation/components/_section.scss */
       .section-container.horizontal-nav > section > .content > *:last-child:not(.flex-video), .section-container.horizontal-nav > .section > .content > *:last-child:not(.flex-video) {
         padding-bottom: 0; }
-    /* line 240, foundation/components/_section.scss */
+    /* line 239, foundation/components/_section.scss */
     .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a {
-      background: white;
-      color: black; }
-    /* line 247, foundation/components/_section.scss */
+      background: #eeeeee; }
+    /* line 245, foundation/components/_section.scss */
     .section-container.horizontal-nav > section:not(.active), .section-container.horizontal-nav > .section:not(.active) {
       padding: 0 !important; } }
-/* line 388, foundation/components/_section.scss */
+/* line 386, foundation/components/_section.scss */
 .no-js [data-section], .no-js .section-container {
   width: 100%;
   position: relative;
@@ -3408,7 +3372,7 @@ label.error {
       /* line 61, foundation/components/_section.scss */
       .no-js [data-section][data-section-small-style] > [data-section-region] > [data-section-title], .no-js [data-section][data-section-small-style] > [data-section-region] > .title, .no-js [data-section][data-section-small-style] > section > [data-section-title], .no-js [data-section][data-section-small-style] > section > .title, .no-js [data-section][data-section-small-style] > .section > [data-section-title], .no-js [data-section][data-section-small-style] > .section > .title, .no-js .section-container[data-section-small-style] > [data-section-region] > [data-section-title], .no-js .section-container[data-section-small-style] > [data-section-region] > .title, .no-js .section-container[data-section-small-style] > section > [data-section-title], .no-js .section-container[data-section-small-style] > section > .title, .no-js .section-container[data-section-small-style] > .section > [data-section-title], .no-js .section-container[data-section-small-style] > .section > .title {
         width: 100% !important; }
-  /* line 390, foundation/components/_section.scss */
+  /* line 388, foundation/components/_section.scss */
   .no-js [data-section] > section, .no-js [data-section] > .section, .no-js [data-section] > [data-section-region], .no-js .section-container > section, .no-js .section-container > .section, .no-js .section-container > [data-section-region] {
     margin: 0; }
     /* line 102, foundation/components/_section.scss */
@@ -3424,67 +3388,53 @@ label.error {
       display: none; }
     /* line 117, foundation/components/_section.scss */
     .no-js [data-section] > section.active > [data-section-content], .no-js [data-section] > section.active > .content, .no-js [data-section] > .section.active > [data-section-content], .no-js [data-section] > .section.active > .content, .no-js [data-section] > [data-section-region].active > [data-section-content], .no-js [data-section] > [data-section-region].active > .content, .no-js .section-container > section.active > [data-section-content], .no-js .section-container > section.active > .content, .no-js .section-container > .section.active > [data-section-content], .no-js .section-container > .section.active > .content, .no-js .section-container > [data-section-region].active > [data-section-content], .no-js .section-container > [data-section-region].active > .content {
-      display: block;
-      margin-top: 0.625rem; }
+      display: block; }
     /* line 122, foundation/components/_section.scss */
     .no-js [data-section] > section:not(.active), .no-js [data-section] > .section:not(.active), .no-js [data-section] > [data-section-region]:not(.active), .no-js .section-container > section:not(.active), .no-js .section-container > .section:not(.active), .no-js .section-container > [data-section-region]:not(.active) {
       padding: 0 !important; }
     /* line 129, foundation/components/_section.scss */
     .no-js [data-section] > section > [data-section-title], .no-js [data-section] > section > .title, .no-js [data-section] > .section > [data-section-title], .no-js [data-section] > .section > .title, .no-js [data-section] > [data-section-region] > [data-section-title], .no-js [data-section] > [data-section-region] > .title, .no-js .section-container > section > [data-section-title], .no-js .section-container > section > .title, .no-js .section-container > .section > [data-section-title], .no-js .section-container > .section > .title, .no-js .section-container > [data-section-region] > [data-section-title], .no-js .section-container > [data-section-region] > .title {
       width: 100%; }
-/* line 394, foundation/components/_section.scss */
+/* line 392, foundation/components/_section.scss */
 .no-js .section-container {
-  border-top: 1px solid #cccccc; }
-  /* line 210, foundation/components/_section.scss */
+  border-top: none; }
+  /* line 212, foundation/components/_section.scss */
   .no-js .section-container > section > .title, .no-js .section-container > .section > .title {
     background-color: white;
-    cursor: pointer;
-    border: solid 1px #cccccc; }
-    /* line 214, foundation/components/_section.scss */
+    cursor: pointer; }
+    /* line 215, foundation/components/_section.scss */
     .no-js .section-container > section > .title a, .no-js .section-container > .section > .title a {
-      padding: 0.625rem;
-      color: white;
+      padding: 0.3125rem;
+      color: black;
       text-transform: uppercase;
       font-size: 0.875rem;
-      text-decoration: none;
-      background: #000; }
+      text-decoration: none; }
       /* line 221, foundation/components/_section.scss */
       .no-js .section-container > section > .title a:hover, .no-js .section-container > .section > .title a:hover {
-        background-color: white;
-        color: black; }
-  /* line 228, foundation/components/_section.scss */
+        background-color: #eeeeee; }
+  /* line 227, foundation/components/_section.scss */
   .no-js .section-container > section > .content, .no-js .section-container > .section > .content {
     padding: 0.625rem;
-    background-color: white;
-    border: solid 1px #cccccc; }
-    /* line 233, foundation/components/_section.scss */
+    background-color: white; }
+    /* line 232, foundation/components/_section.scss */
     .no-js .section-container > section > .content > *:last-child, .no-js .section-container > .section > .content > *:last-child {
       margin-bottom: 0; }
-    /* line 234, foundation/components/_section.scss */
+    /* line 233, foundation/components/_section.scss */
     .no-js .section-container > section > .content > *:first-child, .no-js .section-container > .section > .content > *:first-child {
       padding-top: 0; }
-    /* line 235, foundation/components/_section.scss */
+    /* line 234, foundation/components/_section.scss */
     .no-js .section-container > section > .content > *:last-child:not(.flex-video), .no-js .section-container > .section > .content > *:last-child:not(.flex-video) {
       padding-bottom: 0; }
-  /* line 240, foundation/components/_section.scss */
+  /* line 239, foundation/components/_section.scss */
   .no-js .section-container > section.active > .title a, .no-js .section-container > .section.active > .title a {
-    background: white;
-    color: black; }
-  /* line 247, foundation/components/_section.scss */
+    background: #eeeeee; }
+  /* line 245, foundation/components/_section.scss */
   .no-js .section-container > section:not(.active), .no-js .section-container > .section:not(.active) {
     padding: 0 !important; }
-  /* line 253, foundation/components/_section.scss */
+  /* line 251, foundation/components/_section.scss */
   .no-js .section-container > section > .title, .no-js .section-container > .section > .title {
-    border-top: none; }
+    border: 1px solid #bbbbbb; }
 
-@media screen and (max-width: 768px) {
-  /* line 404, foundation/components/_section.scss */
-  .section-container.auto > section > [data-section-title], .section-container.auto > section > .title {
-    margin-top: 1px solid red; }
-
-  /* line 407, foundation/components/_section.scss */
-  .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a, .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a, .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a, .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a, .section-container.accordion > section.active > .title a, .section-container.accordion > .section.active > .title a {
-    margin-top: 1px solid red; } }
 /* Wrapped around .top-bar to contain to grid width */
 /* line 67, foundation/components/_top-bar.scss */
 .contain-to-grid {
@@ -4163,18 +4113,15 @@ ul.user-setting {
       display: block;
       max-width: 100%; }
     /* line 129, foundation/components/_orbit.scss */
-    .orbit-container .orbit-slides-container > li {
-      height: 774px; }
-    /* line 130, foundation/components/_orbit.scss */
     .orbit-container .orbit-slides-container > * {
       position: absolute;
       top: 0;
       width: 100%;
       margin-left: 100%; }
-      /* line 142, foundation/components/_orbit.scss */
+      /* line 141, foundation/components/_orbit.scss */
       .orbit-container .orbit-slides-container > *:first-child {
         margin-left: 0%; }
-      /* line 151, foundation/components/_orbit.scss */
+      /* line 150, foundation/components/_orbit.scss */
       .orbit-container .orbit-slides-container > * .orbit-caption {
         position: absolute;
         bottom: 0;
@@ -4184,7 +4131,7 @@ ul.user-setting {
         width: 100%;
         padding: 10px 14px;
         font-size: 0.875rem; }
-  /* line 164, foundation/components/_orbit.scss */
+  /* line 163, foundation/components/_orbit.scss */
   .orbit-container .orbit-slide-number {
     position: absolute;
     top: 10px;
@@ -4193,11 +4140,11 @@ ul.user-setting {
     color: white;
     background: rgba(0, 0, 0, 0);
     z-index: 10; }
-    /* line 169, foundation/components/_orbit.scss */
+    /* line 168, foundation/components/_orbit.scss */
     .orbit-container .orbit-slide-number span {
       font-weight: 700;
       padding: 0.3125rem; }
-  /* line 175, foundation/components/_orbit.scss */
+  /* line 174, foundation/components/_orbit.scss */
   .orbit-container .orbit-timer {
     position: absolute;
     top: 10px;
@@ -4205,14 +4152,14 @@ ul.user-setting {
     height: 6px;
     width: 100px;
     z-index: 10; }
-    /* line 182, foundation/components/_orbit.scss */
+    /* line 181, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer .orbit-progress {
       height: 100%;
       background-color: black;
       background-color: rgba(0, 0, 0, 0);
       display: block;
       width: 0%; }
-    /* line 190, foundation/components/_orbit.scss */
+    /* line 189, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer > span {
       display: none;
       position: absolute;
@@ -4223,7 +4170,7 @@ ul.user-setting {
       border: solid 4px #000;
       border-top: none;
       border-bottom: none; }
-    /* line 203, foundation/components/_orbit.scss */
+    /* line 202, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer.paused > span {
       right: -6px;
       top: 9px;
@@ -4232,10 +4179,10 @@ ul.user-setting {
       border: inset 8px;
       border-right-style: solid;
       border-color: transparent transparent transparent #000; }
-  /* line 215, foundation/components/_orbit.scss */
+  /* line 214, foundation/components/_orbit.scss */
   .orbit-container:hover .orbit-timer > span {
     display: block; }
-  /* line 219, foundation/components/_orbit.scss */
+  /* line 218, foundation/components/_orbit.scss */
   .orbit-container .orbit-prev,
   .orbit-container .orbit-next {
     position: absolute;
@@ -4244,49 +4191,70 @@ ul.user-setting {
     height: 100%;
     line-height: 50px;
     z-index: 10; }
-    /* line 230, foundation/components/_orbit.scss */
+    /* line 225, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev > span,
     .orbit-container .orbit-next > span {
       position: absolute;
       top: 50%;
       margin-top: -16px;
       display: block; }
-  /* line 237, foundation/components/_orbit.scss */
+  /* line 232, foundation/components/_orbit.scss */
   .orbit-container .orbit-prev {
     left: 0; }
-    /* line 239, foundation/components/_orbit.scss */
-    .orbit-container .orbit-prev span:before {
-      font-family: 'FontAwesome';
-      font-size: 2rem;
-      color: rgba(0, 0, 0, 0.8);
-      content: "\f137"; }
-    /* line 247, foundation/components/_orbit.scss */
-    .orbit-container .orbit-prev:hover span:before {
-      color: black; }
-  /* line 252, foundation/components/_orbit.scss */
+    /* line 233, foundation/components/_orbit.scss */
+    .orbit-container .orbit-prev span {
+      right: 50%;
+      margin-right: -8px; }
+      /* line 234, foundation/components/_orbit.scss */
+      .orbit-container .orbit-prev span:before {
+        font-family: 'FontAwesome';
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\f137"; }
+    /* line 243, foundation/components/_orbit.scss */
+    .orbit-container .orbit-prev:hover {
+      background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+      background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
+      /* line 250, foundation/components/_orbit.scss */
+      .orbit-container .orbit-prev:hover span:before {
+        color: black;
+        background: none; }
+  /* line 256, foundation/components/_orbit.scss */
   .orbit-container .orbit-next {
     right: 0; }
-    /* line 253, foundation/components/_orbit.scss */
+    /* line 257, foundation/components/_orbit.scss */
     .orbit-container .orbit-next span {
       left: 50%;
       margin-left: -8px; }
-      /* line 254, foundation/components/_orbit.scss */
+      /* line 258, foundation/components/_orbit.scss */
       .orbit-container .orbit-next span:before {
         font-family: 'FontAwesome';
         font-size: 2rem;
         color: rgba(0, 0, 0, 0.8);
         content: "\f138"; }
-    /* line 264, foundation/components/_orbit.scss */
-    .orbit-container .orbit-next:hover span:before {
-      color: black; }
+    /* line 267, foundation/components/_orbit.scss */
+    .orbit-container .orbit-next:hover {
+      background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+      background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
+      /* line 274, foundation/components/_orbit.scss */
+      .orbit-container .orbit-next:hover span:before {
+        color: black; }
 
-/* line 271, foundation/components/_orbit.scss */
+/* line 281, foundation/components/_orbit.scss */
 .orbit-bullets {
   margin: 0 auto 30px auto;
   overflow: hidden;
   position: relative;
   top: 10px; }
-  /* line 277, foundation/components/_orbit.scss */
+  /* line 287, foundation/components/_orbit.scss */
   .orbit-bullets li {
     display: block;
     width: 10px;
@@ -4297,38 +4265,38 @@ ul.user-setting {
     border: solid 1px #555555;
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
-    /* line 287, foundation/components/_orbit.scss */
+    /* line 297, foundation/components/_orbit.scss */
     .orbit-bullets li.active {
       background: #555555; }
-    /* line 291, foundation/components/_orbit.scss */
+    /* line 301, foundation/components/_orbit.scss */
     .orbit-bullets li:last-child {
       margin-right: 0; }
 
-/* line 298, foundation/components/_orbit.scss */
+/* line 308, foundation/components/_orbit.scss */
 .touch .orbit-container .orbit-prev,
 .touch .orbit-container .orbit-next {
   display: none; }
-/* line 301, foundation/components/_orbit.scss */
+/* line 311, foundation/components/_orbit.scss */
 .touch .orbit-bullets {
   display: none; }
 
 @media only screen and (min-width: 768px) {
-  /* line 310, foundation/components/_orbit.scss */
+  /* line 320, foundation/components/_orbit.scss */
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
     display: inherit; }
-  /* line 313, foundation/components/_orbit.scss */
+  /* line 323, foundation/components/_orbit.scss */
   .touch .orbit-bullets {
     display: block; } }
 @media only screen and (max-width: 768px) {
-  /* line 323, foundation/components/_orbit.scss */
+  /* line 333, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important; }
-  /* line 324, foundation/components/_orbit.scss */
+  /* line 334, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container > * {
     position: relative;
     margin-left: 0% !important; }
-  /* line 331, foundation/components/_orbit.scss */
+  /* line 341, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-timer,
   .orbit-stack-on-small .orbit-next,
   .orbit-stack-on-small .orbit-prev,
@@ -6308,36 +6276,42 @@ a.th {
 .catalogue {
   font-size: 80%; }
 
-/* line 357, foundation/components/_custom.scss */
+/* line 356, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold; }
-  /* line 360, foundation/components/_custom.scss */
+  /* line 359, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 369, foundation/components/_custom.scss */
+/* line 364, foundation/components/_custom.scss */
+.designer-about {
+  height: 84px;
+  overflow: hidden; }
+
+/* line 368, foundation/components/_custom.scss */
+.more {
+  height: auto !important; }
+
+/* line 372, foundation/components/_custom.scss */
 .small-text {
-  font-size: 80%;
+  font-size: 0.75rem;
   margin-top: 20px; }
 
-/* line 374, foundation/components/_custom.scss */
-.fixed-200 {
-  width: 200px; }
-
 /* line 377, foundation/components/_custom.scss */
+.fixed-170 {
+  width: 170px;
+  margin: 0 0.625rem 1rem 0; }
+
+/* line 381, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
 
-/* line 380, foundation/components/_custom.scss */
-.product-charts {
-  padding: 1rem 0; }
-  /* line 382, foundation/components/_custom.scss */
-  .product-charts a {
-    margin-right: 1rem;
-    font-size: 0.875rem; }
+/* line 384, foundation/components/_custom.scss */
+.right-margin {
+  margin-right: 0.625rem; }
 
-/* line 387, foundation/components/_custom.scss */
+/* line 388, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 

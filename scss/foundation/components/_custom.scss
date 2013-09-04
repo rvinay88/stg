@@ -353,7 +353,6 @@
   font-size: 80%;
 }
 
-
 .designer-name{
   font-size: emCalc(13px);
   font-weight: bold;
@@ -363,27 +362,29 @@
 }
 
 .designer-about{
-
+  height: 84px;
+  overflow: hidden;
+}
+.more{
+  height: auto !important;
 }
 
 .small-text{
-  font-size: 80%;
+  font-size: emCalc(12px);
   margin-top: 20px;
 }
 
-.fixed-200{
-  width: 200px;
+.fixed-170{
+  width: 170px;
+  margin: emCalc(0, 10, 16, 0);
 }
 .fixed-360{
   width: 360px;
 }
-.product-charts {
-  padding: emCalc(16px) 0;
-  a {
-    margin-right: emCalc(16px);
-    font-size: emCalc(14px);
-  }
+.right-margin{
+  margin-right: emCalc(10px);
 }
+
 .in-the-press{
   margin-bottom: emCalc(10px);
 }
