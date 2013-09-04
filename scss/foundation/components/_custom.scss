@@ -421,3 +421,9 @@
 .in-the-press{
   margin-bottom: emCalc(10px);
 }
+
+.social-buttons{
+  height: 42px;
+  @include clearfix;
+  margin-bottom: 2rem;
+}
