@@ -9,6 +9,7 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  height: 32px;
 }
 .chosen-container .chosen-drop {
   position: absolute;
@@ -37,8 +38,8 @@
   position: relative;
   display: block;
   overflow: hidden;
-  padding: 0 0 0 8px;
-  height: 23px;
+  padding: 4px 4px 0 10px;
+  height: 32px;
   border: none;
   border-radius: 5px;
   background-color: #eee;
@@ -79,7 +80,7 @@
 }
 .chosen-container-single .chosen-single div {
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 0;
   display: block;
   width: 18px;
@@ -120,7 +121,7 @@
   border-radius: 0;
 }
 .chosen-container-single .chosen-drop {
-  margin-top: -1px;
+  margin-top: -2px;
   border-radius: 0 0 4px 4px;
   background-clip: padding-box;
 }
