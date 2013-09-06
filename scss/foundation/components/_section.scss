@@ -434,7 +434,7 @@ $active-region-selector: ".active" !default;
 }
 
 .accordions {
-  box-shadow: 1px 1px 5px #aaaaaa;
+  border: 2px solid $tertiary-color;
   display: inline-block;
   float: left;
   width: 100%;
@@ -461,7 +461,8 @@ $active-region-selector: ".active" !default;
     -moz-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     line-height: 20px;
-    height: 0;
+    max-height: 0;
+    min-height: 0;
     > p {
       font-size: 12px;
       line-height: 1.5;
@@ -484,7 +485,7 @@ $active-region-selector: ".active" !default;
       }
     }
     &[type="checkbox"]:checked ~ article {
-      height: 60px;
+      max-height: 300px;
     }
   }
 }

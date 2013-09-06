@@ -8,7 +8,7 @@ $topbar-bg: #000 !default;
 
 // Height and margin
 $topbar-height: 45px !default;
-$topbar-margin-bottom: emCalc(30) !default;
+$topbar-margin-bottom: 0 !default;
 
 // Control Input height for top bar
 $topbar-input-height: 2.45em !default;
@@ -620,6 +620,7 @@ ul.user-setting{
   z-index: 1;
   background-color: transparent;
   overflow: hidden;
+  background-color: #fff;
   .pane-container{
     width: 800px;
     min-height: emCalc(250px);

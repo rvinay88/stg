@@ -443,3 +443,17 @@
   @include clearfix;
   margin-bottom: 2rem;
 }
+
+
+.homepage-wrapper {
+  width: 100%;
+  max-width: 1366px;
+
+}
+.hotspot-holder {
+  width: 100%;
+  position: relative;
+  > img {
+    width: 100%;
+  }
+}
