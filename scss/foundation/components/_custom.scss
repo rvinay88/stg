@@ -96,10 +96,13 @@
     }
   }
 }
-.designer-heading{
+.designer-title{
   display: inline-block;
-  font: futura;
-  font-size: 1.55rem;
+  font-family: futura;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: emCalc(28px);
+  margin-top: 10px;
 }
 .designer-subtitle{
   font-size: 1rem;
@@ -241,7 +244,7 @@
   > ul {
     display: inline-block;
     @extend .square-inline;
-    float: left;
+    margin-left: -1.4rem; //To align price right next to sort
   }
 }
 

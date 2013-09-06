@@ -409,3 +409,82 @@ $active-region-selector: ".active" !default;
      // margin-top: 1px solid red;
   }
 }
+
+.accordions {
+  vertical-align: top;
+}
+
+.accordion {
+  input {
+    &[type="checkbox"] {
+      display: none !important;
+    }
+    &[type="checkbox"]:checked ~ article {
+      height: auto;
+    }
+  }
+  label {
+    display: block;
+  }
+  article {
+    overflow: hidden;
+    height: 0;
+    padding: 0 20px;
+  }
+}
+
+.accordions {
+  box-shadow: 1px 1px 5px #aaaaaa;
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+.accordion {
+  label {
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin-bottom: -1px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    line-height: 40px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    margin-top: -1px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  article {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    line-height: 20px;
+    height: 0;
+    > p {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+  input {
+    &[type="checkbox"]:not(:checked) ~ label {
+
+      &:after{
+        font-family: 'FontAwesome';
+        content: "\F067";
+        float: right;
+      }
+    }
+    &[type="checkbox"]:checked ~ label {
+      &:after{
+        font-family: 'FontAwesome';
+        content: "\F068";
+        float: right;
+      }
+    }
+    &[type="checkbox"]:checked ~ article {
+      height: 60px;
+    }
+  }
+}

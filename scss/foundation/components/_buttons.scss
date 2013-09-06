@@ -177,8 +177,15 @@ $button-disabled-opacity: 0.6 !default;
     @include button-base;
     @include button-size;
     @include button-style;
-
-    &.secondary { @include button-style($bg:$tertiary-color); }
+    &.medium {
+      min-width: 170px;
+    }
+    &.secondary {
+      @include button-style($bg:$tertiary-color);
+      &.medium {
+        min-width: 170px;
+      }
+    }
     &.success   { @include button-style($bg:$success-color); }
     &.alert     { @include button-style($bg:$alert-color); }
 

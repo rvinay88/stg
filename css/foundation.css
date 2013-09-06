@@ -1721,7 +1721,10 @@ button, .button {
   /* line 136, foundation/components/_buttons.scss */
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
-  /* line 181, foundation/components/_buttons.scss */
+  /* line 180, foundation/components/_buttons.scss */
+  button.medium, .button.medium {
+    min-width: 170px; }
+  /* line 183, foundation/components/_buttons.scss */
   button.secondary, .button.secondary {
     background-color: #eeeeee;
     border-color: #d4d4d4;
@@ -1729,7 +1732,10 @@ button, .button {
     /* line 131, foundation/components/_buttons.scss */
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       color: #333333; }
-  /* line 182, foundation/components/_buttons.scss */
+    /* line 185, foundation/components/_buttons.scss */
+    button.secondary.medium, .button.secondary.medium {
+      min-width: 170px; }
+  /* line 189, foundation/components/_buttons.scss */
   button.success, .button.success {
     background-color: #5da423;
     border-color: #457a1a;
@@ -1737,7 +1743,7 @@ button, .button {
     /* line 136, foundation/components/_buttons.scss */
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: white; }
-  /* line 183, foundation/components/_buttons.scss */
+  /* line 190, foundation/components/_buttons.scss */
   button.alert, .button.alert {
     background-color: #c60f13;
     border-color: #970b0e;
@@ -1745,41 +1751,41 @@ button, .button {
     /* line 136, foundation/components/_buttons.scss */
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: white; }
-  /* line 185, foundation/components/_buttons.scss */
+  /* line 192, foundation/components/_buttons.scss */
   button.large, .button.large {
     padding-top: 1rem;
     padding-right: 2rem;
     padding-bottom: 1.0625rem;
     padding-left: 2rem;
     font-size: 0.75rem; }
-  /* line 186, foundation/components/_buttons.scss */
+  /* line 193, foundation/components/_buttons.scss */
   button.small, .button.small {
     padding-top: 0.5625rem;
     padding-right: 1.125rem;
     padding-bottom: 0.625rem;
     padding-left: 1.125rem;
     font-size: 0.75rem; }
-  /* line 187, foundation/components/_buttons.scss */
+  /* line 194, foundation/components/_buttons.scss */
   button.tiny, .button.tiny {
     padding-top: 0.4375rem;
     padding-right: 0.875rem;
     padding-bottom: 0.5rem;
     padding-left: 0.875rem;
     font-size: 0.75rem; }
-  /* line 188, foundation/components/_buttons.scss */
+  /* line 195, foundation/components/_buttons.scss */
   button.expand, .button.expand {
     padding-right: 0px;
     padding-left: 0px;
     width: 100%; }
-  /* line 190, foundation/components/_buttons.scss */
+  /* line 197, foundation/components/_buttons.scss */
   button.left-align, .button.left-align {
     text-align: left;
     text-indent: 0.75rem; }
-  /* line 191, foundation/components/_buttons.scss */
+  /* line 198, foundation/components/_buttons.scss */
   button.right-align, .button.right-align {
     text-align: right;
     padding-right: 0.75rem; }
-  /* line 193, foundation/components/_buttons.scss */
+  /* line 200, foundation/components/_buttons.scss */
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
     background-color: black;
     border-color: black;
@@ -1794,7 +1800,7 @@ button, .button {
     /* line 149, foundation/components/_buttons.scss */
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: black; }
-    /* line 194, foundation/components/_buttons.scss */
+    /* line 201, foundation/components/_buttons.scss */
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #eeeeee;
       border-color: #d4d4d4;
@@ -1809,7 +1815,7 @@ button, .button {
       /* line 149, foundation/components/_buttons.scss */
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         background-color: #eeeeee; }
-    /* line 195, foundation/components/_buttons.scss */
+    /* line 202, foundation/components/_buttons.scss */
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #5da423;
       border-color: #457a1a;
@@ -1824,7 +1830,7 @@ button, .button {
       /* line 149, foundation/components/_buttons.scss */
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         background-color: #5da423; }
-    /* line 196, foundation/components/_buttons.scss */
+    /* line 203, foundation/components/_buttons.scss */
     button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
       background-color: #c60f13;
       border-color: #970b0e;
@@ -1840,29 +1846,29 @@ button, .button {
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
         background-color: #c60f13; }
 
-/* line 201, foundation/components/_buttons.scss */
+/* line 208, foundation/components/_buttons.scss */
 button, .button {
   padding-top: 0.8125rem;
   padding-bottom: 0.75rem;
   -webkit-appearance: none; }
-  /* line 203, foundation/components/_buttons.scss */
+  /* line 210, foundation/components/_buttons.scss */
   button.tiny, .button.tiny {
     padding-top: 0.5rem;
     padding-bottom: 0.4375rem;
     -webkit-appearance: none; }
-  /* line 204, foundation/components/_buttons.scss */
+  /* line 211, foundation/components/_buttons.scss */
   button.small, .button.small {
     padding-top: 0.625rem;
     padding-bottom: 0.5625rem;
     -webkit-appearance: none; }
-  /* line 205, foundation/components/_buttons.scss */
+  /* line 212, foundation/components/_buttons.scss */
   button.large, .button.large {
     padding-top: 1.03125rem;
     padding-bottom: 1.03125rem;
     -webkit-appearance: none; }
 
 @media only screen {
-  /* line 211, foundation/components/_buttons.scss */
+  /* line 218, foundation/components/_buttons.scss */
   button, .button {
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1874,7 +1880,7 @@ button, .button {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; } }
 @media only screen and (min-width: 768px) {
-  /* line 228, foundation/components/_buttons.scss */
+  /* line 235, foundation/components/_buttons.scss */
   button, .button {
     display: inline-block; } }
 /* Standard Forms */
@@ -3464,6 +3470,72 @@ label.error {
   .no-js .section-container > section > .title, .no-js .section-container > .section > .title {
     border: 1px solid #bbbbbb; }
 
+/* line 413, foundation/components/_section.scss */
+.accordions {
+  vertical-align: top; }
+
+/* line 419, foundation/components/_section.scss */
+.accordion input[type="checkbox"] {
+  display: none !important; }
+/* line 422, foundation/components/_section.scss */
+.accordion input[type="checkbox"]:checked ~ article {
+  height: auto; }
+/* line 426, foundation/components/_section.scss */
+.accordion label {
+  display: block; }
+/* line 429, foundation/components/_section.scss */
+.accordion article {
+  overflow: hidden;
+  height: 0;
+  padding: 0 20px; }
+
+/* line 436, foundation/components/_section.scss */
+.accordions {
+  box-shadow: 1px 1px 5px #aaaaaa;
+  display: inline-block;
+  float: left;
+  width: 100%; }
+
+/* line 444, foundation/components/_section.scss */
+.accordion label {
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  margin-bottom: -1px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  line-height: 40px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  margin-top: -1px;
+  cursor: pointer;
+  font-weight: bold; }
+/* line 459, foundation/components/_section.scss */
+.accordion article {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  line-height: 20px;
+  height: 0; }
+  /* line 465, foundation/components/_section.scss */
+  .accordion article > p {
+    font-size: 12px;
+    line-height: 1.5; }
+/* line 473, foundation/components/_section.scss */
+.accordion input[type="checkbox"]:not(:checked) ~ label:after {
+  font-family: 'FontAwesome';
+  content: "\F067";
+  float: right; }
+/* line 480, foundation/components/_section.scss */
+.accordion input[type="checkbox"]:checked ~ label:after {
+  font-family: 'FontAwesome';
+  content: "\F068";
+  float: right; }
+/* line 486, foundation/components/_section.scss */
+.accordion input[type="checkbox"]:checked ~ article {
+  height: 60px; }
+
 /* Wrapped around .top-bar to contain to grid width */
 /* line 67, foundation/components/_top-bar.scss */
 .contain-to-grid {
@@ -4015,7 +4087,7 @@ ul.user-setting {
 
 /* line 678, foundation/components/_top-bar.scss */
 .user-setting-labels {
-  margin-top: 1rem; }
+  margin-top: 0.75rem; }
 
 /* line 682, foundation/components/_top-bar.scss */
 .user-img-small {
@@ -6041,24 +6113,27 @@ a.th {
         color: black; }
 
 /* line 99, foundation/components/_custom.scss */
-.designer-heading {
+.designer-title {
   display: inline-block;
-  font: futura;
-  font-size: 1.55rem; }
+  font-family: futura;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  margin-top: 10px; }
 
-/* line 104, foundation/components/_custom.scss */
+/* line 107, foundation/components/_custom.scss */
 .designer-subtitle {
   font-size: 1rem; }
 
-/* line 108, foundation/components/_custom.scss */
+/* line 111, foundation/components/_custom.scss */
 .designer-follow {
   text-transform: uppercase; }
 
-/* line 112, foundation/components/_custom.scss */
+/* line 115, foundation/components/_custom.scss */
 .designer-image {
   margin-bottom: 1rem; }
 
-/* line 116, foundation/components/_custom.scss */
+/* line 119, foundation/components/_custom.scss */
 .collection-title, .collection-list > li a, .tree-title {
   text-decoration: none;
   display: inline-block;
@@ -6068,19 +6143,19 @@ a.th {
   line-height: 1.3125rem;
   font-weight: bold; }
 
-/* line 128, foundation/components/_custom.scss */
+/* line 131, foundation/components/_custom.scss */
 .icon-footer:hover {
   color: #666666; }
 
-/* line 133, foundation/components/_custom.scss */
+/* line 136, foundation/components/_custom.scss */
 .footer-icons {
   padding-top: 0.6rem; }
 
-/* line 137, foundation/components/_custom.scss */
+/* line 140, foundation/components/_custom.scss */
 .black-bg, .black-bar, .product-black-bar {
   background: black; }
 
-/* line 141, foundation/components/_custom.scss */
+/* line 144, foundation/components/_custom.scss */
 .black-bar, .product-black-bar {
   display: block;
   color: white;
@@ -6092,7 +6167,7 @@ a.th {
   margin: 1.25rem 0; }
 
 /*Logo*/
-/* line 156, foundation/components/_custom.scss */
+/* line 159, foundation/components/_custom.scss */
 .logo {
   background: url(../images/sprite.png) no-repeat;
   -o-background-size: 360px auto;
@@ -6111,18 +6186,18 @@ a.th {
   z-index: 98;
   margin-left: 7%; }
 
-/* line 175, foundation/components/_custom.scss */
+/* line 178, foundation/components/_custom.scss */
 .logo a {
   display: block;
   height: 100%; }
 
-/* line 180, foundation/components/_custom.scss */
+/* line 183, foundation/components/_custom.scss */
 .styled-select {
   position: relative;
   width: 100%;
   overflow: hidden; }
 
-/* line 185, foundation/components/_custom.scss */
+/* line 188, foundation/components/_custom.scss */
 .styled-select select {
   width: 100%;
   padding-left: 0.5rem;
@@ -6138,11 +6213,11 @@ a.th {
   height: 42px;
   margin: 0 0 1rem 0;
   -moz-appearance: none !important; }
-  /* line 198, foundation/components/_custom.scss */
+  /* line 201, foundation/components/_custom.scss */
   .styled-select select::-ms-expand {
     display: none; }
 
-/* line 205, foundation/components/_custom.scss */
+/* line 208, foundation/components/_custom.scss */
 .styled-select:after {
   content: "";
   display: block;
@@ -6159,7 +6234,7 @@ a.th {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
-/* line 215, foundation/components/_custom.scss */
+/* line 218, foundation/components/_custom.scss */
 .main-holder {
   width: 100%;
   *zoom: 1; }
@@ -6171,19 +6246,19 @@ a.th {
   .main-holder:after {
     clear: both; }
 
-/* line 220, foundation/components/_custom.scss */
+/* line 223, foundation/components/_custom.scss */
 .main-holder:after {
   content: '';
   display: block;
   clear: both; }
 
-/* line 225, foundation/components/_custom.scss */
+/* line 228, foundation/components/_custom.scss */
 .main-holder .logo {
   float: left;
   margin-left: 0;
   position: static; }
 
-/* line 230, foundation/components/_custom.scss */
+/* line 233, foundation/components/_custom.scss */
 .sorting, .price {
   background-color: #eeeeee;
   padding: 0.3125rem;
@@ -6191,16 +6266,16 @@ a.th {
   margin-bottom: .5rem;
   margin-left: 10px;
   margin-top: 10px; }
-  /* line 238, foundation/components/_custom.scss */
+  /* line 241, foundation/components/_custom.scss */
   .sorting > .title, .price > .title {
     font-size: 80%; }
-  /* line 241, foundation/components/_custom.scss */
+  /* line 244, foundation/components/_custom.scss */
   .sorting > ul, .price > ul {
     display: inline-block;
-    float: left; }
+    margin-left: -1.4rem; }
 
 /* Paging CSS */
-/* line 249, foundation/components/_custom.scss */
+/* line 252, foundation/components/_custom.scss */
 .paging {
   float: right;
   margin-right: 10px;
@@ -6215,84 +6290,84 @@ a.th {
   /* line 128, foundation/components/_global.scss */
   .paging:after {
     clear: both; }
-  /* line 256, foundation/components/_custom.scss */
+  /* line 259, foundation/components/_custom.scss */
   .paging > li {
     float: left;
     list-style: none; }
 
-/* line 262, foundation/components/_custom.scss */
+/* line 265, foundation/components/_custom.scss */
 .pager {
   float: right;
   display: inline-block; }
 
-/* line 267, foundation/components/_custom.scss */
+/* line 270, foundation/components/_custom.scss */
 .paging .pagerprevious a, .pager .paging .pagerprevious a {
   margin: 0 4px; }
-  /* line 270, foundation/components/_custom.scss */
+  /* line 273, foundation/components/_custom.scss */
   .paging .pagerprevious a:before, .pager .paging .pagerprevious a:before {
     font-family: 'FontAwesome';
     content: "\f137"; }
 
-/* line 276, foundation/components/_custom.scss */
+/* line 279, foundation/components/_custom.scss */
 .paging .pagernext a, .pager .paging .pagernext a {
   margin: 0 4px; }
-  /* line 279, foundation/components/_custom.scss */
+  /* line 282, foundation/components/_custom.scss */
   .paging .pagernext a:before, .pager .paging .pagernext a:before {
     font-family: 'FontAwesome';
     content: "\f138"; }
 
-/* line 286, foundation/components/_custom.scss */
+/* line 289, foundation/components/_custom.scss */
 .product-thumbs {
   margin-top: 0 !important; }
-  /* line 289, foundation/components/_custom.scss */
+  /* line 292, foundation/components/_custom.scss */
   .product-thumbs > li {
     margin-bottom: 0.625rem; }
 
-/* line 294, foundation/components/_custom.scss */
+/* line 297, foundation/components/_custom.scss */
 .product-main {
   margin-bottom: 0.625rem; }
 
-/* line 299, foundation/components/_custom.scss */
+/* line 302, foundation/components/_custom.scss */
 .product-detail {
   width: 100%; }
   @media only screen and (min-width: 1280px) {
-    /* line 299, foundation/components/_custom.scss */
+    /* line 302, foundation/components/_custom.scss */
     .product-detail {
       width: 50% !important; } }
 
-/* line 305, foundation/components/_custom.scss */
+/* line 308, foundation/components/_custom.scss */
 .product-detail > img {
   margin-bottom: 0.625rem; }
 
-/* line 315, foundation/components/_custom.scss */
+/* line 318, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
-  /* line 317, foundation/components/_custom.scss */
+  /* line 320, foundation/components/_custom.scss */
   .in-the-press img {
     margin-top: 0.625rem; }
   @media screen and (min-width: 984px) and (max-width: 1304px) {
-    /* line 320, foundation/components/_custom.scss */
+    /* line 323, foundation/components/_custom.scss */
     .in-the-press .hidden-image {
       display: none; } }
 
-/* line 327, foundation/components/_custom.scss */
+/* line 330, foundation/components/_custom.scss */
 .product-title {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.625rem; }
 
-/* line 333, foundation/components/_custom.scss */
+/* line 336, foundation/components/_custom.scss */
 .product-sub-title {
   text-transform: uppercase;
   color: #666666;
   font-size: 0.875rem;
   line-height: 1.25rem; }
-  /* line 338, foundation/components/_custom.scss */
+  /* line 341, foundation/components/_custom.scss */
   .product-sub-title strong {
     font-weight: normal;
     font-size: 80%; }
 
-/* line 346, foundation/components/_custom.scss */
+/* line 349, foundation/components/_custom.scss */
 .highlight-text {
   border: 1px solid black;
   color: #666666;
@@ -6300,89 +6375,89 @@ a.th {
   padding: 0.625rem;
   margin: 1rem 0; }
 
-/* line 354, foundation/components/_custom.scss */
+/* line 357, foundation/components/_custom.scss */
 .tab-content {
   color: #666666; }
 
-/* line 358, foundation/components/_custom.scss */
+/* line 361, foundation/components/_custom.scss */
 .product-options {
   padding: 0.5rem 0;
   margin-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    /* line 358, foundation/components/_custom.scss */
+    /* line 361, foundation/components/_custom.scss */
     .product-options {
       padding: 1.375rem 0; } }
 
-/* line 366, foundation/components/_custom.scss */
+/* line 369, foundation/components/_custom.scss */
 .size {
   padding: 0.3125rem;
   font-size: 0.875rem; }
 
-/* line 371, foundation/components/_custom.scss */
+/* line 374, foundation/components/_custom.scss */
 .add-buttons {
   margin-right: 20px; }
 
-/* line 375, foundation/components/_custom.scss */
+/* line 378, foundation/components/_custom.scss */
 .long-button {
   min-width: 185px; }
 
-/* line 378, foundation/components/_custom.scss */
+/* line 381, foundation/components/_custom.scss */
 .med-button {
   min-width: 150px; }
 
-/* line 382, foundation/components/_custom.scss */
+/* line 385, foundation/components/_custom.scss */
 .catalogue {
   font-size: 80%; }
 
-/* line 386, foundation/components/_custom.scss */
+/* line 389, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold; }
-  /* line 389, foundation/components/_custom.scss */
+  /* line 392, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 394, foundation/components/_custom.scss */
+/* line 397, foundation/components/_custom.scss */
 .designer-about {
   height: 84px;
   overflow: hidden; }
 
-/* line 398, foundation/components/_custom.scss */
+/* line 401, foundation/components/_custom.scss */
 .more {
   height: auto !important; }
 
-/* line 402, foundation/components/_custom.scss */
+/* line 405, foundation/components/_custom.scss */
 .small-text {
   font-size: 0.6875rem;
   text-transform: uppercase;
   margin-top: 20px; }
 
-/* line 408, foundation/components/_custom.scss */
+/* line 411, foundation/components/_custom.scss */
 .fixed-170 {
   width: 170px;
   margin: 0 0.625rem 1rem 0; }
 
-/* line 412, foundation/components/_custom.scss */
+/* line 415, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
   @media screen and (max-width: 768px) {
-    /* line 412, foundation/components/_custom.scss */
+    /* line 415, foundation/components/_custom.scss */
     .fixed-360 {
       margin-top: 1rem; } }
 
-/* line 418, foundation/components/_custom.scss */
+/* line 421, foundation/components/_custom.scss */
 .right-margin {
   margin-right: 0.625rem; }
 
-/* line 422, foundation/components/_custom.scss */
+/* line 425, foundation/components/_custom.scss */
 .top-margin {
   margin-top: 1rem; }
 
-/* line 426, foundation/components/_custom.scss */
+/* line 429, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
-/* line 430, foundation/components/_custom.scss */
+/* line 433, foundation/components/_custom.scss */
 .social-buttons {
   height: 42px;
   *zoom: 1;
