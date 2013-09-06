@@ -346,7 +346,7 @@
 .rate {
   font-family: futura;
   margin-top: emCalc(8px);
-  margin-bottom: emCalc(16px);
+  margin-bottom: 1.5rem;
   strong {
     font-weight: normal;
     font-family: Helvetica;
@@ -422,9 +422,6 @@
 }
 .fixed-360{
   width: 360px;
-  @media screen and (max-width: 768px) {
-    margin-top: 1rem;
-  }
 }
 .right-margin{
   margin-right: emCalc(10px);

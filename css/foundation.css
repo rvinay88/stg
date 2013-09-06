@@ -6370,7 +6370,7 @@ a.th {
 .rate {
   font-family: futura;
   margin-top: 0.5rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1.5rem; }
   /* line 350, foundation/components/_custom.scss */
   .rate strong {
     font-weight: normal;
@@ -6450,28 +6450,24 @@ a.th {
 /* line 423, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
-  @media screen and (max-width: 768px) {
-    /* line 423, foundation/components/_custom.scss */
-    .fixed-360 {
-      margin-top: 1rem; } }
 
-/* line 429, foundation/components/_custom.scss */
+/* line 426, foundation/components/_custom.scss */
 .right-margin {
   margin-right: 0.625rem; }
 
-/* line 433, foundation/components/_custom.scss */
+/* line 430, foundation/components/_custom.scss */
 .top-margin {
   margin-top: 1rem; }
 
-/* line 437, foundation/components/_custom.scss */
+/* line 434, foundation/components/_custom.scss */
 .bottom-margin {
   margin-bottom: 1rem; }
 
-/* line 440, foundation/components/_custom.scss */
+/* line 437, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
-/* line 444, foundation/components/_custom.scss */
+/* line 441, foundation/components/_custom.scss */
 .social-buttons {
   height: 42px;
   *zoom: 1;
