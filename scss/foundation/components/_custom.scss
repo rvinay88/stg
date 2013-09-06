@@ -106,6 +106,9 @@
 }
 .designer-subtitle{
   font-size: 1rem;
+  font-family: futura;
+  margin-top: 1rem;
+  text-transform: capitalize;
 }
 
 .designer-follow{
@@ -338,13 +341,18 @@
   color: $secondary-color;
   font-size: emCalc(14px);
   line-height: emCalc(20px);
-  strong {
-    font-weight: normal;
-    font-size: 80%;
-  }
 }
 
-
+.rate {
+  font-family: futura;
+  margin-top: emCalc(8px);
+  margin-bottom: emCalc(16px);
+  strong {
+    font-weight: normal;
+    font-family: Helvetica;
+    font-size: emCalc(12px);
+  }
+}
 
 .highlight-text{
   border: 1px solid black;
@@ -426,6 +434,9 @@
   margin-top: emCalc(16px);
 }
 
+.bottom-margin{
+  margin-bottom: emCalc(16px);
+}
 .in-the-press{
   margin-bottom: emCalc(10px);
 }
