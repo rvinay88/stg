@@ -3505,37 +3505,36 @@ label.error {
   padding-right: 1rem;
   padding-left: 1rem;
   line-height: 40px;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
   margin-top: -1px;
   cursor: pointer;
   font-weight: bold; }
-/* line 459, foundation/components/_section.scss */
+/* line 456, foundation/components/_section.scss */
 .accordion article {
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: height .3s ease;
+  -moz-transition: height .3s ease;
+  transition: height .3s ease;
   line-height: 20px;
-  max-height: 0;
-  min-height: 0; }
-  /* line 466, foundation/components/_section.scss */
+  height: 0; }
+  /* line 462, foundation/components/_section.scss */
   .accordion article > p {
     font-size: 12px;
     line-height: 1.5; }
-/* line 474, foundation/components/_section.scss */
+/* line 470, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:not(:checked) ~ label:after {
   font-family: 'FontAwesome';
   content: "\F067";
   float: right; }
-/* line 481, foundation/components/_section.scss */
+/* line 477, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:checked ~ label:after {
   font-family: 'FontAwesome';
   content: "\F068";
   float: right; }
+/* line 484, foundation/components/_section.scss */
+.accordion input[type="checkbox"]:checked ~ article.small {
+  height: 140px; }
 /* line 487, foundation/components/_section.scss */
-.accordion input[type="checkbox"]:checked ~ article {
-  max-height: 300px; }
+.accordion input[type="checkbox"]:checked ~ article.tall {
+  height: 1000px; }
 
 /* Wrapped around .top-bar to contain to grid width */
 /* line 67, foundation/components/_top-bar.scss */
@@ -6127,7 +6126,7 @@ a.th {
 .designer-subtitle {
   font-size: 1rem;
   font-family: futura;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   text-transform: capitalize; }
 
 /* line 114, foundation/components/_custom.scss */

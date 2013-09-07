@@ -449,20 +449,16 @@ $active-region-selector: ".active" !default;
     padding-right: 1rem;
     padding-left: 1rem;
     line-height: 40px;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
     margin-top: -1px;
     cursor: pointer;
     font-weight: bold;
   }
   article {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    -webkit-transition: height .3s ease;
+    -moz-transition: height .3s ease;
+    transition: height .3s ease;
     line-height: 20px;
-    max-height: 0;
-    min-height: 0;
+    height: 0;
     > p {
       font-size: 12px;
       line-height: 1.5;
@@ -485,7 +481,12 @@ $active-region-selector: ".active" !default;
       }
     }
     &[type="checkbox"]:checked ~ article {
-      max-height: 300px;
+      &.small{
+        height: 140px;
+      }
+      &.tall {
+        height: 1000px;
+      }
     }
   }
 }
