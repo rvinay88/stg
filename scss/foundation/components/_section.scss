@@ -452,13 +452,16 @@ $active-region-selector: ".active" !default;
     margin-top: -1px;
     cursor: pointer;
     font-weight: bold;
+    &:hover{
+      background-color: $tertiary-color;
+    }
   }
   article {
     -webkit-transition: height .3s ease;
     -moz-transition: height .3s ease;
     transition: height .3s ease;
     line-height: 20px;
-    height: 0;
+    min-height: 0;
     > p {
       font-size: 12px;
       line-height: 1.5;
@@ -481,12 +484,7 @@ $active-region-selector: ".active" !default;
       }
     }
     &[type="checkbox"]:checked ~ article {
-      &.small{
-        height: 140px;
-      }
-      &.tall {
-        height: 1000px;
-      }
+      min-height: 120px;
     }
   }
 }
