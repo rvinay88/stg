@@ -1,3 +1,9 @@
+.row .bg {
+  @extend .panel;
+  @include radius;
+  background-color: $tertiary-color;
+}
+
 .border-top{
   @include border-top-bottom(top);
   }
@@ -450,4 +456,10 @@
   > img {
     width: 100%;
   }
+}
+
+.orders > *{
+  font-size: emCalc(12px);
+  @extend .uppercase;
+  @extend .muted;
 }

@@ -388,6 +388,7 @@ a:hover { cursor: $cursor-pointer-value; }
       font-weight: bold;
     }
     &.no-dec{
+      font-size: emCalc(12px);
       &:hover{
         text-decoration: none !important;
       }

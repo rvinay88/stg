@@ -7,7 +7,7 @@ $include-html-form-classes: $include-html-classes !default;
 $form-spacing: emCalc(16) !default;
 
 // We use these to style the labels in different ways
-$form-label-pointer: pointer !default;
+$form-label-pointer: cursor !default;
 $form-label-font-size: emCalc(12) !default;
 $form-label-font-weight: 500 !default;
 $form-label-font-color: lighten(#000, 30%) !default;
@@ -29,8 +29,8 @@ $input-include-glowing-effect: false !default;
 // $fieldset-border-style: solid !default;
 // $fieldset-border-width: 1px !default;
 // $fieldset-border-color: #ddd !default;
-$fieldset-padding: emCalc(20) !default;
-$fieldset-margin: emCalc(18, 0) !default;
+$fieldset-padding: emCalc(16) !default;
+$fieldset-margin: emCalc(0) !default;
 
 // We use these to style the legends when you use them
 $legend-bg: #fff !default;
@@ -345,6 +345,10 @@ $glowing-effect-color: $input-focus-border-color !default;
   select {
     margin: 0 0 $form-spacing 0;
   }
+
+  label.check {
+    margin-bottom: $form-spacing;
+  }
   input[type="checkbox"].r2s{
     display: none;
     & + span {
@@ -354,7 +358,7 @@ $glowing-effect-color: $input-focus-border-color !default;
       font-family: FontAwesome;
       margin-right: emCalc(5);
       content: "\f0c8";
-      font-size: emCalc(20);
+      font-size: emCalc(15);
     }
     &:checked + span:before{
       content: "\f14a";

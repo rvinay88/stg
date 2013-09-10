@@ -39,7 +39,7 @@ $small-font-color: lighten($header-font-color, 30%) !default;
 // We use these to style paragraphs
 $paragraph-font-family: Helvetica !default;
 $paragraph-font-weight: normal !default;
-$paragraph-font-size: emCalc(15) !default;
+$paragraph-font-size: emCalc(12) !default;
 $paragraph-font-color: $secondary-color;
 $paragraph-line-height: 1.6 !default;
 $paragraph-margin-bottom: emCalc(10) !default;
@@ -165,6 +165,7 @@ $microformat-abbr-font-decoration: none !default;
   a {
     color: $anchor-font-color;
     text-decoration: $anchor-text-decoration;
+    font-size: emCalc(12px);
     line-height: inherit;
 
     &:hover,
@@ -460,4 +461,15 @@ $microformat-abbr-font-decoration: none !default;
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.muted {
+  color: $secondary-color;
+}
+
+.favorites-list {
+  @extend .no-bullet;
+  > li {
+  margin-bottom: 0.5rem;
+  }
 }
