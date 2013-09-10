@@ -2,6 +2,9 @@
   @extend .panel;
   @include radius;
   background-color: $tertiary-color;
+  input {
+    background-color: $base-color;
+  }
 }
 
 .border-top{
@@ -462,4 +465,51 @@
   font-size: emCalc(12px);
   @extend .uppercase;
   @extend .muted;
+}
+
+.total{
+  margin-bottom: 0;
+  > td {
+    font-size: emCalc(13px);
+    text-transform: uppercase;
+  }
+}
+
+.total-table {
+  min-width: 60%;
+}
+
+.total-bill > td {
+    font-weight: bold;
+    color: $primary-color;
+    &:first-child {
+      border-bottom-left-radius: $global-radius;
+    }
+    &:last-child {
+      border-bottom-right-radius: $global-radius;
+    }
+  }
+
+.coupon {
+  max-width: 150px;
+}
+
+.info-text {
+  font-size: emCalc(12px);
+  color: $secondary-color;
+  line-height: 1.5;
+}
+
+.highlight{
+  font-weight: bold;
+}
+
+
+.errorMessage {
+  font-size: emCalc(12px);
+  color: $alert-color;
+}
+
+.error > label {
+  display: none;
 }

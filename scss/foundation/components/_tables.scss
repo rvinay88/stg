@@ -40,6 +40,14 @@ $table-margin-bottom: emCalc(20) !default;
   border: 0;
   border-spacing: 0;
   @include radius($table-radius);
+  tfoot  {
+    &:first-child{
+      border-bottom-left-radius: $table-radius;
+    }
+    &:last-child{
+      border-bototm-right-radius: $table-radius;
+    }
+  }
   thead,
   tfoot {
     background: $table-head-bg;
@@ -64,12 +72,12 @@ $table-margin-bottom: emCalc(20) !default;
       }
     }
   }
-    &.even,
-    &.alt,
-    {
-      & tr:nth-of-type(even){background: $table-even-row-bg; }
+  &.even,
+  &.alt,
+  {
+    & tr:nth-of-type(even){background: $table-even-row-bg; }
 
-    }
+  }
   tr {
     margin-bottom: emCalc(1);
     th,
@@ -97,12 +105,6 @@ $table-margin-bottom: emCalc(20) !default;
     @include table;
     &.expand{
       width: 100%;
-    }
-    &.total {
-      > *{
-          font-size: emCalc(12px);
-          text-transform: uppercase;
-        }
     }
   }
 
