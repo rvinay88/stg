@@ -462,10 +462,7 @@ $active-region-selector: ".active" !default;
     transition: height .3s ease;
     line-height: 20px;
     min-height: 0;
-    > p {
-      font-size: 12px;
-      line-height: 1.5;
-    }
+    font-size: 12px;
   }
   input {
     &[type="checkbox"]:not(:checked) ~ label {

@@ -165,7 +165,6 @@ $microformat-abbr-font-decoration: none !default;
   a {
     color: $anchor-font-color;
     text-decoration: $anchor-text-decoration;
-    font-size: emCalc(12px);
     line-height: inherit;
 
     &:hover,

@@ -98,6 +98,12 @@ $table-margin-bottom: emCalc(20) !default;
     &.expand{
       width: 100%;
     }
+    &.total {
+      > *{
+          font-size: emCalc(12px);
+          text-transform: uppercase;
+        }
+    }
   }
 
 }

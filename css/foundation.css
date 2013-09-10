@@ -1368,17 +1368,16 @@ td {
 a {
   color: black;
   text-decoration: none;
-  font-size: 0.75rem;
   line-height: inherit; }
-  /* line 172, foundation/components/_type.scss */
+  /* line 171, foundation/components/_type.scss */
   a:hover, a:focus {
     color: black; }
-  /* line 174, foundation/components/_type.scss */
+  /* line 173, foundation/components/_type.scss */
   a img {
     border: none; }
 
 /* Default paragraph styles */
-/* line 178, foundation/components/_type.scss */
+/* line 177, foundation/components/_type.scss */
 p {
   font-family: Helvetica;
   font-weight: normal;
@@ -1388,14 +1387,14 @@ p {
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
   text-rendering: optimizeLegibility; }
-  /* line 190, foundation/components/_type.scss */
+  /* line 189, foundation/components/_type.scss */
   p aside {
     font-size: 0.875rem;
     line-height: 1.35;
     font-style: italic; }
 
 /* Default header styles */
-/* line 198, foundation/components/_type.scss */
+/* line 197, foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-style: normal;
@@ -1404,78 +1403,78 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4; }
-  /* line 207, foundation/components/_type.scss */
+  /* line 206, foundation/components/_type.scss */
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
     color: #4d4d4d;
     line-height: 0; }
 
-/* line 214, foundation/components/_type.scss */
+/* line 213, foundation/components/_type.scss */
 .futura, .futura-heading, .collection-title, .collection-list > li a, .tree-title, .black-bar, .product-black-bar {
   font-family: futura; }
 
-/* line 217, foundation/components/_type.scss */
+/* line 216, foundation/components/_type.scss */
 .futura-heading {
   font-weight: bold; }
 
-/* line 222, foundation/components/_type.scss */
+/* line 221, foundation/components/_type.scss */
 h1 {
   font-size: 2.125rem; }
 
-/* line 223, foundation/components/_type.scss */
+/* line 222, foundation/components/_type.scss */
 h2 {
   font-size: 1.6875rem; }
 
-/* line 224, foundation/components/_type.scss */
+/* line 223, foundation/components/_type.scss */
 h3 {
   font-size: 1.375rem; }
 
-/* line 225, foundation/components/_type.scss */
+/* line 224, foundation/components/_type.scss */
 h4 {
   font-size: 1.125rem; }
 
-/* line 226, foundation/components/_type.scss */
+/* line 225, foundation/components/_type.scss */
 h5 {
   font-size: 1.125rem; }
 
-/* line 227, foundation/components/_type.scss */
+/* line 226, foundation/components/_type.scss */
 h6 {
   font-size: 0.9375rem; }
 
-/* line 231, foundation/components/_type.scss */
+/* line 230, foundation/components/_type.scss */
 hr {
   border-width: 0.0625rem 0 0; }
 
-/* line 236, foundation/components/_type.scss */
+/* line 235, foundation/components/_type.scss */
 hr.thick {
   border-width: 0.2rem 0 0; }
 
 /* Helpful Typography Defaults */
-/* line 243, foundation/components/_type.scss */
+/* line 242, foundation/components/_type.scss */
 em,
 i {
   font-style: italic;
   line-height: inherit; }
 
-/* line 249, foundation/components/_type.scss */
+/* line 248, foundation/components/_type.scss */
 strong,
 b {
   font-weight: bold;
   line-height: inherit; }
 
-/* line 254, foundation/components/_type.scss */
+/* line 253, foundation/components/_type.scss */
 small {
   font-size: 60%;
   line-height: inherit; }
 
-/* line 259, foundation/components/_type.scss */
+/* line 258, foundation/components/_type.scss */
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
   color: #7f0a0c; }
 
 /* Lists */
-/* line 268, foundation/components/_type.scss */
+/* line 267, foundation/components/_type.scss */
 ul,
 ol,
 dl {
@@ -1486,50 +1485,50 @@ dl {
   list-style-position: outside;
   font-family: Helvetica; }
 
-/* line 277, foundation/components/_type.scss */
+/* line 276, foundation/components/_type.scss */
 ul, ol {
   margin-left: 0; }
 
 /* Unordered Lists */
-/* line 285, foundation/components/_type.scss */
+/* line 284, foundation/components/_type.scss */
 ul li ul,
 ul li ol {
   margin-left: 1.25rem;
   margin-bottom: 0; }
-/* line 294, foundation/components/_type.scss */
+/* line 293, foundation/components/_type.scss */
 ul.square li ul, ul.circle li ul, ul.disc li ul {
   list-style: inherit; }
-/* line 297, foundation/components/_type.scss */
+/* line 296, foundation/components/_type.scss */
 ul.square {
   list-style-type: square; }
-/* line 298, foundation/components/_type.scss */
+/* line 297, foundation/components/_type.scss */
 ul.circle {
   list-style-type: circle; }
-/* line 299, foundation/components/_type.scss */
+/* line 298, foundation/components/_type.scss */
 ul.disc {
   list-style-type: disc; }
-/* line 300, foundation/components/_type.scss */
+/* line 299, foundation/components/_type.scss */
 ul.no-bullet, ul.favorites-list, ul.product-thumbs {
   list-style: none; }
 
 /* Ordered Lists */
-/* line 307, foundation/components/_type.scss */
+/* line 306, foundation/components/_type.scss */
 ol li ul,
 ol li ol {
   margin-left: 1.25rem;
   margin-bottom: 0; }
 
 /* Definition Lists */
-/* line 316, foundation/components/_type.scss */
+/* line 315, foundation/components/_type.scss */
 dl dt {
   margin-bottom: 0.3rem;
   font-weight: bold; }
-/* line 320, foundation/components/_type.scss */
+/* line 319, foundation/components/_type.scss */
 dl dd {
   margin-bottom: 0.75rem; }
 
 /* Abbreviations */
-/* line 325, foundation/components/_type.scss */
+/* line 324, foundation/components/_type.scss */
 abbr,
 acronym {
   text-transform: uppercase;
@@ -1538,55 +1537,55 @@ acronym {
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
 
-/* line 332, foundation/components/_type.scss */
+/* line 331, foundation/components/_type.scss */
 abbr {
   text-transform: none; }
 
 /* Blockquotes */
-/* line 337, foundation/components/_type.scss */
+/* line 336, foundation/components/_type.scss */
 blockquote {
   margin: 0.625rem 0 0.625rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #dddddd; }
-  /* line 342, foundation/components/_type.scss */
+  /* line 341, foundation/components/_type.scss */
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
     color: #333333; }
-    /* line 346, foundation/components/_type.scss */
+    /* line 345, foundation/components/_type.scss */
     blockquote cite:before {
       content: "\2014 \0020"; }
-    /* line 351, foundation/components/_type.scss */
+    /* line 350, foundation/components/_type.scss */
     blockquote cite a,
     blockquote cite a:visited {
       color: #333333; }
 
-/* line 357, foundation/components/_type.scss */
+/* line 356, foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
   color: #4d4d4d; }
 
 /* Microformats */
-/* line 363, foundation/components/_type.scss */
+/* line 362, foundation/components/_type.scss */
 .vcard {
   display: inline-block;
   margin: 0 0 1.25rem 0;
   border: 1px solid #dddddd;
   padding: 0.625rem 0.75rem; }
-  /* line 369, foundation/components/_type.scss */
+  /* line 368, foundation/components/_type.scss */
   .vcard li {
     margin: 0;
     display: block; }
-  /* line 373, foundation/components/_type.scss */
+  /* line 372, foundation/components/_type.scss */
   .vcard .fn {
     font-weight: bold;
     font-size: 0.9375rem; }
 
-/* line 380, foundation/components/_type.scss */
+/* line 379, foundation/components/_type.scss */
 .vevent .summary {
   font-weight: bold; }
-/* line 382, foundation/components/_type.scss */
+/* line 381, foundation/components/_type.scss */
 .vevent abbr {
   cursor: default;
   text-decoration: none;
@@ -1595,23 +1594,23 @@ blockquote p {
   padding: 0 0.0625rem; }
 
 @media only screen and (min-width: 768px) {
-  /* line 393, foundation/components/_type.scss */
+  /* line 392, foundation/components/_type.scss */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
 
-  /* line 394, foundation/components/_type.scss */
+  /* line 393, foundation/components/_type.scss */
   h1 {
     font-size: 2.75rem; }
 
-  /* line 395, foundation/components/_type.scss */
+  /* line 394, foundation/components/_type.scss */
   h2 {
     font-size: 2.3125rem; }
 
-  /* line 396, foundation/components/_type.scss */
+  /* line 395, foundation/components/_type.scss */
   h3 {
     font-size: 1.6875rem; }
 
-  /* line 397, foundation/components/_type.scss */
+  /* line 396, foundation/components/_type.scss */
   h4 {
     font-size: 1.4375rem; } }
 /*
@@ -1620,12 +1619,12 @@ blockquote p {
  * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
  * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
 */
-/* line 408, foundation/components/_type.scss */
+/* line 407, foundation/components/_type.scss */
 .print-only {
   display: none !important; }
 
 @media print {
-  /* line 410, foundation/components/_type.scss */
+  /* line 409, foundation/components/_type.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1633,84 +1632,84 @@ blockquote p {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 418, foundation/components/_type.scss */
+  /* line 417, foundation/components/_type.scss */
   a,
   a:visited {
     text-decoration: underline; }
 
-  /* line 419, foundation/components/_type.scss */
+  /* line 418, foundation/components/_type.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
 
-  /* line 421, foundation/components/_type.scss */
+  /* line 420, foundation/components/_type.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
-  /* line 426, foundation/components/_type.scss */
+  /* line 425, foundation/components/_type.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
-  /* line 429, foundation/components/_type.scss */
+  /* line 428, foundation/components/_type.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-  /* line 434, foundation/components/_type.scss */
+  /* line 433, foundation/components/_type.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  /* line 437, foundation/components/_type.scss */
+  /* line 436, foundation/components/_type.scss */
   tr,
   img {
     page-break-inside: avoid; }
 
-  /* line 439, foundation/components/_type.scss */
+  /* line 438, foundation/components/_type.scss */
   img {
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm; }
 
-  /* line 445, foundation/components/_type.scss */
+  /* line 444, foundation/components/_type.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 451, foundation/components/_type.scss */
+  /* line 450, foundation/components/_type.scss */
   h2,
   h3 {
     page-break-after: avoid; }
 
-  /* line 453, foundation/components/_type.scss */
+  /* line 452, foundation/components/_type.scss */
   .hide-on-print {
     display: none !important; }
 
-  /* line 454, foundation/components/_type.scss */
+  /* line 453, foundation/components/_type.scss */
   .print-only {
     display: block !important; }
 
-  /* line 455, foundation/components/_type.scss */
+  /* line 454, foundation/components/_type.scss */
   .hide-for-print {
     display: none !important; }
 
-  /* line 456, foundation/components/_type.scss */
+  /* line 455, foundation/components/_type.scss */
   .show-for-print {
     display: inherit !important; } }
-/* line 462, foundation/components/_type.scss */
+/* line 461, foundation/components/_type.scss */
 .uppercase, .orders > * {
   text-transform: uppercase; }
 
-/* line 466, foundation/components/_type.scss */
+/* line 465, foundation/components/_type.scss */
 .muted, .orders > * {
   color: #666666; }
 
-/* line 472, foundation/components/_type.scss */
+/* line 471, foundation/components/_type.scss */
 .favorites-list > li {
   margin-bottom: 0.5rem; }
 
@@ -3542,22 +3541,19 @@ label.error {
   -moz-transition: height .3s ease;
   transition: height .3s ease;
   line-height: 20px;
-  min-height: 0; }
-  /* line 465, foundation/components/_section.scss */
-  .accordion article > p {
-    font-size: 12px;
-    line-height: 1.5; }
-/* line 473, foundation/components/_section.scss */
+  min-height: 0;
+  font-size: 12px; }
+/* line 470, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:not(:checked) ~ label:after {
   font-family: 'FontAwesome';
   content: "\F067";
   float: right; }
-/* line 480, foundation/components/_section.scss */
+/* line 477, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:checked ~ label:after {
   font-family: 'FontAwesome';
   content: "\F068";
   float: right; }
-/* line 486, foundation/components/_section.scss */
+/* line 483, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:checked ~ article {
   min-height: 120px; }
 
@@ -5912,6 +5908,10 @@ table {
   /* line 98, foundation/components/_tables.scss */
   table.expand {
     width: 100%; }
+  /* line 102, foundation/components/_tables.scss */
+  table.total > * {
+    font-size: 0.75rem;
+    text-transform: uppercase; }
 
 /* Image Thumbnails */
 /* line 45, foundation/components/_thumbs.scss */
@@ -6187,7 +6187,7 @@ a.th {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   text-transform: uppercase;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   margin: 1.25rem 0; }
 
 /*Logo*/
