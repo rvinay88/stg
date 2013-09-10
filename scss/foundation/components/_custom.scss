@@ -152,9 +152,7 @@
   @extend .futura;
   display: block;
   color: white;
-  padding-left: emCalc(10);
-  padding-top: emCalc(10);
-  padding-bottom: emCalc(10);
+  padding: emCalc(10);
   text-transform: uppercase;
   font-size: emCalc(15);
   margin: emCalc(20px) 0;
@@ -426,6 +424,7 @@
 .fixed-360{
   width: 360px;
 }
+
 .right-margin{
   margin-right: emCalc(10px);
 }
@@ -494,6 +493,10 @@
   max-width: 150px;
 }
 
+.text {
+  font-size: emCalc(12px);
+}
+
 .info-text {
   font-size: emCalc(12px);
   color: $secondary-color;
@@ -513,3 +516,4 @@
 .error > label {
   display: none;
 }
+
