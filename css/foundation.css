@@ -4258,15 +4258,12 @@ ul.user-setting {
         margin-left: 0%; }
       /* line 159, foundation/components/_orbit.scss */
       .orbit-container .orbit-slides-container > * .orbit-caption {
-        position: absolute;
-        bottom: 0;
-        background-color: black;
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
+        position: relative;
+        text-align: center;
         width: 100%;
         padding: 10px 14px;
-        font-size: 0.875rem; }
-  /* line 172, foundation/components/_orbit.scss */
+        font-size: 0.75rem; }
+  /* line 169, foundation/components/_orbit.scss */
   .orbit-container .orbit-slide-number {
     position: absolute;
     top: 10px;
@@ -4275,11 +4272,11 @@ ul.user-setting {
     color: white;
     background: rgba(0, 0, 0, 0);
     z-index: 10; }
-    /* line 177, foundation/components/_orbit.scss */
+    /* line 174, foundation/components/_orbit.scss */
     .orbit-container .orbit-slide-number span {
       font-weight: 700;
       padding: 0.3125rem; }
-  /* line 183, foundation/components/_orbit.scss */
+  /* line 180, foundation/components/_orbit.scss */
   .orbit-container .orbit-timer {
     position: absolute;
     top: 10px;
@@ -4287,14 +4284,14 @@ ul.user-setting {
     height: 6px;
     width: 100px;
     z-index: 10; }
-    /* line 190, foundation/components/_orbit.scss */
+    /* line 187, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer .orbit-progress {
       height: 100%;
       background-color: black;
       background-color: rgba(0, 0, 0, 0);
       display: block;
       width: 0%; }
-    /* line 198, foundation/components/_orbit.scss */
+    /* line 195, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer > span {
       display: none;
       position: absolute;
@@ -4305,7 +4302,7 @@ ul.user-setting {
       border: solid 4px #000;
       border-top: none;
       border-bottom: none; }
-    /* line 211, foundation/components/_orbit.scss */
+    /* line 208, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer.paused > span {
       right: -6px;
       top: 9px;
@@ -4314,10 +4311,10 @@ ul.user-setting {
       border: inset 8px;
       border-right-style: solid;
       border-color: transparent transparent transparent #000; }
-  /* line 223, foundation/components/_orbit.scss */
+  /* line 220, foundation/components/_orbit.scss */
   .orbit-container:hover .orbit-timer > span {
     display: block; }
-  /* line 227, foundation/components/_orbit.scss */
+  /* line 224, foundation/components/_orbit.scss */
   .orbit-container .orbit-prev,
   .orbit-container .orbit-next {
     position: absolute;
@@ -4326,27 +4323,27 @@ ul.user-setting {
     height: 100%;
     line-height: 50px;
     z-index: 10; }
-    /* line 234, foundation/components/_orbit.scss */
+    /* line 231, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev > span,
     .orbit-container .orbit-next > span {
       position: absolute;
       top: 50%;
       margin-top: -16px;
       display: block; }
-  /* line 241, foundation/components/_orbit.scss */
+  /* line 238, foundation/components/_orbit.scss */
   .orbit-container .orbit-prev {
     left: 0; }
-    /* line 242, foundation/components/_orbit.scss */
+    /* line 239, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev span {
       right: 50%;
       margin-right: -8px; }
-      /* line 243, foundation/components/_orbit.scss */
+      /* line 240, foundation/components/_orbit.scss */
       .orbit-container .orbit-prev span:before {
         font-family: 'FontAwesome';
         font-size: 2rem;
         color: rgba(0, 0, 0, 0.8);
         content: "\f137"; }
-    /* line 252, foundation/components/_orbit.scss */
+    /* line 249, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev:hover {
       background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0001)));
       background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.1) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
@@ -4354,24 +4351,24 @@ ul.user-setting {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
-      /* line 259, foundation/components/_orbit.scss */
+      /* line 256, foundation/components/_orbit.scss */
       .orbit-container .orbit-prev:hover span:before {
         color: black;
         background: none; }
-  /* line 265, foundation/components/_orbit.scss */
+  /* line 262, foundation/components/_orbit.scss */
   .orbit-container .orbit-next {
     right: 0; }
-    /* line 266, foundation/components/_orbit.scss */
+    /* line 263, foundation/components/_orbit.scss */
     .orbit-container .orbit-next span {
       left: 50%;
       margin-left: -8px; }
-      /* line 267, foundation/components/_orbit.scss */
+      /* line 264, foundation/components/_orbit.scss */
       .orbit-container .orbit-next span:before {
         font-family: 'FontAwesome';
         font-size: 2rem;
         color: rgba(0, 0, 0, 0.8);
         content: "\f138"; }
-    /* line 276, foundation/components/_orbit.scss */
+    /* line 273, foundation/components/_orbit.scss */
     .orbit-container .orbit-next:hover {
       background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.1)));
       background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 10, 0.5) 100%));
@@ -4379,17 +4376,17 @@ ul.user-setting {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.1) 100%);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
-      /* line 283, foundation/components/_orbit.scss */
+      /* line 280, foundation/components/_orbit.scss */
       .orbit-container .orbit-next:hover span:before {
         color: black; }
 
-/* line 290, foundation/components/_orbit.scss */
+/* line 287, foundation/components/_orbit.scss */
 .orbit-bullets {
   margin: 0 auto 30px auto;
   overflow: hidden;
   position: relative;
   top: 10px; }
-  /* line 296, foundation/components/_orbit.scss */
+  /* line 293, foundation/components/_orbit.scss */
   .orbit-bullets li {
     display: block;
     width: 10px;
@@ -4400,38 +4397,38 @@ ul.user-setting {
     border: solid 1px #555555;
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
-    /* line 306, foundation/components/_orbit.scss */
+    /* line 303, foundation/components/_orbit.scss */
     .orbit-bullets li.active {
       background: #555555; }
-    /* line 310, foundation/components/_orbit.scss */
+    /* line 307, foundation/components/_orbit.scss */
     .orbit-bullets li:last-child {
       margin-right: 0; }
 
-/* line 317, foundation/components/_orbit.scss */
+/* line 314, foundation/components/_orbit.scss */
 .touch .orbit-container .orbit-prev,
 .touch .orbit-container .orbit-next {
   display: none; }
-/* line 320, foundation/components/_orbit.scss */
+/* line 317, foundation/components/_orbit.scss */
 .touch .orbit-bullets {
   display: none; }
 
 @media only screen and (min-width: 768px) {
-  /* line 329, foundation/components/_orbit.scss */
+  /* line 326, foundation/components/_orbit.scss */
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
     display: inherit; }
-  /* line 332, foundation/components/_orbit.scss */
+  /* line 329, foundation/components/_orbit.scss */
   .touch .orbit-bullets {
     display: block; } }
 @media only screen and (max-width: 768px) {
-  /* line 342, foundation/components/_orbit.scss */
+  /* line 339, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important; }
-  /* line 343, foundation/components/_orbit.scss */
+  /* line 340, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container > * {
     position: relative;
     margin-left: 0% !important; }
-  /* line 350, foundation/components/_orbit.scss */
+  /* line 347, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-timer,
   .orbit-stack-on-small .orbit-next,
   .orbit-stack-on-small .orbit-prev,
@@ -6047,7 +6044,7 @@ a.th {
   border-radius: 0.25rem;
   background-color: #eeeeee; }
   /* line 5, foundation/components/_custom.scss */
-  .row .bg input {
+  .row .bg input[type="text"] {
     background-color: white; }
 
 /* line 10, foundation/components/_custom.scss */

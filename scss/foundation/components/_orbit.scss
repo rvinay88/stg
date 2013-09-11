@@ -157,14 +157,11 @@ $preloader-class: "preloader" !default;
         }
 
         .orbit-caption {
-          position: absolute;
-          bottom: 0;
-          background-color: $orbit-caption-bg-old;
-          background-color: $orbit-caption-bg;
-          color: $orbit-caption-font-color;
+          position: relative;
+          text-align: center;
           width: 100%;
           padding: 10px 14px;
-          font-size: emCalc(14px);
+          font-size: emCalc(12px);
         }
       }
     }
