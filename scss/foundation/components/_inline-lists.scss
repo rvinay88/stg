@@ -108,7 +108,7 @@ $inline-list-children-display: inline !default;
       font-family: helvetica !important; //override above extend
       font-weight: normal !important; //override above extend
       @include border-top-bottom(top-bottom);
-      border-color: $base-color;
+      border-color: transparent;
       &:hover{
         text-decoration: none;
         color: $primary-color !important;

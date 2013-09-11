@@ -21,10 +21,10 @@ $table-head-padding: emCalc(8, 10, 10) !default;
 $table-head-text-transform: uppercase;
 
 // These control the row padding and font styles
-$table-row-padding: emCalc(9, 10) !default;
-$table-row-font-size: emCalc(16) !default;
+$table-row-padding: emCalc(5, 10) !default;
+$table-row-font-size: emCalc(12) !default;
 $table-row-font-color: $secondary-color !default;
-$table-line-height: emCalc(18) !default;
+$table-line-height: emCalc(12) !default;
 
 // These are for controlling the display and margin of tables
 $table-display: table-cell !default;

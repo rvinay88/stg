@@ -5381,7 +5381,7 @@ kbd {
       font-weight: normal !important;
       border: solid black;
       border-width: 0.2rem 0;
-      border-color: white; }
+      border-color: transparent; }
       /* line 112, foundation/components/_inline-lists.scss */
       .collection-list > li a:hover {
         text-decoration: none;
@@ -5918,8 +5918,8 @@ table {
     /* line 84, foundation/components/_tables.scss */
     table tr th,
     table tr td {
-      padding: 0.5625rem 0.625rem;
-      font-size: 1rem;
+      padding: 0.3125rem 0.625rem;
+      font-size: 0.75rem;
       color: #666666;
       font-weight: normal; }
   /* line 98, foundation/components/_tables.scss */
@@ -5929,7 +5929,7 @@ table {
   table tr td,
   table tfoot tr td {
     display: table-cell;
-    line-height: 1.125rem; }
+    line-height: 0.75rem; }
   /* line 106, foundation/components/_tables.scss */
   table.expand {
     width: 100%; }
@@ -6545,7 +6545,7 @@ a.th {
   margin-bottom: 0; }
   /* line 471, foundation/components/_custom.scss */
   .total > td {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     text-transform: uppercase; }
 
 /* line 477, foundation/components/_custom.scss */
@@ -6589,6 +6589,65 @@ a.th {
 /* line 516, foundation/components/_custom.scss */
 .error > label {
   display: none; }
+
+/* line 519, foundation/components/_custom.scss */
+.shopping-block {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(241, 241, 241, 0.9)));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(241, 241, 241, 0.9));
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0.9), rgba(241, 241, 241, 0.9));
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.9), rgba(241, 241, 241, 0.9));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(241, 241, 241, 0.9));
+  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, 0.9);
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  width: 48%;
+  max-width: 500px;
+  margin-right: 10px;
+  padding: 1.4%;
+  float: left; }
+  @media screen and (max-width: 635px) {
+    /* line 519, foundation/components/_custom.scss */
+    .shopping-block {
+      width: 100%; } }
+
+/* line 538, foundation/components/_custom.scss */
+.shopping-block-img {
+  width: 47%;
+  float: left;
+  padding: 0.625rem;
+  max-width: 180px;
+  min-width: 180px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  @media screen and (max-width: 1048px) {
+    /* line 538, foundation/components/_custom.scss */
+    .shopping-block-img {
+      margin: 0 auto;
+      float: none !important; } }
+
+/* line 552, foundation/components/_custom.scss */
+.shopping-block-desc {
+  width: 50%;
+  margin-left: 3%;
+  float: left;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  @media screen and (max-width: 1048px) {
+    /* line 552, foundation/components/_custom.scss */
+    .shopping-block-desc {
+      width: 100%;
+      float: none !important;
+      margin-left: 0; } }
+
+/* line 564, foundation/components/_custom.scss */
+.shop-wrap {
+  background-color: black; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */

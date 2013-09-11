@@ -469,7 +469,7 @@
 .total{
   margin-bottom: 0;
   > td {
-    font-size: emCalc(13px);
+    font-size: emCalc(12px);
     text-transform: uppercase;
   }
 }
@@ -516,4 +516,51 @@
 .error > label {
   display: none;
 }
+.shopping-block {
+  @include single-transition (all, 0.3s, ease);
+  background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0.9)), color-stop(100%, rgba(241,241,241,0.9)));
+  background:-webkit-linear-gradient(rgba(255,255,255,0.9),rgba(241,241,241,0.9));
+  background:-moz-linear-gradient(rgba(255,255,255,0.9),rgba(241,241,241,0.9));
+  background:-o-linear-gradient(rgba(255,255,255,0.9),rgba(241,241,241,0.9));
+  background:linear-gradient(rgba(255,255,255,0.9),rgba(241,241,241,0.9));
+  background-color:#f8f8f8;
+  background-color:rgba(248,248,248,0.9);
+  @include radius;
+  width: 48%;
+  max-width: 500px;
+  margin-right: 10px;
+  padding: 1.4%;
+  float: left;
+  @media screen and (max-width: 635px) {
+    width: 100%;
+  }
+}
+.shopping-block-img {
+  width: 47%;
+  float: left;
+  padding: emCalc(10px);
+  max-width: 180px;
+  min-width: 180px;
+  @include single-transition (all, 0.3s, ease);
+  @media screen and (max-width: 1048px) {
+      margin: 0 auto;
+      float: none !important;
+  }
 
+}
+
+.shopping-block-desc {
+  width: 50%;
+  margin-left: 3%;
+  float: left;
+  @include single-transition (all, 0.3s, ease);
+  @media screen and (max-width: 1048px) {
+    width: 100%;
+    float: none !important;
+    margin-left: 0;
+  }
+
+}
+.shop-wrap {
+  background-color: black;
+}
