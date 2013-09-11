@@ -317,6 +317,10 @@ $glowing-effect-color: $input-focus-border-color !default;
     }
   }
 
+input[type="submit"] {
+  border: none;
+}
+
   /* We use this to get basic styling on all basic form elements */
   input[type="text"],
   input[type="password"],
