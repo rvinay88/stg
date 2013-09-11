@@ -4054,13 +4054,12 @@ ul.user-setting {
   transition: all 0.2s ease-in;
   z-index: 1;
   background-color: transparent;
-  overflow: hidden;
-  background-color: #fff; }
-  /* line 624, foundation/components/_top-bar.scss */
+  overflow: hidden; }
+  /* line 623, foundation/components/_top-bar.scss */
   .settings-menu .pane-container {
     width: 800px;
     min-height: 15.625rem; }
-  /* line 628, foundation/components/_top-bar.scss */
+  /* line 627, foundation/components/_top-bar.scss */
   .settings-menu .pane-1, .settings-menu .pane-2 {
     width: 400px;
     padding-left: 20px;
@@ -4073,56 +4072,56 @@ ul.user-setting {
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     min-height: 15.625rem; }
-  /* line 639, foundation/components/_top-bar.scss */
+  /* line 638, foundation/components/_top-bar.scss */
   .settings-menu .pane-1 {
     padding-top: 1.875rem; }
 
-/* line 645, foundation/components/_top-bar.scss */
+/* line 644, foundation/components/_top-bar.scss */
 .slide-left {
   position: relative;
   left: -410px !important; }
 
-/* line 650, foundation/components/_top-bar.scss */
+/* line 649, foundation/components/_top-bar.scss */
 #menu-cart {
   overflow-y: auto; }
 
-/* line 653, foundation/components/_top-bar.scss */
+/* line 652, foundation/components/_top-bar.scss */
 #trigger-menu-settings {
   padding: 0.125rem !important;
   padding-right: 0.625rem !important;
   font-size: 0.75rem; }
 
-/* line 658, foundation/components/_top-bar.scss */
+/* line 657, foundation/components/_top-bar.scss */
 .settings-menu.open {
   min-height: 15rem !important;
   visibility: visible !important; }
 
-/* line 665, foundation/components/_top-bar.scss */
+/* line 664, foundation/components/_top-bar.scss */
 .user-setting-links > li a {
   display: block;
   font-size: 0.8125rem;
   font-weight: normal;
   padding: 0.375rem 0.75rem; }
-  /* line 671, foundation/components/_top-bar.scss */
+  /* line 670, foundation/components/_top-bar.scss */
   .user-setting-links > li a:hover {
     background-color: rgba(0, 0, 0, 0.25); }
 
-/* line 679, foundation/components/_top-bar.scss */
+/* line 678, foundation/components/_top-bar.scss */
 .user-setting-labels {
   margin-top: 0.75rem; }
 
-/* line 683, foundation/components/_top-bar.scss */
+/* line 682, foundation/components/_top-bar.scss */
 .user-img-small {
   width: 40px;
   height: 40px; }
 
-/* line 688, foundation/components/_top-bar.scss */
+/* line 687, foundation/components/_top-bar.scss */
 .user-img {
   width: 150px;
   height: 150px; }
 
 @media screen and (max-width: 768px) {
-  /* line 694, foundation/components/_top-bar.scss */
+  /* line 693, foundation/components/_top-bar.scss */
   .footer-list {
     margin-left: 12.5%; } }
 @-webkit-keyframes rotate {
@@ -4766,22 +4765,32 @@ ul.user-setting {
   .clearing-assembled .clearing-container .carousel > ul {
     display: none; }
 
-/* line 113, foundation/components/_clearing.scss */
+/* line 114, foundation/components/_clearing.scss */
+.clearing-blackout .clearing-feature li span {
+  display: none; }
+/* line 117, foundation/components/_clearing.scss */
+.clearing-blackout .clearing-feature li img {
+  display: block !important; }
+
+/* line 124, foundation/components/_clearing.scss */
 .clearing-feature li {
   display: none; }
-  /* line 115, foundation/components/_clearing.scss */
+  /* line 126, foundation/components/_clearing.scss */
   .clearing-feature li.clearing-featured-img {
     display: block; }
+    /* line 128, foundation/components/_clearing.scss */
+    .clearing-feature li.clearing-featured-img img {
+      display: none; }
 
 @media only screen and (min-width: 768px) {
-  /* line 123, foundation/components/_clearing.scss */
+  /* line 137, foundation/components/_clearing.scss */
   .clearing-main-prev,
   .clearing-main-next {
     position: absolute;
     height: 100%;
     width: 40px;
     top: 0; }
-    /* line 128, foundation/components/_clearing.scss */
+    /* line 142, foundation/components/_clearing.scss */
     .clearing-main-prev > span,
     .clearing-main-next > span {
       position: absolute;
@@ -4791,34 +4800,34 @@ ul.user-setting {
       height: 0;
       border: solid 16px; }
 
-  /* line 137, foundation/components/_clearing.scss */
+  /* line 151, foundation/components/_clearing.scss */
   .clearing-main-prev {
     left: 0; }
-    /* line 139, foundation/components/_clearing.scss */
+    /* line 153, foundation/components/_clearing.scss */
     .clearing-main-prev > span {
       left: 5px;
       border-color: transparent;
       border-right-color: white; }
 
-  /* line 145, foundation/components/_clearing.scss */
+  /* line 159, foundation/components/_clearing.scss */
   .clearing-main-next {
     right: 0; }
-    /* line 147, foundation/components/_clearing.scss */
+    /* line 161, foundation/components/_clearing.scss */
     .clearing-main-next > span {
       border-color: transparent;
       border-left-color: white; }
 
-  /* line 154, foundation/components/_clearing.scss */
+  /* line 168, foundation/components/_clearing.scss */
   .clearing-main-prev.disabled,
   .clearing-main-next.disabled {
     opacity: 0.5; }
 
-  /* line 158, foundation/components/_clearing.scss */
+  /* line 172, foundation/components/_clearing.scss */
   .clearing-assembled .clearing-container .carousel {
     background: #111111;
     height: 150px;
     margin-top: 5px; }
-    /* line 163, foundation/components/_clearing.scss */
+    /* line 177, foundation/components/_clearing.scss */
     .clearing-assembled .clearing-container .carousel > ul {
       display: block;
       z-index: 999;
@@ -4827,7 +4836,7 @@ ul.user-setting {
       margin-left: 0;
       position: relative;
       left: 0; }
-      /* line 172, foundation/components/_clearing.scss */
+      /* line 186, foundation/components/_clearing.scss */
       .clearing-assembled .clearing-container .carousel > ul li {
         display: block;
         width: 175px;
@@ -4839,31 +4848,31 @@ ul.user-setting {
         position: relative;
         cursor: pointer;
         opacity: 0.4; }
-        /* line 185, foundation/components/_clearing.scss */
+        /* line 199, foundation/components/_clearing.scss */
         .clearing-assembled .clearing-container .carousel > ul li.fix-height img {
           min-height: 100%;
           height: 100%;
           max-width: none; }
-        /* line 192, foundation/components/_clearing.scss */
+        /* line 206, foundation/components/_clearing.scss */
         .clearing-assembled .clearing-container .carousel > ul li a.th {
           border: none;
           -webkit-box-shadow: none;
           box-shadow: none;
           display: block; }
-        /* line 201, foundation/components/_clearing.scss */
+        /* line 215, foundation/components/_clearing.scss */
         .clearing-assembled .clearing-container .carousel > ul li img {
           cursor: pointer !important;
           min-width: 100% !important; }
-        /* line 206, foundation/components/_clearing.scss */
+        /* line 220, foundation/components/_clearing.scss */
         .clearing-assembled .clearing-container .carousel > ul li.visible {
           opacity: 1; }
-  /* line 211, foundation/components/_clearing.scss */
+  /* line 225, foundation/components/_clearing.scss */
   .clearing-assembled .clearing-container .visible-img {
     background: #111111;
     overflow: hidden;
     height: 75%; }
 
-  /* line 218, foundation/components/_clearing.scss */
+  /* line 232, foundation/components/_clearing.scss */
   .clearing-close {
     position: absolute;
     top: 10px;

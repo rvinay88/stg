@@ -109,11 +109,25 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255) !default;
     .carousel > ul { display: none; }
   }
 
+
+.clearing-blackout .clearing-feature li {
+  span {
+    display: none;
+  }
+  img {
+    display: block !important;
+  }
+}
+
+
   // If you want to show a lightbox, but only have a single image come through as the thumbnail
   .clearing-feature li {
     display: none;
     &.clearing-featured-img {
       display: block;
+      img {
+        display: none;
+      }
     }
   }
 
