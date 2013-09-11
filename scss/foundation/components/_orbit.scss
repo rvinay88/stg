@@ -52,6 +52,15 @@ $preloader-class: "preloader" !default;
     to { -webkit-transform: rotate(360deg); }
   }
 
+.prev{
+  display: inline-block;
+  width: 15%;
+}
+
+.next {
+  display: inline-block;
+}
+
   /* Orbit Graceful Loading */
   .#{$wrapper-class} {
     position: relative;
