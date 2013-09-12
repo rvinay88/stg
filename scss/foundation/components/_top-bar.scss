@@ -612,7 +612,7 @@ ul.user-setting{
   position: absolute;
   top: 45px;
   right: 0;
-  width: 400px;
+  width: 410px;
   height: 0;
   visibility: hidden;
   @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
@@ -621,11 +621,11 @@ ul.user-setting{
   background-color: transparent;
   overflow: hidden;
   .pane-container{
-    width: 800px;
+    width: 820px;
     min-height: emCalc(250px);
   }
   .pane-1, .pane-2{
-    width: 400px;
+    width: 410px;
     padding-left: 20px;
     padding-right: 30px;
     float: left;
@@ -639,11 +639,9 @@ ul.user-setting{
     padding-top: emCalc(30px);
   }
 }
-
-
 .slide-left{
   position: relative;
-  left: -410px !important;
+  left: -420px !important;
 }
 
 #menu-cart{

@@ -9,23 +9,23 @@
 
 .border-top{
   @include border-top-bottom(top);
-  }
+}
 .border-bottom{
   @include border-top-bottom(bottom);
-  }
+}
 .border-top-bottom{
   @include border-top-bottom(top-bottom);
-  }
+}
 
 .border-top-thick{
   @include border-top-bottom(top, $border-thick);
-  }
+}
 .border-bottom-thick{
   @include border-top-bottom(bottom, $border-thick);
-  }
+}
 .border-top-bottom-thick{
   @include border-top-bottom(top-bottom, $border-thick);
-  }
+}
 
 .border-top-thin{
   @include border-top-bottom(top, $border-thin);
@@ -85,13 +85,13 @@
 }
 
 .tree-sub-title {
-    font-family: Helvetica;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
+  font-family: Helvetica;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 .designer-nav {
   margin-left: 2rem;
   li {
@@ -184,11 +184,11 @@
   height: 100%; }
 
   // custom dropdown
-.styled-select{
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-}
+  .styled-select{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
   .styled-select select {
    width: 100%;
    padding-#{$default-float}: $form-spacing / 2;
@@ -222,25 +222,25 @@
 .main-holder {
   width: 100%;
   @include clearfix;
-  }
+}
 
 .main-holder:after {
   content: '';
   display: block;
   clear: both; }
 
-.main-holder .logo {
-  float: left;
-  margin-left: 0;
-  position: static; }
+  .main-holder .logo {
+    float: left;
+    margin-left: 0;
+    position: static; }
 
-.sorting, .price{
-  background-color: $tertiary-color;
-  padding: emCalc(5px);
-  display: inline-block;
-  margin-bottom: .5rem;
-  margin-left: 10px;
-  margin-top: 10px;
+    .sorting, .price{
+      background-color: $tertiary-color;
+      padding: emCalc(5px);
+      display: inline-block;
+      margin-bottom: .5rem;
+      margin-left: 10px;
+      margin-top: 10px;
   // width: 117px; //hard coding width so it doesn't stack on smaller screens
   > .title {
     font-size: 80%;
@@ -261,9 +261,9 @@
   background-color: $tertiary-color;
   padding: emCalc(5px);
   > li {
-      float: left;
-      list-style: none;
-    }
+    float: left;
+    list-style: none;
+  }
 }
 
 .pager {
@@ -370,7 +370,7 @@
 .product-options{
   padding: emCalc(8px) 0;
   @media #{$large} {
-  padding: emCalc(22px) 0;
+    padding: emCalc(22px) 0;
   }
   margin-top: emCalc(16px);
 }
@@ -479,15 +479,15 @@
 }
 
 .total-bill > td {
-    font-weight: bold;
-    color: $primary-color;
-    &:first-child {
-      border-bottom-left-radius: $global-radius;
-    }
-    &:last-child {
-      border-bottom-right-radius: $global-radius;
-    }
+  font-weight: bold;
+  color: $primary-color;
+  &:first-child {
+    border-bottom-left-radius: $global-radius;
   }
+  &:last-child {
+    border-bottom-right-radius: $global-radius;
+  }
+}
 
 .coupon {
   max-width: 150px;
@@ -516,6 +516,33 @@
 .error > label {
   display: none;
 }
+
+.shopping-block-img {
+  width: 47%;
+  float: left;
+  padding: emCalc(10px);
+  max-width: 180px;
+  min-width: 180px;
+  @include single-transition (all, 0.3s, ease);
+  @media screen and (max-width: 1048px) {
+    margin: 0 auto;
+    float: none !important;
+  }
+}
+
+.shopping-block-desc {
+  width: 50%;
+  margin-left: 10px;
+  float: left;
+  @include single-transition (all, 0.3s, ease);
+  @media screen and (max-width: 1048px) {
+    width: 100%;
+    float: none !important;
+    margin-left: 0;
+  }
+}
+
+
 .shopping-block {
   @include single-transition (all, 0.3s, ease);
   background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0.9)), color-stop(100%, rgba(241,241,241,0.9)));
@@ -534,33 +561,21 @@
   @media screen and (max-width: 635px) {
     width: 100%;
   }
-}
-.shopping-block-img {
-  width: 47%;
-  float: left;
-  padding: emCalc(10px);
-  max-width: 180px;
-  min-width: 180px;
-  @include single-transition (all, 0.3s, ease);
-  @media screen and (max-width: 1048px) {
-      margin: 0 auto;
-      float: none !important;
+  //For Shopping cart, override all other responsive changes
+  &.full{
+    width: 100% !important;
+    &.shopping-block-img {
+      min-width: 160px !important;
+    }
+    @media screen and (max-width: 1048px) {
+      &.shopping-block-desc {
+        width: 50% !important;
+        float: left;
+      }
+      &.shopping-block-img {
+        float: left !important;
+        margin: 0 !important;
+      }
+    }
   }
-
-}
-
-.shopping-block-desc {
-  width: 50%;
-  margin-left: 3%;
-  float: left;
-  @include single-transition (all, 0.3s, ease);
-  @media screen and (max-width: 1048px) {
-    width: 100%;
-    float: none !important;
-    margin-left: 0;
-  }
-
-}
-.shop-wrap {
-  background-color: black;
 }

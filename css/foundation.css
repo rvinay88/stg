@@ -4047,7 +4047,7 @@ ul.user-setting {
   position: absolute;
   top: 45px;
   right: 0;
-  width: 400px;
+  width: 410px;
   height: 0;
   visibility: hidden;
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
@@ -4061,11 +4061,11 @@ ul.user-setting {
   overflow: hidden; }
   /* line 623, foundation/components/_top-bar.scss */
   .settings-menu .pane-container {
-    width: 800px;
+    width: 820px;
     min-height: 15.625rem; }
   /* line 627, foundation/components/_top-bar.scss */
   .settings-menu .pane-1, .settings-menu .pane-2 {
-    width: 400px;
+    width: 410px;
     padding-left: 20px;
     padding-right: 30px;
     float: left;
@@ -4080,52 +4080,52 @@ ul.user-setting {
   .settings-menu .pane-1 {
     padding-top: 1.875rem; }
 
-/* line 644, foundation/components/_top-bar.scss */
+/* line 642, foundation/components/_top-bar.scss */
 .slide-left {
   position: relative;
-  left: -410px !important; }
+  left: -420px !important; }
 
-/* line 649, foundation/components/_top-bar.scss */
+/* line 647, foundation/components/_top-bar.scss */
 #menu-cart {
   overflow-y: auto; }
 
-/* line 652, foundation/components/_top-bar.scss */
+/* line 650, foundation/components/_top-bar.scss */
 #trigger-menu-settings {
   padding: 0.125rem !important;
   padding-right: 0.625rem !important;
   font-size: 0.75rem; }
 
-/* line 657, foundation/components/_top-bar.scss */
+/* line 655, foundation/components/_top-bar.scss */
 .settings-menu.open {
   min-height: 15rem !important;
   visibility: visible !important; }
 
-/* line 664, foundation/components/_top-bar.scss */
+/* line 662, foundation/components/_top-bar.scss */
 .user-setting-links > li a {
   display: block;
   font-size: 0.8125rem;
   font-weight: normal;
   padding: 0.375rem 0.75rem; }
-  /* line 670, foundation/components/_top-bar.scss */
+  /* line 668, foundation/components/_top-bar.scss */
   .user-setting-links > li a:hover {
     background-color: rgba(0, 0, 0, 0.25); }
 
-/* line 678, foundation/components/_top-bar.scss */
+/* line 676, foundation/components/_top-bar.scss */
 .user-setting-labels {
   margin-top: 0.75rem; }
 
-/* line 682, foundation/components/_top-bar.scss */
+/* line 680, foundation/components/_top-bar.scss */
 .user-img-small {
   width: 40px;
   height: 40px; }
 
-/* line 687, foundation/components/_top-bar.scss */
+/* line 685, foundation/components/_top-bar.scss */
 .user-img {
   width: 150px;
   height: 150px; }
 
 @media screen and (max-width: 768px) {
-  /* line 693, foundation/components/_top-bar.scss */
+  /* line 691, foundation/components/_top-bar.scss */
   .footer-list {
     margin-left: 12.5%; } }
 @-webkit-keyframes rotate {
@@ -6590,7 +6590,38 @@ a.th {
 .error > label {
   display: none; }
 
-/* line 519, foundation/components/_custom.scss */
+/* line 520, foundation/components/_custom.scss */
+.shopping-block-img {
+  width: 47%;
+  float: left;
+  padding: 0.625rem;
+  max-width: 180px;
+  min-width: 180px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  @media screen and (max-width: 1048px) {
+    /* line 520, foundation/components/_custom.scss */
+    .shopping-block-img {
+      margin: 0 auto;
+      float: none !important; } }
+
+/* line 533, foundation/components/_custom.scss */
+.shopping-block-desc {
+  width: 50%;
+  margin-left: 10px;
+  float: left;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  @media screen and (max-width: 1048px) {
+    /* line 533, foundation/components/_custom.scss */
+    .shopping-block-desc {
+      width: 100%;
+      float: none !important;
+      margin-left: 0; } }
+
+/* line 546, foundation/components/_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -6610,44 +6641,24 @@ a.th {
   padding: 1.4%;
   float: left; }
   @media screen and (max-width: 635px) {
-    /* line 519, foundation/components/_custom.scss */
+    /* line 546, foundation/components/_custom.scss */
     .shopping-block {
       width: 100%; } }
-
-/* line 538, foundation/components/_custom.scss */
-.shopping-block-img {
-  width: 47%;
-  float: left;
-  padding: 0.625rem;
-  max-width: 180px;
-  min-width: 180px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-  @media screen and (max-width: 1048px) {
-    /* line 538, foundation/components/_custom.scss */
-    .shopping-block-img {
-      margin: 0 auto;
-      float: none !important; } }
-
-/* line 552, foundation/components/_custom.scss */
-.shopping-block-desc {
-  width: 50%;
-  margin-left: 3%;
-  float: left;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-  @media screen and (max-width: 1048px) {
-    /* line 552, foundation/components/_custom.scss */
-    .shopping-block-desc {
-      width: 100%;
-      float: none !important;
-      margin-left: 0; } }
-
-/* line 564, foundation/components/_custom.scss */
-.shop-wrap {
-  background-color: black; }
+  /* line 565, foundation/components/_custom.scss */
+  .shopping-block.full {
+    width: 100% !important; }
+    /* line 567, foundation/components/_custom.scss */
+    .shopping-block.full.shopping-block-img {
+      min-width: 160px !important; }
+    @media screen and (max-width: 1048px) {
+      /* line 571, foundation/components/_custom.scss */
+      .shopping-block.full.shopping-block-desc {
+        width: 50% !important;
+        float: left; }
+      /* line 575, foundation/components/_custom.scss */
+      .shopping-block.full.shopping-block-img {
+        float: left !important;
+        margin: 0 !important; } }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
