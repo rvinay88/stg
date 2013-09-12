@@ -465,10 +465,3 @@ $microformat-abbr-font-decoration: none !default;
 .muted {
   color: $secondary-color;
 }
-
-.favorites-list {
-  @extend .no-bullet;
-  > li {
-  margin-bottom: 0.5rem;
-  }
-}

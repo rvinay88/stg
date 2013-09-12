@@ -1709,10 +1709,6 @@ blockquote p {
 .muted, .orders > * {
   color: #666666; }
 
-/* line 471, foundation/components/_type.scss */
-.favorites-list > li {
-  margin-bottom: 0.5rem; }
-
 /* line 176, foundation/components/_buttons.scss */
 button, .button {
   cursor: pointer;
@@ -5400,6 +5396,12 @@ kbd {
       border: solid black;
       border-width: 0.2rem 0;
       color: black !important; }
+
+/* line 129, foundation/components/_inline-lists.scss */
+.favorites-list > li {
+  margin-bottom: 0.5rem;
+  margin-right: 3rem;
+  min-width: 150px; }
 
 /* Default Pagination */
 /* line 128, foundation/components/_pagination.scss */

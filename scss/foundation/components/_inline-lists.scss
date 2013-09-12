@@ -122,3 +122,13 @@ $inline-list-children-display: inline !default;
     margin-bottom: 0.5rem;
   }
 }
+
+
+.favorites-list {
+  @extend .no-bullet;
+  > li {
+  margin-bottom: 0.5rem;
+  margin-right: 3rem;
+  min-width: 150px;
+  }
+}
