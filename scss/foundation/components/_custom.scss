@@ -599,3 +599,14 @@
     }
   }
 }
+
+.successMessage {
+  @include alert(rgba($success-color, 0.2), 4px);
+  ul {
+    @extend no-bullet;
+    li {
+      list-style: none;
+      color: $primary-color;
+    }
+  }
+}

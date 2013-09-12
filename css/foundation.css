@@ -6694,6 +6694,26 @@ a.th {
     list-style: none;
     color: black; }
 
+/* line 603, foundation/components/_custom.scss */
+.successMessage {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding: 0.6875rem 1.3125rem 0.75rem 0.6875rem;
+  font-size: 0.875rem;
+  background-color: rgba(93, 164, 35, 0.2);
+  border-color: rgba(69, 122, 26, 0.2);
+  color: white;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  /* line 607, foundation/components/_custom.scss */
+  .successMessage ul li {
+    list-style: none;
+    color: black; }
+
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
   .f-dropdown {
