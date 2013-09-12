@@ -145,157 +145,190 @@
         My Addresses
       </div>
       <div class="large-10 columns large-centered">
-        <div class="large-4 small-6 columns">
-          <fieldset>
-            <h5 class="uppercase">Shipping Address</h5>
-            <label class="check">* Required fields</label>
-            <form action="">
+        <div id="address-myaddress-form_es_" class="errorSummary alert-box" data-alert><p>Please fix the following input errors:</p>
+          <a href="" class="close">×</a>
+          <ul>
+            <li>Last Name cannot be blank.</li>
+            <li>Last Name cannot be blank.</li>
+            <li>Last Name cannot be blank.</li>
+          </ul>
 
-              <div class="bottom-margin">
-                <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+        </div>
+          <div class="large-4 small-6 columns">
+            <fieldset>
+              <h5 class="uppercase">Shipping Address</h5>
+              <label class="check">* Required fields</label>
+              <form action="">
+
+                <div class="bottom-margin">
+                  <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                  <label for="" class="required">First Name</label>
+                  <input placeholder="First Name*" name="RAddress[0][FirstName]" id="RAddress_0_FirstName" type="text" maxlength="255" value="Vinay">
+                </div>
+                <div class="bottom-margin">
+                  <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                  <label for="" class="required">Last Name</label>
+                  <input type="text">
+
+                </div>
+                <label for="" class="required">Select a country</label>
+                <select class="my_select_box">
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>India</option>
+                </select>
+                <label for="" class="required error">Address Line 1</label>
+                <input type="text" class="error">
+                <label for="" class="required">Address Line 2</label>
+                <input type="text">
+                <label for="" class="required">City</label>
+                <input type="text">
+                <label for="" class="required">State</label>
+                <input type="text">
+                <label for="" class="required">Zip/Postal Code</label>
+                <input type="text">
+                <label for="" class="required">Phone Number</label>
+                <input type="text">
+                <input type="submit" class="button" vlaue="Save">
+              </fieldset>
+            </form>
+          </div>
+          <div class="large-2 hide-for-small columns"></div>
+          <div class="large-4 pull-2 small-6 columns">
+            <fieldset>
+              <h5 class="uppercase">Billing Address</h5>
+              <label for="check1" class="check">
+                <input type="checkbox" name="cgec" id="check1" value="check1" class="r2s">
+                <span>Same as Shopping</span>
+              </label>
+              <form action="">
                 <label for="" class="required">First Name</label>
-                <input placeholder="First Name*" name="RAddress[0][FirstName]" id="RAddress_0_FirstName" type="text" maxlength="255" value="Vinay">
-              </div>
-              <div class="bottom-margin">
-                <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                <input type="text">
                 <label for="" class="required">Last Name</label>
                 <input type="text">
-
-              </div>
-              <label for="" class="required">Select a country</label>
-              <select class="my_select_box">
-                <option>United States</option>
-                <option>United Kingdom</option>
-                <option>India</option>
-              </select>
-              <label for="" class="required error">Address Line 1</label>
-              <input type="text" class="error">
-              <label for="" class="required">Address Line 2</label>
-              <input type="text">
-              <label for="" class="required">City</label>
-              <input type="text">
-              <label for="" class="required">State</label>
-              <input type="text">
-              <label for="" class="required">Zip/Postal Code</label>
-              <input type="text">
-              <label for="" class="required">Phone Number</label>
-              <input type="text">
-              <input type="submit" class="button" vlaue="Save">
-            </fieldset>
-          </form>
-        </div>
-        <div class="large-2 hide-for-small columns"></div>
-        <div class="large-4 pull-2 small-6 columns">
-          <fieldset>
-            <h5 class="uppercase">Billing Address</h5>
-            <label for="check1" class="check">
-              <input type="checkbox" name="cgec" id="check1" value="check1" class="r2s">
-              <span>Same as Shopping</span>
-            </label>
-            <form action="">
-              <label for="" class="required">First Name</label>
-              <input type="text">
-              <label for="" class="required">Last Name</label>
-              <input type="text">
-              <label for="" class="required">Select a country</label>
-              <select class="my_select_box">
-                <option>United States</option>
-                <option>United Kingdom</option>
-                <option>India</option>
-              </select>
-              <label for="" class="required">Address Line 1</label>
-              <input type="text">
-              <label for="" class="required">Address Line 2</label>
-              <input type="text">
-              <label for="" class="required">City</label>
-              <input type="text">
-              <label for="" class="required">State</label>
-              <input type="text">
-              <label for="" class="required">Pin Code</label>
-              <input type="text">
-              <label for="" class="required">Phone Number</label>
-              <input type="text">
-            </fieldset>
+                <label for="" class="required">Select a country</label>
+                <select class="my_select_box">
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>India</option>
+                </select>
+                <label for="" class="required">Address Line 1</label>
+                <input type="text">
+                <label for="" class="required">Address Line 2</label>
+                <input type="text">
+                <label for="" class="required">City</label>
+                <input type="text">
+                <label for="" class="required">State</label>
+                <input type="text">
+                <label for="" class="required">Pin Code</label>
+                <input type="text">
+                <label for="" class="required">Phone Number</label>
+                <input type="text">
+              </fieldset>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="black-bar">
-          My Orders
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-10 columns large-centered">
-        <p>Click on an order number below to view details or make a return. Please note that exchanges or refunds must be requested within 10 days of receiving your order</p>
-        <table class="expand">
-          <thead>
-            <tr><th class="col01">DATE</th>
-              <th class="col02">ORDER NUMBER</th>
-              <th class="col03">STATUS </th>
-              <th class="col04">DELIVERY INFORMATION</th>
-            </tr></thead>
-            <tbody>
-              <tr class="orders">
-                <td>
-                  09 Sep 2013 21:47
-                </td>
-                <td>20916478</td>
-                <td>DISPATCHED</td>
-                <td><a href="">Track Now</a></td>
-              </tr>
-              <tr class="orders">
-                <td>
-                  09 Sep 2013 21:47
-                </td>
-                <td>20916478</td>
-                <td>DISPATCHED</td>
-                <td><a href="">Track Now</a></td>
-              </tr>
-              <tr class="orders">
-                <td>
-                  09 Sep 2013 21:47
-                </td>
-                <td>20916478</td>
-                <td>DISPATCHED</td>
-                <td><a href="">Track Now</a></td>
-              </tr>
-              <tr class="orders">
-                <td>
-                  09 Sep 2013 21:47
-                </td>
-                <td>20916478</td>
-                <td>DISPATCHED</td>
-                <td><a href="">Track Now</a></td>
-              </tr>
-
-            </tbody>
-          </table>
         </div>
       </div>
 
       <div class="row">
         <div class="large-12 columns">
           <div class="black-bar">
-            My Credit Cards
+            My Orders
           </div>
         </div>
       </div>
 
       <div class="row">
         <div class="large-10 columns large-centered">
-          <input type="submit" class="button" value="Add New Card">
-          <div class="panel radius">
-            <p>No credit card information is available</p>
+          <p>Click on an order number below to view details or make a return. Please note that exchanges or refunds must be requested within 10 days of receiving your order</p>
+          <table class="expand">
+            <thead>
+              <tr><th class="col01">DATE</th>
+                <th class="col02">ORDER NUMBER</th>
+                <th class="col03">STATUS </th>
+                <th class="col04">DELIVERY INFORMATION</th>
+              </tr></thead>
+              <tbody>
+                <tr class="orders">
+                  <td>
+                    09 Sep 2013 21:47
+                  </td>
+                  <td>20916478</td>
+                  <td>DISPATCHED</td>
+                  <td><a href="">Track Now</a></td>
+                </tr>
+                <tr class="orders">
+                  <td>
+                    09 Sep 2013 21:47
+                  </td>
+                  <td>20916478</td>
+                  <td>DISPATCHED</td>
+                  <td><a href="">Track Now</a></td>
+                </tr>
+                <tr class="orders">
+                  <td>
+                    09 Sep 2013 21:47
+                  </td>
+                  <td>20916478</td>
+                  <td>DISPATCHED</td>
+                  <td><a href="">Track Now</a></td>
+                </tr>
+                <tr class="orders">
+                  <td>
+                    09 Sep 2013 21:47
+                  </td>
+                  <td>20916478</td>
+                  <td>DISPATCHED</td>
+                  <td><a href="">Track Now</a></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="black-bar">
+              My Credit Cards
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-10 columns large-centered">
+            <input type="submit" class="button" value="Add New Card">
+            <div class="panel radius">
+              <p>No credit card information is available</p>
+            </div>
+
+            <div class="row bg">
+             <div class="small-1 columns">
+              <p> 1.</p>
+            </div>
+            <div class="small-3 columns">
+              <p>Rathna <br>
+                VISA <br>
+                Xxxx-xxxx-xxxx-9039 <br>
+                11/2011 <br>
+              </p>
+            </div>
+            <div class="small-3 columns">
+              <p>3021 Humes Pl.W <br>
+                Seattle, WA 98119 <br>
+                United States <br>
+                5038809114          <br>
+              </p>
+            </div>
+            <div class="small-3 columns pull-2">
+              <input type="submit" class="button" value="Edit">
+              <input type="submit" class="button" value="Delete">
+            </div>
           </div>
 
           <div class="row bg">
            <div class="small-1 columns">
-            <p> 1.</p>
+            <p> 2.</p>
           </div>
           <div class="small-3 columns">
             <p>Rathna <br>
@@ -316,45 +349,21 @@
             <input type="submit" class="button" value="Delete">
           </div>
         </div>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="black-bar">
+          My Designers
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-10 columns large-centered">
+        <p>Update your favorites</p>
         <div class="row bg">
-         <div class="small-1 columns">
-          <p> 2.</p>
-        </div>
-        <div class="small-3 columns">
-          <p>Rathna <br>
-            VISA <br>
-            Xxxx-xxxx-xxxx-9039 <br>
-            11/2011 <br>
-          </p>
-        </div>
-        <div class="small-3 columns">
-          <p>3021 Humes Pl.W <br>
-            Seattle, WA 98119 <br>
-            United States <br>
-            5038809114          <br>
-          </p>
-        </div>
-        <div class="small-3 columns pull-2">
-          <input type="submit" class="button" value="Edit">
-          <input type="submit" class="button" value="Delete">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="black-bar">
-        My Designers
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="large-10 columns large-centered">
-      <p>Update your favorites</p>
-      <div class="row bg">
           <ul class="inline-list favorites-list">
             <li><i class="icon-heart"></i> <a href="#">Cornetti</a></li>
             <li><i class="icon-heart icon-muted"></i> <a href="#">Anja</a></li>

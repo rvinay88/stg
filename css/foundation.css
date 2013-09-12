@@ -6674,6 +6674,26 @@ a.th {
   width: 100%;
   background-color: black; }
 
+/* line 592, foundation/components/_custom.scss */
+.errorSummary {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding: 0.6875rem 1.3125rem 0.75rem 0.6875rem;
+  font-size: 0.875rem;
+  background-color: rgba(198, 15, 19, 0.1);
+  border-color: rgba(151, 11, 14, 0.1);
+  color: white;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  /* line 596, foundation/components/_custom.scss */
+  .errorSummary ul li {
+    list-style: none;
+    color: black; }
+
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
   .f-dropdown {

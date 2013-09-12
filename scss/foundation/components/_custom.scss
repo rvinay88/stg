@@ -589,3 +589,13 @@
   background-color: $primary-color;
 }
 
+.errorSummary {
+  @include alert(rgba($alert-color, 0.1), 4px);
+  ul {
+    @extend no-bullet;
+    li {
+      list-style: none;
+      color: $primary-color;
+    }
+  }
+}
