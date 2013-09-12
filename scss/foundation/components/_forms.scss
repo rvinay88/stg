@@ -353,10 +353,14 @@ input[type="submit"] {
   label.check {
     margin-bottom: $form-spacing;
   }
-  input[type="checkbox"].r2s{
+  input[type="checkbox"].r2s, input[type="radio"].r2s{
     display: none;
     & + span {
       font-family: Helvetica;
+      &.card-address {
+        font-size: 12px;
+        line-height: 1.6;
+      }
     }
     & + span:before{
       font-family: FontAwesome;
