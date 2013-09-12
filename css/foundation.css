@@ -1898,6 +1898,10 @@ button, .button {
   /* line 235, foundation/components/_buttons.scss */
   button, .button {
     display: inline-block; } }
+/* line 246, foundation/components/_buttons.scss */
+a.button:hover {
+  text-decoration: none; }
+
 /* Standard Forms */
 /* line 258, foundation/components/_forms.scss */
 form {
