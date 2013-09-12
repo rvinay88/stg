@@ -142,12 +142,6 @@ a {
     a.no-dec:hover, .user-setting-links > li a:hover, .paging .pagerprevious a:hover, .paging .pagernext a:hover {
       text-decoration: none !important; }
 
-/* line 398, foundation/components/_global.scss */
-footer {
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle; }
-
 /* Grid HTML Classes */
 /* line 116, foundation/components/_grid.scss */
 .row {
@@ -6674,6 +6668,11 @@ a.th {
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
+
+/* line 587, foundation/components/_custom.scss */
+.navigation, .footer {
+  width: 100%;
+  background-color: black; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
