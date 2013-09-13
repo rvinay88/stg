@@ -6714,6 +6714,11 @@ a.th {
     list-style: none;
     color: black; }
 
+/* line 614, foundation/components/_custom.scss */
+.thankyou {
+  color: black;
+  font: italic 7em futura; }
+
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
   .f-dropdown {
