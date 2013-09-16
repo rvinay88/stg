@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home Page - Styleguide for runway2street</title>
+
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/stg.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <link rel="stylesheet" href="css/chosen.css">
+</head>
+<body>
+    <div class="box-bg">
+    <div class="box-content">
+        <div class="box-content2">
+            <div class="leftside">
+                <h1>LOVE fashion? </h1>
+                <h2>WANT to wear one-of-a-kind pieces? </h2>
+                <p>WISH you could discover and shop for exciting labels from around the world?</p>
+                <h2>runway2street is just for you</h2>
+                <p>An online luxury fashion marketplace. We scour the world to bring you the most exquisite brands and designers under one roof.</p>
+            </div>
+            <!--New customer registration form-->
+            <form class="form alt" id="userLoginForm" action="/" method="post">            <div id="rightside">
+                <div class="card">
+                    <div class="face front flip">
+                        <!--                            Login Module-->
+                        <h6 class="black text-center login-form-login push-next-down">Sign in using your social account</h6>
+                        <!--                            Social Sign in buttons-->
+                        <div class="login-form-social">
+                            <div class="social-buttons-wrapper">
+                                <div class="half right">
+                                    <div class="social-button-wrap">
+                                        <a id="facebookLink" href="http://r2s-int.com.php53-22.ord1-1.websitetestlink.com/user/Login/weblogin/service/facebook">
+                                            <div class="login-facebook"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="half right">
+                                    <div class="social-button-wrap">
+                                        <a id="googleLink" href="http://r2s-int.com.php53-22.ord1-1.websitetestlink.com/user/Login/weblogin/service/google_oauth">
+                                            <div class="login-google"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Login Using Email-->
+                        <div class="login-form-login">
+                            <div class="clearfix"></div>
+                            <h6 class="black text-center push-more-down">or Sign in using your email</h6>
+                            <div class="form">
+                                <div class="select-jcf select-area" style="width: 142px;"><span class="left"></span><span class="center">United States</span><a class="select-opener"></a></div><select class="jcf jcf-hidden" placeholder="Country" name="modalCountry" id="modalCountry">
+<option value="99">India</option>
+<option value="225">United Kingdom</option>
+<option value="226" selected="selected">United States</option>
+</select>                                <div class="errorMessage" id="UserLoginForm_email_em_" style="display:none"></div><input placeholder="Email" name="UserLoginForm[email]" id="UserLoginForm_email" type="text">                                <div class="errorMessage" id="UserLoginForm_password_em_" style="display:none"></div><input placeholder="Password" name="UserLoginForm[password]" id="UserLoginForm_password" type="password">                                <div class="half left push-next-down">
+                                    <input id="ytUserLoginForm_rememberMe" type="hidden" value="0" name="UserLoginForm[rememberMe]"><input name="UserLoginForm[rememberMe]" id="UserLoginForm_rememberMe" value="1" type="checkbox">                                    <span class="no-dec forgot-password black-font new-black"> Keep me signed in</span>
+                                </div>
+                                <div class="half right text-right">
+                                    <a href="#" class="no-dec dotted-border forgot-password new-black">Forgot password?</a>
+                                </div>
+                                <div class="push-down signin-buttons-wrapper">
+
+                                        <input id="signUpLink" class="wide-btn negate-margin" type="submit" name="yt0" value="Sign In">
+                                </div>
+                                <div class="clearfix"></div>
+                                <h6 class="black text-center">Not a member? <a href="#" class="dotted-border no-dec signin-register">Register here</a></h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--New customer registration form-->
+                    <form class="form alt" id="userRegistrationForm" action="/" method="post">                    <fieldset>
+                        <div class="face back show">
+                            <div class="login-form-register">
+                                <h6 class="black text-center">Register for a runway2street account</h6>
+                                <div class="errorSummary product-success" id="formError">
+                                </div>
+                                <div class="form">
+                                    <div class="select-jcf select-area" style="width: 142px;"><span class="left"></span><span class="center">United States</span><a class="select-opener"></a></div><select class="jcf jcf-hidden" placeholder="Country" name="countryId" id="countryId">
+<option value="99">India</option>
+<option value="225">United Kingdom</option>
+<option value="226" selected="selected">United States</option>
+</select>
+                                    <div class="errorMessage" id="RegistrationForm_firstName_em_" style="display:none"></div><input placeholder="First Name" name="RegistrationForm[firstName]" id="RegistrationForm_firstName" type="text">
+                                    <div class="errorMessage" id="RegistrationForm_lastName_em_" style="display:none"></div><input placeholder="Last Name" name="RegistrationForm[lastName]" id="RegistrationForm_lastName" type="text">
+                                    <div class="errorMessage" id="RegistrationForm_email_em_" style="display:none"></div><input placeholder="Email" name="RegistrationForm[email]" id="RegistrationForm_email" type="text">                                    <div class="errorMessage" id="RegistrationForm_password_em_" style="display:none"></div><input placeholder="Password" name="RegistrationForm[password]" id="RegistrationForm_password" type="password" maxlength="128">                                    <div class="signin-buttons-wrapper">
+                                        <input id="registerLink" class="wide-btn negate-margin" type="submit" name="yt1" value="Register">                                    </div>
+                                    <h6 class="black text-center">Already a member? <a href="#" class="dotted-border no-dec signin-register">Sign in here</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </form>                    <!--                    Forgot Password-->
+                    <form class="form alt" id="forgotPasswordForm" action="/" method="post">                    <fieldset>
+                        <div class="face side flip">
+                            <div class="login-form-register">
+                                <div class="form">
+                                    <h6 class="black text-center push-more-down">Forgot your password?</h6>
+                                    <div class="errorSummary product-success" id="formErrors">
+                                    </div>
+                                    <div class="successMessage" id="formSucess" style="display:none"></div>
+                                </div>
+                                <div class="errorMessage" id="UserRecoveryForm_email_em_" style="display:none"></div><input placeholder="Email" name="UserRecoveryForm[email]" id="UserRecoveryForm_email" type="text"><input value="1" name="UserRecoveryForm[userTypeID]" id="UserRecoveryForm_userTypeID" type="hidden">                                <input id="forgotPasswordLink" class="wide-btn negate-margin" type="submit" name="yt2" value="Send password">                                <div class="clearfix"></div>
+                                <h6 class="push-more-down black text-center"><a href="#" class="dotted-border no-dec remember-password">Login Here</a></h6>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </form>                </div>
+
+            </div></form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

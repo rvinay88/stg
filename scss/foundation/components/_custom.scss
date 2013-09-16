@@ -175,8 +175,11 @@
   text-indent: -9999px;
   position: absolute;
   top: 10px;
-  z-index: 98;
+  z-index: 110;
   margin-left: 7%;
+  &.homepage {
+    top: 45px;
+  }
 }
 
 .logo a {

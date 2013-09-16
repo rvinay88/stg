@@ -3574,7 +3574,7 @@ label.error {
   left: 0;
   position: fixed;
   top: 0;
-  z-index: 99; }
+  z-index: 110; }
 
 /* line 83, foundation/components/_top-bar.scss */
 .top-bar {
@@ -3806,7 +3806,7 @@ label.error {
     left: 100%;
     top: 0;
     visibility: hidden;
-    z-index: 99; }
+    z-index: 110; }
     /* line 355, foundation/components/_top-bar.scss */
     .top-bar-section .dropdown li {
       width: 100%;
@@ -4054,14 +4054,15 @@ ul.user-setting {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  z-index: 1;
+  z-index: 110;
   background-color: transparent;
   overflow: hidden; }
   /* line 623, foundation/components/_top-bar.scss */
   .settings-menu .pane-container {
     width: 820px;
-    min-height: 15.625rem; }
-  /* line 627, foundation/components/_top-bar.scss */
+    min-height: 15.625rem;
+    z-index: 110; }
+  /* line 628, foundation/components/_top-bar.scss */
   .settings-menu .pane-1, .settings-menu .pane-2 {
     width: 410px;
     padding-left: 20px;
@@ -4073,57 +4074,58 @@ ul.user-setting {
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    min-height: 15.625rem; }
-  /* line 638, foundation/components/_top-bar.scss */
+    min-height: 15.625rem;
+    z-index: 110; }
+  /* line 640, foundation/components/_top-bar.scss */
   .settings-menu .pane-1 {
     padding-top: 1.875rem; }
 
-/* line 642, foundation/components/_top-bar.scss */
+/* line 644, foundation/components/_top-bar.scss */
 .slide-left {
   position: relative;
   left: -420px !important; }
 
-/* line 647, foundation/components/_top-bar.scss */
+/* line 649, foundation/components/_top-bar.scss */
 #menu-cart {
   overflow-y: auto; }
 
-/* line 650, foundation/components/_top-bar.scss */
+/* line 652, foundation/components/_top-bar.scss */
 #trigger-menu-settings {
   padding: 0.125rem !important;
   padding-right: 0.625rem !important;
   font-size: 0.75rem; }
 
-/* line 655, foundation/components/_top-bar.scss */
+/* line 657, foundation/components/_top-bar.scss */
 .settings-menu.open {
   min-height: 15rem !important;
   visibility: visible !important; }
 
-/* line 662, foundation/components/_top-bar.scss */
+/* line 664, foundation/components/_top-bar.scss */
 .user-setting-links > li a {
   display: block;
   font-size: 0.8125rem;
   font-weight: normal;
   padding: 0.375rem 0.75rem; }
-  /* line 668, foundation/components/_top-bar.scss */
+  /* line 670, foundation/components/_top-bar.scss */
   .user-setting-links > li a:hover {
     background-color: rgba(0, 0, 0, 0.25); }
 
-/* line 676, foundation/components/_top-bar.scss */
+/* line 678, foundation/components/_top-bar.scss */
 .user-setting-labels {
   margin-top: 0.75rem; }
 
-/* line 680, foundation/components/_top-bar.scss */
+/* line 682, foundation/components/_top-bar.scss */
 .user-img-small {
   width: 40px;
   height: 40px; }
 
-/* line 685, foundation/components/_top-bar.scss */
+/* line 687, foundation/components/_top-bar.scss */
 .user-img {
   width: 150px;
   height: 150px; }
 
 @media screen and (max-width: 768px) {
-  /* line 691, foundation/components/_top-bar.scss */
+  /* line 693, foundation/components/_top-bar.scss */
   .footer-list {
     margin-left: 12.5%; } }
 @-webkit-keyframes rotate {
@@ -6233,21 +6235,24 @@ a.th {
   text-indent: -9999px;
   position: absolute;
   top: 10px;
-  z-index: 98;
+  z-index: 110;
   margin-left: 7%; }
+  /* line 180, foundation/components/_custom.scss */
+  .logo.homepage {
+    top: 45px; }
 
-/* line 182, foundation/components/_custom.scss */
+/* line 185, foundation/components/_custom.scss */
 .logo a {
   display: block;
   height: 100%; }
 
-/* line 187, foundation/components/_custom.scss */
+/* line 190, foundation/components/_custom.scss */
 .styled-select {
   position: relative;
   width: 100%;
   overflow: hidden; }
 
-/* line 192, foundation/components/_custom.scss */
+/* line 195, foundation/components/_custom.scss */
 .styled-select select {
   width: 100%;
   padding-left: 0.5rem;
@@ -6263,11 +6268,11 @@ a.th {
   height: 42px;
   margin: 0 0 1rem 0;
   -moz-appearance: none !important; }
-  /* line 205, foundation/components/_custom.scss */
+  /* line 208, foundation/components/_custom.scss */
   .styled-select select::-ms-expand {
     display: none; }
 
-/* line 212, foundation/components/_custom.scss */
+/* line 215, foundation/components/_custom.scss */
 .styled-select:after {
   content: "";
   display: block;
@@ -6284,7 +6289,7 @@ a.th {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
-/* line 222, foundation/components/_custom.scss */
+/* line 225, foundation/components/_custom.scss */
 .main-holder {
   width: 100%;
   *zoom: 1; }
@@ -6296,19 +6301,19 @@ a.th {
   .main-holder:after {
     clear: both; }
 
-/* line 227, foundation/components/_custom.scss */
+/* line 230, foundation/components/_custom.scss */
 .main-holder:after {
   content: '';
   display: block;
   clear: both; }
 
-/* line 232, foundation/components/_custom.scss */
+/* line 235, foundation/components/_custom.scss */
 .main-holder .logo {
   float: left;
   margin-left: 0;
   position: static; }
 
-/* line 237, foundation/components/_custom.scss */
+/* line 240, foundation/components/_custom.scss */
 .sorting, .price {
   background-color: #eeeeee;
   padding: 0.3125rem;
@@ -6316,16 +6321,16 @@ a.th {
   margin-bottom: .5rem;
   margin-left: 10px;
   margin-top: 10px; }
-  /* line 245, foundation/components/_custom.scss */
+  /* line 248, foundation/components/_custom.scss */
   .sorting > .title, .price > .title {
     font-size: 80%; }
-  /* line 248, foundation/components/_custom.scss */
+  /* line 251, foundation/components/_custom.scss */
   .sorting > ul, .price > ul {
     display: inline-block;
     margin-left: -1.4rem; }
 
 /* Paging CSS */
-/* line 256, foundation/components/_custom.scss */
+/* line 259, foundation/components/_custom.scss */
 .paging {
   float: right;
   margin-right: 10px;
@@ -6340,91 +6345,91 @@ a.th {
   /* line 128, foundation/components/_global.scss */
   .paging:after {
     clear: both; }
-  /* line 263, foundation/components/_custom.scss */
+  /* line 266, foundation/components/_custom.scss */
   .paging > li {
     float: left;
     list-style: none; }
 
-/* line 269, foundation/components/_custom.scss */
+/* line 272, foundation/components/_custom.scss */
 .pager {
   float: right;
   display: inline-block; }
 
-/* line 274, foundation/components/_custom.scss */
+/* line 277, foundation/components/_custom.scss */
 .paging .pagerprevious a, .pager .paging .pagerprevious a {
   margin: 0 4px; }
-  /* line 277, foundation/components/_custom.scss */
+  /* line 280, foundation/components/_custom.scss */
   .paging .pagerprevious a:before, .pager .paging .pagerprevious a:before {
     font-family: 'FontAwesome';
     content: "\f137"; }
 
-/* line 283, foundation/components/_custom.scss */
+/* line 286, foundation/components/_custom.scss */
 .paging .pagernext a, .pager .paging .pagernext a {
   margin: 0 4px; }
-  /* line 286, foundation/components/_custom.scss */
+  /* line 289, foundation/components/_custom.scss */
   .paging .pagernext a:before, .pager .paging .pagernext a:before {
     font-family: 'FontAwesome';
     content: "\f138"; }
 
-/* line 293, foundation/components/_custom.scss */
+/* line 296, foundation/components/_custom.scss */
 .product-thumbs {
   margin-top: 0 !important; }
-  /* line 296, foundation/components/_custom.scss */
+  /* line 299, foundation/components/_custom.scss */
   .product-thumbs > li {
     margin-bottom: 0.625rem; }
 
-/* line 301, foundation/components/_custom.scss */
+/* line 304, foundation/components/_custom.scss */
 .product-main {
   margin-bottom: 0.625rem; }
 
-/* line 306, foundation/components/_custom.scss */
+/* line 309, foundation/components/_custom.scss */
 .product-detail {
   width: 100%; }
   @media only screen and (min-width: 1280px) {
-    /* line 306, foundation/components/_custom.scss */
+    /* line 309, foundation/components/_custom.scss */
     .product-detail {
       width: 50% !important; } }
 
-/* line 312, foundation/components/_custom.scss */
+/* line 315, foundation/components/_custom.scss */
 .product-detail > img {
   margin-bottom: 0.625rem; }
 
-/* line 322, foundation/components/_custom.scss */
+/* line 325, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
-  /* line 324, foundation/components/_custom.scss */
+  /* line 327, foundation/components/_custom.scss */
   .in-the-press img {
     margin-top: 0.625rem; }
   @media screen and (min-width: 984px) and (max-width: 1304px) {
-    /* line 327, foundation/components/_custom.scss */
+    /* line 330, foundation/components/_custom.scss */
     .in-the-press .hidden-image {
       display: none; } }
 
-/* line 334, foundation/components/_custom.scss */
+/* line 337, foundation/components/_custom.scss */
 .product-title {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.625rem; }
 
-/* line 340, foundation/components/_custom.scss */
+/* line 343, foundation/components/_custom.scss */
 .product-sub-title {
   text-transform: uppercase;
   color: #666666;
   font-size: 0.875rem;
   line-height: 1.25rem; }
 
-/* line 347, foundation/components/_custom.scss */
+/* line 350, foundation/components/_custom.scss */
 .rate {
   font-family: futura;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem; }
-  /* line 351, foundation/components/_custom.scss */
+  /* line 354, foundation/components/_custom.scss */
   .rate strong {
     font-weight: normal;
     font-family: Helvetica;
     font-size: 0.75rem; }
 
-/* line 358, foundation/components/_custom.scss */
+/* line 361, foundation/components/_custom.scss */
 .highlight-text {
   border: 1px solid black;
   color: #666666;
@@ -6432,90 +6437,90 @@ a.th {
   padding: 0.625rem;
   margin: 1rem 0; }
 
-/* line 366, foundation/components/_custom.scss */
+/* line 369, foundation/components/_custom.scss */
 .tab-content {
   color: #666666; }
 
-/* line 370, foundation/components/_custom.scss */
+/* line 373, foundation/components/_custom.scss */
 .product-options {
   padding: 0.5rem 0;
   margin-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    /* line 370, foundation/components/_custom.scss */
+    /* line 373, foundation/components/_custom.scss */
     .product-options {
       padding: 1.375rem 0; } }
 
-/* line 378, foundation/components/_custom.scss */
+/* line 381, foundation/components/_custom.scss */
 .size {
   padding: 0.3125rem;
   font-size: 0.875rem; }
 
-/* line 383, foundation/components/_custom.scss */
+/* line 386, foundation/components/_custom.scss */
 .add-buttons {
   margin-right: 20px; }
 
-/* line 387, foundation/components/_custom.scss */
+/* line 390, foundation/components/_custom.scss */
 .long-button {
   min-width: 185px; }
 
-/* line 390, foundation/components/_custom.scss */
+/* line 393, foundation/components/_custom.scss */
 .med-button {
   min-width: 150px; }
 
-/* line 394, foundation/components/_custom.scss */
+/* line 397, foundation/components/_custom.scss */
 .catalogue {
   font-size: 80%; }
 
-/* line 398, foundation/components/_custom.scss */
+/* line 401, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold; }
-  /* line 401, foundation/components/_custom.scss */
+  /* line 404, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 406, foundation/components/_custom.scss */
+/* line 409, foundation/components/_custom.scss */
 .designer-about {
   height: 84px;
   overflow: hidden; }
 
-/* line 410, foundation/components/_custom.scss */
+/* line 413, foundation/components/_custom.scss */
 .more {
   height: auto !important; }
 
-/* line 414, foundation/components/_custom.scss */
+/* line 417, foundation/components/_custom.scss */
 .small-text {
   font-size: 0.6875rem;
   text-transform: uppercase;
   margin-top: 20px;
   white-space: nowrap; }
 
-/* line 421, foundation/components/_custom.scss */
+/* line 424, foundation/components/_custom.scss */
 .fixed-170 {
   width: 170px;
   margin: 0 0.625rem 1rem 0; }
 
-/* line 425, foundation/components/_custom.scss */
+/* line 428, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
 
-/* line 429, foundation/components/_custom.scss */
+/* line 432, foundation/components/_custom.scss */
 .right-margin {
   margin-right: 0.625rem; }
 
-/* line 433, foundation/components/_custom.scss */
+/* line 436, foundation/components/_custom.scss */
 .top-margin, .errorSummary, .successMessage {
   margin-top: 1rem; }
 
-/* line 437, foundation/components/_custom.scss */
+/* line 440, foundation/components/_custom.scss */
 .bottom-margin {
   margin-bottom: 1rem; }
 
-/* line 440, foundation/components/_custom.scss */
+/* line 443, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
-/* line 444, foundation/components/_custom.scss */
+/* line 447, foundation/components/_custom.scss */
 .social-buttons {
   height: 42px;
   *zoom: 1;
@@ -6528,74 +6533,74 @@ a.th {
   .social-buttons:after {
     clear: both; }
 
-/* line 451, foundation/components/_custom.scss */
+/* line 454, foundation/components/_custom.scss */
 .homepage-wrapper {
   width: 100%;
   max-width: 1366px; }
 
-/* line 456, foundation/components/_custom.scss */
+/* line 459, foundation/components/_custom.scss */
 .hotspot-holder {
   width: 100%;
   position: relative; }
-  /* line 459, foundation/components/_custom.scss */
+  /* line 462, foundation/components/_custom.scss */
   .hotspot-holder > img {
     width: 100%; }
 
-/* line 464, foundation/components/_custom.scss */
+/* line 467, foundation/components/_custom.scss */
 .orders > * {
   font-size: 0.75rem; }
 
-/* line 470, foundation/components/_custom.scss */
+/* line 473, foundation/components/_custom.scss */
 .total {
   margin-bottom: 0; }
-  /* line 472, foundation/components/_custom.scss */
+  /* line 475, foundation/components/_custom.scss */
   .total > td {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
-/* line 478, foundation/components/_custom.scss */
+/* line 481, foundation/components/_custom.scss */
 .total-table {
   min-width: 60%; }
 
-/* line 482, foundation/components/_custom.scss */
+/* line 485, foundation/components/_custom.scss */
 .total-bill > td {
   font-weight: bold;
   color: black; }
-  /* line 485, foundation/components/_custom.scss */
+  /* line 488, foundation/components/_custom.scss */
   .total-bill > td:first-child {
     border-bottom-left-radius: 0.25rem; }
-  /* line 488, foundation/components/_custom.scss */
+  /* line 491, foundation/components/_custom.scss */
   .total-bill > td:last-child {
     border-bottom-right-radius: 0.25rem; }
 
-/* line 493, foundation/components/_custom.scss */
+/* line 496, foundation/components/_custom.scss */
 .coupon {
   max-width: 150px; }
 
-/* line 497, foundation/components/_custom.scss */
+/* line 500, foundation/components/_custom.scss */
 .text {
   font-size: 0.75rem; }
 
-/* line 501, foundation/components/_custom.scss */
+/* line 504, foundation/components/_custom.scss */
 .info-text {
   font-size: 0.75rem;
   color: #666666;
   line-height: 1.5; }
 
-/* line 507, foundation/components/_custom.scss */
+/* line 510, foundation/components/_custom.scss */
 .highlight {
   font-weight: bold; }
 
-/* line 512, foundation/components/_custom.scss */
+/* line 515, foundation/components/_custom.scss */
 .errorMessage {
   font-size: 0.75rem;
   color: #c60f13; }
 
-/* line 517, foundation/components/_custom.scss */
+/* line 520, foundation/components/_custom.scss */
 .error > label {
   display: none; }
 
-/* line 521, foundation/components/_custom.scss */
+/* line 524, foundation/components/_custom.scss */
 .shopping-block-img {
   width: 180px;
   float: left;
@@ -6605,12 +6610,12 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 521, foundation/components/_custom.scss */
+    /* line 524, foundation/components/_custom.scss */
     .shopping-block-img {
       margin: 0 auto;
       float: none !important; } }
 
-/* line 533, foundation/components/_custom.scss */
+/* line 536, foundation/components/_custom.scss */
 .shopping-block-desc {
   width: 45%;
   margin-left: 10px;
@@ -6619,13 +6624,13 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 533, foundation/components/_custom.scss */
+    /* line 536, foundation/components/_custom.scss */
     .shopping-block-desc {
       width: 100%;
       float: none !important;
       margin-left: 0; } }
 
-/* line 545, foundation/components/_custom.scss */
+/* line 548, foundation/components/_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -6646,35 +6651,35 @@ a.th {
   padding: 1.4%;
   float: left; }
   @media screen and (max-width: 635px) {
-    /* line 545, foundation/components/_custom.scss */
+    /* line 548, foundation/components/_custom.scss */
     .shopping-block {
       width: 45%; } }
   @media screen and (min-width: 636px) and (max-width: 780px) {
-    /* line 545, foundation/components/_custom.scss */
+    /* line 548, foundation/components/_custom.scss */
     .shopping-block {
       width: 48%; } }
-  /* line 569, foundation/components/_custom.scss */
+  /* line 572, foundation/components/_custom.scss */
   .shopping-block.full {
     width: 100% !important; }
-    /* line 571, foundation/components/_custom.scss */
+    /* line 574, foundation/components/_custom.scss */
     .shopping-block.full.shopping-block-img {
       min-width: 160px !important; }
     @media screen and (max-width: 1048px) {
-      /* line 575, foundation/components/_custom.scss */
+      /* line 578, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-desc {
         width: 50% !important;
         float: left; }
-      /* line 579, foundation/components/_custom.scss */
+      /* line 582, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
 
-/* line 587, foundation/components/_custom.scss */
+/* line 590, foundation/components/_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black; }
 
-/* line 592, foundation/components/_custom.scss */
+/* line 595, foundation/components/_custom.scss */
 .errorSummary {
   border-style: solid;
   border-width: 1px;
@@ -6691,12 +6696,12 @@ a.th {
   border-radius: 4px;
   color: black;
   font-weight: normal; }
-  /* line 599, foundation/components/_custom.scss */
+  /* line 602, foundation/components/_custom.scss */
   .errorSummary ul li {
     list-style: none;
     color: black; }
 
-/* line 606, foundation/components/_custom.scss */
+/* line 609, foundation/components/_custom.scss */
 .successMessage {
   border-style: solid;
   border-width: 1px;
@@ -6713,17 +6718,17 @@ a.th {
   border-radius: 4px;
   color: black;
   font-weight: normal; }
-  /* line 613, foundation/components/_custom.scss */
+  /* line 616, foundation/components/_custom.scss */
   .successMessage ul li {
     list-style: none;
     color: black; }
 
-/* line 620, foundation/components/_custom.scss */
+/* line 623, foundation/components/_custom.scss */
 .thankyou {
   color: black;
   font: italic 7em futura; }
 
-/* line 626, foundation/components/_custom.scss */
+/* line 629, foundation/components/_custom.scss */
 .loading-indicator {
   height: 80px;
   width: 80px;
@@ -6735,20 +6740,20 @@ a.th {
   left: 43%; }
 
 @media only screen and (orientation: landscape) {
-  /* line 637, foundation/components/_custom.scss */
+  /* line 640, foundation/components/_custom.scss */
   .portrait-wrapper {
     display: none !important; } }
 @media only screen and (orientation: portrait) {
-  /* line 637, foundation/components/_custom.scss */
+  /* line 640, foundation/components/_custom.scss */
   .portrait-wrapper {
     display: block; } }
 
 @media only screen and (orientation: landscape) {
-  /* line 646, foundation/components/_custom.scss */
+  /* line 649, foundation/components/_custom.scss */
   .landscape-wrapper {
     display: block; } }
 @media only screen and (orientation: portrait) {
-  /* line 646, foundation/components/_custom.scss */
+  /* line 649, foundation/components/_custom.scss */
   .landscape-wrapper {
     display: none !important; } }
 
