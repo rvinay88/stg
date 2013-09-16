@@ -591,8 +591,11 @@
 
 .errorSummary {
   @include alert(rgba($alert-color, 0.1), 4px);
+  color: black;
+  font-weight: normal;
+  @extend .top-margin;
   ul {
-    @extend no-bullet;
+    @extend .no-bullet;
     li {
       list-style: none;
       color: $primary-color;
@@ -602,8 +605,11 @@
 
 .successMessage {
   @include alert(rgba($success-color, 0.2), 4px);
+  color: black;
+  font-weight: normal;
+  @extend .top-margin;
   ul {
-    @extend no-bullet;
+    @extend .no-bullet;
     li {
       list-style: none;
       color: $primary-color;
@@ -614,4 +620,34 @@
 .thankyou {
   color: $primary-color;
   font: italic 7em futura;
+}
+
+
+.loading-indicator{
+  height:80px;
+  width:80px;
+  background:url("../images/loading.gif");
+  background-repeat:no-repeat;
+  background-position:center center;
+  position:relative;
+  top:0;
+  left:43%;
+}
+
+.portrait-wrapper{
+  @media #{$landscape} {
+    display: none !important;
+  }
+  @media #{$portrait} {
+    display: block;
+  }
+}
+
+.landscape-wrapper {
+  @media #{$landscape} {
+    display: block;
+  }
+  @media #{$portrait} {
+    display: none !important;
+  }
 }
