@@ -610,6 +610,7 @@ ul.user-setting{
 .menu-wrap {
   background-color: $base-color;
 }
+
 .settings-menu{
   position: absolute;
   top: 45px;
@@ -620,7 +621,12 @@ ul.user-setting{
   @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
   @include single-transition(all, 0.2s, ease-in);
   z-index: 120;
-  background-color: transparent;
+  &#menu-cart {
+    background-color: white;
+  }
+  &#menu-settings {
+    background-color: transparent;
+  }
   overflow: hidden;
   .pane-container{
     width: 820px;
