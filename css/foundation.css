@@ -3574,7 +3574,7 @@ label.error {
   left: 0;
   position: fixed;
   top: 0;
-  z-index: 110; }
+  z-index: 120; }
 
 /* line 83, foundation/components/_top-bar.scss */
 .top-bar {
@@ -3806,7 +3806,7 @@ label.error {
     left: 100%;
     top: 0;
     visibility: hidden;
-    z-index: 110; }
+    z-index: 120; }
     /* line 355, foundation/components/_top-bar.scss */
     .top-bar-section .dropdown li {
       width: 100%;
@@ -4054,14 +4054,14 @@ ul.user-setting {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  z-index: 110;
+  z-index: 120;
   background-color: transparent;
   overflow: hidden; }
   /* line 623, foundation/components/_top-bar.scss */
   .settings-menu .pane-container {
     width: 820px;
     min-height: 15.625rem;
-    z-index: 110; }
+    z-index: 120; }
   /* line 628, foundation/components/_top-bar.scss */
   .settings-menu .pane-1, .settings-menu .pane-2 {
     width: 410px;
@@ -4075,7 +4075,7 @@ ul.user-setting {
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     min-height: 15.625rem;
-    z-index: 110; }
+    z-index: 120; }
   /* line 640, foundation/components/_top-bar.scss */
   .settings-menu .pane-1 {
     padding-top: 1.875rem; }
@@ -6756,6 +6756,25 @@ a.th {
   /* line 649, foundation/components/_custom.scss */
   .landscape-wrapper {
     display: none !important; } }
+
+/* line 658, foundation/components/_custom.scss */
+.promogallery {
+  min-width: 768px;
+  max-width: 1366px;
+  width: 100%;
+  min-height: 322px;
+  max-height: 572px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  *zoom: 1; }
+  /* line 127, foundation/components/_global.scss */
+  .promogallery:before, .promogallery:after {
+    content: " ";
+    display: table; }
+  /* line 128, foundation/components/_global.scss */
+  .promogallery:after {
+    clear: both; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */

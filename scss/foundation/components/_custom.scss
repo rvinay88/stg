@@ -654,3 +654,15 @@
     display: none !important;
   }
 }
+
+.promogallery {
+  min-width: 768px;
+  max-width: 1366px;
+  width: 100%;
+  min-height: 322px;
+  max-height: 572px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  @include clearfix;
+}

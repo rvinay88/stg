@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="css/font-awesome.css">
 
   <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-hotspotter-1.7.8.min.css">
+  <link rel="stylesheet" type="text/css" href="css/hotspot-editor.min.css">
+
 </head>
 <body>
   <div class="nav">
@@ -127,14 +130,16 @@
   </div>
 
 
-<div class="landscape-wrapper">
-      <div class="homepage-wrapper">
-        <div class="hotspot-holder">
-          <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/heroImages/Emy-collage-3.jpg">
-          <h1 class="logo"><a href="http://runway2street.com">runway2street</a></h1>
+  <div class="landscape-wrapper">
+    <div class="homepage-wrapper">
+      <div class="hotspot-holder">
+        <div class="cycle-slideshow promogallery">
+          <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/heroImages/Emy-collage-3.jpg" class="promogallery">
         </div>
+        <h1 class="logo"><a href="http://runway2street.com">runway2street</a></h1>
       </div>
-</div>
+    </div>
+  </div>
 
 
   <div class="portrait-wrapper">
@@ -145,7 +150,7 @@
       </div>
     </div>
   </div>
-
+<div class="clearfix"></div>
   <footer class="black-bg large-12 columns">
     <div class="large-3 columns footer-icons text-center">
       <ul class="large-block-grid-4 small-block-grid-4">
@@ -206,7 +211,9 @@
 
 
  <script src="js/vendor/jquery.js"></script>
-
+ <script src="js/vendor/jquery-hotspotter-1.7.8.min.js"></script>
+ <script src="js/vendor/jquery.bxslider.min.js"></script>
+ <script src="js/vendor/jquery.cycle2.min.js"></script>
  <script src="js/vendor/chosen.jquery.js"></script>
  <script type="text/javascript">
  var config = {
@@ -227,7 +234,9 @@ for (var selector in config) {
 <script>
 $(document).foundation();
 </script>
-
+<script>
+  $('.hs-area').hotspotter();
+</script>
 <script>
 $('#trigger-menu-settings').click( function() {
   $('#menu-cart').removeClass('open');
