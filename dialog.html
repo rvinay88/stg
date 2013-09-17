@@ -19,55 +19,188 @@
 </head>
 <body>
 
+  <div class="box-bg">
+    <div class="box-content">
+      <div class="box-content2">
+        <div class="leftside">
+          <h1 class="login-modal-heading">LOVE fashion? </h1>
+          <h2 class="login-modal-copy">WANT to wear one-of-a-kind pieces? </h2>
+          <p class="black">WISH you could discover and shop for exciting labels from around the world?</p>
+          <h2 class="login-modal-copy">runway2street is just for you</h2>
+          <p class="black">An online luxury fashion marketplace. We scour the world to bring you the most exquisite brands and designers under one roof.</p>
+        </div>
+        <div class="rightside">
+          <div class="rightside-wrap">
+            <div class="card show">
+              <div class="face front show">
+                <div class="text-center">
+                  <p class="highlight black">Sign in using your social account </p>
+                  <div class="login-social-buttons">
+                    <a href="#">
+                      <div class="g-signin text-center">
+                        <i class="icon-google-plus icon-2x"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="f-signin text-center">
+                        <i class="icon-facebook icon-2x"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <p class="highlight black">or sign in using your email</p>
+                </div>
+                <label for="">Country</label>
+                <select name="" id="" class="my_select_box-no-single">
+                  <option value="">United States</option>
+                  <option value="">United Kingdom</option>
+                  <option value="">India</option>
+                </select>
+                <label for="">Email</label>
+                <input type="text">
+                <label for="">Password</label>
+                <input type="password">
+                <label for="1" class="left small-text">
+                  <input type="checkbox" id="1" class="r2s">
+                  <span> Keep me signed in</span>
+                </label>
+                <a href="#" class="small-text right" id="forgot">Forgot Password?</a>
+                <div class="clearfix"></div>
+                <div class="text-center">
+                  <input type="submit" class="button secondary right-margin" value="Register" id="register"></input>
+                  <input type="submit" class="button" value="Sign In">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="face back flip">
+                <p class="highlight black text-center">Register for a runway2street account</p>
+                <select name="" id="" class="my_select_box-no-single">
+                  <option value="99">India</option>
+                  <option value="225">United Kingdom</option>
+                  <option value="226" selected="selected">United States</option>
+                </select>
+                <label for="">First Name</label>
+                <input type="text">
+                <label for="">Last Name</label>
+                <input type="text">
+                <label for="">Email Address</label>
+                <input type="text">
+                <label for="">Password</label>
+                <input type="password">
+                <div class="text-center">
+                  <input type="submit" value="Register" class="button">
+                  <br>
+                  <span class="small-text">Already a member? <a href="#" class="highlight" id="signin">Sign in here</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="face side flip">
+                <div class="text-center">
+                  <p class="highlight black">
+                    Forgot your password?
+                  </p>
+                  <p>
+                    Provide us your email address and we will mail you instructions on how to reset your password
+                  </p>
+                </div>
+                <label for="">Email</label>
+                <input type="text">
+                <div class="text-center">
+                  <input type="submit" class="button" value="Send Password">
+                    <br>
+                  <span class="small-text"><a href="#" class="highlight" id="signin2">Sign in here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
- <script src="js/vendor/jquery.js"></script>
- <script src="js/vendor/jquery-hotspotter-1.7.8.min.js"></script>
- <script src="js/vendor/jquery.bxslider.min.js"></script>
- <script src="js/vendor/jquery.cycle2.min.js"></script>
- <script src="js/vendor/chosen.jquery.js"></script>
- <script type="text/javascript">
- var config = {
-  '.my_select_box'           : {},
-  '.my_select_box-deselect'  : {allow_single_deselect:true},
-  '.my_select_box-no-single' : {disable_search_threshold:10},
-  '.my_select_box-no-results': {no_results_text:'Oops, nothing found!'},
-  '.my_select_box-width'     : {width:"95%"}
-}
-for (var selector in config) {
-  $(selector).chosen(config[selector]);
-}
-</script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery-hotspotter-1.7.8.min.js"></script>
+    <script src="js/vendor/jquery.bxslider.min.js"></script>
+    <script src="js/vendor/jquery.cycle2.min.js"></script>
+    <script src="js/vendor/chosen.jquery.js"></script>
+    <script type="text/javascript">
+    var config = {
+      '.my_select_box'           : {},
+      '.my_select_box-deselect'  : {allow_single_deselect:true},
+      '.my_select_box-no-single' : {disable_search_threshold:10},
+      '.my_select_box-no-results': {no_results_text:'Oops, nothing found!'},
+      '.my_select_box-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+    </script>
 
-<script src="js/vendor/custom.modernizr.js"></script>
+    <script src="js/vendor/custom.modernizr.js"></script>
 
-<script src="js/foundation.min.js"></script>
-<script>
-$(document).foundation();
-</script>
-<script>
-  $('.hs-area').hotspotter();
-</script>
-<script>
-$('#trigger-menu-settings').click( function() {
-  $('#menu-cart').removeClass('open');
-  $('#menu-settings').toggleClass('open');
-});
-</script>
-<script>
-$('#trigger-menu-cart').click( function() {
-  $('#menu-cart').toggleClass('open');
-  $('#menu-settings').removeClass('open');
-});
-</script>
-<script>
-$('#trigger-preferences-pane').click(function() {
-  $('.pane-1, .pane-2').addClass('slide-left');
-  event.preventDefault();
-});
-$('#trigger-settings-pane').click(function() {
-  $('.pane-1, .pane-2').removeClass('slide-left');
-  event.preventDefault();
-});
-</script>
-</body>
-</html>
+    <script src="js/foundation.min.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+    <script>
+    $('.hs-area').hotspotter();
+    </script>
+    <script>
+    $('#trigger-menu-settings').click( function() {
+      $('#menu-cart').removeClass('open');
+      $('#menu-settings').toggleClass('open');
+    });
+    </script>
+    <script>
+    $('#trigger-menu-cart').click( function() {
+      $('#menu-cart').toggleClass('open');
+      $('#menu-settings').removeClass('open');
+    });
+    </script>
+    <script>
+    $('#trigger-preferences-pane').click(function() {
+      $('.pane-1, .pane-2').addClass('slide-left');
+      event.preventDefault();
+    });
+    $('#trigger-settings-pane').click(function() {
+      $('.pane-1, .pane-2').removeClass('slide-left');
+      event.preventDefault();
+    });
+    </script>
+    <script>
+    $('#register').click(function () {
+      $('.front').removeClass('show');
+      $('.front').parent().removeClass('show');
+
+      $('.front').addClass('flip');
+
+      $('.back').addClass('show');
+      $('.back').parent().addClass('show');
+      $('.back').removeClass('flip');
+    });
+
+    $('#signin, #signin2').click(function() {
+      $('.front').addClass('show');
+      $('.front').parent().addClass('show');
+      $('.front').removeClass('flip');
+
+      $('.back, .side').removeClass('show');
+      $('.back, .side').parent().removeClass('show');
+      $('.back, .side').addClass('flip');
+    });
+
+    $('#forgot').click(function () {
+      $('.front').removeClass('show');
+      $('.front').parent().removeClass('show');
+
+      $('.front').addClass('flip');
+
+      $('.side').addClass('show');
+      $('.side').parent().addClass('show');
+      $('.side').removeClass('flip');
+
+    });
+
+    </script>
+  </body>
+  </html>

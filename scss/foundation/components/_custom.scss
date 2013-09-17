@@ -594,7 +594,7 @@
 
 .errorSummary {
   @include alert(rgba($alert-color, 0.1), 4px);
-  color: black;
+  color: $primary-color;
   font-weight: normal;
   @extend .top-margin;
   ul {
@@ -608,7 +608,7 @@
 
 .successMessage {
   @include alert(rgba($success-color, 0.2), 4px);
-  color: black;
+  color: $primary-color;
   font-weight: normal;
   @extend .top-margin;
   ul {
@@ -637,32 +637,181 @@
   left:43%;
 }
 
-.portrait-wrapper{
-  @media #{$landscape} {
-    display: none !important;
-  }
-  @media #{$portrait} {
-    display: block;
-  }
-}
+// .portrait-wrapper{
+//   @media #{$landscape} {
+//     display: none !important;
+//   }
+//   @media #{$portrait} {
+//     display: block;
+//   }
+// }
 
-.landscape-wrapper {
-  @media #{$landscape} {
-    display: block;
-  }
-  @media #{$portrait} {
-    display: none !important;
-  }
-}
+// .landscape-wrapper {
+//   @media #{$landscape} {
+//     display: block;
+//   }
+//   @media #{$portrait} {
+//     display: none !important;
+//   }
+// }
 
-.promogallery {
-  min-width: 768px;
+// Homepage Styling
+
+.promo-gallery {
+  min-width: 420px;
   max-width: 1366px;
   width: 100%;
   min-height: 322px;
   max-height: 572px;
-  height: auto;
+  height: 100%;
   position: relative;
   margin: auto;
-  @include clearfix;
+  overflow: hidden;
+}
+
+.promo-gallery .mask {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 660px;
+  max-height: 768px;
+}
+
+.cycle-slide-active > img {
+  width: 100%;
+}
+
+/*----Login Modal ---*/
+
+.f-signin,.g-signin {
+  @include radius;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  width: 50px;
+}
+.f-signin {
+  background-color: #4863ae;
+  padding-left: 0;
+  padding-right: 15px;
+}
+.g-signin {
+  background-color: #cd3a25;
+  background-image: -moz-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: -ms-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#cd3a25),to(#cd3a25));
+  background-image: -webkit-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: -o-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: linear-gradient(top,#cd3a25,#cd3a25);
+  background-repeat: repeat-x;
+}
+
+.login-modal-heading {
+  @extend .designer-title;
+}
+.login-modal-copy {
+  @extend .futura;
+  font-weight: bold;
+
+  font-size: 1rem;
+}
+
+.black {
+  color: $primary-color;
+}
+
+.login-social-buttons {
+  display: inline-block;
+  @extend .center;
+  @extend .text-center;
+  width: 100%;
+}
+
+.box-bg {
+  background: #fff no-repeat center top;
+  width: 100%;
+  height: auto;
+  max-width: 752px;
+  min-width: 446px;
+  top: 0px;
+  margin: 0 auto;
+  z-index: 130;
+  position: relative;
+}
+
+.box-content {
+  height: 430px;
+  border: 1px dashed grey;
+}
+
+.box-content2 {
+  display: table;
+  height: 100%;
+}
+
+.box-content2 .leftside {
+  padding-left: 3%;
+  width: 50%;
+  border-right: 1px dotted #000000;
+  padding-right: 0.5%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box-content2 .rightside {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  display: block;
+}
+
+.rightside-wrap {
+  position: relative;
+  width: 100%;
+}
+
+//Dropdowns aren't being full width in the home container
+.box-content2 .chosen-container {
+  width: 100% !important;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.front, .back, .side{
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.show{
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+}
+
+.flip{
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
