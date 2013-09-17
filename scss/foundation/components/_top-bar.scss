@@ -607,7 +607,9 @@ ul.user-setting{
   margin-right: 2px;
 }
 
-
+.menu-wrap {
+  background-color: $base-color;
+}
 .settings-menu{
   position: absolute;
   top: 45px;
@@ -624,6 +626,8 @@ ul.user-setting{
     width: 820px;
     min-height: emCalc(250px);
     z-index: 120;
+    background-color: $base-color;
+    @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
   }
   .pane-1, .pane-2{
     width: 410px;
