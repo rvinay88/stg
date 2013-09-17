@@ -167,18 +167,18 @@ $topbar-sticky-class: ".sticky" !default;
             width: 16px;
             height: 0;
             // Shh, don't tell, but box-shadows create the menu icon :)
-            @if $experimental {
-              -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color,
-                                  0 16px 0 1px $topbar-menu-icon-color,
-                                  0 22px 0 1px $topbar-menu-icon-color;
-            }
-            box-shadow:         0 10px 0 1px $topbar-menu-icon-color,
-                                0 16px 0 1px $topbar-menu-icon-color,
-                                0 22px 0 1px $topbar-menu-icon-color;
-          }
-        }
-      }
-    }
+@if $experimental {
+  -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color,
+  0 16px 0 1px $topbar-menu-icon-color,
+  0 22px 0 1px $topbar-menu-icon-color;
+}
+box-shadow:         0 10px 0 1px $topbar-menu-icon-color,
+0 16px 0 1px $topbar-menu-icon-color,
+0 22px 0 1px $topbar-menu-icon-color;
+}
+}
+}
+}
 
     // Change things up when the top-bar is expanded
     &.expanded {
@@ -211,20 +211,20 @@ $topbar-sticky-class: ".sticky" !default;
         a { color: $topbar-menu-link-color-toggled;
           span {
             // Shh, don't tell, but box-shadows create the menu icon :)
-            @if $experimental {
-              -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
-                                  0 16px 0 1px $topbar-menu-icon-color-toggled,
-                                  0 22px 0 1px $topbar-menu-icon-color-toggled;
-            }
-            box-shadow:         0 10px 0 1px $topbar-menu-icon-color-toggled,
-                                0 16px 0 1px $topbar-menu-icon-color-toggled,
-                                0 22px 0 1px $topbar-menu-icon-color-toggled;
-          }
-        }
-      }
-    }
+@if $experimental {
+  -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
+  0 16px 0 1px $topbar-menu-icon-color-toggled,
+  0 22px 0 1px $topbar-menu-icon-color-toggled;
+}
+box-shadow:         0 10px 0 1px $topbar-menu-icon-color-toggled,
+0 16px 0 1px $topbar-menu-icon-color-toggled,
+0 22px 0 1px $topbar-menu-icon-color-toggled;
+}
+}
+}
+}
 
-  }
+}
 
   // Right and Left Navigation that stacked by default
   .top-bar-section {
@@ -310,8 +310,8 @@ $topbar-sticky-class: ".sticky" !default;
 
       // Apply the active link color when it has that class
       &.active > a {
-          background: $topbar-link-bg-active;
-          color: $topbar-link-color-active;
+        background: $topbar-link-bg-active;
+        color: $topbar-link-color-active;
         &:hover > a {
           background: $topbar-link-bg-hover;
           color: $topbar-link-color-hover;
@@ -552,7 +552,7 @@ $topbar-sticky-class: ".sticky" !default;
     // Degrade gracefully when Javascript is disabled. Displays dropdown and changes
     // background & text color on hover.
     .no-js .top-bar-section {
-	  ul li {
+     ul li {
         // Apply the hover link color when it has that class
         &:hover > a {
           background: $topbar-link-bg-hover;
@@ -566,19 +566,19 @@ $topbar-sticky-class: ".sticky" !default;
         }
       }
 
-	  .has-dropdown {
+      .has-dropdown {
         &:hover {
           & > .dropdown {
             visibility: visible;
           }
         }
-	  }
-	}
+      }
+    }
   }
 
 }
 
-  /* Custom Styles */
+/* Custom Styles */
 .nav{
   position: relative;
 }
@@ -594,14 +594,14 @@ ul.user-setting{
   color: white;
   cursor: pointer;
   &:hover{
-  background-color: lighten($primary-color, 50%);
+    background-color: lighten($primary-color, 50%);
   }
 }
 .cartno{
   display: inline;
   color: white;
   font-size: emCalc(12px);
-  }
+}
 .user-setting-content{
   display: inline-block;
   margin-right: 2px;
@@ -663,6 +663,13 @@ ul.user-setting{
   padding: 0.125rem !important;
   padding-right: 0.625rem !important;
   font-size: emCalc(12);
+  > span.username {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+    display: inline-block;
+  }
 }
 .settings-menu.open{
   min-height: emCalc(240px) !important;
@@ -679,7 +686,7 @@ ul.user-setting{
       padding: emCalc(6, 12);
       &:hover{
         background-color: rgba(#000, 0.25);
-        }
+      }
     }
   }
 }
@@ -700,7 +707,7 @@ ul.user-setting{
 }
 
 @media screen and (max-width: 768px){
-    .footer-list{
-         margin-left: 12.5%;
-    }
+  .footer-list{
+   margin-left: 12.5%;
+ }
 }
