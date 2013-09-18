@@ -850,9 +850,23 @@
   }
 }
 
+.footer-links{
+  margin-top: 6px;
+}
 
-@media screen and (max-width: 768px){
-  .footer-list{
-   margin-left: 12.5%;
+.footer-list, .footer-links > ul > li > a {
+  font-family: futura;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.footer-links > ul > li > a {
+  @media screen and (min-width: 768px) and (max-width: 809px){
+    font-size: 12px;
+  }
+}
+.footer-list {
+  @media screen and (max-width: 768px){
+   margin-left: 7.5%;
+   font-size: 12px;
  }
 }
