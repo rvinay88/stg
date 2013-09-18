@@ -239,9 +239,9 @@
             <li><a href="" class="white-link">Terms of Use</a></li>
           </ul>
         </div>
-        <div class="small-12 columns black-bg show-for-small footer-list">
+        <div class="small-12 columns black-bg show-for-small">
           <div class="text-center">
-            <ul class="inline-list inline-list-separator">
+            <ul class="inline-list inline-list-separator footer-list">
               <li><a href="" class="white-link">Designer Signup</a></li>
               <li><a href="" class="white-link">Contact Us</a></li>
               <li><a href="" class="white-link">FAQ</a></li>
@@ -282,25 +282,33 @@
   </script>
 
   <script>
-  $('#trigger-menu-settings').click( function() {
+  $('#trigger-menu-settings').click( function(event) {
     $('#menu-cart').removeClass('open');
     $('#menu-settings').toggleClass('open');
+    event.stopPropagation();
   });
   </script>
   <script>
-  $('#trigger-menu-cart').click( function() {
+  $('#trigger-menu-cart').click( function(event) {
     $('#menu-settings').removeClass('open');
     $('#menu-cart').toggleClass('open');
+    event.stopPropagation();
   });
   </script>
   <script>
-  $('#trigger-preferences-pane').click(function() {
+  $('#trigger-preferences-pane').click(function(event) {
     $('.pane-1, .pane-2').addClass('slide-left');
     event.preventDefault();
+    event.stopPropagation();
   });
-  $('#trigger-settings-pane').click(function() {
+  $('#trigger-settings-pane').click(function(event) {
     $('.pane-1, .pane-2').removeClass('slide-left');
     event.preventDefault();
+    event.stopPropagation();
+  });
+  $('body').click(function (){
+    $('#menu-settings').removeClass('open');
+    $('#menu-cart').removeClass('open');
   });
   </script>
 </body>
