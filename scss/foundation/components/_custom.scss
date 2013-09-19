@@ -97,10 +97,9 @@
   li {
     padding: 3px 0;
     a {
-      color: $secondary-color;
+      color: $primary-color;
       &:hover {
         font-weight: bold;
-        color: $primary-color;
       }
     }
   }
@@ -897,6 +896,10 @@
 }
 
 .asc, .desc{
-  color: black;
+  color: $primary-color !important;
   font-weight: bold;
+}
+
+.capitalize{
+  text-transform: capitalize;
 }
