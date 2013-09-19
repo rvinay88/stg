@@ -5048,10 +5048,9 @@ a.th {
   .designer-nav li {
     padding: 3px 0; }
     .designer-nav li a {
-      color: #666666; }
+      color: black; }
       .designer-nav li a:hover {
-        font-weight: bold;
-        color: black; }
+        font-weight: bold; }
 
 .designer-title, .login-modal-heading {
   display: inline-block;
@@ -5354,7 +5353,9 @@ a.th {
   height: 42px;
   *zoom: 1;
   margin-bottom: 2rem;
-  width: 175px; }
+  width: 175px;
+  margin-left: auto;
+  margin-right: auto; }
   .social-buttons:before, .social-buttons:after {
     content: " ";
     display: table; }
@@ -5720,8 +5721,11 @@ a.th {
     font-size: 12px; } }
 
 .asc, .desc {
-  color: black;
+  color: black !important;
   font-weight: bold; }
+
+.capitalize {
+  text-transform: capitalize; }
 
 @media only screen and (max-width: 767px) {
   .f-dropdown {
