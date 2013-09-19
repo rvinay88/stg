@@ -310,6 +310,10 @@
     $('#menu-settings').removeClass('open');
     $('#menu-cart').removeClass('open');
   });
+  $('.chosen-container, .pane-1, .pane-2').click (function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  });
   </script>
 </body>
 </html>

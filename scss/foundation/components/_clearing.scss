@@ -6,12 +6,12 @@ $include-html-clearing-classes: $include-html-classes !default;
 // We use these to set the background colors for parts of Clearing.
 $clearing-bg: #111 !default;
 $clearing-caption-bg: $clearing-bg !default;
-$clearing-carousel-bg: #111 !default;
+$clearing-carousel-bg: $clearing-bg !default;
 $clearing-img-bg: $clearing-bg !default;
 
 // We use these to style the close button
 $clearing-close-color: #fff !default;
-$clearing-close-size: 40px !default;
+$clearing-close-size: 24px !default;
 
 // We use these to style the arrows
 $clearing-arrow-size: 16px !default;
@@ -110,14 +110,14 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255) !default;
   }
 
 
-.clearing-blackout .clearing-feature li {
-  span {
-    display: none;
+  .clearing-blackout .clearing-feature li {
+    span {
+      display: none;
+    }
+    img {
+      display: block !important;
+    }
   }
-  img {
-    display: block !important;
-  }
-}
 
 
   // If you want to show a lightbox, but only have a single image come through as the thumbnail
@@ -137,7 +137,7 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255) !default;
     .clearing-main-next {
       position: absolute;
       height: 100%;
-      width: 40px;
+      width: 5%;
       top: 0;
       & > span {
         position: absolute;
@@ -145,97 +145,125 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255) !default;
         display: block;
         width: 0;
         height: 0;
-        border: solid $clearing-arrow-size;
+        // border: solid $clearing-arrow-size;
       }
     }
     .clearing-main-prev {
       #{$default-float}: 0;
       & > span {
-        #{$default-float}: 5px;
-        border-color: transparent;
-        border-#{$opposite-direction}-color: $clearing-arrow-color;
+        #{$default-float}: 0;
+        &:before{
+          font-family: 'FontAwesome';
+          font-size: 2rem;
+          color: rgba($base-color, 1);
+          content: "\f137";
+        // border-color: transparent;
+        // border-#{$opposite-direction}-color: $clearing-arrow-color;
       }
+      #{$opposite-direction}: 50%;
+      margin-#{$opposite-direction}: -8px;
     }
-    .clearing-main-next {
-      #{$opposite-direction}: 0;
-      & > span {
-        border-color: transparent;
-        border-#{$default-float}-color: $clearing-arrow-color;
+    &:hover {
+        span:before {
+          color: rgba (#fff, 0.5);
+        }
       }
-    }
-
-    .clearing-main-prev.disabled,
-    .clearing-main-next.disabled { opacity: 0.5; }
-
-    .clearing-assembled .clearing-container {
-
-      .carousel {
-        background: $clearing-carousel-bg;
-        height: $clearing-carousel-height;
-        margin-top: 5px;
-
-        & > ul {
-          display: block;
-          z-index: 999;
-          width: 200%;
-          height: 100%;
-          margin-#{$default-float}: 0;
-          position: relative;
-          #{$default-float}: 0;
-
-          li {
-            display: block;
-            width: $clearing-carousel-thumb-width;
-            height: inherit;
-            padding: 0;
-            float: $default-float;
-            overflow: hidden;
-            margin-#{$opposite-direction}: 1px;
-            position: relative;
-            cursor: $cursor-pointer-value;
-            opacity: 0.4;
-
-            &.fix-height {
-              img {
-                min-height: 100%;
-                height: 100%;
-                max-width: none;
-              }
-            }
-
-            a.th {
-              border: none;
-              @if $experimental {
-                -webkit-box-shadow: none;
-              }
-                      box-shadow: none;
-              display: block;
-            }
-
-            img {
-            cursor: $cursor-pointer-value !important;
-              min-width: 100% !important;
-            }
-
-            &.visible { opacity: 1; }
+  }
+  .clearing-main-next {
+    #{$opposite-direction}: 0;
+    & > span {
+          // border-color: transparent;
+          // border-#{$default-float}-color: $clearing-arrow-color;
+          #{$opposite-direction}: 0;
+          &:before{
+            font-family: 'FontAwesome';
+            font-size: 2rem;
+            color: rgba($base-color, 1);
+            content: "\f138";
           }
+          #{$default-float}: 50%;
+          margin-#{$default-float}: -8px;
+        }
+              &:hover {
+        span:before {
+          color: rgba (#fff, 0.5);
+        }
+      }
+    }
+
+
+      .clearing-main-prev.disabled,
+      .clearing-main-next.disabled { opacity: 0.5; }
+
+      .clearing-assembled .clearing-container {
+
+        .carousel {
+          background: $clearing-carousel-bg;
+          height: $clearing-carousel-height;
+          margin-top: 5px;
+
+          & > ul {
+            display: block;
+            z-index: 999;
+            width: 200%;
+            height: 100%;
+            margin-#{$default-float}: 0;
+            position: relative;
+            #{$default-float}: 0;
+
+            li {
+              display: block;
+              width: $clearing-carousel-thumb-width;
+              height: inherit;
+              padding: 0;
+              float: $default-float;
+              overflow: hidden;
+              margin-#{$opposite-direction}: 1px;
+              position: relative;
+              cursor: $cursor-pointer-value;
+              opacity: 0.4;
+
+              &.fix-height {
+                img {
+                  min-height: 100%;
+                  height: 100%;
+                  max-width: none;
+                }
+              }
+
+              a.th {
+                border: none;
+                @if $experimental {
+                  -webkit-box-shadow: none;
+                }
+                box-shadow: none;
+                display: block;
+              }
+
+              img {
+                cursor: $cursor-pointer-value !important;
+                min-width: 100% !important;
+              }
+
+              &.visible { opacity: 1; }
+            }
+          }
+        }
+
+        .visible-img {
+          background: $clearing-img-bg;
+          overflow: hidden;
+          height: $clearing-active-img-height;
         }
       }
 
-      .visible-img {
-        background: $clearing-img-bg;
-        overflow: hidden;
-        height: $clearing-active-img-height;
+      .clearing-close {
+        position: absolute;
+        top: 10px;
+        #{$opposite-direction}: 20px;
+        padding-#{$default-float}: 0;
+        padding-top: 0;
       }
     }
 
-    .clearing-close {
-      position: absolute;
-      top: 10px;
-      #{$opposite-direction}: 20px;
-      padding-#{$default-float}: 0;
-      padding-top: 0;
-    }
   }
-
-}

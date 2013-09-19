@@ -174,9 +174,9 @@
   overflow: hidden;
   text-indent: -9999px;
   position: absolute;
-  top: 10px;
+  top: 0;
   z-index: 110;
-  margin-left: 7%;
+  margin-left: 8px;
   &.homepage {
     top: 45px;
   }
@@ -279,7 +279,7 @@
   margin: 0 4px;
   &:before{
     font-family: 'FontAwesome';
-    content: "\f137";
+    content: "\f053";
   }
 }
 
@@ -288,7 +288,7 @@
   margin: 0 4px;
   &:before{
     font-family: 'FontAwesome';
-    content: "\f138";
+    content: "\f054";
   }
 }
 
@@ -461,13 +461,15 @@
   height: 42px;
   @include clearfix;
   margin-bottom: 2rem;
+  width: 175px;
 }
 
 
 .homepage-wrapper {
   width: 100%;
   max-width: 1366px;
-
+  position: relative;
+  margin: 0 auto;
 }
 .hotspot-holder {
   width: 100%;
@@ -508,6 +510,7 @@
 
 .coupon {
   max-width: 150px;
+  margin-bottom: 0 !important; //to ensure there's no gap between textbox and button when stacked in smaller screens
 }
 
 .text {
@@ -515,7 +518,7 @@
 }
 
 .info-text {
-  font-size: emCalc(12px);
+  font-size: emCalc(10px);
   color: $secondary-color;
   line-height: 1.5;
 }
@@ -606,8 +609,9 @@
 }
 
 .errorSummary {
+  font-size: emCalc(12px) !important;
   @include alert(rgba($alert-color, 0.1), 4px);
-  color: $primary-color;
+  color: $primary-color !important;
   font-weight: normal;
   @extend .top-margin;
   ul {
@@ -620,8 +624,9 @@
 }
 
 .successMessage {
+  font-size: emCalc(12px) !important;
   @include alert(rgba($success-color, 0.2), 4px);
-  color: $primary-color;
+  color: $primary-color !important;
   font-weight: normal;
   @extend .top-margin;
   ul {
@@ -697,51 +702,22 @@
 }
 
 /*----Login Modal ---*/
-
-.f-signin,.g-signin {
-  @include radius;
-  padding: 10px;
-  display: inline-block;
-  margin-right: 10px;
-  cursor: pointer;
-  color: white;
-  width: 50px;
-}
-.f-signin {
-  background-color: #4863ae;
-  padding-left: 0;
-  padding-right: 10px;
-}
-.g-signin {
-  background-color: #cd3a25;
-  background-image: -moz-linear-gradient(top,#cd3a25,#cd3a25);
-  background-image: -ms-linear-gradient(top,#cd3a25,#cd3a25);
-  background-image: -webkit-gradient(linear,0 0,0 100%,from(#cd3a25),to(#cd3a25));
-  background-image: -webkit-linear-gradient(top,#cd3a25,#cd3a25);
-  background-image: -o-linear-gradient(top,#cd3a25,#cd3a25);
-  background-image: linear-gradient(top,#cd3a25,#cd3a25);
-  background-repeat: repeat-x;
+#smodal{
+ position: absolute;
+ padding: 8px;
+ z-index: 700;
 }
 
-.login-modal-heading {
-  @extend .designer-title;
-}
-.login-modal-copy {
-  @extend .futura;
-  font-weight: bold;
-
-  font-size: 1rem;
-}
-
-.black {
-  color: $primary-color;
-}
-
-.login-social-buttons {
-  display: inline-block;
-  @extend .center;
-  @extend .text-center;
-  width: 100%;
+#smodal-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #000;
+ opacity: .2;
+ filter: alpha(opacity=50);
+ z-index: 700;
 }
 
 .box-bg {
@@ -754,6 +730,7 @@
   margin: 0 auto;
   z-index: 130;
   position: relative;
+  padding: 10px;
 }
 
 .box-content {
@@ -829,8 +806,56 @@
   transform: rotateY(180deg);
 }
 
+
+.f-signin,.g-signin {
+  @include radius;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  width: 50px;
+}
+.f-signin {
+  background-color: #4863ae;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.g-signin {
+  background-color: #cd3a25;
+  background-image: -moz-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: -ms-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#cd3a25),to(#cd3a25));
+  background-image: -webkit-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: -o-linear-gradient(top,#cd3a25,#cd3a25);
+  background-image: linear-gradient(top,#cd3a25,#cd3a25);
+  background-repeat: repeat-x;
+}
+
+.login-modal-heading {
+  @extend .designer-title;
+}
+.login-modal-copy {
+  @extend .futura;
+  font-weight: bold;
+
+  font-size: 1rem;
+}
+
+.black {
+  color: $primary-color;
+}
+
+.login-social-buttons {
+  display: inline-block;
+  @extend .center;
+  @extend .text-center;
+  width: 100%;
+}
+
+
 /*----Hotspot Tooltips */
-.product-image, .designer-image {
+.product-image, .home-designer-image {
   @extend .border-bottom-thick;
   @extend .border-bottom-thick;
   width: 100%;
@@ -838,7 +863,7 @@
 .product-image {
   max-width: 200px;
 }
-.designer-image {
+.home-designer-image {
   max-width: 325px;
 }
 

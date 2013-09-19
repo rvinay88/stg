@@ -393,8 +393,7 @@ box-shadow:         0 10px 0 1px $topbar-menu-icon-color-toggled,
     visibility: hidden;
   }
   .js-generated { display: block; }
-
-
+  .title.back   { visibility: visible !important; opacity: 1 !important; } //To ensure mobile menu "Back" is not hidden
   // Top Bar styles intended for screen sizes above the breakpoint.
   @media #{$topbar-media-query} {
     .top-bar {
@@ -590,7 +589,7 @@ ul.user-setting{
 }
 
 .user-setting > li {
-  padding: emCalc(10px) !important; //override dropdown menu styles
+  padding: emCalc(13px) !important; //override dropdown menu styles and make cart button appear fully on the menu bar
   color: white;
   cursor: pointer;
   &:hover{
@@ -662,6 +661,7 @@ ul.user-setting{
 #trigger-menu-settings {
   padding: 0.125rem !important;
   padding-right: 0.625rem !important;
+  padding-top: 0.2rem !important; //To align text with the cart number
   font-size: emCalc(12);
   > span.username {
     overflow: hidden;
