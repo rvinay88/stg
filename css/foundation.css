@@ -5047,8 +5047,6 @@ a.th {
     padding: 3px 0; }
     .designer-nav li a {
       color: black; }
-      .designer-nav li a:hover {
-        font-weight: bold; }
 
 .designer-title, .login-modal-heading {
   display: inline-block;
