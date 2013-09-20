@@ -886,15 +886,11 @@
   font-size: 13px;
   text-transform: uppercase;
 }
-.footer-links > ul > li > a {
-  @media screen and (min-width: 768px) and (max-width: 809px){
-    font-size: 12px;
-  }
-}
 .footer-list {
   @media screen and (max-width: 768px){
-   margin-left: 7.5%;
+   text-align: center;
    font-size: 12px;
+   display: inline-block;
  }
 }
 

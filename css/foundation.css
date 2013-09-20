@@ -5709,14 +5709,11 @@ a.th {
   font-size: 13px;
   text-transform: uppercase; }
 
-@media screen and (min-width: 768px) and (max-width: 809px) {
-  .footer-links > ul > li > a {
-    font-size: 12px; } }
-
 @media screen and (max-width: 768px) {
   .footer-list {
-    margin-left: 7.5%;
-    font-size: 12px; } }
+    text-align: center;
+    font-size: 12px;
+    display: inline-block; } }
 
 .asc, .desc {
   color: black !important;
