@@ -3254,6 +3254,8 @@ ul.user-setting {
   cursor: pointer; }
   .user-setting > li:hover {
     background-color: gray; }
+  .user-setting > li.user-img-li {
+    padding: 0 !important; }
 
 .cartno {
   display: inline;
@@ -3317,17 +3319,13 @@ ul.user-setting {
 #menu-cart {
   overflow-y: auto; }
 
-#trigger-menu-settings {
-  padding: 0.125rem !important;
-  padding-right: 0.625rem !important;
-  padding-top: 0.2rem !important;
+.username {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100px;
+  display: inline-block !important;
   font-size: 0.75rem; }
-  #trigger-menu-settings > span.username {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100px;
-    display: inline-block; }
 
 .settings-menu.open {
   min-height: 15rem !important;
@@ -3345,8 +3343,8 @@ ul.user-setting {
   margin-top: 0.75rem; }
 
 .user-img-small {
-  width: 40px;
-  height: 40px; }
+  width: 19px;
+  height: 19px; }
 
 .user-img {
   width: 150px;
