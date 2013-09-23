@@ -99,7 +99,7 @@ a {
   text-decoration: none; }
   a.white-link {
     color: white;
-    font-size: 0.875rem; }
+    font-size: 0.8125rem; }
     a.white-link:hover {
       color: white; }
   a:hover {
@@ -3519,6 +3519,9 @@ ul.user-setting {
       top: 50%;
       margin-top: -16px;
       display: block; }
+    .orbit-container .orbit-prev:hover,
+    .orbit-container .orbit-next:hover {
+      text-decoration: none; }
   .orbit-container .orbit-prev {
     left: 0; }
     .orbit-container .orbit-prev span {
@@ -3919,6 +3922,9 @@ ul.user-setting {
       display: block;
       width: 0;
       height: 0; }
+    .clearing-main-prev:hover,
+    .clearing-main-next:hover {
+      text-decoration: none; }
 
   .clearing-main-prev {
     left: 0; }
@@ -5048,18 +5054,23 @@ a.th {
     .designer-nav li a {
       color: black; }
 
+.designer-nav-active {
+  background: #eeeeee; }
+
 .designer-title, .login-modal-heading {
   display: inline-block;
   font-family: futura;
   font-weight: lighter;
   text-transform: uppercase;
-  font-size: 1.75rem; }
+  font-size: 0.9375rem;
+  font-weight: bold; }
 
 .designer-subtitle {
-  font-size: 1rem;
-  font-family: futura;
-  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  margin-top: 6px;
   text-transform: capitalize; }
+  .designer-subtitle.info {
+    font-style: italic; }
 
 .designer-image {
   margin-bottom: 1rem; }
@@ -5258,7 +5269,8 @@ a.th {
 .rate {
   font-family: futura;
   margin-top: 0.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-size: 1rem; }
   .rate strong {
     font-weight: normal;
     font-family: Helvetica;
@@ -5402,7 +5414,7 @@ a.th {
   color: #666666;
   line-height: 1.5; }
 
-.highlight {
+.highlight, .designer-nav-active {
   font-weight: bold; }
 
 .errorMessage {

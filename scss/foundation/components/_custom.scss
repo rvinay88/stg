@@ -101,18 +101,26 @@
     }
   }
 }
+
+.designer-nav-active {
+  @extend .highlight;
+  background: $tertiary-color;
+}
 .designer-title{
   display: inline-block;
   font-family: futura;
   font-weight: lighter;
   text-transform: uppercase;
-  font-size: emCalc(28px);
+  font-size: emCalc(15px);
+  font-weight: bold;
 }
 .designer-subtitle{
-  font-size: 1rem;
-  font-family: futura;
-  margin-top: 0.5rem;
+  font-size: emCalc(13px);
+  margin-top: 6px;
   text-transform: capitalize;
+  &.info {
+    font-style: italic;
+  }
 }
 .designer-image{
   margin-bottom: 1rem;
@@ -347,6 +355,7 @@
   font-family: futura;
   margin-top: emCalc(8px);
   margin-bottom: 1.5rem;
+  font-size: emCalc(16px);
   strong {
     font-weight: normal;
     font-family: Helvetica;

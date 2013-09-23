@@ -147,6 +147,9 @@ $clearing-carousel-thumb-active-border: 4px solid rgb(255,255,255) !default;
         height: 0;
         // border: solid $clearing-arrow-size;
       }
+      &:hover {
+        text-decoration: none;
+      }
     }
     .clearing-main-prev {
       #{$default-float}: 0;

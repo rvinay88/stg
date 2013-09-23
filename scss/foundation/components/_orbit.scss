@@ -234,6 +234,9 @@ $preloader-class: "preloader" !default;
         margin-top: -16px;
         display: block;
       }
+      &:hover {
+        text-decoration: none;
+      }
     }
     .orbit-prev { #{$default-float}: 0;
       span {
