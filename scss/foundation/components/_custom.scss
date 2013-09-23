@@ -131,7 +131,7 @@
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  font-size: emCalc(18);
+  font-size: emCalc(15);
   padding: emCalc(5px) 0;
   line-height: emCalc(21px); //From r2s
   font-weight: bold;
@@ -363,6 +363,13 @@
   }
 }
 
+.size {
+  margin-top: 0;
+  float: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-top: -7px; //to align the text closer to the generated dropdown
+}
 .highlight-text{
   border: 1px solid black;
   color: $secondary-color;
@@ -383,10 +390,10 @@
   margin-top: emCalc(16px);
 }
 
-.size{
-  padding: emCalc(5px);
-  font-size: emCalc(14px);
-}
+// .size{
+//   padding: emCalc(5px);
+//   font-size: emCalc(14px);
+// }
 
 .add-buttons{
   margin-right: 20px;
@@ -432,7 +439,7 @@
 
 .fixed-170{
   width: 170px;
-  margin: emCalc(0, 10, 16, 0);
+  margin: emCalc(0, 10, 12, 0);
 }
 .fixed-360{
   width: 360px;

@@ -4,7 +4,7 @@
 $include-html-form-classes: $include-html-classes !default;
 
 // We use this to set the base for lots of form spacing and positioning styles
-$form-spacing: emCalc(16) !default;
+$form-spacing: emCalc(12) !default;
 
 // We use these to style the labels in different ways
 $form-label-pointer: cursor !default;
@@ -16,7 +16,7 @@ $input-font-family: Helvetica !default;
 $input-font-color: $secondary-color !default;
 $input-font-size: emCalc(12) !default;
 $input-bg-color: $tertiary-color !default;
-$input-focus-bg-color: darken(#fff, 2%) !default;
+$input-focus-bg-color: $tertiary-color !default;
 $input-border-color: darken(#fff, 20%) !default;
 $input-focus-border-color: darken(#fff, 40%) !default;
 $input-border-style: solid !default;
@@ -97,9 +97,7 @@ $glowing-effect-color: $input-focus-border-color !default;
   border: none;
   border-radius: $global-radius;
   @include box-sizing(border-box);
-  @if $input-include-glowing-effect {
-      @include block-glowing-effect(focus, $glowing-effect-fade-time, $glowing-effect-color);
-  }
+
   // Basic focus styles
   &:focus {
     // background: $input-focus-bg-color;
@@ -337,9 +335,6 @@ input[type="submit"] {
   input[type="url"],
   textarea {
     @include form-element;
-    @if not $input-include-glowing-effect {
-        @include single-transition(all, 0.15s, linear);
-    }
   }
 
   /* Adjust margin for form elements below */
