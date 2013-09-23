@@ -57,6 +57,16 @@ $block-grid-media-queries: true !default;
     }
   }
 
+@media only screen and (max-width: 480px) {
+  @for $i from 1 through $block-grid-elements {
+      .xs-block-grid-#{$i} {
+        @include block-grid($i,$block-grid-default-spacing,false);
+      }
+      .small-block-grid-#{$i} > li:nth-of-type(#{$i}n+1) { clear: none; }
+      .large-block-grid-#{$i} > li:nth-of-type(#{$i}n+1) { clear: none; }
+    }
+}
+
   /* Foundation Block Grids for above small breakpoint */
   @media #{$small} {
     /* Remove small grid clearing */

@@ -46,8 +46,8 @@ $topbar-menu-link-font-size: emCalc(13) !default;
 $topbar-menu-link-weight: bold !default;
 $topbar-menu-link-color: #fff !default;
 $topbar-menu-icon-color: #fff !default;
-$topbar-menu-link-color-toggled: #888 !default;
-$topbar-menu-icon-color-toggled: #888 !default;
+$topbar-menu-link-color-toggled: #aaa !default;
+$topbar-menu-icon-color-toggled: #aaa !default;
 
 // Transitions and breakpoint styles
 $topbar-transition-speed: 300ms !default;
@@ -211,19 +211,18 @@ box-shadow:         0 10px 0 1px $topbar-menu-icon-color,
         a { color: $topbar-menu-link-color-toggled;
           span {
             // Shh, don't tell, but box-shadows create the menu icon :)
-@if $experimental {
-  -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
-  0 16px 0 1px $topbar-menu-icon-color-toggled,
-  0 22px 0 1px $topbar-menu-icon-color-toggled;
-}
-box-shadow:         0 10px 0 1px $topbar-menu-icon-color-toggled,
-0 16px 0 1px $topbar-menu-icon-color-toggled,
-0 22px 0 1px $topbar-menu-icon-color-toggled;
-}
-}
-}
-}
-
+          @if $experimental {
+            -webkit-box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
+            0 16px 0 1px $topbar-menu-icon-color-toggled,
+            0 22px 0 1px $topbar-menu-icon-color-toggled;
+          }
+          box-shadow:         0 10px 0 1px $topbar-menu-icon-color-toggled,
+          0 16px 0 1px $topbar-menu-icon-color-toggled,
+          0 22px 0 1px $topbar-menu-icon-color-toggled;
+        }
+      }
+    }
+  }
 }
 
   // Right and Left Navigation that stacked by default
@@ -668,13 +667,13 @@ ul.user-setting{
   // font-size: emCalc(12);
 }
 .username {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100px;
-    display: inline-block !important;
-    font-size: 0.75rem;
-  }
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100px;
+  display: inline-block !important;
+  font-size: 0.75rem;
+}
 .settings-menu.open{
   min-height: emCalc(240px) !important;
   // height: auto;
@@ -709,3 +708,13 @@ ul.user-setting{
   width: 150px;
   height: 150px;
 }
+
+
+.has-dropdown > ul.dropdown > li.js-generated {
+  display: none;
+}
+
+.moved > ul.dropdown > li.js-generated {
+  display: block !important;
+}
+
