@@ -918,3 +918,23 @@
 .capitalize{
   text-transform: capitalize;
 }
+
+%grid-info-base {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.designer-name, .prod-price {
+  color: $primary-color;
+  @extend %grid-info-base;
+}
+
+.prod-name{
+  @extend %grid-info-base;
+  text-transform: capitalize;
+  color: $primary-color;
+}
+
+.shipped{
+  color: $secondary-color;
+  @extend %grid-info-base;
+}

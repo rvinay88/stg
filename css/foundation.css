@@ -5917,6 +5917,20 @@ a.th {
 .capitalize {
   text-transform: capitalize; }
 
+.designer-name, .prod-price, .prod-name, .shipped {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.designer-name, .prod-price {
+  color: black; }
+
+.prod-name {
+  text-transform: capitalize;
+  color: black; }
+
+.shipped {
+  color: #666666; }
+
 @media only screen and (max-width: 767px) {
   .f-dropdown {
     max-width: 100%;
