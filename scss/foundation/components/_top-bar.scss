@@ -665,6 +665,7 @@ ul.user-setting{
   // padding-right: 0.625rem !important;
   // padding-top: 0.2rem !important; //To align text with the cart number
   // font-size: emCalc(12);
+  max-height: 45px;
 }
 .username {
   overflow: hidden;
@@ -710,11 +711,4 @@ ul.user-setting{
 }
 
 
-.has-dropdown > ul.dropdown > li.js-generated {
-  display: none;
-}
-
-.moved > ul.dropdown > li.js-generated {
-  display: block !important;
-}
 

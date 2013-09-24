@@ -2026,6 +2026,17 @@ textarea.error {
 label.error {
   color: #c60f13; }
 
+select {
+  font-size: 12px;
+  height: 32px;
+  padding: 4px 4px 0 10px !important;
+  border: none;
+  border-radius: 4px;
+  background-color: #eee;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-appearance: none; }
+
 /* Button Groups */
 .button-group {
   list-style: none;
@@ -3484,6 +3495,9 @@ ul.user-setting {
 #menu-cart {
   overflow-y: auto; }
 
+#trigger-menu-settings {
+  max-height: 45px; }
+
 .username {
   overflow: hidden;
   white-space: nowrap;
@@ -3514,12 +3528,6 @@ ul.user-setting {
 .user-img {
   width: 150px;
   height: 150px; }
-
-.has-dropdown > ul.dropdown > li.js-generated {
-  display: none; }
-
-.moved > ul.dropdown > li.js-generated {
-  display: block !important; }
 
 @-webkit-keyframes rotate {
   from {

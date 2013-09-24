@@ -315,9 +315,9 @@ $glowing-effect-color: $input-focus-border-color !default;
     }
   }
 
-input[type="submit"] {
-  border: none;
-}
+  input[type="submit"] {
+    border: none;
+  }
 
   /* We use this to get basic styling on all basic form elements */
   input[type="text"],
@@ -423,4 +423,18 @@ input[type="submit"] {
 
   label.error { @include form-label-error-color; }
 
+}
+
+
+// default select styled similar to chosen to ensure smooth transition before loading script
+select {
+  font-size: 12px;
+  height: 32px;
+  padding: 4px 4px 0 10px !important;
+  border: none;
+  border-radius: 4px;
+  background-color: #eee;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
 }
