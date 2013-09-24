@@ -485,9 +485,10 @@
 
 .homepage-wrapper {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1320px;
   position: relative;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .hotspot-holder {
   width: 100%;
@@ -513,6 +514,7 @@
 
 .total-table {
   min-width: 60%;
+  width: 60%;
 }
 
 .total-bill > td {
@@ -595,6 +597,8 @@
   margin-right: 10px;
   padding: 1.4%;
   float: left;
+  height: 307px;
+  min-height: 307px;
   @media screen and (max-width: 635px) {
     width: 45%;
   }
