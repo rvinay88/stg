@@ -166,9 +166,6 @@
 /*Logo*/
 .logo {
   background: url(../images/logo.png) no-repeat;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   height: 154px;
   width: 154px;
   overflow: hidden;
@@ -179,6 +176,16 @@
   margin-left: 8px;
   &.homepage {
     top: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    background-size: 80%;
+    margin-top: 10px;   //balance the image vertically
+    width: 123.2px;
+    height: 123.2px;
+    margin-bottom: -10px;  //balance the image vertically
   }
 }
 

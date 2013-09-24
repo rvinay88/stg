@@ -667,6 +667,11 @@ ul.user-setting{
   // font-size: emCalc(12);
   max-height: 45px;
 }
+.avatar-img {
+  @extend .right;
+  margin-top: -2px;
+}
+
 .username {
   overflow: hidden;
   white-space: nowrap;
