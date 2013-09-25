@@ -4394,6 +4394,14 @@ ul.user-setting {
   width: 150px;
   height: 150px; }
 
+/* line 719, foundation/components/_top-bar.scss */
+.has-dropdown > ul.dropdown > li.js-generated {
+  display: none; }
+
+/* line 723, foundation/components/_top-bar.scss */
+.moved > ul.dropdown > li.js-generated {
+  display: block !important; }
+
 @-webkit-keyframes rotate {
   /* line 38, foundation/components/_orbit.scss */
   from {
@@ -6871,73 +6879,74 @@ a.th {
   width: 100%;
   position: relative;
   margin: 0 auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 1366px; }
 
-/* line 512, foundation/components/_custom.scss */
+/* line 513, foundation/components/_custom.scss */
 .hotspot-holder {
   width: 100%;
   position: relative; }
-  /* line 515, foundation/components/_custom.scss */
+  /* line 516, foundation/components/_custom.scss */
   .hotspot-holder > img {
     width: 100%; }
 
-/* line 520, foundation/components/_custom.scss */
+/* line 521, foundation/components/_custom.scss */
 .orders > * {
   font-size: 0.75rem; }
 
-/* line 526, foundation/components/_custom.scss */
+/* line 527, foundation/components/_custom.scss */
 .total {
   margin-bottom: 0; }
-  /* line 528, foundation/components/_custom.scss */
+  /* line 529, foundation/components/_custom.scss */
   .total > td {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
-/* line 534, foundation/components/_custom.scss */
+/* line 535, foundation/components/_custom.scss */
 .total-table {
   min-width: 60%;
   width: 60%; }
 
-/* line 539, foundation/components/_custom.scss */
+/* line 540, foundation/components/_custom.scss */
 .total-bill > td {
   font-weight: bold;
   color: black; }
-  /* line 542, foundation/components/_custom.scss */
+  /* line 543, foundation/components/_custom.scss */
   .total-bill > td:first-child {
     border-bottom-left-radius: 0.25rem; }
-  /* line 545, foundation/components/_custom.scss */
+  /* line 546, foundation/components/_custom.scss */
   .total-bill > td:last-child {
     border-bottom-right-radius: 0.25rem; }
 
-/* line 550, foundation/components/_custom.scss */
+/* line 551, foundation/components/_custom.scss */
 .coupon {
   max-width: 150px;
   margin-bottom: 0 !important; }
 
-/* line 555, foundation/components/_custom.scss */
+/* line 556, foundation/components/_custom.scss */
 .text {
   font-size: 0.75rem; }
 
-/* line 559, foundation/components/_custom.scss */
+/* line 560, foundation/components/_custom.scss */
 .info-text {
   font-size: 0.625rem;
   color: #666666;
   line-height: 1.5; }
 
-/* line 565, foundation/components/_custom.scss */
+/* line 566, foundation/components/_custom.scss */
 .highlight, .designer-nav-active {
   font-weight: bold; }
 
-/* line 570, foundation/components/_custom.scss */
+/* line 571, foundation/components/_custom.scss */
 .errorMessage {
   font-size: 0.75rem;
   color: #c60f13; }
 
-/* line 575, foundation/components/_custom.scss */
+/* line 576, foundation/components/_custom.scss */
 .error > label {
   display: none; }
 
-/* line 579, foundation/components/_custom.scss */
+/* line 580, foundation/components/_custom.scss */
 .shopping-block-img {
   width: 180px;
   float: left;
@@ -6947,12 +6956,12 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 579, foundation/components/_custom.scss */
+    /* line 580, foundation/components/_custom.scss */
     .shopping-block-img {
       margin: 0 auto;
       float: none !important; } }
 
-/* line 591, foundation/components/_custom.scss */
+/* line 592, foundation/components/_custom.scss */
 .shopping-block-desc {
   width: 45%;
   margin-left: 10px;
@@ -6961,13 +6970,13 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 591, foundation/components/_custom.scss */
+    /* line 592, foundation/components/_custom.scss */
     .shopping-block-desc {
       width: 100%;
       float: none !important;
       margin-left: 0; } }
 
-/* line 603, foundation/components/_custom.scss */
+/* line 604, foundation/components/_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -6990,35 +6999,35 @@ a.th {
   height: 307px;
   min-height: 307px; }
   @media screen and (max-width: 635px) {
-    /* line 603, foundation/components/_custom.scss */
+    /* line 604, foundation/components/_custom.scss */
     .shopping-block {
       width: 45%; } }
   @media screen and (min-width: 636px) and (max-width: 780px) {
-    /* line 603, foundation/components/_custom.scss */
+    /* line 604, foundation/components/_custom.scss */
     .shopping-block {
       width: 48%; } }
-  /* line 629, foundation/components/_custom.scss */
+  /* line 630, foundation/components/_custom.scss */
   .shopping-block.full {
     width: 100% !important; }
-    /* line 631, foundation/components/_custom.scss */
+    /* line 632, foundation/components/_custom.scss */
     .shopping-block.full.shopping-block-img {
       min-width: 160px !important; }
     @media screen and (max-width: 1048px) {
-      /* line 635, foundation/components/_custom.scss */
+      /* line 636, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-desc {
         width: 50% !important;
         float: left; }
-      /* line 639, foundation/components/_custom.scss */
+      /* line 640, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
 
-/* line 647, foundation/components/_custom.scss */
+/* line 648, foundation/components/_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black; }
 
-/* line 652, foundation/components/_custom.scss */
+/* line 653, foundation/components/_custom.scss */
 .errorSummary {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -7036,12 +7045,12 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 660, foundation/components/_custom.scss */
+  /* line 661, foundation/components/_custom.scss */
   .errorSummary ul li {
     list-style: none;
     color: black; }
 
-/* line 667, foundation/components/_custom.scss */
+/* line 668, foundation/components/_custom.scss */
 .successMessage {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -7059,17 +7068,17 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 675, foundation/components/_custom.scss */
+  /* line 676, foundation/components/_custom.scss */
   .successMessage ul li {
     list-style: none;
     color: black; }
 
-/* line 682, foundation/components/_custom.scss */
+/* line 683, foundation/components/_custom.scss */
 .thankyou {
   color: black;
   font: italic 7em futura; }
 
-/* line 688, foundation/components/_custom.scss */
+/* line 689, foundation/components/_custom.scss */
 .loading-indicator {
   height: 80px;
   width: 80px;
@@ -7080,7 +7089,7 @@ a.th {
   top: 0;
   left: 43%; }
 
-/* line 719, foundation/components/_custom.scss */
+/* line 720, foundation/components/_custom.scss */
 .promo-gallery {
   min-width: 420px;
   max-width: 1366px;
@@ -7092,7 +7101,7 @@ a.th {
   margin: auto;
   overflow: hidden; }
 
-/* line 731, foundation/components/_custom.scss */
+/* line 732, foundation/components/_custom.scss */
 .promo-gallery .mask {
   overflow: hidden;
   position: relative;
@@ -7102,18 +7111,18 @@ a.th {
   min-height: 660px;
   max-height: 768px; }
 
-/* line 741, foundation/components/_custom.scss */
+/* line 742, foundation/components/_custom.scss */
 .cycle-slide-active > img {
   width: 100%; }
 
 /*----Login Modal ---*/
-/* line 746, foundation/components/_custom.scss */
+/* line 747, foundation/components/_custom.scss */
 #smodal {
   position: absolute;
   padding: 8px;
   z-index: 700; }
 
-/* line 752, foundation/components/_custom.scss */
+/* line 753, foundation/components/_custom.scss */
 #smodal-overlay {
   position: fixed;
   top: 0;
@@ -7125,7 +7134,7 @@ a.th {
   filter: alpha(opacity=50);
   z-index: 700; }
 
-/* line 764, foundation/components/_custom.scss */
+/* line 765, foundation/components/_custom.scss */
 .box-bg {
   background: #fff no-repeat center top;
   width: 100%;
@@ -7138,17 +7147,17 @@ a.th {
   position: relative;
   padding: 10px; }
 
-/* line 777, foundation/components/_custom.scss */
+/* line 778, foundation/components/_custom.scss */
 .box-content {
   height: 430px;
   border: 1px dashed grey; }
 
-/* line 782, foundation/components/_custom.scss */
+/* line 783, foundation/components/_custom.scss */
 .box-content2 {
   display: table;
   height: 100%; }
 
-/* line 787, foundation/components/_custom.scss */
+/* line 788, foundation/components/_custom.scss */
 .box-content2 .leftside {
   padding-left: 3%;
   width: 50%;
@@ -7157,7 +7166,7 @@ a.th {
   display: table-cell;
   vertical-align: middle; }
 
-/* line 796, foundation/components/_custom.scss */
+/* line 797, foundation/components/_custom.scss */
 .box-content2 .rightside {
   padding-left: 10px;
   padding-right: 10px;
@@ -7165,23 +7174,23 @@ a.th {
   vertical-align: middle;
   display: block; }
 
-/* line 804, foundation/components/_custom.scss */
+/* line 805, foundation/components/_custom.scss */
 .rightside-wrap {
   position: relative;
   width: 100%; }
 
-/* line 810, foundation/components/_custom.scss */
+/* line 811, foundation/components/_custom.scss */
 .box-content2 .chosen-container {
   width: 100% !important; }
 
-/* line 814, foundation/components/_custom.scss */
+/* line 815, foundation/components/_custom.scss */
 .card {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; }
 
-/* line 821, foundation/components/_custom.scss */
+/* line 822, foundation/components/_custom.scss */
 .front, .back, .side {
   z-index: 1;
   opacity: 0;
@@ -7196,13 +7205,13 @@ a.th {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
 
-/* line 836, foundation/components/_custom.scss */
+/* line 837, foundation/components/_custom.scss */
 .show {
   z-index: 2;
   opacity: 1;
   visibility: visible; }
 
-/* line 842, foundation/components/_custom.scss */
+/* line 843, foundation/components/_custom.scss */
 .flip {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -7210,7 +7219,7 @@ a.th {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 851, foundation/components/_custom.scss */
+/* line 852, foundation/components/_custom.scss */
 .f-signin, .g-signin {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
@@ -7221,13 +7230,13 @@ a.th {
   color: white;
   width: 50px; }
 
-/* line 860, foundation/components/_custom.scss */
+/* line 861, foundation/components/_custom.scss */
 .f-signin {
   background-color: #4863ae;
   padding-left: 0;
   padding-right: 10px; }
 
-/* line 865, foundation/components/_custom.scss */
+/* line 866, foundation/components/_custom.scss */
 .g-signin {
   background-color: #cd3a25;
   background-image: -moz-linear-gradient(top, #cd3a25, #cd3a25);
@@ -7238,79 +7247,79 @@ a.th {
   background-image: linear-gradient(top, #cd3a25, #cd3a25);
   background-repeat: repeat-x; }
 
-/* line 879, foundation/components/_custom.scss */
+/* line 880, foundation/components/_custom.scss */
 .login-modal-copy {
   font-weight: bold;
   font-size: 1rem; }
 
-/* line 886, foundation/components/_custom.scss */
+/* line 887, foundation/components/_custom.scss */
 .black {
   color: black; }
 
-/* line 890, foundation/components/_custom.scss */
+/* line 891, foundation/components/_custom.scss */
 .login-social-buttons {
   display: inline-block;
   width: 100%; }
 
 /*----Hotspot Tooltips */
-/* line 899, foundation/components/_custom.scss */
+/* line 900, foundation/components/_custom.scss */
 .product-image, .home-designer-image {
   width: 100%; }
 
-/* line 904, foundation/components/_custom.scss */
+/* line 905, foundation/components/_custom.scss */
 .product-image {
   max-width: 200px; }
 
-/* line 907, foundation/components/_custom.scss */
+/* line 908, foundation/components/_custom.scss */
 .home-designer-image {
   max-width: 325px; }
 
 /* Disable hotspots <768px */
 @media screen and (max-width: 767px) {
-  /* line 914, foundation/components/_custom.scss */
+  /* line 915, foundation/components/_custom.scss */
   .hs-wrap {
     display: none !important; } }
-/* line 919, foundation/components/_custom.scss */
+/* line 920, foundation/components/_custom.scss */
 .footer-links {
   margin-top: 6px; }
 
-/* line 923, foundation/components/_custom.scss */
+/* line 924, foundation/components/_custom.scss */
 .footer-list, .footer-links > ul > li > a {
   font-family: futura;
   font-size: 13px;
   text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
-  /* line 928, foundation/components/_custom.scss */
+  /* line 929, foundation/components/_custom.scss */
   .footer-list {
     text-align: center;
     font-size: 12px;
     display: inline-block; } }
 
-/* line 936, foundation/components/_custom.scss */
+/* line 937, foundation/components/_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
-/* line 941, foundation/components/_custom.scss */
+/* line 942, foundation/components/_custom.scss */
 .capitalize {
   text-transform: capitalize; }
 
-/* line 945, foundation/components/_custom.scss */
+/* line 946, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 949, foundation/components/_custom.scss */
+/* line 950, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 954, foundation/components/_custom.scss */
+/* line 955, foundation/components/_custom.scss */
 .prod-name {
   text-transform: capitalize;
   color: black; }
 
-/* line 960, foundation/components/_custom.scss */
+/* line 961, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
