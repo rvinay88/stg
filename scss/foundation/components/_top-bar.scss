@@ -715,5 +715,14 @@ ul.user-setting{
   height: 150px;
 }
 
+//Multiple back issue
+.has-dropdown > ul.dropdown > li.js-generated {
+  display: none;
+}
+
+.moved > ul.dropdown > li.js-generated {
+  display: block !important;
+}
+
 
 
