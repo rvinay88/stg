@@ -65,8 +65,7 @@
   @include single-transition(all, 0.5s, ease-in);
   @media only screen and (max-width: 768px) {
     margin-left: -100%;
-    width: 30%;
-    height: 0;
+    width: auto;
   }
 }
 .catalogue-holder{
@@ -83,7 +82,6 @@
   @extend .show-for-small;
   @extend .bottom-margin;
   padding: 10px;
-  height: auto;
 }
 
 .sidebar-active{
@@ -130,6 +128,13 @@
   font-size: emCalc(15px);
   font-weight: bold;
 }
+.designer-profile-subtitle {
+  font-size: emCalc(14.5px);
+  margin-top: 6px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
 .designer-subtitle{
   font-size: emCalc(13px);
   margin-top: 6px;
@@ -182,6 +187,8 @@
 /*Logo*/
 .logo {
   background: url(../images/logo.png) no-repeat;
+  -webkit-background-size: 90% auto;
+  background-size: 90% auto;
   height: 154px;
   width: 154px;
   overflow: hidden;
@@ -462,6 +469,9 @@
 }
 .fixed-360{
   width: 360px;
+  @media screen and (max-width: 768px){
+    width: auto;
+  }
 }
 
 .right-margin{
@@ -482,6 +492,10 @@
 
 .no-left {
   margin-left: 0 !important;
+}
+
+.no-bottom {
+  margin-bottom: 0 !important;
 }
 
 .register-button {
@@ -617,10 +631,12 @@
   margin-right: 10px;
   padding: 1.4%;
   float: left;
-  height: 307px;
   min-height: 307px;
   @media screen and (max-width: 635px) {
     width: 45%;
+    float: none; 
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 636px) and (max-width: 780px) {
     width: 48%;
@@ -767,7 +783,7 @@
   width: 100%;
   height: auto;
   max-width: 752px;
-  min-width: 446px;
+  min-width: 250px;
   top: 0px;
   margin: 0 auto;
   z-index: 130;
@@ -792,6 +808,9 @@
   padding-right: 0.5%;
   display: table-cell;
   vertical-align: middle;
+  @media screen and (max-width: 550px) {
+    display: none;
+  }
 }
 
 .box-content2 .rightside {
@@ -800,6 +819,8 @@
   display: table-cell;
   vertical-align: middle;
   display: block;
+  min-width: 250px;
+  min-height: 430px;
 }
 
 .rightside-wrap {
@@ -961,4 +982,15 @@
 .shipped{
   color: $secondary-color;
   @extend %grid-info-base;
+}
+
+
+#profileLongStory > div:first-child {
+    margin-top: 10px;
+}
+
+#profileLongStory > div {
+    font-size: 12px;
+    color: grey;
+    line-height: 1.5;
 }

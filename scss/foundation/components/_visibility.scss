@@ -8,7 +8,7 @@ $include-html-visibility-classes: $include-html-classes !default;
   /* Foundation Visibility HTML Classes */
   .show-for-small,
   .show-for-medium-down,
-  .show-for-large-down { display: inherit !important; }
+  .show-for-large-down,  { display: inherit !important; }
   
   .show-for-medium,
   .show-for-medium-up,
@@ -78,6 +78,7 @@ $include-html-visibility-classes: $include-html-classes !default;
     &.hide-for-large-up,
     &.hide-for-xlarge { display: table-cell !important; }
   }
+  
   
   /* Medium Displays: 768px - 1279px */
   @media #{$small} {

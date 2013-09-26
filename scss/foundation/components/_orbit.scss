@@ -121,7 +121,10 @@ $preloader-class: "preloader" !default;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-
+//To reset max height for zoom image 
+.zoomImg{
+  max-height: 960px !important;
+}
   .orbit-container {
     overflow: hidden;
     width: 100%;
@@ -133,8 +136,14 @@ $preloader-class: "preloader" !default;
       margin: 0;
       padding: 0;
       position: relative;
-      background-color: $secondary-color;
-      img { display: block; max-width: 100%; }
+      background-color: $base-color;
+      img, img:not(.zoomImg) { 
+        display: block; 
+        max-width: 100%; 
+        max-height: 630px;
+        margin-left: auto;
+        margin-right: auto;
+      }
       &>* {
 
         position: absolute;
@@ -246,8 +255,7 @@ $preloader-class: "preloader" !default;
             color: rgba($primary-color, 0.8);
             content: "\f137";
         }
-        #{$opposite-direction}: 50%;
-        margin-#{$opposite-direction}: -8px;
+        left: 10px;
       }
       &:hover {
         background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0001)));
@@ -270,8 +278,7 @@ $preloader-class: "preloader" !default;
             color: rgba($primary-color, 0.8);
             content: "\f138";
         }
-        #{$default-float}: 50%;
-        margin-#{$default-float}: -8px;
+        right: 10px;
       }
       &:hover {
       background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.1)));

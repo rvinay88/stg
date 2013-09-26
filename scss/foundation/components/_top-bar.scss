@@ -358,7 +358,7 @@ box-shadow:         0 10px 0 1px $topbar-menu-icon-color,
 
         a {
           font-weight: normal;
-          text-align: center;
+          text-align: left;
           padding: 8px $topbar-height / 3;
           &.parent-link {
             font-weight: bold;
@@ -617,6 +617,9 @@ ul.user-setting{
   top: 45px;
   right: 0;
   width: 410px;
+  @media screen and (max-width: 500px){
+      width: 250px;
+    }
   height: 0;
   visibility: hidden;
   @include box-shadow(0, 2px, 1px, rgba(#000,0.25));
@@ -631,6 +634,9 @@ ul.user-setting{
   overflow: hidden;
   .pane-container{
     width: 820px;
+    @media screen and (max-width: 500px){
+      width: 520px;
+    }
     min-height: emCalc(250px);
     z-index: 120;
     background-color: $base-color;
@@ -638,6 +644,9 @@ ul.user-setting{
   }
   .pane-1, .pane-2{
     width: 410px;
+    @media screen and (max-width: 500px){
+      width: 250px;
+    }
     padding-left: 20px;
     padding-right: 30px;
     float: left;
@@ -655,6 +664,9 @@ ul.user-setting{
 .slide-left{
   position: relative;
   left: -420px !important;
+  @media screen and (max-width: 500px){
+    left: -260px !important;    
+  }
 }
 
 #menu-cart{
@@ -693,6 +705,9 @@ ul.user-setting{
       font-size: $topbar-link-font-size;
       font-weight: $topbar-link-weight;
       padding: emCalc(6, 12);
+      @media screen and (max-width: 500px) {
+        padding: emCalc(2, 6, 2, 6);
+      }
       &:hover{
         background-color: rgba(#000, 0.25);
       }
@@ -704,7 +719,13 @@ ul.user-setting{
 .user-setting-labels{
   margin-top: emCalc(12px);
 }
-
+.user-setting-username {
+  @extend .small-text;
+  @extend .highlight;
+  @media screen and (max-width: 500px) {
+    margin-top: 0 !important;
+  }
+}
 .user-img-small{
   width: 19px;
   height: 19px;
@@ -713,6 +734,10 @@ ul.user-setting{
 .user-img{
   width: 150px;
   height: 150px;
+  @media screen and (max-width: 500px) {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 //Multiple back issue

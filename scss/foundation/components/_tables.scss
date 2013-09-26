@@ -86,6 +86,9 @@ $table-margin-bottom: emCalc(20) !default;
       font-size: $table-row-font-size;
       color: $table-row-font-color;
       font-weight: $table-head-font-weight;
+      @media screen and (max-width: 450px) {
+        font-size: 10px;
+      }      
     }
 
 
@@ -95,7 +98,11 @@ $table-margin-bottom: emCalc(20) !default;
   tfoot tr th,
   tbody tr td,
   tr td,
-  tfoot tr td { display: $table-display; line-height: $table-line-height; }
+  tfoot tr td { display: $table-display; line-height: $table-line-height; 
+    @media screen and (max-width: 450px) {
+      font-size: 10px;
+    }  
+  }
 }
 
 @if $include-html-table-classes {
