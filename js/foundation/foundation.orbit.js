@@ -104,7 +104,7 @@
           slides_container.trigger('orbit:after-slide-change',[{slide_number: idx, total_slides: slides.length}]);
           settings.after_slide_change(idx, slides.length);
         };
-        if (slides_container.height() != next.height()) {
+        if (slides_container.height() != next.height() && (total_slides != 1)) {
           slides_container.animate({'height': next.height()}, 250, 'linear', unlock);
         } else {
           unlock();

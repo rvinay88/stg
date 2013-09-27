@@ -138,6 +138,10 @@
   <div class="wrapper">
     <div class="clearfix"></div>
     <a href="#"><i class="icon-reorder" id="reveal-sidebar"></i></a>
+    <div class="inline show-for-small" id="filter">
+      <em><span class="highlight">Category: </span>Bottoms</em> |
+      <em><span class="highlight">Designer: </span>Anja</em>
+    </div>
 
     <div class="tree-holder">
       <div class="large-10 large-centered columns">
@@ -148,7 +152,7 @@
           <li class="expandable"><span><a id="category_link27" return="" href="#">Jumpsuits</a></span>
             <div class="hitarea expandable-hitarea"></div>
           </li>
-          <li><span><a id="category_link27" return="" href="#">Dresses</a></span></li>
+          <li><span><a id="category_link27" class="selected" return="" href="#">Dresses</a></span></li>
           <li><span><a id="category_link27" return="" href="#">Bottoms</a></span></li>
           <li><span><a id="category_link27" return="" href="#">Swimwear</a></span></li>
           <li><span><a id="category_link27" return="" href="#">Tops</a></span></li>
@@ -405,9 +409,21 @@ $('#trigger-settings-pane').click(function() {
 });
 </script>
 <script>
+  $(document).click(function(e) {
+    e = e || event;
+    $.lastClicked = e.target || e.srcElement;
+  });
+</script>
+<script>
   $('#reveal-sidebar').click (function () {
     $('.tree-holder').toggleClass('sidebar-active');
-  })
+  });
+
+$('.treeview li span a').on('click', function(){
+      //add selected class to this element 
+      $('.tree-holder').removeClass('sidebar-active');
+    });
+  
 </script>
 </body>
 </html>

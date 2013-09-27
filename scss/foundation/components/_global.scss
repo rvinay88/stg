@@ -378,10 +378,13 @@ a:hover { cursor: $cursor-pointer-value; }
     color: $primary-color;
     text-decoration: none;
     &.white-link{
-      color: white;
+      color: white !important;
       font-size: emCalc(13px);
       &:hover{
         color: white;
+      }
+      &:visited, &:active {
+        color: white !important;
       }
     }
     &:hover{

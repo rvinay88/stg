@@ -66,6 +66,7 @@
   @media only screen and (max-width: 768px) {
     margin-left: -100%;
     width: auto;
+    max-height: 0;
   }
 }
 .catalogue-holder{
@@ -86,6 +87,7 @@
 
 .sidebar-active{
   @extend .no-left;
+  max-height: 400px;
 }
 .catalogue-product-name{
   text-transform: capitalize;
@@ -202,7 +204,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .logo {
     background-size: 80%;
     margin-top: 10px;   //balance the image vertically
@@ -448,10 +450,17 @@
   }
 }
 
-.designer-about{
-  height: 84px;
-  overflow: hidden;
+.designer-about {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: #666666;
+  line-height: 1.6;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  text-rendering: optimizeLegibility; 
 }
+
 .more{
   height: auto !important;
 }
@@ -536,6 +545,9 @@
   font-size: emCalc(12px);
   @extend .uppercase;
   @extend .muted;
+  @media screen and (max-width: 450px) {
+    font-size: emCalc(8px);
+  }
 }
 
 .total{
@@ -986,11 +998,20 @@
 
 
 #profileLongStory > div:first-child {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #profileLongStory > div {
+  font-size: 12px;
+  color: grey;
+  line-height: 1.5;
+}
+
+#filter {
+  line-height: 33px; 
+  & > em, p {
     font-size: 12px;
-    color: grey;
-    line-height: 1.5;
+    font-style: normal;
+    text-transform: uppercase;
+  }
 }

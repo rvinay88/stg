@@ -100,7 +100,7 @@ $table-margin-bottom: emCalc(20) !default;
   tr td,
   tfoot tr td { display: $table-display; line-height: $table-line-height; 
     @media screen and (max-width: 450px) {
-      font-size: 10px;
+      font-size: emCalc(8px);
     }  
   }
 }
