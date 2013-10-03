@@ -2545,6 +2545,10 @@ select {
   box-sizing: border-box;
   -webkit-appearance: none; }
 
+/* line 441, foundation/components/_forms.scss */
+select::-ms-expand {
+  display: none; }
+
 /* Button Groups */
 /* line 72, foundation/components/_button-groups.scss */
 .button-group {
