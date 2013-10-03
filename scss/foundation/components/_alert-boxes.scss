@@ -100,7 +100,7 @@ $alert-radius: $global-radius !default;
     &.round { @include radius($global-rounded); }
 
     &.success { @include alert-style($success-color); }
-    &.alert { @include alert-style($alert-color); }
+    &.alert { @include alert-style(rgba($alert-color, 0.1)); }
     &.secondary { @include alert-style($secondary-color); }
   }
 

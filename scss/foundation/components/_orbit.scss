@@ -33,24 +33,24 @@ $preloader-class: "preloader" !default;
 
 @if $include-html-orbit-classes != false {
 
-  @if $experimental {
-    @-webkit-keyframes rotate {
-      from { -webkit-transform: rotate(0deg); }
-      to { -webkit-transform: rotate(360deg); }
-    }
-    @-moz-keyframes rotate {
-      from { -webkit-transform: rotate(0deg); }
-      to { -webkit-transform: rotate(360deg); }
-    }
-    @-o-keyframes rotate {
-      from { -webkit-transform: rotate(0deg); }
-      to { -webkit-transform: rotate(360deg); }
-    }
-  }
-  @keyframes rotate {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-  }
+  // @if $experimental {
+  //   @-webkit-keyframes rotate {
+  //     from { -webkit-transform: rotate(0deg); }
+  //     to { -webkit-transform: rotate(360deg); }
+  //   }
+  //   @-moz-keyframes rotate {
+  //     from { -webkit-transform: rotate(0deg); }
+  //     to { -webkit-transform: rotate(360deg); }
+  //   }
+  //   @-o-keyframes rotate {
+  //     from { -webkit-transform: rotate(0deg); }
+  //     to { -webkit-transform: rotate(360deg); }
+  //   }
+  // }
+  // @keyframes rotate {
+  //   from { -webkit-transform: rotate(0deg); }
+  //   to { -webkit-transform: rotate(360deg); }
+  // }
 
 .prev{
   display: inline-block;
@@ -89,38 +89,38 @@ $preloader-class: "preloader" !default;
     }
   }
 
-  // Orbit preloader
-  .#{$preloader-class} {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -20px;
-    margin-left: -20px;
-    border: solid 3px;
-    border-color: #555 #fff;
-    @include radius(1000px);
-    @if $experimental {
-      -webkit-animation-name: rotate;
-      -webkit-animation-duration: 1.5s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -moz-animation-name: rotate;
-      -moz-animation-duration: 1.5s;
-      -moz-animation-iteration-count: infinite;
-      -moz-animation-timing-function: linear;
-      -o-animation-name: rotate;
-      -o-animation-duration: 1.5s;
-      -o-animation-iteration-count: infinite;
-      -o-animation-timing-function: linear;
-    }
-    animation-name: rotate;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
+  // // Orbit preloader
+  // .#{$preloader-class} {
+  //   display: block;
+  //   width: 40px;
+  //   height: 40px;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   margin-top: -20px;
+  //   margin-left: -20px;
+  //   border: solid 3px;
+  //   border-color: #555 #fff;
+  //   @include radius(1000px);
+  //   @if $experimental {
+  //     -webkit-animation-name: rotate;
+  //     -webkit-animation-duration: 1.5s;
+  //     -webkit-animation-iteration-count: infinite;
+  //     -webkit-animation-timing-function: linear;
+  //     -moz-animation-name: rotate;
+  //     -moz-animation-duration: 1.5s;
+  //     -moz-animation-iteration-count: infinite;
+  //     -moz-animation-timing-function: linear;
+  //     -o-animation-name: rotate;
+  //     -o-animation-duration: 1.5s;
+  //     -o-animation-iteration-count: infinite;
+  //     -o-animation-timing-function: linear;
+  //   }
+  //   animation-name: rotate;
+  //   animation-duration: 1.5s;
+  //   animation-iteration-count: infinite;
+  //   animation-timing-function: linear;
+  // }
 //To reset max height for zoom image 
 .zoomImg{
   max-height: 960px !important;

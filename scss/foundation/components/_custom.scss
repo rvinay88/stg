@@ -680,7 +680,7 @@
 
 .errorSummary {
   font-size: emCalc(12px) !important;
-  @include alert(rgba($alert-color, 0.1), 4px);
+  // @include alert(rgba($alert-color, 0.1), 4px);
   color: $primary-color !important;
   font-weight: normal;
   @extend .top-margin;
