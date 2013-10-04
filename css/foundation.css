@@ -3456,15 +3456,18 @@ select::-ms-expand {
   overflow: hidden;
   height: 0;
   padding: 0 20px; }
+  /* line 431, foundation/components/_section.scss */
+  .accordion article.filters {
+    overflow: visible; }
 
-/* line 436, foundation/components/_section.scss */
+/* line 437, foundation/components/_section.scss */
 .accordions {
   border: 2px solid #eeeeee;
   display: inline-block;
   float: left;
   width: 100%; }
 
-/* line 444, foundation/components/_section.scss */
+/* line 445, foundation/components/_section.scss */
 .accordion label {
   background-color: white;
   border-bottom: 1px solid #dddddd;
@@ -3476,10 +3479,10 @@ select::-ms-expand {
   margin-top: -1px;
   cursor: pointer;
   font-weight: bold; }
-  /* line 455, foundation/components/_section.scss */
+  /* line 456, foundation/components/_section.scss */
   .accordion label:hover {
     background-color: #eeeeee; }
-/* line 459, foundation/components/_section.scss */
+/* line 460, foundation/components/_section.scss */
 .accordion article {
   -webkit-transition: height .3s ease;
   -moz-transition: height .3s ease;
@@ -3487,17 +3490,20 @@ select::-ms-expand {
   line-height: 20px;
   min-height: 0;
   font-size: 12px; }
-/* line 470, foundation/components/_section.scss */
+  /* line 467, foundation/components/_section.scss */
+  .accordion article.filters {
+    padding-top: 20px; }
+/* line 474, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:not(:checked) ~ label:after {
   font-family: 'FontAwesome';
   content: "\F067";
   float: right; }
-/* line 477, foundation/components/_section.scss */
+/* line 481, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:checked ~ label:after {
   font-family: 'FontAwesome';
   content: "\F068";
   float: right; }
-/* line 483, foundation/components/_section.scss */
+/* line 487, foundation/components/_section.scss */
 .accordion input[type="checkbox"]:checked ~ article {
   min-height: 120px; }
 
@@ -5842,38 +5848,42 @@ a.th {
       width: auto; } }
 
 /* line 486, foundation/components/_custom.scss */
-.right-margin {
+.left-margin {
+  margin-left: 0.625rem; }
+
+/* line 489, foundation/components/_custom.scss */
+.right-margin, .pagerviewall {
   margin-right: 0.625rem; }
 
-/* line 490, foundation/components/_custom.scss */
+/* line 493, foundation/components/_custom.scss */
 .top-margin, .errorSummary, .successMessage {
   margin-top: 1rem; }
 
-/* line 494, foundation/components/_custom.scss */
+/* line 497, foundation/components/_custom.scss */
 .bottom-margin, #reveal-sidebar {
   margin-bottom: 1rem; }
 
-/* line 498, foundation/components/_custom.scss */
+/* line 501, foundation/components/_custom.scss */
 .no-top {
   margin-top: 0 !important; }
 
-/* line 502, foundation/components/_custom.scss */
+/* line 505, foundation/components/_custom.scss */
 .no-left, .sidebar-active {
   margin-left: 0 !important; }
 
-/* line 506, foundation/components/_custom.scss */
+/* line 509, foundation/components/_custom.scss */
 .no-bottom {
   margin-bottom: 0 !important; }
 
-/* line 510, foundation/components/_custom.scss */
+/* line 513, foundation/components/_custom.scss */
 .register-button {
   margin-bottom: 0.5rem !important; }
 
-/* line 514, foundation/components/_custom.scss */
+/* line 517, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
-/* line 518, foundation/components/_custom.scss */
+/* line 521, foundation/components/_custom.scss */
 .social-buttons {
   height: 42px;
   *zoom: 1;
@@ -5889,7 +5899,7 @@ a.th {
   .social-buttons:after {
     clear: both; }
 
-/* line 529, foundation/components/_custom.scss */
+/* line 532, foundation/components/_custom.scss */
 .homepage-wrapper {
   width: 100%;
   position: relative;
@@ -5897,75 +5907,75 @@ a.th {
   overflow-x: hidden;
   max-width: 1366px; }
 
-/* line 536, foundation/components/_custom.scss */
+/* line 539, foundation/components/_custom.scss */
 .hotspot-holder {
   width: 100%;
   position: relative; }
-  /* line 539, foundation/components/_custom.scss */
+  /* line 542, foundation/components/_custom.scss */
   .hotspot-holder > img {
     width: 100%; }
 
-/* line 544, foundation/components/_custom.scss */
+/* line 547, foundation/components/_custom.scss */
 .orders > * {
   font-size: 0.75rem; }
   @media screen and (max-width: 450px) {
-    /* line 544, foundation/components/_custom.scss */
+    /* line 547, foundation/components/_custom.scss */
     .orders > * {
       font-size: 0.5rem; } }
 
-/* line 553, foundation/components/_custom.scss */
+/* line 556, foundation/components/_custom.scss */
 .total {
   margin-bottom: 0; }
-  /* line 555, foundation/components/_custom.scss */
+  /* line 558, foundation/components/_custom.scss */
   .total > td {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
-/* line 561, foundation/components/_custom.scss */
+/* line 564, foundation/components/_custom.scss */
 .total-table {
   min-width: 60%;
   width: 60%; }
 
-/* line 566, foundation/components/_custom.scss */
+/* line 569, foundation/components/_custom.scss */
 .total-bill > td {
   font-weight: bold;
   color: black; }
-  /* line 569, foundation/components/_custom.scss */
+  /* line 572, foundation/components/_custom.scss */
   .total-bill > td:first-child {
     border-bottom-left-radius: 0.25rem; }
-  /* line 572, foundation/components/_custom.scss */
+  /* line 575, foundation/components/_custom.scss */
   .total-bill > td:last-child {
     border-bottom-right-radius: 0.25rem; }
 
-/* line 577, foundation/components/_custom.scss */
+/* line 580, foundation/components/_custom.scss */
 .coupon {
   max-width: 150px;
   margin-bottom: 0 !important; }
 
-/* line 582, foundation/components/_custom.scss */
+/* line 585, foundation/components/_custom.scss */
 .text {
   font-size: 0.75rem; }
 
-/* line 586, foundation/components/_custom.scss */
+/* line 589, foundation/components/_custom.scss */
 .info-text {
   font-size: 0.625rem;
   color: #666666;
   line-height: 1.5; }
 
-/* line 592, foundation/components/_custom.scss */
+/* line 595, foundation/components/_custom.scss */
 .highlight, .user-setting-username, .designer-nav-active {
   font-weight: bold; }
 
-/* line 597, foundation/components/_custom.scss */
+/* line 600, foundation/components/_custom.scss */
 .errorMessage {
   font-size: 0.75rem;
   color: #c60f13; }
 
-/* line 602, foundation/components/_custom.scss */
+/* line 605, foundation/components/_custom.scss */
 .error > label {
   display: none; }
 
-/* line 606, foundation/components/_custom.scss */
+/* line 609, foundation/components/_custom.scss */
 .shopping-block-img {
   width: 180px;
   float: left;
@@ -5975,12 +5985,12 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 606, foundation/components/_custom.scss */
+    /* line 609, foundation/components/_custom.scss */
     .shopping-block-img {
       margin: 0 auto;
       float: none !important; } }
 
-/* line 618, foundation/components/_custom.scss */
+/* line 621, foundation/components/_custom.scss */
 .shopping-block-desc {
   width: 45%;
   margin-left: 10px;
@@ -5989,13 +5999,13 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 618, foundation/components/_custom.scss */
+    /* line 621, foundation/components/_custom.scss */
     .shopping-block-desc {
       width: 100%;
       float: none !important;
       margin-left: 0; } }
 
-/* line 630, foundation/components/_custom.scss */
+/* line 633, foundation/components/_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -6017,48 +6027,48 @@ a.th {
   float: left;
   min-height: 307px; }
   @media screen and (max-width: 635px) {
-    /* line 630, foundation/components/_custom.scss */
+    /* line 633, foundation/components/_custom.scss */
     .shopping-block {
       width: 45%;
       float: none;
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 636px) and (max-width: 780px) {
-    /* line 630, foundation/components/_custom.scss */
+    /* line 633, foundation/components/_custom.scss */
     .shopping-block {
       width: 48%; } }
-  /* line 658, foundation/components/_custom.scss */
+  /* line 661, foundation/components/_custom.scss */
   .shopping-block.full {
     width: 100% !important; }
-    /* line 660, foundation/components/_custom.scss */
+    /* line 663, foundation/components/_custom.scss */
     .shopping-block.full.shopping-block-img {
       min-width: 160px !important; }
     @media screen and (max-width: 1048px) {
-      /* line 664, foundation/components/_custom.scss */
+      /* line 667, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-desc {
         width: 50% !important;
         float: left; }
-      /* line 668, foundation/components/_custom.scss */
+      /* line 671, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
 
-/* line 676, foundation/components/_custom.scss */
+/* line 679, foundation/components/_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black; }
 
-/* line 681, foundation/components/_custom.scss */
+/* line 684, foundation/components/_custom.scss */
 .errorSummary {
   font-size: 0.75rem !important;
   color: black !important;
   font-weight: normal; }
-  /* line 689, foundation/components/_custom.scss */
+  /* line 692, foundation/components/_custom.scss */
   .errorSummary ul li {
     list-style: none;
     color: black; }
 
-/* line 696, foundation/components/_custom.scss */
+/* line 699, foundation/components/_custom.scss */
 .successMessage {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -6076,17 +6086,17 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 704, foundation/components/_custom.scss */
+  /* line 707, foundation/components/_custom.scss */
   .successMessage ul li {
     list-style: none;
     color: black; }
 
-/* line 711, foundation/components/_custom.scss */
+/* line 714, foundation/components/_custom.scss */
 .thankyou {
   color: black;
   font: italic 7em futura; }
 
-/* line 717, foundation/components/_custom.scss */
+/* line 720, foundation/components/_custom.scss */
 .loading-indicator {
   height: 80px;
   width: 80px;
@@ -6097,7 +6107,7 @@ a.th {
   top: 0;
   left: 43%; }
 
-/* line 748, foundation/components/_custom.scss */
+/* line 751, foundation/components/_custom.scss */
 .promo-gallery {
   min-width: 420px;
   max-width: 1366px;
@@ -6109,7 +6119,7 @@ a.th {
   margin: auto;
   overflow: hidden; }
 
-/* line 760, foundation/components/_custom.scss */
+/* line 763, foundation/components/_custom.scss */
 .promo-gallery .mask {
   overflow: hidden;
   position: relative;
@@ -6119,18 +6129,18 @@ a.th {
   min-height: 660px;
   max-height: 768px; }
 
-/* line 770, foundation/components/_custom.scss */
+/* line 773, foundation/components/_custom.scss */
 .cycle-slide-active > img {
   width: 100%; }
 
 /*----Login Modal ---*/
-/* line 775, foundation/components/_custom.scss */
+/* line 778, foundation/components/_custom.scss */
 #smodal {
   position: absolute;
   padding: 8px;
   z-index: 700; }
 
-/* line 781, foundation/components/_custom.scss */
+/* line 784, foundation/components/_custom.scss */
 #smodal-overlay {
   position: fixed;
   top: 0;
@@ -6142,7 +6152,7 @@ a.th {
   filter: alpha(opacity=50);
   z-index: 700; }
 
-/* line 793, foundation/components/_custom.scss */
+/* line 796, foundation/components/_custom.scss */
 .box-bg {
   background: #fff no-repeat center top;
   width: 100%;
@@ -6155,17 +6165,17 @@ a.th {
   position: relative;
   padding: 10px; }
 
-/* line 806, foundation/components/_custom.scss */
+/* line 809, foundation/components/_custom.scss */
 .box-content {
   height: 430px;
   border: 1px dashed grey; }
 
-/* line 811, foundation/components/_custom.scss */
+/* line 814, foundation/components/_custom.scss */
 .box-content2 {
   display: table;
   height: 100%; }
 
-/* line 816, foundation/components/_custom.scss */
+/* line 819, foundation/components/_custom.scss */
 .box-content2 .leftside {
   padding-left: 3%;
   width: 50%;
@@ -6174,11 +6184,11 @@ a.th {
   display: table-cell;
   vertical-align: middle; }
   @media screen and (max-width: 550px) {
-    /* line 816, foundation/components/_custom.scss */
+    /* line 819, foundation/components/_custom.scss */
     .box-content2 .leftside {
       display: none; } }
 
-/* line 828, foundation/components/_custom.scss */
+/* line 831, foundation/components/_custom.scss */
 .box-content2 .rightside {
   padding-left: 10px;
   padding-right: 10px;
@@ -6188,23 +6198,23 @@ a.th {
   min-width: 250px;
   min-height: 430px; }
 
-/* line 838, foundation/components/_custom.scss */
+/* line 841, foundation/components/_custom.scss */
 .rightside-wrap {
   position: relative;
   width: 100%; }
 
-/* line 844, foundation/components/_custom.scss */
+/* line 847, foundation/components/_custom.scss */
 .box-content2 .chosen-container {
   width: 100% !important; }
 
-/* line 848, foundation/components/_custom.scss */
+/* line 851, foundation/components/_custom.scss */
 .card {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; }
 
-/* line 855, foundation/components/_custom.scss */
+/* line 858, foundation/components/_custom.scss */
 .front, .back, .side {
   z-index: 1;
   opacity: 0;
@@ -6219,13 +6229,13 @@ a.th {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
 
-/* line 870, foundation/components/_custom.scss */
+/* line 873, foundation/components/_custom.scss */
 .show {
   z-index: 2;
   opacity: 1;
   visibility: visible; }
 
-/* line 876, foundation/components/_custom.scss */
+/* line 879, foundation/components/_custom.scss */
 .flip {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -6233,7 +6243,7 @@ a.th {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 885, foundation/components/_custom.scss */
+/* line 888, foundation/components/_custom.scss */
 .f-signin, .g-signin {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
@@ -6244,13 +6254,13 @@ a.th {
   color: white;
   width: 50px; }
 
-/* line 894, foundation/components/_custom.scss */
+/* line 897, foundation/components/_custom.scss */
 .f-signin {
   background-color: #4863ae;
   padding-left: 0;
   padding-right: 10px; }
 
-/* line 899, foundation/components/_custom.scss */
+/* line 902, foundation/components/_custom.scss */
 .g-signin {
   background-color: #cd3a25;
   background-image: -moz-linear-gradient(top, #cd3a25, #cd3a25);
@@ -6261,96 +6271,96 @@ a.th {
   background-image: linear-gradient(top, #cd3a25, #cd3a25);
   background-repeat: repeat-x; }
 
-/* line 913, foundation/components/_custom.scss */
+/* line 916, foundation/components/_custom.scss */
 .login-modal-copy {
   font-weight: bold;
   font-size: 1rem; }
 
-/* line 920, foundation/components/_custom.scss */
+/* line 923, foundation/components/_custom.scss */
 .black {
   color: black; }
 
-/* line 924, foundation/components/_custom.scss */
+/* line 927, foundation/components/_custom.scss */
 .login-social-buttons {
   display: inline-block;
   width: 100%; }
 
 /*----Hotspot Tooltips */
-/* line 933, foundation/components/_custom.scss */
+/* line 936, foundation/components/_custom.scss */
 .product-image, .home-designer-image {
   width: 100%; }
 
-/* line 938, foundation/components/_custom.scss */
+/* line 941, foundation/components/_custom.scss */
 .product-image {
   max-width: 200px; }
 
-/* line 941, foundation/components/_custom.scss */
+/* line 944, foundation/components/_custom.scss */
 .home-designer-image {
   max-width: 325px; }
 
 /* Disable hotspots <768px */
 @media screen and (max-width: 767px) {
-  /* line 948, foundation/components/_custom.scss */
+  /* line 951, foundation/components/_custom.scss */
   .hs-wrap {
     display: none !important; } }
-/* line 953, foundation/components/_custom.scss */
+/* line 956, foundation/components/_custom.scss */
 .footer-links {
   margin-top: 6px; }
 
-/* line 957, foundation/components/_custom.scss */
+/* line 960, foundation/components/_custom.scss */
 .footer-list, .footer-links > ul > li > a {
   font-family: futura;
   font-size: 13px;
   text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
-  /* line 962, foundation/components/_custom.scss */
+  /* line 965, foundation/components/_custom.scss */
   .footer-list {
     text-align: center;
     font-size: 12px;
     display: inline-block; } }
 
-/* line 970, foundation/components/_custom.scss */
+/* line 973, foundation/components/_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
-/* line 975, foundation/components/_custom.scss */
+/* line 978, foundation/components/_custom.scss */
 .capitalize {
   text-transform: capitalize; }
 
-/* line 979, foundation/components/_custom.scss */
+/* line 982, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 983, foundation/components/_custom.scss */
+/* line 986, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 988, foundation/components/_custom.scss */
+/* line 991, foundation/components/_custom.scss */
 .prod-name {
   text-transform: capitalize;
   color: black; }
 
-/* line 994, foundation/components/_custom.scss */
+/* line 997, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 1000, foundation/components/_custom.scss */
+/* line 1003, foundation/components/_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 1004, foundation/components/_custom.scss */
+/* line 1007, foundation/components/_custom.scss */
 #profileLongStory > div {
   font-size: 12px;
   color: grey;
   line-height: 1.5; }
 
-/* line 1010, foundation/components/_custom.scss */
+/* line 1013, foundation/components/_custom.scss */
 #filter {
   line-height: 33px; }
-  /* line 1012, foundation/components/_custom.scss */
+  /* line 1015, foundation/components/_custom.scss */
   #filter > em, #filter p {
     font-size: 12px;
     font-style: normal;

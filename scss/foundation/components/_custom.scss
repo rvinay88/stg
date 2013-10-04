@@ -483,6 +483,9 @@
   }
 }
 
+.left-margin {
+  margin-left: emCalc(10px); 
+}
 .right-margin{
   margin-right: emCalc(10px);
 }
@@ -1014,4 +1017,10 @@
     font-style: normal;
     text-transform: uppercase;
   }
+}
+
+//Pager right margin 
+
+.pagerviewall {
+  @extend .right-margin;
 }

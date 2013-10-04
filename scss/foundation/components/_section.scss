@@ -428,6 +428,7 @@ $active-region-selector: ".active" !default;
   }
   article {
     overflow: hidden;
+    &.filters {overflow: visible;}
     height: 0;
     padding: 0 20px;
   }
@@ -463,6 +464,9 @@ $active-region-selector: ".active" !default;
     line-height: 20px;
     min-height: 0;
     font-size: 12px;
+    &.filters {
+      padding-top: 20px;
+    }
   }
   input {
     &[type="checkbox"]:not(:checked) ~ label {

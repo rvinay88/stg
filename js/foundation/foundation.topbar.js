@@ -14,7 +14,7 @@
       custom_back_text: true,
       back_text: 'Back',
       is_hover: true,
-      mobile_show_parent_link: false,
+      mobile_show_parent_link: true,
       scrolltop : false, // jump to top when sticky nav menu toggle is clicked
       init : false
     },
@@ -112,7 +112,6 @@
             }
           }
         })
-
         .on('click.fndtn.topbar', '.top-bar li.has-dropdown', function (e) {
           if (self.breakpoint()) return;
 
