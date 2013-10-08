@@ -80,14 +80,25 @@
 
 #reveal-sidebar {
   @extend .left;
-  @extend .show-for-small;
   @extend .bottom-margin;
   padding: 10px;
+  max-height: 0;
+  @media screen and (min-width: 769px) {
+    display: none;
+  }  
 }
 
-.sidebar-active{
+.sidebar-active, .sidebar-actives{
+  @media screen and (max-width: 769px) {
+    display: block !important;
+  }
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
   @extend .no-left;
-  max-height: 400px;
+  max-height: none;
+  min-height: 400px;
+  clear: both;
 }
 .catalogue-product-name{
   text-transform: capitalize;
@@ -306,12 +317,19 @@
   display: inline-block;
 }
 
+.pagerhidden a {
+  &:before {
+    color: rgba(0,0,0,0.6) !important;
+  }
+}
+
 .paging .pagerprevious a, .pager .paging .pagerprevious a{
   @extend .no-dec;
   margin: 0 4px;
   &:before{
     font-family: 'FontAwesome';
     content: "\f053";
+    color: $primary-color;
   }
 }
 
@@ -321,9 +339,13 @@
   &:before{
     font-family: 'FontAwesome';
     content: "\f054";
+    color: $primary-color;
   }
 }
 
+.pagerhidden {
+  
+}
 
 .product-thumbs{
   @extend .no-bullet;
@@ -683,7 +705,7 @@
 
 .errorSummary {
   font-size: emCalc(12px) !important;
-  // @include alert(rgba($alert-color, 0.1), 4px);
+  @include alert(rgba($alert-color, 0.1), 4px);
   color: $primary-color !important;
   font-weight: normal;
   @extend .top-margin;
@@ -1005,12 +1027,20 @@
 }
 
 #profileLongStory > div {
+  //override any other setting
+  font-family: Helvetica;
   font-size: 12px;
   color: grey;
   line-height: 1.5;
 }
 
 #filter {
+  @media screen and (max-width: 769px) {
+    display: block;
+  }
+  @media screen and (min-width: 769px) {
+    display: none !important;
+  }
   line-height: 33px; 
   & > em, p {
     font-size: 12px;

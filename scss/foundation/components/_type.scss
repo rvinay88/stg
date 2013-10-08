@@ -280,6 +280,7 @@ $microformat-abbr-font-decoration: none !default;
   /* Unordered Lists */
   ul {
     li {
+      @extend .muted;
       ul,
       ol {
         margin-#{$default-float}: $list-nested-margin;

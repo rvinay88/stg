@@ -81,6 +81,7 @@ $include-html-visibility-classes: $include-html-classes !default;
   
   
   /* Medium Displays: 768px - 1279px */
+
   @media #{$small} {
     .show-for-medium,
     .show-for-medium-up { display: inherit !important; }
