@@ -37,102 +37,26 @@
   @include border-top-bottom(top-bottom, $border-thin);
 }
 
-.with-dots
-{
-  &:before, &:after{
-    content: "";
-    position: absolute;
-    display: inline-block;
-    bottom: 49%;
-    width: emCalc(5px);
-    height: emCalc(5px);
-    background: $primary-color;
-  }
-  &:before{
-    left: 0.6rem;
-  }
-  &:after{
-    right: 0.6rem;
-  }
-}
+// .with-dots
+// {
+//   &:before, &:after{
+//     content: "";
+//     position: absolute;
+//     display: inline-block;
+//     bottom: 49%;
+//     width: emCalc(5px);
+//     height: emCalc(5px);
+//     background: $primary-color;
+//   }
+//   &:before{
+//     left: 0.6rem;
+//   }
+//   &:after{
+//     right: 0.6rem;
+//   }
+// }
 
-.wrapper{
-  overflow: hidden;
-}
-.tree-holder{
-  width: 20%;
-  float: left;
-  @include single-transition(all, 0.5s, ease-in);
-  @media only screen and (max-width: 768px) {
-    margin-left: -100%;
-    width: auto;
-    max-height: 0;
-  }
-}
-.catalogue-holder{
-  @include single-transition(all, 0.3s, ease-in);
-  width: 80%;
-  float: left;
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
-}
 
-#reveal-sidebar {
-  @extend .left;
-  @extend .bottom-margin;
-  padding: 10px;
-  max-height: 0;
-  @media screen and (min-width: 769px) {
-    display: none;
-  }  
-}
-
-.sidebar-active, .sidebar-actives{
-  @media screen and (max-width: 769px) {
-    display: block !important;
-  }
-  @media screen and (min-width: 769px) {
-    display: none;
-  }
-  @extend .no-left;
-  max-height: none;
-  min-height: 400px;
-  clear: both;
-}
-.catalogue-product-name{
-  text-transform: capitalize;
-}
-
-.tree-title{
-  @extend .collection-title;
-  @extend .border-top-bottom;
-  text-align: center;
-  width: 100%;
-}
-
-.tree-sub-title {
-  font-family: Helvetica;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 12px;
-  margin-left: 12px;
-}
-.designer-nav {
-  margin-left: 2rem;
-  li {
-    padding: 3px 0;
-    a {
-      color: $primary-color;
-    }
-  }
-}
-
-.designer-nav-active {
-  @extend .highlight;
-  background: $tertiary-color;
-}
 .designer-title{
   display: inline-block;
   font-family: futura;
@@ -197,7 +121,7 @@
 }
 
 
-/*Logo*/
+/*============================Logo styles==============================*/
 .logo {
   background: url(../images/logo.png) no-repeat;
   -webkit-background-size: 90% auto;
@@ -220,16 +144,35 @@
     background-size: 80%;
     margin-top: 10px;   //balance the image vertically
     width: 123.2px;
-    height: 123.2px;
-    margin-bottom: -10px;  //balance the image vertically
+    height: 100.2px;
+    margin-bottom: 10px;  //balance the image vertically
   }
 }
 
 .logo a {
   display: block;
   height: 100%; }
+  
+  
+.main-holder {
+  width: 100%;
+  @include clearfix;
+}
 
-  // custom dropdown
+.main-holder:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+  .main-holder .logo {
+    float: left;
+    margin-left: 0;
+    position: static; }
+
+/*============================Logo styles==============================*/
+
+/*============================Custom Dropdown==============================*/
+
   .styled-select{
     position: relative;
     width: 100%;
@@ -264,21 +207,8 @@
   pointer-events: none;
   @include radius(0);
 }
+/*============================Custom Dropdown==============================*/
 
-.main-holder {
-  width: 100%;
-  @include clearfix;
-}
-
-.main-holder:after {
-  content: '';
-  display: block;
-  clear: both; }
-
-  .main-holder .logo {
-    float: left;
-    margin-left: 0;
-    position: static; }
 
     .sorting, .price{
       background-color: $tertiary-color;
@@ -298,54 +228,6 @@
   }
 }
 
-/* Paging CSS */
-.paging{
-  float: right;
-  margin-right: 10px;
-  margin-bottom: 0.5rem;
-  @include clearfix;
-  background-color: $tertiary-color;
-  padding: emCalc(5px);
-  > li {
-    float: left;
-    list-style: none;
-  }
-}
-
-.pager {
-  float: right;
-  display: inline-block;
-}
-
-.pagerhidden a {
-  &:before {
-    color: rgba(0,0,0,0.6) !important;
-  }
-}
-
-.paging .pagerprevious a, .pager .paging .pagerprevious a{
-  @extend .no-dec;
-  margin: 0 4px;
-  &:before{
-    font-family: 'FontAwesome';
-    content: "\f053";
-    color: $primary-color;
-  }
-}
-
-.paging .pagernext a, .pager .paging .pagernext a{
-  @extend .no-dec;
-  margin: 0 4px;
-  &:before{
-    font-family: 'FontAwesome';
-    content: "\f054";
-    color: $primary-color;
-  }
-}
-
-.pagerhidden {
-  
-}
 
 .product-thumbs{
   @extend .no-bullet;
@@ -420,6 +302,7 @@
   text-transform: uppercase;
   margin-top: -7px; //to align the text closer to the generated dropdown
 }
+
 .highlight-text{
   border: 1px solid black;
   color: $secondary-color;
@@ -523,13 +406,14 @@
 .no-top {
   margin-top: 0 !important;
 }
-
+.no-bottom {
+  margin-bottom: 0 !important;
+}
 .no-left {
   margin-left: 0 !important;
 }
-
-.no-bottom {
-  margin-bottom: 0 !important;
+.no-right {
+  margin-right: 0 !important;
 }
 
 .register-button {
@@ -796,7 +680,7 @@
   width: 100%;
 }
 
-/*----Login Modal ---*/
+/*-------------------------------Login Modal-------------------------------*/
 #smodal{
  position: absolute;
  padding: 8px;
@@ -953,6 +837,7 @@
   width: 100%;
 }
 
+/*-------------------------------Login Modal-------------------------------*/
 
 /*----Hotspot Tooltips */
 .product-image, .home-designer-image {
@@ -997,9 +882,7 @@
   font-weight: bold;
 }
 
-.capitalize{
-  text-transform: capitalize;
-}
+/*------------------------------------------Shopping Grid Items----------------------------*/
 
 %grid-info-base {
   margin-top: 0;
@@ -1033,24 +916,6 @@
   color: grey;
   line-height: 1.5;
 }
+/*------------------------------------------Shopping Grid Items----------------------------*/
 
-#filter {
-  @media screen and (max-width: 769px) {
-    display: block;
-  }
-  @media screen and (min-width: 769px) {
-    display: none !important;
-  }
-  line-height: 33px; 
-  & > em, p {
-    font-size: 12px;
-    font-style: normal;
-    text-transform: uppercase;
-  }
-}
 
-//Pager right margin 
-
-.pagerviewall {
-  @extend .right-margin;
-}

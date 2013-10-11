@@ -746,5 +746,16 @@ ul.user-setting{
 }
 
 .moved > ul.dropdown > li.js-generated {
-  display: block !important;
+  @media screen and (max-width: #{$topbar-breakpoint}){
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .meet-the-designers {min-width: 470px !important;}    
+  ul.meet-the-designers > li {
+    width: 150px !important;
+    float: left;
+    margin-right: 10px;
+  }
 }

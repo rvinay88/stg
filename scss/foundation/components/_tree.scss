@@ -1,0 +1,92 @@
+.wrapper{
+  overflow: hidden;
+}
+.tree-holder{
+  width: 20%;
+  float: left;
+  @include single-transition(all, 0.5s, ease-in);
+  @media only screen and (max-width: 768px) {
+    margin-left: -100%;
+    width: auto;
+    max-height: 0;
+  }
+}
+.catalogue-holder{
+  @include single-transition(all, 0.3s, ease-in);
+  width: 80%;
+  float: left;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+#reveal-sidebar {
+  @extend .left;
+  @extend .bottom-margin;
+  padding: 10px;
+  max-height: 0;
+  @media screen and (min-width: 769px) {
+    display: none;
+  }  
+}
+
+.sidebar-active, .sidebar-actives{
+  @media screen and (max-width: 769px) {
+    display: block !important;
+  }
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+  @extend .no-left;
+  max-height: none;
+  min-height: 400px;
+  clear: both;
+}
+.catalogue-product-name{
+  text-transform: capitalize;
+}
+
+.tree-title{
+  @extend .collection-title;
+  @extend .border-top-bottom;
+  text-align: center;
+  width: 100%;
+}
+
+.tree-sub-title {
+  font-family: Helvetica;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.designer-nav {
+  margin-left: 2rem;
+  li {
+    padding: 3px 0;
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+.designer-nav-active {
+  @extend .highlight;
+  background: $tertiary-color;
+}
+
+#filter {
+  @media screen and (max-width: 769px) {
+    display: block;
+  }
+  @media screen and (min-width: 769px) {
+    display: none !important;
+  }
+  line-height: 33px; 
+  & > em, p {
+    font-size: 12px;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+}

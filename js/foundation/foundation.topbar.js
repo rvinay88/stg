@@ -47,6 +47,7 @@
 
           if (self.settings.is_hover) {
             self.settings.$topbar.find('.has-dropdown').addClass('not-click');
+            self.settings.$topbar.find('.meet-the-designers').addClass('meet-the-designers');
           }
 
           if (self.settings.$topbar.parent().hasClass('fixed')) {

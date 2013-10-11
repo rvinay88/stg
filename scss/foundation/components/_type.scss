@@ -466,3 +466,7 @@ $microformat-abbr-font-decoration: none !default;
 .muted {
   color: $secondary-color;
 }
+
+.capitalize{
+  text-transform: capitalize;
+}
