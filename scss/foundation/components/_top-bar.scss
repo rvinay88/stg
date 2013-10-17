@@ -30,7 +30,7 @@ $topbar-link-color: #fff !default;
 $topbar-link-color-hover: #000 !default;
 $topbar-link-color-active: #000 !default;
 $topbar-link-weight: normal !default;
-$topbar-link-font-size: emCalc(13) !default;
+$topbar-link-font-size: emCalc(12) !default;
 $topbar-link-hover-lightness: -30% !default; // Darken by 30%
 $topbar-link-bg-hover: #fff !default;
 $topbar-link-bg-active: #fff !default;
@@ -42,7 +42,7 @@ $topbar-dropdown-label-font-size: emCalc(10) !default;
 
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase !default;
-$topbar-menu-link-font-size: emCalc(13) !default;
+$topbar-menu-link-font-size: emCalc(12) !default;
 $topbar-menu-link-weight: bold !default;
 $topbar-menu-link-color: #fff !default;
 $topbar-menu-icon-color: #fff !default;
@@ -51,7 +51,7 @@ $topbar-menu-icon-color-toggled: #aaa !default;
 
 // Transitions and breakpoint styles
 $topbar-transition-speed: 300ms !default;
-$topbar-breakpoint: 780px !default; // Change to 9999px for always mobile layout
+$topbar-breakpoint: 834px !default; // Change to 9999px for always mobile layout
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})" !default;
 
 // Divider Styles
@@ -588,9 +588,10 @@ ul.user-setting{
 }
 
 .user-setting > li {
-  padding: emCalc(13px) !important; //override dropdown menu styles and make cart button appear fully on the menu bar
+  padding: emCalc(13px) emCalc(10px) !important; //override dropdown menu styles and make cart button appear fully on the menu bar
   color: white;
   cursor: pointer;
+  margin-left: 0 !important; //override default inline list styles
   &:hover{
     background-color: lighten($primary-color, 50%);
   }
@@ -661,6 +662,7 @@ ul.user-setting{
     padding-top: emCalc(30px);
   }
 }
+
 .slide-left{
   position: relative;
   left: -420px !important;
@@ -693,10 +695,19 @@ ul.user-setting{
   font-size: 0.75rem;
 }
 .settings-menu.open{
-  min-height: emCalc(240px) !important;
-  // height: auto;
-  visibility: visible !important;
+  min-height: emCalc(240px); 
+  visibility: visible;
 }
+
+.search-panel {
+  @include single-transition(all, 0.2s, ease-in);
+  padding: 10px;
+  &.open {
+    min-height: emCalc(100px) !important;
+  }
+  background-color: $base-color;
+}
+
 .user-setting-links{
   > li{
     a{

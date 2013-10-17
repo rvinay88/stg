@@ -79,6 +79,14 @@ $include-html-visibility-classes: $include-html-classes !default;
     &.hide-for-xlarge { display: table-cell !important; }
   }
   
+  @media screen and (max-width: 500px) {
+    .show-for-500 {
+      display: inherit;
+    }
+  }
+  @media screen and (min-width: 501px) {
+    .show-for-500 {display: none !important;}
+  }
   
   /* Medium Displays: 768px - 1279px */
 

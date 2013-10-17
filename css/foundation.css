@@ -129,7 +129,7 @@ a {
   /* line 380, foundation/components/_global.scss */
   a.white-link {
     color: white !important;
-    font-size: 0.8125rem; }
+    font-size: 0.75rem; }
     /* line 383, foundation/components/_global.scss */
     a.white-link:hover {
       color: white; }
@@ -682,44 +682,52 @@ th.hide-for-large-up,
 th.hide-for-xlarge {
   display: table-cell !important; }
 
+@media screen and (max-width: 500px) {
+  /* line 83, foundation/components/_visibility.scss */
+  .show-for-500 {
+    display: inherit; } }
+@media screen and (min-width: 501px) {
+  /* line 88, foundation/components/_visibility.scss */
+  .show-for-500 {
+    display: none !important; } }
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 768px) {
-  /* line 87, foundation/components/_visibility.scss */
+  /* line 95, foundation/components/_visibility.scss */
   .show-for-medium,
   .show-for-medium-up {
     display: inherit !important; }
 
-  /* line 89, foundation/components/_visibility.scss */
+  /* line 97, foundation/components/_visibility.scss */
   .show-for-small {
     display: none !important; }
 
-  /* line 91, foundation/components/_visibility.scss */
+  /* line 99, foundation/components/_visibility.scss */
   .hide-for-small {
     display: inherit !important; }
 
-  /* line 94, foundation/components/_visibility.scss */
+  /* line 102, foundation/components/_visibility.scss */
   .hide-for-medium,
   .hide-for-medium-up {
     display: none !important; }
 
   /* Specific visilbity for tables */
-  /* line 100, foundation/components/_visibility.scss */
+  /* line 108, foundation/components/_visibility.scss */
   table.show-for-medium, table.show-for-medium-up, table.hide-for-small {
     display: table; }
 
-  /* line 105, foundation/components/_visibility.scss */
+  /* line 113, foundation/components/_visibility.scss */
   thead.show-for-medium, thead.show-for-medium-up, thead.hide-for-small {
     display: table-header-group !important; }
 
-  /* line 110, foundation/components/_visibility.scss */
+  /* line 118, foundation/components/_visibility.scss */
   tbody.show-for-medium, tbody.show-for-medium-up, tbody.hide-for-small {
     display: table-row-group !important; }
 
-  /* line 115, foundation/components/_visibility.scss */
+  /* line 123, foundation/components/_visibility.scss */
   tr.show-for-medium, tr.show-for-medium-up, tr.hide-for-small {
     display: table-row !important; }
 
-  /* line 121, foundation/components/_visibility.scss */
+  /* line 129, foundation/components/_visibility.scss */
   td.show-for-medium, td.show-for-medium-up, td.hide-for-small,
   th.show-for-medium,
   th.show-for-medium-up,
@@ -727,44 +735,44 @@ th.hide-for-xlarge {
     display: table-cell !important; } }
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 1280px) {
-  /* line 128, foundation/components/_visibility.scss */
+  /* line 136, foundation/components/_visibility.scss */
   .show-for-large,
   .show-for-large-up {
     display: inherit !important; }
 
-  /* line 131, foundation/components/_visibility.scss */
+  /* line 139, foundation/components/_visibility.scss */
   .show-for-medium,
   .show-for-medium-down {
     display: none !important; }
 
-  /* line 134, foundation/components/_visibility.scss */
+  /* line 142, foundation/components/_visibility.scss */
   .hide-for-medium,
   .hide-for-medium-down {
     display: inherit !important; }
 
-  /* line 137, foundation/components/_visibility.scss */
+  /* line 145, foundation/components/_visibility.scss */
   .hide-for-large,
   .hide-for-large-up {
     display: none !important; }
 
   /* Specific visilbity for tables */
-  /* line 144, foundation/components/_visibility.scss */
+  /* line 152, foundation/components/_visibility.scss */
   table.show-for-large, table.show-for-large-up, table.hide-for-medium, table.hide-for-medium-down {
     display: table; }
 
-  /* line 150, foundation/components/_visibility.scss */
+  /* line 158, foundation/components/_visibility.scss */
   thead.show-for-large, thead.show-for-large-up, thead.hide-for-medium, thead.hide-for-medium-down {
     display: table-header-group !important; }
 
-  /* line 156, foundation/components/_visibility.scss */
+  /* line 164, foundation/components/_visibility.scss */
   tbody.show-for-large, tbody.show-for-large-up, tbody.hide-for-medium, tbody.hide-for-medium-down {
     display: table-row-group !important; }
 
-  /* line 162, foundation/components/_visibility.scss */
+  /* line 170, foundation/components/_visibility.scss */
   tr.show-for-large, tr.show-for-large-up, tr.hide-for-medium, tr.hide-for-medium-down {
     display: table-row !important; }
 
-  /* line 169, foundation/components/_visibility.scss */
+  /* line 177, foundation/components/_visibility.scss */
   td.show-for-large, td.show-for-large-up, td.hide-for-medium, td.hide-for-medium-down,
   th.show-for-large,
   th.show-for-large-up,
@@ -773,210 +781,210 @@ th.hide-for-xlarge {
     display: table-cell !important; } }
 /* X-Large Displays: 1400px and up */
 @media only screen and (min-width: 1440px) {
-  /* line 175, foundation/components/_visibility.scss */
+  /* line 183, foundation/components/_visibility.scss */
   .show-for-xlarge {
     display: inherit !important; }
 
-  /* line 178, foundation/components/_visibility.scss */
+  /* line 186, foundation/components/_visibility.scss */
   .show-for-large,
   .show-for-large-down {
     display: none !important; }
 
-  /* line 181, foundation/components/_visibility.scss */
+  /* line 189, foundation/components/_visibility.scss */
   .hide-for-large,
   .hide-for-large-down {
     display: inherit !important; }
 
-  /* line 183, foundation/components/_visibility.scss */
+  /* line 191, foundation/components/_visibility.scss */
   .hide-for-xlarge {
     display: none !important; }
 
   /* Specific visilbity for tables */
-  /* line 189, foundation/components/_visibility.scss */
+  /* line 197, foundation/components/_visibility.scss */
   table.show-for-xlarge, table.hide-for-large, table.hide-for-large-down {
     display: table; }
 
-  /* line 194, foundation/components/_visibility.scss */
+  /* line 202, foundation/components/_visibility.scss */
   thead.show-for-xlarge, thead.hide-for-large, thead.hide-for-large-down {
     display: table-header-group !important; }
 
-  /* line 199, foundation/components/_visibility.scss */
+  /* line 207, foundation/components/_visibility.scss */
   tbody.show-for-xlarge, tbody.hide-for-large, tbody.hide-for-large-down {
     display: table-row-group !important; }
 
-  /* line 204, foundation/components/_visibility.scss */
+  /* line 212, foundation/components/_visibility.scss */
   tr.show-for-xlarge, tr.hide-for-large, tr.hide-for-large-down {
     display: table-row !important; }
 
-  /* line 210, foundation/components/_visibility.scss */
+  /* line 218, foundation/components/_visibility.scss */
   td.show-for-xlarge, td.hide-for-large, td.hide-for-large-down,
   th.show-for-xlarge,
   th.hide-for-large,
   th.hide-for-large-down {
     display: table-cell !important; } }
 /* Orientation targeting */
-/* line 217, foundation/components/_visibility.scss */
+/* line 225, foundation/components/_visibility.scss */
 .show-for-landscape,
 .hide-for-portrait {
   display: inherit !important; }
 
-/* line 219, foundation/components/_visibility.scss */
+/* line 227, foundation/components/_visibility.scss */
 .hide-for-landscape,
 .show-for-portrait {
   display: none !important; }
 
 /* Specific visilbity for tables */
-/* line 224, foundation/components/_visibility.scss */
+/* line 232, foundation/components/_visibility.scss */
 table.hide-for-landscape, table.show-for-portrait {
   display: table; }
 
-/* line 228, foundation/components/_visibility.scss */
+/* line 236, foundation/components/_visibility.scss */
 thead.hide-for-landscape, thead.show-for-portrait {
   display: table-header-group !important; }
 
-/* line 232, foundation/components/_visibility.scss */
+/* line 240, foundation/components/_visibility.scss */
 tbody.hide-for-landscape, tbody.show-for-portrait {
   display: table-row-group !important; }
 
-/* line 236, foundation/components/_visibility.scss */
+/* line 244, foundation/components/_visibility.scss */
 tr.hide-for-landscape, tr.show-for-portrait {
   display: table-row !important; }
 
-/* line 241, foundation/components/_visibility.scss */
+/* line 249, foundation/components/_visibility.scss */
 td.hide-for-landscape, td.show-for-portrait,
 th.hide-for-landscape,
 th.show-for-portrait {
   display: table-cell !important; }
 
 @media only screen and (orientation: landscape) {
-  /* line 246, foundation/components/_visibility.scss */
+  /* line 254, foundation/components/_visibility.scss */
   .show-for-landscape,
   .hide-for-portrait {
     display: inherit !important; }
 
-  /* line 248, foundation/components/_visibility.scss */
+  /* line 256, foundation/components/_visibility.scss */
   .hide-for-landscape,
   .show-for-portrait {
     display: none !important; }
 
   /* Specific visilbity for tables */
-  /* line 253, foundation/components/_visibility.scss */
+  /* line 261, foundation/components/_visibility.scss */
   table.show-for-landscape, table.hide-for-portrait {
     display: table; }
 
-  /* line 257, foundation/components/_visibility.scss */
+  /* line 265, foundation/components/_visibility.scss */
   thead.show-for-landscape, thead.hide-for-portrait {
     display: table-header-group !important; }
 
-  /* line 261, foundation/components/_visibility.scss */
+  /* line 269, foundation/components/_visibility.scss */
   tbody.show-for-landscape, tbody.hide-for-portrait {
     display: table-row-group !important; }
 
-  /* line 265, foundation/components/_visibility.scss */
+  /* line 273, foundation/components/_visibility.scss */
   tr.show-for-landscape, tr.hide-for-portrait {
     display: table-row !important; }
 
-  /* line 270, foundation/components/_visibility.scss */
+  /* line 278, foundation/components/_visibility.scss */
   td.show-for-landscape, td.hide-for-portrait,
   th.show-for-landscape,
   th.hide-for-portrait {
     display: table-cell !important; } }
 @media only screen and (orientation: portrait) {
-  /* line 276, foundation/components/_visibility.scss */
+  /* line 284, foundation/components/_visibility.scss */
   .show-for-portrait,
   .hide-for-landscape {
     display: inherit !important; }
 
-  /* line 278, foundation/components/_visibility.scss */
+  /* line 286, foundation/components/_visibility.scss */
   .hide-for-portrait,
   .show-for-landscape {
     display: none !important; }
 
   /* Specific visilbity for tables */
-  /* line 283, foundation/components/_visibility.scss */
+  /* line 291, foundation/components/_visibility.scss */
   table.show-for-portrait, table.hide-for-landscape {
     display: table; }
 
-  /* line 287, foundation/components/_visibility.scss */
+  /* line 295, foundation/components/_visibility.scss */
   thead.show-for-portrait, thead.hide-for-landscape {
     display: table-header-group !important; }
 
-  /* line 291, foundation/components/_visibility.scss */
+  /* line 299, foundation/components/_visibility.scss */
   tbody.show-for-portrait, tbody.hide-for-landscape {
     display: table-row-group !important; }
 
-  /* line 295, foundation/components/_visibility.scss */
+  /* line 303, foundation/components/_visibility.scss */
   tr.show-for-portrait, tr.hide-for-landscape {
     display: table-row !important; }
 
-  /* line 300, foundation/components/_visibility.scss */
+  /* line 308, foundation/components/_visibility.scss */
   td.show-for-portrait, td.hide-for-landscape,
   th.show-for-portrait,
   th.hide-for-landscape {
     display: table-cell !important; } }
 /* Touch-enabled device targeting */
-/* line 305, foundation/components/_visibility.scss */
+/* line 313, foundation/components/_visibility.scss */
 .show-for-touch {
   display: none !important; }
 
-/* line 306, foundation/components/_visibility.scss */
+/* line 314, foundation/components/_visibility.scss */
 .hide-for-touch {
   display: inherit !important; }
 
-/* line 307, foundation/components/_visibility.scss */
+/* line 315, foundation/components/_visibility.scss */
 .touch .show-for-touch {
   display: inherit !important; }
 
-/* line 308, foundation/components/_visibility.scss */
+/* line 316, foundation/components/_visibility.scss */
 .touch .hide-for-touch {
   display: none !important; }
 
 /* Specific visilbity for tables */
-/* line 311, foundation/components/_visibility.scss */
+/* line 319, foundation/components/_visibility.scss */
 table.hide-for-touch {
   display: table; }
 
-/* line 312, foundation/components/_visibility.scss */
+/* line 320, foundation/components/_visibility.scss */
 .touch table.show-for-touch {
   display: table; }
 
-/* line 313, foundation/components/_visibility.scss */
+/* line 321, foundation/components/_visibility.scss */
 thead.hide-for-touch {
   display: table-header-group !important; }
 
-/* line 314, foundation/components/_visibility.scss */
+/* line 322, foundation/components/_visibility.scss */
 .touch thead.show-for-touch {
   display: table-header-group !important; }
 
-/* line 315, foundation/components/_visibility.scss */
+/* line 323, foundation/components/_visibility.scss */
 tbody.hide-for-touch {
   display: table-row-group !important; }
 
-/* line 316, foundation/components/_visibility.scss */
+/* line 324, foundation/components/_visibility.scss */
 .touch tbody.show-for-touch {
   display: table-row-group !important; }
 
-/* line 317, foundation/components/_visibility.scss */
+/* line 325, foundation/components/_visibility.scss */
 tr.hide-for-touch {
   display: table-row !important; }
 
-/* line 318, foundation/components/_visibility.scss */
+/* line 326, foundation/components/_visibility.scss */
 .touch tr.show-for-touch {
   display: table-row !important; }
 
-/* line 319, foundation/components/_visibility.scss */
+/* line 327, foundation/components/_visibility.scss */
 td.hide-for-touch {
   display: table-cell !important; }
 
-/* line 320, foundation/components/_visibility.scss */
+/* line 328, foundation/components/_visibility.scss */
 .touch td.show-for-touch {
   display: table-cell !important; }
 
-/* line 321, foundation/components/_visibility.scss */
+/* line 329, foundation/components/_visibility.scss */
 th.hide-for-touch {
   display: table-cell !important; }
 
-/* line 322, foundation/components/_visibility.scss */
+/* line 330, foundation/components/_visibility.scss */
 .touch th.show-for-touch {
   display: table-cell !important; }
 
@@ -2008,10 +2016,10 @@ button, .button {
     font-size: 0.75rem; }
   /* line 197, foundation/components/_buttons.scss */
   button.small, .button.small {
-    padding-top: 0.5625rem;
-    padding-right: 1.125rem;
-    padding-bottom: 0.625rem;
-    padding-left: 1.125rem;
+    padding-top: 0.59375rem;
+    padding-right: 1.1875rem;
+    padding-bottom: 0.65625rem;
+    padding-left: 1.1875rem;
     font-size: 0.75rem; }
   /* line 198, foundation/components/_buttons.scss */
   button.tiny, .button.tiny {
@@ -2106,8 +2114,8 @@ button, .button {
     -webkit-appearance: none; }
   /* line 215, foundation/components/_buttons.scss */
   button.small, .button.small {
-    padding-top: 0.625rem;
-    padding-bottom: 0.5625rem;
+    padding-top: 0.65625rem;
+    padding-bottom: 0.59375rem;
     -webkit-appearance: none; }
   /* line 216, foundation/components/_buttons.scss */
   button.large, .button.large {
@@ -2558,35 +2566,38 @@ select::-ms-expand {
 
 /* line 1, foundation/components/_isotope.scss */
 .portrait {
-  width: 250px; }
+  width: 250px;
+  height: 381px; }
 
-/* line 4, foundation/components/_isotope.scss */
+/* line 5, foundation/components/_isotope.scss */
 .landscape {
-  height: 167px; }
+  width: 320px;
+  height: 213.5px; }
 
-/* line 7, foundation/components/_isotope.scss */
+/* line 9, foundation/components/_isotope.scss */
 .catalogue {
   margin-right: 10px;
   font-size: 80%; }
 
-/* line 11, foundation/components/_isotope.scss */
+/* line 13, foundation/components/_isotope.scss */
 .isotope-container {
   list-style: none;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 19, foundation/components/_isotope.scss */
+/* line 22, foundation/components/_isotope.scss */
 .isotope-item {
   z-index: 2; }
 
-/* line 23, foundation/components/_isotope.scss */
+/* line 26, foundation/components/_isotope.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1; }
 
 /**** Isotope CSS3 transitions ****/
-/* line 31, foundation/components/_isotope.scss */
+/* line 34, foundation/components/_isotope.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -2595,7 +2606,7 @@ select::-ms-expand {
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s; }
 
-/* line 39, foundation/components/_isotope.scss */
+/* line 42, foundation/components/_isotope.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -2603,7 +2614,7 @@ select::-ms-expand {
   -o-transition-property: height, width;
   transition-property: height, width; }
 
-/* line 47, foundation/components/_isotope.scss */
+/* line 50, foundation/components/_isotope.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -2612,7 +2623,7 @@ select::-ms-expand {
   transition-property: transform, opacity; }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 59, foundation/components/_isotope.scss */
+/* line 62, foundation/components/_isotope.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -3650,7 +3661,7 @@ select::-ms-expand {
     /* line 137, foundation/components/_top-bar.scss */
     .top-bar .toggle-topbar a {
       text-transform: uppercase;
-      font-size: 0.8125rem;
+      font-size: 0.75rem;
       font-weight: bold;
       position: relative;
       display: block;
@@ -3748,7 +3759,7 @@ select::-ms-expand {
     padding: 12px 0 12px 0;
     padding-left: 15px;
     font-family: futura;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: normal;
     background: white; }
     /* line 271, foundation/components/_top-bar.scss */
@@ -3758,7 +3769,7 @@ select::-ms-expand {
     /* line 276, foundation/components/_top-bar.scss */
     .top-bar-section ul li > a.button {
       background: black;
-      font-size: 0.8125rem; }
+      font-size: 0.75rem; }
       /* line 279, foundation/components/_top-bar.scss */
       .top-bar-section ul li > a.button.hover {
         background: black; }
@@ -3858,7 +3869,7 @@ select::-ms-expand {
 
 /* line 390, foundation/components/_top-bar.scss */
 .top-bar-js-breakpoint {
-  width: 780px !important;
+  width: 834px !important;
   visibility: hidden; }
 
 /* line 394, foundation/components/_top-bar.scss */
@@ -3870,7 +3881,7 @@ select::-ms-expand {
   visibility: visible !important;
   opacity: 1 !important; }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 834px) {
   /* line 398, foundation/components/_top-bar.scss */
   .top-bar {
     background: black;
@@ -4045,32 +4056,33 @@ ul.user-setting {
 
 /* line 590, foundation/components/_top-bar.scss */
 .user-setting > li {
-  padding: 0.8125rem !important;
+  padding: 0.8125rem 0.625rem !important;
   color: white;
-  cursor: pointer; }
-  /* line 594, foundation/components/_top-bar.scss */
+  cursor: pointer;
+  margin-left: 0 !important; }
+  /* line 595, foundation/components/_top-bar.scss */
   .user-setting > li:hover {
     background-color: gray; }
-  /* line 597, foundation/components/_top-bar.scss */
+  /* line 598, foundation/components/_top-bar.scss */
   .user-setting > li.user-img-li {
     padding: 0 !important; }
 
-/* line 601, foundation/components/_top-bar.scss */
+/* line 602, foundation/components/_top-bar.scss */
 .cartno {
   display: inline;
   color: white;
   font-size: 0.75rem; }
 
-/* line 606, foundation/components/_top-bar.scss */
+/* line 607, foundation/components/_top-bar.scss */
 .user-setting-content {
   display: inline-block;
   margin-right: 2px; }
 
-/* line 611, foundation/components/_top-bar.scss */
+/* line 612, foundation/components/_top-bar.scss */
 .menu-wrap {
   background-color: white; }
 
-/* line 615, foundation/components/_top-bar.scss */
+/* line 616, foundation/components/_top-bar.scss */
 .settings-menu {
   position: absolute;
   top: 45px;
@@ -4087,16 +4099,16 @@ ul.user-setting {
   z-index: 120;
   overflow: hidden; }
   @media screen and (max-width: 500px) {
-    /* line 615, foundation/components/_top-bar.scss */
+    /* line 616, foundation/components/_top-bar.scss */
     .settings-menu {
       width: 250px; } }
-  /* line 628, foundation/components/_top-bar.scss */
+  /* line 629, foundation/components/_top-bar.scss */
   .settings-menu#menu-cart {
     background-color: white; }
-  /* line 631, foundation/components/_top-bar.scss */
+  /* line 632, foundation/components/_top-bar.scss */
   .settings-menu#menu-settings {
     background-color: transparent; }
-  /* line 635, foundation/components/_top-bar.scss */
+  /* line 636, foundation/components/_top-bar.scss */
   .settings-menu .pane-container {
     width: 820px;
     min-height: 15.625rem;
@@ -4106,10 +4118,10 @@ ul.user-setting {
     -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25); }
     @media screen and (max-width: 500px) {
-      /* line 635, foundation/components/_top-bar.scss */
+      /* line 636, foundation/components/_top-bar.scss */
       .settings-menu .pane-container {
         width: 520px; } }
-  /* line 645, foundation/components/_top-bar.scss */
+  /* line 646, foundation/components/_top-bar.scss */
   .settings-menu .pane-1, .settings-menu .pane-2 {
     width: 410px;
     padding-left: 20px;
@@ -4124,35 +4136,35 @@ ul.user-setting {
     min-height: 15.625rem;
     z-index: 120; }
     @media screen and (max-width: 500px) {
-      /* line 645, foundation/components/_top-bar.scss */
+      /* line 646, foundation/components/_top-bar.scss */
       .settings-menu .pane-1, .settings-menu .pane-2 {
         width: 250px; } }
-  /* line 660, foundation/components/_top-bar.scss */
+  /* line 661, foundation/components/_top-bar.scss */
   .settings-menu .pane-1 {
     padding-top: 1.875rem; }
 
-/* line 664, foundation/components/_top-bar.scss */
+/* line 666, foundation/components/_top-bar.scss */
 .slide-left {
   position: relative;
   left: -420px !important; }
   @media screen and (max-width: 500px) {
-    /* line 664, foundation/components/_top-bar.scss */
+    /* line 666, foundation/components/_top-bar.scss */
     .slide-left {
       left: -260px !important; } }
 
-/* line 672, foundation/components/_top-bar.scss */
+/* line 674, foundation/components/_top-bar.scss */
 #menu-cart {
   overflow-y: auto; }
 
-/* line 675, foundation/components/_top-bar.scss */
+/* line 677, foundation/components/_top-bar.scss */
 #trigger-menu-settings {
   max-height: 45px; }
 
-/* line 682, foundation/components/_top-bar.scss */
+/* line 684, foundation/components/_top-bar.scss */
 .avatar-img {
   margin-top: -2px; }
 
-/* line 687, foundation/components/_top-bar.scss */
+/* line 689, foundation/components/_top-bar.scss */
 .username {
   overflow: hidden;
   white-space: nowrap;
@@ -4161,64 +4173,75 @@ ul.user-setting {
   display: inline-block !important;
   font-size: 0.75rem; }
 
-/* line 695, foundation/components/_top-bar.scss */
+/* line 697, foundation/components/_top-bar.scss */
 .settings-menu.open {
-  min-height: 15rem !important;
-  visibility: visible !important; }
+  min-height: 15rem;
+  visibility: visible; }
 
 /* line 702, foundation/components/_top-bar.scss */
+.search-panel {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  padding: 10px;
+  background-color: white; }
+  /* line 705, foundation/components/_top-bar.scss */
+  .search-panel.open {
+    min-height: 6.25rem !important; }
+
+/* line 713, foundation/components/_top-bar.scss */
 .user-setting-links > li a {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: normal;
   padding: 0.375rem 0.75rem; }
   @media screen and (max-width: 500px) {
-    /* line 702, foundation/components/_top-bar.scss */
+    /* line 713, foundation/components/_top-bar.scss */
     .user-setting-links > li a {
       padding: 0.125rem 0.375rem 0.125rem 0.375rem; } }
-  /* line 711, foundation/components/_top-bar.scss */
+  /* line 722, foundation/components/_top-bar.scss */
   .user-setting-links > li a:hover {
     background-color: rgba(0, 0, 0, 0.25); }
 
-/* line 719, foundation/components/_top-bar.scss */
+/* line 730, foundation/components/_top-bar.scss */
 .user-setting-labels {
   margin-top: 0.75rem; }
 
 @media screen and (max-width: 500px) {
-  /* line 722, foundation/components/_top-bar.scss */
+  /* line 733, foundation/components/_top-bar.scss */
   .user-setting-username {
     margin-top: 0 !important; } }
 
-/* line 729, foundation/components/_top-bar.scss */
+/* line 740, foundation/components/_top-bar.scss */
 .user-img-small {
   width: 19px;
   height: 19px; }
 
-/* line 734, foundation/components/_top-bar.scss */
+/* line 745, foundation/components/_top-bar.scss */
 .user-img {
   width: 150px;
   height: 150px; }
   @media screen and (max-width: 500px) {
-    /* line 734, foundation/components/_top-bar.scss */
+    /* line 745, foundation/components/_top-bar.scss */
     .user-img {
       width: 75px;
       height: 75px; } }
 
-/* line 744, foundation/components/_top-bar.scss */
+/* line 755, foundation/components/_top-bar.scss */
 .has-dropdown > ul.dropdown > li.js-generated {
   display: none; }
 
-@media screen and (max-width: 780px) {
-  /* line 748, foundation/components/_top-bar.scss */
+@media screen and (max-width: 834px) {
+  /* line 759, foundation/components/_top-bar.scss */
   .moved > ul.dropdown > li.js-generated {
     display: block !important; } }
 
 @media screen and (min-width: 769px) {
-  /* line 755, foundation/components/_top-bar.scss */
+  /* line 766, foundation/components/_top-bar.scss */
   .meet-the-designers {
     min-width: 470px !important; }
 
-  /* line 756, foundation/components/_top-bar.scss */
+  /* line 767, foundation/components/_top-bar.scss */
   ul.meet-the-designers > li {
     width: 150px !important;
     float: left;
@@ -5903,19 +5926,23 @@ a.th {
   min-width: 150px; }
 
 /* line 342, foundation/components/_custom.scss */
+.catalogue {
+  font-size: 80%; }
+
+/* line 346, foundation/components/_custom.scss */
 .home-tt {
   line-height: 1.3; }
 
-/* line 345, foundation/components/_custom.scss */
+/* line 349, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold;
   text-transform: uppercase; }
-  /* line 349, foundation/components/_custom.scss */
+  /* line 353, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 354, foundation/components/_custom.scss */
+/* line 358, foundation/components/_custom.scss */
 .designer-about {
   font-family: Helvetica;
   font-weight: normal;
@@ -5926,71 +5953,71 @@ a.th {
   margin-bottom: 0.625rem;
   text-rendering: optimizeLegibility; }
 
-/* line 365, foundation/components/_custom.scss */
+/* line 369, foundation/components/_custom.scss */
 .more {
   height: auto !important; }
 
-/* line 369, foundation/components/_custom.scss */
+/* line 373, foundation/components/_custom.scss */
 .small-text, .user-setting-username {
   font-size: 0.6875rem;
   text-transform: uppercase;
   margin-top: 20px;
   white-space: nowrap; }
 
-/* line 376, foundation/components/_custom.scss */
+/* line 380, foundation/components/_custom.scss */
 .fixed-170 {
   width: 170px;
   margin: 0 0.625rem 0.75rem 0; }
 
-/* line 380, foundation/components/_custom.scss */
+/* line 384, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
   @media screen and (max-width: 768px) {
-    /* line 380, foundation/components/_custom.scss */
+    /* line 384, foundation/components/_custom.scss */
     .fixed-360 {
       width: auto; } }
 
-/* line 387, foundation/components/_custom.scss */
+/* line 391, foundation/components/_custom.scss */
 .left-margin {
   margin-left: 0.625rem; }
 
-/* line 390, foundation/components/_custom.scss */
+/* line 394, foundation/components/_custom.scss */
 .right-margin, .pagerviewall {
   margin-right: 0.625rem; }
 
-/* line 394, foundation/components/_custom.scss */
+/* line 398, foundation/components/_custom.scss */
 .top-margin, .errorSummary, .successMessage {
   margin-top: 1rem; }
 
-/* line 398, foundation/components/_custom.scss */
+/* line 402, foundation/components/_custom.scss */
 .bottom-margin, #reveal-sidebar {
   margin-bottom: 1rem; }
 
-/* line 402, foundation/components/_custom.scss */
+/* line 406, foundation/components/_custom.scss */
 .no-top {
   margin-top: 0 !important; }
 
-/* line 405, foundation/components/_custom.scss */
+/* line 409, foundation/components/_custom.scss */
 .no-bottom {
   margin-bottom: 0 !important; }
 
-/* line 408, foundation/components/_custom.scss */
+/* line 412, foundation/components/_custom.scss */
 .no-left, .sidebar-active, .sidebar-actives {
   margin-left: 0 !important; }
 
-/* line 411, foundation/components/_custom.scss */
+/* line 415, foundation/components/_custom.scss */
 .no-right {
   margin-right: 0 !important; }
 
-/* line 415, foundation/components/_custom.scss */
+/* line 419, foundation/components/_custom.scss */
 .register-button {
   margin-bottom: 0.5rem !important; }
 
-/* line 419, foundation/components/_custom.scss */
+/* line 423, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
-/* line 423, foundation/components/_custom.scss */
+/* line 427, foundation/components/_custom.scss */
 .social-buttons {
   height: 42px;
   *zoom: 1;
@@ -6006,7 +6033,7 @@ a.th {
   .social-buttons:after {
     clear: both; }
 
-/* line 434, foundation/components/_custom.scss */
+/* line 438, foundation/components/_custom.scss */
 .homepage-wrapper {
   width: 100%;
   position: relative;
@@ -6014,75 +6041,75 @@ a.th {
   overflow-x: hidden;
   max-width: 1366px; }
 
-/* line 441, foundation/components/_custom.scss */
+/* line 445, foundation/components/_custom.scss */
 .hotspot-holder {
   width: 100%;
   position: relative; }
-  /* line 444, foundation/components/_custom.scss */
+  /* line 448, foundation/components/_custom.scss */
   .hotspot-holder > img {
     width: 100%; }
 
-/* line 449, foundation/components/_custom.scss */
+/* line 453, foundation/components/_custom.scss */
 .orders > * {
   font-size: 0.75rem; }
   @media screen and (max-width: 450px) {
-    /* line 449, foundation/components/_custom.scss */
+    /* line 453, foundation/components/_custom.scss */
     .orders > * {
       font-size: 0.5rem; } }
 
-/* line 458, foundation/components/_custom.scss */
+/* line 462, foundation/components/_custom.scss */
 .total {
   margin-bottom: 0; }
-  /* line 460, foundation/components/_custom.scss */
+  /* line 464, foundation/components/_custom.scss */
   .total > td {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
-/* line 466, foundation/components/_custom.scss */
+/* line 470, foundation/components/_custom.scss */
 .total-table {
   min-width: 60%;
   width: 60%; }
 
-/* line 471, foundation/components/_custom.scss */
+/* line 475, foundation/components/_custom.scss */
 .total-bill > td {
   font-weight: bold;
   color: black; }
-  /* line 474, foundation/components/_custom.scss */
+  /* line 478, foundation/components/_custom.scss */
   .total-bill > td:first-child {
     border-bottom-left-radius: 0.25rem; }
-  /* line 477, foundation/components/_custom.scss */
+  /* line 481, foundation/components/_custom.scss */
   .total-bill > td:last-child {
     border-bottom-right-radius: 0.25rem; }
 
-/* line 482, foundation/components/_custom.scss */
+/* line 486, foundation/components/_custom.scss */
 .coupon {
   max-width: 150px;
   margin-bottom: 0 !important; }
 
-/* line 487, foundation/components/_custom.scss */
+/* line 491, foundation/components/_custom.scss */
 .text {
   font-size: 0.75rem; }
 
-/* line 491, foundation/components/_custom.scss */
+/* line 495, foundation/components/_custom.scss */
 .info-text {
   font-size: 0.625rem;
   color: #666666;
   line-height: 1.5; }
 
-/* line 497, foundation/components/_custom.scss */
+/* line 501, foundation/components/_custom.scss */
 .highlight, .user-setting-username, .designer-nav-active {
   font-weight: bold; }
 
-/* line 502, foundation/components/_custom.scss */
+/* line 506, foundation/components/_custom.scss */
 .errorMessage {
   font-size: 0.75rem;
   color: #c60f13; }
 
-/* line 507, foundation/components/_custom.scss */
+/* line 511, foundation/components/_custom.scss */
 .error > label {
   display: none; }
 
-/* line 511, foundation/components/_custom.scss */
+/* line 515, foundation/components/_custom.scss */
 .shopping-block-img {
   width: 180px;
   float: left;
@@ -6092,12 +6119,12 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 511, foundation/components/_custom.scss */
+    /* line 515, foundation/components/_custom.scss */
     .shopping-block-img {
       margin: 0 auto;
       float: none !important; } }
 
-/* line 523, foundation/components/_custom.scss */
+/* line 527, foundation/components/_custom.scss */
 .shopping-block-desc {
   width: 45%;
   margin-left: 10px;
@@ -6106,13 +6133,13 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 523, foundation/components/_custom.scss */
+    /* line 527, foundation/components/_custom.scss */
     .shopping-block-desc {
       width: 100%;
       float: none !important;
       margin-left: 0; } }
 
-/* line 535, foundation/components/_custom.scss */
+/* line 539, foundation/components/_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -6134,38 +6161,38 @@ a.th {
   float: left;
   min-height: 307px; }
   @media screen and (max-width: 635px) {
-    /* line 535, foundation/components/_custom.scss */
+    /* line 539, foundation/components/_custom.scss */
     .shopping-block {
       width: 45%;
       float: none;
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 636px) and (max-width: 780px) {
-    /* line 535, foundation/components/_custom.scss */
+    /* line 539, foundation/components/_custom.scss */
     .shopping-block {
       width: 48%; } }
-  /* line 563, foundation/components/_custom.scss */
+  /* line 567, foundation/components/_custom.scss */
   .shopping-block.full {
     width: 100% !important; }
-    /* line 565, foundation/components/_custom.scss */
+    /* line 569, foundation/components/_custom.scss */
     .shopping-block.full.shopping-block-img {
       min-width: 160px !important; }
     @media screen and (max-width: 1048px) {
-      /* line 569, foundation/components/_custom.scss */
+      /* line 573, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-desc {
         width: 50% !important;
         float: left; }
-      /* line 573, foundation/components/_custom.scss */
+      /* line 577, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
 
-/* line 581, foundation/components/_custom.scss */
+/* line 585, foundation/components/_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black; }
 
-/* line 586, foundation/components/_custom.scss */
+/* line 590, foundation/components/_custom.scss */
 .errorSummary {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -6183,12 +6210,12 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 594, foundation/components/_custom.scss */
+  /* line 598, foundation/components/_custom.scss */
   .errorSummary ul li {
     list-style: none;
     color: black; }
 
-/* line 601, foundation/components/_custom.scss */
+/* line 605, foundation/components/_custom.scss */
 .successMessage {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -6206,17 +6233,17 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 609, foundation/components/_custom.scss */
+  /* line 613, foundation/components/_custom.scss */
   .successMessage ul li {
     list-style: none;
     color: black; }
 
-/* line 616, foundation/components/_custom.scss */
+/* line 620, foundation/components/_custom.scss */
 .thankyou {
   color: black;
   font: italic 7em futura; }
 
-/* line 622, foundation/components/_custom.scss */
+/* line 626, foundation/components/_custom.scss */
 .loading-indicator {
   height: 80px;
   width: 80px;
@@ -6227,7 +6254,7 @@ a.th {
   top: 0;
   left: 43%; }
 
-/* line 653, foundation/components/_custom.scss */
+/* line 657, foundation/components/_custom.scss */
 .promo-gallery {
   min-width: 420px;
   max-width: 1366px;
@@ -6239,7 +6266,7 @@ a.th {
   margin: auto;
   overflow: hidden; }
 
-/* line 665, foundation/components/_custom.scss */
+/* line 669, foundation/components/_custom.scss */
 .promo-gallery .mask {
   overflow: hidden;
   position: relative;
@@ -6249,18 +6276,18 @@ a.th {
   min-height: 660px;
   max-height: 768px; }
 
-/* line 675, foundation/components/_custom.scss */
+/* line 679, foundation/components/_custom.scss */
 .cycle-slide-active > img {
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
-/* line 680, foundation/components/_custom.scss */
+/* line 684, foundation/components/_custom.scss */
 #smodal {
   position: absolute;
   padding: 8px;
   z-index: 700; }
 
-/* line 686, foundation/components/_custom.scss */
+/* line 690, foundation/components/_custom.scss */
 #smodal-overlay {
   position: fixed;
   top: 0;
@@ -6272,7 +6299,7 @@ a.th {
   filter: alpha(opacity=50);
   z-index: 700; }
 
-/* line 698, foundation/components/_custom.scss */
+/* line 702, foundation/components/_custom.scss */
 .box-bg {
   background: #fff no-repeat center top;
   width: 100%;
@@ -6285,17 +6312,17 @@ a.th {
   position: relative;
   padding: 10px; }
 
-/* line 711, foundation/components/_custom.scss */
+/* line 715, foundation/components/_custom.scss */
 .box-content {
   height: 430px;
   border: 1px dashed grey; }
 
-/* line 716, foundation/components/_custom.scss */
+/* line 720, foundation/components/_custom.scss */
 .box-content2 {
   display: table;
   height: 100%; }
 
-/* line 721, foundation/components/_custom.scss */
+/* line 725, foundation/components/_custom.scss */
 .box-content2 .leftside {
   padding-left: 3%;
   width: 50%;
@@ -6304,11 +6331,11 @@ a.th {
   display: table-cell;
   vertical-align: middle; }
   @media screen and (max-width: 550px) {
-    /* line 721, foundation/components/_custom.scss */
+    /* line 725, foundation/components/_custom.scss */
     .box-content2 .leftside {
       display: none; } }
 
-/* line 733, foundation/components/_custom.scss */
+/* line 737, foundation/components/_custom.scss */
 .box-content2 .rightside {
   padding-left: 10px;
   padding-right: 10px;
@@ -6318,23 +6345,23 @@ a.th {
   min-width: 250px;
   min-height: 430px; }
 
-/* line 743, foundation/components/_custom.scss */
+/* line 747, foundation/components/_custom.scss */
 .rightside-wrap {
   position: relative;
   width: 100%; }
 
-/* line 749, foundation/components/_custom.scss */
+/* line 753, foundation/components/_custom.scss */
 .box-content2 .chosen-container {
   width: 100% !important; }
 
-/* line 753, foundation/components/_custom.scss */
+/* line 757, foundation/components/_custom.scss */
 .card {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; }
 
-/* line 760, foundation/components/_custom.scss */
+/* line 764, foundation/components/_custom.scss */
 .front, .back, .side {
   z-index: 1;
   opacity: 0;
@@ -6349,13 +6376,13 @@ a.th {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
 
-/* line 775, foundation/components/_custom.scss */
+/* line 779, foundation/components/_custom.scss */
 .show {
   z-index: 2;
   opacity: 1;
   visibility: visible; }
 
-/* line 781, foundation/components/_custom.scss */
+/* line 785, foundation/components/_custom.scss */
 .flip {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -6363,7 +6390,7 @@ a.th {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 790, foundation/components/_custom.scss */
+/* line 794, foundation/components/_custom.scss */
 .f-signin, .g-signin {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
@@ -6374,13 +6401,13 @@ a.th {
   color: white;
   width: 50px; }
 
-/* line 799, foundation/components/_custom.scss */
+/* line 803, foundation/components/_custom.scss */
 .f-signin {
   background-color: #4863ae;
   padding-left: 0;
   padding-right: 10px; }
 
-/* line 804, foundation/components/_custom.scss */
+/* line 808, foundation/components/_custom.scss */
 .g-signin {
   background-color: #cd3a25;
   background-image: -moz-linear-gradient(top, #cd3a25, #cd3a25);
@@ -6391,85 +6418,88 @@ a.th {
   background-image: linear-gradient(top, #cd3a25, #cd3a25);
   background-repeat: repeat-x; }
 
-/* line 818, foundation/components/_custom.scss */
+/* line 822, foundation/components/_custom.scss */
 .login-modal-copy {
   font-weight: bold;
   font-size: 1rem; }
 
-/* line 825, foundation/components/_custom.scss */
+/* line 829, foundation/components/_custom.scss */
 .black {
   color: black; }
 
-/* line 829, foundation/components/_custom.scss */
+/* line 833, foundation/components/_custom.scss */
 .login-social-buttons {
   display: inline-block;
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
 /*----Hotspot Tooltips */
-/* line 839, foundation/components/_custom.scss */
+/* line 843, foundation/components/_custom.scss */
 .product-image, .home-designer-image {
   width: 100%; }
 
-/* line 844, foundation/components/_custom.scss */
+/* line 848, foundation/components/_custom.scss */
 .product-image {
   max-width: 200px; }
 
-/* line 847, foundation/components/_custom.scss */
+/* line 851, foundation/components/_custom.scss */
 .home-designer-image {
   max-width: 325px; }
 
 /* Disable hotspots <768px */
 @media screen and (max-width: 767px) {
-  /* line 854, foundation/components/_custom.scss */
+  /* line 858, foundation/components/_custom.scss */
   .hs-wrap {
     display: none !important; } }
-/* line 859, foundation/components/_custom.scss */
+/* line 863, foundation/components/_custom.scss */
 .footer-links {
   margin-top: 6px; }
 
-/* line 863, foundation/components/_custom.scss */
+/* line 867, foundation/components/_custom.scss */
 .footer-list, .footer-links > ul > li > a {
   font-family: futura;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
-  /* line 868, foundation/components/_custom.scss */
+  /* line 872, foundation/components/_custom.scss */
   .footer-list {
     text-align: center;
-    font-size: 12px;
     display: inline-block; } }
 
-/* line 876, foundation/components/_custom.scss */
+/* line 879, foundation/components/_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
-/* line 883, foundation/components/_custom.scss */
+/* line 886, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 887, foundation/components/_custom.scss */
+/* line 890, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 892, foundation/components/_custom.scss */
+/* line 895, foundation/components/_custom.scss */
 .prod-name {
   text-transform: capitalize;
-  color: black; }
+  color: black;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
-/* line 898, foundation/components/_custom.scss */
+/* line 905, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 904, foundation/components/_custom.scss */
+/* line 911, foundation/components/_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 908, foundation/components/_custom.scss */
+/* line 915, foundation/components/_custom.scss */
 #profileLongStory > div {
   font-family: Helvetica;
   font-size: 12px;

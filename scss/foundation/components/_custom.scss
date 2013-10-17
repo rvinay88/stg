@@ -339,6 +339,10 @@
   min-width: 150px;
 }
 
+.catalogue {
+  font-size: 80%;
+}
+
 .home-tt {
   line-height: 1.3;
 }
@@ -862,13 +866,12 @@
 
 .footer-list, .footer-links > ul > li > a {
   font-family: futura;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 .footer-list {
   @media screen and (max-width: 768px){
    text-align: center;
-   font-size: 12px;
    display: inline-block;
  }
 }
@@ -893,6 +896,10 @@
   @extend %grid-info-base;
   text-transform: capitalize;
   color: $primary-color;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .shipped{

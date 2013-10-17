@@ -379,7 +379,7 @@ a:hover { cursor: $cursor-pointer-value; }
     text-decoration: none;
     &.white-link{
       color: white !important;
-      font-size: emCalc(13px);
+      font-size: emCalc(12px);
       &:hover{
         color: white;
       }

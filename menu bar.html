@@ -18,7 +18,7 @@
 
 <body>
 
-  <header class="navigation">
+  <header class="navigation contain-to-grid sticky">
     <div class="row">
       <div class="nav">
         <nav class="top-bar" data-options="is_hover:true">
@@ -37,7 +37,7 @@
 
               <li class="active"><a href="#" class="no-dec">What's New</a></li>
 
-              <li class="has-dropdown"><a href="#" class="no-dec">Meet the designers</a>
+              <li class="has-dropdown"><a href="#" class="no-dec">Designers</a>
                 <ul class="dropdown meet-the-designers">
                   <li><a href="">Anja</a></li>
                   <li><a href="">Miri</a></li>
@@ -99,11 +99,15 @@
                 </ul>
               </li>
               <li><a href="" class="no-dec">Sale</a></li>
+              <li><a href="" class="no-dec">Blog <i class="icon-external-link"></i></a></li>
             </ul>
           </section>
           <!-- Right Nav Section -->
         </nav>
         <ul class="inline-list user-setting">
+          <li class="trigger-search">
+            <i class="icon-search"></i>
+          </li>
           <li id="trigger-menu-cart">
             <i class="icon-suitcase inline-icon settings-icon"></i>
             <span class="cartno">11</span>
@@ -217,6 +221,16 @@
           </article>
         </div>
       </div>
+      
+      <div class="settings-menu search-panel">
+        <div class="large-12 columns"><p class="no-bottom">Search for Designer or Product</p></div>
+        <div class="small-7 large-9 columns">
+          <input type="text" class="left search-box"> 
+        </div>
+        <div class="small-5 large-3 columns">
+          <div class="inline button small">Search</div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -230,7 +244,32 @@
   </div>
 
   <div class="clearfix"></div>
-
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a href="" class="trigger-search"><img src="http://placehold.it/300/300" alt=""></a>
   <footer class="footer">
     <div class="row">
       <div class="black-bg large-12 columns">
@@ -312,37 +351,45 @@
 
   <script>
   $('#trigger-menu-settings').click( function(event) {
-    $('#menu-cart').removeClass('open');
+    $('#menu-cart, .search-panel').removeClass('open');
     $('#menu-settings').toggleClass('open');
     event.stopPropagation();
   });
   </script>
   <script>
   $('#trigger-menu-cart').click( function(event) {
-    $('#menu-settings').removeClass('open');
+    $('#menu-settings, .search-panel').removeClass('open');
     $('#menu-cart').toggleClass('open');
     event.stopPropagation();
   });
   </script>
   <script>
-  $('#trigger-preferences-pane').click(function(event) {
+  $('.trigger-search').click( function (event) {
+    $('#menu-cart, #menu-settings').removeClass('open');
+    $('.search-panel').toggleClass('open');
+    event.preventDefault();
+    event.stopPropagation();
+  });
+  </script>
+  
+  <script>
+  $('#trigger-preferences-pane').click(function (event) {
     $('.pane-1, .pane-2').addClass('slide-left');
     event.preventDefault();
     event.stopPropagation();
   });
-  $('#trigger-settings-pane').click(function(event) {
+  $('#trigger-settings-pane').click(function (event) {
     $('.pane-1, .pane-2').removeClass('slide-left');
     event.preventDefault();
     event.stopPropagation();
   });
   $('body').click(function (){
-    $('#menu-settings').removeClass('open');
-    $('#menu-cart').removeClass('open');
+    $('#menu-settings, #menu-cart, .search-panel').removeClass('open');
   });
-  $('.chosen-container, .pane-2').click (function (event) {
+  $('.chosen-container, .pane-2, .search-panel').click (function (event) {
     event.preventDefault();
     event.stopPropagation();
-  });
+  });  
   </script>
 </body>
 </html>
