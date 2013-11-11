@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home Page - Styleguide for runway2street</title>
+
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/stg.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-hotspotter-1.7.8.min.css">
+  <link rel="stylesheet" type="text/css" href="css/hotspot-editor.min.css">
+
+</head>
+<body>
+
+  <div class="box-bg">
+    <div class="box-content">
+      <div class="box-content2">
+        <div class="leftside">
+          <div class="text-center">
+            <img src="images/logo.png" alt="">  
+          </div>    
+          
+          <h3 class="top-margin bottom-margin uppercase futura">Invite Friends</h3>
+          
+          <h6 class="futura top-margin bottom-margin">TELL ALL YOUR FASHION SAVVY FRIENDS ABOUT US!</h6>
+          <p>And you will earn $30 to spend on your favorite items for each friend that accepts your invitation and signs up with runway2street.  </p>
+          <p>We’ll credit your account as soon as their first order is <shipped class=""></shipped></p>
+          
+          
+        </div>
+        <div class="rightside">
+          
+          <div class="rightside-wrap">
+            <div class="alert text-right">
+              <a href="#" class="close">&times;</a>
+            </div>
+            <h4 class="futura uppercase">
+            Share your personal invite
+          </h4>
+          <p>To invite your friends, copy and paste this link on your favorite social network or website. Or click on the Facebook, Twitter and G+ icon below to share.</p>
+          <h6 class="highlight futura uppercase">
+            Your Personal Invite Code
+          </h6>
+          <input type="text" id="1" value="http://bitly.com/xYabc">
+          <h6 class="futura">
+            Share to your social networks
+          </h6>
+          <ul class="inline-list text-center">
+            <li><a class="addthis_button_facebook" addthis:url="http://www.example.com" addthis:title="My Example Photos Page"></a></li>
+            <li><a class="addthis_button_twitter" addthis:url="http://www.example.com" addthis:title="My Example Photos Page"></a></li>
+            <li><a class="addthis_button_pinterest_share" addthis:url="http://www.example.com" addthis:title="My Example Photos Page"></a></li>
+            <li><a class="addthis_button_tumblr" addthis:url="http://www.example.com" addthis:title="My Example Photos Page"></a></li>
+            <li><a class="addthis_button_google_plusone_share" addthis:url="http://www.example.com" addthis:title="My Example Photos Page"></a></li>
+          </ul>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52412d414133d655"></script>
+          
+          <h6 class="futura">
+            Enter e-mail Addresses, spearated by commas
+          </h6>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <label for="2">
+            <input type="checkbox" id="2"> 
+             Send me a copy of this email
+          </label>
+          <div class="text-center">
+            <a href="#" class="button">Invite Friends</a>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/jquery-hotspotter-1.7.8.min.js"></script>
+        <script src="js/vendor/jquery.bxslider.min.js"></script>
+        <script src="js/vendor/jquery.cycle2.min.js"></script>
+        <script src="js/vendor/chosen.jquery.js"></script>
+        <script type="text/javascript">
+        var config = {
+          '.my_select_box'           : {},
+          '.my_select_box-deselect'  : {allow_single_deselect:true},
+          '.my_select_box-no-single' : {disable_search_threshold:10},
+          '.my_select_box-no-results': {no_results_text:'Oops, nothing found!'},
+          '.my_select_box-width'     : {width:"95%"}
+        }
+        for (var selector in config) {
+          $(selector).chosen(config[selector]);
+        }
+        </script>
+
+        <script src="js/vendor/custom.modernizr.js"></script>
+
+        <script src="js/foundation.min.js"></script>
+        <script>
+        $(document).foundation();
+        </script>
+        <script>
+        $('.hs-area').hotspotter();
+        </script>
+        <script>
+        $('#trigger-menu-settings').click( function() {
+          $('#menu-cart').removeClass('open');
+          $('#menu-settings').toggleClass('open');
+        });
+        </script>
+        <script>
+        $('#trigger-menu-cart').click( function() {
+          $('#menu-cart').toggleClass('open');
+          $('#menu-settings').removeClass('open');
+        });
+        </script>
+        <script>
+        $('#trigger-preferences-pane').click(function() {
+          $('.pane-1, .pane-2').addClass('slide-left');
+          event.preventDefault();
+        });
+        $('#trigger-settings-pane').click(function() {
+          $('.pane-1, .pane-2').removeClass('slide-left');
+          event.preventDefault();
+        });
+        </script>
+        <script>
+        $('#register').click(function () {
+          $('.front').removeClass('show');
+          $('.front').parent().removeClass('show');
+
+          $('.front').addClass('flip');
+
+          $('.back').addClass('show');
+          $('.back').parent().addClass('show');
+          $('.back').removeClass('flip');
+        });
+
+        $('#signin, #signin2').click(function() {
+          $('.front').addClass('show');
+          $('.front').parent().addClass('show');
+          $('.front').removeClass('flip');
+
+          $('.back, .side').removeClass('show');
+          $('.back, .side').parent().removeClass('show');
+          $('.back, .side').addClass('flip');
+        });
+
+        $('#forgot').click(function () {
+          $('.front').removeClass('show');
+          $('.front').parent().removeClass('show');
+
+          $('.front').addClass('flip');
+
+          $('.side').addClass('show');
+          $('.side').parent().addClass('show');
+          $('.side').removeClass('flip');
+
+        });
+
+        </script>
+      </body>
+      </html>
