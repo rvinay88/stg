@@ -14,35 +14,10 @@
   <link rel="stylesheet" href="css/r2sTreeView.css">
 
   <link rel="stylesheet" href="css/chosen.css">
-  <link rel="stylesheet" href="css/sidr.dark.css">
+  <link rel="stylesheet" href="css/sidr.light.css">
 </head>
 <body>
-      <div class="tree-holder" id="sidr">
-      <div class="large-10 large-centered columns">
-        <div class="text-center">
-          <h4 class="tree-title">Clothing</h4>
-        </div>
-        <ul id="yw0" class="treeview">
-          <li class="expandable"><span><a id="category_link27" return="" href="#">Jumpsuits</a></span>
-            <div class="hitarea expandable-hitarea"></div>
-          </li>
-          <li><span><a id="category_link27" class="selected" return="" href="#">Dresses</a></span></li>
-          <li><span><a id="category_link27" return="" href="#">Bottoms</a></span></li>
-          <li><span><a id="category_link27" return="" href="#">Swimwear</a></span></li>
-          <li><span><a id="category_link27" return="" href="#">Tops</a></span></li>
-          <li><span><a id="category_link27" return="" href="#">Jackets/Vests</a></span></li>
-        </ul>
-        <h4 class="tree-sub-title">All Designers</h4>
-        <ul class="square designer-nav">
-          <li><a id="designer_link4" href="#">Miri</a></li>
-          <li><a id="designer_link4" href="#">theP.</a></li>
-          <li><a id="designer_link4" href="#">Manley</a></li>
-          <li><a id="designer_link4" href="#">Maison About</a></li>
-          <li><a id="designer_link4" href="#">Mes Dames</a></li>
-          <li><a id="designer_link4" href="#">Gaffer and Fluf</a></li>
-        </ul>
-      </div>
-    </div> 
+
   <div class="contain-to-grid sticky">
     <div class="nav">
       <nav class="top-bar" data-options="is_hover:true">
@@ -164,17 +139,44 @@
     </div>
   </div>
   
-
-
-  <div class="wrapper">
-    <div class="clearfix"></div>
-    <a href="#sidr" id="simple-menu"><i class="icon-reorder" id="reveal-sidebar"></i></a>
     <div class="contain-to-grid sticky">
+      <a href="#sidr" id="simple-menu"><i class="icon-reorder" id="reveal-sidebar"></i></a>
       <div class="inline" id="filter">
         <em><span class="highlight">Category: </span>Bottoms</em> |
         <em><span class="highlight">Designer: </span>Anja</em>
       </div>
     </div>
+
+  <div class="wrapper">
+
+<div id="sidr">
+   <h4 class="tree-title">Bottoms</h4>
+    <ul id="yw0">
+      <li class="expandable"><span><a id="category_link27" return="" href="#">Pants/Trousers</a></span>
+      </li>
+      <li><span><a id="category_link27" class="selected" return="" href="#">Shorts</a></span></li>
+      <li><span><a id="category_link27" return="" href="#">Skirts</a></span></li>
+    </ul>
+    <h4 class="tree-title">Clothing</h4>
+    <ul id="yw0">
+      <li class="expandable"><span><a id="category_link27" return="" href="#">Jumpsuits</a></span>
+      </li>
+      <li><span><a id="category_link27" class="selected" return="" href="#">Dresses</a></span></li>
+      <li><span><a id="category_link27" return="" href="#">Bottoms</a></span></li>
+      <li><span><a id="category_link27" return="" href="#">Swimwear</a></span></li>
+      <li><span><a id="category_link27" return="" href="#">Tops</a></span></li>
+      <li><span><a id="category_link27" return="" href="#">Jackets/Vests</a></span></li>
+    </ul>
+    <h4 class="tree-sub-title">All Designers</h4>
+    <ul id="yw0">
+      <li><span><a id="designer_link4" href="#">Miri</a></span></li>
+      <li><span><a id="designer_link4" href="#">theP.</a></span></li>
+      <li><span><a id="designer_link4" href="#">Manley</a></span></li>
+      <li><span><a id="designer_link4" href="#">Maison About</a></span></li>
+      <li><span><a id="designer_link4" href="#">Mes Dames</a></span></li>
+      <li><span><a id="designer_link4" href="#">Gaffer and Fluf</a></span></li>
+    </ul>
+</div>
 
 
     <div class="catalogue-holder">
@@ -439,6 +441,10 @@ $('.treeview li span a').on('click', function(){
     });
   
 </script>
-
+<script>
+  $(document).ready(function() {
+    $('#simple-menu').sidr();
+  });
+</script>
 </body>
 </html>
