@@ -69,7 +69,7 @@ img {
   max-width: none !important; }
 
 /* line 346, foundation/components/_global.scss */
-.left, #reveal-sidebar, .share-page-right {
+.left, #reveal-sidebar {
   float: left !important; }
 
 /* line 347, foundation/components/_global.scss */
@@ -151,7 +151,7 @@ a {
 
 /* Grid HTML Classes */
 /* line 117, foundation/components/_grid.scss */
-.row {
+.row, .marketing-row {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -160,21 +160,22 @@ a {
   max-width: 100%;
   *zoom: 1; }
   /* line 127, foundation/components/_global.scss */
-  .row:before, .row:after {
+  .row:before, .marketing-row:before, .row:after, .marketing-row:after {
     content: " ";
     display: table; }
   /* line 128, foundation/components/_global.scss */
-  .row:after {
+  .row:after, .marketing-row:after {
     clear: both; }
   /* line 122, foundation/components/_grid.scss */
-  .row.collapse .column,
-  .row.collapse .columns {
+  .row.collapse .column, .collapse.marketing-row .column,
+  .row.collapse .columns,
+  .collapse.marketing-row .columns {
     position: relative;
     padding-left: 0;
     padding-right: 0;
     float: left; }
   /* line 125, foundation/components/_grid.scss */
-  .row .row {
+  .row .row, .marketing-row .row, .row .marketing-row, .marketing-row .marketing-row {
     width: auto;
     margin-left: 0;
     margin-right: 0;
@@ -183,24 +184,24 @@ a {
     max-width: none;
     *zoom: 1; }
     /* line 127, foundation/components/_global.scss */
-    .row .row:before, .row .row:after {
+    .row .row:before, .marketing-row .row:before, .row .marketing-row:before, .marketing-row .marketing-row:before, .row .row:after, .marketing-row .row:after, .row .marketing-row:after, .marketing-row .marketing-row:after {
       content: " ";
       display: table; }
     /* line 128, foundation/components/_global.scss */
-    .row .row:after {
+    .row .row:after, .marketing-row .row:after, .row .marketing-row:after, .marketing-row .marketing-row:after {
       clear: both; }
     /* line 126, foundation/components/_grid.scss */
-    .row .row.collapse {
+    .row .row.collapse, .marketing-row .row.collapse, .row .collapse.marketing-row, .marketing-row .collapse.marketing-row {
       width: auto;
       margin: 0;
       max-width: none;
       *zoom: 1; }
       /* line 127, foundation/components/_global.scss */
-      .row .row.collapse:before, .row .row.collapse:after {
+      .row .row.collapse:before, .marketing-row .row.collapse:before, .row .collapse.marketing-row:before, .marketing-row .collapse.marketing-row:before, .row .row.collapse:after, .marketing-row .row.collapse:after, .row .collapse.marketing-row:after, .marketing-row .collapse.marketing-row:after {
         content: " ";
         display: table; }
       /* line 128, foundation/components/_global.scss */
-      .row .row.collapse:after {
+      .row .row.collapse:after, .marketing-row .row.collapse:after, .row .collapse.marketing-row:after, .marketing-row .collapse.marketing-row:after {
         clear: both; }
 
 /* line 131, foundation/components/_grid.scss */
@@ -414,62 +415,62 @@ a {
     width: 100%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-0 {
+  .row .large-offset-0, .marketing-row .large-offset-0 {
     position: relative;
     margin-left: 0%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-1 {
+  .row .large-offset-1, .marketing-row .large-offset-1 {
     position: relative;
     margin-left: 8.33333%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-2 {
+  .row .large-offset-2, .marketing-row .large-offset-2 {
     position: relative;
     margin-left: 16.66667%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-3 {
+  .row .large-offset-3, .marketing-row .large-offset-3 {
     position: relative;
     margin-left: 25%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-4 {
+  .row .large-offset-4, .marketing-row .large-offset-4 {
     position: relative;
     margin-left: 33.33333%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-5 {
+  .row .large-offset-5, .marketing-row .large-offset-5 {
     position: relative;
     margin-left: 41.66667%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-6 {
+  .row .large-offset-6, .marketing-row .large-offset-6 {
     position: relative;
     margin-left: 50%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-7 {
+  .row .large-offset-7, .marketing-row .large-offset-7 {
     position: relative;
     margin-left: 58.33333%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-8 {
+  .row .large-offset-8, .marketing-row .large-offset-8 {
     position: relative;
     margin-left: 66.66667%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-9 {
+  .row .large-offset-9, .marketing-row .large-offset-9 {
     position: relative;
     margin-left: 75%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-10 {
+  .row .large-offset-10, .marketing-row .large-offset-10 {
     position: relative;
     margin-left: 83.33333%; }
 
   /* line 161, foundation/components/_grid.scss */
-  .row .large-offset-11 {
+  .row .large-offset-11, .marketing-row .large-offset-11 {
     position: relative;
     margin-left: 91.66667%; }
 
@@ -2154,24 +2155,33 @@ form {
 
 /* Using forms within rows, we need to set some defaults */
 /* line 67, foundation/components/_forms.scss */
-form .row .row {
+form .row .row, form .marketing-row .row, form .row .marketing-row, form .marketing-row .marketing-row {
   margin: 0 -0.375rem; }
   /* line 70, foundation/components/_forms.scss */
-  form .row .row .column,
-  form .row .row .columns {
+  form .row .row .column, form .marketing-row .row .column, form .row .marketing-row .column, form .marketing-row .marketing-row .column,
+  form .row .row .columns,
+  form .marketing-row .row .columns,
+  form .row .marketing-row .columns,
+  form .marketing-row .marketing-row .columns {
     padding: 0 0.375rem; }
   /* line 73, foundation/components/_forms.scss */
-  form .row .row.collapse {
+  form .row .row.collapse, form .marketing-row .row.collapse, form .row .collapse.marketing-row, form .marketing-row .collapse.marketing-row {
     margin: 0; }
     /* line 76, foundation/components/_forms.scss */
-    form .row .row.collapse .column,
-    form .row .row.collapse .columns {
+    form .row .row.collapse .column, form .marketing-row .row.collapse .column, form .row .collapse.marketing-row .column, form .marketing-row .collapse.marketing-row .column,
+    form .row .row.collapse .columns,
+    form .marketing-row .row.collapse .columns,
+    form .row .collapse.marketing-row .columns,
+    form .marketing-row .collapse.marketing-row .columns {
       padding: 0; }
 /* line 83, foundation/components/_forms.scss */
-form .row input.column,
+form .row input.column, form .marketing-row input.column,
 form .row input.columns,
+form .marketing-row input.columns,
 form .row textarea.column,
-form .row textarea.columns {
+form .marketing-row textarea.column,
+form .row textarea.columns,
+form .marketing-row textarea.columns {
   padding-left: 0.375rem; }
 
 /* Label Styles */
@@ -3636,7 +3646,7 @@ select::-ms-expand {
     margin-bottom: 0;
     list-style: none; }
   /* line 98, foundation/components/_top-bar.scss */
-  .top-bar .row {
+  .top-bar .row, .top-bar .marketing-row {
     max-width: none; }
   /* line 101, foundation/components/_top-bar.scss */
   .top-bar form,
@@ -5318,51 +5328,51 @@ form.custom {
 /*============================Paging CSS==============================*/
 /* Panels */
 /* line 60, foundation/components/_panels.scss */
-.panel, .row .bg {
+.panel, .row .bg, .marketing-row .bg {
   margin-bottom: 1.25rem;
   padding: 0.625rem;
   background: #eeeeee; }
   /* line 38, foundation/components/_panels.scss */
-  .panel > :first-child, .row .bg > :first-child {
+  .panel > :first-child, .row .bg > :first-child, .marketing-row .bg > :first-child {
     margin-top: 0; }
   /* line 39, foundation/components/_panels.scss */
-  .panel > :last-child, .row .bg > :last-child {
+  .panel > :last-child, .row .bg > :last-child, .marketing-row .bg > :last-child {
     margin-bottom: 0; }
   /* line 44, foundation/components/_panels.scss */
-  .panel h1, .row .bg h1, .panel h2, .row .bg h2, .panel h3, .row .bg h3, .panel h4, .row .bg h4, .panel h5, .row .bg h5, .panel h6, .row .bg h6, .panel p, .row .bg p {
+  .panel h1, .row .bg h1, .marketing-row .bg h1, .panel h2, .row .bg h2, .marketing-row .bg h2, .panel h3, .row .bg h3, .marketing-row .bg h3, .panel h4, .row .bg h4, .marketing-row .bg h4, .panel h5, .row .bg h5, .marketing-row .bg h5, .panel h6, .row .bg h6, .marketing-row .bg h6, .panel p, .row .bg p, .marketing-row .bg p {
     color: #333333; }
   /* line 48, foundation/components/_panels.scss */
-  .panel h1, .row .bg h1, .panel h2, .row .bg h2, .panel h3, .row .bg h3, .panel h4, .row .bg h4, .panel h5, .row .bg h5, .panel h6, .row .bg h6 {
+  .panel h1, .row .bg h1, .marketing-row .bg h1, .panel h2, .row .bg h2, .marketing-row .bg h2, .panel h3, .row .bg h3, .marketing-row .bg h3, .panel h4, .row .bg h4, .marketing-row .bg h4, .panel h5, .row .bg h5, .marketing-row .bg h5, .panel h6, .row .bg h6, .marketing-row .bg h6 {
     line-height: 1;
     margin-bottom: 0.625rem; }
     /* line 50, foundation/components/_panels.scss */
-    .panel h1.subheader, .row .bg h1.subheader, .panel h2.subheader, .row .bg h2.subheader, .panel h3.subheader, .row .bg h3.subheader, .panel h4.subheader, .row .bg h4.subheader, .panel h5.subheader, .row .bg h5.subheader, .panel h6.subheader, .row .bg h6.subheader {
+    .panel h1.subheader, .row .bg h1.subheader, .marketing-row .bg h1.subheader, .panel h2.subheader, .row .bg h2.subheader, .marketing-row .bg h2.subheader, .panel h3.subheader, .row .bg h3.subheader, .marketing-row .bg h3.subheader, .panel h4.subheader, .row .bg h4.subheader, .marketing-row .bg h4.subheader, .panel h5.subheader, .row .bg h5.subheader, .marketing-row .bg h5.subheader, .panel h6.subheader, .row .bg h6.subheader, .marketing-row .bg h6.subheader {
       line-height: 1.4; }
   /* line 62, foundation/components/_panels.scss */
-  .panel.callout, .row .callout.bg {
+  .panel.callout, .row .callout.bg, .marketing-row .callout.bg {
     margin-bottom: 1.25rem;
     padding: 0.625rem;
     background: black;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
     /* line 38, foundation/components/_panels.scss */
-    .panel.callout > :first-child, .row .callout.bg > :first-child {
+    .panel.callout > :first-child, .row .callout.bg > :first-child, .marketing-row .callout.bg > :first-child {
       margin-top: 0; }
     /* line 39, foundation/components/_panels.scss */
-    .panel.callout > :last-child, .row .callout.bg > :last-child {
+    .panel.callout > :last-child, .row .callout.bg > :last-child, .marketing-row .callout.bg > :last-child {
       margin-bottom: 0; }
     /* line 45, foundation/components/_panels.scss */
-    .panel.callout h1, .row .callout.bg h1, .panel.callout h2, .row .callout.bg h2, .panel.callout h3, .row .callout.bg h3, .panel.callout h4, .row .callout.bg h4, .panel.callout h5, .row .callout.bg h5, .panel.callout h6, .row .callout.bg h6, .panel.callout p, .row .callout.bg p {
+    .panel.callout h1, .row .callout.bg h1, .marketing-row .callout.bg h1, .panel.callout h2, .row .callout.bg h2, .marketing-row .callout.bg h2, .panel.callout h3, .row .callout.bg h3, .marketing-row .callout.bg h3, .panel.callout h4, .row .callout.bg h4, .marketing-row .callout.bg h4, .panel.callout h5, .row .callout.bg h5, .marketing-row .callout.bg h5, .panel.callout h6, .row .callout.bg h6, .marketing-row .callout.bg h6, .panel.callout p, .row .callout.bg p, .marketing-row .callout.bg p {
       color: white; }
     /* line 48, foundation/components/_panels.scss */
-    .panel.callout h1, .row .callout.bg h1, .panel.callout h2, .row .callout.bg h2, .panel.callout h3, .row .callout.bg h3, .panel.callout h4, .row .callout.bg h4, .panel.callout h5, .row .callout.bg h5, .panel.callout h6, .row .callout.bg h6 {
+    .panel.callout h1, .row .callout.bg h1, .marketing-row .callout.bg h1, .panel.callout h2, .row .callout.bg h2, .marketing-row .callout.bg h2, .panel.callout h3, .row .callout.bg h3, .marketing-row .callout.bg h3, .panel.callout h4, .row .callout.bg h4, .marketing-row .callout.bg h4, .panel.callout h5, .row .callout.bg h5, .marketing-row .callout.bg h5, .panel.callout h6, .row .callout.bg h6, .marketing-row .callout.bg h6 {
       line-height: 1;
       margin-bottom: 0.625rem; }
       /* line 50, foundation/components/_panels.scss */
-      .panel.callout h1.subheader, .row .callout.bg h1.subheader, .panel.callout h2.subheader, .row .callout.bg h2.subheader, .panel.callout h3.subheader, .row .callout.bg h3.subheader, .panel.callout h4.subheader, .row .callout.bg h4.subheader, .panel.callout h5.subheader, .row .callout.bg h5.subheader, .panel.callout h6.subheader, .row .callout.bg h6.subheader {
+      .panel.callout h1.subheader, .row .callout.bg h1.subheader, .marketing-row .callout.bg h1.subheader, .panel.callout h2.subheader, .row .callout.bg h2.subheader, .marketing-row .callout.bg h2.subheader, .panel.callout h3.subheader, .row .callout.bg h3.subheader, .marketing-row .callout.bg h3.subheader, .panel.callout h4.subheader, .row .callout.bg h4.subheader, .marketing-row .callout.bg h4.subheader, .panel.callout h5.subheader, .row .callout.bg h5.subheader, .marketing-row .callout.bg h5.subheader, .panel.callout h6.subheader, .row .callout.bg h6.subheader, .marketing-row .callout.bg h6.subheader {
         line-height: 1.4; }
   /* line 67, foundation/components/_panels.scss */
-  .panel.radius, .row .radius.bg {
+  .panel.radius, .row .radius.bg, .marketing-row .radius.bg {
     -webkit-border-radius: 0.25rem;
     border-radius: 0.25rem; }
 
@@ -5668,16 +5678,16 @@ a.th {
   opacity: 1; }
 
 /* line 1, foundation/components/_custom.scss */
-.container, .share-page-container {
+.container, .share-page-container, .marketing-row {
   max-width: 1366px; }
 
 /* line 5, foundation/components/_custom.scss */
-.row .bg {
+.row .bg, .marketing-row .bg {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
   background-color: #eeeeee; }
   /* line 9, foundation/components/_custom.scss */
-  .row .bg input[type="text"] {
+  .row .bg input[type="text"], .marketing-row .bg input[type="text"] {
     background-color: white; }
 
 /* line 14, foundation/components/_custom.scss */
@@ -6055,7 +6065,7 @@ a.th {
   margin-left: 0.625rem; }
 
 /* line 394, foundation/components/_custom.scss */
-.right-margin, .pagerviewall, .genie-marketing-page {
+.right-margin, .pagerviewall {
   margin-right: 0.625rem; }
 
 /* line 398, foundation/components/_custom.scss */
@@ -6063,7 +6073,7 @@ a.th {
   margin-top: 1rem; }
 
 /* line 402, foundation/components/_custom.scss */
-.bottom-margin, #reveal-sidebar, .genie-marketing-page {
+.bottom-margin, #reveal-sidebar {
   margin-bottom: 1rem; }
 
 /* line 406, foundation/components/_custom.scss */
@@ -6570,8 +6580,12 @@ a.th {
 .invite-header {
   font-size: 14px;
   font-family: Helvetica; }
+  @media screen and (max-width: 768px) {
+    /* line 894, foundation/components/_custom.scss */
+    .invite-header:first-child {
+      margin-top: 20px; } }
 
-/* line 895, foundation/components/_custom.scss */
+/* line 900, foundation/components/_custom.scss */
 .genie-marketing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6579,43 +6593,82 @@ a.th {
   background-size: cover;
   background: black url("../images/genie_marketing_main.jpg") no-repeat; }
   @media screen and (max-width: 730px) {
-    /* line 895, foundation/components/_custom.scss */
+    /* line 900, foundation/components/_custom.scss */
     .genie-marketing {
       display: none; } }
 
-/* line 907, foundation/components/_custom.scss */
-.genie-marketing-page {
-  width: 50%; }
-  @media screen and (max-width: 925px) {
-    /* line 907, foundation/components/_custom.scss */
-    .genie-marketing-page {
-      width: 100%; } }
+/* line 921, foundation/components/_custom.scss */
+.img-responsive {
+  max-width: 100%; }
 
-/* line 916, foundation/components/_custom.scss */
+/* line 924, foundation/components/_custom.scss */
 .share-page-container {
   margin: 0 auto; }
 
-/* line 921, foundation/components/_custom.scss */
+/* line 929, foundation/components/_custom.scss */
 .share-page-right {
   width: 360px;
   padding-left: 50px; }
   @media screen and (max-width: 925px) {
-    /* line 921, foundation/components/_custom.scss */
+    /* line 929, foundation/components/_custom.scss */
     .share-page-right {
       padding-left: 0;
       width: auto; } }
 
+/* line 938, foundation/components/_custom.scss */
+.marketing-row {
+  margin-bottom: 20px;
+  background-color: #ddd; }
+
+/* line 945, foundation/components/_custom.scss */
+.table {
+  display: table;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px 0; }
+  @media screen and (max-width: 900px) {
+    /* line 945, foundation/components/_custom.scss */
+    .table {
+      width: 100%; } }
+
+/* line 955, foundation/components/_custom.scss */
+.table-left {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%; }
+  @media screen and (max-width: 768px) {
+    /* line 955, foundation/components/_custom.scss */
+    .table-left {
+      width: 100%;
+      text-align: center;
+      display: block; } }
+
+/* line 966, foundation/components/_custom.scss */
+.table-right {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  height: auto;
+  text-align: left;
+  padding-left: 20px; }
+  @media screen and (max-width: 768px) {
+    /* line 966, foundation/components/_custom.scss */
+    .table-right {
+      width: 100%;
+      display: block;
+      padding: 20px; } }
+
 /*------------------------------------------Shopping Grid Items----------------------------*/
-/* line 932, foundation/components/_custom.scss */
+/* line 981, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .prod-name-homepage, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 936, foundation/components/_custom.scss */
+/* line 985, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 941, foundation/components/_custom.scss */
+/* line 990, foundation/components/_custom.scss */
 .prod-name, .prod-name-homepage {
   text-transform: capitalize;
   color: black;
@@ -6624,28 +6677,28 @@ a.th {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-/* line 951, foundation/components/_custom.scss */
+/* line 1000, foundation/components/_custom.scss */
 .prod-name-homepage {
   display: block;
   max-width: auto; }
   @media screen and (min-width: 1200px) {
-    /* line 951, foundation/components/_custom.scss */
+    /* line 1000, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 200px; } }
   @media screen and (max-width: 800px) {
-    /* line 951, foundation/components/_custom.scss */
+    /* line 1000, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 150px; } }
 
-/* line 963, foundation/components/_custom.scss */
+/* line 1012, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 970, foundation/components/_custom.scss */
+/* line 1019, foundation/components/_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 974, foundation/components/_custom.scss */
+/* line 1023, foundation/components/_custom.scss */
 #profileLongStory > div {
   font-family: Helvetica;
   font-size: 12px;
@@ -6654,24 +6707,24 @@ a.th {
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
 /*----------Share For Product Detail ----*/
-/* line 986, foundation/components/_custom.scss */
+/* line 1035, foundation/components/_custom.scss */
 .product-detail-share {
   display: inline-block;
   margin-top: 10px;
   min-width: 100px; }
 
 /*---Search -----*/
-/* line 996, foundation/components/_custom.scss */
+/* line 1045, foundation/components/_custom.scss */
 .search {
   list-style: none;
   width: 160px;
   overflow-x: hidden; }
-  /* line 1000, foundation/components/_custom.scss */
+  /* line 1049, foundation/components/_custom.scss */
   .search > li {
     text-transform: capitalize; }
 
 /*----------Grayscale images--------------*/
-/* line 1007, foundation/components/_custom.scss */
+/* line 1056, foundation/components/_custom.scss */
 .soldout {
   font-size: 12px;
   text-align: center;
@@ -6683,27 +6736,27 @@ a.th {
   position: absolute;
   top: 50%;
   left: 0; }
-  /* line 1018, foundation/components/_custom.scss */
+  /* line 1067, foundation/components/_custom.scss */
   .soldout:before {
     content: 'SOLD OUT'; }
 
 /*-----Featured Designers Fancy Border Text -------*/
-/* line 1024, foundation/components/_custom.scss */
+/* line 1073, foundation/components/_custom.scss */
 .ovx {
   text-align: center;
   overflow-x: hidden; }
 
-/* line 1028, foundation/components/_custom.scss */
+/* line 1077, foundation/components/_custom.scss */
 .fancy, .featured-text {
   line-height: 0.5;
   text-align: center; }
 
-/* line 1032, foundation/components/_custom.scss */
+/* line 1081, foundation/components/_custom.scss */
 .fancy span, .featured-text span {
   display: inline-block;
   position: relative; }
 
-/* line 1037, foundation/components/_custom.scss */
+/* line 1086, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before,
 .fancy span:after,
 .featured-text span:after {
@@ -6714,27 +6767,27 @@ a.th {
   top: 0;
   width: 600px; }
 
-/* line 1045, foundation/components/_custom.scss */
+/* line 1094, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before {
   right: 100%;
   margin-right: 15px; }
 
-/* line 1049, foundation/components/_custom.scss */
+/* line 1098, foundation/components/_custom.scss */
 .fancy span:after, .featured-text span:after {
   left: 100%;
   margin-left: 15px; }
 
-/* line 1054, foundation/components/_custom.scss */
+/* line 1103, foundation/components/_custom.scss */
 .featured-text {
   margin-top: 24px; }
   @media screen and (max-width: 369px) {
-    /* line 1054, foundation/components/_custom.scss */
+    /* line 1103, foundation/components/_custom.scss */
     .featured-text {
       line-height: 1; } }
 
 /*-----Featured Designers Fancy Border Text -------*/
 /*---------------Google Analytics Tracking Change */
-/* line 1069, foundation/components/_custom.scss */
+/* line 1118, foundation/components/_custom.scss */
 iframe#ytplayer {
   height: 205px !important;
   position: relative !important;
@@ -6742,11 +6795,11 @@ iframe#ytplayer {
   width: 240px !important; }
 
 /*---Marketing Ticker ---*/
-/* line 1082, foundation/components/_custom.scss */
+/* line 1131, foundation/components/_custom.scss */
 .ticker > h4 {
   padding-top: 1.4rem; }
 
-/* line 1089, foundation/components/_custom.scss */
+/* line 1138, foundation/components/_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
@@ -6778,7 +6831,7 @@ h4.media-heading {
   color: black; }
 
 /* line 46, foundation/components/_media-object-plus.scss */
-.media > .left, .media > #reveal-sidebar, .media > .share-page-right {
+.media > .left, .media > #reveal-sidebar {
   margin-right: 10px; }
 /* line 49, foundation/components/_media-object-plus.scss */
 .media > .right, .media > .avatar-img {
