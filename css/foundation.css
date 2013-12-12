@@ -6907,7 +6907,7 @@ iframe#ytplayer {
 
 /* line 1221, foundation/components/_custom.scss */
 .active-help {
-  display: initial;
+  display: block;
   z-index: 2; }
 
 /* line 1226, foundation/components/_custom.scss */

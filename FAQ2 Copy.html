@@ -57,7 +57,7 @@
             <p></p>
             <p></p>
             <div class="flex-video about-video">
-              <iframe id="ytplayer-aboutus" class="" frameborder="0" allowfullscreen="1" title="YouTube video player" width="374" height="280" src="https://www.youtube.com/embed/gFkCLTycmgk?enablejsapi=1&amp;origin=http%3A%2F%2Fwww.runway2street.com"></iframe>
+              <iframe class="" frameborder="0" allowfullscreen="1" title="YouTube video player" width="374" height="280" src="https://www.youtube.com/embed/gFkCLTycmgk?enablejsapi=1&amp;origin=http%3A%2F%2Fwww.runway2street.com"></iframe>
             </div>
           </div>
         </div>          
@@ -674,6 +674,8 @@
 <script>
 $(document).ready(function () {
   
+  $(".help-tabs").addClass("hidden-help");
+  
   if (window.location.hash) {
     var fragment = window.location.hash;
     $fragment = $(fragment)
@@ -686,10 +688,8 @@ $(document).ready(function () {
   
   else {
     window.location.hash = "#about";
-    window.location.reload(true);
   }
   
-  $(".help-tabs").addClass("hidden-help");
   $(".help-link").click(function (event) {
     event.preventDefault();
     $(".side-nav li.active").removeClass("active");
