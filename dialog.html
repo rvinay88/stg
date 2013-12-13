@@ -26,8 +26,10 @@
           <h1 class="login-modal-heading">LOVE fashion? </h1>
           <h2 class="login-modal-copy">WANT to wear one-of-a-kind pieces? </h2>
           <p class="black">WISH you could discover and shop for exciting labels from around the world?</p>
-          <h2 class="login-modal-copy">runway2street is just for you</h2>
-          <p class="black">An online luxury fashion marketplace. We scour the world to bring you the most exquisite brands and designers under one roof.</p>
+          <h2 class="login-modal-copy">Find out more: </h2>
+          <div class="text-center right-margin">
+            <iframe id="ytplayer" frameborder="0" allowfullscreen="1" title="YouTube video player" width="240" height="205" src="https://www.youtube.com/embed/gFkCLTycmgk?enablejsapi=1&amp;origin=http%3A%2F%2Fwww.runway2street.com"></iframe>
+          </div>
         </div>
         <div class="rightside">
           <div class="rightside-wrap">
@@ -173,39 +175,38 @@
         });
         </script>
         <script>
-        $('#register').click(function () {
-          $('.front').removeClass('show');
-          $('.front').parent().removeClass('show');
+          $('#register').click(function () {
+            $('.front').removeClass('show');
+            $('.front').parent().removeClass('show');
 
-          $('.front').addClass('flip');
+            $('.front').addClass('flip');
 
-          $('.back').addClass('show');
-          $('.back').parent().addClass('show');
-          $('.back').removeClass('flip');
-        });
+            $('.back').addClass('show');
+            $('.back').parent().addClass('show');
+            $('.back').removeClass('flip');
+          });
 
-        $('#signin, #signin2').click(function() {
-          $('.front').addClass('show');
-          $('.front').parent().addClass('show');
-          $('.front').removeClass('flip');
+          $('#signin, #signin2').click(function() {
+            $('.front').addClass('show');
+            $('.front').parent().addClass('show');
+            $('.front').removeClass('flip');
 
-          $('.back, .side').removeClass('show');
-          $('.back, .side').parent().removeClass('show');
-          $('.back, .side').addClass('flip');
-        });
+            $('.back, .side').removeClass('show');
+            $('.back, .side').parent().removeClass('show');
+            $('.back, .side').addClass('flip');
+          });
 
-        $('#forgot').click(function () {
-          $('.front').removeClass('show');
-          $('.front').parent().removeClass('show');
+          $('#forgot').click(function () {
+            $('.front').removeClass('show');
+            $('.front').parent().removeClass('show');
 
-          $('.front').addClass('flip');
+            $('.front').addClass('flip');
 
-          $('.side').addClass('show');
-          $('.side').parent().addClass('show');
-          $('.side').removeClass('flip');
+            $('.side').addClass('show');
+            $('.side').parent().addClass('show');
+            $('.side').removeClass('flip');
 
-        });
-
+          });
         </script>
       </body>
       </html>
