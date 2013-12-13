@@ -6956,29 +6956,33 @@ iframe#ytplayer {
 
 /* line 1277, foundation/components/_custom.scss */
 .marketing-image-container {
-  margin-top: -180px;
   left: 0;
   width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 1277, foundation/components/_custom.scss */
+    .marketing-image-container {
+      margin-top: -180px; } }
+  @media screen and (max-width: 767px) {
+    /* line 1277, foundation/components/_custom.scss */
+    .marketing-image-container {
+      margin-top: -120px; } }
 
-/* line 1283, foundation/components/_custom.scss */
+/* line 1288, foundation/components/_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
-  background: url("../images/marketing-hero.jpg") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  min-height: 200px; }
+  margin-top: -220px;
+  min-height: 250px; }
   @media (min-width: 590px) {
-    /* line 1283, foundation/components/_custom.scss */
+    /* line 1288, foundation/components/_custom.scss */
     .marketing-image {
-      min-height: 240px; } }
+      min-height: 250px; } }
   @media (min-width: 768px) {
-    /* line 1283, foundation/components/_custom.scss */
+    /* line 1288, foundation/components/_custom.scss */
     .marketing-image {
-      min-height: 300px; } }
+      min-height: 250px; } }
 
-/* line 1299, foundation/components/_custom.scss */
+/* line 1301, foundation/components/_custom.scss */
 .png-transparency {
   position: absolute;
   left: 0;
