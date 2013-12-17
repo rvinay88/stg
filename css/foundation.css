@@ -6857,30 +6857,22 @@ a.th {
       line-height: 1; } }
 
 /*-----Featured Designers Fancy Border Text -------*/
-/*---------------Google Analytics Tracking Change */
-/* line 1161, foundation/components/_custom.scss */
-iframe#ytplayer {
-  height: 205px !important;
-  position: relative !important;
-  top: -0px !important;
-  width: 240px !important; }
-
 /*---Marketing Ticker ---*/
-/* line 1174, foundation/components/_custom.scss */
+/* line 1162, foundation/components/_custom.scss */
 .ticker > h4 {
   padding-top: 1.4rem;
   font-size: 16px; }
 
-/* line 1182, foundation/components/_custom.scss */
+/* line 1170, foundation/components/_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
 
-/* line 1189, foundation/components/_custom.scss */
+/* line 1177, foundation/components/_custom.scss */
 .full-height {
   height: 100%; }
 
-/* line 1193, foundation/components/_custom.scss */
+/* line 1181, foundation/components/_custom.scss */
 .side-nav-holder {
   padding: 20px;
   margin-bottom: 10px;
@@ -6894,31 +6886,31 @@ iframe#ytplayer {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 768px) {
-    /* line 1193, foundation/components/_custom.scss */
+    /* line 1181, foundation/components/_custom.scss */
     .side-nav-holder {
       height: 100%;
       padding-left: 10px;
       margin-bottom: 0; } }
 
-/* line 1212, foundation/components/_custom.scss */
+/* line 1200, foundation/components/_custom.scss */
 .side-nav > li:nth-child(n+2) {
   text-transform: uppercase;
   font-size: 12px; }
 
-/* line 1217, foundation/components/_custom.scss */
+/* line 1205, foundation/components/_custom.scss */
 .side-nav-heading {
   font-size: 16px !important;
   text-transform: uppercase; }
 
-/* line 1225, foundation/components/_custom.scss */
+/* line 1213, foundation/components/_custom.scss */
 .about-video {
   margin-top: 40px; }
 
-/* line 1231, foundation/components/_custom.scss */
+/* line 1219, foundation/components/_custom.scss */
 .help-container {
   position: relative; }
 
-/* line 1235, foundation/components/_custom.scss */
+/* line 1223, foundation/components/_custom.scss */
 .help-tabs {
   position: absolute;
   top: 0;
@@ -6928,61 +6920,57 @@ iframe#ytplayer {
   padding-left: 20px;
   padding-bottom: 20px; }
 
-/* line 1245, foundation/components/_custom.scss */
+/* line 1233, foundation/components/_custom.scss */
 .hidden-help {
   display: none;
   z-index: 1; }
 
-/* line 1250, foundation/components/_custom.scss */
+/* line 1238, foundation/components/_custom.scss */
 .active-help {
   display: initial;
   z-index: 2; }
 
-/* line 1255, foundation/components/_custom.scss */
+/* line 1243, foundation/components/_custom.scss */
 .help-tabs p {
   text-align: justify; }
 
-/* line 1259, foundation/components/_custom.scss */
+/* line 1247, foundation/components/_custom.scss */
 .help-title, .help-title-main {
   font-family: futura;
   font-size: 1rem;
   text-transform: uppercase; }
 
-/* line 1265, foundation/components/_custom.scss */
+/* line 1253, foundation/components/_custom.scss */
 .help-title-main {
   margin-top: 20px;
   padding-left: 0.46875rem;
   text-transform: uppercase; }
 
-/* line 1277, foundation/components/_custom.scss */
+/* line 1265, foundation/components/_custom.scss */
 .marketing-image-container {
+  margin-top: -180px;
   left: 0;
   width: 100%; }
-  @media screen and (min-width: 768px) {
-    /* line 1277, foundation/components/_custom.scss */
-    .marketing-image-container {
-      margin-top: -180px; } }
-  @media screen and (max-width: 767px) {
-    /* line 1277, foundation/components/_custom.scss */
-    .marketing-image-container {
-      margin-top: -120px; } }
 
-/* line 1288, foundation/components/_custom.scss */
+/* line 1271, foundation/components/_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
-  margin-top: -220px;
-  min-height: 250px; }
+  background: url("../images/marketing-hero.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 200px; }
   @media (min-width: 590px) {
-    /* line 1288, foundation/components/_custom.scss */
+    /* line 1271, foundation/components/_custom.scss */
     .marketing-image {
-      min-height: 250px; } }
+      min-height: 240px; } }
   @media (min-width: 768px) {
-    /* line 1288, foundation/components/_custom.scss */
+    /* line 1271, foundation/components/_custom.scss */
     .marketing-image {
-      min-height: 250px; } }
+      min-height: 300px; } }
 
-/* line 1301, foundation/components/_custom.scss */
+/* line 1287, foundation/components/_custom.scss */
 .png-transparency {
   position: absolute;
   left: 0;
