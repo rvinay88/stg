@@ -6971,13 +6971,16 @@ a.th {
       min-height: 300px; } }
 
 /* line 1287, foundation/components/_custom.scss */
-.png-transparency {
-  position: absolute;
-  left: 0;
-  top: 45px;
+.wide-image {
   width: 100%;
-  height: 100%;
-  background: url("../images/png-transparency.png") repeat-x; }
+  max-width: 100%;
+  height: auto;
+  min-height: 150px; }
+
+@media (max-width: 768px) {
+  /* line 1294, foundation/components/_custom.scss */
+  .marketing-logo {
+    margin-top: 55px; } }
 
 /* line 14, foundation/components/_media-object-plus.scss */
 .media,
