@@ -1648,7 +1648,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 /* line 213, foundation/components/_type.scss */
-.futura, .futura-heading, .collection-title, .collection-list > li a, .tree-title, .black-bar, .product-black-bar, .login-modal-copy, .invite-header, .featured-text, .ticker > h4, .side-nav-heading {
+.futura, .futura-heading, .collection-title, .collection-list > li a, .tree-title, .black-bar, .product-black-bar, .login-modal-copy, .invite-header, .featured-text, .ticker > h4, .side-nav-heading, .new-designer-name {
   font-family: futura; }
 
 /* line 216, foundation/components/_type.scss */
@@ -1940,7 +1940,7 @@ blockquote p {
   .show-for-print {
     display: inherit !important; } }
 /* line 462, foundation/components/_type.scss */
-.uppercase, .orders > *, .ticker > h4 {
+.uppercase, .orders > *, .ticker > h4, .new-designer-name {
   text-transform: uppercase; }
 
 /* line 466, foundation/components/_type.scss */
@@ -1956,7 +1956,7 @@ blockquote p {
   font-style: italic; }
 
 /* line 176, foundation/components/_buttons.scss */
-button, .button {
+button, .button, .follow-button {
   cursor: pointer;
   font-family: Helvetica;
   font-weight: normal;
@@ -1976,78 +1976,78 @@ button, .button {
   border-color: black;
   color: white; }
   /* line 136, foundation/components/_buttons.scss */
-  button:hover, button:focus, .button:hover, .button:focus {
+  button:hover, button:focus, .button:hover, .follow-button:hover, .button:focus, .follow-button:focus {
     color: white; }
   /* line 180, foundation/components/_buttons.scss */
-  button.medium, .button.medium {
+  button.medium, .button.medium, .medium.follow-button {
     min-width: 170px;
     max-width: 170px;
     margin-bottom: 12px; }
   /* line 185, foundation/components/_buttons.scss */
-  button.secondary, .button.secondary {
+  button.secondary, .button.secondary, .secondary.follow-button {
     background-color: #eeeeee;
     border-color: #d4d4d4;
     color: #333333; }
     /* line 131, foundation/components/_buttons.scss */
-    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .secondary.follow-button:hover, .button.secondary:focus, .secondary.follow-button:focus {
       color: #333333; }
     /* line 187, foundation/components/_buttons.scss */
-    button.secondary.medium, .button.secondary.medium {
+    button.secondary.medium, .button.secondary.medium, .secondary.medium.follow-button {
       min-width: 170px;
       max-width: 170px;
       margin-bottom: 12px; }
   /* line 193, foundation/components/_buttons.scss */
-  button.success, .button.success {
+  button.success, .button.success, .success.follow-button {
     background-color: #5da423;
     border-color: #457a1a;
     color: white; }
     /* line 136, foundation/components/_buttons.scss */
-    button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+    button.success:hover, button.success:focus, .button.success:hover, .success.follow-button:hover, .button.success:focus, .success.follow-button:focus {
       color: white; }
   /* line 194, foundation/components/_buttons.scss */
-  button.alert, .button.alert {
+  button.alert, .button.alert, .alert.follow-button {
     background-color: #c60f13;
     border-color: #970b0e;
     color: white; }
     /* line 136, foundation/components/_buttons.scss */
-    button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+    button.alert:hover, button.alert:focus, .button.alert:hover, .alert.follow-button:hover, .button.alert:focus, .alert.follow-button:focus {
       color: white; }
   /* line 196, foundation/components/_buttons.scss */
-  button.large, .button.large {
+  button.large, .button.large, .large.follow-button {
     padding-top: 1rem;
     padding-right: 2rem;
     padding-bottom: 1.0625rem;
     padding-left: 2rem;
     font-size: 0.75rem; }
   /* line 197, foundation/components/_buttons.scss */
-  button.small, .button.small {
+  button.small, .button.small, .small.follow-button {
     padding-top: 0.59375rem;
     padding-right: 1.1875rem;
     padding-bottom: 0.65625rem;
     padding-left: 1.1875rem;
     font-size: 0.75rem; }
   /* line 198, foundation/components/_buttons.scss */
-  button.tiny, .button.tiny {
+  button.tiny, .button.tiny, .tiny.follow-button {
     padding-top: 0.4375rem;
     padding-right: 0.875rem;
     padding-bottom: 0.5rem;
     padding-left: 0.875rem;
     font-size: 0.75rem; }
   /* line 199, foundation/components/_buttons.scss */
-  button.expand, .button.expand {
+  button.expand, .button.expand, .expand.follow-button {
     padding-right: 0px;
     padding-left: 0px;
     width: 100%; }
   /* line 201, foundation/components/_buttons.scss */
-  button.left-align, .button.left-align {
+  button.left-align, .button.left-align, .left-align.follow-button {
     text-align: left;
     text-indent: 0.75rem; }
   /* line 202, foundation/components/_buttons.scss */
-  button.right-align, .button.right-align {
+  button.right-align, .button.right-align, .right-align.follow-button {
     text-align: right;
     padding-right: 0.75rem; }
   /* line 204, foundation/components/_buttons.scss */
-  button.disabled, button[disabled], .button.disabled, .button[disabled] {
+  button.disabled, button[disabled], .button.disabled, .disabled.follow-button, .button[disabled], [disabled].follow-button {
     background-color: black;
     border-color: black;
     color: white;
@@ -2056,13 +2056,13 @@ button, .button {
     -webkit-box-shadow: none;
     box-shadow: none; }
     /* line 136, foundation/components/_buttons.scss */
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .button.disabled:focus, .disabled.follow-button:focus, .button[disabled]:hover, [disabled].follow-button:hover, .button[disabled]:focus, [disabled].follow-button:focus {
       color: white; }
     /* line 149, foundation/components/_buttons.scss */
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .button.disabled:focus, .disabled.follow-button:focus, .button[disabled]:hover, [disabled].follow-button:hover, .button[disabled]:focus, [disabled].follow-button:focus {
       background-color: black; }
     /* line 205, foundation/components/_buttons.scss */
-    button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
+    button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .disabled.secondary.follow-button, .button[disabled].secondary, [disabled].secondary.follow-button {
       background-color: #eeeeee;
       border-color: #d4d4d4;
       color: #333333;
@@ -2071,13 +2071,13 @@ button, .button {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 131, foundation/components/_buttons.scss */
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus {
         color: #333333; }
       /* line 149, foundation/components/_buttons.scss */
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus {
         background-color: #eeeeee; }
     /* line 206, foundation/components/_buttons.scss */
-    button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
+    button.disabled.success, button[disabled].success, .button.disabled.success, .disabled.success.follow-button, .button[disabled].success, [disabled].success.follow-button {
       background-color: #5da423;
       border-color: #457a1a;
       color: white;
@@ -2086,13 +2086,13 @@ button, .button {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 136, foundation/components/_buttons.scss */
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus {
         color: white; }
       /* line 149, foundation/components/_buttons.scss */
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus {
         background-color: #5da423; }
     /* line 207, foundation/components/_buttons.scss */
-    button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
+    button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled.alert.follow-button, .button[disabled].alert, [disabled].alert.follow-button {
       background-color: #c60f13;
       border-color: #970b0e;
       color: white;
@@ -2101,51 +2101,51 @@ button, .button {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 136, foundation/components/_buttons.scss */
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus {
         color: white; }
       /* line 149, foundation/components/_buttons.scss */
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus {
         background-color: #c60f13; }
 
 /* line 212, foundation/components/_buttons.scss */
-button, .button {
+button, .button, .follow-button {
   padding-top: 0.8125rem;
   padding-bottom: 0.75rem;
   -webkit-appearance: none; }
   /* line 214, foundation/components/_buttons.scss */
-  button.tiny, .button.tiny {
+  button.tiny, .button.tiny, .tiny.follow-button {
     padding-top: 0.5rem;
     padding-bottom: 0.4375rem;
     -webkit-appearance: none; }
   /* line 215, foundation/components/_buttons.scss */
-  button.small, .button.small {
+  button.small, .button.small, .small.follow-button {
     padding-top: 0.65625rem;
     padding-bottom: 0.59375rem;
     -webkit-appearance: none; }
   /* line 216, foundation/components/_buttons.scss */
-  button.large, .button.large {
+  button.large, .button.large, .large.follow-button {
     padding-top: 1.03125rem;
     padding-bottom: 1.03125rem;
     -webkit-appearance: none; }
 
 @media only screen {
   /* line 222, foundation/components/_buttons.scss */
-  button, .button {
+  button, .button, .follow-button {
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
     transition: background-color 300ms ease-out; }
     /* line 68, foundation/components/_global.scss */
-    button:active, .button:active {
+    button:active, .button:active, .follow-button:active {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; } }
 @media only screen and (min-width: 768px) {
   /* line 239, foundation/components/_buttons.scss */
-  button, .button {
+  button, .button, .follow-button {
     display: inline-block; } }
 /* line 250, foundation/components/_buttons.scss */
-a.button:hover {
+a.button:hover, a.follow-button:hover {
   text-decoration: none; }
 
 /* Standard Forms */
@@ -2230,7 +2230,7 @@ label {
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
 /* line 282, foundation/components/_forms.scss */
-.postfix.button {
+.postfix.button, .postfix.follow-button {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2239,7 +2239,7 @@ label {
   line-height: 2.125rem; }
 
 /* line 283, foundation/components/_forms.scss */
-.prefix.button {
+.prefix.button, .prefix.follow-button {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2248,7 +2248,7 @@ label {
   line-height: 2.125rem; }
 
 /* line 285, foundation/components/_forms.scss */
-.prefix.button.radius {
+.prefix.button.radius, .prefix.radius.follow-button {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 0.25rem;
@@ -2259,7 +2259,7 @@ label {
   border-top-left-radius: 0.25rem; }
 
 /* line 286, foundation/components/_forms.scss */
-.postfix.button.radius {
+.postfix.button.radius, .postfix.radius.follow-button {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 0.25rem;
@@ -2270,7 +2270,7 @@ label {
   border-bottom-right-radius: 0.25rem; }
 
 /* line 287, foundation/components/_forms.scss */
-.prefix.button.round {
+.prefix.button.round, .prefix.round.follow-button {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 62.5rem;
@@ -2281,7 +2281,7 @@ label {
   border-top-left-radius: 62.5rem; }
 
 /* line 288, foundation/components/_forms.scss */
-.postfix.button.round {
+.postfix.button.round, .postfix.round.follow-button {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 62.5rem;
@@ -2662,6 +2662,119 @@ select::-ms-expand {
 
 /**** Isotope CSS3 transitions ****/
 /* End: Recommended Isotope styles */
+/* Button Groups */
+/* line 72, foundation/components/_button-groups.scss */
+.button-group {
+  list-style: none;
+  margin: 0;
+  *zoom: 1; }
+  /* line 127, foundation/components/_global.scss */
+  .button-group:before, .button-group:after {
+    content: " ";
+    display: table; }
+  /* line 128, foundation/components/_global.scss */
+  .button-group:after {
+    clear: both; }
+  /* line 74, foundation/components/_button-groups.scss */
+  .button-group > * {
+    margin: 0 0 0 -1px;
+    float: left; }
+    /* line 35, foundation/components/_button-groups.scss */
+    .button-group > *:first-child {
+      margin-left: 0; }
+  /* line 53, foundation/components/_button-groups.scss */
+  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .follow-button {
+    -moz-border-radius-bottomleft: 0.25rem;
+    -moz-border-radius-topleft: 0.25rem;
+    -webkit-border-bottom-left-radius: 0.25rem;
+    -webkit-border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem; }
+  /* line 57, foundation/components/_button-groups.scss */
+  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .follow-button {
+    -moz-border-radius-topright: 0.25rem;
+    -moz-border-radius-bottomright: 0.25rem;
+    -webkit-border-top-right-radius: 0.25rem;
+    -webkit-border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
+  /* line 53, foundation/components/_button-groups.scss */
+  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .follow-button {
+    -moz-border-radius-bottomleft: 62.5rem;
+    -moz-border-radius-topleft: 62.5rem;
+    -webkit-border-bottom-left-radius: 62.5rem;
+    -webkit-border-top-left-radius: 62.5rem;
+    border-bottom-left-radius: 62.5rem;
+    border-top-left-radius: 62.5rem; }
+  /* line 57, foundation/components/_button-groups.scss */
+  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .follow-button {
+    -moz-border-radius-topright: 62.5rem;
+    -moz-border-radius-bottomright: 62.5rem;
+    -webkit-border-top-right-radius: 62.5rem;
+    -webkit-border-bottom-right-radius: 62.5rem;
+    border-top-right-radius: 62.5rem;
+    border-bottom-right-radius: 62.5rem; }
+  /* line 80, foundation/components/_button-groups.scss */
+  .button-group.even-2 li {
+    width: 50%; }
+    /* line 63, foundation/components/_button-groups.scss */
+    .button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li .follow-button {
+      width: 100%; }
+  /* line 80, foundation/components/_button-groups.scss */
+  .button-group.even-3 li {
+    width: 33.33333%; }
+    /* line 63, foundation/components/_button-groups.scss */
+    .button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li .follow-button {
+      width: 100%; }
+  /* line 80, foundation/components/_button-groups.scss */
+  .button-group.even-4 li {
+    width: 25%; }
+    /* line 63, foundation/components/_button-groups.scss */
+    .button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li .follow-button {
+      width: 100%; }
+  /* line 80, foundation/components/_button-groups.scss */
+  .button-group.even-5 li {
+    width: 20%; }
+    /* line 63, foundation/components/_button-groups.scss */
+    .button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li .follow-button {
+      width: 100%; }
+  /* line 80, foundation/components/_button-groups.scss */
+  .button-group.even-6 li {
+    width: 16.66667%; }
+    /* line 63, foundation/components/_button-groups.scss */
+    .button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li .follow-button {
+      width: 100%; }
+  /* line 80, foundation/components/_button-groups.scss */
+  .button-group.even-7 li {
+    width: 14.28571%; }
+    /* line 63, foundation/components/_button-groups.scss */
+    .button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li .follow-button {
+      width: 100%; }
+  /* line 80, foundation/components/_button-groups.scss */
+  .button-group.even-8 li {
+    width: 12.5%; }
+    /* line 63, foundation/components/_button-groups.scss */
+    .button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li .follow-button {
+      width: 100%; }
+
+/* line 84, foundation/components/_button-groups.scss */
+.button-bar {
+  *zoom: 1; }
+  /* line 127, foundation/components/_global.scss */
+  .button-bar:before, .button-bar:after {
+    content: " ";
+    display: table; }
+  /* line 128, foundation/components/_global.scss */
+  .button-bar:after {
+    clear: both; }
+  /* line 86, foundation/components/_button-groups.scss */
+  .button-bar .button-group {
+    float: left;
+    margin-right: 0.625rem; }
+    /* line 23, foundation/components/_button-groups.scss */
+    .button-bar .button-group div {
+      overflow: hidden; }
+
 /* Flex Video */
 /* line 45, foundation/components/_flex-video.scss */
 .flex-video {
@@ -3683,7 +3796,7 @@ select::-ms-expand {
   .top-bar input {
     height: 2.45em; }
   /* line 105, foundation/components/_top-bar.scss */
-  .top-bar .button {
+  .top-bar .button, .top-bar .follow-button {
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin-bottom: 0; }
@@ -3822,29 +3935,29 @@ select::-ms-expand {
       background: white;
       color: black; }
     /* line 277, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button {
+    .top-bar-section ul li > a.button, .top-bar-section ul li > a.follow-button {
       background: black;
       font-size: 0.75rem; }
       /* line 280, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.hover {
+      .top-bar-section ul li > a.button.hover, .top-bar-section ul li > a.hover.follow-button {
         background: black; }
     /* line 284, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button.secondary {
+    .top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.follow-button {
       background: #666666; }
       /* line 286, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.secondary.hover {
+      .top-bar-section ul li > a.button.secondary.hover, .top-bar-section ul li > a.secondary.hover.follow-button {
         background: #4d4d4d; }
     /* line 290, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button.success {
+    .top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.follow-button {
       background: #5da423; }
       /* line 292, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.success.hover {
+      .top-bar-section ul li > a.button.success.hover, .top-bar-section ul li > a.success.hover.follow-button {
         background: #457a1a; }
     /* line 296, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button.alert {
+    .top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.follow-button {
       background: #c60f13; }
       /* line 298, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.alert.hover {
+      .top-bar-section ul li > a.button.alert.hover, .top-bar-section ul li > a.alert.hover.follow-button {
         background: #970b0e; }
   /* line 306, foundation/components/_top-bar.scss */
   .top-bar-section ul li:hover > a {
@@ -3979,7 +4092,8 @@ select::-ms-expand {
       width: auto; }
     /* line 418, foundation/components/_top-bar.scss */
     .top-bar input,
-    .top-bar .button {
+    .top-bar .button,
+    .top-bar .follow-button {
       line-height: 2rem;
       font-size: 0.875rem;
       height: 2rem;
@@ -7019,6 +7133,32 @@ h4.media-heading {
 .media-list {
   padding-left: 0;
   list-style: none; }
+
+/* line 1, foundation/components/_new-designer.scss */
+.dp-container {
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  padding: 10px;
+  display: inline-block;
+  float: left;
+  background-color: #eeeeee; }
+
+/* line 9, foundation/components/_new-designer.scss */
+.dp, .follow-button {
+  display: block; }
+
+/* line 13, foundation/components/_new-designer.scss */
+.dp {
+  margin-bottom: 10px; }
+
+/* line 16, foundation/components/_new-designer.scss */
+.follow-button {
+  margin-bottom: 0; }
+
+/* line 21, foundation/components/_new-designer.scss */
+.new-designer-name {
+  display: inline;
+  font-size: 1rem; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
