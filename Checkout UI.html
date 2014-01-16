@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Styleguide for runway2street</title>
+
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/stg.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+  <link rel="stylesheet" href="css/chosen.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <nav class="top-bar" data-options="is_hover:true">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+
+          <li class="active"><a href="#" class="no-dec">What's New</a></li>
+
+          <li class="has-dropdown">
+            <a href="#" class="no-dec">Meet the designers</a>
+            <ul class="dropdown">
+              <li><a href="">Anja</a></li>
+              <li><a href="">Miri</a></li>
+              <li><a href="">Otazu</a></li>
+              <li><a href="">TheP.</a></li>
+              <li><a href="">Giejo</a></li>
+              <li><a href="">Manley</a></li>
+              <li><a href="">Anne Sylvain</a></li>
+              <li><a href="">Emy Mack</a></li>
+              <li><label><a href=""><strong>More</strong></a></label></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" class="no-dec">Clothing</a>
+            <ul class="dropdown">
+              <li><a href="#">Dresses</a> </li>
+              <li><a href="#">Jackets and Vests</a></li>
+              <li><a href="#">Swimwear</a></li>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Bottoms</a></li>
+              <li><a href="#">Jumpsuits</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#" class="no-dec">Accessories</a>
+            <ul class="dropdown">
+              <li><a href="#">Jewelery</a> </li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Sunglasses</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Scarves</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="no-dec">Sale</a></li>
+        </ul>
+      </section>
+      <!-- Right Nav Section -->
+    </nav>
+    <ul class="inline-list user-setting">
+      <li id="trigger-menu-cart">
+        <i class="icon-suitcase inline-icon settings-icon"></i>
+        <span class="cartno">11</span>
+      </li>
+      <li id="trigger-menu-settings">
+        Vinay Raghu
+        <img src="https://profile-a.xx.fbcdn.net/hprofile-ash3/23010_761235354_408881299_n.jpg" alt="" class="user-img-small">
+      </li>
+    </ul>
+  </div>
+  <div class="settings-menu" id="menu-settings">
+    <div class="pane-container">
+      <div class="pane-1">
+        <div class="small-6 columns">
+          <a href=""></a><img src="https://profile-a.xx.fbcdn.net/hprofile-ash3/23010_761235354_408881299_n.jpg" alt="" clas="user-img">
+        </div>
+        <div class="small-6 columns">
+          <ul class="no-bullet user-setting-links no-dec">
+            <li><a href="">My Profile</a></li>
+            <li id="trigger-preferences-pane"><a href="">Settings</a></li>
+            <li><a href="">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pane-2">
+        <div class="text-left">
+          <a href="#" id="trigger-settings-pane">
+            <i class="icon-circle-arrow-left icon-large"></i>
+          </a>
+        </div>
+        <label class="user-setting-labels">Country</label>
+        <select class="my_select_box">
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>India</option>
+        </select>
+        <label>Language</label>
+        <select class="my_select_box-no-single">
+          <option>English US</option>
+        </select>
+        <label>Currency</label>
+        <select class="my_select_box-no-single">
+          <option>USD</option>
+          <option>USD</option>
+          <option>USD</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="settings-menu" id="menu-cart">
+    <img src="http://placehold.it/300x300" alt="">
+  </div>
+
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="main-holder">
+        <h1 class="logo"><a href="http://runway2street.com">runway2street</a></h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="section-container auto" data-section data-options="one_up: false; deep_linking: true;">
+        <section class="active">
+          <p class="title" data-section-title><a href="#viewcart">1. View Cart</a></p>
+          <div class="content" data-section-content data-slug="viewcart">
+            <!-- content of tab 1 -->
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="black-bar">
+                  Items in Shopping Bag (4)
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 small-centered columns">
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Move to Wishlist</a>
+                    </aside>
+                  </section>
+                </article>
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Move to Wishlist</a>
+                    </aside>
+                  </section>
+                </article>
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Move to Wishlist</a>
+                    </aside>
+                  </section>
+                </article>
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Move to Wishlist</a>
+                    </aside>
+                  </section>
+                </article>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="black-bar">
+                  Items in Wishlist (4)
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Add to Bag</a>
+                    </aside>
+                  </section>
+                </article>
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Add to Bag</a>
+                    </aside>
+                  </section>
+                </article>
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Add to Bag</a>
+                    </aside>
+                  </section>
+                </article>
+                <article class="shopping-block">
+                  <section class="shopping-block-img">
+                    <img src="http://f6b2665e1b1f75f94fe6-010c0ddc7dfbd3ce58ae1eae160730c0.r64.cf1.rackcdn.com/designer/39/23/products/372/152/new__MG_3163low_res_s13_640x960_2.jpg" alt=""><br>
+                  </section>
+                  <section class="shopping-block-desc">
+                    <a href="" class="no-dec">
+                      <span class="designer-name">ANJA</span>
+                      <br>CORK ENVELOPE PURPLE CLUTCH
+                      <br>Shipped from Beirut, Lebanon
+                    </a>
+                    <div class="panel radius top-margin">
+                      <p>
+                        Size 4 <br>
+                        Black & White <br>
+                        <span class="highlight">
+                          $62.00 <br>
+                          1 item
+                        </span>
+                      </p>
+                    </div>
+                    <aside class="right">
+                      <a href="#" class="small-text right-margin">Remove</a>
+                      <a href="#" class="small-text">Add to Bag</a>
+                    </aside>
+                  </section>
+                </article>
+              </div>
+            </div>     
+            
+            <div class="row">
+              <div class="large-12 columns">
+                <a href="#billing" class="button secondary right top-margin">Next: Billing & Shipping</a>
+              </div>
+            </div>
+            
+            <!-- content of tab 1 -->
+          </div>
+        </section>
+        <section>
+          <p class="title" data-section-title><a href="#billing">2. Billing & Shipping</a></p>
+          <div class="content" data-section-content data-slug="billing">
+            <!-- Content of tab 2 -->
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="large-6 columns">
+                  <h5>Billing Address</h5>
+                  <form action="">
+                    <select name="" id="" class="my_select_box-no-single">
+                      <option value="">30521 Dee Street</option>
+                      <option value="">30521 Dee Street</option>
+                      <option value="">30521 Dee Street</option>
+                    </select>   
+                  </form>                     
+                  <div class="panel radius">
+
+                    <p>
+                      Rathna <br>
+                      Rathna Sharad <br>
+                      3021 Humes Pl.W <br>
+                      Seattle, Washington <br>
+                      United States <br>
+                      7823230238
+                    </p>
+                    <input type="submit" class="button" value="Edit">
+                  </div>
+                </div>
+                <div class="large-6 columns">
+                  <h5>Shipping Address</h5>
+                  <div class="panel radius">
+                   <p>
+                    Rathna <br>
+                    Rathna Sharad <br>
+                    3021 Humes Pl.W <br>
+                    Seattle, Washington <br>
+                    United States <br>
+                    7823230238
+                  </p>
+                  <input type="submit" class="button" value="Edit">
+                </div>
+              </div>                
+            </div>
+
+            
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="black-bar">
+                  Confirm Payment Details
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <p>Want to use a different card ? <a href="#">Click here</a></p>
+
+                <div class="small-6 large-4 columns">
+                  <div>
+                    <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                    <label for="" class="required">Select Card type</label>
+                    <select name="" id="" class="my_select_box">
+                      <option value="">Visa</option>
+                      <option value="">Master Card</option>
+                      <option value="">American Express</option>
+                    </select>
+                  </div>
+                  <div class="bottom-margin">
+                    <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                    <label for="" class="required">Card Number</label>
+                    <input type="text">
+                  </div>
+                  <div>
+                    <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                    <label for="" class="required">Card Expiry Month</label>
+                    <select name="" id="" class="my_select_box">
+                      <option value="">01</option>
+                      <option value="">02</option>
+                      <option value="">03</option>
+                      <option value="">04</option>
+                      <option value="">05</option>
+                      <option value="">06</option>
+                      <option value="">07</option>
+                      <option value="">08</option>
+                      <option value="">09</option>
+                    </select>
+                  </div>
+                  <div>
+                    <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                    <label for="" class="required">Card Expiry Year</label>
+                    <select name="" id="" class="my_select_box">
+                      <option value="">2016</option>
+                      <option value="">2015</option>
+                      <option value="">2014</option>
+                      <option value="">2013</option>
+                      <option value="">2013</option>
+                      <option value="">2013</option>
+                      <option value="">2013</option>
+                      <option value="">2013</option>
+                    </select>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="bottom-margin">
+                    <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                    <label for="" class="required">Card Holder</label>
+                    <input type="text">
+                  </div>
+                  <label for="check1">
+                    <input type="checkbox" name="cgec" id="check1" value="check1" class="r2s"/>
+                    <span class="text">Remember for my next purchase</span>
+                  </label>
+                  <div class="bottom-margin"></div>
+                  
+                </div>
+              </div>
+            </div>   
+            
+            <div class="row">
+              <div class="large-12 columns">
+                <a href="#viewcart" class="button secondary left top-margin no-bottom">Prev: View Cart</a>
+                <a href="#confirmation" class="button secondary right top-margin no-bottom">Next: Confirmation</a>
+              </div>
+            </div>            
+            
+            <!-- Content of tab 2 -->
+          </div>
+        </section>
+        <section>
+          <p class="title" data-section-title><a href="#confirmation">3. Confirmation</a></p>
+          <div class="content" data-section-content data-slug="confirmation">
+            <!-- Content of tab 3 -->
+            <div class="row">
+              <div class="large-12 columns">
+
+                <div class="large-6 columns">
+                  <h5 class="uppercase">Secure Checkout</h5>
+                  <form action="">
+                    <div class="left right-margin">
+                      <label for="">Promotional Code/Coupon</label>
+                      <input type="text" class="coupon">
+                    </div>
+                    <a href="#" class="small-text highlight left">Apply</a>
+                    <div class="clearfix"></div>
+                    <p>You have $30 - Earned credit</p>
+                    <div class="left right-margin">
+                      
+                      <label for="">Redeem Rewards</label>
+                      <!-- <label for="" class="error">You do not have sufficient credit</label> -->
+                      <input type="text" class="rewards" name="redeemRewards" value="$30">
+                    </div>
+                    <a href="#" class="small-text highlight left">Redeem</a>
+                  </form>
+                  <div class="clearfix"></div>
+                  <div class="info-text top-margin uppercase">
+                    DUTIES & TAXES
+                  </div>
+                  <div class="info-text top-margin bottom-margin">
+                    Prices are shown as Delivery Duty Paid (DDP). This means that it is inclusive of any applicable import duties, fees or taxes
+                  </div>
+                </div>                
+                
+                <div class="large-6 columns">
+                  <div class="total">
+                    
+                    <table class="total-table total-table-width right">
+                      <tr>
+                        <td><p class="highlight">Your Order Summary</p></td>
+                      </tr>
+                      <tbody>
+                        <tr class="total">
+                          <td>PROMOTION (-)</td>
+                          <td>$0.00</td>
+                        </tr>
+                        <tr class="total">
+                          <td>Item Total</td>
+                          <td>$620.00</td>
+                        </tr>
+                        <tr class="total">
+                          <td>Express</td>
+                          <td>$30.00</td>
+                        </tr>
+                        <tr class="total">
+                          <td colspan="2">Shipping (4-7 days)</td>
+                        </tr>
+                      </tbody>
+                      <tr class="total total-bill">
+                        <td>Total</td>
+                        <td>$650.00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div class="button right expand top-margin">Purchase</div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>           
+                                
+
+     
+              </div>
+              
+              <div class="row">
+                <div class="large-12 columns">
+                  <a href="#billing" class="button secondary left top-margin no-bottom">Prev: Billing & Shipping</a>
+                </div>
+              </div>
+            </div>
+            <!-- Content of tab 3 -->
+
+          </div>
+        </section>
+        <section>
+          <p class="title" data-section-title><a href="#thankyou">4. Thank You</a></p>
+          <div class="content" data-section-content data-slug="thankyou">
+            <!-- Content of Tab 4 -->
+            <div class="row">
+              <div class="large-12 columns">
+                <label for="" class="thankyou">Thank You!</label>
+                <p class="top-margin">
+                  We’ve received your order and will get started on it right away. You will receive a shipping confirmation email soon. Thank you for shopping with Runway2Street.
+                </p>
+                <p>ORDER NUMBER:1046112804</p>                
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="black-bar">
+                  Order Summary
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="small-6 columns">
+                  <h5>Billing Address</h5>
+                  <div class="panel radius">
+                    <p>
+                      Rathna <br>
+                      Rathna Sharad <br>
+                      3021 Humes Pl.W <br>
+                      Seattle, Washington <br>
+                      United States <br>
+                      7823230238
+                    </p>
+                  </div>
+                </div>
+                <div class="small-6 columns">
+                  <h5>Shipping Address</h5>
+                  <div class="panel radius">
+                    <p>
+                      Rathna <br>
+                      Rathna Sharad <br>
+                      3021 Humes Pl.W <br>
+                      Seattle, Washington <br>
+                      United States <br>
+                      7823230238
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-10 large-centered columns">
+              <table class="expand">
+                <thead>
+                  <tr><th class="col01">DATE</th>
+                    <th class="col02">ORDER NUMBER</th>
+                    <th class="col03">STATUS </th>
+                    <th class="col04">DELIVERY INFORMATION</th>
+                  </tr></thead>
+                  <tbody>
+                    <tr class="orders">
+                      <td>
+                        09 Sep 2013 21:47
+                      </td>
+                      <td>20916478</td>
+                      <td>DISPATCHED</td>
+                      <td><a href="">Track Now</a></td>
+                    </tr>
+                    <tr class="orders">
+                      <td>
+                        09 Sep 2013 21:47
+                      </td>
+                      <td>20916478</td>
+                      <td>DISPATCHED</td>
+                      <td><a href="">Track Now</a></td>
+                    </tr>
+                    <tr class="orders">
+                      <td>
+                        09 Sep 2013 21:47
+                      </td>
+                      <td>20916478</td>
+                      <td>DISPATCHED</td>
+                      <td><a href="">Track Now</a></td>
+                    </tr>
+                    <tr class="orders">
+                      <td>
+                        09 Sep 2013 21:47
+                      </td>
+                      <td>20916478</td>
+                      <td>DISPATCHED</td>
+                      <td><a href="">Track Now</a></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="row">
+                <div class="large-10 large-centered columns">
+                  <div class="large-6 right">
+                    <div class="total">
+                      <table class="total-table total-table-width right">
+                        <tr>
+                          <td></td>
+                        </tr>
+                        <tbody>
+                          <tr class="total">
+                            <td>PROMOTION (-)</td>
+                            <td class="text-right">$0.00</td>
+                          </tr>
+                          <tr class="total">
+                            <td>Item Total</td>
+                            <td class="text-right">$620.00</td>
+                          </tr>
+                          <tr class="total">
+                            <td>Express</td>
+                            <td class="text-right">$30.00</td>
+                          </tr>
+                          <tr class="total">
+                            <td colspan="2">Shipping (4-7 days)</td>
+                          </tr>
+                        </tbody>
+                        <tr class="total total-bill">
+                          <td>Total</td>
+                          <td class="text-right">$650.00</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+
+                          </td>
+                        </tr>
+                      </table>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="black-bar">
+                    Payment History
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-10 large-centered columns">
+                  <table class="expand">
+                    <thead>
+                      <tr><th class="col01">DATE</th>
+                        <th class="col02">Method</th>
+                        <th class="col03">Card Number </th>
+                        <th class="col04">Billing Name</th>
+                        <th class="col04">Amount</th>
+                      </tr></thead>
+                      <tbody>
+                        <tr class="orders">
+                          <td>
+                            09 Sep 2013 21:47
+                          </td>
+                          <td>Credit Card</td>
+                          <td>XXX Card - xxxxxxxxxxxx1713</td>
+                          <td>Rathna sharad</td>
+                          <td>$620.00</td>
+                        </tr>
+                        <tr class="orders">
+                          <td>
+                            09 Sep 2013 21:47
+                          </td>
+                          <td>Credit Card</td>
+                          <td>XXX Card - xxxxxxxxxxxx1713</td>
+                          <td>Rathna sharad</td>
+                          <td>$620.00</td>
+                        </tr>
+                        <tr class="orders">
+                          <td>
+                            09 Sep 2013 21:47
+                          </td>
+                          <td>Credit Card</td>
+                          <td>XXX Card - xxxxxxxxxxxx1713</td>
+                          <td>Rathna sharad</td>
+                          <td>$620.00</td>
+                        </tr>
+                        <tr class="orders">
+                          <td>
+                            09 Sep 2013 21:47
+                          </td>
+                          <td>Credit Card</td>
+                          <td>XXX Card - xxxxxxxxxxxx1713</td>
+                          <td>Rathna sharad</td>
+                          <td>$620.00</td>
+                        </tr>
+                        <tr class="orders">
+                          <td>
+                            09 Sep 2013 21:47
+                          </td>
+                          <td>Credit Card</td>
+                          <td>XXX Card - xxxxxxxxxxxx1713</td>
+                          <td>Rathna sharad</td>
+                          <td>$620.00</td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>  
+                <!-- Content of Tab 4 -->
+              </div>
+            </section>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="black-bg large-12 columns">
+        <div class="large-3 columns footer-icons text-center">
+          <ul class="large-block-grid-4 small-block-grid-4">
+            <li>
+              <a href="">
+                <i class="icon-facebook icon-2x icon-light icon-footer"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="icon-pinterest icon-2x icon-light icon-footer"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="icon-twitter icon-2x icon-light icon-footer"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="icon-envelope icon-2x icon-light icon-footer"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="large-9 columns footer-links footer-icons hide-for-small">
+          <ul class="inline-list right inline-list-separator">
+            <li><a href="" class="white-link">Designer Signup</a></li>
+            <li><a href="" class="white-link">Contact Us</a></li>
+            <li><a href="" class="white-link">FAQ</a></li>
+            <li><a href="" class="white-link">About Us</a></li>
+            <li><a href="" class="white-link">Privacy Policy</a></li>
+            <li><a href="" class="white-link">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="small-12 columns black-bg show-for-small">
+          <div class="text-center">
+            <ul class="inline-list inline-list-separator">
+              <li><a href="" class="white-link">Designer Signup</a></li>
+              <li><a href="" class="white-link">Contact Us</a></li>
+              <li><a href="" class="white-link">FAQ</a></li>
+              <li><a href="" class="white-link">About Us</a></li>
+              <li><a href="" class="white-link">Privacy Policy</a></li>
+              <li><a href="" class="white-link">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="clearfix"></div>
+      <div class="text-center">
+       <small class="subheader">Copyright @ runway2street 2013. All Rights Reserved.</small>
+     </div>
+
+
+     <script src="js/vendor/jquery.js"></script>
+
+     <script src="js/vendor/chosen.jquery.js"></script>
+     <script type="text/javascript">
+     var config = {
+      '.my_select_box'           : {},
+      '.my_select_box-deselect'  : {allow_single_deselect:true},
+      '.my_select_box-no-single' : {disable_search_threshold:10},
+      '.my_select_box-no-results': {no_results_text:'Oops, nothing found!'},
+      '.my_select_box-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+    </script>
+
+    <script src="js/vendor/custom.modernizr.js"></script>
+
+    <script src="js/foundation.min.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+
+    <script>
+    $('#trigger-menu-settings').click( function() {
+      $('#menu-cart').removeClass('open');
+      $('#menu-settings').toggleClass('open');
+    });
+    </script>
+    <script>
+    $('#trigger-menu-cart').click( function() {
+      $('#menu-settings').removeClass('open');
+      $('#menu-cart').toggleClass('open');
+    });
+    </script>
+    <script>
+    $('#trigger-preferences-pane').click(function() {
+      $('.pane-1, .pane-2').addClass('slide-left');
+      event.preventDefault();
+    });
+    $('#trigger-settings-pane').click(function() {
+      $('.pane-1, .pane-2').removeClass('slide-left');
+      event.preventDefault();
+    });
+    </script>
+  </body>
+  </html>
