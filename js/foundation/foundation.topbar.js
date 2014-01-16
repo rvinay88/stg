@@ -15,7 +15,7 @@
       back_text: 'Back',
       is_hover: true,
       mobile_show_parent_link: true,
-      scrolltop : false, // jump to top when sticky nav menu toggle is clicked
+      scrolltop : true, // jump to top when sticky nav menu toggle is clicked
       init : false
     },
 
@@ -71,12 +71,14 @@
     events : function () {
       var self = this;
       var offst = this.outerHeight($('.top-bar, [data-topbar]'));
+      var $distance = 0;
       $(this.scope)
         .off('.fndtn.topbar')
         .on('click.fndtn.topbar', '.top-bar .toggle-topbar, [data-topbar] .toggle-topbar', function (e) {
           var topbar = $(this).closest('.top-bar, [data-topbar]'),
               section = topbar.find('section, .section'),
-              titlebar = topbar.children('ul').first();
+              titlebar = topbar.children('ul').first(),
+              header = $("header.navigation");
 
           e.preventDefault();
 
@@ -92,12 +94,26 @@
             section.find('li.moved').removeClass('moved');
             topbar.data('index', 0);
 
+            if(!topbar.hasClass('expanded')) {
+              $distance = $('.top-bar').offset().top;
+            }
+
+            header.removeClass('sticky fixed');
+            
+            $('body').animate({"scrollTop": "0"}, 300);
+            
             topbar
               .toggleClass('expanded')
               .css('height', '');
+            
           }
 
           if (!topbar.hasClass('expanded')) {
+            header.addClass('sticky');
+            if($distance > 0) {
+              $('body').animate({"scrollTop": $distance}, 300);
+            }
+            
             if (topbar.hasClass('fixed')) {
               topbar.parent().addClass('fixed');
               topbar.removeClass('fixed');
