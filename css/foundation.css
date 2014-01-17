@@ -7131,10 +7131,10 @@ a.th {
 /* line 1317, foundation/components/_custom.scss */
 .redeem {
   margin-top: 10px; }
-  @media (min-width: 320px) {
+  @media (min-width: 300px) {
     /* line 1317, foundation/components/_custom.scss */
     .redeem {
-      margin-top: 25px; } }
+      margin-top: 40px; } }
 
 /* line 14, foundation/components/_media-object-plus.scss */
 .media,
