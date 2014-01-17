@@ -162,9 +162,11 @@
               <input type="text">
             </div>
             <div>
+              <label for="">Card Expiry</label>
               <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
-              <label for="" class="required">Card Expiry Month</label>
-              <select name="" id="" class="my_select_box">
+              <div class="small-6 columns">
+               <label for="" class="required">Month</label>
+               <select name="" id="" class="my_select_box">
                 <option value="">01</option>
                 <option value="">02</option>
                 <option value="">03</option>
@@ -174,99 +176,101 @@
                 <option value="">07</option>
                 <option value="">08</option>
                 <option value="">09</option>
-              </select>
+              </select>                
             </div>
-            <div>
-              <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
-              <label for="" class="required">Card Expiry Year</label>
-              <select name="" id="" class="my_select_box">
-                <option value="">2016</option>
-                <option value="">2015</option>
-                <option value="">2014</option>
-                <option value="">2013</option>
-                <option value="">2013</option>
-                <option value="">2013</option>
-                <option value="">2013</option>
-                <option value="">2013</option>
-              </select>
-            </div>
-            <div class="clearfix"></div>
-            <div class="bottom-margin">
-              <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
-              <label for="" class="required">Card Holder</label>
-              <input type="text">
-            </div>
-            <label for="check1">
-              <input type="checkbox" name="cgec" id="check1" value="check1" class="r2s"/>
-              <span class="text">Make this my default card</span>
-            </label>
-          </form>
+
+          </div>
+          <div class="small-6 columns">
+            <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+            <label for="" class="required">Card Expiry Year</label>
+            <select name="" id="" class="my_select_box">
+              <option value="">2016</option>
+              <option value="">2015</option>
+              <option value="">2014</option>
+              <option value="">2013</option>
+              <option value="">2013</option>
+              <option value="">2013</option>
+              <option value="">2013</option>
+              <option value="">2013</option>
+            </select>
+          </div>
           <div class="clearfix"></div>
-          <div class="black-bar">
-            Billing Address for this Credit Card
-          </div>
-          <label for="check2">
-            <input type="radio" class="r2s" id="check2" name="address">
-            <span class="small-text card-address">John Smith <br>
-              c/o wikiHow <br>
-              250 Emerson St. <br>
-              Palo Alto, CA 94301
-            </span>
-          </label>
-          <label for="check3">
-            <input type="radio" class="r2s" id="check3" name="address">
-            <span class="small-text card-address">John Smith <br>
-              c/o wikiHow <br>
-              250 Emerson St. <br>
-              Palo Alto, CA 94301
-            </span>
-          </label>
-
-        </div>
-        <div class="large-2 hide-for-small columns">
-          <div class="fixed-170"></div>
-        </div>
-        <div class="large-4 small-12 columns end">
-          <div class="black-bar">
-            Enter New Billing Address
-          </div>
           <div class="bottom-margin">
             <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
-            <label for="" class="required">First Name</label>
-            <input placeholder="First Name*" name="RAddress[0][FirstName]" id="RAddress_0_FirstName" type="text" maxlength="255" value="Vinay">
-          </div>
-          <div class="bottom-margin">
-            <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
-            <label for="" class="required">Last Name</label>
+            <label for="" class="required">Card Holder</label>
             <input type="text">
-
           </div>
-          <label for="" class="required">Select a country</label>
-          <select class="my_select_box">
-            <option>United States</option>
-            <option>United Kingdom</option>
-            <option>India</option>
-          </select>
-          <label for="" class="required error">Address Line 1</label>
-          <input type="text" class="error">
-          <label for="" class="required">Address Line 2</label>
-          <input type="text">
-          <label for="" class="required">City</label>
-          <input type="text">
-          <label for="" class="required">State</label>
-          <input type="text">
-          <label for="" class="required">Zip/Postal Code</label>
-          <input type="text">
-          <label for="" class="required">Phone Number</label>
-          <input type="text">
+          <label for="check1">
+            <input type="checkbox" name="cgec" id="check1" value="check1" class="r2s"/>
+            <span class="text">Make this my default card</span>
+          </label>
+        </form>
+        <div class="clearfix"></div>
+        <div class="black-bar">
+          Billing Address for this Credit Card
+        </div>
+        <label for="check2">
+          <input type="radio" class="r2s" id="check2" name="address">
+          <span class="small-text card-address">John Smith <br>
+            c/o wikiHow <br>
+            250 Emerson St. <br>
+            Palo Alto, CA 94301
+          </span>
+        </label>
+        <label for="check3">
+          <input type="radio" class="r2s" id="check3" name="address">
+          <span class="small-text card-address">John Smith <br>
+            c/o wikiHow <br>
+            250 Emerson St. <br>
+            Palo Alto, CA 94301
+          </span>
+        </label>
 
-          <input type="submit" class="button right" value="Save">
-          <input type="submit" class="button secondary right right-margin" value="Cancel">
+      </div>
+      <div class="large-2 hide-for-small columns">
+        <div class="fixed-170"></div>
+      </div>
+      <div class="large-4 small-12 columns end">
+        <div class="black-bar">
+          Enter New Billing Address
+        </div>
+        <div class="bottom-margin">
+          <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+          <label for="" class="required">First Name</label>
+          <input placeholder="First Name*" name="RAddress[0][FirstName]" id="RAddress_0_FirstName" type="text" maxlength="255" value="Vinay">
+        </div>
+        <div class="bottom-margin">
+          <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+          <label for="" class="required">Last Name</label>
+          <input type="text">
 
         </div>
+        <label for="" class="required">Select a country</label>
+        <select class="my_select_box">
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>India</option>
+        </select>
+        <label for="" class="required error">Address Line 1</label>
+        <input type="text" class="error">
+        <label for="" class="required">Address Line 2</label>
+        <input type="text">
+        <label for="" class="required">City</label>
+        <input type="text">
+        <label for="" class="required">State</label>
+        <input type="text">
+        <label for="" class="required">Zip/Postal Code</label>
+        <input type="text">
+        <label for="" class="required">Phone Number</label>
+        <input type="text">
+
+        <input type="submit" class="button right" value="Save">
+        <input type="submit" class="button secondary right right-margin" value="Cancel">
+
       </div>
     </div>
   </div>
+</div>
 
 
 </div>
