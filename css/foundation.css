@@ -69,7 +69,7 @@ img {
   max-width: none !important; }
 
 /* line 346, foundation/components/_global.scss */
-.left, #reveal-sidebar {
+.left, #reveal-sidebar, .redeem {
   float: left !important; }
 
 /* line 347, foundation/components/_global.scss */
@@ -5684,14 +5684,6 @@ table {
   table tfoot tr td {
     display: table-cell;
     line-height: 0.75rem; }
-    @media screen and (max-width: 450px) {
-      /* line 101, foundation/components/_tables.scss */
-      table thead tr th,
-      table tfoot tr th,
-      table tbody tr td,
-      table tr td,
-      table tfoot tr td {
-        font-size: 0.5rem; } }
   /* line 113, foundation/components/_tables.scss */
   table.expand {
     width: 100%; }
@@ -6215,7 +6207,7 @@ a.th {
   height: auto !important; }
 
 /* line 382, foundation/components/_custom.scss */
-.small-text, .user-setting-username {
+.small-text, .user-setting-username, .redeem {
   font-size: 0.6875rem;
   text-transform: uppercase;
   margin-top: 20px;
@@ -6314,72 +6306,72 @@ a.th {
 /* line 465, foundation/components/_custom.scss */
 .orders > * {
   font-size: 0.75rem; }
-  @media screen and (max-width: 450px) {
-    /* line 465, foundation/components/_custom.scss */
-    .orders > * {
-      font-size: 0.5rem; } }
 
-/* line 474, foundation/components/_custom.scss */
+/* line 471, foundation/components/_custom.scss */
+.responsive-table {
+  overflow-x: auto; }
+
+/* line 475, foundation/components/_custom.scss */
 .total {
   margin-bottom: 0; }
-  /* line 476, foundation/components/_custom.scss */
+  /* line 477, foundation/components/_custom.scss */
   .total > td {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
-/* line 482, foundation/components/_custom.scss */
+/* line 483, foundation/components/_custom.scss */
 .total-table {
   min-width: 50%;
   width: 100%; }
 
-/* line 487, foundation/components/_custom.scss */
+/* line 488, foundation/components/_custom.scss */
 .total-table-width {
   width: 100%; }
   @media only screen and (min-width: 768px) {
-    /* line 487, foundation/components/_custom.scss */
+    /* line 488, foundation/components/_custom.scss */
     .total-table-width {
       width: 50%; } }
 
-/* line 494, foundation/components/_custom.scss */
+/* line 495, foundation/components/_custom.scss */
 .total-bill > td {
   font-weight: bold;
   color: black; }
-  /* line 497, foundation/components/_custom.scss */
+  /* line 498, foundation/components/_custom.scss */
   .total-bill > td:first-child {
     border-bottom-left-radius: 0.25rem; }
-  /* line 500, foundation/components/_custom.scss */
+  /* line 501, foundation/components/_custom.scss */
   .total-bill > td:last-child {
     border-bottom-right-radius: 0.25rem; }
 
-/* line 505, foundation/components/_custom.scss */
+/* line 506, foundation/components/_custom.scss */
 .coupon {
   max-width: 150px;
   margin-bottom: 0 !important; }
 
-/* line 510, foundation/components/_custom.scss */
+/* line 511, foundation/components/_custom.scss */
 .text {
   font-size: 0.75rem; }
 
-/* line 514, foundation/components/_custom.scss */
+/* line 515, foundation/components/_custom.scss */
 .info-text {
   font-size: 0.625rem;
   color: #666666;
   line-height: 1.5; }
 
-/* line 520, foundation/components/_custom.scss */
-.highlight, .user-setting-username, .designer-nav-active, .designer-stats {
+/* line 521, foundation/components/_custom.scss */
+.highlight, .user-setting-username, .designer-nav-active, .redeem, .designer-stats {
   font-weight: bold; }
 
-/* line 525, foundation/components/_custom.scss */
+/* line 526, foundation/components/_custom.scss */
 .errorMessage {
   font-size: 0.75rem;
   color: #c60f13; }
 
-/* line 530, foundation/components/_custom.scss */
+/* line 531, foundation/components/_custom.scss */
 .error > label {
   display: none; }
 
-/* line 534, foundation/components/_custom.scss */
+/* line 535, foundation/components/_custom.scss */
 .shopping-block-img {
   width: 180px;
   float: left;
@@ -6389,12 +6381,12 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 534, foundation/components/_custom.scss */
+    /* line 535, foundation/components/_custom.scss */
     .shopping-block-img {
       margin: 0 auto;
       float: none !important; } }
 
-/* line 546, foundation/components/_custom.scss */
+/* line 547, foundation/components/_custom.scss */
 .shopping-block-desc {
   width: 45%;
   margin-left: 10px;
@@ -6403,13 +6395,17 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 546, foundation/components/_custom.scss */
+    /* line 547, foundation/components/_custom.scss */
     .shopping-block-desc {
       width: 100%;
       float: none !important;
       margin-left: 0; } }
+  @media (max-width: 635px) {
+    /* line 547, foundation/components/_custom.scss */
+    .shopping-block-desc {
+      min-height: 180px; } }
 
-/* line 558, foundation/components/_custom.scss */
+/* line 562, foundation/components/_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -6431,38 +6427,38 @@ a.th {
   float: left;
   min-height: 307px; }
   @media screen and (max-width: 635px) {
-    /* line 558, foundation/components/_custom.scss */
+    /* line 562, foundation/components/_custom.scss */
     .shopping-block {
       width: 45%;
       float: none;
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 636px) and (max-width: 780px) {
-    /* line 558, foundation/components/_custom.scss */
+    /* line 562, foundation/components/_custom.scss */
     .shopping-block {
       width: 48%; } }
-  /* line 586, foundation/components/_custom.scss */
+  /* line 590, foundation/components/_custom.scss */
   .shopping-block.full {
     width: 100% !important; }
-    /* line 588, foundation/components/_custom.scss */
+    /* line 592, foundation/components/_custom.scss */
     .shopping-block.full.shopping-block-img {
       min-width: 160px !important; }
     @media screen and (max-width: 1048px) {
-      /* line 592, foundation/components/_custom.scss */
+      /* line 596, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-desc {
         width: 50% !important;
         float: left; }
-      /* line 596, foundation/components/_custom.scss */
+      /* line 600, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
 
-/* line 604, foundation/components/_custom.scss */
+/* line 608, foundation/components/_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black; }
 
-/* line 609, foundation/components/_custom.scss */
+/* line 613, foundation/components/_custom.scss */
 .errorSummary {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -6480,12 +6476,12 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 617, foundation/components/_custom.scss */
+  /* line 621, foundation/components/_custom.scss */
   .errorSummary ul li {
     list-style: none;
     color: black; }
 
-/* line 624, foundation/components/_custom.scss */
+/* line 628, foundation/components/_custom.scss */
 .successMessage {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -6503,17 +6499,17 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 632, foundation/components/_custom.scss */
+  /* line 636, foundation/components/_custom.scss */
   .successMessage ul li {
     list-style: none;
     color: black; }
 
-/* line 639, foundation/components/_custom.scss */
+/* line 643, foundation/components/_custom.scss */
 .thankyou {
   color: black;
-  font: italic 7em futura; }
+  font: 3em futura; }
 
-/* line 645, foundation/components/_custom.scss */
+/* line 649, foundation/components/_custom.scss */
 .loading-indicator {
   height: 80px;
   width: 80px;
@@ -6524,7 +6520,7 @@ a.th {
   top: 0;
   left: 43%; }
 
-/* line 658, foundation/components/_custom.scss */
+/* line 662, foundation/components/_custom.scss */
 .promo-gallery {
   min-width: 420px;
   width: 100%;
@@ -6535,7 +6531,7 @@ a.th {
   margin: auto;
   overflow: hidden; }
 
-/* line 669, foundation/components/_custom.scss */
+/* line 673, foundation/components/_custom.scss */
 .promo-gallery .mask {
   overflow: hidden;
   position: relative;
@@ -6545,18 +6541,18 @@ a.th {
   min-height: 660px;
   max-height: 768px; }
 
-/* line 679, foundation/components/_custom.scss */
+/* line 683, foundation/components/_custom.scss */
 .cycle-slide-active > img {
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
-/* line 684, foundation/components/_custom.scss */
+/* line 688, foundation/components/_custom.scss */
 #smodal {
   position: absolute;
   padding: 8px;
   z-index: 700; }
 
-/* line 690, foundation/components/_custom.scss */
+/* line 694, foundation/components/_custom.scss */
 #smodal-overlay {
   position: fixed;
   top: 0;
@@ -6568,7 +6564,7 @@ a.th {
   filter: alpha(opacity=50);
   z-index: 700; }
 
-/* line 702, foundation/components/_custom.scss */
+/* line 706, foundation/components/_custom.scss */
 .box-bg {
   background: #fff no-repeat center top;
   width: 100%;
@@ -6581,17 +6577,17 @@ a.th {
   position: relative;
   padding: 10px; }
 
-/* line 715, foundation/components/_custom.scss */
+/* line 719, foundation/components/_custom.scss */
 .box-content, .box-content-marketing {
   height: 430px;
   border: 1px dashed grey; }
 
-/* line 720, foundation/components/_custom.scss */
+/* line 724, foundation/components/_custom.scss */
 .box-content2 {
   display: table;
   height: 100%; }
 
-/* line 725, foundation/components/_custom.scss */
+/* line 729, foundation/components/_custom.scss */
 .box-content2 .leftside, .box-content2 .genie-marketing {
   padding-left: 3%;
   width: 50%;
@@ -6600,11 +6596,11 @@ a.th {
   display: table-cell;
   vertical-align: middle; }
   @media screen and (max-width: 550px) {
-    /* line 725, foundation/components/_custom.scss */
+    /* line 729, foundation/components/_custom.scss */
     .box-content2 .leftside, .box-content2 .genie-marketing {
       display: none; } }
 
-/* line 737, foundation/components/_custom.scss */
+/* line 741, foundation/components/_custom.scss */
 .box-content2 .rightside {
   padding-left: 10px;
   padding-right: 10px;
@@ -6613,16 +6609,16 @@ a.th {
   display: block;
   min-width: 250px; }
 
-/* line 746, foundation/components/_custom.scss */
+/* line 750, foundation/components/_custom.scss */
 .rightside-wrap {
   position: relative;
   width: 100%; }
 
-/* line 752, foundation/components/_custom.scss */
+/* line 756, foundation/components/_custom.scss */
 .box-content2 .chosen-container {
   width: 100% !important; }
 
-/* line 756, foundation/components/_custom.scss */
+/* line 760, foundation/components/_custom.scss */
 .card {
   position: absolute;
   top: 0;
@@ -6630,7 +6626,7 @@ a.th {
   width: 100%;
   -webkit-backface-visibility: hidden; }
 
-/* line 764, foundation/components/_custom.scss */
+/* line 768, foundation/components/_custom.scss */
 .front, .back, .side {
   z-index: 1;
   opacity: 0;
@@ -6645,13 +6641,13 @@ a.th {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
 
-/* line 779, foundation/components/_custom.scss */
+/* line 783, foundation/components/_custom.scss */
 .show {
   z-index: 2;
   opacity: 1;
   visibility: visible; }
 
-/* line 785, foundation/components/_custom.scss */
+/* line 789, foundation/components/_custom.scss */
 .flip {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -6659,7 +6655,7 @@ a.th {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 794, foundation/components/_custom.scss */
+/* line 798, foundation/components/_custom.scss */
 .f-signin, .g-signin {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
@@ -6670,13 +6666,13 @@ a.th {
   color: white;
   width: 50px; }
 
-/* line 803, foundation/components/_custom.scss */
+/* line 807, foundation/components/_custom.scss */
 .f-signin {
   background-color: #4863ae;
   padding-left: 0;
   padding-right: 10px; }
 
-/* line 808, foundation/components/_custom.scss */
+/* line 812, foundation/components/_custom.scss */
 .g-signin {
   background-color: #cd3a25;
   background-image: -moz-linear-gradient(top, #cd3a25, #cd3a25);
@@ -6687,94 +6683,94 @@ a.th {
   background-image: linear-gradient(top, #cd3a25, #cd3a25);
   background-repeat: repeat-x; }
 
-/* line 822, foundation/components/_custom.scss */
+/* line 826, foundation/components/_custom.scss */
 .login-modal-copy {
   font-weight: bold;
   font-size: 1rem; }
 
-/* line 829, foundation/components/_custom.scss */
+/* line 833, foundation/components/_custom.scss */
 .black, .side-nav-heading {
   color: black; }
 
-/* line 833, foundation/components/_custom.scss */
+/* line 837, foundation/components/_custom.scss */
 .login-social-buttons {
   display: inline-block;
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
 /*----Hotspot Tooltips */
-/* line 843, foundation/components/_custom.scss */
+/* line 847, foundation/components/_custom.scss */
 .product-image, .home-designer-image {
   width: 100%; }
 
-/* line 848, foundation/components/_custom.scss */
+/* line 852, foundation/components/_custom.scss */
 .product-image {
   max-width: 200px; }
 
-/* line 851, foundation/components/_custom.scss */
+/* line 855, foundation/components/_custom.scss */
 .home-designer-image {
   max-width: 325px; }
 
 /* Disable hotspots <768px */
 @media screen and (max-width: 767px) {
-  /* line 858, foundation/components/_custom.scss */
+  /* line 862, foundation/components/_custom.scss */
   .hs-wrap {
     display: none !important; } }
-/* line 863, foundation/components/_custom.scss */
+/* line 867, foundation/components/_custom.scss */
 .footer-links {
   margin-top: 6px; }
 
-/* line 867, foundation/components/_custom.scss */
+/* line 871, foundation/components/_custom.scss */
 .footer-list, .footer-links > ul > li > a {
   font-family: futura;
   font-size: 11px;
   text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
-  /* line 872, foundation/components/_custom.scss */
+  /* line 876, foundation/components/_custom.scss */
   .footer-list {
     text-align: center;
     display: inline-block; } }
 
-/* line 879, foundation/components/_custom.scss */
+/* line 883, foundation/components/_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
 /*---------------------Marketing Dialog-----------------------------*/
-/* line 886, foundation/components/_custom.scss */
+/* line 890, foundation/components/_custom.scss */
 .box-content-marketing {
   height: 460px; }
 
-/* line 891, foundation/components/_custom.scss */
+/* line 895, foundation/components/_custom.scss */
 .asterisk {
   display: inline-block;
   float: left; }
 
-/* line 896, foundation/components/_custom.scss */
+/* line 900, foundation/components/_custom.scss */
 .fine-print {
   float: left;
   width: 95%;
   margin-left: 10px;
   margin-top: -5px; }
-  /* line 901, foundation/components/_custom.scss */
+  /* line 905, foundation/components/_custom.scss */
   .fine-print > span {
     font-size: 10px; }
 
-/* line 906, foundation/components/_custom.scss */
+/* line 910, foundation/components/_custom.scss */
 .email-copy {
   font-size: 11px; }
 
-/* line 910, foundation/components/_custom.scss */
+/* line 914, foundation/components/_custom.scss */
 .invite-header {
   font-size: 14px;
   font-family: Helvetica; }
   @media screen and (max-width: 768px) {
-    /* line 916, foundation/components/_custom.scss */
+    /* line 920, foundation/components/_custom.scss */
     .invite-header:first-child {
       margin-top: 20px; } }
 
-/* line 922, foundation/components/_custom.scss */
+/* line 926, foundation/components/_custom.scss */
 .genie-marketing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6782,57 +6778,57 @@ a.th {
   background-size: cover;
   background: black url("../images/genie_marketing_main.jpg") no-repeat; }
   @media screen and (max-width: 730px) {
-    /* line 922, foundation/components/_custom.scss */
+    /* line 926, foundation/components/_custom.scss */
     .genie-marketing {
       display: none; } }
 
-/* line 943, foundation/components/_custom.scss */
+/* line 947, foundation/components/_custom.scss */
 .img-responsive {
   max-width: 100%; }
 
-/* line 946, foundation/components/_custom.scss */
+/* line 950, foundation/components/_custom.scss */
 .share-page-container {
   margin: 0 auto; }
 
-/* line 951, foundation/components/_custom.scss */
+/* line 955, foundation/components/_custom.scss */
 .share-page-right {
   width: 360px;
   padding-left: 50px; }
   @media screen and (max-width: 925px) {
-    /* line 951, foundation/components/_custom.scss */
+    /* line 955, foundation/components/_custom.scss */
     .share-page-right {
       padding-left: 0;
       width: auto; } }
 
-/* line 960, foundation/components/_custom.scss */
+/* line 964, foundation/components/_custom.scss */
 .marketing-row {
   margin-bottom: 20px;
   background-color: #ddd; }
 
-/* line 967, foundation/components/_custom.scss */
+/* line 971, foundation/components/_custom.scss */
 .table {
   display: table;
   margin: 0 auto;
   width: 80%;
   padding: 20px 0; }
   @media screen and (max-width: 900px) {
-    /* line 967, foundation/components/_custom.scss */
+    /* line 971, foundation/components/_custom.scss */
     .table {
       width: 100%; } }
 
-/* line 977, foundation/components/_custom.scss */
+/* line 981, foundation/components/_custom.scss */
 .table-left, .table-left-va-top {
   display: table-cell;
   vertical-align: middle;
   width: 50%; }
   @media screen and (max-width: 768px) {
-    /* line 977, foundation/components/_custom.scss */
+    /* line 981, foundation/components/_custom.scss */
     .table-left, .table-left-va-top {
       width: 100%;
       text-align: center;
       display: block; } }
 
-/* line 988, foundation/components/_custom.scss */
+/* line 992, foundation/components/_custom.scss */
 .table-right, .table-right-va-top {
   display: table-cell;
   vertical-align: middle;
@@ -6841,26 +6837,26 @@ a.th {
   text-align: left;
   padding-left: 20px; }
   @media screen and (max-width: 768px) {
-    /* line 988, foundation/components/_custom.scss */
+    /* line 992, foundation/components/_custom.scss */
     .table-right, .table-right-va-top {
       width: 100%;
       display: block;
       padding: 20px; } }
 
-/* line 1003, foundation/components/_custom.scss */
+/* line 1007, foundation/components/_custom.scss */
 .table-left-va-top {
   vertical-align: top; }
   @media screen and (max-width: 768px) {
-    /* line 1003, foundation/components/_custom.scss */
+    /* line 1007, foundation/components/_custom.scss */
     .table-left-va-top {
       display: none; } }
 
-/* line 1010, foundation/components/_custom.scss */
+/* line 1014, foundation/components/_custom.scss */
 .table-right-va-top {
   vertical-align: top;
   height: 420px; }
 
-/* line 1017, foundation/components/_custom.scss */
+/* line 1021, foundation/components/_custom.scss */
 .static-login-container {
   overflow-x: hidden;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.9)), to(rgba(241, 241, 241, 0.9)));
@@ -6875,16 +6871,16 @@ a.th {
   padding: 20px; }
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
-/* line 1031, foundation/components/_custom.scss */
+/* line 1035, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .prod-name-homepage, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 1035, foundation/components/_custom.scss */
+/* line 1039, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 1040, foundation/components/_custom.scss */
+/* line 1044, foundation/components/_custom.scss */
 .prod-name, .prod-name-homepage {
   text-transform: capitalize;
   color: black;
@@ -6893,28 +6889,28 @@ a.th {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-/* line 1050, foundation/components/_custom.scss */
+/* line 1054, foundation/components/_custom.scss */
 .prod-name-homepage {
   display: block;
   max-width: auto; }
   @media screen and (min-width: 1200px) {
-    /* line 1050, foundation/components/_custom.scss */
+    /* line 1054, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 200px; } }
   @media screen and (max-width: 800px) {
-    /* line 1050, foundation/components/_custom.scss */
+    /* line 1054, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 150px; } }
 
-/* line 1062, foundation/components/_custom.scss */
+/* line 1066, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 1069, foundation/components/_custom.scss */
+/* line 1073, foundation/components/_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 1073, foundation/components/_custom.scss */
+/* line 1077, foundation/components/_custom.scss */
 #profileLongStory > div {
   font-family: Helvetica;
   font-size: 12px;
@@ -6923,24 +6919,24 @@ a.th {
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
 /*----------Share For Product Detail ----*/
-/* line 1085, foundation/components/_custom.scss */
+/* line 1089, foundation/components/_custom.scss */
 .product-detail-share {
   display: inline-block;
   margin-top: 10px;
   min-width: 100px; }
 
 /*---Search -----*/
-/* line 1095, foundation/components/_custom.scss */
+/* line 1099, foundation/components/_custom.scss */
 .search {
   list-style: none;
   width: 160px;
   overflow-x: hidden; }
-  /* line 1099, foundation/components/_custom.scss */
+  /* line 1103, foundation/components/_custom.scss */
   .search > li {
     text-transform: capitalize; }
 
 /*----------Grayscale images--------------*/
-/* line 1106, foundation/components/_custom.scss */
+/* line 1110, foundation/components/_custom.scss */
 .soldout, .soldout-product {
   font-size: 12px;
   text-align: center;
@@ -6952,32 +6948,32 @@ a.th {
   position: absolute;
   top: 50%;
   left: 0; }
-  /* line 1117, foundation/components/_custom.scss */
+  /* line 1121, foundation/components/_custom.scss */
   .soldout:before, .soldout-product:before {
     content: 'SOLD OUT'; }
 
-/* line 1122, foundation/components/_custom.scss */
+/* line 1126, foundation/components/_custom.scss */
 .soldout-product {
   padding: 2em;
   top: 46%; }
 
 /*-----Featured Designers Fancy Border Text -------*/
-/* line 1129, foundation/components/_custom.scss */
+/* line 1133, foundation/components/_custom.scss */
 .ovx {
   text-align: center;
   overflow-x: hidden; }
 
-/* line 1133, foundation/components/_custom.scss */
+/* line 1137, foundation/components/_custom.scss */
 .fancy, .featured-text {
   line-height: 0.5;
   text-align: center; }
 
-/* line 1137, foundation/components/_custom.scss */
+/* line 1141, foundation/components/_custom.scss */
 .fancy span, .featured-text span {
   display: inline-block;
   position: relative; }
 
-/* line 1142, foundation/components/_custom.scss */
+/* line 1146, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before,
 .fancy span:after,
 .featured-text span:after {
@@ -6988,41 +6984,41 @@ a.th {
   top: 0;
   width: 600px; }
 
-/* line 1150, foundation/components/_custom.scss */
+/* line 1154, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before {
   right: 100%;
   margin-right: 15px; }
 
-/* line 1154, foundation/components/_custom.scss */
+/* line 1158, foundation/components/_custom.scss */
 .fancy span:after, .featured-text span:after {
   left: 100%;
   margin-left: 15px; }
 
-/* line 1159, foundation/components/_custom.scss */
+/* line 1163, foundation/components/_custom.scss */
 .featured-text {
   margin-top: 24px; }
   @media screen and (max-width: 369px) {
-    /* line 1159, foundation/components/_custom.scss */
+    /* line 1163, foundation/components/_custom.scss */
     .featured-text {
       line-height: 1; } }
 
 /*-----Featured Designers Fancy Border Text -------*/
 /*---Marketing Ticker ---*/
-/* line 1175, foundation/components/_custom.scss */
+/* line 1179, foundation/components/_custom.scss */
 .ticker > h4 {
   padding-top: 1.4rem;
   font-size: 16px; }
 
-/* line 1183, foundation/components/_custom.scss */
+/* line 1187, foundation/components/_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
 
-/* line 1190, foundation/components/_custom.scss */
+/* line 1194, foundation/components/_custom.scss */
 .full-height {
   height: 100%; }
 
-/* line 1194, foundation/components/_custom.scss */
+/* line 1198, foundation/components/_custom.scss */
 .side-nav-holder {
   padding: 20px;
   margin-bottom: 10px;
@@ -7036,31 +7032,31 @@ a.th {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 768px) {
-    /* line 1194, foundation/components/_custom.scss */
+    /* line 1198, foundation/components/_custom.scss */
     .side-nav-holder {
       height: 100%;
       padding-left: 10px;
       margin-bottom: 0; } }
 
-/* line 1213, foundation/components/_custom.scss */
+/* line 1217, foundation/components/_custom.scss */
 .side-nav > li:nth-child(n+2) {
   text-transform: uppercase;
   font-size: 12px; }
 
-/* line 1218, foundation/components/_custom.scss */
+/* line 1222, foundation/components/_custom.scss */
 .side-nav-heading {
   font-size: 16px !important;
   text-transform: uppercase; }
 
-/* line 1226, foundation/components/_custom.scss */
+/* line 1230, foundation/components/_custom.scss */
 .about-video {
   margin-top: 40px; }
 
-/* line 1232, foundation/components/_custom.scss */
+/* line 1236, foundation/components/_custom.scss */
 .help-container {
   position: relative; }
 
-/* line 1236, foundation/components/_custom.scss */
+/* line 1240, foundation/components/_custom.scss */
 .help-tabs {
   position: absolute;
   top: 0;
@@ -7070,39 +7066,39 @@ a.th {
   padding-left: 20px;
   padding-bottom: 20px; }
 
-/* line 1246, foundation/components/_custom.scss */
+/* line 1250, foundation/components/_custom.scss */
 .hidden-help {
   display: none;
   z-index: 1; }
 
-/* line 1251, foundation/components/_custom.scss */
+/* line 1255, foundation/components/_custom.scss */
 .active-help {
   display: initial;
   z-index: 2; }
 
-/* line 1256, foundation/components/_custom.scss */
+/* line 1260, foundation/components/_custom.scss */
 .help-tabs p {
   text-align: justify; }
 
-/* line 1260, foundation/components/_custom.scss */
+/* line 1264, foundation/components/_custom.scss */
 .help-title, .help-title-main {
   font-family: futura;
   font-size: 1rem;
   text-transform: uppercase; }
 
-/* line 1266, foundation/components/_custom.scss */
+/* line 1270, foundation/components/_custom.scss */
 .help-title-main {
   margin-top: 20px;
   padding-left: 0.46875rem;
   text-transform: uppercase; }
 
-/* line 1278, foundation/components/_custom.scss */
+/* line 1282, foundation/components/_custom.scss */
 .marketing-image-container {
   margin-top: -180px;
   left: 0;
   width: 100%; }
 
-/* line 1284, foundation/components/_custom.scss */
+/* line 1288, foundation/components/_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
@@ -7112,15 +7108,15 @@ a.th {
   background-size: cover;
   min-height: 200px; }
   @media (min-width: 590px) {
-    /* line 1284, foundation/components/_custom.scss */
+    /* line 1288, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 240px; } }
   @media (min-width: 768px) {
-    /* line 1284, foundation/components/_custom.scss */
+    /* line 1288, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 300px; } }
 
-/* line 1300, foundation/components/_custom.scss */
+/* line 1304, foundation/components/_custom.scss */
 .wide-image {
   width: 100%;
   max-width: 100%;
@@ -7128,9 +7124,17 @@ a.th {
   min-height: 150px; }
 
 @media (max-width: 768px) {
-  /* line 1307, foundation/components/_custom.scss */
+  /* line 1311, foundation/components/_custom.scss */
   .marketing-logo {
     margin-top: 55px; } }
+
+/* line 1317, foundation/components/_custom.scss */
+.redeem {
+  margin-top: 10px; }
+  @media (min-width: 320px) {
+    /* line 1317, foundation/components/_custom.scss */
+    .redeem {
+      margin-top: 25px; } }
 
 /* line 14, foundation/components/_media-object-plus.scss */
 .media,
@@ -7159,7 +7163,7 @@ h4.media-heading {
   color: black; }
 
 /* line 46, foundation/components/_media-object-plus.scss */
-.media > .left, .media > #reveal-sidebar {
+.media > .left, .media > #reveal-sidebar, .media > .redeem {
   margin-right: 10px; }
 /* line 49, foundation/components/_media-object-plus.scss */
 .media > .right, .media > .avatar-img {
