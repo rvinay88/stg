@@ -6312,7 +6312,7 @@ a.th {
 
 /* line 479, foundation/components/_custom.scss */
 .order-summary-image {
-  min-width: 120px; }
+  max-width: 80px; }
 
 /* line 483, foundation/components/_custom.scss */
 .responsive-table {
