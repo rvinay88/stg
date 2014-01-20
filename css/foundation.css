@@ -5631,21 +5631,21 @@ table {
   /* line 52, foundation/components/_tables.scss */
   table thead,
   table tfoot {
-    background: black;
+    background: transparent;
     -webkit-border-radius: 0.25rem;
     border-radius: 0.25rem;
-    font-weight: normal; }
+    font-weight: bold; }
     /* line 59, foundation/components/_tables.scss */
     table thead tr th,
     table thead tr td,
     table tfoot tr th,
     table tfoot tr td {
       padding: 0.5rem 0.625rem 0.625rem;
-      font-size: 0.75rem;
-      color: white;
+      font-size: 0.875rem;
+      color: black;
       text-align: left;
       text-transform: uppercase;
-      font-weight: normal; }
+      font-weight: bold; }
       /* line 66, foundation/components/_tables.scss */
       table thead tr th:first-child,
       table thead tr td:first-child,
@@ -5670,7 +5670,7 @@ table {
       padding: 0.3125rem 0.625rem;
       font-size: 0.75rem;
       color: #666666;
-      font-weight: normal; }
+      font-weight: bold; }
   /* line 101, foundation/components/_tables.scss */
   table thead tr th,
   table tfoot tr th,
