@@ -1069,9 +1069,9 @@
   });
   </script>
   <script>
-  $(".wizard-step").click(function (e) {
+  $(".wizard-step > a").click(function (e) {
 
-    $this = $(this);
+    $this = $(this).parent();
     $currentActive = $(".active-step");
     $disabledStep = $(".disabled");
 
@@ -1086,8 +1086,6 @@
     }
 
   });
-
-
   </script>
 </body>
 </html>
