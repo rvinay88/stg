@@ -1956,7 +1956,7 @@ blockquote p {
   font-style: italic; }
 
 /* line 175, foundation/components/_buttons.scss */
-button, .button, .follow-button, .stats-button {
+button, .button, .follow-button, .stats-button, .btn-wizard {
   cursor: pointer;
   font-family: Helvetica;
   font-weight: normal;
@@ -1976,78 +1976,78 @@ button, .button, .follow-button, .stats-button {
   border-color: black;
   color: white; }
   /* line 136, foundation/components/_buttons.scss */
-  button:hover, button:focus, .button:hover, .follow-button:hover, .stats-button:hover, .button:focus, .follow-button:focus, .stats-button:focus {
+  button:hover, button:focus, .button:hover, .follow-button:hover, .stats-button:hover, .btn-wizard:hover, .button:focus, .follow-button:focus, .stats-button:focus, .btn-wizard:focus {
     color: white; }
   /* line 179, foundation/components/_buttons.scss */
-  button.medium, .button.medium, .medium.follow-button, .medium.stats-button {
+  button.medium, .button.medium, .medium.follow-button, .medium.stats-button, .medium.btn-wizard {
     min-width: 170px;
     max-width: 170px;
     margin-bottom: 12px; }
   /* line 184, foundation/components/_buttons.scss */
-  button.secondary, button.stats-button, .button.secondary, .secondary.follow-button, .stats-button {
+  button.secondary, button.stats-button, button.btn-wizard, .button.secondary, .secondary.follow-button, .stats-button, .btn-wizard {
     background-color: #eeeeee;
     border-color: #d4d4d4;
     color: #333333; }
     /* line 131, foundation/components/_buttons.scss */
-    button.secondary:hover, button.stats-button:hover, button.secondary:focus, button.stats-button:focus, .button.secondary:hover, .secondary.follow-button:hover, .stats-button:hover, .button.secondary:focus, .secondary.follow-button:focus, .stats-button:focus {
+    button.secondary:hover, button.stats-button:hover, button.btn-wizard:hover, button.secondary:focus, button.stats-button:focus, button.btn-wizard:focus, .button.secondary:hover, .secondary.follow-button:hover, .stats-button:hover, .btn-wizard:hover, .button.secondary:focus, .secondary.follow-button:focus, .stats-button:focus, .btn-wizard:focus {
       color: #333333; }
     /* line 186, foundation/components/_buttons.scss */
-    button.secondary.medium, button.medium.stats-button, .button.secondary.medium, .secondary.medium.follow-button, .medium.stats-button {
+    button.secondary.medium, button.medium.stats-button, button.medium.btn-wizard, .button.secondary.medium, .secondary.medium.follow-button, .medium.stats-button, .medium.btn-wizard {
       min-width: 170px;
       max-width: 170px;
       margin-bottom: 12px; }
   /* line 192, foundation/components/_buttons.scss */
-  button.success, .button.success, .success.follow-button, .success.stats-button {
+  button.success, .button.success, .success.follow-button, .success.stats-button, .success.btn-wizard {
     background-color: #5da423;
     border-color: #457a1a;
     color: white; }
     /* line 136, foundation/components/_buttons.scss */
-    button.success:hover, button.success:focus, .button.success:hover, .success.follow-button:hover, .success.stats-button:hover, .button.success:focus, .success.follow-button:focus, .success.stats-button:focus {
+    button.success:hover, button.success:focus, .button.success:hover, .success.follow-button:hover, .success.stats-button:hover, .success.btn-wizard:hover, .button.success:focus, .success.follow-button:focus, .success.stats-button:focus, .success.btn-wizard:focus {
       color: white; }
   /* line 193, foundation/components/_buttons.scss */
-  button.alert, .button.alert, .alert.follow-button, .alert.stats-button {
+  button.alert, .button.alert, .alert.follow-button, .alert.stats-button, .alert.btn-wizard {
     background-color: #c60f13;
     border-color: #970b0e;
     color: white; }
     /* line 136, foundation/components/_buttons.scss */
-    button.alert:hover, button.alert:focus, .button.alert:hover, .alert.follow-button:hover, .alert.stats-button:hover, .button.alert:focus, .alert.follow-button:focus, .alert.stats-button:focus {
+    button.alert:hover, button.alert:focus, .button.alert:hover, .alert.follow-button:hover, .alert.stats-button:hover, .alert.btn-wizard:hover, .button.alert:focus, .alert.follow-button:focus, .alert.stats-button:focus, .alert.btn-wizard:focus {
       color: white; }
   /* line 195, foundation/components/_buttons.scss */
-  button.large, .button.large, .large.follow-button, .large.stats-button {
+  button.large, .button.large, .large.follow-button, .large.stats-button, .large.btn-wizard {
     padding-top: 1rem;
     padding-right: 2rem;
     padding-bottom: 1.0625rem;
     padding-left: 2rem;
     font-size: 0.75rem; }
   /* line 196, foundation/components/_buttons.scss */
-  button.small, button.stats-button, .button.small, .small.follow-button, .stats-button {
+  button.small, button.stats-button, .button.small, .small.follow-button, .stats-button, .small.btn-wizard {
     padding-top: 0.59375rem;
     padding-right: 1.1875rem;
     padding-bottom: 0.65625rem;
     padding-left: 1.1875rem;
     font-size: 0.75rem; }
   /* line 197, foundation/components/_buttons.scss */
-  button.tiny, .button.tiny, .tiny.follow-button, .tiny.stats-button {
+  button.tiny, .button.tiny, .tiny.follow-button, .tiny.stats-button, .tiny.btn-wizard {
     padding-top: 0.4375rem;
     padding-right: 0.875rem;
     padding-bottom: 0.5rem;
     padding-left: 0.875rem;
     font-size: 0.75rem; }
   /* line 198, foundation/components/_buttons.scss */
-  button.expand, .button.expand, .expand.follow-button, .expand.stats-button {
+  button.expand, .button.expand, .expand.follow-button, .expand.stats-button, .expand.btn-wizard {
     padding-right: 0px;
     padding-left: 0px;
     width: 100%; }
   /* line 200, foundation/components/_buttons.scss */
-  button.left-align, .button.left-align, .left-align.follow-button, .left-align.stats-button {
+  button.left-align, .button.left-align, .left-align.follow-button, .left-align.stats-button, .left-align.btn-wizard {
     text-align: left;
     text-indent: 0.75rem; }
   /* line 201, foundation/components/_buttons.scss */
-  button.right-align, .button.right-align, .right-align.follow-button, .right-align.stats-button {
+  button.right-align, .button.right-align, .right-align.follow-button, .right-align.stats-button, .right-align.btn-wizard {
     text-align: right;
     padding-right: 0.75rem; }
   /* line 203, foundation/components/_buttons.scss */
-  button.disabled, button[disabled], .button.disabled, .disabled.follow-button, .disabled.stats-button, .button[disabled], [disabled].follow-button, [disabled].stats-button {
+  button.disabled, button[disabled], .button.disabled, .disabled.follow-button, .disabled.stats-button, .disabled.btn-wizard, .button[disabled], [disabled].follow-button, [disabled].stats-button, [disabled].btn-wizard {
     background-color: black;
     border-color: black;
     color: white;
@@ -2056,13 +2056,13 @@ button, .button, .follow-button, .stats-button {
     -webkit-box-shadow: none;
     box-shadow: none; }
     /* line 136, foundation/components/_buttons.scss */
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .button.disabled:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .button[disabled]:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, .button[disabled]:focus, [disabled].follow-button:focus, [disabled].stats-button:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled]:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled]:focus, [disabled].follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
       color: white; }
     /* line 149, foundation/components/_buttons.scss */
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .button.disabled:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .button[disabled]:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, .button[disabled]:focus, [disabled].follow-button:focus, [disabled].stats-button:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled]:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled]:focus, [disabled].follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
       background-color: black; }
     /* line 204, foundation/components/_buttons.scss */
-    button.disabled.secondary, button.disabled.stats-button, button[disabled].secondary, button[disabled].stats-button, .button.disabled.secondary, .disabled.secondary.follow-button, .disabled.stats-button, .button[disabled].secondary, [disabled].secondary.follow-button, [disabled].stats-button {
+    button.disabled.secondary, button.disabled.stats-button, button.disabled.btn-wizard, button[disabled].secondary, button[disabled].stats-button, button[disabled].btn-wizard, .button.disabled.secondary, .disabled.secondary.follow-button, .disabled.stats-button, .disabled.btn-wizard, .button[disabled].secondary, [disabled].secondary.follow-button, [disabled].stats-button, [disabled].btn-wizard {
       background-color: #eeeeee;
       border-color: #d4d4d4;
       color: #333333;
@@ -2071,13 +2071,13 @@ button, .button, .follow-button, .stats-button {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 131, foundation/components/_buttons.scss */
-      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus {
+      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.btn-wizard:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button.disabled.btn-wizard:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].btn-wizard:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, button[disabled].btn-wizard:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
         color: #333333; }
       /* line 149, foundation/components/_buttons.scss */
-      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus {
+      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.btn-wizard:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button.disabled.btn-wizard:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].btn-wizard:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, button[disabled].btn-wizard:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
         background-color: #eeeeee; }
     /* line 205, foundation/components/_buttons.scss */
-    button.disabled.success, button[disabled].success, .button.disabled.success, .disabled.success.follow-button, .disabled.success.stats-button, .button[disabled].success, [disabled].success.follow-button, [disabled].success.stats-button {
+    button.disabled.success, button[disabled].success, .button.disabled.success, .disabled.success.follow-button, .disabled.success.stats-button, .disabled.success.btn-wizard, .button[disabled].success, [disabled].success.follow-button, [disabled].success.stats-button, [disabled].success.btn-wizard {
       background-color: #5da423;
       border-color: #457a1a;
       color: white;
@@ -2086,13 +2086,13 @@ button, .button, .follow-button, .stats-button {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 136, foundation/components/_buttons.scss */
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .disabled.success.btn-wizard:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .disabled.success.btn-wizard:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, [disabled].success.btn-wizard:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus, [disabled].success.btn-wizard:focus {
         color: white; }
       /* line 149, foundation/components/_buttons.scss */
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .disabled.success.btn-wizard:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .disabled.success.btn-wizard:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, [disabled].success.btn-wizard:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus, [disabled].success.btn-wizard:focus {
         background-color: #5da423; }
     /* line 206, foundation/components/_buttons.scss */
-    button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled.alert.follow-button, .disabled.alert.stats-button, .button[disabled].alert, [disabled].alert.follow-button, [disabled].alert.stats-button {
+    button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled.alert.follow-button, .disabled.alert.stats-button, .disabled.alert.btn-wizard, .button[disabled].alert, [disabled].alert.follow-button, [disabled].alert.stats-button, [disabled].alert.btn-wizard {
       background-color: #c60f13;
       border-color: #970b0e;
       color: white;
@@ -2101,59 +2101,59 @@ button, .button, .follow-button, .stats-button {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 136, foundation/components/_buttons.scss */
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .disabled.alert.btn-wizard:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .disabled.alert.btn-wizard:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, [disabled].alert.btn-wizard:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus, [disabled].alert.btn-wizard:focus {
         color: white; }
       /* line 149, foundation/components/_buttons.scss */
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .disabled.alert.btn-wizard:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .disabled.alert.btn-wizard:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, [disabled].alert.btn-wizard:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus, [disabled].alert.btn-wizard:focus {
         background-color: #c60f13; }
 
 /* line 211, foundation/components/_buttons.scss */
-button, .button, .follow-button, .stats-button {
+button, .button, .follow-button, .stats-button, .btn-wizard {
   padding-top: 0.8125rem;
   padding-bottom: 0.75rem;
   -webkit-appearance: none; }
   /* line 213, foundation/components/_buttons.scss */
-  button.tiny, .button.tiny, .tiny.follow-button, .tiny.stats-button {
+  button.tiny, .button.tiny, .tiny.follow-button, .tiny.stats-button, .tiny.btn-wizard {
     padding-top: 0.5rem;
     padding-bottom: 0.4375rem;
     -webkit-appearance: none; }
   /* line 214, foundation/components/_buttons.scss */
-  button.small, button.stats-button, .button.small, .small.follow-button, .stats-button {
+  button.small, button.stats-button, .button.small, .small.follow-button, .stats-button, .small.btn-wizard {
     padding-top: 0.65625rem;
     padding-bottom: 0.59375rem;
     -webkit-appearance: none; }
   /* line 215, foundation/components/_buttons.scss */
-  button.large, .button.large, .large.follow-button, .large.stats-button {
+  button.large, .button.large, .large.follow-button, .large.stats-button, .large.btn-wizard {
     padding-top: 1.03125rem;
     padding-bottom: 1.03125rem;
     -webkit-appearance: none; }
 
 @media only screen {
   /* line 221, foundation/components/_buttons.scss */
-  button, .button, .follow-button, .stats-button {
+  button, .button, .follow-button, .stats-button, .btn-wizard {
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
     transition: background-color 300ms ease-out; }
     /* line 68, foundation/components/_global.scss */
-    button:active, .button:active, .follow-button:active, .stats-button:active {
+    button:active, .button:active, .follow-button:active, .stats-button:active, .btn-wizard:active {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; } }
 @media only screen and (min-width: 768px) {
   /* line 238, foundation/components/_buttons.scss */
-  button, .button, .follow-button, .stats-button {
+  button, .button, .follow-button, .stats-button, .btn-wizard {
     display: inline-block; } }
 /* line 249, foundation/components/_buttons.scss */
-a.button:hover, a.follow-button:hover, a.stats-button:hover {
+a.button:hover, a.follow-button:hover, a.stats-button:hover, a.btn-wizard:hover {
   text-decoration: none; }
 
 /* line 255, foundation/components/_buttons.scss */
-.button.throbber, .throbber.follow-button, .throbber.stats-button {
+.button.throbber, .throbber.follow-button, .throbber.stats-button, .throbber.btn-wizard {
   color: transparent;
   background: url("../images/loading.gif") center center no-repeat; }
   /* line 258, foundation/components/_buttons.scss */
-  .button.throbber:hover, .throbber.follow-button:hover, .throbber.stats-button:hover {
+  .button.throbber:hover, .throbber.follow-button:hover, .throbber.stats-button:hover, .throbber.btn-wizard:hover {
     color: transparent; }
 
 /* Standard Forms */
@@ -2238,7 +2238,7 @@ label {
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
 /* line 282, foundation/components/_forms.scss */
-.postfix.button, .postfix.follow-button, .postfix.stats-button {
+.postfix.button, .postfix.follow-button, .postfix.stats-button, .postfix.btn-wizard {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2247,7 +2247,7 @@ label {
   line-height: 2.125rem; }
 
 /* line 283, foundation/components/_forms.scss */
-.prefix.button, .prefix.follow-button, .prefix.stats-button {
+.prefix.button, .prefix.follow-button, .prefix.stats-button, .prefix.btn-wizard {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2256,7 +2256,7 @@ label {
   line-height: 2.125rem; }
 
 /* line 285, foundation/components/_forms.scss */
-.prefix.button.radius, .prefix.radius.follow-button, .prefix.radius.stats-button {
+.prefix.button.radius, .prefix.radius.follow-button, .prefix.radius.stats-button, .prefix.radius.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 0.25rem;
@@ -2267,7 +2267,7 @@ label {
   border-top-left-radius: 0.25rem; }
 
 /* line 286, foundation/components/_forms.scss */
-.postfix.button.radius, .postfix.radius.follow-button, .postfix.radius.stats-button {
+.postfix.button.radius, .postfix.radius.follow-button, .postfix.radius.stats-button, .postfix.radius.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 0.25rem;
@@ -2278,7 +2278,7 @@ label {
   border-bottom-right-radius: 0.25rem; }
 
 /* line 287, foundation/components/_forms.scss */
-.prefix.button.round, .prefix.round.follow-button, .prefix.round.stats-button {
+.prefix.button.round, .prefix.round.follow-button, .prefix.round.stats-button, .prefix.round.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 62.5rem;
@@ -2289,7 +2289,7 @@ label {
   border-top-left-radius: 62.5rem; }
 
 /* line 288, foundation/components/_forms.scss */
-.postfix.button.round, .postfix.round.follow-button, .postfix.round.stats-button {
+.postfix.button.round, .postfix.round.follow-button, .postfix.round.stats-button, .postfix.round.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 62.5rem;
@@ -2691,7 +2691,7 @@ select::-ms-expand {
     .button-group > *:first-child {
       margin-left: 0; }
   /* line 53, foundation/components/_button-groups.scss */
-  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .follow-button, .button-group.radius > *:first-child > .stats-button {
+  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .follow-button, .button-group.radius > *:first-child > .stats-button, .button-group.radius > *:first-child > .btn-wizard {
     -moz-border-radius-bottomleft: 0.25rem;
     -moz-border-radius-topleft: 0.25rem;
     -webkit-border-bottom-left-radius: 0.25rem;
@@ -2699,7 +2699,7 @@ select::-ms-expand {
     border-bottom-left-radius: 0.25rem;
     border-top-left-radius: 0.25rem; }
   /* line 57, foundation/components/_button-groups.scss */
-  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .follow-button, .button-group.radius > *:last-child > .stats-button {
+  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .follow-button, .button-group.radius > *:last-child > .stats-button, .button-group.radius > *:last-child > .btn-wizard {
     -moz-border-radius-topright: 0.25rem;
     -moz-border-radius-bottomright: 0.25rem;
     -webkit-border-top-right-radius: 0.25rem;
@@ -2707,7 +2707,7 @@ select::-ms-expand {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; }
   /* line 53, foundation/components/_button-groups.scss */
-  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .follow-button, .button-group.round > *:first-child > .stats-button {
+  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .follow-button, .button-group.round > *:first-child > .stats-button, .button-group.round > *:first-child > .btn-wizard {
     -moz-border-radius-bottomleft: 62.5rem;
     -moz-border-radius-topleft: 62.5rem;
     -webkit-border-bottom-left-radius: 62.5rem;
@@ -2715,7 +2715,7 @@ select::-ms-expand {
     border-bottom-left-radius: 62.5rem;
     border-top-left-radius: 62.5rem; }
   /* line 57, foundation/components/_button-groups.scss */
-  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .follow-button, .button-group.round > *:last-child > .stats-button {
+  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .follow-button, .button-group.round > *:last-child > .stats-button, .button-group.round > *:last-child > .btn-wizard {
     -moz-border-radius-topright: 62.5rem;
     -moz-border-radius-bottomright: 62.5rem;
     -webkit-border-top-right-radius: 62.5rem;
@@ -2726,43 +2726,43 @@ select::-ms-expand {
   .button-group.even-2 li {
     width: 50%; }
     /* line 63, foundation/components/_button-groups.scss */
-    .button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li .follow-button, .button-group.even-2 li .stats-button {
+    .button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li .follow-button, .button-group.even-2 li .stats-button, .button-group.even-2 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation/components/_button-groups.scss */
   .button-group.even-3 li {
     width: 33.33333%; }
     /* line 63, foundation/components/_button-groups.scss */
-    .button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li .follow-button, .button-group.even-3 li .stats-button {
+    .button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li .follow-button, .button-group.even-3 li .stats-button, .button-group.even-3 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation/components/_button-groups.scss */
   .button-group.even-4 li {
     width: 25%; }
     /* line 63, foundation/components/_button-groups.scss */
-    .button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li .follow-button, .button-group.even-4 li .stats-button {
+    .button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li .follow-button, .button-group.even-4 li .stats-button, .button-group.even-4 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation/components/_button-groups.scss */
   .button-group.even-5 li {
     width: 20%; }
     /* line 63, foundation/components/_button-groups.scss */
-    .button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li .follow-button, .button-group.even-5 li .stats-button {
+    .button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li .follow-button, .button-group.even-5 li .stats-button, .button-group.even-5 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation/components/_button-groups.scss */
   .button-group.even-6 li {
     width: 16.66667%; }
     /* line 63, foundation/components/_button-groups.scss */
-    .button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li .follow-button, .button-group.even-6 li .stats-button {
+    .button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li .follow-button, .button-group.even-6 li .stats-button, .button-group.even-6 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation/components/_button-groups.scss */
   .button-group.even-7 li {
     width: 14.28571%; }
     /* line 63, foundation/components/_button-groups.scss */
-    .button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li .follow-button, .button-group.even-7 li .stats-button {
+    .button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li .follow-button, .button-group.even-7 li .stats-button, .button-group.even-7 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation/components/_button-groups.scss */
   .button-group.even-8 li {
     width: 12.5%; }
     /* line 63, foundation/components/_button-groups.scss */
-    .button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li .follow-button, .button-group.even-8 li .stats-button {
+    .button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li .follow-button, .button-group.even-8 li .stats-button, .button-group.even-8 li .btn-wizard {
       width: 100%; }
 
 /* line 84, foundation/components/_button-groups.scss */
@@ -3818,7 +3818,7 @@ select::-ms-expand {
   .top-bar input {
     height: 2.45em; }
   /* line 105, foundation/components/_top-bar.scss */
-  .top-bar .button, .top-bar .follow-button, .top-bar .stats-button {
+  .top-bar .button, .top-bar .follow-button, .top-bar .stats-button, .top-bar .btn-wizard {
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin-bottom: 0; }
@@ -3957,29 +3957,29 @@ select::-ms-expand {
       background: white;
       color: black; }
     /* line 277, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button, .top-bar-section ul li > a.follow-button, .top-bar-section ul li > a.stats-button {
+    .top-bar-section ul li > a.button, .top-bar-section ul li > a.follow-button, .top-bar-section ul li > a.stats-button, .top-bar-section ul li > a.btn-wizard {
       background: black;
       font-size: 0.75rem; }
       /* line 280, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.hover, .top-bar-section ul li > a.hover.follow-button, .top-bar-section ul li > a.hover.stats-button {
+      .top-bar-section ul li > a.button.hover, .top-bar-section ul li > a.hover.follow-button, .top-bar-section ul li > a.hover.stats-button, .top-bar-section ul li > a.hover.btn-wizard {
         background: black; }
     /* line 284, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.follow-button, .top-bar-section ul li > a.stats-button {
+    .top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.follow-button, .top-bar-section ul li > a.stats-button, .top-bar-section ul li > a.btn-wizard {
       background: #666666; }
       /* line 286, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.secondary.hover, .top-bar-section ul li > a.secondary.hover.follow-button, .top-bar-section ul li > a.hover.stats-button {
+      .top-bar-section ul li > a.button.secondary.hover, .top-bar-section ul li > a.secondary.hover.follow-button, .top-bar-section ul li > a.hover.stats-button, .top-bar-section ul li > a.hover.btn-wizard {
         background: #4d4d4d; }
     /* line 290, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.follow-button, .top-bar-section ul li > a.success.stats-button {
+    .top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.follow-button, .top-bar-section ul li > a.success.stats-button, .top-bar-section ul li > a.success.btn-wizard {
       background: #5da423; }
       /* line 292, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.success.hover, .top-bar-section ul li > a.success.hover.follow-button, .top-bar-section ul li > a.success.hover.stats-button {
+      .top-bar-section ul li > a.button.success.hover, .top-bar-section ul li > a.success.hover.follow-button, .top-bar-section ul li > a.success.hover.stats-button, .top-bar-section ul li > a.success.hover.btn-wizard {
         background: #457a1a; }
     /* line 296, foundation/components/_top-bar.scss */
-    .top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.follow-button, .top-bar-section ul li > a.alert.stats-button {
+    .top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.follow-button, .top-bar-section ul li > a.alert.stats-button, .top-bar-section ul li > a.alert.btn-wizard {
       background: #c60f13; }
       /* line 298, foundation/components/_top-bar.scss */
-      .top-bar-section ul li > a.button.alert.hover, .top-bar-section ul li > a.alert.hover.follow-button, .top-bar-section ul li > a.alert.hover.stats-button {
+      .top-bar-section ul li > a.button.alert.hover, .top-bar-section ul li > a.alert.hover.follow-button, .top-bar-section ul li > a.alert.hover.stats-button, .top-bar-section ul li > a.alert.hover.btn-wizard {
         background: #970b0e; }
   /* line 306, foundation/components/_top-bar.scss */
   .top-bar-section ul li:hover > a {
@@ -4116,7 +4116,8 @@ select::-ms-expand {
     .top-bar input,
     .top-bar .button,
     .top-bar .follow-button,
-    .top-bar .stats-button {
+    .top-bar .stats-button,
+    .top-bar .btn-wizard {
       line-height: 2rem;
       font-size: 0.875rem;
       height: 2rem;
@@ -5060,7 +5061,7 @@ ul.user-setting {
     border-color: rgba(151, 11, 14, 0.1);
     color: white; }
   /* line 104, foundation/components/_alert-boxes.scss */
-  .alert-box.secondary, .alert-box.stats-button {
+  .alert-box.secondary, .alert-box.stats-button, .alert-box.btn-wizard {
     background-color: #666666;
     border-color: #4d4d4d;
     color: white; }
@@ -5329,7 +5330,7 @@ form.custom {
     background-color: #5da423;
     color: white; }
   /* line 82, foundation/components/_labels.scss */
-  .label.secondary, .label.stats-button {
+  .label.secondary, .label.stats-button, .label.btn-wizard {
     background-color: #666666;
     color: white; }
 
@@ -6233,7 +6234,7 @@ a.th {
   margin-right: 0.625rem; }
 
 /* line 407, foundation/components/_custom.scss */
-.top-margin, .errorSummary, .successMessage {
+.top-margin, .errorSummary, .successMessage, .btn-wizard {
   margin-top: 1rem; }
 
 /* line 411, foundation/components/_custom.scss */
@@ -7535,27 +7536,6 @@ h4.media-heading {
       content: "";
       top: -6px;
       right: -18px; }
-
-/* = HOVER STATES
-----------------------------*/
-/* line 111, foundation/components/_wizard-steps.scss */
-.wizard-step .completed-step:hover a, .wizard-step .active-step:hover a {
-  color: #fff;
-  background: #8F061E;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
-
-/* line 116, foundation/components/_wizard-steps.scss */
-.wizard-step .completed-step:hover span, .wizard-step .active-step:hover span {
-  color: #8F061E; }
-
-/* line 119, foundation/components/_wizard-steps.scss */
-.wizard-step .completed-step:hover a:before, .wizard-step .active-step:hover a:before {
-  border-top: 12px solid #8F061E;
-  border-bottom: 12px solid #8F061E; }
-
-/* line 123, foundation/components/_wizard-steps.scss */
-.wizard-step .completed-step:hover a:after, .wizard-step .active-step:hover a:after {
-  border-left: 12px solid #8F061E; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */

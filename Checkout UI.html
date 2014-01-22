@@ -163,11 +163,15 @@
   <div class="large-12 columns">
     <div class="section-container auto" data-section data-options="one_up: false; deep_linking: true;">
       <section class="active">
-        
+
         <div class="content" data-section-content data-slug="viewcart">
           <!-- content of tab 1 -->
           <div class="row">
             <div class="large-12 columns">
+              <div class="hide-for-small clearfix">
+                <a href="#billing" class="button secondary right">Next: Billing & Shipping</a>
+              </div>
+
               <div class="black-bar">
                 Items in Shopping Bag (4)
               </div>
@@ -302,6 +306,7 @@
 
           <div class="row">
             <div class="large-12 columns">
+
               <article class="shopping-block">
                 <section class="shopping-block-img">
                   <a href="#">
@@ -419,13 +424,13 @@
 
           <div class="row hide-for-small">
             <div class="large-12 columns">
-              <a href="#billing" class="button secondary right top-margin">Next: Billing & Shipping</a>
+              <a href="#billing" class="btn-wizard right">Next: Billing & Shipping</a>
             </div>
           </div>
 
           <div class="row show-for-small">
             <div class="large-12 columns text-center">
-              <a href="#billing" class="button secondary top-margin">Next: Billing & Shipping</a>
+              <a href="#billing" class="btn-wizard">Next: Billing & Shipping</a>
             </div>
           </div>
 
@@ -433,11 +438,18 @@
         </div>
       </section>
       <section>
-        
+
         <div class="content" data-section-content data-slug="billing">
           <!-- Content of tab 2 -->
           <div class="row">
+            <div class="large-12 columns">
+              <div class="hide-for-small clearfix">
+                <a href="#viewcart" class="btn-wizard left no-top">Prev: View Cart</a>
+                <a href="#confirmation" class="btn-wizard right no-top">Next: Confirmation</a>                
+              </div>              
+            </div>
             <div class="large-6 columns">
+
               <h5>Shipping Address</h5>
               <form action="">
                 <select name="" id="" class="my_select_box-no-single">
@@ -488,6 +500,7 @@
 
           <div class="row">
             <div class="large-12 columns">
+
               <p>Want to use a different card ? <a href="#">Click here</a></p>
 
               <div class="large-4 columns">
@@ -556,16 +569,16 @@
 
           <div class="row hide-for-small">
             <div class="large-12 columns">
-              <a href="#viewcart" class="button secondary left top-margin no-bottom">Prev: View Cart</a>
-              <a href="#confirmation" class="button secondary right top-margin no-bottom">Next: Confirmation</a>
+              <a href="#viewcart" class="btn-wizard left no-bottom">Prev: View Cart</a>
+              <a href="#confirmation" class="btn-wizard right no-bottom">Next: Confirmation</a>
             </div>
           </div>            
 
           <div class="row show-for-small">
             <div class="large-12 columns text-center">
-              <a href="#viewcart" class="button secondary top-margin no-bottom">Prev: View Cart</a>
+              <a href="#viewcart" class="btn-wizard no-bottom">Prev: View Cart</a>
               <div class="clearfix"></div>
-              <a href="#confirmation" class="button secondary top-margin no-bottom">Next: Confirmation</a>
+              <a href="#confirmation" class="btn-wizard no-bottom">Next: Confirmation</a>
             </div>
           </div>            
 
@@ -573,11 +586,16 @@
         </div>
       </section>
       <section>
-       
+
         <div class="content" data-section-content data-slug="confirmation">
           <!-- Content of tab 3 -->
           <div class="row">
             <div class="large-12 columns">
+
+              <div class="hide-for-small clearfix">
+                <a href="#billing" class="btn-wizard left no-top">Prev: Billing & Shipping</a>
+                <input type="submit" class="button right no-top" value="Place Order">
+              </div>
 
               <div class="large-6 columns">
                 <h5 class="uppercase">Secure Checkout</h5>
@@ -655,13 +673,13 @@
 
             <div class="row hide-for-small">
               <div class="large-12 columns">
-                <a href="#billing" class="button secondary left top-margin no-bottom">Prev: Billing & Shipping</a>
-                <input type="submit" class="button right top-margin no-bottom" value="Place Order">
+                <a href="#billing" class="btn-wizard left no-bottom">Prev: Billing & Shipping</a>
+                <input type="submit" class="button top-margin right no-bottom" value="Place Order">
               </div>
             </div>
             <div class="row show-for-small">
               <div class="large-12 columns text-center">
-                <a href="#billing" class="button secondary top-margin no-bottom">Prev: Billing & Shipping</a>
+                <a href="#billing" class="btn-wizard no-bottom">Prev: Billing & Shipping</a>
                 <div class="clearfix"></div>
                 <input type="submit" class="button top-margin no-bottom" value="Place Order">
               </div>
@@ -1051,25 +1069,25 @@
   });
   </script>
   <script>
-    $(".wizard-step").click(function (e) {
-      
-      $this = $(this);
-      $currentActive = $(".active-step");
-      $disabledStep = $(".disabled");
+  $(".wizard-step").click(function (e) {
 
-      if($this.hasClass("disabled")) {
-        e.preventDefault();
-      }
+    $this = $(this);
+    $currentActive = $(".active-step");
+    $disabledStep = $(".disabled");
 
-      else if(!$this.hasClass("active-step")) {
-        $currentActive.removeClass("active-step");
-        $this.addClass("active-step");
-        $currentActive = $this;
-      }
+    if($this.hasClass("disabled")) {
+      e.preventDefault();
+    }
 
-    });
+    else if(!$this.hasClass("active-step")) {
+      $currentActive.removeClass("active-step");
+      $this.addClass("active-step");
+      $currentActive = $this;
+    }
 
-    
+  });
+
+
   </script>
 </body>
 </html>
