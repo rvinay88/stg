@@ -7435,6 +7435,128 @@ h4.media-heading {
   opacity: 1; }
 
 /*----------------New Collage-----------------*/
+/* line 3, foundation/components/_wizard-steps.scss */
+.wizard-step {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  background: #ddd;
+  padding: 4px; }
+  /* line 10, foundation/components/_wizard-steps.scss */
+  .wizard-step.active-step, .wizard-step:hover {
+    background-color: #000; }
+    /* line 12, foundation/components/_wizard-steps.scss */
+    .wizard-step.active-step a, .wizard-step:hover a {
+      color: white;
+      text-decoration: none; }
+      /* line 15, foundation/components/_wizard-steps.scss */
+      .wizard-step.active-step a > span, .wizard-step:hover a > span {
+        background: #fff;
+        color: #000; }
+      /* line 19, foundation/components/_wizard-steps.scss */
+      .wizard-step.active-step a:before, .wizard-step:hover a:before {
+        border-top: 14px solid #000;
+        border-bottom: 14px solid #000; }
+      /* line 23, foundation/components/_wizard-steps.scss */
+      .wizard-step.active-step a:after, .wizard-step:hover a:after {
+        border-left: 14px solid #000; }
+  /* line 30, foundation/components/_wizard-steps.scss */
+  .wizard-step.disabled, .wizard-step.disabled:hover {
+    background-color: #eeeeee; }
+    /* line 32, foundation/components/_wizard-steps.scss */
+    .wizard-step.disabled a, .wizard-step.disabled:hover a {
+      color: #000; }
+      /* line 34, foundation/components/_wizard-steps.scss */
+      .wizard-step.disabled a > span, .wizard-step.disabled:hover a > span {
+        background: #ddd;
+        color: #000; }
+      /* line 38, foundation/components/_wizard-steps.scss */
+      .wizard-step.disabled a:before, .wizard-step.disabled:hover a:before {
+        border-top: 14px solid #eeeeee;
+        border-bottom: 14px solid #eeeeee; }
+      /* line 42, foundation/components/_wizard-steps.scss */
+      .wizard-step.disabled a:after, .wizard-step.disabled:hover a:after {
+        border-left: 14px solid #eeeeee; }
+  /* line 48, foundation/components/_wizard-steps.scss */
+  .wizard-step:hover {
+    background-color: #000; }
+    /* line 50, foundation/components/_wizard-steps.scss */
+    .wizard-step:hover a {
+      color: white;
+      text-decoration: none; }
+      /* line 53, foundation/components/_wizard-steps.scss */
+      .wizard-step:hover a > span {
+        background: #fff;
+        color: #000; }
+      /* line 57, foundation/components/_wizard-steps.scss */
+      .wizard-step:hover a:before {
+        border-top: 14px solid #000;
+        border-bottom: 14px solid #000; }
+      /* line 61, foundation/components/_wizard-steps.scss */
+      .wizard-step:hover a:after {
+        border-left: 14px solid #000; }
+  /* line 67, foundation/components/_wizard-steps.scss */
+  .wizard-step a {
+    font-size: 12px;
+    position: relative; }
+    /* line 70, foundation/components/_wizard-steps.scss */
+    .wizard-step a > span {
+      display: inline-block;
+      background: black;
+      color: white;
+      font-size: 10px;
+      padding: 4px;
+      text-align: center;
+      width: 18px;
+      height: 18px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      margin-right: 4px; }
+    /* line 84, foundation/components/_wizard-steps.scss */
+    .wizard-step a:before {
+      width: 0px;
+      height: 0px;
+      border-top: 14px solid #ddd;
+      border-bottom: 14px solid #ddd;
+      border-left: 14px solid transparent;
+      position: absolute;
+      content: "";
+      top: -6px;
+      left: -18px; }
+    /* line 95, foundation/components/_wizard-steps.scss */
+    .wizard-step a:after {
+      width: 0;
+      height: 0;
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-left: 14px solid #ddd;
+      position: absolute;
+      content: "";
+      top: -6px;
+      right: -18px; }
+
+/* = HOVER STATES
+----------------------------*/
+/* line 111, foundation/components/_wizard-steps.scss */
+.wizard-step .completed-step:hover a, .wizard-step .active-step:hover a {
+  color: #fff;
+  background: #8F061E;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+
+/* line 116, foundation/components/_wizard-steps.scss */
+.wizard-step .completed-step:hover span, .wizard-step .active-step:hover span {
+  color: #8F061E; }
+
+/* line 119, foundation/components/_wizard-steps.scss */
+.wizard-step .completed-step:hover a:before, .wizard-step .active-step:hover a:before {
+  border-top: 12px solid #8F061E;
+  border-bottom: 12px solid #8F061E; }
+
+/* line 123, foundation/components/_wizard-steps.scss */
+.wizard-step .completed-step:hover a:after, .wizard-step .active-step:hover a:after {
+  border-left: 12px solid #8F061E; }
+
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
   .f-dropdown {
