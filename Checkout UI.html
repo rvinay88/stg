@@ -148,7 +148,7 @@
             <span>2</span>Billing & Shipping
           </a>
         </div>
-        <div class="wizard-step disabled">
+        <div class="wizard-step">
           <a href="#confirmation">
             <span>3</span>Place Order
           </a>
@@ -169,7 +169,7 @@
           <div class="row">
             <div class="large-12 columns">
               <div class="hide-for-small clearfix">
-                <a href="#billing" class="button secondary right">Next: Billing & Shipping</a>
+                <a href="#billing" class="btn-wizard no-top right">Next: Billing & Shipping</a>
               </div>
 
               <div class="black-bar">
@@ -1086,6 +1086,14 @@
     }
 
   });
+
+  $(".btn-wizard").click(function (e) {
+    var clickTarget = $(this).attr('href');
+    var targetDiv = $(".wizard-step > a").filter (function (index) {
+      return $(this).attr("href") == clickTarget;
+    });
+    targetDiv.trigger("click");
+  })
   </script>
 </body>
 </html>
