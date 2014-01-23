@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Styleguide for runway2street</title>
+
+
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/stg.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+  <link rel="stylesheet" href="css/chosen.css">
+
+</head>
+
+<body>
+
+<a href="#">
+  <i class="icon-plus icon-inline"></i> Add New 
+</a>
+
+<a href="#">
+  <i class="icon-edit"></i> Edit
+</a>
+
+<a href="#">
+  <i class="icon-remove"></i> Delete
+</a>
+  <script src="js/vendor/jquery.js"></script>
+
+  <script src="js/vendor/chosen.jquery.js"></script>
+  <script type="text/javascript">
+  var config = {
+    '.my_select_box'           : {},
+    '.my_select_box-deselect'  : {allow_single_deselect:true},
+    '.my_select_box-no-single' : {disable_search_threshold:10},
+    '.my_select_box-no-results': {no_results_text:'Oops, nothing found!'},
+    '.my_select_box-width'     : {width:"95%"}
+  }
+  for (var selector in config) {
+    $(selector).chosen(config[selector]);
+  }
+  </script>
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+  <script src="js/foundation.min.js"></script>
+
+  <script>
+  $(document).foundation();
+  </script>
+
+  <script>
+  $('#trigger-menu-settings').click( function(event) {
+    $('#menu-cart, .search-panel').removeClass('open');
+    $('#menu-settings').toggleClass('open');
+    event.stopPropagation();
+  });
+  </script>
+  <script>
+  $('#trigger-menu-cart').click( function(event) {
+    $('#menu-settings, .search-panel').removeClass('open');
+    $('#menu-cart').toggleClass('open');
+    event.stopPropagation();
+  });
+  </script>
+  <script>
+  $('.trigger-search').click( function (event) {
+    $('#menu-cart, #menu-settings').removeClass('open');
+    $('.search-panel').toggleClass('open');
+    event.preventDefault();
+    event.stopPropagation();
+  });
+  </script>
+  
+  <script>
+  $('#trigger-preferences-pane').click(function (event) {
+    $('.pane-1, .pane-2').addClass('slide-left');
+    event.preventDefault();
+    event.stopPropagation();
+  });
+  $('#trigger-settings-pane').click(function (event) {
+    $('.pane-1, .pane-2').removeClass('slide-left');
+    event.preventDefault();
+    event.stopPropagation();
+  });
+  $('body').click(function (){
+    $('#menu-settings, #menu-cart, .search-panel').removeClass('open');
+  });
+  $('.chosen-container, .pane-2, .search-panel').click (function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  });  
+  </script>
+</body>
+</html>

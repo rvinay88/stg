@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home Page - Styleguide for runway2street</title>
+
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/stg.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-hotspotter-1.7.8.min.css">
+  <link rel="stylesheet" type="text/css" href="css/hotspot-editor.min.css">
+
+</head>
+<body>
+
+  <div class="box-bg">
+    <div class="box-content ovya">
+      <div class="box-content2 full-width">
+        <div class="leftside show va-top no-pad">
+          <div class="large-12 columns">
+            <fieldset>
+              <h5 class="uppercase">Shipping Address</h5>
+              <label class="check">* Required fields</label>
+              <form action="">
+
+                <div class="bottom-margin">
+                  <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                  <label for="" class="required">First Name</label>
+                  <input placeholder="First Name*" name="RAddress[0][FirstName]" id="RAddress_0_FirstName" type="text" maxlength="255" value="Vinay">
+                </div>
+                <div class="bottom-margin">
+                  <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+                  <label for="" class="required">Last Name</label>
+                  <input type="text">
+
+                </div>
+                <label for="" class="required">Select a country</label>
+                <select class="my_select_box-no-single">
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>India</option>
+                </select>
+                <label for="" class="required error">Address Line 1</label>
+                <input type="text" class="error">
+                <label for="" class="required">Address Line 2</label>
+                <input type="text">
+                <label for="" class="required">City</label>
+                <input type="text">
+                <label for="" class="required">State</label>
+                <input type="text">
+                <label for="" class="required">Zip/Postal Code</label>
+                <input type="text">
+                <label for="" class="required">Phone Number</label>
+                <input type="text">
+                
+              </fieldset>
+            </div>
+          </div>
+          <div class="rightside">
+            <div class="rightside-wrap">
+              <fieldset>
+                <h5 class="uppercase">Billing Address</h5>
+                <label for="check1" class="check">
+                  <input type="checkbox" name="cgec" id="check1" value="check1" class="r2s">
+                  <span>Same as Shopping</span>
+                </label>
+                <form action="">
+                  <label for="" class="required">First Name</label>
+                  <input type="text">
+                  <label for="" class="required">Last Name</label>
+                  <input type="text">
+                  <label for="" class="required">Select a country</label>
+                  <select class="my_select_box">
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>India</option>
+                  </select>
+                  <label for="" class="required">Address Line 1</label>
+                  <input type="text">
+                  <label for="" class="required">Address Line 2</label>
+                  <input type="text">
+                  <label for="" class="required">City</label>
+                  <input type="text">
+                  <label for="" class="required">State</label>
+                  <input type="text">
+                  <label for="" class="required">Pin Code</label>
+                  <input type="text">
+                  <label for="" class="required">Phone Number</label>
+                  <input type="text">
+                  <input type="submit" class="button right" vlaue="Save">
+                </fieldset>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/jquery-hotspotter-1.7.8.min.js"></script>
+      <script src="js/vendor/jquery.bxslider.min.js"></script>
+      <script src="js/vendor/jquery.cycle2.min.js"></script>
+      <script src="js/vendor/chosen.jquery.js"></script>
+      <script type="text/javascript">
+      var config = {
+        '.my_select_box'           : {},
+        '.my_select_box-deselect'  : {allow_single_deselect:true},
+        '.my_select_box-no-single' : {disable_search_threshold:10},
+        '.my_select_box-no-results': {no_results_text:'Oops, nothing found!'},
+        '.my_select_box-width'     : {width:"95%"}
+      }
+      for (var selector in config) {
+        $(selector).chosen(config[selector]);
+      }
+      </script>
+
+      <script src="js/vendor/custom.modernizr.js"></script>
+
+      <script src="js/foundation.min.js"></script>
+      <script>
+      $(document).foundation();
+      </script>
+      <script>
+      $('.hs-area').hotspotter();
+      </script>
+      <script>
+      $('#trigger-menu-settings').click( function() {
+        $('#menu-cart').removeClass('open');
+        $('#menu-settings').toggleClass('open');
+      });
+      </script>
+      <script>
+      $('#trigger-menu-cart').click( function() {
+        $('#menu-cart').toggleClass('open');
+        $('#menu-settings').removeClass('open');
+      });
+      </script>
+      <script>
+      $('#trigger-preferences-pane').click(function() {
+        $('.pane-1, .pane-2').addClass('slide-left');
+        event.preventDefault();
+      });
+      $('#trigger-settings-pane').click(function() {
+        $('.pane-1, .pane-2').removeClass('slide-left');
+        event.preventDefault();
+      });
+      </script>
+      <script>
+      $('#register').click(function () {
+        $('.front').removeClass('show');
+        $('.front').parent().removeClass('show');
+
+        $('.front').addClass('flip');
+
+        $('.back').addClass('show');
+        $('.back').parent().addClass('show');
+        $('.back').removeClass('flip');
+      });
+
+      $('#signin, #signin2').click(function() {
+        $('.front').addClass('show');
+        $('.front').parent().addClass('show');
+        $('.front').removeClass('flip');
+
+        $('.back, .side').removeClass('show');
+        $('.back, .side').parent().removeClass('show');
+        $('.back, .side').addClass('flip');
+      });
+
+      $('#forgot').click(function () {
+        $('.front').removeClass('show');
+        $('.front').parent().removeClass('show');
+
+        $('.front').addClass('flip');
+
+        $('.side').addClass('show');
+        $('.side').parent().addClass('show');
+        $('.side').removeClass('flip');
+
+      });
+      </script>
+    </body>
+    </html>
