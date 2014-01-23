@@ -29,6 +29,19 @@ if (typeof jQuery === "undefined" &&
 (function ($, window, document, undefined) {
   'use strict';
 
+  // Used to retrieve Foundation media queries from CSS.
+  if($('head').has('.foundation-mq-small').length === 0) {
+    $('head').append('<meta class="foundation-mq-small">')
+  }
+
+  if($('head').has('.foundation-mq-medium').length === 0) {
+    $('head').append('<meta class="foundation-mq-medium">')
+  }
+
+  if($('head').has('.foundation-mq-large').length === 0) {
+    $('head').append('<meta class="foundation-mq-large">')
+  }
+
   /*
     matchMedia() polyfill - Test a CSS media 
     type/query in JS. Authors & copyright (c) 2012: 
@@ -37,7 +50,6 @@ if (typeof jQuery === "undefined" &&
 
     https://github.com/paulirish/matchMedia.js
   */
-
   window.matchMedia = window.matchMedia || (function( doc, undefined ) {
 
     "use strict";
@@ -163,12 +175,27 @@ if (typeof jQuery === "undefined" &&
     return this;
   };
 
+  function removeQuotes(string) {
+      if (typeof string === 'string' || string instanceof String) {
+        string = string.replace(/^[\\'"]+|(;\s?})+|[\\'"]+$/g, '');
+      }
+      return string;
+  }
+
   window.Foundation = {
     name : 'Foundation',
 
-    version : '4.3.1',
+    version : '4.3.2',
 
     cache : {},
+
+    media_queries : {
+      small : removeQuotes($('.foundation-mq-small').css('font-family')),
+      medium : removeQuotes($('.foundation-mq-medium').css('font-family')),
+      large : removeQuotes($('.foundation-mq-large').css('font-family'))
+    },
+
+    stylesheet : $('<style></style>').appendTo('head')[0].sheet,
 
     init : function (scope, libraries, method, options, response, /* internal */ nc) {
       var library_arr,
@@ -385,6 +412,25 @@ if (typeof jQuery === "undefined" &&
         }
 
         return true;
+      },
+
+      register_media : function(media, media_class) {
+        if(Foundation.media_queries[media] === undefined) {
+          $('head').append('<meta class="' + media_class + '">');
+          Foundation.media_queries[media] = removeQuotes($('.' + media_class).css('font-family'));
+        }
+      },
+
+      addCustomRule : function(rule, media) {
+        if(media === undefined) {
+          Foundation.stylesheet.insertRule(rule, Foundation.stylesheet.cssRules.length);
+        } else {
+          var query = Foundation.media_queries[media];
+          if(query !== undefined) {
+            Foundation.stylesheet.insertRule('@media ' + 
+              Foundation.media_queries[media] + '{ ' + rule + ' }');
+          }
+        }
       }
     },
 
