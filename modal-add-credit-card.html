@@ -23,8 +23,8 @@
     <div class="box-content ovya">
       <div class="box-content2 full-width">
         <div class="leftside show va-top no-pad">
-          <div class="large-12 columns">
-            <h5 class="uppercase top-margin">Add New Credit Card</h5>
+          <fieldset>
+            <h5 class="uppercase">Add New Credit Card</h5>
             <form action="">
               <div>
 
@@ -106,45 +106,48 @@
               Palo Alto, CA 94301
             </span>
           </label>            
-        </div>
+        </fieldset>
       </div>
       <div class="rightside">
         <div class="rightside-wrap">
-          <div class="black-bar">
-            Enter New Billing Address
-          </div>
-          <div class="bottom-margin">
-            <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
-            <label for="" class="required">First Name</label>
-            <input placeholder="First Name*" name="RAddress[0][FirstName]" id="RAddress_0_FirstName" type="text" maxlength="255" value="Vinay">
-          </div>
-          <div class="bottom-margin">
-            <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
-            <label for="" class="required">Last Name</label>
+          <fieldset>
+            <div class="black-bar no-top">
+              Enter New Billing Address
+            </div>
+            <div class="bottom-margin">
+              <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+              <label for="" class="required">First Name</label>
+              <input placeholder="First Name*" name="RAddress[0][FirstName]" id="RAddress_0_FirstName" type="text" maxlength="255" value="Vinay">
+            </div>
+            <div class="bottom-margin">
+              <div class="errorMessage" id="RAddress_0_FirstName_em_" style="display: none;">First Name cannot be blank</div>
+              <label for="" class="required">Last Name</label>
+              <input type="text">
+
+            </div>
+            <label for="" class="required">Select a country</label>
+            <select class="my_select_box">
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>India</option>
+            </select>
+            <label for="" class="required error">Address Line 1</label>
+            <input type="text" class="error">
+            <label for="" class="required">Address Line 2</label>
+            <input type="text">
+            <label for="" class="required">City</label>
+            <input type="text">
+            <label for="" class="required">State</label>
+            <input type="text">
+            <label for="" class="required">Zip/Postal Code</label>
+            <input type="text">
+            <label for="" class="required">Phone Number</label>
             <input type="text">
 
-          </div>
-          <label for="" class="required">Select a country</label>
-          <select class="my_select_box">
-            <option>United States</option>
-            <option>United Kingdom</option>
-            <option>India</option>
-          </select>
-          <label for="" class="required error">Address Line 1</label>
-          <input type="text" class="error">
-          <label for="" class="required">Address Line 2</label>
-          <input type="text">
-          <label for="" class="required">City</label>
-          <input type="text">
-          <label for="" class="required">State</label>
-          <input type="text">
-          <label for="" class="required">Zip/Postal Code</label>
-          <input type="text">
-          <label for="" class="required">Phone Number</label>
-          <input type="text">
+            <input type="submit" class="button right" value="Save">
+            <input type="submit" class="button secondary right right-margin" value="Cancel">
 
-          <input type="submit" class="button right" value="Save">
-          <input type="submit" class="button secondary right right-margin" value="Cancel">
+          </fieldset>
 
         </div>
       </div>
