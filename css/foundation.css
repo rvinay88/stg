@@ -7446,79 +7446,54 @@ h4.media-heading {
   margin-right: 15px;
   margin-bottom: 10px;
   background: #ddd;
-  padding: 4px; }
-  /* line 13, foundation/components/_wizard-steps.scss */
-  .wizard-step.active-step, .wizard-step:hover {
+  padding: 4px;
+  height: 28px; }
+  /* line 14, foundation/components/_wizard-steps.scss */
+  .wizard-step.completed-step, .wizard-step.active-step, .wizard-step:hover {
     background-color: #000; }
-    /* line 15, foundation/components/_wizard-steps.scss */
-    .wizard-step.active-step a, .wizard-step:hover a {
+    /* line 16, foundation/components/_wizard-steps.scss */
+    .wizard-step.completed-step a, .wizard-step.active-step a, .wizard-step:hover a {
       color: white;
       text-decoration: none; }
-      /* line 18, foundation/components/_wizard-steps.scss */
-      .wizard-step.active-step a > span, .wizard-step:hover a > span {
-        background: #fff;
-        color: #000; }
-      /* line 22, foundation/components/_wizard-steps.scss */
-      .wizard-step.active-step a:before, .wizard-step:hover a:before {
+      /* line 20, foundation/components/_wizard-steps.scss */
+      .wizard-step.completed-step a:before, .wizard-step.active-step a:before, .wizard-step:hover a:before {
         border-top: 14px solid #000;
         border-bottom: 14px solid #000; }
-      /* line 26, foundation/components/_wizard-steps.scss */
-      .wizard-step.active-step a:after, .wizard-step:hover a:after {
+      /* line 24, foundation/components/_wizard-steps.scss */
+      .wizard-step.completed-step a:after, .wizard-step.active-step a:after, .wizard-step:hover a:after {
         border-left: 14px solid #000; }
-  /* line 33, foundation/components/_wizard-steps.scss */
+  /* line 31, foundation/components/_wizard-steps.scss */
   .wizard-step.disabled, .wizard-step.disabled:hover {
     background-color: #eeeeee; }
-    /* line 35, foundation/components/_wizard-steps.scss */
+    /* line 33, foundation/components/_wizard-steps.scss */
     .wizard-step.disabled a, .wizard-step.disabled:hover a {
       color: #000; }
-      /* line 37, foundation/components/_wizard-steps.scss */
-      .wizard-step.disabled a > span, .wizard-step.disabled:hover a > span {
-        background: #ddd;
-        color: #000; }
-      /* line 41, foundation/components/_wizard-steps.scss */
+      /* line 36, foundation/components/_wizard-steps.scss */
       .wizard-step.disabled a:before, .wizard-step.disabled:hover a:before {
         border-top: 14px solid #eeeeee;
         border-bottom: 14px solid #eeeeee; }
-      /* line 45, foundation/components/_wizard-steps.scss */
+      /* line 40, foundation/components/_wizard-steps.scss */
       .wizard-step.disabled a:after, .wizard-step.disabled:hover a:after {
         border-left: 14px solid #eeeeee; }
-  /* line 51, foundation/components/_wizard-steps.scss */
+  /* line 46, foundation/components/_wizard-steps.scss */
   .wizard-step:hover {
     background-color: #000; }
-    /* line 53, foundation/components/_wizard-steps.scss */
+    /* line 48, foundation/components/_wizard-steps.scss */
     .wizard-step:hover a {
       color: white;
       text-decoration: none; }
-      /* line 56, foundation/components/_wizard-steps.scss */
-      .wizard-step:hover a > span {
-        background: #fff;
-        color: #000; }
-      /* line 60, foundation/components/_wizard-steps.scss */
+      /* line 52, foundation/components/_wizard-steps.scss */
       .wizard-step:hover a:before {
         border-top: 14px solid #000;
         border-bottom: 14px solid #000; }
-      /* line 64, foundation/components/_wizard-steps.scss */
+      /* line 56, foundation/components/_wizard-steps.scss */
       .wizard-step:hover a:after {
         border-left: 14px solid #000; }
-  /* line 70, foundation/components/_wizard-steps.scss */
+  /* line 62, foundation/components/_wizard-steps.scss */
   .wizard-step a {
     font-size: 12px;
     position: relative; }
-    /* line 73, foundation/components/_wizard-steps.scss */
-    .wizard-step a > span {
-      display: inline-block;
-      background: black;
-      color: white;
-      font-size: 10px;
-      padding: 4px;
-      text-align: center;
-      width: 18px;
-      height: 18px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      margin-right: 4px; }
-    /* line 87, foundation/components/_wizard-steps.scss */
+    /* line 66, foundation/components/_wizard-steps.scss */
     .wizard-step a:before {
       width: 0px;
       height: 0px;
@@ -7529,7 +7504,7 @@ h4.media-heading {
       content: "";
       top: -6px;
       left: -18px; }
-    /* line 98, foundation/components/_wizard-steps.scss */
+    /* line 77, foundation/components/_wizard-steps.scss */
     .wizard-step a:after {
       width: 0;
       height: 0;

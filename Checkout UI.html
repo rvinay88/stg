@@ -140,17 +140,17 @@
       <div class="wizard-steps-container">
         <div class="wizard-step active-step">
           <a href="#viewcart">
-            <span>1</span>Shopping Cart
+            1. Shopping Cart
           </a>
         </div>
         <div class="wizard-step">
           <a href="#billing">
-            <span>2</span>Billing & Shipping
+            2. Billing & Shipping
           </a>
         </div>
         <div class="wizard-step">
           <a href="#confirmation">
-            <span>3</span>Place Order
+            3. Place Order
           </a>
         </div>
       </div>
@@ -169,7 +169,7 @@
           <div class="row">
             <div class="large-12 columns">
               <div class="hide-for-small clearfix">
-                <a href="#billing" class="btn-wizard no-top right">Next: Billing & Shipping</a>
+                <a href="#billing" class="btn-wizard no-top right no-bottom">Next: Billing & Shipping</a>
               </div>
 
               <div class="black-bar">
@@ -444,7 +444,7 @@
           <div class="row">
             <div class="large-12 columns">
               <div class="hide-for-small clearfix">
-                <a href="#viewcart" class="btn-wizard left no-top">Prev: View Cart</a>
+                <a href="#viewcart" class="btn-wizard left no-top no-bottom">Prev: View Cart</a>
                 <a href="#confirmation" class="btn-wizard right no-top">Next: Confirmation</a>                
               </div>              
             </div>
@@ -1093,7 +1093,7 @@
       return $(this).attr("href") == clickTarget;
     });
     targetDiv.trigger("click");
-  })
+  });
   </script>
 </body>
 </html>
