@@ -5954,19 +5954,11 @@ a.th {
   line-height: 1.3125rem;
   font-weight: bold; }
 
-/* line 103, foundation/components/_custom.scss */
-.icon-footer:hover {
-  color: #666666; }
-
-/* line 108, foundation/components/_custom.scss */
-.footer-icons {
-  padding-top: 0.6rem; }
-
-/* line 112, foundation/components/_custom.scss */
+/* line 102, foundation/components/_custom.scss */
 .black-bg, .black-bar, .product-black-bar {
   background: black; }
 
-/* line 116, foundation/components/_custom.scss */
+/* line 106, foundation/components/_custom.scss */
 .black-bar, .product-black-bar {
   display: block;
   color: white;
@@ -5976,7 +5968,7 @@ a.th {
   margin: 1.25rem 0; }
 
 /*============================Logo styles==============================*/
-/* line 129, foundation/components/_custom.scss */
+/* line 119, foundation/components/_custom.scss */
 .logo {
   background: url(../images/logo.png) no-repeat;
   -webkit-background-size: 90% auto;
@@ -5990,24 +5982,24 @@ a.th {
   z-index: 110;
   margin-left: 8px;
   margin-top: 18px; }
-  /* line 142, foundation/components/_custom.scss */
+  /* line 132, foundation/components/_custom.scss */
   .logo.homepage {
     top: 45px; }
 
 @media screen and (max-width: 768px) {
-  /* line 148, foundation/components/_custom.scss */
+  /* line 138, foundation/components/_custom.scss */
   .logo {
     background-size: 80%;
     margin-top: 10px;
     width: 123.2px;
     height: 100.2px;
     margin-bottom: 10px; } }
-/* line 157, foundation/components/_custom.scss */
+/* line 147, foundation/components/_custom.scss */
 .logo a {
   display: block;
   height: 100%; }
 
-/* line 162, foundation/components/_custom.scss */
+/* line 152, foundation/components/_custom.scss */
 .main-holder {
   width: 100%;
   *zoom: 1; }
@@ -6019,26 +6011,26 @@ a.th {
   .main-holder:after {
     clear: both; }
 
-/* line 167, foundation/components/_custom.scss */
+/* line 157, foundation/components/_custom.scss */
 .main-holder:after {
   content: '';
   display: block;
   clear: both; }
 
-/* line 172, foundation/components/_custom.scss */
+/* line 162, foundation/components/_custom.scss */
 .main-holder .logo {
   float: left;
   position: static; }
 
 /*============================Logo styles==============================*/
 /*============================Custom Dropdown==============================*/
-/* line 189, foundation/components/_custom.scss */
+/* line 179, foundation/components/_custom.scss */
 .styled-select {
   position: relative;
   width: 100%;
   overflow: hidden; }
 
-/* line 194, foundation/components/_custom.scss */
+/* line 184, foundation/components/_custom.scss */
 .styled-select select {
   width: 100%;
   padding-left: 0.375rem;
@@ -6054,11 +6046,11 @@ a.th {
   height: 42px;
   margin: 0 0 0.75rem 0;
   -moz-appearance: none !important; }
-  /* line 207, foundation/components/_custom.scss */
+  /* line 197, foundation/components/_custom.scss */
   .styled-select select::-ms-expand {
     display: none; }
 
-/* line 214, foundation/components/_custom.scss */
+/* line 204, foundation/components/_custom.scss */
 .styled-select:after {
   content: "";
   display: block;
@@ -6076,7 +6068,7 @@ a.th {
   border-radius: 0; }
 
 /*============================Custom Dropdown==============================*/
-/* line 226, foundation/components/_custom.scss */
+/* line 216, foundation/components/_custom.scss */
 .sorting, .price {
   background-color: #eeeeee;
   padding: 0.3125rem;
@@ -6084,74 +6076,74 @@ a.th {
   margin-bottom: .5rem;
   margin-left: 10px;
   margin-top: 10px; }
-  /* line 234, foundation/components/_custom.scss */
+  /* line 224, foundation/components/_custom.scss */
   .sorting > .title, .price > .title {
     font-size: 80%; }
-  /* line 237, foundation/components/_custom.scss */
+  /* line 227, foundation/components/_custom.scss */
   .sorting > ul, .price > ul {
     display: inline-block;
     margin-left: -1.4rem; }
 
-/* line 245, foundation/components/_custom.scss */
+/* line 235, foundation/components/_custom.scss */
 .product-thumbs {
   margin-top: 0 !important; }
-  /* line 248, foundation/components/_custom.scss */
+  /* line 238, foundation/components/_custom.scss */
   .product-thumbs > li {
     margin-bottom: 0.625rem; }
 
-/* line 253, foundation/components/_custom.scss */
+/* line 243, foundation/components/_custom.scss */
 .product-main {
   margin-bottom: 0.625rem; }
 
-/* line 258, foundation/components/_custom.scss */
+/* line 248, foundation/components/_custom.scss */
 .product-detail {
   width: 100%; }
   @media only screen and (min-width: 1280px) {
-    /* line 258, foundation/components/_custom.scss */
+    /* line 248, foundation/components/_custom.scss */
     .product-detail {
       width: 50% !important; } }
 
-/* line 264, foundation/components/_custom.scss */
+/* line 254, foundation/components/_custom.scss */
 .product-detail > img {
   margin-bottom: 0.625rem; }
 
-/* line 274, foundation/components/_custom.scss */
+/* line 264, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
-  /* line 276, foundation/components/_custom.scss */
+  /* line 266, foundation/components/_custom.scss */
   .in-the-press img {
     margin-top: 0.625rem; }
   @media screen and (min-width: 984px) and (max-width: 1304px) {
-    /* line 279, foundation/components/_custom.scss */
+    /* line 269, foundation/components/_custom.scss */
     .in-the-press .hidden-image {
       display: none; } }
 
-/* line 286, foundation/components/_custom.scss */
+/* line 276, foundation/components/_custom.scss */
 .product-title {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.625rem; }
 
-/* line 292, foundation/components/_custom.scss */
+/* line 282, foundation/components/_custom.scss */
 .product-sub-title {
   text-transform: uppercase;
   color: #666666;
   font-size: 0.875rem;
   line-height: 1.25rem; }
 
-/* line 299, foundation/components/_custom.scss */
+/* line 289, foundation/components/_custom.scss */
 .rate {
   font-family: futura;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 1rem; }
-  /* line 304, foundation/components/_custom.scss */
+  /* line 294, foundation/components/_custom.scss */
   .rate strong {
     font-weight: normal;
     font-family: Helvetica;
     font-size: 0.75rem; }
 
-/* line 311, foundation/components/_custom.scss */
+/* line 301, foundation/components/_custom.scss */
 .size {
   margin-top: 0;
   float: left;
@@ -6159,7 +6151,7 @@ a.th {
   text-transform: uppercase;
   margin-top: -7px; }
 
-/* line 319, foundation/components/_custom.scss */
+/* line 309, foundation/components/_custom.scss */
 .highlight-text {
   border: 1px solid black;
   color: #666666;
@@ -6167,45 +6159,45 @@ a.th {
   padding: 0.625rem;
   margin: 1rem 0; }
 
-/* line 327, foundation/components/_custom.scss */
+/* line 317, foundation/components/_custom.scss */
 .tab-content {
   color: #666666; }
 
-/* line 331, foundation/components/_custom.scss */
+/* line 321, foundation/components/_custom.scss */
 .product-options {
   padding: 0.5rem 0;
   margin-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    /* line 331, foundation/components/_custom.scss */
+    /* line 321, foundation/components/_custom.scss */
     .product-options {
       padding: 1.375rem 0; } }
 
-/* line 344, foundation/components/_custom.scss */
+/* line 334, foundation/components/_custom.scss */
 .add-buttons {
   margin-right: 20px; }
 
-/* line 348, foundation/components/_custom.scss */
+/* line 338, foundation/components/_custom.scss */
 .long-button {
   min-width: 185px; }
 
-/* line 351, foundation/components/_custom.scss */
+/* line 341, foundation/components/_custom.scss */
 .med-button {
   min-width: 150px; }
 
-/* line 355, foundation/components/_custom.scss */
+/* line 345, foundation/components/_custom.scss */
 .home-tt {
   line-height: 1.3; }
 
-/* line 358, foundation/components/_custom.scss */
+/* line 348, foundation/components/_custom.scss */
 .designer-name {
   font-size: 0.8125rem;
   font-weight: bold;
   text-transform: uppercase; }
-  /* line 362, foundation/components/_custom.scss */
+  /* line 352, foundation/components/_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 367, foundation/components/_custom.scss */
+/* line 357, foundation/components/_custom.scss */
 .designer-about {
   font-family: Helvetica;
   font-weight: normal;
@@ -6216,79 +6208,79 @@ a.th {
   margin-bottom: 0.625rem;
   text-rendering: optimizeLegibility; }
 
-/* line 378, foundation/components/_custom.scss */
+/* line 368, foundation/components/_custom.scss */
 .more {
   height: auto !important; }
 
-/* line 382, foundation/components/_custom.scss */
+/* line 372, foundation/components/_custom.scss */
 .small-text, .user-setting-username, .redeem {
   font-size: 0.6875rem;
   text-transform: uppercase;
   margin-top: 20px;
   white-space: nowrap; }
 
-/* line 389, foundation/components/_custom.scss */
+/* line 379, foundation/components/_custom.scss */
 .fixed-170 {
   width: 170px;
   margin: 0 0.625rem 0.75rem 0; }
 
-/* line 393, foundation/components/_custom.scss */
+/* line 383, foundation/components/_custom.scss */
 .fixed-360 {
   width: 360px; }
   @media screen and (max-width: 768px) {
-    /* line 393, foundation/components/_custom.scss */
+    /* line 383, foundation/components/_custom.scss */
     .fixed-360 {
       width: auto; } }
 
-/* line 400, foundation/components/_custom.scss */
+/* line 390, foundation/components/_custom.scss */
 .left-margin {
   margin-left: 0.625rem; }
 
-/* line 403, foundation/components/_custom.scss */
+/* line 393, foundation/components/_custom.scss */
 .right-margin, .pagerviewall {
   margin-right: 0.625rem; }
 
-/* line 407, foundation/components/_custom.scss */
+/* line 397, foundation/components/_custom.scss */
 .top-margin, .errorSummary, .successMessage, .btn-wizard {
   margin-top: 1rem; }
 
-/* line 411, foundation/components/_custom.scss */
+/* line 401, foundation/components/_custom.scss */
 .bottom-margin, #reveal-sidebar {
   margin-bottom: 1rem; }
 
-/* line 415, foundation/components/_custom.scss */
+/* line 405, foundation/components/_custom.scss */
 .no-top {
   margin-top: 0 !important; }
 
-/* line 418, foundation/components/_custom.scss */
+/* line 408, foundation/components/_custom.scss */
 .no-bottom, .invite-header {
   margin-bottom: 0 !important; }
 
-/* line 421, foundation/components/_custom.scss */
+/* line 411, foundation/components/_custom.scss */
 .no-left, .sidebar-active, .sidebar-actives {
   margin-left: 0 !important; }
 
-/* line 424, foundation/components/_custom.scss */
+/* line 414, foundation/components/_custom.scss */
 .no-right {
   margin-right: 0 !important; }
 
-/* line 428, foundation/components/_custom.scss */
+/* line 418, foundation/components/_custom.scss */
 .no-pad {
   padding: 0 !important; }
 
-/* line 432, foundation/components/_custom.scss */
+/* line 422, foundation/components/_custom.scss */
 .right-pad {
   padding: 0 0.46875rem 0 0 !important; }
 
-/* line 436, foundation/components/_custom.scss */
+/* line 426, foundation/components/_custom.scss */
 .register-button {
   margin-bottom: 0.5rem !important; }
 
-/* line 440, foundation/components/_custom.scss */
+/* line 430, foundation/components/_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
-/* line 444, foundation/components/_custom.scss */
+/* line 434, foundation/components/_custom.scss */
 .social-buttons {
   height: 42px;
   *zoom: 1;
@@ -6304,100 +6296,100 @@ a.th {
   .social-buttons:after {
     clear: both; }
 
-/* line 453, foundation/components/_custom.scss */
+/* line 443, foundation/components/_custom.scss */
 .polyvore-button {
   margin-top: -8px;
   height: 16px;
   margin-left: -3px; }
 
-/* line 459, foundation/components/_custom.scss */
+/* line 449, foundation/components/_custom.scss */
 .homepage-wrapper {
   width: 100%;
   position: relative;
   margin: 0 auto;
   overflow-x: hidden; }
 
-/* line 465, foundation/components/_custom.scss */
+/* line 455, foundation/components/_custom.scss */
 .hotspot-holder {
   width: 100%;
   position: relative; }
-  /* line 468, foundation/components/_custom.scss */
+  /* line 458, foundation/components/_custom.scss */
   .hotspot-holder > img {
     width: 100%; }
 
-/* line 473, foundation/components/_custom.scss */
+/* line 463, foundation/components/_custom.scss */
 .orders > * {
   font-size: 0.75rem; }
 
-/* line 479, foundation/components/_custom.scss */
+/* line 469, foundation/components/_custom.scss */
 .order-summary-image {
   max-width: 80px; }
 
-/* line 483, foundation/components/_custom.scss */
+/* line 473, foundation/components/_custom.scss */
 .responsive-table {
   overflow-x: auto; }
 
-/* line 488, foundation/components/_custom.scss */
+/* line 478, foundation/components/_custom.scss */
 .total {
   margin-bottom: 0; }
-  /* line 490, foundation/components/_custom.scss */
+  /* line 480, foundation/components/_custom.scss */
   .total > td {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
-/* line 496, foundation/components/_custom.scss */
+/* line 486, foundation/components/_custom.scss */
 .total-table {
   min-width: 50%;
   width: 100%; }
 
-/* line 501, foundation/components/_custom.scss */
+/* line 491, foundation/components/_custom.scss */
 .total-table-width {
   width: 100%; }
   @media only screen and (min-width: 768px) {
-    /* line 501, foundation/components/_custom.scss */
+    /* line 491, foundation/components/_custom.scss */
     .total-table-width {
       width: 50%; } }
 
-/* line 508, foundation/components/_custom.scss */
+/* line 498, foundation/components/_custom.scss */
 .total-bill > td {
   font-weight: bold;
   color: black; }
-  /* line 511, foundation/components/_custom.scss */
+  /* line 501, foundation/components/_custom.scss */
   .total-bill > td:first-child {
     border-bottom-left-radius: 0.25rem; }
-  /* line 514, foundation/components/_custom.scss */
+  /* line 504, foundation/components/_custom.scss */
   .total-bill > td:last-child {
     border-bottom-right-radius: 0.25rem; }
 
-/* line 519, foundation/components/_custom.scss */
+/* line 509, foundation/components/_custom.scss */
 .coupon {
   max-width: 150px;
   margin-bottom: 0 !important; }
 
-/* line 524, foundation/components/_custom.scss */
+/* line 514, foundation/components/_custom.scss */
 .text {
   font-size: 0.75rem; }
 
-/* line 528, foundation/components/_custom.scss */
+/* line 518, foundation/components/_custom.scss */
 .info-text {
   font-size: 0.625rem;
   color: #666666;
   line-height: 1.5; }
 
-/* line 534, foundation/components/_custom.scss */
+/* line 524, foundation/components/_custom.scss */
 .highlight, .user-setting-username, .designer-nav-active, .redeem, .designer-stats {
   font-weight: bold; }
 
-/* line 539, foundation/components/_custom.scss */
+/* line 529, foundation/components/_custom.scss */
 .errorMessage {
   font-size: 0.75rem;
   color: #c60f13; }
 
-/* line 544, foundation/components/_custom.scss */
+/* line 534, foundation/components/_custom.scss */
 .error > label {
   display: none; }
 
-/* line 548, foundation/components/_custom.scss */
+/* line 538, foundation/components/_custom.scss */
 .shopping-block-img {
   width: 120px;
   float: left;
@@ -6407,12 +6399,12 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 548, foundation/components/_custom.scss */
+    /* line 538, foundation/components/_custom.scss */
     .shopping-block-img {
       margin: 0 auto;
       float: none !important; } }
 
-/* line 560, foundation/components/_custom.scss */
+/* line 550, foundation/components/_custom.scss */
 .shopping-block-desc {
   margin-left: 18px;
   float: left;
@@ -6420,22 +6412,22 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 560, foundation/components/_custom.scss */
+    /* line 550, foundation/components/_custom.scss */
     .shopping-block-desc {
       width: 100%;
       float: none !important;
       margin-left: 0; } }
   @media (max-width: 635px) {
-    /* line 560, foundation/components/_custom.scss */
+    /* line 550, foundation/components/_custom.scss */
     .shopping-block-desc {
       min-height: 180px; } }
 
-/* line 575, foundation/components/_custom.scss */
+/* line 565, foundation/components/_custom.scss */
 .product-details > span {
   display: block;
   margin-bottom: 8px; }
 
-/* line 580, foundation/components/_custom.scss */
+/* line 570, foundation/components/_custom.scss */
 .product-name {
   text-transform: uppercase;
   line-height: 1.5;
@@ -6443,15 +6435,15 @@ a.th {
   max-height: 36px;
   overflow: hidden; }
   @media screen and (min-width: 1230px) {
-    /* line 580, foundation/components/_custom.scss */
+    /* line 570, foundation/components/_custom.scss */
     .product-name {
       max-width: 180px; } }
   @media only screen and (min-width: 768px) {
-    /* line 580, foundation/components/_custom.scss */
+    /* line 570, foundation/components/_custom.scss */
     .product-name {
       max-width: 210px; } }
 
-/* line 594, foundation/components/_custom.scss */
+/* line 584, foundation/components/_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -6472,42 +6464,37 @@ a.th {
   float: left;
   min-height: 307px; }
   @media screen and (max-width: 635px) {
-    /* line 594, foundation/components/_custom.scss */
+    /* line 584, foundation/components/_custom.scss */
     .shopping-block {
       width: 45%;
       float: none;
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 636px) and (max-width: 780px) {
-    /* line 594, foundation/components/_custom.scss */
+    /* line 584, foundation/components/_custom.scss */
     .shopping-block {
       width: 48%; } }
   @media screen and (min-width: 1230px) {
-    /* line 594, foundation/components/_custom.scss */
+    /* line 584, foundation/components/_custom.scss */
     .shopping-block {
       min-height: inherit; } }
-  /* line 625, foundation/components/_custom.scss */
+  /* line 615, foundation/components/_custom.scss */
   .shopping-block.full {
     width: 100% !important; }
-    /* line 627, foundation/components/_custom.scss */
+    /* line 617, foundation/components/_custom.scss */
     .shopping-block.full.shopping-block-img {
       min-width: 160px !important; }
     @media screen and (max-width: 1048px) {
-      /* line 631, foundation/components/_custom.scss */
+      /* line 621, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-desc {
         width: 50% !important;
         float: left; }
-      /* line 635, foundation/components/_custom.scss */
+      /* line 625, foundation/components/_custom.scss */
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
 
-/* line 643, foundation/components/_custom.scss */
-.navigation, .footer {
-  width: 100%;
-  background-color: black; }
-
-/* line 648, foundation/components/_custom.scss */
+/* line 633, foundation/components/_custom.scss */
 .errorSummary {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -6525,12 +6512,12 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 656, foundation/components/_custom.scss */
+  /* line 641, foundation/components/_custom.scss */
   .errorSummary ul li {
     list-style: none;
     color: black; }
 
-/* line 663, foundation/components/_custom.scss */
+/* line 648, foundation/components/_custom.scss */
 .successMessage {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -6548,17 +6535,17 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 671, foundation/components/_custom.scss */
+  /* line 656, foundation/components/_custom.scss */
   .successMessage ul li {
     list-style: none;
     color: black; }
 
-/* line 678, foundation/components/_custom.scss */
+/* line 663, foundation/components/_custom.scss */
 .thankyou {
   color: black;
   font: 3em futura; }
 
-/* line 684, foundation/components/_custom.scss */
+/* line 669, foundation/components/_custom.scss */
 .loading-indicator {
   height: 80px;
   width: 80px;
@@ -6569,7 +6556,7 @@ a.th {
   top: 0;
   left: 43%; }
 
-/* line 697, foundation/components/_custom.scss */
+/* line 682, foundation/components/_custom.scss */
 .promo-gallery {
   min-width: 420px;
   width: 100%;
@@ -6580,7 +6567,7 @@ a.th {
   margin: auto;
   overflow: hidden; }
 
-/* line 708, foundation/components/_custom.scss */
+/* line 693, foundation/components/_custom.scss */
 .promo-gallery .mask {
   overflow: hidden;
   position: relative;
@@ -6590,18 +6577,18 @@ a.th {
   min-height: 660px;
   max-height: 768px; }
 
-/* line 718, foundation/components/_custom.scss */
+/* line 703, foundation/components/_custom.scss */
 .cycle-slide-active > img {
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
-/* line 723, foundation/components/_custom.scss */
+/* line 708, foundation/components/_custom.scss */
 #smodal {
   position: absolute;
   padding: 8px;
   z-index: 700; }
 
-/* line 729, foundation/components/_custom.scss */
+/* line 714, foundation/components/_custom.scss */
 #smodal-overlay {
   position: fixed;
   top: 0;
@@ -6613,7 +6600,7 @@ a.th {
   filter: alpha(opacity=50);
   z-index: 700; }
 
-/* line 741, foundation/components/_custom.scss */
+/* line 726, foundation/components/_custom.scss */
 .box-bg {
   background: #fff no-repeat center top;
   width: 100%;
@@ -6626,17 +6613,17 @@ a.th {
   position: relative;
   padding: 10px; }
 
-/* line 754, foundation/components/_custom.scss */
+/* line 739, foundation/components/_custom.scss */
 .box-content, .box-content-marketing {
   height: 430px;
   border: 1px dashed grey; }
 
-/* line 759, foundation/components/_custom.scss */
+/* line 744, foundation/components/_custom.scss */
 .box-content2 {
   display: table;
   height: 100%; }
 
-/* line 764, foundation/components/_custom.scss */
+/* line 749, foundation/components/_custom.scss */
 .box-content2 .leftside, .box-content2 .genie-marketing {
   padding-left: 3%;
   width: 50%;
@@ -6645,10 +6632,10 @@ a.th {
   display: table-cell;
   vertical-align: middle; }
   @media screen and (max-width: 550px) {
-    /* line 764, foundation/components/_custom.scss */
+    /* line 749, foundation/components/_custom.scss */
     .box-content2 .leftside, .box-content2 .genie-marketing {
       display: none; }
-      /* line 773, foundation/components/_custom.scss */
+      /* line 758, foundation/components/_custom.scss */
       .box-content2 .leftside.show, .box-content2 .show.genie-marketing {
         display: block;
         width: 100%;
@@ -6661,7 +6648,7 @@ a.th {
         .box-content2 .leftside.show:after, .box-content2 .show.genie-marketing:after {
           clear: both; } }
 
-/* line 781, foundation/components/_custom.scss */
+/* line 766, foundation/components/_custom.scss */
 .box-content2 .rightside {
   padding-left: 10px;
   padding-right: 10px;
@@ -6670,16 +6657,16 @@ a.th {
   display: block;
   min-width: 250px; }
 
-/* line 790, foundation/components/_custom.scss */
+/* line 775, foundation/components/_custom.scss */
 .rightside-wrap {
   position: relative;
   width: 100%; }
 
-/* line 796, foundation/components/_custom.scss */
+/* line 781, foundation/components/_custom.scss */
 .box-content2 .chosen-container {
   width: 100% !important; }
 
-/* line 800, foundation/components/_custom.scss */
+/* line 785, foundation/components/_custom.scss */
 .card {
   position: absolute;
   top: 0;
@@ -6687,7 +6674,7 @@ a.th {
   width: 100%;
   -webkit-backface-visibility: hidden; }
 
-/* line 808, foundation/components/_custom.scss */
+/* line 793, foundation/components/_custom.scss */
 .front, .back, .side {
   z-index: 1;
   opacity: 0;
@@ -6702,13 +6689,13 @@ a.th {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
 
-/* line 823, foundation/components/_custom.scss */
+/* line 808, foundation/components/_custom.scss */
 .show {
   z-index: 2;
   opacity: 1;
   visibility: visible; }
 
-/* line 829, foundation/components/_custom.scss */
+/* line 814, foundation/components/_custom.scss */
 .flip {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -6716,7 +6703,7 @@ a.th {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 838, foundation/components/_custom.scss */
+/* line 823, foundation/components/_custom.scss */
 .f-signin, .g-signin {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
@@ -6727,13 +6714,13 @@ a.th {
   color: white;
   width: 50px; }
 
-/* line 847, foundation/components/_custom.scss */
+/* line 832, foundation/components/_custom.scss */
 .f-signin {
   background-color: #4863ae;
   padding-left: 0;
   padding-right: 10px; }
 
-/* line 852, foundation/components/_custom.scss */
+/* line 837, foundation/components/_custom.scss */
 .g-signin {
   background-color: #cd3a25;
   background-image: -moz-linear-gradient(top, #cd3a25, #cd3a25);
@@ -6744,104 +6731,119 @@ a.th {
   background-image: linear-gradient(top, #cd3a25, #cd3a25);
   background-repeat: repeat-x; }
 
-/* line 866, foundation/components/_custom.scss */
+/* line 851, foundation/components/_custom.scss */
 .login-modal-copy {
   font-weight: bold;
   font-size: 1rem; }
 
-/* line 873, foundation/components/_custom.scss */
+/* line 858, foundation/components/_custom.scss */
 .black, .side-nav-heading {
   color: black; }
 
-/* line 877, foundation/components/_custom.scss */
+/* line 862, foundation/components/_custom.scss */
 .login-social-buttons {
   display: inline-block;
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
 /*-------------------------------Modal for Add Credit card/Edit Address-------------------------------*/
-/* line 890, foundation/components/_custom.scss */
+/* line 875, foundation/components/_custom.scss */
 .va-top {
   vertical-align: top !important; }
 
-/* line 894, foundation/components/_custom.scss */
+/* line 879, foundation/components/_custom.scss */
 .ovya {
   overflow-y: auto; }
 
 /*-------------------------------Modal for Add Credit card/Edit Address-------------------------------*/
 /*----Hotspot Tooltips */
-/* line 903, foundation/components/_custom.scss */
+/* line 888, foundation/components/_custom.scss */
 .product-image, .home-designer-image {
   width: 100%; }
 
-/* line 908, foundation/components/_custom.scss */
+/* line 893, foundation/components/_custom.scss */
 .product-image {
   max-width: 200px; }
 
-/* line 911, foundation/components/_custom.scss */
+/* line 896, foundation/components/_custom.scss */
 .home-designer-image {
   max-width: 325px; }
 
 /* Disable hotspots <768px */
 @media screen and (max-width: 767px) {
-  /* line 918, foundation/components/_custom.scss */
+  /* line 903, foundation/components/_custom.scss */
   .hs-wrap {
     display: none !important; } }
-/* line 923, foundation/components/_custom.scss */
+/*--------------Footer -----------------*/
+/* line 910, foundation/components/_custom.scss */
 .footer-links {
   margin-top: 6px; }
 
-/* line 927, foundation/components/_custom.scss */
+/* line 914, foundation/components/_custom.scss */
 .footer-list, .footer-links > ul > li > a {
   font-family: futura;
   font-size: 11px;
   text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
-  /* line 932, foundation/components/_custom.scss */
+  /* line 919, foundation/components/_custom.scss */
   .footer-list {
     text-align: center;
     display: inline-block; } }
 
-/* line 939, foundation/components/_custom.scss */
+/* line 926, foundation/components/_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
+/* line 932, foundation/components/_custom.scss */
+.icon-footer:hover {
+  color: #666666; }
+
+/* line 937, foundation/components/_custom.scss */
+.footer-icons {
+  padding-top: 0.6rem; }
+
+/* line 941, foundation/components/_custom.scss */
+.navigation, .footer {
+  width: 100%;
+  background-color: black; }
+
+/*--------------Footer -----------------*/
 /*---------------------Marketing Dialog-----------------------------*/
-/* line 946, foundation/components/_custom.scss */
+/* line 950, foundation/components/_custom.scss */
 .box-content-marketing {
   height: 460px; }
 
-/* line 951, foundation/components/_custom.scss */
+/* line 955, foundation/components/_custom.scss */
 .asterisk {
   display: inline-block;
   float: left; }
 
-/* line 956, foundation/components/_custom.scss */
+/* line 960, foundation/components/_custom.scss */
 .fine-print {
   float: left;
   width: 95%;
   margin-left: 10px;
   margin-top: -5px; }
-  /* line 961, foundation/components/_custom.scss */
+  /* line 965, foundation/components/_custom.scss */
   .fine-print > span {
     font-size: 10px; }
 
-/* line 966, foundation/components/_custom.scss */
+/* line 970, foundation/components/_custom.scss */
 .email-copy {
   font-size: 11px; }
 
-/* line 970, foundation/components/_custom.scss */
+/* line 974, foundation/components/_custom.scss */
 .invite-header {
   font-size: 14px;
   font-family: Helvetica; }
   @media screen and (max-width: 768px) {
-    /* line 976, foundation/components/_custom.scss */
+    /* line 980, foundation/components/_custom.scss */
     .invite-header:first-child {
       margin-top: 20px; } }
 
-/* line 982, foundation/components/_custom.scss */
+/* line 986, foundation/components/_custom.scss */
 .genie-marketing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6849,57 +6851,57 @@ a.th {
   background-size: cover;
   background: black url("../images/genie_marketing_main.jpg") no-repeat; }
   @media screen and (max-width: 730px) {
-    /* line 982, foundation/components/_custom.scss */
+    /* line 986, foundation/components/_custom.scss */
     .genie-marketing {
       display: none; } }
 
-/* line 1003, foundation/components/_custom.scss */
+/* line 1007, foundation/components/_custom.scss */
 .img-responsive {
   max-width: 100%; }
 
-/* line 1006, foundation/components/_custom.scss */
+/* line 1010, foundation/components/_custom.scss */
 .share-page-container {
   margin: 0 auto; }
 
-/* line 1011, foundation/components/_custom.scss */
+/* line 1015, foundation/components/_custom.scss */
 .share-page-right {
   width: 360px;
   padding-left: 50px; }
   @media screen and (max-width: 925px) {
-    /* line 1011, foundation/components/_custom.scss */
+    /* line 1015, foundation/components/_custom.scss */
     .share-page-right {
       padding-left: 0;
       width: auto; } }
 
-/* line 1020, foundation/components/_custom.scss */
+/* line 1024, foundation/components/_custom.scss */
 .marketing-row {
   margin-bottom: 20px;
   background-color: #ddd; }
 
-/* line 1027, foundation/components/_custom.scss */
+/* line 1031, foundation/components/_custom.scss */
 .table {
   display: table;
   margin: 0 auto;
   width: 80%;
   padding: 20px 0; }
   @media screen and (max-width: 900px) {
-    /* line 1027, foundation/components/_custom.scss */
+    /* line 1031, foundation/components/_custom.scss */
     .table {
       width: 100%; } }
 
-/* line 1037, foundation/components/_custom.scss */
+/* line 1041, foundation/components/_custom.scss */
 .table-left, .table-left-va-top {
   display: table-cell;
   vertical-align: middle;
   width: 50%; }
   @media screen and (max-width: 768px) {
-    /* line 1037, foundation/components/_custom.scss */
+    /* line 1041, foundation/components/_custom.scss */
     .table-left, .table-left-va-top {
       width: 100%;
       text-align: center;
       display: block; } }
 
-/* line 1048, foundation/components/_custom.scss */
+/* line 1052, foundation/components/_custom.scss */
 .table-right, .table-right-va-top {
   display: table-cell;
   vertical-align: middle;
@@ -6908,26 +6910,26 @@ a.th {
   text-align: left;
   padding-left: 20px; }
   @media screen and (max-width: 768px) {
-    /* line 1048, foundation/components/_custom.scss */
+    /* line 1052, foundation/components/_custom.scss */
     .table-right, .table-right-va-top {
       width: 100%;
       display: block;
       padding: 20px; } }
 
-/* line 1063, foundation/components/_custom.scss */
+/* line 1067, foundation/components/_custom.scss */
 .table-left-va-top {
   vertical-align: top; }
   @media screen and (max-width: 768px) {
-    /* line 1063, foundation/components/_custom.scss */
+    /* line 1067, foundation/components/_custom.scss */
     .table-left-va-top {
       display: none; } }
 
-/* line 1070, foundation/components/_custom.scss */
+/* line 1074, foundation/components/_custom.scss */
 .table-right-va-top {
   vertical-align: top;
   height: 420px; }
 
-/* line 1077, foundation/components/_custom.scss */
+/* line 1081, foundation/components/_custom.scss */
 .static-login-container {
   overflow-x: hidden;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.9)), to(rgba(241, 241, 241, 0.9)));
@@ -6942,16 +6944,16 @@ a.th {
   padding: 20px; }
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
-/* line 1091, foundation/components/_custom.scss */
+/* line 1095, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .prod-name-homepage, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 1095, foundation/components/_custom.scss */
+/* line 1099, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 1100, foundation/components/_custom.scss */
+/* line 1104, foundation/components/_custom.scss */
 .prod-name, .prod-name-homepage {
   text-transform: capitalize;
   color: black;
@@ -6960,28 +6962,28 @@ a.th {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-/* line 1110, foundation/components/_custom.scss */
+/* line 1114, foundation/components/_custom.scss */
 .prod-name-homepage {
   display: block;
   max-width: auto; }
   @media screen and (min-width: 1200px) {
-    /* line 1110, foundation/components/_custom.scss */
+    /* line 1114, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 200px; } }
   @media screen and (max-width: 800px) {
-    /* line 1110, foundation/components/_custom.scss */
+    /* line 1114, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 150px; } }
 
-/* line 1122, foundation/components/_custom.scss */
+/* line 1126, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 1129, foundation/components/_custom.scss */
+/* line 1133, foundation/components/_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 1133, foundation/components/_custom.scss */
+/* line 1137, foundation/components/_custom.scss */
 #profileLongStory > div {
   font-family: Helvetica;
   font-size: 12px;
@@ -6990,24 +6992,24 @@ a.th {
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
 /*----------Share For Product Detail ----*/
-/* line 1145, foundation/components/_custom.scss */
+/* line 1149, foundation/components/_custom.scss */
 .product-detail-share {
   display: inline-block;
   margin-top: 10px;
   min-width: 100px; }
 
 /*---Search -----*/
-/* line 1155, foundation/components/_custom.scss */
+/* line 1159, foundation/components/_custom.scss */
 .search {
   list-style: none;
   width: 160px;
   overflow-x: hidden; }
-  /* line 1159, foundation/components/_custom.scss */
+  /* line 1163, foundation/components/_custom.scss */
   .search > li {
     text-transform: capitalize; }
 
 /*----------Grayscale images--------------*/
-/* line 1166, foundation/components/_custom.scss */
+/* line 1170, foundation/components/_custom.scss */
 .soldout, .soldout-product {
   font-size: 12px;
   text-align: center;
@@ -7019,32 +7021,32 @@ a.th {
   position: absolute;
   top: 50%;
   left: 0; }
-  /* line 1177, foundation/components/_custom.scss */
+  /* line 1181, foundation/components/_custom.scss */
   .soldout:before, .soldout-product:before {
     content: 'SOLD OUT'; }
 
-/* line 1182, foundation/components/_custom.scss */
+/* line 1186, foundation/components/_custom.scss */
 .soldout-product {
   padding: 2em;
   top: 46%; }
 
 /*-----Featured Designers Fancy Border Text -------*/
-/* line 1189, foundation/components/_custom.scss */
+/* line 1193, foundation/components/_custom.scss */
 .ovx {
   text-align: center;
   overflow-x: hidden; }
 
-/* line 1193, foundation/components/_custom.scss */
+/* line 1197, foundation/components/_custom.scss */
 .fancy, .featured-text {
   line-height: 0.5;
   text-align: center; }
 
-/* line 1197, foundation/components/_custom.scss */
+/* line 1201, foundation/components/_custom.scss */
 .fancy span, .featured-text span {
   display: inline-block;
   position: relative; }
 
-/* line 1202, foundation/components/_custom.scss */
+/* line 1206, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before,
 .fancy span:after,
 .featured-text span:after {
@@ -7055,45 +7057,45 @@ a.th {
   top: 0;
   width: 600px; }
 
-/* line 1210, foundation/components/_custom.scss */
+/* line 1214, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before {
   right: 100%;
   margin-right: 15px; }
 
-/* line 1214, foundation/components/_custom.scss */
+/* line 1218, foundation/components/_custom.scss */
 .fancy span:after, .featured-text span:after {
   left: 100%;
   margin-left: 15px; }
 
-/* line 1219, foundation/components/_custom.scss */
+/* line 1223, foundation/components/_custom.scss */
 .featured-text {
   margin-top: 24px; }
   @media screen and (max-width: 369px) {
-    /* line 1219, foundation/components/_custom.scss */
+    /* line 1223, foundation/components/_custom.scss */
     .featured-text {
       line-height: 1; } }
 
 /*-----Featured Designers Fancy Border Text -------*/
 /*---Marketing Ticker ---*/
-/* line 1235, foundation/components/_custom.scss */
+/* line 1239, foundation/components/_custom.scss */
 .ticker > h4 {
   padding-top: 1.4rem;
   font-size: 16px; }
 
-/* line 1243, foundation/components/_custom.scss */
+/* line 1247, foundation/components/_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
 
-/* line 1250, foundation/components/_custom.scss */
+/* line 1254, foundation/components/_custom.scss */
 .full-height {
   height: 100%; }
 
-/* line 1254, foundation/components/_custom.scss */
+/* line 1258, foundation/components/_custom.scss */
 .full-width {
   width: 100%; }
 
-/* line 1258, foundation/components/_custom.scss */
+/* line 1262, foundation/components/_custom.scss */
 .side-nav-holder {
   padding: 20px;
   margin-bottom: 10px;
@@ -7107,31 +7109,31 @@ a.th {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 768px) {
-    /* line 1258, foundation/components/_custom.scss */
+    /* line 1262, foundation/components/_custom.scss */
     .side-nav-holder {
       height: 100%;
       padding-left: 10px;
       margin-bottom: 0; } }
 
-/* line 1277, foundation/components/_custom.scss */
+/* line 1281, foundation/components/_custom.scss */
 .side-nav > li:nth-child(n+2) {
   text-transform: uppercase;
   font-size: 12px; }
 
-/* line 1282, foundation/components/_custom.scss */
+/* line 1286, foundation/components/_custom.scss */
 .side-nav-heading {
   font-size: 16px !important;
   text-transform: uppercase; }
 
-/* line 1290, foundation/components/_custom.scss */
+/* line 1294, foundation/components/_custom.scss */
 .about-video {
   margin-top: 40px; }
 
-/* line 1296, foundation/components/_custom.scss */
+/* line 1300, foundation/components/_custom.scss */
 .help-container {
   position: relative; }
 
-/* line 1300, foundation/components/_custom.scss */
+/* line 1304, foundation/components/_custom.scss */
 .help-tabs {
   position: absolute;
   top: 0;
@@ -7141,39 +7143,39 @@ a.th {
   padding-left: 20px;
   padding-bottom: 20px; }
 
-/* line 1310, foundation/components/_custom.scss */
+/* line 1314, foundation/components/_custom.scss */
 .hidden-help {
   display: none;
   z-index: 1; }
 
-/* line 1315, foundation/components/_custom.scss */
+/* line 1319, foundation/components/_custom.scss */
 .active-help {
   display: initial;
   z-index: 2; }
 
-/* line 1320, foundation/components/_custom.scss */
+/* line 1324, foundation/components/_custom.scss */
 .help-tabs p {
   text-align: justify; }
 
-/* line 1324, foundation/components/_custom.scss */
+/* line 1328, foundation/components/_custom.scss */
 .help-title, .help-title-main {
   font-family: futura;
   font-size: 1rem;
   text-transform: uppercase; }
 
-/* line 1330, foundation/components/_custom.scss */
+/* line 1334, foundation/components/_custom.scss */
 .help-title-main {
   margin-top: 20px;
   padding-left: 0.46875rem;
   text-transform: uppercase; }
 
-/* line 1342, foundation/components/_custom.scss */
+/* line 1346, foundation/components/_custom.scss */
 .marketing-image-container {
   margin-top: -180px;
   left: 0;
   width: 100%; }
 
-/* line 1348, foundation/components/_custom.scss */
+/* line 1352, foundation/components/_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
@@ -7183,15 +7185,15 @@ a.th {
   background-size: cover;
   min-height: 200px; }
   @media (min-width: 590px) {
-    /* line 1348, foundation/components/_custom.scss */
+    /* line 1352, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 240px; } }
   @media (min-width: 768px) {
-    /* line 1348, foundation/components/_custom.scss */
+    /* line 1352, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 300px; } }
 
-/* line 1364, foundation/components/_custom.scss */
+/* line 1368, foundation/components/_custom.scss */
 .wide-image {
   width: 100%;
   max-width: 100%;
@@ -7199,20 +7201,20 @@ a.th {
   min-height: 150px; }
 
 @media (max-width: 768px) {
-  /* line 1371, foundation/components/_custom.scss */
+  /* line 1375, foundation/components/_custom.scss */
   .marketing-logo {
     margin-top: 55px; } }
 
-/* line 1377, foundation/components/_custom.scss */
+/* line 1381, foundation/components/_custom.scss */
 .redeem {
   margin-top: 10px; }
   @media (min-width: 300px) {
-    /* line 1377, foundation/components/_custom.scss */
+    /* line 1381, foundation/components/_custom.scss */
     .redeem {
       margin-top: 40px; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 1387, foundation/components/_custom.scss */
+  /* line 1391, foundation/components/_custom.scss */
   .check-level-layout {
     margin-top: 0.9375rem;
     margin-bottom: 2.1875rem !important; } }
