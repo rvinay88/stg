@@ -1695,39 +1695,43 @@ h6 {
   font-size: 0.9375rem; }
 
 /* line 230, foundation/components/_type.scss */
+.subheader.light {
+  color: #eeeeee; }
+
+/* line 235, foundation/components/_type.scss */
 hr {
   border-width: 0.0625rem 0 0; }
 
-/* line 235, foundation/components/_type.scss */
+/* line 240, foundation/components/_type.scss */
 hr.thick {
   border-width: 0.2rem 0 0; }
 
 /* Helpful Typography Defaults */
-/* line 242, foundation/components/_type.scss */
+/* line 247, foundation/components/_type.scss */
 em,
 i {
   font-style: italic;
   line-height: inherit; }
 
-/* line 248, foundation/components/_type.scss */
+/* line 253, foundation/components/_type.scss */
 strong,
 b {
   font-weight: bold;
   line-height: inherit; }
 
-/* line 253, foundation/components/_type.scss */
+/* line 258, foundation/components/_type.scss */
 small {
   font-size: 60%;
   line-height: inherit; }
 
-/* line 258, foundation/components/_type.scss */
+/* line 263, foundation/components/_type.scss */
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
   color: #7f0a0c; }
 
 /* Lists */
-/* line 267, foundation/components/_type.scss */
+/* line 272, foundation/components/_type.scss */
 ul,
 ol,
 dl {
@@ -1738,50 +1742,50 @@ dl {
   list-style-position: outside;
   font-family: Helvetica; }
 
-/* line 276, foundation/components/_type.scss */
+/* line 281, foundation/components/_type.scss */
 ul, ol {
   margin-left: 0; }
 
 /* Unordered Lists */
-/* line 285, foundation/components/_type.scss */
+/* line 290, foundation/components/_type.scss */
 ul li ul,
 ul li ol {
   margin-left: 1.25rem;
   margin-bottom: 0; }
-/* line 294, foundation/components/_type.scss */
+/* line 299, foundation/components/_type.scss */
 ul.square li ul, ul.circle li ul, ul.disc li ul {
   list-style: inherit; }
-/* line 297, foundation/components/_type.scss */
+/* line 302, foundation/components/_type.scss */
 ul.square {
   list-style-type: square; }
-/* line 298, foundation/components/_type.scss */
+/* line 303, foundation/components/_type.scss */
 ul.circle {
   list-style-type: circle; }
-/* line 299, foundation/components/_type.scss */
+/* line 304, foundation/components/_type.scss */
 ul.disc {
   list-style-type: disc; }
-/* line 300, foundation/components/_type.scss */
+/* line 305, foundation/components/_type.scss */
 ul.no-bullet, ul.favorites-list, ul.product-thumbs, .errorSummary ul, .successMessage ul {
   list-style: none; }
 
 /* Ordered Lists */
-/* line 307, foundation/components/_type.scss */
+/* line 312, foundation/components/_type.scss */
 ol li ul,
 ol li ol {
   margin-left: 1.25rem;
   margin-bottom: 0; }
 
 /* Definition Lists */
-/* line 316, foundation/components/_type.scss */
+/* line 321, foundation/components/_type.scss */
 dl dt {
   margin-bottom: 0.3rem;
   font-weight: bold; }
-/* line 320, foundation/components/_type.scss */
+/* line 325, foundation/components/_type.scss */
 dl dd {
   margin-bottom: 0.75rem; }
 
 /* Abbreviations */
-/* line 325, foundation/components/_type.scss */
+/* line 330, foundation/components/_type.scss */
 abbr,
 acronym {
   text-transform: uppercase;
@@ -1790,55 +1794,55 @@ acronym {
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
 
-/* line 332, foundation/components/_type.scss */
+/* line 337, foundation/components/_type.scss */
 abbr {
   text-transform: none; }
 
 /* Blockquotes */
-/* line 337, foundation/components/_type.scss */
+/* line 342, foundation/components/_type.scss */
 blockquote {
   margin: 0.625rem 0 0.625rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #dddddd; }
-  /* line 342, foundation/components/_type.scss */
+  /* line 347, foundation/components/_type.scss */
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
     color: #333333; }
-    /* line 346, foundation/components/_type.scss */
+    /* line 351, foundation/components/_type.scss */
     blockquote cite:before {
       content: "\2014 \0020"; }
-    /* line 351, foundation/components/_type.scss */
+    /* line 356, foundation/components/_type.scss */
     blockquote cite a,
     blockquote cite a:visited {
       color: #333333; }
 
-/* line 357, foundation/components/_type.scss */
+/* line 362, foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
   color: #4d4d4d; }
 
 /* Microformats */
-/* line 363, foundation/components/_type.scss */
+/* line 368, foundation/components/_type.scss */
 .vcard {
   display: inline-block;
   margin: 0 0 1.25rem 0;
   border: 1px solid #dddddd;
   padding: 0.625rem 0.75rem; }
-  /* line 369, foundation/components/_type.scss */
+  /* line 374, foundation/components/_type.scss */
   .vcard li {
     margin: 0;
     display: block; }
-  /* line 373, foundation/components/_type.scss */
+  /* line 378, foundation/components/_type.scss */
   .vcard .fn {
     font-weight: bold;
     font-size: 0.9375rem; }
 
-/* line 380, foundation/components/_type.scss */
+/* line 385, foundation/components/_type.scss */
 .vevent .summary {
   font-weight: bold; }
-/* line 382, foundation/components/_type.scss */
+/* line 387, foundation/components/_type.scss */
 .vevent abbr {
   cursor: default;
   text-decoration: none;
@@ -1847,23 +1851,23 @@ blockquote p {
   padding: 0 0.0625rem; }
 
 @media only screen and (min-width: 768px) {
-  /* line 393, foundation/components/_type.scss */
+  /* line 398, foundation/components/_type.scss */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
 
-  /* line 394, foundation/components/_type.scss */
+  /* line 399, foundation/components/_type.scss */
   h1 {
     font-size: 2.75rem; }
 
-  /* line 395, foundation/components/_type.scss */
+  /* line 400, foundation/components/_type.scss */
   h2 {
     font-size: 2.3125rem; }
 
-  /* line 396, foundation/components/_type.scss */
+  /* line 401, foundation/components/_type.scss */
   h3 {
     font-size: 1.6875rem; }
 
-  /* line 397, foundation/components/_type.scss */
+  /* line 402, foundation/components/_type.scss */
   h4 {
     font-size: 1.4375rem; } }
 /*
@@ -1872,12 +1876,12 @@ blockquote p {
  * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
  * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
 */
-/* line 408, foundation/components/_type.scss */
+/* line 413, foundation/components/_type.scss */
 .print-only {
   display: none !important; }
 
 @media print {
-  /* line 410, foundation/components/_type.scss */
+  /* line 415, foundation/components/_type.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1885,88 +1889,88 @@ blockquote p {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 418, foundation/components/_type.scss */
+  /* line 423, foundation/components/_type.scss */
   a,
   a:visited {
     text-decoration: underline; }
 
-  /* line 419, foundation/components/_type.scss */
+  /* line 424, foundation/components/_type.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
 
-  /* line 421, foundation/components/_type.scss */
+  /* line 426, foundation/components/_type.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
-  /* line 426, foundation/components/_type.scss */
+  /* line 431, foundation/components/_type.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
-  /* line 429, foundation/components/_type.scss */
+  /* line 434, foundation/components/_type.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-  /* line 434, foundation/components/_type.scss */
+  /* line 439, foundation/components/_type.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  /* line 437, foundation/components/_type.scss */
+  /* line 442, foundation/components/_type.scss */
   tr,
   img {
     page-break-inside: avoid; }
 
-  /* line 439, foundation/components/_type.scss */
+  /* line 444, foundation/components/_type.scss */
   img {
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm; }
 
-  /* line 445, foundation/components/_type.scss */
+  /* line 450, foundation/components/_type.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 451, foundation/components/_type.scss */
+  /* line 456, foundation/components/_type.scss */
   h2,
   h3 {
     page-break-after: avoid; }
 
-  /* line 453, foundation/components/_type.scss */
+  /* line 458, foundation/components/_type.scss */
   .hide-on-print {
     display: none !important; }
 
-  /* line 454, foundation/components/_type.scss */
+  /* line 459, foundation/components/_type.scss */
   .print-only {
     display: block !important; }
 
-  /* line 455, foundation/components/_type.scss */
+  /* line 460, foundation/components/_type.scss */
   .hide-for-print {
     display: none !important; }
 
-  /* line 456, foundation/components/_type.scss */
+  /* line 461, foundation/components/_type.scss */
   .show-for-print {
     display: inherit !important; } }
-/* line 462, foundation/components/_type.scss */
-.uppercase, .orders > *, .ticker > h4, .new-designer-name {
+/* line 467, foundation/components/_type.scss */
+.uppercase, .orders > *, .footer-sublink-list > li, .footer-title, .ticker > h4, .new-designer-name {
   text-transform: uppercase; }
 
-/* line 466, foundation/components/_type.scss */
+/* line 471, foundation/components/_type.scss */
 .muted, ul li, .orders > * {
   color: #666666; }
 
-/* line 470, foundation/components/_type.scss */
+/* line 475, foundation/components/_type.scss */
 .capitalize {
   text-transform: capitalize; }
 
-/* line 474, foundation/components/_type.scss */
+/* line 479, foundation/components/_type.scss */
 .italicize, .shipped {
   font-style: italic; }
 
@@ -6241,7 +6245,7 @@ a.th {
   margin-right: 0.625rem; }
 
 /* line 397, foundation/components/_custom.scss */
-.top-margin, .errorSummary, .successMessage, .btn-wizard {
+.top-margin, .errorSummary, .successMessage, .multi-column-footer, .btn-wizard {
   margin-top: 1rem; }
 
 /* line 401, foundation/components/_custom.scss */
@@ -6780,70 +6784,111 @@ a.th {
   margin-top: 6px; }
 
 /* line 914, foundation/components/_custom.scss */
+.footer-sublinks > ul {
+  list-style: none; }
+
+/* line 919, foundation/components/_custom.scss */
+.footer-sublink-list > li {
+  font-size: 11px;
+  margin-top: 7px; }
+  /* line 923, foundation/components/_custom.scss */
+  .footer-sublink-list > li a {
+    color: #eeeeee;
+    text-shadow: 1px 1px 2px #666; }
+
+/* line 930, foundation/components/_custom.scss */
+.multi-column-footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 16px; }
+
+/* line 937, foundation/components/_custom.scss */
+.footer-title {
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 17px 0; }
+
+/* line 945, foundation/components/_custom.scss */
+.subscribe-copy {
+  color: white;
+  font-size: 11px;
+  text-align: justify;
+  max-width: 250px; }
+
+/* line 952, foundation/components/_custom.scss */
+.cut-max-input {
+  max-width: 250px; }
+
+/* line 956, foundation/components/_custom.scss */
 .footer-list, .footer-links > ul > li > a {
   font-family: futura;
   font-size: 11px;
   text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
-  /* line 919, foundation/components/_custom.scss */
+  /* line 961, foundation/components/_custom.scss */
   .footer-list {
     text-align: center;
     display: inline-block; } }
 
-/* line 926, foundation/components/_custom.scss */
+/* line 968, foundation/components/_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
-/* line 932, foundation/components/_custom.scss */
+/* line 973, foundation/components/_custom.scss */
+.icon-inline-footer {
+  margin-right: 10px; }
+
+/* line 978, foundation/components/_custom.scss */
 .icon-footer:hover {
   color: #666666; }
 
-/* line 937, foundation/components/_custom.scss */
+/* line 983, foundation/components/_custom.scss */
 .footer-icons {
   padding-top: 0.6rem; }
 
-/* line 941, foundation/components/_custom.scss */
+/* line 987, foundation/components/_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black; }
 
 /*--------------Footer -----------------*/
 /*---------------------Marketing Dialog-----------------------------*/
-/* line 950, foundation/components/_custom.scss */
+/* line 995, foundation/components/_custom.scss */
 .box-content-marketing {
   height: 460px; }
 
-/* line 955, foundation/components/_custom.scss */
+/* line 1000, foundation/components/_custom.scss */
 .asterisk {
   display: inline-block;
   float: left; }
 
-/* line 960, foundation/components/_custom.scss */
+/* line 1005, foundation/components/_custom.scss */
 .fine-print {
   float: left;
   width: 95%;
   margin-left: 10px;
   margin-top: -5px; }
-  /* line 965, foundation/components/_custom.scss */
+  /* line 1010, foundation/components/_custom.scss */
   .fine-print > span {
     font-size: 10px; }
 
-/* line 970, foundation/components/_custom.scss */
+/* line 1015, foundation/components/_custom.scss */
 .email-copy {
   font-size: 11px; }
 
-/* line 974, foundation/components/_custom.scss */
+/* line 1019, foundation/components/_custom.scss */
 .invite-header {
   font-size: 14px;
   font-family: Helvetica; }
   @media screen and (max-width: 768px) {
-    /* line 980, foundation/components/_custom.scss */
+    /* line 1025, foundation/components/_custom.scss */
     .invite-header:first-child {
       margin-top: 20px; } }
 
-/* line 986, foundation/components/_custom.scss */
+/* line 1031, foundation/components/_custom.scss */
 .genie-marketing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6851,57 +6896,57 @@ a.th {
   background-size: cover;
   background: black url("../images/genie_marketing_main.jpg") no-repeat; }
   @media screen and (max-width: 730px) {
-    /* line 986, foundation/components/_custom.scss */
+    /* line 1031, foundation/components/_custom.scss */
     .genie-marketing {
       display: none; } }
 
-/* line 1007, foundation/components/_custom.scss */
+/* line 1052, foundation/components/_custom.scss */
 .img-responsive {
   max-width: 100%; }
 
-/* line 1010, foundation/components/_custom.scss */
+/* line 1055, foundation/components/_custom.scss */
 .share-page-container {
   margin: 0 auto; }
 
-/* line 1015, foundation/components/_custom.scss */
+/* line 1060, foundation/components/_custom.scss */
 .share-page-right {
   width: 360px;
   padding-left: 50px; }
   @media screen and (max-width: 925px) {
-    /* line 1015, foundation/components/_custom.scss */
+    /* line 1060, foundation/components/_custom.scss */
     .share-page-right {
       padding-left: 0;
       width: auto; } }
 
-/* line 1024, foundation/components/_custom.scss */
+/* line 1069, foundation/components/_custom.scss */
 .marketing-row {
   margin-bottom: 20px;
   background-color: #ddd; }
 
-/* line 1031, foundation/components/_custom.scss */
+/* line 1076, foundation/components/_custom.scss */
 .table {
   display: table;
   margin: 0 auto;
   width: 80%;
   padding: 20px 0; }
   @media screen and (max-width: 900px) {
-    /* line 1031, foundation/components/_custom.scss */
+    /* line 1076, foundation/components/_custom.scss */
     .table {
       width: 100%; } }
 
-/* line 1041, foundation/components/_custom.scss */
+/* line 1086, foundation/components/_custom.scss */
 .table-left, .table-left-va-top {
   display: table-cell;
   vertical-align: middle;
   width: 50%; }
   @media screen and (max-width: 768px) {
-    /* line 1041, foundation/components/_custom.scss */
+    /* line 1086, foundation/components/_custom.scss */
     .table-left, .table-left-va-top {
       width: 100%;
       text-align: center;
       display: block; } }
 
-/* line 1052, foundation/components/_custom.scss */
+/* line 1097, foundation/components/_custom.scss */
 .table-right, .table-right-va-top {
   display: table-cell;
   vertical-align: middle;
@@ -6910,26 +6955,26 @@ a.th {
   text-align: left;
   padding-left: 20px; }
   @media screen and (max-width: 768px) {
-    /* line 1052, foundation/components/_custom.scss */
+    /* line 1097, foundation/components/_custom.scss */
     .table-right, .table-right-va-top {
       width: 100%;
       display: block;
       padding: 20px; } }
 
-/* line 1067, foundation/components/_custom.scss */
+/* line 1112, foundation/components/_custom.scss */
 .table-left-va-top {
   vertical-align: top; }
   @media screen and (max-width: 768px) {
-    /* line 1067, foundation/components/_custom.scss */
+    /* line 1112, foundation/components/_custom.scss */
     .table-left-va-top {
       display: none; } }
 
-/* line 1074, foundation/components/_custom.scss */
+/* line 1119, foundation/components/_custom.scss */
 .table-right-va-top {
   vertical-align: top;
   height: 420px; }
 
-/* line 1081, foundation/components/_custom.scss */
+/* line 1126, foundation/components/_custom.scss */
 .static-login-container {
   overflow-x: hidden;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.9)), to(rgba(241, 241, 241, 0.9)));
@@ -6944,16 +6989,16 @@ a.th {
   padding: 20px; }
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
-/* line 1095, foundation/components/_custom.scss */
+/* line 1140, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .prod-name-homepage, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 1099, foundation/components/_custom.scss */
+/* line 1144, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 1104, foundation/components/_custom.scss */
+/* line 1149, foundation/components/_custom.scss */
 .prod-name, .prod-name-homepage {
   text-transform: capitalize;
   color: black;
@@ -6962,28 +7007,28 @@ a.th {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-/* line 1114, foundation/components/_custom.scss */
+/* line 1159, foundation/components/_custom.scss */
 .prod-name-homepage {
   display: block;
   max-width: auto; }
   @media screen and (min-width: 1200px) {
-    /* line 1114, foundation/components/_custom.scss */
+    /* line 1159, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 200px; } }
   @media screen and (max-width: 800px) {
-    /* line 1114, foundation/components/_custom.scss */
+    /* line 1159, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 150px; } }
 
-/* line 1126, foundation/components/_custom.scss */
+/* line 1171, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 1133, foundation/components/_custom.scss */
+/* line 1178, foundation/components/_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 1137, foundation/components/_custom.scss */
+/* line 1182, foundation/components/_custom.scss */
 #profileLongStory > div {
   font-family: Helvetica;
   font-size: 12px;
@@ -6992,24 +7037,24 @@ a.th {
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
 /*----------Share For Product Detail ----*/
-/* line 1149, foundation/components/_custom.scss */
+/* line 1194, foundation/components/_custom.scss */
 .product-detail-share {
   display: inline-block;
   margin-top: 10px;
   min-width: 100px; }
 
 /*---Search -----*/
-/* line 1159, foundation/components/_custom.scss */
+/* line 1204, foundation/components/_custom.scss */
 .search {
   list-style: none;
   width: 160px;
   overflow-x: hidden; }
-  /* line 1163, foundation/components/_custom.scss */
+  /* line 1208, foundation/components/_custom.scss */
   .search > li {
     text-transform: capitalize; }
 
 /*----------Grayscale images--------------*/
-/* line 1170, foundation/components/_custom.scss */
+/* line 1215, foundation/components/_custom.scss */
 .soldout, .soldout-product {
   font-size: 12px;
   text-align: center;
@@ -7021,32 +7066,32 @@ a.th {
   position: absolute;
   top: 50%;
   left: 0; }
-  /* line 1181, foundation/components/_custom.scss */
+  /* line 1226, foundation/components/_custom.scss */
   .soldout:before, .soldout-product:before {
     content: 'SOLD OUT'; }
 
-/* line 1186, foundation/components/_custom.scss */
+/* line 1231, foundation/components/_custom.scss */
 .soldout-product {
   padding: 2em;
   top: 46%; }
 
 /*-----Featured Designers Fancy Border Text -------*/
-/* line 1193, foundation/components/_custom.scss */
+/* line 1238, foundation/components/_custom.scss */
 .ovx {
   text-align: center;
   overflow-x: hidden; }
 
-/* line 1197, foundation/components/_custom.scss */
+/* line 1242, foundation/components/_custom.scss */
 .fancy, .featured-text {
   line-height: 0.5;
   text-align: center; }
 
-/* line 1201, foundation/components/_custom.scss */
+/* line 1246, foundation/components/_custom.scss */
 .fancy span, .featured-text span {
   display: inline-block;
   position: relative; }
 
-/* line 1206, foundation/components/_custom.scss */
+/* line 1251, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before,
 .fancy span:after,
 .featured-text span:after {
@@ -7057,45 +7102,45 @@ a.th {
   top: 0;
   width: 600px; }
 
-/* line 1214, foundation/components/_custom.scss */
+/* line 1259, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before {
   right: 100%;
   margin-right: 15px; }
 
-/* line 1218, foundation/components/_custom.scss */
+/* line 1263, foundation/components/_custom.scss */
 .fancy span:after, .featured-text span:after {
   left: 100%;
   margin-left: 15px; }
 
-/* line 1223, foundation/components/_custom.scss */
+/* line 1268, foundation/components/_custom.scss */
 .featured-text {
   margin-top: 24px; }
   @media screen and (max-width: 369px) {
-    /* line 1223, foundation/components/_custom.scss */
+    /* line 1268, foundation/components/_custom.scss */
     .featured-text {
       line-height: 1; } }
 
 /*-----Featured Designers Fancy Border Text -------*/
 /*---Marketing Ticker ---*/
-/* line 1239, foundation/components/_custom.scss */
+/* line 1284, foundation/components/_custom.scss */
 .ticker > h4 {
   padding-top: 1.4rem;
   font-size: 16px; }
 
-/* line 1247, foundation/components/_custom.scss */
+/* line 1292, foundation/components/_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
 
-/* line 1254, foundation/components/_custom.scss */
+/* line 1299, foundation/components/_custom.scss */
 .full-height {
   height: 100%; }
 
-/* line 1258, foundation/components/_custom.scss */
+/* line 1303, foundation/components/_custom.scss */
 .full-width {
   width: 100%; }
 
-/* line 1262, foundation/components/_custom.scss */
+/* line 1307, foundation/components/_custom.scss */
 .side-nav-holder {
   padding: 20px;
   margin-bottom: 10px;
@@ -7109,31 +7154,31 @@ a.th {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 768px) {
-    /* line 1262, foundation/components/_custom.scss */
+    /* line 1307, foundation/components/_custom.scss */
     .side-nav-holder {
       height: 100%;
       padding-left: 10px;
       margin-bottom: 0; } }
 
-/* line 1281, foundation/components/_custom.scss */
+/* line 1326, foundation/components/_custom.scss */
 .side-nav > li:nth-child(n+2) {
   text-transform: uppercase;
   font-size: 12px; }
 
-/* line 1286, foundation/components/_custom.scss */
+/* line 1331, foundation/components/_custom.scss */
 .side-nav-heading {
   font-size: 16px !important;
   text-transform: uppercase; }
 
-/* line 1294, foundation/components/_custom.scss */
+/* line 1339, foundation/components/_custom.scss */
 .about-video {
   margin-top: 40px; }
 
-/* line 1300, foundation/components/_custom.scss */
+/* line 1345, foundation/components/_custom.scss */
 .help-container {
   position: relative; }
 
-/* line 1304, foundation/components/_custom.scss */
+/* line 1349, foundation/components/_custom.scss */
 .help-tabs {
   position: absolute;
   top: 0;
@@ -7143,39 +7188,39 @@ a.th {
   padding-left: 20px;
   padding-bottom: 20px; }
 
-/* line 1314, foundation/components/_custom.scss */
+/* line 1359, foundation/components/_custom.scss */
 .hidden-help {
   display: none;
   z-index: 1; }
 
-/* line 1319, foundation/components/_custom.scss */
+/* line 1364, foundation/components/_custom.scss */
 .active-help {
   display: initial;
   z-index: 2; }
 
-/* line 1324, foundation/components/_custom.scss */
+/* line 1369, foundation/components/_custom.scss */
 .help-tabs p {
   text-align: justify; }
 
-/* line 1328, foundation/components/_custom.scss */
+/* line 1373, foundation/components/_custom.scss */
 .help-title, .help-title-main {
   font-family: futura;
   font-size: 1rem;
   text-transform: uppercase; }
 
-/* line 1334, foundation/components/_custom.scss */
+/* line 1379, foundation/components/_custom.scss */
 .help-title-main {
   margin-top: 20px;
   padding-left: 0.46875rem;
   text-transform: uppercase; }
 
-/* line 1346, foundation/components/_custom.scss */
+/* line 1391, foundation/components/_custom.scss */
 .marketing-image-container {
   margin-top: -180px;
   left: 0;
   width: 100%; }
 
-/* line 1352, foundation/components/_custom.scss */
+/* line 1397, foundation/components/_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
@@ -7185,15 +7230,15 @@ a.th {
   background-size: cover;
   min-height: 200px; }
   @media (min-width: 590px) {
-    /* line 1352, foundation/components/_custom.scss */
+    /* line 1397, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 240px; } }
   @media (min-width: 768px) {
-    /* line 1352, foundation/components/_custom.scss */
+    /* line 1397, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 300px; } }
 
-/* line 1368, foundation/components/_custom.scss */
+/* line 1413, foundation/components/_custom.scss */
 .wide-image {
   width: 100%;
   max-width: 100%;
@@ -7201,20 +7246,20 @@ a.th {
   min-height: 150px; }
 
 @media (max-width: 768px) {
-  /* line 1375, foundation/components/_custom.scss */
+  /* line 1420, foundation/components/_custom.scss */
   .marketing-logo {
     margin-top: 55px; } }
 
-/* line 1381, foundation/components/_custom.scss */
+/* line 1426, foundation/components/_custom.scss */
 .redeem {
   margin-top: 10px; }
   @media (min-width: 300px) {
-    /* line 1381, foundation/components/_custom.scss */
+    /* line 1426, foundation/components/_custom.scss */
     .redeem {
       margin-top: 40px; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 1391, foundation/components/_custom.scss */
+  /* line 1436, foundation/components/_custom.scss */
   .check-level-layout {
     margin-top: 0.9375rem;
     margin-bottom: 2.1875rem !important; } }
@@ -7481,62 +7526,32 @@ h4.media-heading {
 /*----------------New Collage-----------------*/
 /* line 1, foundation/components/_wizard-steps.scss */
 .wizard-steps-container {
-  padding-left: 0.9rem; }
+  padding-left: 0.9rem;
+  position: relative; }
+  /* line 4, foundation/components/_wizard-steps.scss */
+  .wizard-steps-container > * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; }
 
-/* line 6, foundation/components/_wizard-steps.scss */
+/* line 11, foundation/components/_wizard-steps.scss */
 .wizard-step {
   display: inline-block;
   margin-right: 15px;
   margin-bottom: 10px;
   background: #ddd;
   padding: 4px;
-  height: 28px; }
-  /* line 14, foundation/components/_wizard-steps.scss */
-  .wizard-step.completed-step, .wizard-step.active-step, .wizard-step:hover {
-    background-color: #000; }
-    /* line 16, foundation/components/_wizard-steps.scss */
-    .wizard-step.completed-step a, .wizard-step.active-step a, .wizard-step:hover a {
-      color: white;
-      text-decoration: none; }
-      /* line 20, foundation/components/_wizard-steps.scss */
-      .wizard-step.completed-step a:before, .wizard-step.active-step a:before, .wizard-step:hover a:before {
-        border-top: 14px solid #000;
-        border-bottom: 14px solid #000; }
-      /* line 24, foundation/components/_wizard-steps.scss */
-      .wizard-step.completed-step a:after, .wizard-step.active-step a:after, .wizard-step:hover a:after {
-        border-left: 14px solid #000; }
-  /* line 31, foundation/components/_wizard-steps.scss */
-  .wizard-step.disabled, .wizard-step.disabled:hover {
-    background-color: #eeeeee; }
-    /* line 33, foundation/components/_wizard-steps.scss */
-    .wizard-step.disabled a, .wizard-step.disabled:hover a {
-      color: #000; }
-      /* line 36, foundation/components/_wizard-steps.scss */
-      .wizard-step.disabled a:before, .wizard-step.disabled:hover a:before {
-        border-top: 14px solid #eeeeee;
-        border-bottom: 14px solid #eeeeee; }
-      /* line 40, foundation/components/_wizard-steps.scss */
-      .wizard-step.disabled a:after, .wizard-step.disabled:hover a:after {
-        border-left: 14px solid #eeeeee; }
-  /* line 46, foundation/components/_wizard-steps.scss */
-  .wizard-step:hover {
-    background-color: #000; }
-    /* line 48, foundation/components/_wizard-steps.scss */
-    .wizard-step:hover a {
-      color: white;
-      text-decoration: none; }
-      /* line 52, foundation/components/_wizard-steps.scss */
-      .wizard-step:hover a:before {
-        border-top: 14px solid #000;
-        border-bottom: 14px solid #000; }
-      /* line 56, foundation/components/_wizard-steps.scss */
-      .wizard-step:hover a:after {
-        border-left: 14px solid #000; }
-  /* line 62, foundation/components/_wizard-steps.scss */
+  height: 28px;
+  position: relative; }
+  /* line 20, foundation/components/_wizard-steps.scss */
+  .wizard-step div {
+    position: relative; }
+  /* line 22, foundation/components/_wizard-steps.scss */
   .wizard-step a {
     font-size: 12px;
-    position: relative; }
-    /* line 66, foundation/components/_wizard-steps.scss */
+    position: relative;
+    display: block;
+    line-height: 1.55; }
+    /* line 28, foundation/components/_wizard-steps.scss */
     .wizard-step a:before {
       width: 0px;
       height: 0px;
@@ -7545,9 +7560,10 @@ h4.media-heading {
       border-left: 14px solid transparent;
       position: absolute;
       content: "";
-      top: -6px;
-      left: -18px; }
-    /* line 77, foundation/components/_wizard-steps.scss */
+      top: -4px;
+      left: -18px;
+      -moz-box-sizing: border-box; }
+    /* line 40, foundation/components/_wizard-steps.scss */
     .wizard-step a:after {
       width: 0;
       height: 0;
@@ -7556,8 +7572,50 @@ h4.media-heading {
       border-left: 14px solid #ddd;
       position: absolute;
       content: "";
-      top: -6px;
-      right: -18px; }
+      top: -4px;
+      right: -18px;
+      -moz-box-sizing: border-box; }
+  /* line 54, foundation/components/_wizard-steps.scss */
+  .wizard-step.completed-step, .wizard-step.active-step, .wizard-step:hover {
+    background-color: #000; }
+    /* line 56, foundation/components/_wizard-steps.scss */
+    .wizard-step.completed-step a, .wizard-step.active-step a, .wizard-step:hover a {
+      color: white;
+      text-decoration: none; }
+      /* line 60, foundation/components/_wizard-steps.scss */
+      .wizard-step.completed-step a:before, .wizard-step.active-step a:before, .wizard-step:hover a:before {
+        border-top: 14px solid #000;
+        border-bottom: 14px solid #000; }
+      /* line 64, foundation/components/_wizard-steps.scss */
+      .wizard-step.completed-step a:after, .wizard-step.active-step a:after, .wizard-step:hover a:after {
+        border-left: 14px solid #000; }
+  /* line 71, foundation/components/_wizard-steps.scss */
+  .wizard-step.disabled, .wizard-step.disabled:hover {
+    background-color: #eeeeee; }
+    /* line 73, foundation/components/_wizard-steps.scss */
+    .wizard-step.disabled a, .wizard-step.disabled:hover a {
+      color: #000; }
+      /* line 76, foundation/components/_wizard-steps.scss */
+      .wizard-step.disabled a:before, .wizard-step.disabled:hover a:before {
+        border-top: 14px solid #eeeeee;
+        border-bottom: 14px solid #eeeeee; }
+      /* line 80, foundation/components/_wizard-steps.scss */
+      .wizard-step.disabled a:after, .wizard-step.disabled:hover a:after {
+        border-left: 14px solid #eeeeee; }
+  /* line 86, foundation/components/_wizard-steps.scss */
+  .wizard-step:hover {
+    background-color: #000; }
+    /* line 88, foundation/components/_wizard-steps.scss */
+    .wizard-step:hover a {
+      color: white;
+      text-decoration: none; }
+      /* line 92, foundation/components/_wizard-steps.scss */
+      .wizard-step:hover a:before {
+        border-top: 14px solid #000;
+        border-bottom: 14px solid #000; }
+      /* line 96, foundation/components/_wizard-steps.scss */
+      .wizard-step:hover a:after {
+        border-left: 14px solid #000; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
