@@ -71,14 +71,14 @@
     events : function () {
       var self = this;
       var offst = this.outerHeight($('.top-bar, [data-topbar]'));
-      var $distance = 0;
+      var $distance = 0; //cache location from which menu is expanded
       $(this.scope)
         .off('.fndtn.topbar')
         .on('click.fndtn.topbar', '.top-bar .toggle-topbar, [data-topbar] .toggle-topbar', function (e) {
           var topbar = $(this).closest('.top-bar, [data-topbar]'),
               section = topbar.find('section, .section'),
               titlebar = topbar.children('ul').first(),
-              header = $("header.navigation");
+              header = $("header.navigation"); //to add and remove .sticky
 
           e.preventDefault();
 
@@ -93,26 +93,28 @@
 
             section.find('li.moved').removeClass('moved');
             topbar.data('index', 0);
-
+            
+            //Set value of $distance based on where the menu is being called from
             if(!topbar.hasClass('expanded')) {
               $distance = $('.top-bar').offset().top;
             }
-
+            
             header.removeClass('sticky fixed');
             
-            $('body').animate({"scrollTop": "0"}, 300);
-            
+            //Scroll to top when menu is expanded
+            $('body, html').animate({"scrollTop": "0"}, 300);
+
             topbar
               .toggleClass('expanded')
               .css('height', '');
-            
           }
 
           if (!topbar.hasClass('expanded')) {
+            //Add sticky class and scroll to $distance
             header.addClass('sticky');
             if($distance > 0) {
-              $('body').animate({"scrollTop": $distance}, 300);
-            }
+              $('body, html').animate({"scrollTop": $distance}, 300);
+            }            
             
             if (topbar.hasClass('fixed')) {
               topbar.parent().addClass('fixed');
@@ -129,6 +131,7 @@
             }
           }
         })
+
         .on('click.fndtn.topbar', '.top-bar li.has-dropdown', function (e) {
           if (self.breakpoint()) return;
 
@@ -266,6 +269,10 @@
       // Put element back in the DOM
       this.settings.$section.appendTo(this.settings.$topbar);
 
+      // Add appropriate height to settings menu
+
+      $(".settings-menu").css("top",  $(".alert-box.base").outerHeight() + 45); //Added to align flyout menus appropriately
+
       // check for sticky
       this.sticky();
     },
@@ -282,25 +289,33 @@
     sticky : function () {
       var klass = '.' + this.settings.stickyClass;
       if ($(klass).length > 0) {
-        var distance = $(klass).length ? $(klass).offset().top: 0,
+        var distance = $(klass).length ? $(klass).first().offset().top: 0,
             $window = $(window),
             offst = this.outerHeight($('.top-bar')),
             t_top;
 
-          //Whe resize elements of the page on windows resize. Must recalculate distance
-      		$(window).resize(function() {
+          //When resize elements of the page on windows resize. Must recalculate distance
+          $(window).resize(function() {
             clearTimeout(t_top);
-      			t_top = setTimeout (function() {
-        			distance = $(klass).offset().top;
-      			},105);
-      		});
+            if(!$(klass).hasClass('fixed')) {
+              $('.settings-menu').css("top", $(".alert-box.base").outerHeight() + 45); //Added to align flyout menus appropriately  
+            }
+            else {
+              $('.settings-menu').css("top", 45); //Added to align flyout menus appropriately  
+            }
+            t_top = setTimeout (function() {
+              distance = $(klass).first().offset().top;
+            },105);
+          });
           $window.scroll(function() {
             if ($window.scrollTop() > (distance)) {
               $(klass).addClass("fixed");
               $('body').css('padding-top',offst);
+              $('.settings-menu').css("top", 45); //Added to align flyout menus appropriately
             } else if ($window.scrollTop() <= distance) {
               $(klass).removeClass("fixed");
               $('body').css('padding-top','0');
+              $('.settings-menu').css("top", $(".alert-box.base").outerHeight() + 45); //Added to align flyout menus appropriately
             }
         });
       }
