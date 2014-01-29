@@ -385,7 +385,7 @@
           <section class="footer-sublinks">
             <ul class="footer-sublink-list">
               <li>
-                <span class="left right-margin">Ship To</span>
+                <span class="left right-margin black">Ship To</span>
                 <ul class="flag-list flag-container">
                   <li>
                     <div class="flag flag-us inline"></div>  
@@ -499,6 +499,7 @@
   });
   $('body').click(function (){
     $('#menu-settings, #menu-cart, .search-panel').removeClass('open');
+    $(".flag:not('.flag-active')").addClass("hidden");
   });
   $('.chosen-container, .pane-2, .search-panel').click (function (event) {
     event.preventDefault();
