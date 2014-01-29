@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/foundation.css">
 	<link rel="stylesheet" href="css/stg.css">
   <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/flag-icon.min.css">
 
   <link rel="stylesheet" href="css/chosen.css">
 
@@ -295,7 +294,7 @@
   <footer class="multi-column-footer">
     <div class="row black-bar">
       <div class="large-10 large-centered columns">
-        
+
         <section class="footer-social columns">
           <ul class="inline-list">
             <li class="text-center">
@@ -386,14 +385,20 @@
           <section class="footer-sublinks">
             <ul class="footer-sublink-list">
               <li>
-                <select name="" id="" class="my_select_box">
-                  <option value="">
-                    <span class="flag-icon flag-icon-us"></span>United States
-                  </option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
+                <span class="left right-margin">Ship To</span>
+                <ul class="flag-list flag-container">
+                  <li>
+                    <div class="flag flag-us inline"></div>  
+                  </li>
+                  <li>
+                    <div class="flag flag-gb inline flag-active"></div>  
+                  </li>
+                  <li>
+                    <div class="flag flag-in inline"></div>  
+                  </li>
+                </ul>
               </li>
+              <li class="clearfix"></li>
               <li>
                 <a href="#">My Profile</a>
               </li>
@@ -500,6 +505,25 @@
     event.stopPropagation();
   });  
   </script>
+  <script>
+    $(".flag").addClass("hidden");
+    $(".flag-active").removeClass("hidden");
+    $(".flag-container").click(function () {
+      $(".flag:not('.flag-active')").toggleClass("hidden");
+      $(".flag").click(function (event) {
+        var a = $(event.target);
+        console.log(a);
+        $(".flag-active").removeClass("flag-active");
+        console.log("removed a c");
+        a.addClass("flag-active"); 
+        console.log("added ac");
+        $(".flag:not('.flag-active')").toggleClass("hidden");
+        console.log("hiding");
+        event.preventDefault();
+        event.stopPropagation();
+      });
+    });
 
+  </script>
 </body>
 </html>
