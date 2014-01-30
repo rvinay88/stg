@@ -379,7 +379,7 @@
           <section class="footer-sublinks">
             <ul class="footer-sublink-list">
               <li>
-                <span class="left right-margin black">Ship To</span>
+                <span class="ship-to">Ship To</span>
                 <ul class="flag-list flag-container">
                   <li>
                     <div class="flag flag-us inline"></div>  
@@ -504,17 +504,14 @@
   <script>
     $(".flag").addClass("hidden");
     $(".flag-active").removeClass("hidden");
+
     $(".flag-container").click(function () {
       $(".flag:not('.flag-active')").toggleClass("hidden");
       $(".flag").click(function (event) {
         var a = $(event.target);
-        console.log(a);
         $(".flag-active").removeClass("flag-active");
-        console.log("removed a c");
         a.addClass("flag-active"); 
-        console.log("added ac");
         $(".flag:not('.flag-active')").toggleClass("hidden");
-        console.log("hiding");
         event.preventDefault();
         event.stopPropagation();
       });
