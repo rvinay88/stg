@@ -6881,14 +6881,11 @@ a.th {
   width: 100%;
   background-color: black; }
 
-/* line 1002, foundation/components/_custom.scss */
-.ship-to {
-  cursor: pointer; }
-
-/* line 1009, foundation/components/_custom.scss */
+/* line 1008, foundation/components/_custom.scss */
 .footer-sprite {
   background-image: url("../images/footer-sprite.png");
-  position: relative; }
+  position: relative;
+  margin-top: 0.625rem; }
 
 /* line 1014, foundation/components/_custom.scss */
 .footer-sprite, .footer-sprite-link {
@@ -7338,6 +7335,10 @@ a.th {
   .check-level-layout {
     margin-top: 0.9375rem;
     margin-bottom: 2.1875rem !important; } }
+
+/* line 1507, foundation/components/_custom.scss */
+.wrap-text {
+  white-space: normal; }
 
 /* line 14, foundation/components/_media-object-plus.scss */
 .media,
