@@ -673,18 +673,27 @@ a {
   /* line 280, foundation/components/_flags.scss */
   .select-country-list > li {
     float: left;
-    width: 25%;
-    padding: 10px; }
+    padding: 10px;
+    width: 50%; }
+    @media only screen and (min-width: 768px) {
+      /* line 280, foundation/components/_flags.scss */
+      .select-country-list > li {
+        width: 25%; } }
 
-/* line 287, foundation/components/_flags.scss */
+/* line 290, foundation/components/_flags.scss */
 .select-country-options {
   display: inline-block;
   margin: 0;
   margin-right: 5px; }
-  /* line 291, foundation/components/_flags.scss */
+  /* line 294, foundation/components/_flags.scss */
   .select-country-options ~ span {
     font-family: helvetica;
     text-transform: uppercase; }
+
+/* line 300, foundation/components/_flags.scss */
+.selected-country {
+  font-weight: bold;
+  text-decoration: underline; }
 
 /* Foundation Visibility HTML Classes */
 /* line 11, foundation/components/_visibility.scss */
