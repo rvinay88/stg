@@ -667,6 +667,25 @@ a {
 .flag.flag-us {
   background-position: -144px -154px; }
 
+/* line 278, foundation/components/_flags.scss */
+.select-country-list {
+  list-style: none; }
+  /* line 280, foundation/components/_flags.scss */
+  .select-country-list > li {
+    float: left;
+    width: 25%;
+    padding: 10px; }
+
+/* line 287, foundation/components/_flags.scss */
+.select-country-options {
+  display: inline-block;
+  margin: 0;
+  margin-right: 5px; }
+  /* line 291, foundation/components/_flags.scss */
+  .select-country-options ~ span {
+    font-family: helvetica;
+    text-transform: uppercase; }
+
 /* Foundation Visibility HTML Classes */
 /* line 11, foundation/components/_visibility.scss */
 .show-for-small,
@@ -4561,8 +4580,7 @@ ul.user-setting {
 .orbit-container {
   overflow: hidden;
   width: 100%;
-  position: relative;
-  background: whitesmoke; }
+  position: relative; }
   /* line 134, foundation/components/_orbit.scss */
   .orbit-container .orbit-slides-container {
     list-style: none;
@@ -4571,29 +4589,32 @@ ul.user-setting {
     position: relative;
     background-color: white; }
     /* line 140, foundation/components/_orbit.scss */
+    .orbit-container .orbit-slides-container.ticker-top {
+      background: #ddd; }
+    /* line 144, foundation/components/_orbit.scss */
     .orbit-container .orbit-slides-container img, .orbit-container .orbit-slides-container img:not(.zoomImg) {
       display: block;
       max-width: 100%;
       max-height: 630px;
       margin-left: auto;
       margin-right: auto; }
-    /* line 147, foundation/components/_orbit.scss */
+    /* line 151, foundation/components/_orbit.scss */
     .orbit-container .orbit-slides-container > * {
       position: absolute;
       top: 0;
       width: 100%;
       margin-left: 100%; }
-      /* line 159, foundation/components/_orbit.scss */
+      /* line 163, foundation/components/_orbit.scss */
       .orbit-container .orbit-slides-container > *:first-child {
         margin-left: 0%; }
-      /* line 168, foundation/components/_orbit.scss */
+      /* line 172, foundation/components/_orbit.scss */
       .orbit-container .orbit-slides-container > * .orbit-caption {
         position: relative;
         text-align: center;
         width: 100%;
         padding: 10px 14px;
         font-size: 0.75rem; }
-  /* line 178, foundation/components/_orbit.scss */
+  /* line 182, foundation/components/_orbit.scss */
   .orbit-container .orbit-slide-number {
     position: absolute;
     top: 10px;
@@ -4602,11 +4623,11 @@ ul.user-setting {
     color: white;
     background: rgba(0, 0, 0, 0);
     z-index: 10; }
-    /* line 183, foundation/components/_orbit.scss */
+    /* line 187, foundation/components/_orbit.scss */
     .orbit-container .orbit-slide-number span {
       font-weight: 700;
       padding: 0.3125rem; }
-  /* line 189, foundation/components/_orbit.scss */
+  /* line 193, foundation/components/_orbit.scss */
   .orbit-container .orbit-timer {
     position: absolute;
     top: 10px;
@@ -4615,14 +4636,14 @@ ul.user-setting {
     width: 100px;
     z-index: 10;
     display: none; }
-    /* line 197, foundation/components/_orbit.scss */
+    /* line 201, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer .orbit-progress {
       height: 100%;
       background-color: black;
       background-color: rgba(0, 0, 0, 0);
       display: block;
       width: 0%; }
-    /* line 205, foundation/components/_orbit.scss */
+    /* line 209, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer > span {
       display: none;
       position: absolute;
@@ -4633,7 +4654,7 @@ ul.user-setting {
       border: solid 4px #000;
       border-top: none;
       border-bottom: none; }
-    /* line 218, foundation/components/_orbit.scss */
+    /* line 222, foundation/components/_orbit.scss */
     .orbit-container .orbit-timer.paused > span {
       right: -6px;
       top: 9px;
@@ -4642,10 +4663,10 @@ ul.user-setting {
       border: inset 8px;
       border-right-style: solid;
       border-color: transparent transparent transparent #000; }
-  /* line 230, foundation/components/_orbit.scss */
+  /* line 234, foundation/components/_orbit.scss */
   .orbit-container:hover .orbit-timer > span {
     display: block; }
-  /* line 234, foundation/components/_orbit.scss */
+  /* line 238, foundation/components/_orbit.scss */
   .orbit-container .orbit-prev,
   .orbit-container .orbit-next {
     position: absolute;
@@ -4654,30 +4675,30 @@ ul.user-setting {
     height: 100%;
     line-height: 50px;
     z-index: 10; }
-    /* line 241, foundation/components/_orbit.scss */
+    /* line 245, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev > span,
     .orbit-container .orbit-next > span {
       position: absolute;
       top: 50%;
       margin-top: -16px;
       display: block; }
-    /* line 247, foundation/components/_orbit.scss */
+    /* line 251, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev:hover,
     .orbit-container .orbit-next:hover {
       text-decoration: none; }
-  /* line 251, foundation/components/_orbit.scss */
+  /* line 255, foundation/components/_orbit.scss */
   .orbit-container .orbit-prev {
     left: 0; }
-    /* line 252, foundation/components/_orbit.scss */
+    /* line 256, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev span {
       left: 10px; }
-      /* line 253, foundation/components/_orbit.scss */
+      /* line 257, foundation/components/_orbit.scss */
       .orbit-container .orbit-prev span:before {
         font-family: 'FontAwesome';
         font-size: 2rem;
         color: rgba(0, 0, 0, 0.8);
         content: "\f137"; }
-    /* line 261, foundation/components/_orbit.scss */
+    /* line 265, foundation/components/_orbit.scss */
     .orbit-container .orbit-prev:hover {
       background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0001)));
       background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.1) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
@@ -4685,23 +4706,23 @@ ul.user-setting {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
-      /* line 268, foundation/components/_orbit.scss */
+      /* line 272, foundation/components/_orbit.scss */
       .orbit-container .orbit-prev:hover span:before {
         color: black;
         background: none; }
-  /* line 274, foundation/components/_orbit.scss */
+  /* line 278, foundation/components/_orbit.scss */
   .orbit-container .orbit-next {
     right: 0; }
-    /* line 275, foundation/components/_orbit.scss */
+    /* line 279, foundation/components/_orbit.scss */
     .orbit-container .orbit-next span {
       right: 10px; }
-      /* line 276, foundation/components/_orbit.scss */
+      /* line 280, foundation/components/_orbit.scss */
       .orbit-container .orbit-next span:before {
         font-family: 'FontAwesome';
         font-size: 2rem;
         color: rgba(0, 0, 0, 0.8);
         content: "\f138"; }
-    /* line 284, foundation/components/_orbit.scss */
+    /* line 288, foundation/components/_orbit.scss */
     .orbit-container .orbit-next:hover {
       background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.1)));
       background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 10, 0.5) 100%));
@@ -4709,17 +4730,17 @@ ul.user-setting {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.1) 100%);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
-      /* line 291, foundation/components/_orbit.scss */
+      /* line 295, foundation/components/_orbit.scss */
       .orbit-container .orbit-next:hover span:before {
         color: black; }
 
-/* line 298, foundation/components/_orbit.scss */
+/* line 302, foundation/components/_orbit.scss */
 .orbit-bullets {
   margin: 0 auto 30px auto;
   overflow: hidden;
   position: relative;
   top: 10px; }
-  /* line 304, foundation/components/_orbit.scss */
+  /* line 308, foundation/components/_orbit.scss */
   .orbit-bullets li {
     display: block;
     width: 10px;
@@ -4730,38 +4751,38 @@ ul.user-setting {
     border: solid 1px #555555;
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
-    /* line 314, foundation/components/_orbit.scss */
+    /* line 318, foundation/components/_orbit.scss */
     .orbit-bullets li.active {
       background: #555555; }
-    /* line 318, foundation/components/_orbit.scss */
+    /* line 322, foundation/components/_orbit.scss */
     .orbit-bullets li:last-child {
       margin-right: 0; }
 
-/* line 325, foundation/components/_orbit.scss */
+/* line 329, foundation/components/_orbit.scss */
 .touch .orbit-container .orbit-prev,
 .touch .orbit-container .orbit-next {
   display: none; }
-/* line 328, foundation/components/_orbit.scss */
+/* line 332, foundation/components/_orbit.scss */
 .touch .orbit-bullets {
   display: none; }
 
 @media only screen and (min-width: 768px) {
-  /* line 337, foundation/components/_orbit.scss */
+  /* line 341, foundation/components/_orbit.scss */
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
     display: inherit; }
-  /* line 340, foundation/components/_orbit.scss */
+  /* line 344, foundation/components/_orbit.scss */
   .touch .orbit-bullets {
     display: block; } }
 @media only screen and (max-width: 768px) {
-  /* line 350, foundation/components/_orbit.scss */
+  /* line 354, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important; }
-  /* line 351, foundation/components/_orbit.scss */
+  /* line 355, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container > * {
     position: relative;
     margin-left: 0% !important; }
-  /* line 358, foundation/components/_orbit.scss */
+  /* line 362, foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-timer,
   .orbit-stack-on-small .orbit-next,
   .orbit-stack-on-small .orbit-prev,
@@ -5093,8 +5114,7 @@ ul.user-setting {
     /* line 81, foundation/components/_alert-boxes.scss */
     .alert-box .close.big {
       font-size: 2rem;
-      top: 1rem;
-      right: 2rem; }
+      top: 1rem; }
     /* line 87, foundation/components/_alert-boxes.scss */
     .alert-box .close:hover, .alert-box .close:focus {
       opacity: 0.5; }
@@ -7203,22 +7223,33 @@ a.th {
   font-size: 15px;
   margin-bottom: 0;
   margin-top: 1.5px;
-  z-index: 1; }
+  z-index: 1;
+  padding: 0 25px; }
 
-/* line 1336, foundation/components/_custom.scss */
+/* line 1337, foundation/components/_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
 
-/* line 1343, foundation/components/_custom.scss */
+/* line 1345, foundation/components/_custom.scss */
+.zero-height {
+  height: 0; }
+
+/* line 1350, foundation/components/_custom.scss */
 .full-height {
   height: 100%; }
 
-/* line 1347, foundation/components/_custom.scss */
+/* line 1354, foundation/components/_custom.scss */
 .full-width {
   width: 100%; }
 
-/* line 1351, foundation/components/_custom.scss */
+/* line 1358, foundation/components/_custom.scss */
+.animate-ticker {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out; }
+
+/* line 1362, foundation/components/_custom.scss */
 .side-nav-holder {
   padding: 20px;
   margin-bottom: 10px;
@@ -7232,31 +7263,31 @@ a.th {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 768px) {
-    /* line 1351, foundation/components/_custom.scss */
+    /* line 1362, foundation/components/_custom.scss */
     .side-nav-holder {
       height: 100%;
       padding-left: 10px;
       margin-bottom: 0; } }
 
-/* line 1370, foundation/components/_custom.scss */
+/* line 1381, foundation/components/_custom.scss */
 .side-nav > li:nth-child(n+2) {
   text-transform: uppercase;
   font-size: 12px; }
 
-/* line 1375, foundation/components/_custom.scss */
+/* line 1386, foundation/components/_custom.scss */
 .side-nav-heading {
   font-size: 16px !important;
   text-transform: uppercase; }
 
-/* line 1383, foundation/components/_custom.scss */
+/* line 1394, foundation/components/_custom.scss */
 .about-video {
   margin-top: 40px; }
 
-/* line 1389, foundation/components/_custom.scss */
+/* line 1400, foundation/components/_custom.scss */
 .help-container {
   position: relative; }
 
-/* line 1393, foundation/components/_custom.scss */
+/* line 1404, foundation/components/_custom.scss */
 .help-tabs {
   position: absolute;
   top: 0;
@@ -7266,39 +7297,39 @@ a.th {
   padding-left: 20px;
   padding-bottom: 20px; }
 
-/* line 1403, foundation/components/_custom.scss */
+/* line 1414, foundation/components/_custom.scss */
 .hidden-help {
   display: none;
   z-index: 1; }
 
-/* line 1408, foundation/components/_custom.scss */
+/* line 1419, foundation/components/_custom.scss */
 .active-help {
   display: initial;
   z-index: 2; }
 
-/* line 1413, foundation/components/_custom.scss */
+/* line 1424, foundation/components/_custom.scss */
 .help-tabs p {
   text-align: justify; }
 
-/* line 1417, foundation/components/_custom.scss */
+/* line 1428, foundation/components/_custom.scss */
 .help-title, .help-title-main {
   font-family: futura;
   font-size: 1rem;
   text-transform: uppercase; }
 
-/* line 1423, foundation/components/_custom.scss */
+/* line 1434, foundation/components/_custom.scss */
 .help-title-main {
   margin-top: 20px;
   padding-left: 0.46875rem;
   text-transform: uppercase; }
 
-/* line 1435, foundation/components/_custom.scss */
+/* line 1446, foundation/components/_custom.scss */
 .marketing-image-container {
   margin-top: -180px;
   left: 0;
   width: 100%; }
 
-/* line 1441, foundation/components/_custom.scss */
+/* line 1452, foundation/components/_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
@@ -7308,15 +7339,15 @@ a.th {
   background-size: cover;
   min-height: 200px; }
   @media (min-width: 590px) {
-    /* line 1441, foundation/components/_custom.scss */
+    /* line 1452, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 240px; } }
   @media (min-width: 768px) {
-    /* line 1441, foundation/components/_custom.scss */
+    /* line 1452, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 300px; } }
 
-/* line 1457, foundation/components/_custom.scss */
+/* line 1468, foundation/components/_custom.scss */
 .wide-image {
   width: 100%;
   max-width: 100%;
@@ -7324,25 +7355,35 @@ a.th {
   min-height: 150px; }
 
 @media (max-width: 768px) {
-  /* line 1464, foundation/components/_custom.scss */
+  /* line 1475, foundation/components/_custom.scss */
   .marketing-logo {
     margin-top: 55px; } }
 
-/* line 1470, foundation/components/_custom.scss */
+/* line 1481, foundation/components/_custom.scss */
+.redeem-separator {
+  padding-right: 5px;
+  margin-right: 5px;
+  margin-top: 24px; }
+
+/* line 1487, foundation/components/_custom.scss */
+.redeem-separator-line {
+  border-right: 1px solid #000; }
+
+/* line 1491, foundation/components/_custom.scss */
 .redeem {
   margin-top: 10px; }
   @media (min-width: 300px) {
-    /* line 1470, foundation/components/_custom.scss */
+    /* line 1491, foundation/components/_custom.scss */
     .redeem {
       margin-top: 40px; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 1480, foundation/components/_custom.scss */
+  /* line 1501, foundation/components/_custom.scss */
   .check-level-layout {
     margin-top: 0.9375rem;
     margin-bottom: 2.1875rem !important; } }
 
-/* line 1487, foundation/components/_custom.scss */
+/* line 1508, foundation/components/_custom.scss */
 .wrap-text {
   white-space: normal; }
 
