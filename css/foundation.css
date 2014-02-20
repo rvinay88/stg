@@ -6852,139 +6852,139 @@ a.th {
   .hs-wrap {
     display: none !important; } }
 /*--------------Footer -----------------*/
-/* line 910, foundation/components/_custom.scss */
+/* line 909, foundation/components/_custom.scss */
 .footer-links {
   margin-top: 0; }
 
-/* line 914, foundation/components/_custom.scss */
+/* line 913, foundation/components/_custom.scss */
 .footer-sublinks > ul {
   list-style: none; }
 
-/* line 919, foundation/components/_custom.scss */
+/* line 918, foundation/components/_custom.scss */
 .footer-sublink-list > li {
   font-family: helvetica;
   font-size: 13px;
   margin-top: 7px; }
-  /* line 924, foundation/components/_custom.scss */
+  /* line 923, foundation/components/_custom.scss */
   .footer-sublink-list > li a {
     color: black; }
 
-/* line 931, foundation/components/_custom.scss */
+/* line 930, foundation/components/_custom.scss */
 .r2s {
   text-transform: lowercase; }
 
-/* line 935, foundation/components/_custom.scss */
+/* line 934, foundation/components/_custom.scss */
 .multi-column-footer {
   background-color: #ddd;
   color: #fff; }
   @media only screen and (min-width: 768px) {
-    /* line 938, foundation/components/_custom.scss */
+    /* line 937, foundation/components/_custom.scss */
     .multi-column-footer > .row > .large-10 > .large-2, .multi-column-footer > .marketing-row > .large-10 > .large-2 {
       width: 25%; } }
 
-/* line 945, foundation/components/_custom.scss */
+/* line 944, foundation/components/_custom.scss */
 .footer-title {
   font-family: helvetica;
   font-weight: bold;
   font-size: 13px;
   margin: 17px 0; }
 
-/* line 954, foundation/components/_custom.scss */
+/* line 953, foundation/components/_custom.scss */
 .subscribe-copy {
   color: black;
   font-size: 13px;
   text-align: justify;
   max-width: 250px; }
 
-/* line 961, foundation/components/_custom.scss */
+/* line 960, foundation/components/_custom.scss */
 .cut-max-input {
   max-width: 250px; }
 
-/* line 965, foundation/components/_custom.scss */
+/* line 964, foundation/components/_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
-/* line 970, foundation/components/_custom.scss */
+/* line 969, foundation/components/_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black; }
 
-/* line 981, foundation/components/_custom.scss */
+/* line 980, foundation/components/_custom.scss */
 .footer-sprite {
   background-image: url("../images/footer-sprite.png");
   position: relative;
   margin-top: 0; }
-  /* line 985, foundation/components/_custom.scss */
+  /* line 984, foundation/components/_custom.scss */
   .footer-sprite:not(:first-child) {
     margin-left: 1rem; }
 
-/* line 990, foundation/components/_custom.scss */
+/* line 989, foundation/components/_custom.scss */
 .footer-sprite, .footer-sprite-link {
   width: 22px;
   height: 22px; }
 
-/* line 995, foundation/components/_custom.scss */
+/* line 994, foundation/components/_custom.scss */
 .footer-sprite-link {
   position: absolute;
   top: 0;
   left: 0; }
 
-/* line 1001, foundation/components/_custom.scss */
+/* line 1000, foundation/components/_custom.scss */
 .facebook {
   background-position: 0px 0px; }
 
-/* line 1005, foundation/components/_custom.scss */
+/* line 1004, foundation/components/_custom.scss */
 .instagram {
   background-position: 0px -22px; }
 
-/* line 1009, foundation/components/_custom.scss */
+/* line 1008, foundation/components/_custom.scss */
 .pinterest {
   background-position: 0px -44px; }
 
-/* line 1013, foundation/components/_custom.scss */
+/* line 1012, foundation/components/_custom.scss */
 .tumblr {
   background-position: 0px -66px; }
 
-/* line 1017, foundation/components/_custom.scss */
+/* line 1016, foundation/components/_custom.scss */
 .twitter {
   background-position: 0px -88px; }
 
 /*--------------Footer -----------------*/
 /*---------------------Marketing Dialog-----------------------------*/
-/* line 1026, foundation/components/_custom.scss */
+/* line 1025, foundation/components/_custom.scss */
 .box-content-marketing {
   height: 460px; }
 
-/* line 1031, foundation/components/_custom.scss */
+/* line 1030, foundation/components/_custom.scss */
 .asterisk {
   display: inline-block;
   float: left; }
 
-/* line 1036, foundation/components/_custom.scss */
+/* line 1035, foundation/components/_custom.scss */
 .fine-print {
   float: left;
   width: 95%;
   margin-left: 10px;
   margin-top: -5px; }
-  /* line 1041, foundation/components/_custom.scss */
+  /* line 1040, foundation/components/_custom.scss */
   .fine-print > span {
     font-size: 10px; }
 
-/* line 1046, foundation/components/_custom.scss */
+/* line 1045, foundation/components/_custom.scss */
 .email-copy {
   font-size: 11px; }
 
-/* line 1050, foundation/components/_custom.scss */
+/* line 1049, foundation/components/_custom.scss */
 .invite-header {
   font-size: 14px;
   font-family: Helvetica; }
   @media screen and (max-width: 768px) {
-    /* line 1056, foundation/components/_custom.scss */
+    /* line 1055, foundation/components/_custom.scss */
     .invite-header:first-child {
       margin-top: 20px; } }
 
-/* line 1062, foundation/components/_custom.scss */
+/* line 1061, foundation/components/_custom.scss */
 .genie-marketing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6992,57 +6992,57 @@ a.th {
   background-size: cover;
   background: black url("../images/genie_marketing_main.jpg") no-repeat; }
   @media screen and (max-width: 730px) {
-    /* line 1062, foundation/components/_custom.scss */
+    /* line 1061, foundation/components/_custom.scss */
     .genie-marketing {
       display: none; } }
 
-/* line 1083, foundation/components/_custom.scss */
+/* line 1082, foundation/components/_custom.scss */
 .img-responsive {
   max-width: 100%; }
 
-/* line 1086, foundation/components/_custom.scss */
+/* line 1085, foundation/components/_custom.scss */
 .share-page-container {
   margin: 0 auto; }
 
-/* line 1091, foundation/components/_custom.scss */
+/* line 1090, foundation/components/_custom.scss */
 .share-page-right {
   width: 360px;
   padding-left: 50px; }
   @media screen and (max-width: 925px) {
-    /* line 1091, foundation/components/_custom.scss */
+    /* line 1090, foundation/components/_custom.scss */
     .share-page-right {
       padding-left: 0;
       width: auto; } }
 
-/* line 1100, foundation/components/_custom.scss */
+/* line 1099, foundation/components/_custom.scss */
 .marketing-row {
   margin-bottom: 20px;
   background-color: #ddd; }
 
-/* line 1107, foundation/components/_custom.scss */
+/* line 1106, foundation/components/_custom.scss */
 .table {
   display: table;
   margin: 0 auto;
   width: 80%;
   padding: 20px 0; }
   @media screen and (max-width: 900px) {
-    /* line 1107, foundation/components/_custom.scss */
+    /* line 1106, foundation/components/_custom.scss */
     .table {
       width: 100%; } }
 
-/* line 1117, foundation/components/_custom.scss */
+/* line 1116, foundation/components/_custom.scss */
 .table-left, .table-left-va-top {
   display: table-cell;
   vertical-align: middle;
   width: 50%; }
   @media screen and (max-width: 768px) {
-    /* line 1117, foundation/components/_custom.scss */
+    /* line 1116, foundation/components/_custom.scss */
     .table-left, .table-left-va-top {
       width: 100%;
       text-align: center;
       display: block; } }
 
-/* line 1128, foundation/components/_custom.scss */
+/* line 1127, foundation/components/_custom.scss */
 .table-right, .table-right-va-top {
   display: table-cell;
   vertical-align: middle;
@@ -7051,26 +7051,26 @@ a.th {
   text-align: left;
   padding-left: 20px; }
   @media screen and (max-width: 768px) {
-    /* line 1128, foundation/components/_custom.scss */
+    /* line 1127, foundation/components/_custom.scss */
     .table-right, .table-right-va-top {
       width: 100%;
       display: block;
       padding: 20px; } }
 
-/* line 1143, foundation/components/_custom.scss */
+/* line 1142, foundation/components/_custom.scss */
 .table-left-va-top {
   vertical-align: top; }
   @media screen and (max-width: 768px) {
-    /* line 1143, foundation/components/_custom.scss */
+    /* line 1142, foundation/components/_custom.scss */
     .table-left-va-top {
       display: none; } }
 
-/* line 1150, foundation/components/_custom.scss */
+/* line 1149, foundation/components/_custom.scss */
 .table-right-va-top {
   vertical-align: top;
   height: 420px; }
 
-/* line 1157, foundation/components/_custom.scss */
+/* line 1156, foundation/components/_custom.scss */
 .static-login-container {
   overflow-x: hidden;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.9)), to(rgba(241, 241, 241, 0.9)));
@@ -7085,16 +7085,16 @@ a.th {
   padding: 20px; }
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
-/* line 1171, foundation/components/_custom.scss */
+/* line 1170, foundation/components/_custom.scss */
 .designer-name, .prod-price, .prod-name, .prod-name-homepage, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 1175, foundation/components/_custom.scss */
+/* line 1174, foundation/components/_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 1180, foundation/components/_custom.scss */
+/* line 1179, foundation/components/_custom.scss */
 .prod-name, .prod-name-homepage {
   text-transform: capitalize;
   color: black;
@@ -7103,28 +7103,28 @@ a.th {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-/* line 1190, foundation/components/_custom.scss */
+/* line 1189, foundation/components/_custom.scss */
 .prod-name-homepage {
   display: block;
   max-width: auto; }
   @media screen and (min-width: 1200px) {
-    /* line 1190, foundation/components/_custom.scss */
+    /* line 1189, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 200px; } }
   @media screen and (max-width: 800px) {
-    /* line 1190, foundation/components/_custom.scss */
+    /* line 1189, foundation/components/_custom.scss */
     .prod-name-homepage {
       max-width: 150px; } }
 
-/* line 1202, foundation/components/_custom.scss */
+/* line 1201, foundation/components/_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 1209, foundation/components/_custom.scss */
+/* line 1208, foundation/components/_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 1213, foundation/components/_custom.scss */
+/* line 1212, foundation/components/_custom.scss */
 #profileLongStory > div {
   font-family: Helvetica;
   font-size: 12px;
@@ -7133,24 +7133,24 @@ a.th {
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
 /*----------Share For Product Detail ----*/
-/* line 1225, foundation/components/_custom.scss */
+/* line 1224, foundation/components/_custom.scss */
 .product-detail-share {
   display: inline-block;
   margin-top: 10px;
   min-width: 100px; }
 
 /*---Search -----*/
-/* line 1235, foundation/components/_custom.scss */
+/* line 1234, foundation/components/_custom.scss */
 .search {
   list-style: none;
   width: 160px;
   overflow-x: hidden; }
-  /* line 1239, foundation/components/_custom.scss */
+  /* line 1238, foundation/components/_custom.scss */
   .search > li {
     text-transform: capitalize; }
 
 /*----------Grayscale images--------------*/
-/* line 1246, foundation/components/_custom.scss */
+/* line 1245, foundation/components/_custom.scss */
 .soldout, .soldout-product {
   font-size: 12px;
   text-align: center;
@@ -7162,36 +7162,36 @@ a.th {
   position: absolute;
   top: 50%;
   left: 0; }
-  /* line 1257, foundation/components/_custom.scss */
+  /* line 1256, foundation/components/_custom.scss */
   .soldout:before, .soldout-product:before {
     content: 'SOLD OUT'; }
 
-/* line 1262, foundation/components/_custom.scss */
+/* line 1261, foundation/components/_custom.scss */
 .soldout-product {
   padding: 2em;
   top: 46%; }
 
 /*-----Featured Designers Fancy Border Text -------*/
-/* line 1269, foundation/components/_custom.scss */
+/* line 1268, foundation/components/_custom.scss */
 .ovx {
   text-align: center;
   overflow-x: hidden; }
 
-/* line 1274, foundation/components/_custom.scss */
+/* line 1273, foundation/components/_custom.scss */
 .ovy {
   overflow-y: hidden; }
 
-/* line 1278, foundation/components/_custom.scss */
+/* line 1277, foundation/components/_custom.scss */
 .fancy, .featured-text {
   line-height: 0.5;
   text-align: center; }
 
-/* line 1282, foundation/components/_custom.scss */
+/* line 1281, foundation/components/_custom.scss */
 .fancy span, .featured-text span {
   display: inline-block;
   position: relative; }
 
-/* line 1287, foundation/components/_custom.scss */
+/* line 1286, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before,
 .fancy span:after,
 .featured-text span:after {
@@ -7202,63 +7202,67 @@ a.th {
   top: 0;
   width: 600px; }
 
-/* line 1295, foundation/components/_custom.scss */
+/* line 1294, foundation/components/_custom.scss */
 .fancy span:before, .featured-text span:before {
   right: 100%;
   margin-right: 15px; }
 
-/* line 1299, foundation/components/_custom.scss */
+/* line 1298, foundation/components/_custom.scss */
 .fancy span:after, .featured-text span:after {
   left: 100%;
   margin-left: 15px; }
 
-/* line 1304, foundation/components/_custom.scss */
+/* line 1303, foundation/components/_custom.scss */
 .featured-text {
   margin-top: 24px; }
   @media screen and (max-width: 369px) {
-    /* line 1304, foundation/components/_custom.scss */
+    /* line 1303, foundation/components/_custom.scss */
     .featured-text {
       line-height: 1; } }
 
 /*-----Featured Designers Fancy Border Text -------*/
 /*---Marketing Ticker ---*/
-/* line 1320, foundation/components/_custom.scss */
+/* line 1318, foundation/components/_custom.scss */
 .ticker > h4 {
   padding-top: 1.4rem;
   font-size: 16px; }
-/* line 1326, foundation/components/_custom.scss */
+/* line 1324, foundation/components/_custom.scss */
 .ticker > h5 {
   font-family: helvetica;
   font-size: 15px;
   margin-bottom: 0;
   margin-top: 1.5px;
   z-index: 1;
-  padding: 0 25px; }
+  padding: 0 25px;
+  color: black; }
+  /* line 1333, foundation/components/_custom.scss */
+  .ticker > h5 > * {
+    color: black; }
 
-/* line 1337, foundation/components/_custom.scss */
+/* line 1339, foundation/components/_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
 
-/* line 1345, foundation/components/_custom.scss */
+/* line 1347, foundation/components/_custom.scss */
 .zero-height {
   height: 0; }
 
-/* line 1350, foundation/components/_custom.scss */
+/* line 1352, foundation/components/_custom.scss */
 .full-height {
   height: 100%; }
 
-/* line 1354, foundation/components/_custom.scss */
+/* line 1356, foundation/components/_custom.scss */
 .full-width {
   width: 100%; }
 
-/* line 1358, foundation/components/_custom.scss */
+/* line 1360, foundation/components/_custom.scss */
 .animate-ticker {
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   transition: all 300ms ease-out; }
 
-/* line 1362, foundation/components/_custom.scss */
+/* line 1364, foundation/components/_custom.scss */
 .side-nav-holder {
   padding: 20px;
   margin-bottom: 10px;
@@ -7272,31 +7276,31 @@ a.th {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 768px) {
-    /* line 1362, foundation/components/_custom.scss */
+    /* line 1364, foundation/components/_custom.scss */
     .side-nav-holder {
       height: 100%;
       padding-left: 10px;
       margin-bottom: 0; } }
 
-/* line 1381, foundation/components/_custom.scss */
+/* line 1383, foundation/components/_custom.scss */
 .side-nav > li:nth-child(n+2) {
   text-transform: uppercase;
   font-size: 12px; }
 
-/* line 1386, foundation/components/_custom.scss */
+/* line 1388, foundation/components/_custom.scss */
 .side-nav-heading {
   font-size: 16px !important;
   text-transform: uppercase; }
 
-/* line 1394, foundation/components/_custom.scss */
+/* line 1396, foundation/components/_custom.scss */
 .about-video {
   margin-top: 40px; }
 
-/* line 1400, foundation/components/_custom.scss */
+/* line 1402, foundation/components/_custom.scss */
 .help-container {
   position: relative; }
 
-/* line 1404, foundation/components/_custom.scss */
+/* line 1406, foundation/components/_custom.scss */
 .help-tabs {
   position: absolute;
   top: 0;
@@ -7306,39 +7310,39 @@ a.th {
   padding-left: 20px;
   padding-bottom: 20px; }
 
-/* line 1414, foundation/components/_custom.scss */
+/* line 1416, foundation/components/_custom.scss */
 .hidden-help {
   display: none;
   z-index: 1; }
 
-/* line 1419, foundation/components/_custom.scss */
+/* line 1421, foundation/components/_custom.scss */
 .active-help {
   display: initial;
   z-index: 2; }
 
-/* line 1424, foundation/components/_custom.scss */
+/* line 1426, foundation/components/_custom.scss */
 .help-tabs p {
   text-align: justify; }
 
-/* line 1428, foundation/components/_custom.scss */
+/* line 1430, foundation/components/_custom.scss */
 .help-title, .help-title-main {
   font-family: futura;
   font-size: 1rem;
   text-transform: uppercase; }
 
-/* line 1434, foundation/components/_custom.scss */
+/* line 1436, foundation/components/_custom.scss */
 .help-title-main {
   margin-top: 20px;
   padding-left: 0.46875rem;
   text-transform: uppercase; }
 
-/* line 1446, foundation/components/_custom.scss */
+/* line 1448, foundation/components/_custom.scss */
 .marketing-image-container {
   margin-top: -180px;
   left: 0;
   width: 100%; }
 
-/* line 1452, foundation/components/_custom.scss */
+/* line 1454, foundation/components/_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
@@ -7348,15 +7352,15 @@ a.th {
   background-size: cover;
   min-height: 200px; }
   @media (min-width: 590px) {
-    /* line 1452, foundation/components/_custom.scss */
+    /* line 1454, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 240px; } }
   @media (min-width: 768px) {
-    /* line 1452, foundation/components/_custom.scss */
+    /* line 1454, foundation/components/_custom.scss */
     .marketing-image {
       min-height: 300px; } }
 
-/* line 1468, foundation/components/_custom.scss */
+/* line 1470, foundation/components/_custom.scss */
 .wide-image {
   width: 100%;
   max-width: 100%;
@@ -7364,35 +7368,35 @@ a.th {
   min-height: 150px; }
 
 @media (max-width: 768px) {
-  /* line 1475, foundation/components/_custom.scss */
+  /* line 1477, foundation/components/_custom.scss */
   .marketing-logo {
     margin-top: 55px; } }
 
-/* line 1481, foundation/components/_custom.scss */
+/* line 1483, foundation/components/_custom.scss */
 .redeem-separator {
   padding-right: 5px;
   margin-right: 5px;
   margin-top: 24px; }
 
-/* line 1487, foundation/components/_custom.scss */
+/* line 1489, foundation/components/_custom.scss */
 .redeem-separator-line {
   border-right: 1px solid #000; }
 
-/* line 1491, foundation/components/_custom.scss */
+/* line 1493, foundation/components/_custom.scss */
 .redeem {
   margin-top: 10px; }
   @media (min-width: 300px) {
-    /* line 1491, foundation/components/_custom.scss */
+    /* line 1493, foundation/components/_custom.scss */
     .redeem {
       margin-top: 40px; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 1501, foundation/components/_custom.scss */
+  /* line 1503, foundation/components/_custom.scss */
   .check-level-layout {
     margin-top: 0.9375rem;
     margin-bottom: 2.1875rem !important; } }
 
-/* line 1508, foundation/components/_custom.scss */
+/* line 1510, foundation/components/_custom.scss */
 .wrap-text {
   white-space: normal; }
 
@@ -7748,6 +7752,30 @@ h4.media-heading {
       /* line 96, foundation/components/_wizard-steps.scss */
       .wizard-step:hover a:after {
         border-left: 14px solid #000; }
+
+/* line 1, foundation/components/_typeahead.scss */
+.twitter-typeahead {
+  width: 100%; }
+
+/* line 4, foundation/components/_typeahead.scss */
+.tt-dropdown-menu {
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.8);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.8);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.8);
+  padding: 0; }
+
+/* line 13, foundation/components/_typeahead.scss */
+.tt-suggestion {
+  padding: 0 2.5px; }
+  /* line 15, foundation/components/_typeahead.scss */
+  .tt-suggestion > p {
+    padding: 5px; }
+  /* line 18, foundation/components/_typeahead.scss */
+  .tt-suggestion:hover {
+    background: #ddd;
+    color: black; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
