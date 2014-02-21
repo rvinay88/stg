@@ -138,28 +138,32 @@
 
   <div class="row">
     <div class="large-11 large-centered columns">
-      <div class="large-6 left">
+      <div class="large-12 left">
         <h2 class="futura">Country and Currency Settings</h1>
-      </div>
-      <div class="large-6 left">
-        <p>Your Country  United States </p>
-        <p>Your Currency $ (USD)</p>  
-      </div>  
-      
-      <p class="no-bottom">Search Country</p>
-      <div class="large-6 columns no-pad right-pad">
-        <input type="text" name="q" class="left search-box typeahead" value="" autocomplete="off">
-      </div>
-      <div class="large-6 columns no-pad">
-        <div class="inline"><input type="submit" value="Search" class="button small" name="search" id="search"></div>
+        </div>
+
+        <p class="no-bottom">Search Country</p>
+        <div class="large-6 columns no-pad right-pad">
+          <input type="text" name="q" class="left search-box typeahead" value="" autocomplete="off">
+        </div>
+        <div class="large-6 columns no-pad">
+          <div class="inline"><input type="submit" value="Search" class="button small" name="search" id="search"></div>
+        </div>
+
+        <div class="large-12 left">
+          <p>Your Country  United States </p>
+          <p>Your Currency $ (USD)</p>  
+        </div>  
+        
+
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="large-11 large-centered columns">
-      <ul class="select-country-list">
-        <li class="select-country-parent"><a href=""><div class="flag flag-in select-country-options"></div><span class="select-country-name">India</span><span> / USD($)</span></a></li>
+    <div class="row">
+      <div class="large-11 large-centered columns">
+        <p>Click to select your country</p>
+        <ul class="select-country-list">
+          <li class="select-country-parent"><a href=""><div class="flag flag-in select-country-options"></div><span class="select-country-name">India</span><span> / USD($)</span></a></li>
           <li class="select-country-parent">
             <a href="">
               <div class="flag flag-gb select-country-options"></div><span class="select-country-name">United Kingdom</span><span> / USD($)</span>
@@ -202,27 +206,27 @@
           </li>
           <li class="select-country-parent">
             <a href="">
-              <div class="flag flag-us select-country-options"></div><span class="select-country-name">United States</span><span> / USD($)</span>
+              <div class="flag flag-al select-country-options"></div><span class="select-country-name">Albania</span><span> / USD($)</span>
             </a>
           </li>
           <li class="select-country-parent">
             <a href="">
-              <div class="flag flag-us select-country-options"></div><span class="select-country-name">United States</span><span> / USD($)</span>
+              <div class="flag flag-ai select-country-options"></div><span class="select-country-name">Anguilla</span><span> / USD($)</span>
             </a>
           </li>
           <li class="select-country-parent">
             <a href="">
-              <div class="flag flag-us select-country-options"></div><span class="select-country-name">United States</span><span> / USD($)</span>
+              <div class="flag flag-ag select-country-options"></div><span class="select-country-name">Antigua and Barbuda</span><span> / USD($)</span>
             </a>
           </li>
           <li class="select-country-parent">
             <a href="">
-              <div class="flag flag-us select-country-options"></div><span class="select-country-name">United States</span><span> / USD($)</span>
+              <div class="flag flag-ar select-country-options"></div><span class="select-country-name">Argentina</span><span> / USD($)</span>
             </a>
           </li>
           <li class="select-country-parent">
             <a href="">
-              <div class="flag flag-us select-country-options"></div><span class="select-country-name">United States</span><span> / USD($)</span>
+              <div class="flag flag-am select-country-options"></div><span class="select-country-name">Armenia</span><span> / USD($)</span>
             </a>
           </li>
           <li class="select-country-parent">
@@ -575,7 +579,9 @@
   var countries = new Bloodhound({
     datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.name); },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    limit: 10,
+    // remote: {
+    //   url : 'json/countries.json'
+    // },
     prefetch: {
       url: 'json/countries.json',
       filter: function(list) {
@@ -589,23 +595,21 @@
 
   // instantiate the typeahead UI
   $('.typeahead')
-  .typeahead(null, {
-    name: 'countries',
-    displayKey: 'name',
-    source: countries.ttAdapter()
-  })
-
-
+  // .typeahead(null, {
+  //   displayKey: "name",
+  //   source: countries.ttAdapter()
+  // })
   .keyup(function (){
     var filter = $(this).val();
     $(".select-country-name").each(function () {
-        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-            $(this).parents(".select-country-parent").hide();
-        } else {
-            $(this).parents(".select-country-parent").show()
-        }
+      if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+        $(this).parents(".select-country-parent").fadeOut();
+      } else {
+        $(this).parents(".select-country-parent").fadeIn()
+      }
     });
   });
   </script>
+
 </body>
 </html>
