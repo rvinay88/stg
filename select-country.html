@@ -144,7 +144,7 @@
 
         <p class="no-bottom">Search Country</p>
         <div class="large-6 columns no-pad right-pad">
-          <input type="text" name="q" class="left search-box typeahead" value="" autocomplete="off">
+          <input type="text" name="q" class="left search-box search-country" value="" autocomplete="off">
         </div>
         <div class="large-6 columns no-pad">
           <div class="inline"><input type="submit" value="Search" class="button small" name="search" id="search"></div>
@@ -512,7 +512,6 @@
     <script src="js/vendor/custom.modernizr.js"></script>
 
     <script src="js/foundation.min.js"></script>
-    <script src="js/vendor/typeahead.bundle.js"></script>
     <script>
     $(document).foundation();
     </script>
@@ -575,40 +574,18 @@
     </script>
 
     <script>
-  // instantiate the bloodhound suggestion engine
-  var countries = new Bloodhound({
-    datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.name); },
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    // remote: {
-    //   url : 'json/countries.json'
-    // },
-    prefetch: {
-      url: 'json/countries.json',
-      filter: function(list) {
-        return $.map(list, function(country) { return { name: country }; });
-      }
-    }
-  });
-
-  // country the bloodhound suggestion engine
-  countries.initialize();
-
   // instantiate the typeahead UI
-  $('.typeahead')
-  // .typeahead(null, {
-  //   displayKey: "name",
-  //   source: countries.ttAdapter()
-  // })
-  .keyup(function (){
-    var filter = $(this).val();
-    $(".select-country-name").each(function () {
-      if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-        $(this).parents(".select-country-parent").fadeOut();
-      } else {
-        $(this).parents(".select-country-parent").fadeIn()
-      }
+  $('.search-country')
+    .keyup(function (){
+      var filter = $(this).val();
+      $(".select-country-name").each(function () {
+        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+          $(this).parents(".select-country-parent").fadeOut();
+        } else {
+          $(this).parents(".select-country-parent").fadeIn()
+        }
+      });
     });
-  });
   </script>
 
 </body>
