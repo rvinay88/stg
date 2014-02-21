@@ -1673,6 +1673,7 @@ a {
   /* line 280, foundation/components/_flags.scss */
   .select-country-list > li {
     float: left;
+    min-height: 58px;
     padding: 10px;
     width: 48%;
     margin: 0.75% 0.5%; }
@@ -1681,22 +1682,26 @@ a {
       .select-country-list > li {
         width: 24%; } }
 
-/* line 291, foundation/components/_flags.scss */
+/* line 292, foundation/components/_flags.scss */
+.select-currency {
+  float: right; }
+
+/* line 296, foundation/components/_flags.scss */
 .select-country-options {
   display: inline-block;
   margin: 0;
   margin-right: 5px; }
-  /* line 295, foundation/components/_flags.scss */
+  /* line 300, foundation/components/_flags.scss */
   .select-country-options ~ span {
     font-family: helvetica;
     text-transform: uppercase; }
 
-/* line 301, foundation/components/_flags.scss */
+/* line 306, foundation/components/_flags.scss */
 .selected-country {
   font-weight: bold;
-  text-decoration: underline; }
+  background: #ddd; }
 
-/* line 306, foundation/components/_flags.scss */
+/* line 311, foundation/components/_flags.scss */
 .select-country-parent {
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
@@ -1706,7 +1711,7 @@ a {
   box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
   cursor: pointer;
   margin: 2%; }
-  /* line 314, foundation/components/_flags.scss */
+  /* line 319, foundation/components/_flags.scss */
   .select-country-parent > a:hover {
     text-decoration: none; }
 
