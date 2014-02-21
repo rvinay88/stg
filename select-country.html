@@ -594,27 +594,18 @@
     displayKey: 'name',
     source: countries.ttAdapter()
   })
-  .on("typeahead:selected", function ($e, data){
-    var selectedCountry = data.name;
-    var countryOptions = $(".select-country-name");countryOptions.each(function (index, value) {
-      var $this = $(this);
-      if ($this.html() == selectedCountry) {
-        $(".js-selected").removeClass("js-selected");
-        $this.parents(".select-country-parent").addClass("js-selected");
-        $(".select-country-parent:not('.js-selected')").animate({"opacity": "0"}, 300);
-      }
+
+
+  .keyup(function (){
+    var filter = $(this).val();
+    $(".select-country-name").each(function () {
+        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+            $(this).parents(".select-country-parent").hide();
+        } else {
+            $(this).parents(".select-country-parent").show()
+        }
     });
   });
-
-  hideAllelse = function (selectedCountryfade) {
-    
-    return;
-  }
   </script>
-
-  <script>
-
-  </script>
-
 </body>
 </html>
