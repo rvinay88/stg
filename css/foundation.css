@@ -1667,10 +1667,28 @@ a {
 .flag-container > .chosen-container > .chosen-single > * {
   background: url("../images/flags.png") no-repeat; }
 
-/* line 278, foundation/components/_flags.scss */
+/* line 277, foundation/components/_flags.scss */
+.select-country-list--show-selected {
+  background: #ddd;
+  font-weight: bold;
+  padding: 10px;
+  min-height: 58px;
+  width: 230px;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
+  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
+  width: 48%;
+  margin: 0 0.75% 0.5% 0; }
+  @media only screen and (min-width: 768px) {
+    /* line 277, foundation/components/_flags.scss */
+    .select-country-list--show-selected {
+      width: 24%; } }
+
+/* line 294, foundation/components/_flags.scss */
 .select-country-list {
   list-style: none; }
-  /* line 280, foundation/components/_flags.scss */
+  /* line 296, foundation/components/_flags.scss */
   .select-country-list > li {
     float: left;
     min-height: 58px;
@@ -1678,30 +1696,30 @@ a {
     width: 48%;
     margin: 0.75% 0.5%; }
     @media only screen and (min-width: 768px) {
-      /* line 280, foundation/components/_flags.scss */
+      /* line 296, foundation/components/_flags.scss */
       .select-country-list > li {
         width: 24%; } }
 
-/* line 292, foundation/components/_flags.scss */
+/* line 308, foundation/components/_flags.scss */
 .select-currency {
   float: right; }
 
-/* line 296, foundation/components/_flags.scss */
+/* line 312, foundation/components/_flags.scss */
 .select-country-options {
   display: inline-block;
   margin: 0;
   margin-right: 5px; }
-  /* line 300, foundation/components/_flags.scss */
+  /* line 316, foundation/components/_flags.scss */
   .select-country-options ~ span {
     font-family: helvetica;
     text-transform: uppercase; }
 
-/* line 306, foundation/components/_flags.scss */
+/* line 322, foundation/components/_flags.scss */
 .selected-country {
   font-weight: bold;
   background: #ddd; }
 
-/* line 311, foundation/components/_flags.scss */
+/* line 327, foundation/components/_flags.scss */
 .select-country-parent {
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
@@ -1711,9 +1729,20 @@ a {
   box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
   cursor: pointer;
   margin: 2%; }
-  /* line 319, foundation/components/_flags.scss */
+  /* line 335, foundation/components/_flags.scss */
   .select-country-parent > a:hover {
     text-decoration: none; }
+
+/* line 339, foundation/components/_flags.scss */
+.continent {
+  margin-top: 35px;
+  padding-left: 5px; }
+
+/* line 345, foundation/components/_flags.scss */
+hr.contient-separator {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 5px; }
 
 /* Foundation Visibility HTML Classes */
 /* line 11, foundation/components/_visibility.scss */
@@ -2738,7 +2767,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 /* line 213, foundation/components/_type.scss */
-.futura, .futura-heading, .collection-title, .collection-list > li a, .tree-title, .black-bar, .product-black-bar, .login-modal-copy, .invite-header, .featured-text, .ticker > h4, .side-nav-heading, .new-designer-name {
+.futura, .continent, .futura-heading, .collection-title, .collection-list > li a, .tree-title, .black-bar, .product-black-bar, .login-modal-copy, .invite-header, .featured-text, .ticker > h4, .side-nav-heading, .new-designer-name {
   font-family: futura; }
 
 /* line 216, foundation/components/_type.scss */
