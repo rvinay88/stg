@@ -1674,26 +1674,41 @@ a {
   .select-country-list > li {
     float: left;
     padding: 10px;
-    width: 50%; }
+    width: 48%;
+    margin: 0.75% 0.5%; }
     @media only screen and (min-width: 768px) {
       /* line 280, foundation/components/_flags.scss */
       .select-country-list > li {
-        width: 25%; } }
+        width: 24%; } }
 
-/* line 290, foundation/components/_flags.scss */
+/* line 291, foundation/components/_flags.scss */
 .select-country-options {
   display: inline-block;
   margin: 0;
   margin-right: 5px; }
-  /* line 294, foundation/components/_flags.scss */
+  /* line 295, foundation/components/_flags.scss */
   .select-country-options ~ span {
     font-family: helvetica;
     text-transform: uppercase; }
 
-/* line 300, foundation/components/_flags.scss */
+/* line 301, foundation/components/_flags.scss */
 .selected-country {
   font-weight: bold;
   text-decoration: underline; }
+
+/* line 306, foundation/components/_flags.scss */
+.select-country-parent {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
+  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.8);
+  cursor: pointer;
+  margin: 2%; }
+  /* line 314, foundation/components/_flags.scss */
+  .select-country-parent > a:hover {
+    text-decoration: none; }
 
 /* Foundation Visibility HTML Classes */
 /* line 11, foundation/components/_visibility.scss */
@@ -8752,31 +8767,6 @@ h4.media-heading {
       /* line 96, foundation/components/_wizard-steps.scss */
       .wizard-step:hover a:after {
         border-left: 14px solid #000; }
-
-/* line 1, foundation/components/_typeahead.scss */
-.twitter-typeahead {
-  width: 100%; }
-
-/* line 4, foundation/components/_typeahead.scss */
-.tt-dropdown-menu {
-  width: 100%;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.8);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.8);
-  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.8);
-  padding: 0; }
-
-/* line 13, foundation/components/_typeahead.scss */
-.tt-suggestion {
-  cursor: pointer;
-  padding: 0 2.5px; }
-  /* line 16, foundation/components/_typeahead.scss */
-  .tt-suggestion > p {
-    padding: 5px; }
-  /* line 19, foundation/components/_typeahead.scss */
-  .tt-suggestion:hover {
-    background: #ddd;
-    color: black; }
 
 @media only screen and (max-width: 767px) {
   /* line 129, foundation/components/_dropdown.scss */
