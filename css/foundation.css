@@ -158,10 +158,10 @@ a {
   a.bold-link {
     font-weight: bold; }
   /* line 414, foundation/components/_global.scss */
-  a.no-dec, a.flag-menubar-link, .user-setting-links > li a, .paging .pagerprevious a, .pager .paging .pagerprevious a, .paging .pagernext a, .pager .paging .pagernext a {
+  a.no-dec, .user-setting-links > li a, .paging .pagerprevious a, .pager .paging .pagerprevious a, .paging .pagernext a, .pager .paging .pagernext a {
     font-size: 0.75rem; }
     /* line 416, foundation/components/_global.scss */
-    a.no-dec:hover, a.flag-menubar-link:hover, .user-setting-links > li a:hover, .paging .pagerprevious a:hover, .paging .pagernext a:hover {
+    a.no-dec:hover, .user-setting-links > li a:hover, .paging .pagerprevious a:hover, .paging .pagernext a:hover {
       text-decoration: none !important; }
 
 /* Grid HTML Classes */
@@ -1746,23 +1746,46 @@ hr.contient-separator {
   height: 45px; }
 
 /* line 353, foundation/components/_flags.scss */
+.flag-footer {
+  position: relative; }
+
+/* line 357, foundation/components/_flags.scss */
 .flag-menubar {
   display: inline-block;
   position: absolute;
   top: 17.5px;
   left: 10px; }
 
-/* line 361, foundation/components/_flags.scss */
+/* line 365, foundation/components/_flags.scss */
+.flag-footer {
+  display: inline-block; }
+
+/* line 370, foundation/components/_flags.scss */
 .currency-menubar {
   position: absolute;
   right: 10px; }
 
-/* line 365, foundation/components/_flags.scss */
+/* line 375, foundation/components/_flags.scss */
+.currency-footer {
+  position: absolute;
+  left: 24px; }
+  /* line 378, foundation/components/_flags.scss */
+  .currency-footer:hover {
+    text-decoration: underline; }
+
+/* line 383, foundation/components/_flags.scss */
 .flag-menubar-link {
   color: white; }
-  /* line 367, foundation/components/_flags.scss */
+  /* line 385, foundation/components/_flags.scss */
   .flag-menubar-link:hover {
     color: white; }
+
+/* line 390, foundation/components/_flags.scss */
+.flag-footer-link {
+  color: black; }
+  /* line 392, foundation/components/_flags.scss */
+  .flag-footer-link:hover {
+    color: black; }
 
 /* Foundation Visibility HTML Classes */
 /* line 11, foundation/components/_visibility.scss */
@@ -7399,7 +7422,7 @@ a.th {
   margin-top: 0 !important; }
 
 /* line 408, foundation/components/_custom.scss */
-.no-bottom, .flag-menubar, .invite-header {
+.no-bottom, .flag-menubar, .flag-footer, .invite-header {
   margin-bottom: 0 !important; }
 
 /* line 411, foundation/components/_custom.scss */
