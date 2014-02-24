@@ -28,7 +28,7 @@
         <h5>Blah blah blah 2</h5>
       </li>
 
-    </ul> 
+    </ul>
     <a href="#" class="close big">&times;</a>
   </div>
 
@@ -52,7 +52,7 @@
 
               <li class="active"><a href="#" class="no-dec">What's New</a></li>
 
-              <li class="has-dropdown"><a href="#" class="no-dec">Designers</a>
+              <li class="has-dropdown"><a href="#" class="no-dec">Meet the Designers</a>
                 <ul class="dropdown meet-the-designers">
                   <li><a href="">Anja</a></li>
                   <li><a href="">Miri</a></li>
@@ -113,6 +113,8 @@
                   <li><a href="#">Scarves</a></li>
                 </ul>
               </li>
+              <li><a href="" class="no-dec">Jewellery</a></li>
+              <li><a href="" class="no-dec">Shoes</a></li>
               <li><a href="" class="no-dec">Sale</a></li>
               <li><a href="" class="no-dec">Blog <i class="icon-external-link"></i></a></li>
             </ul>
@@ -120,6 +122,12 @@
           <!-- Right Nav Section -->
         </nav>
         <ul class="inline-list user-setting">
+          <li class="trigger-country">
+            <a href="#" class ="flag-menubar-link">
+              <div class="flag flag-us inline flag-menubar"></div>
+              <span class="currency-menubar">($)</span>
+            </a>
+          </li>
           <li class="trigger-search">
             <i class="icon-search"></i>
           </li>
@@ -236,11 +244,11 @@
           </article>
         </div>
       </div>
-      
+
       <div class="settings-menu search-panel">
         <div class="large-12 columns"><p class="no-bottom">Search for Designer or Product</p></div>
         <div class="small-7 large-9 columns">
-          <input type="text" class="left search-box"> 
+          <input type="text" class="left search-box">
         </div>
         <div class="small-5 large-3 columns">
           <div class="inline button small">Search</div>
@@ -378,19 +386,9 @@
           </div>
           <section class="footer-sublinks">
             <ul class="footer-sublink-list">
-              <li>
-                <span class="ship-to">Ship To</span>
-                <ul class="flag-list flag-container">
-                  <li>
-                    <div class="flag flag-us inline"></div>  
-                  </li>
-                  <li>
-                    <div class="flag flag-gb inline flag-active"></div>  
-                  </li>
-                  <li>
-                    <div class="flag flag-in inline"></div>  
-                  </li>
-                </ul>
+              <li class="small-6">
+                <div class="flag flag-us inline" style="display: inline-block"></div>
+                <a href="#">USD ($)</a>
               </li>
               <li class="clearfix"></li>
               <li>
@@ -416,7 +414,7 @@
           <p class="subscribe-copy">Stay stylishly up-to-date with the latest brand stories, coolest new arrivals and our favorite trends direct to your inbox</p>
           <input type="text" class="cut-max-input" placeholder="Enter your e-mail address">
           <input type="submit" class="button" value="subscribe">
-        </div>      
+        </div>
       </div>
     </div>
     <div class="row">
@@ -450,7 +448,7 @@
   <script src="js/vendor/custom.modernizr.js"></script>
 
   <script src="js/foundation/foundation.js"></script>
-  <!-- 
+  <!--
   <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.alerts.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script>
@@ -496,29 +494,11 @@
   });
   $('body').click(function (){
     $('#menu-settings, #menu-cart, .search-panel').removeClass('open');
-    $(".flag:not('.flag-active')").addClass("hidden");
   });
   $('.chosen-container, .pane-2, .search-panel').click (function (event) {
     event.preventDefault();
     event.stopPropagation();
-  });  
-  </script>
-  <script>
-    $(".flag").addClass("hidden");
-    $(".flag-active").removeClass("hidden");
-
-    $(".flag-container").click(function () {
-      $(".flag:not('.flag-active')").toggleClass("hidden");
-      $(".flag").click(function (event) {
-        var a = $(event.target);
-        $(".flag-active").removeClass("flag-active");
-        a.addClass("flag-active"); 
-        $(".flag:not('.flag-active')").toggleClass("hidden");
-        event.preventDefault();
-        event.stopPropagation();
-      });
-    });
-
+  });
   </script>
 </body>
 </html>
