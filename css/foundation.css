@@ -8815,13 +8815,13 @@ h4.media-heading {
   .wizard-step div {
     position: relative; }
   /* line 22, foundation/components/_wizard-steps.scss */
-  .wizard-step a {
+  .wizard-step a:not(.modal-link) {
     font-size: 12px;
     position: relative;
     display: block;
     line-height: 1.55; }
     /* line 28, foundation/components/_wizard-steps.scss */
-    .wizard-step a:before {
+    .wizard-step a:not(.modal-link):before {
       width: 0px;
       height: 0px;
       border-top: 14px solid #ddd;
@@ -8833,7 +8833,7 @@ h4.media-heading {
       left: -18px;
       -moz-box-sizing: border-box; }
     /* line 40, foundation/components/_wizard-steps.scss */
-    .wizard-step a:after {
+    .wizard-step a:not(.modal-link):after {
       width: 0;
       height: 0;
       border-top: 14px solid transparent;

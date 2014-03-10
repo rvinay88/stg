@@ -234,9 +234,9 @@
 
 <div id="myModal" class="reveal-modal">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore doloribus quae harum minus consequatur accusamus ipsa nesciunt beatae error quo. Facere suscipit exercitationem rerum placeat dolore et obcaecati culpa fugit.</p>
-  <a href="#" class="button right">Change my Ship to Country</a>
-  <a href="#" class="secondary button right right-margin">Cancel</a>
-  <a class="close-reveal-modal">&#215;</a>
+  <a href="#" class="modal-link button right">Change my Ship to Country</a>
+  <a href="#" class="modal-link secondary button right right-margin close-dialog">Cancel</a>
+  <a class="modal-link close-reveal-modal">&#215;</a>
 </div>
 
 
@@ -465,6 +465,9 @@
     event.preventDefault();
     event.stopPropagation();
   });  
+  $(".close-dialog").on("click", function () {
+    $(".reveal-modal").foundation('reveal', 'close');
+  });
   </script>
 </body>
 </html>
