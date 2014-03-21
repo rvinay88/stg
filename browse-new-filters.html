@@ -139,22 +139,30 @@
     </div>
   </div>
   
-  <div class="contain-to-grid sticky">
-    <div class="large-12 columns">
+
+    <div class="small-12 columns show-for-small">
       <section class="accordions">
         <div class="accordion">
-          <input type="checkbox" id="accordion-1" checked="">
-          <label for="accordion-1">Editor's Notes</label>
+          <input type="checkbox" id="new-filters" checked="">
+          <label for="new-filters">Editor's Notes</label>
           <article>
-            <p></p><p>A one-of-a-kind dual tone yellow gold and white gold ring studded with 0.59 ct brilliant-cut blue diamonds. Handcrafted.</p>
-            <p><strong>Note</strong>: This piece is made to order and will ship in 2 weeks</p>
-            <p><strong>Material</strong>: 18K gold, diamonds</p>
-            <p><strong>Country of manufacture</strong>: Greece</p><p></p>
+            <br>
+            <a href="#" data-dropdown="filter-designer">Designer</a>
+            <ul id="filter-designer" class="f-dropdown content" data-dropdown-content>
+              <li>
+                <label for="designer-1">
+                  <input type="checkbox" id="designer-1">
+                  <a href="#">This is a link</a>
+                </label>
+              </li>
+
+              <li><a href="#">This is another</a></li>
+              <li><a href="#">Yet another</a></li>
+            </ul>
           </article>
         </div>
       </section>
     </div>
-  </div>
 
   <div class="wrapper">
 
