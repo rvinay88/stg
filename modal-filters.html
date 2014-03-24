@@ -1130,14 +1130,31 @@
 
     // Select child categories when all-swimwear etc category is used
     $("[data-parent]").on("click", function () {
-      var category_parent = $(this).data("parent");
-      category_children = $("[data-category='" + category_parent + "']");
-      category_children.each(function () {
-        if($(this).prop("checked") == false) {
+      var category = $(this).data("parent");
+      var selection = $(this).siblings().prop("checked");
+      select_children(category, selection);
+      //
+      // if($(this).siblings().prop("checked")) {
+      //   console.log("true");
+      // }
+      // else {
+      //   console.log("false");
+      // }
+      // category_children = $("[data-category='" + category_parent + "']");
+      // category_children.each(function () {
+      //   if($(this).prop("checked") == false) {
+      //     $(this).click();
+      //   }
+      // });
+    })
+
+    select_children = function (category, selection) {
+      $("[data-category='"+category+"']").each(function () {
+        if($(this).prop("checked") ==  selection) {
           $(this).click();
         }
       });
-    })
+    };
 
     //Remove filter when badge close is clicked
 
