@@ -1104,10 +1104,12 @@
   <script>
     $("[id^=designer], [id^=category]").change(function () {
       if($(this).is(":checked")) {
+        $(this).addClass("selected-filter");
         $(".active-filters").trigger("addFilter", $(this).siblings().text());
       }
       else {
         $(".active-filters").trigger("removeFilter", $(this).siblings().text());
+        $(this).removeClass("selected-filter");
       }
     });
 
@@ -1125,7 +1127,7 @@
 
     $(".clear-all").on("click", function () {
       var active_filters = $(":checked[id^='designer-'], :checked[id^='category-']").prop("checked", true);
-      active_filters.click();
+      active_filters.click().removeClass("selected-filter");
     })
 
     // Select child categories when all-swimwear etc category is used
@@ -1133,25 +1135,19 @@
       var category = $(this).data("parent");
       var selection = $(this).siblings().prop("checked");
       select_children(category, selection);
-      //
-      // if($(this).siblings().prop("checked")) {
-      //   console.log("true");
-      // }
-      // else {
-      //   console.log("false");
-      // }
-      // category_children = $("[data-category='" + category_parent + "']");
-      // category_children.each(function () {
-      //   if($(this).prop("checked") == false) {
-      //     $(this).click();
-      //   }
-      // });
     })
 
     select_children = function (category, selection) {
       $("[data-category='"+category+"']").each(function () {
         if($(this).prop("checked") ==  selection) {
-          $(this).click();
+          if(!selection) {
+            $(this).click().addClass("selected-filter");
+            console.log("Added");
+          }
+          else {
+            $(this).click().removeClass("selected-filter");
+            console.log("Removed");
+          }
         }
       });
     };
@@ -1161,8 +1157,17 @@
      $(document).on("click", ".filter-close", function (e) {
         e.preventDefault();
         var match = ($(this).parent().data("filter"));
-        $(".filter-designer-name:contains('"+ match +"'), .filter-category-name:contains('"+ match +"')").click();
+        $(".filter-designer-name:contains('"+ match +"'), .filter-category-name:contains('"+ match +"')").click().removeClass("selected-filter");
       });
+
+  //Call get_selected_filters at any point to get an array of currently selected filters
+   get_selected_filters = function () {
+    var selected_filters = [];
+    $(".selected-filter").siblings().each(function () {
+      selected_filters.push($(this).text());
+    });
+    return selected_filters;
+   }
   </script>
 </body>
 </html>
