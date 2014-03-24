@@ -207,11 +207,11 @@
           </article>
         </div>
       </div>
-      
+
       <div class="settings-menu search-panel">
         <div class="large-12 columns"><p class="no-bottom">Search for Designer or Product</p></div>
         <div class="small-7 large-9 columns">
-          <input type="text" class="left search-box"> 
+          <input type="text" class="left search-box">
         </div>
         <div class="small-5 large-3 columns">
           <div class="inline button small">Search</div>
@@ -235,14 +235,9 @@
   <div id="myModal" class="reveal-modal medium">
     <p class="uppercase highlight black">Sort and Filter</p>
     <div class="bottom-margin text-center active-filters">
-      <span class="label filters">Bernard Delettrez <a href="" class="filter-close">&times;</a></span>
-      <span class="label filters">Bernard Delettrez <a href="" class="filter-close">&times;</a></span>
-      <span class="label filters">Bernard Delettrez <a href="" class="filter-close">&times;</a></span>
-      <span class="label filters">Bernard Delettrez <a href="" class="filter-close">&times;</a></span>
-      <span class="label filters">Bernard Delettrez <a href="" class="filter-close">&times;</a></span>
-
-    </div> 
-    <a class="secondary button expand">Clear all filters</a>
+      <p class="text-left">Active Filters</p>
+    </div>
+    <a class="secondary button expand clear-all">Clear all filters</a>
     <section class="accordions">
       <div class="accordion">
         <input type="checkbox" id="new-filters">
@@ -596,36 +591,36 @@
             <li>
               <label for="category-7" class="check-filter">
                 <input type="checkbox" id="category-7" class="r2s">
-                <span class="exclude filter-category-name">All Swimwear</span>
+                <span class="exclude filter-category-name" data-parent="swimwear">All Swimwear</span>
               </label>
             </li>
             <li>
               <label for="category-8" class="check-filter">
-                <input type="checkbox" id="category-8" class="r2s">
-                <span class="exclude filter-category-name">Bikinis</span>
+                <input type="checkbox" id="category-8" class="r2s" data-category="swimwear">
+                <span class="exclude filter-category-name all-swimwear">Bikinis</span>
               </label>
             </li>
             <li>
               <label for="category-9" class="check-filter">
-                <input type="checkbox" id="category-9" class="r2s">
-                <span class="exclude filter-category-name">One Piece</span>
+                <input type="checkbox" id="category-9" class="r2s" data-category="swimwear">
+                <span class="exclude filter-category-name all-swimwear">One Piece</span>
               </label>
             </li>
             <li>
               <label for="category-10" class="check-filter">
                 <input type="checkbox" id="category-10" class="r2s">
-                <span class="exclude filter-category-name">Lorem Ipsum Dolor</span>
+                <span class="exclude filter-category-name" data-parent="clothing">All Clothing</span>
               </label>
             </li>
             <li>
               <label for="category-11" class="check-filter">
-                <input type="checkbox" id="category-11" class="r2s">
+                <input type="checkbox" id="category-11" class="r2s" data-category="clothing">
                 <span class="exclude filter-category-name">Lorem Ipsum Dolor</span>
               </label>
             </li>
             <li>
               <label for="category-12" class="check-filter">
-                <input type="checkbox" id="category-12" class="r2s">
+                <input type="checkbox" id="category-12" class="r2s" data-category="clothing">
                 <span class="exclude filter-category-name">Lorem Ipsum Dolor</span>
               </label>
             </li>
@@ -859,7 +854,7 @@
             </li>
           </ul>
           <p></p>
-        </article>        
+        </article>
       </div>
     </section>
     <div class="clearfix"></div>
@@ -870,9 +865,9 @@
         <li><a rel="nofollow" href="/ProductCategories/default/index/mID/1/RProduct_sort/Name/p">Name</a></li>
         <li><a rel="nofollow" href="/ProductCategories/default/index/mID/1/RProduct_sort/productSalePrice/p">Price</a></li>
       </ul>
-    </div>    
+    </div>
     <a href="#" class="modal-link secondary button expand filter-cancel-button close-dialog">Cancel</a>
-    <a href="#" class="modal-link button expand">Apply Filters</a>
+    <a href="#" class="modal-link button expand close-dialog">Done</a>
     <a class="modal-link close-reveal-modal">&#215;</a>
   </div>
 
@@ -979,7 +974,7 @@
   <br>
 
 
-  
+
   <a href="" class="trigger-search"><img src="http://placehold.it/300/300" alt=""></a>
   <footer class="footer">
     <div class="row">
@@ -1083,7 +1078,7 @@
     event.stopPropagation();
   });
   </script>
-  
+
   <script>
   $('#trigger-preferences-pane').click(function (event) {
     $('.pane-1, .pane-2').addClass('slide-left');
@@ -1101,13 +1096,13 @@
   $('.chosen-container, .pane-2, .search-panel').click (function (event) {
     event.preventDefault();
     event.stopPropagation();
-  });  
+  });
   $(".close-dialog").on("click", function () {
     $(".reveal-modal").foundation('reveal', 'close');
   });
   </script>
   <script>
-    $("[id^=designer], [id^=category]").on("change", function () {
+    $("[id^=designer], [id^=category]").change(function () {
       if($(this).is(":checked")) {
         $(".active-filters").trigger("addFilter", $(this).siblings().text());
       }
@@ -1117,7 +1112,7 @@
     });
 
     $(".active-filters").on("addFilter", function (e, filterName) {
-      var itemTag = "<span class='label filters'>" +  filterName + "<a href='#' class='filter-close'>×</a></span> ";
+      var itemTag = "<span class='label filters' data-filter='" +  filterName + "'>"+ filterName + "<a href='#' class='filter-close'>×</a></span> ";
       $(this).append(itemTag);
     });
 
@@ -1126,6 +1121,31 @@
       item.remove();
     });
 
+    //Clear all filters
+
+    $(".clear-all").on("click", function () {
+      var active_filters = $(":checked[id^='designer-'], :checked[id^='category-']").prop("checked", true);
+      active_filters.click();
+    })
+
+    // Select child categories when all-swimwear etc category is used
+    $("[data-parent]").on("click", function () {
+      var category_parent = $(this).data("parent");
+      category_children = $("[data-category='" + category_parent + "']");
+      category_children.each(function () {
+        if($(this).prop("checked") == false) {
+          $(this).click();
+        }
+      });
+    })
+
+    //Remove filter when badge close is clicked
+
+     $(document).on("click", ".filter-close", function (e) {
+        e.preventDefault();
+        var match = ($(this).parent().data("filter"));
+        $(".filter-designer-name:contains('"+ match +"'), .filter-category-name:contains('"+ match +"')").click();
+      });
   </script>
 </body>
 </html>
