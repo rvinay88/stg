@@ -230,6 +230,15 @@
   </div>
 
   <div class="clearfix"></div>
+  <div class="container-elastic">
+    <div class="sidebar-filters">
+
+    </div>
+    <div class="content-area">
+
+    </div>
+  </div>
+
   <a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
 
   <div id="myModal" class="reveal-modal medium">
@@ -1166,6 +1175,14 @@
     });
     return selected_filters;
    }
+  </script>
+
+  <script>
+  //Set width of content area
+  $(window).on("load resize", function() {
+    var content_width = $(window).width()-250;
+    $(".content-area").width(content_width);
+  })
   </script>
 </body>
 </html>
