@@ -5134,7 +5134,7 @@ select::-ms-expand {
     margin: 0; }
     /* line 246, foundation/components/_top-bar.scss */
     .top-bar-section ul ul {
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
       box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
@@ -6583,36 +6583,32 @@ form.custom {
 /* Labels */
 /* line 71, foundation/components/_labels.scss */
 .label {
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
   text-decoration: none;
   line-height: 1;
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  padding: 0.1875rem 0.625rem 0.25rem;
-  font-size: 0.875rem;
+  padding: 0.625rem;
+  font-size: 0.8125rem;
   background-color: black;
   color: white; }
-  /* line 77, foundation/components/_labels.scss */
-  .label.radius {
-    -webkit-border-radius: 0.25rem;
-    border-radius: 0.25rem; }
-  /* line 78, foundation/components/_labels.scss */
-  .label.round {
-    -webkit-border-radius: 1000px;
-    border-radius: 1000px; }
-  /* line 80, foundation/components/_labels.scss */
-  .label.alert {
-    background-color: #c60f13;
-    color: white; }
-  /* line 81, foundation/components/_labels.scss */
-  .label.success {
-    background-color: #5da423;
-    color: white; }
-  /* line 82, foundation/components/_labels.scss */
-  .label.secondary, .label.stats-button, .label.btn-wizard {
+  /* line 83, foundation/components/_labels.scss */
+  .label.filters {
     background-color: #666666;
+    color: white;
+    margin-bottom: 4px; }
+
+/* line 90, foundation/components/_labels.scss */
+.filter-close {
+  font-size: 21px;
+  margin-left: 10px;
+  vertical-align: middle;
+  color: white; }
+  /* line 95, foundation/components/_labels.scss */
+  .filter-close:hover {
+    text-decoration: none;
     color: white; }
 
 /* Inline Lists */
@@ -9003,22 +8999,13 @@ h4.media-heading {
   max-height: 150px;
   overflow-y: auto; }
 
-/* line 34, foundation/components/_filters.scss */
-.container-elastic {
+/* line 32, foundation/components/_filters.scss */
+.container-products {
   width: 100%; }
 
-/* line 37, foundation/components/_filters.scss */
+/* line 36, foundation/components/_filters.scss */
 .sidebar-filters {
-  width: 250px;
-  min-height: 200px;
-  background: papayawhip;
-  float: left; }
-
-/* line 43, foundation/components/_filters.scss */
-.content-area {
-  min-height: 200px;
-  background: gold;
-  float: left; }
+  width: 250px; }
 
 /* line 1, foundation/components/_mobile-page.scss */
 .feed-content {
