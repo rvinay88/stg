@@ -3665,16 +3665,22 @@ input[type="checkbox"].r2s, input[type="radio"].r2s {
     content: "\f0c8";
     font-size: 0.9375rem; }
   /* line 366, foundation\components\_forms.scss */
+  input[type="checkbox"].r2s:checked + span.filter-designer-name, input[type="radio"].r2s:checked + span.filter-designer-name {
+    font-weight: bold; }
+  /* line 369, foundation\components\_forms.scss */
+  input[type="checkbox"].r2s:checked + span.filter-category-name, input[type="radio"].r2s:checked + span.filter-category-name {
+    font-weight: bold; }
+  /* line 372, foundation\components\_forms.scss */
   input[type="checkbox"].r2s:checked + span:before, input[type="radio"].r2s:checked + span:before {
     content: "\f14a"; }
 
 /* Normalize file input width */
-/* line 372, foundation\components\_forms.scss */
+/* line 378, foundation\components\_forms.scss */
 input[type="file"] {
   width: 100%; }
 
 /* We add basic fieldset styling */
-/* line 377, foundation\components\_forms.scss */
+/* line 383, foundation\components\_forms.scss */
 fieldset {
   border: none;
   padding: 1rem;
@@ -3690,7 +3696,7 @@ fieldset {
     color: #666666; }
 
 /* Error Handling */
-/* line 384, foundation\components\_forms.scss */
+/* line 390, foundation\components\_forms.scss */
 [data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
   display: block;
   padding: 0.375rem 0.25rem;
@@ -3701,11 +3707,11 @@ fieldset {
   background: #c60f13;
   color: white;
   margin-top: 0; }
-/* line 388, foundation\components\_forms.scss */
+/* line 394, foundation\components\_forms.scss */
 [data-abide] span.error, [data-abide] small.error {
   display: none; }
 
-/* line 390, foundation\components\_forms.scss */
+/* line 396, foundation\components\_forms.scss */
 span.error, small.error {
   display: block;
   padding: 0.375rem 0.25rem;
@@ -3716,7 +3722,7 @@ span.error, small.error {
   background: #c60f13;
   color: white; }
 
-/* line 394, foundation\components\_forms.scss */
+/* line 400, foundation\components\_forms.scss */
 .error input,
 .error textarea,
 .error select {
@@ -3729,11 +3735,11 @@ span.error, small.error {
   .error select:focus {
     background: #eeeeee;
     border-color: #999999; }
-/* line 401, foundation\components\_forms.scss */
+/* line 407, foundation\components\_forms.scss */
 .error label,
 .error label.error {
   color: #c60f13; }
-/* line 406, foundation\components\_forms.scss */
+/* line 412, foundation\components\_forms.scss */
 .error small.error {
   display: block;
   padding: 0.375rem 0.25rem;
@@ -3743,11 +3749,11 @@ span.error, small.error {
   font-weight: bold;
   background: #c60f13;
   color: white; }
-/* line 410, foundation\components\_forms.scss */
+/* line 416, foundation\components\_forms.scss */
 .error span.error-message {
   display: block; }
 
-/* line 415, foundation\components\_forms.scss */
+/* line 421, foundation\components\_forms.scss */
 input.error,
 textarea.error {
   border-color: #c60f13;
@@ -3758,7 +3764,7 @@ textarea.error {
     background: #eeeeee;
     border-color: #999999; }
 
-/* line 420, foundation\components\_forms.scss */
+/* line 426, foundation\components\_forms.scss */
 .error select {
   border-color: #c60f13;
   background-color: rgba(198, 15, 19, 0.1); }
@@ -3767,11 +3773,11 @@ textarea.error {
     background: #eeeeee;
     border-color: #999999; }
 
-/* line 424, foundation\components\_forms.scss */
+/* line 430, foundation\components\_forms.scss */
 label.error {
   color: #c60f13; }
 
-/* line 430, foundation\components\_forms.scss */
+/* line 436, foundation\components\_forms.scss */
 select {
   font-size: 12px;
   height: 32px;
@@ -3783,7 +3789,7 @@ select {
   box-sizing: border-box;
   -webkit-appearance: none; }
 
-/* line 441, foundation\components\_forms.scss */
+/* line 447, foundation\components\_forms.scss */
 select::-ms-expand {
   display: none; }
 

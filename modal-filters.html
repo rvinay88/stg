@@ -254,10 +254,7 @@
         <article class="accordion-filters">
           <ul id="filter-designer" class="filter-list">
             <li>
-              <label for="designer-1" class="check-filter">
-                <input type="checkbox" id="designer-1" class="r2s">
-                <span class="exclude filter-designer-name">Adicora</span>
-              </label>
+                <span class="exclude filter-designer-name highlight">Clothing</span>
             </li>
             <li>
               <label for="designer-2" class="check-filter">
@@ -1111,79 +1108,71 @@
   });
   </script>
   <script>
-    //Script for new Mobile modal filters begins here 
-    $("[id^=designer], [id^=category]").change(function () {
-      if($(this).is(":checked")) {
-        $(this).addClass("selected-filter");
-        $(".active-filters").trigger("addFilter", $(this).siblings().text());
-      }
-      else {
-        $(".active-filters").trigger("removeFilter", $(this).siblings().text());
-        $(this).removeClass("selected-filter");
-      }
-    });
+    // //Script for new Mobile modal filters begins here 
+    // $("[id^=designer], [id^=category]").change(function () {
+    //   if($(this).is(":checked")) {
+    //     $(this).addClass("selected-filter");
+    //     $(".active-filters").trigger("addFilter", $(this).siblings().text());
+    //   }
+    //   else {
+    //     $(".active-filters").trigger("removeFilter", $(this).siblings().text());
+    //     $(this).removeClass("selected-filter");
+    //   }
+    // });
 
-    $(".active-filters").on("addFilter", function (e, filterName) {
-      var itemTag = "<span class='label filters' data-filter='" +  filterName + "'>"+ filterName + "<a href='#' class='filter-close'>×</a></span> ";
-      $(this).append(itemTag);
-    });
+    // $(".active-filters").on("addFilter", function (e, filterName) {
+    //   var itemTag = "<span class='label filters' data-filter='" +  filterName + "'>"+ filterName + "<a href='#' class='filter-close'>×</a></span> ";
+    //   $(this).append(itemTag);
+    // });
 
-    $(".active-filters").on("removeFilter", function (e, filterName) {
-      var item = $(".label.filters:contains('" + filterName + "')");
-      item.remove();
-    });
+    // $(".active-filters").on("removeFilter", function (e, filterName) {
+    //   var item = $(".label.filters:contains('" + filterName + "')");
+    //   item.remove();
+    // });
 
     //Clear all filters
 
-    $(".clear-all").on("click", function () {
-      var active_filters = $(":checked[id^='designer-'], :checked[id^='category-']").prop("checked", true);
-      active_filters.click().removeClass("selected-filter");
-    })
+    // $(".clear-all").on("click", function () {
+    //   var active_filters = $(":checked[id^='designer-'], :checked[id^='category-']").prop("checked", true);
+    //   active_filters.click().removeClass("selected-filter");
+    // })
 
     // Select child categories when all-swimwear etc category is used
-    $("[data-parent]").on("click", function () {
-      var category = $(this).data("parent");
-      var selection = $(this).siblings().prop("checked");
-      select_children(category, selection);
-    })
+    // $("[data-parent]").on("click", function () {
+    //   var category = $(this).data("parent");
+    //   var selection = $(this).siblings().prop("checked");
+    //   select_children(category, selection);
+    // })
 
-    select_children = function (category, selection) {
-      $("[data-category='"+category+"']").each(function () {
-        if($(this).prop("checked") ==  selection) {
-          if(!selection) {
-            $(this).click().addClass("selected-filter");
-          }
-          else {
-            $(this).click().removeClass("selected-filter");
-          }
-        }
-      });
-    };
+    // select_children = function (category, selection) {
+    //   $("[data-category='"+category+"']").each(function () {
+    //     if($(this).prop("checked") ==  selection) {
+    //       if(!selection) {
+    //         $(this).click().addClass("selected-filter");
+    //       }
+    //       else {
+    //         $(this).click().removeClass("selected-filter");
+    //       }
+    //     }
+    //   });
+    // };
 
     //Remove filter when badge close is clicked
 
-     $(document).on("click", ".filter-close", function (e) {
-        e.preventDefault();
-        var match = ($(this).parent().data("filter"));
-        $(".filter-designer-name:contains('"+ match +"'), .filter-category-name:contains('"+ match +"')").click().removeClass("selected-filter");
-      });
+     // $(document).on("click", ".filter-close", function (e) {
+     //    e.preventDefault();
+     //    var match = ($(this).parent().data("filter"));
+     //    $(".filter-designer-name:contains('"+ match +"'), .filter-category-name:contains('"+ match +"')").click().removeClass("selected-filter");
+     //  });
 
   //Call get_selected_filters at any point to get an array of currently selected filters
-   get_selected_filters = function () {
-    var selected_filters = [];
-    $(".selected-filter").siblings().each(function () {
-      selected_filters.push($(this).text());
-    });
-    return selected_filters;
-   }
-  </script>
-
-  <script>
-  //Set width of content area
-  $(window).on("load resize", function() {
-    var content_width = $(window).width()-250;
-    $(".content-area").width(content_width);
-  })
+   // get_selected_filters = function () {
+   //  var selected_filters = [];
+   //  $(".selected-filter").siblings().each(function () {
+   //    selected_filters.push($(this).text());
+   //  });
+   //  return selected_filters;
+   // }
   </script>
 </body>
 </html>
