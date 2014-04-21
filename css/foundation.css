@@ -3794,28 +3794,33 @@ select::-ms-expand {
   display: none; }
 
 /*=========*/
-/* line 12, foundation\components\_isotope.scss */
+/* line 2, foundation\components\_isotope.scss */
+#r2s-product-collections-view {
+  width: 80%;
+  margin: auto; }
+
+/* line 7, foundation\components\_isotope.scss */
 .catalogue {
   padding: 10px;
   background-color: #f7f7f7;
   margin: 0 8px 10px 0;
   display: inline-block; }
 
-/* line 27, foundation\components\_isotope.scss */
+/* line 22, foundation\components\_isotope.scss */
 .designer-catalogue {
   width: 300px !important;
   height: 251px !important; }
 
-/* line 32, foundation\components\_isotope.scss */
+/* line 27, foundation\components\_isotope.scss */
 .share-widget {
   position: relative;
   text-align: center; }
 
-/* line 37, foundation\components\_isotope.scss */
+/* line 32, foundation\components\_isotope.scss */
 .browse-prod-img {
   display: inline-block; }
 
-/* line 43, foundation\components\_isotope.scss */
+/* line 38, foundation\components\_isotope.scss */
 .browse-social-container {
   position: absolute;
   top: 0;
@@ -3824,13 +3829,13 @@ select::-ms-expand {
   text-align: right;
   min-width: 120px; }
 
-/* line 52, foundation\components\_isotope.scss */
+/* line 47, foundation\components\_isotope.scss */
 .grid-social-buttons {
   display: inline-block;
   min-width: 100px; }
 
 @media only screen and (min-width: 768px) {
-  /* line 58, foundation\components\_isotope.scss */
+  /* line 53, foundation\components\_isotope.scss */
   .browse-social-container {
     visibility: hidden;
     opacity: 0;
@@ -3838,45 +3843,44 @@ select::-ms-expand {
     -moz-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
 
-  /* line 63, foundation\components\_isotope.scss */
+  /* line 58, foundation\components\_isotope.scss */
   .catalogue:hover > .share-widget > .browse-social-container {
     visibility: visible;
     opacity: 1; } }
 /*=========*/
-/* line 70, foundation\components\_isotope.scss */
-.portrait {
-  width: 230px;
-  height: 351px; }
+/* line 65, foundation\components\_isotope.scss */
+.grid-image {
+  width: 100%;
+  max-width: 100%;
+  display: block; }
 
-/* line 74, foundation\components\_isotope.scss */
+/* line 70, foundation\components\_isotope.scss */
 .landscape {
   height: 142.333px; }
 
-/* line 78, foundation\components\_isotope.scss */
+/* line 74, foundation\components\_isotope.scss */
 .isotope-container {
   list-style: none;
   margin-left: auto;
   margin-right: auto;
   margin-top: 16px; }
   @media (min-width: 769px) {
-    /* line 78, foundation\components\_isotope.scss */
+    /* line 74, foundation\components\_isotope.scss */
     .isotope-container {
       margin-top: 56px; } }
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 91, foundation\components\_isotope.scss */
+/* line 87, foundation\components\_isotope.scss */
 .isotope-item {
   z-index: 2; }
 
-/* line 95, foundation\components\_isotope.scss */
+/* line 91, foundation\components\_isotope.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1; }
 
-/**** Isotope CSS3 transitions ****/
-/* End: Recommended Isotope styles */
-/* line 142, foundation\components\_isotope.scss */
+/* line 97, foundation\components\_isotope.scss */
 .grid-info > * {
   text-align: left; }
 
