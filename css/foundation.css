@@ -9024,33 +9024,35 @@ h4.media-heading {
 @media only screen and (min-width: 768px) {
   /* line 13, foundation\components\_filters.scss */
   .filter-designer-name {
+    padding: 4px;
+    color: #666;
     width: 170px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     display: block; } }
 
-/* line 23, foundation\components\_filters.scss */
+/* line 25, foundation\components\_filters.scss */
 .check-filter {
   padding: 10px;
   margin-bottom: 0;
   cursor: pointer; }
   @media only screen and (min-width: 768px) {
-    /* line 23, foundation\components\_filters.scss */
+    /* line 25, foundation\components\_filters.scss */
     .check-filter {
       padding: 4px; } }
 
-/* line 32, foundation\components\_filters.scss */
+/* line 34, foundation\components\_filters.scss */
 .accordion-filters {
   max-height: 150px;
   overflow-y: auto;
   -ms-overflow-style: scrollbar; }
 
-/* line 40, foundation\components\_filters.scss */
+/* line 42, foundation\components\_filters.scss */
 .filter-list > li {
   text-align: left; }
 
-/* line 45, foundation\components\_filters.scss */
+/* line 47, foundation\components\_filters.scss */
 .filter-color-list {
   margin: 0 auto 0 auto;
   margin-left: -0.625rem;
@@ -9069,7 +9071,7 @@ h4.media-heading {
     /* line 59, foundation\components\_inline-lists.scss */
     .filter-color-list > li > * {
       display: inline; }
-  /* line 48, foundation\components\_filters.scss */
+  /* line 50, foundation\components\_filters.scss */
   .filter-color-list > li {
     width: 20px;
     height: 20px;
@@ -9078,30 +9080,30 @@ h4.media-heading {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden; }
-    /* line 56, foundation\components\_filters.scss */
+    /* line 58, foundation\components\_filters.scss */
     .filter-color-list > li.selected-filter-color {
       border: 2px solid #000; }
 
-/* line 62, foundation\components\_filters.scss */
+/* line 64, foundation\components\_filters.scss */
 .size-guide {
   font-size: 11px;
   text-transform: uppercase; }
 
-/* line 73, foundation\components\_filters.scss */
+/* line 75, foundation\components\_filters.scss */
 .container-elastic {
   border-left: 0; }
   @media only screen and (min-width: 768px) {
-    /* line 73, foundation\components\_filters.scss */
+    /* line 75, foundation\components\_filters.scss */
     .container-elastic {
       border-left: 300px solid transparent;
       width: 300px;
       float: left; } }
 
-/* line 81, foundation\components\_filters.scss */
+/* line 83, foundation\components\_filters.scss */
 .sidebar-filters {
   display: none; }
   @media only screen and (min-width: 768px) {
-    /* line 81, foundation\components\_filters.scss */
+    /* line 83, foundation\components\_filters.scss */
     .sidebar-filters {
       display: block;
       width: 300px;
@@ -9109,12 +9111,12 @@ h4.media-heading {
       float: left;
       margin-left: -300px; } }
 
-/* line 91, foundation\components\_filters.scss */
+/* line 93, foundation\components\_filters.scss */
 .content-area {
   float: left; }
 
 @media only screen and (min-width: 768px) {
-  /* line 96, foundation\components\_filters.scss */
+  /* line 98, foundation\components\_filters.scss */
   .label.filters {
     background-color: transparent;
     color: black;
@@ -9128,7 +9130,7 @@ h4.media-heading {
     white-space: nowrap;
     position: relative; }
 
-  /* line 109, foundation\components\_filters.scss */
+  /* line 111, foundation\components\_filters.scss */
   .filter-close {
     position: absolute;
     right: 0;
@@ -9136,18 +9138,18 @@ h4.media-heading {
     color: black;
     vertical-align: inherit;
     font-size: 20px; }
-    /* line 116, foundation\components\_filters.scss */
+    /* line 118, foundation\components\_filters.scss */
     .filter-close:hover {
       color: #666666; } }
-/* line 122, foundation\components\_filters.scss */
+/* line 124, foundation\components\_filters.scss */
 .active-filters > span:nth-of-type(1) {
   margin-top: 14px; }
 
-/* line 126, foundation\components\_filters.scss */
+/* line 128, foundation\components\_filters.scss */
 label[for^="new-filter"] {
   text-align: left; }
 
-/* line 130, foundation\components\_filters.scss */
+/* line 132, foundation\components\_filters.scss */
 .filter-section-title {
   background-color: #eeeeee;
   padding: 0.3125rem;
@@ -9156,7 +9158,7 @@ label[for^="new-filter"] {
   margin-left: 0;
   width: 100%;
   height: 29px; }
-  /* line 138, foundation\components\_filters.scss */
+  /* line 140, foundation\components\_filters.scss */
   .filter-section-title > span {
     font-size: 12px; }
 
