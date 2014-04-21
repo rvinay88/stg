@@ -3799,13 +3799,7 @@ select::-ms-expand {
   padding: 10px;
   background-color: #f7f7f7;
   margin: 0 8px 10px 0;
-  display: inline-block;
-  width: 250px;
-  height: 448px;
-  max-width: 300px; }
-  /* line 22, foundation\components\_isotope.scss */
-  .catalogue img {
-    max-width: 280px; }
+  display: inline-block; }
 
 /* line 27, foundation\components\_isotope.scss */
 .designer-catalogue {
