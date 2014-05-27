@@ -9,22 +9,22 @@
   .clearfix:after {
     clear: both; }
 
-/* line 295, foundation\components\_global.scss */
+/* line 296, foundation\components\_global.scss */
 meta.foundation-mq-small {
   font-family: "'only screen and (min-width: 768px)'";
   width: 768px; }
 
-/* line 300, foundation\components\_global.scss */
+/* line 301, foundation\components\_global.scss */
 meta.foundation-mq-medium {
   font-family: "'only screen and (min-width:1280px)'";
   width: 1280px; }
 
-/* line 305, foundation\components\_global.scss */
+/* line 306, foundation\components\_global.scss */
 meta.foundation-mq-large {
   font-family: "'only screen and (min-width:1440px)'";
   width: 1440px; }
 
-/* line 322, foundation\components\_global.scss */
+/* line 323, foundation\components\_global.scss */
 *,
 *:before,
 *:after {
@@ -32,12 +32,13 @@ meta.foundation-mq-large {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 328, foundation\components\_global.scss */
+/* line 329, foundation\components\_global.scss */
 html,
 body {
-  font-size: 100%; }
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%; }
 
-/* line 332, foundation\components\_global.scss */
+/* line 336, foundation\components\_global.scss */
 body {
   background: white;
   color: #222222;
@@ -53,31 +54,31 @@ body {
   padding-top: 43px;
   padding-bottom: 45px; }
 
-/* line 348, foundation\components\_global.scss */
+/* line 352, foundation\components\_global.scss */
 a:hover {
   cursor: pointer; }
 
-/* line 351, foundation\components\_global.scss */
+/* line 355, foundation\components\_global.scss */
 a:focus {
   outline: none; }
 
-/* line 354, foundation\components\_global.scss */
+/* line 358, foundation\components\_global.scss */
 img,
 object,
 embed {
   max-width: 100%;
   height: auto; }
 
-/* line 358, foundation\components\_global.scss */
+/* line 362, foundation\components\_global.scss */
 object,
 embed {
   height: 100%; }
 
-/* line 360, foundation\components\_global.scss */
+/* line 364, foundation\components\_global.scss */
 img {
   -ms-interpolation-mode: bicubic; }
 
-/* line 364, foundation\components\_global.scss */
+/* line 368, foundation\components\_global.scss */
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -86,84 +87,84 @@ img {
 .map_canvas object {
   max-width: none !important; }
 
-/* line 371, foundation\components\_global.scss */
-.left, #reveal-sidebar, .ship-to, .redeem {
+/* line 375, foundation\components\_global.scss */
+.left, .flyout-scroll-text, #reveal-sidebar, .ship-to, .redeem {
   float: left !important; }
 
-/* line 372, foundation\components\_global.scss */
-.right, .avatar-img {
+/* line 376, foundation\components\_global.scss */
+.right, .avatar-img, .flyout-checkout-button {
   float: right !important; }
 
-/* line 373, foundation\components\_global.scss */
+/* line 377, foundation\components\_global.scss */
 .center, .product-main, .product-black-bar, .login-social-buttons {
   margin: 0 auto; }
 
-/* line 374, foundation\components\_global.scss */
+/* line 378, foundation\components\_global.scss */
 .text-left {
   text-align: left !important; }
 
-/* line 375, foundation\components\_global.scss */
+/* line 379, foundation\components\_global.scss */
 .text-right {
   text-align: right !important; }
 
-/* line 376, foundation\components\_global.scss */
+/* line 380, foundation\components\_global.scss */
 .text-center, .login-social-buttons, .ticker, .feed-content {
   text-align: center !important; }
 
-/* line 377, foundation\components\_global.scss */
+/* line 381, foundation\components\_global.scss */
 .text-justify {
   text-align: justify !important; }
 
-/* line 378, foundation\components\_global.scss */
+/* line 382, foundation\components\_global.scss */
 .hide {
   display: none !important; }
 
-/* line 379, foundation\components\_global.scss */
+/* line 383, foundation\components\_global.scss */
 .hidden {
   display: none; }
 
-/* line 384, foundation\components\_global.scss */
+/* line 388, foundation\components\_global.scss */
 .antialiased {
   -webkit-font-smoothing: antialiased; }
 
-/* line 387, foundation\components\_global.scss */
+/* line 391, foundation\components\_global.scss */
 img {
   display: inline-block;
   vertical-align: middle; }
 
-/* line 397, foundation\components\_global.scss */
+/* line 401, foundation\components\_global.scss */
 textarea {
   height: auto;
   min-height: 50px; }
 
-/* line 400, foundation\components\_global.scss */
+/* line 404, foundation\components\_global.scss */
 select {
   width: 100%; }
 
-/* line 402, foundation\components\_global.scss */
+/* line 406, foundation\components\_global.scss */
 a {
   color: black;
   text-decoration: none; }
-  /* line 405, foundation\components\_global.scss */
+  /* line 409, foundation\components\_global.scss */
   a.white-link {
     color: white !important;
     font-size: 0.6875rem; }
-    /* line 408, foundation\components\_global.scss */
+    /* line 412, foundation\components\_global.scss */
     a.white-link:hover {
       color: white; }
-    /* line 411, foundation\components\_global.scss */
+    /* line 415, foundation\components\_global.scss */
     a.white-link:visited, a.white-link:active {
       color: white !important; }
-  /* line 415, foundation\components\_global.scss */
+  /* line 419, foundation\components\_global.scss */
   a:hover {
     text-decoration: underline; }
-  /* line 418, foundation\components\_global.scss */
+  /* line 422, foundation\components\_global.scss */
   a.bold-link {
     font-weight: bold; }
-  /* line 421, foundation\components\_global.scss */
+  /* line 425, foundation\components\_global.scss */
   a.no-dec, .user-setting-links > li a, .paging .pagerprevious a, .pager .paging .pagerprevious a, .paging .pagernext a, .pager .paging .pagernext a {
     font-size: 0.75rem; }
-    /* line 423, foundation\components\_global.scss */
+    /* line 427, foundation\components\_global.scss */
     a.no-dec:hover, .user-setting-links > li a:hover, .paging .pagerprevious a:hover, .paging .pagernext a:hover {
       text-decoration: none !important; }
 
@@ -3130,19 +3131,23 @@ blockquote p {
   text-transform: uppercase; }
 
 /* line 471, foundation\components\_type.scss */
+.dull-black {
+  color: #222222; }
+
+/* line 475, foundation\components\_type.scss */
 .muted, ul li, .orders > * {
   color: #666666; }
 
-/* line 475, foundation\components\_type.scss */
+/* line 479, foundation\components\_type.scss */
 .capitalize, .footer-sublink-list > li {
   text-transform: capitalize; }
 
-/* line 479, foundation\components\_type.scss */
+/* line 483, foundation\components\_type.scss */
 .italicize, .shipped {
   font-style: italic; }
 
 /* line 175, foundation\components\_buttons.scss */
-button, .button, .follow-button, .stats-button, .btn-wizard {
+button, .button, .flyout-checkout-button, .follow-button, .stats-button, .btn-wizard {
   cursor: pointer;
   font-family: Helvetica;
   font-weight: normal;
@@ -3162,78 +3167,78 @@ button, .button, .follow-button, .stats-button, .btn-wizard {
   border-color: black;
   color: white; }
   /* line 135, foundation\components\_buttons.scss */
-  button:hover, button:focus, .button:hover, .follow-button:hover, .stats-button:hover, .btn-wizard:hover, .button:focus, .follow-button:focus, .stats-button:focus, .btn-wizard:focus {
+  button:hover, button:focus, .button:hover, .flyout-checkout-button:hover, .follow-button:hover, .stats-button:hover, .btn-wizard:hover, .button:focus, .flyout-checkout-button:focus, .follow-button:focus, .stats-button:focus, .btn-wizard:focus {
     color: white; }
   /* line 179, foundation\components\_buttons.scss */
-  button.medium, .button.medium, .medium.follow-button, .medium.stats-button, .medium.btn-wizard {
+  button.medium, .button.medium, .medium.flyout-checkout-button, .medium.follow-button, .medium.stats-button, .medium.btn-wizard {
     min-width: 170px;
     max-width: 170px;
     margin-bottom: 12px; }
   /* line 184, foundation\components\_buttons.scss */
-  button.secondary, button.stats-button, button.btn-wizard, .button.secondary, .secondary.follow-button, .stats-button, .btn-wizard {
+  button.secondary, button.stats-button, button.btn-wizard, .button.secondary, .secondary.flyout-checkout-button, .secondary.follow-button, .stats-button, .btn-wizard {
     background-color: #eeeeee;
     border-color: #d4d4d4;
     color: #333333; }
     /* line 130, foundation\components\_buttons.scss */
-    button.secondary:hover, button.stats-button:hover, button.btn-wizard:hover, button.secondary:focus, button.stats-button:focus, button.btn-wizard:focus, .button.secondary:hover, .secondary.follow-button:hover, .stats-button:hover, .btn-wizard:hover, .button.secondary:focus, .secondary.follow-button:focus, .stats-button:focus, .btn-wizard:focus {
+    button.secondary:hover, button.stats-button:hover, button.btn-wizard:hover, button.secondary:focus, button.stats-button:focus, button.btn-wizard:focus, .button.secondary:hover, .secondary.flyout-checkout-button:hover, .secondary.follow-button:hover, .stats-button:hover, .btn-wizard:hover, .button.secondary:focus, .secondary.flyout-checkout-button:focus, .secondary.follow-button:focus, .stats-button:focus, .btn-wizard:focus {
       color: #333333; }
     /* line 186, foundation\components\_buttons.scss */
-    button.secondary.medium, button.medium.stats-button, button.medium.btn-wizard, .button.secondary.medium, .secondary.medium.follow-button, .medium.stats-button, .medium.btn-wizard {
+    button.secondary.medium, button.medium.stats-button, button.medium.btn-wizard, .button.secondary.medium, .secondary.medium.flyout-checkout-button, .secondary.medium.follow-button, .medium.stats-button, .medium.btn-wizard {
       min-width: 170px;
       max-width: 170px;
       margin-bottom: 12px; }
   /* line 192, foundation\components\_buttons.scss */
-  button.success, .button.success, .success.follow-button, .success.stats-button, .success.btn-wizard {
+  button.success, .button.success, .success.flyout-checkout-button, .success.follow-button, .success.stats-button, .success.btn-wizard {
     background-color: #5da423;
     border-color: #457a1a;
     color: white; }
     /* line 135, foundation\components\_buttons.scss */
-    button.success:hover, button.success:focus, .button.success:hover, .success.follow-button:hover, .success.stats-button:hover, .success.btn-wizard:hover, .button.success:focus, .success.follow-button:focus, .success.stats-button:focus, .success.btn-wizard:focus {
+    button.success:hover, button.success:focus, .button.success:hover, .success.flyout-checkout-button:hover, .success.follow-button:hover, .success.stats-button:hover, .success.btn-wizard:hover, .button.success:focus, .success.flyout-checkout-button:focus, .success.follow-button:focus, .success.stats-button:focus, .success.btn-wizard:focus {
       color: white; }
   /* line 193, foundation\components\_buttons.scss */
-  button.alert, .button.alert, .alert.follow-button, .alert.stats-button, .alert.btn-wizard {
+  button.alert, .button.alert, .alert.flyout-checkout-button, .alert.follow-button, .alert.stats-button, .alert.btn-wizard {
     background-color: #c60f13;
     border-color: #970b0e;
     color: white; }
     /* line 135, foundation\components\_buttons.scss */
-    button.alert:hover, button.alert:focus, .button.alert:hover, .alert.follow-button:hover, .alert.stats-button:hover, .alert.btn-wizard:hover, .button.alert:focus, .alert.follow-button:focus, .alert.stats-button:focus, .alert.btn-wizard:focus {
+    button.alert:hover, button.alert:focus, .button.alert:hover, .alert.flyout-checkout-button:hover, .alert.follow-button:hover, .alert.stats-button:hover, .alert.btn-wizard:hover, .button.alert:focus, .alert.flyout-checkout-button:focus, .alert.follow-button:focus, .alert.stats-button:focus, .alert.btn-wizard:focus {
       color: white; }
   /* line 195, foundation\components\_buttons.scss */
-  button.large, .button.large, .large.follow-button, .large.stats-button, .large.btn-wizard {
+  button.large, .button.large, .large.flyout-checkout-button, .large.follow-button, .large.stats-button, .large.btn-wizard {
     padding-top: 1rem;
     padding-right: 2rem;
     padding-bottom: 1.0625rem;
     padding-left: 2rem;
     font-size: 0.75rem; }
   /* line 196, foundation\components\_buttons.scss */
-  button.small, button.stats-button, .button.small, .small.follow-button, .stats-button, .small.btn-wizard {
+  button.small, button.stats-button, .button.small, .small.flyout-checkout-button, .small.follow-button, .stats-button, .small.btn-wizard {
     padding-top: 0.59375rem;
     padding-right: 1.1875rem;
     padding-bottom: 0.65625rem;
     padding-left: 1.1875rem;
     font-size: 0.75rem; }
   /* line 197, foundation\components\_buttons.scss */
-  button.tiny, .button.tiny, .tiny.follow-button, .tiny.stats-button, .tiny.btn-wizard {
+  button.tiny, .button.tiny, .tiny.flyout-checkout-button, .tiny.follow-button, .tiny.stats-button, .tiny.btn-wizard {
     padding-top: 0.4375rem;
     padding-right: 0.875rem;
     padding-bottom: 0.5rem;
     padding-left: 0.875rem;
     font-size: 0.75rem; }
   /* line 198, foundation\components\_buttons.scss */
-  button.expand, .button.expand, .expand.follow-button, .expand.stats-button, .expand.btn-wizard {
+  button.expand, .button.expand, .expand.flyout-checkout-button, .expand.follow-button, .expand.stats-button, .expand.btn-wizard {
     padding-right: 0px;
     padding-left: 0px;
     width: 100%; }
   /* line 200, foundation\components\_buttons.scss */
-  button.left-align, .button.left-align, .left-align.follow-button, .left-align.stats-button, .left-align.btn-wizard {
+  button.left-align, .button.left-align, .left-align.flyout-checkout-button, .left-align.follow-button, .left-align.stats-button, .left-align.btn-wizard {
     text-align: left;
     text-indent: 0.75rem; }
   /* line 201, foundation\components\_buttons.scss */
-  button.right-align, .button.right-align, .right-align.follow-button, .right-align.stats-button, .right-align.btn-wizard {
+  button.right-align, .button.right-align, .right-align.flyout-checkout-button, .right-align.follow-button, .right-align.stats-button, .right-align.btn-wizard {
     text-align: right;
     padding-right: 0.75rem; }
   /* line 203, foundation\components\_buttons.scss */
-  button.disabled, button[disabled], .button.disabled, .disabled.follow-button, .disabled.stats-button, .disabled.btn-wizard, .button[disabled], [disabled].follow-button, [disabled].stats-button, [disabled].btn-wizard {
+  button.disabled, button[disabled], .button.disabled, .disabled.flyout-checkout-button, .disabled.follow-button, .disabled.stats-button, .disabled.btn-wizard, .button[disabled], [disabled].flyout-checkout-button, [disabled].follow-button, [disabled].stats-button, [disabled].btn-wizard {
     background-color: black;
     border-color: black;
     color: white;
@@ -3242,13 +3247,13 @@ button, .button, .follow-button, .stats-button, .btn-wizard {
     -webkit-box-shadow: none;
     box-shadow: none; }
     /* line 135, foundation\components\_buttons.scss */
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled]:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled]:focus, [disabled].follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.flyout-checkout-button:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled:focus, .disabled.flyout-checkout-button:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled]:hover, [disabled].flyout-checkout-button:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled]:focus, [disabled].flyout-checkout-button:focus, [disabled].follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
       color: white; }
     /* line 148, foundation\components\_buttons.scss */
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled]:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled]:focus, [disabled].follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
+    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.flyout-checkout-button:hover, .disabled.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled:focus, .disabled.flyout-checkout-button:focus, .disabled.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled]:hover, [disabled].flyout-checkout-button:hover, [disabled].follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled]:focus, [disabled].flyout-checkout-button:focus, [disabled].follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
       background-color: black; }
     /* line 204, foundation\components\_buttons.scss */
-    button.disabled.secondary, button.disabled.stats-button, button.disabled.btn-wizard, button[disabled].secondary, button[disabled].stats-button, button[disabled].btn-wizard, .button.disabled.secondary, .disabled.secondary.follow-button, .disabled.stats-button, .disabled.btn-wizard, .button[disabled].secondary, [disabled].secondary.follow-button, [disabled].stats-button, [disabled].btn-wizard {
+    button.disabled.secondary, button.disabled.stats-button, button.disabled.btn-wizard, button[disabled].secondary, button[disabled].stats-button, button[disabled].btn-wizard, .button.disabled.secondary, .disabled.secondary.flyout-checkout-button, .disabled.secondary.follow-button, .disabled.stats-button, .disabled.btn-wizard, .button[disabled].secondary, [disabled].secondary.flyout-checkout-button, [disabled].secondary.follow-button, [disabled].stats-button, [disabled].btn-wizard {
       background-color: #eeeeee;
       border-color: #d4d4d4;
       color: #333333;
@@ -3257,13 +3262,13 @@ button, .button, .follow-button, .stats-button, .btn-wizard {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 130, foundation\components\_buttons.scss */
-      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.btn-wizard:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button.disabled.btn-wizard:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].btn-wizard:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, button[disabled].btn-wizard:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
+      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.btn-wizard:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button.disabled.btn-wizard:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].btn-wizard:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, button[disabled].btn-wizard:focus, .button.disabled.secondary:hover, .disabled.secondary.flyout-checkout-button:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled.secondary:focus, .disabled.secondary.flyout-checkout-button:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled].secondary:hover, [disabled].secondary.flyout-checkout-button:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled].secondary:focus, [disabled].secondary.flyout-checkout-button:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
         color: #333333; }
       /* line 148, foundation\components\_buttons.scss */
-      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.btn-wizard:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button.disabled.btn-wizard:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].btn-wizard:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, button[disabled].btn-wizard:focus, .button.disabled.secondary:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled.secondary:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled].secondary:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled].secondary:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
+      button.disabled.secondary:hover, button.disabled.stats-button:hover, button.disabled.btn-wizard:hover, button.disabled.secondary:focus, button.disabled.stats-button:focus, button.disabled.btn-wizard:focus, button[disabled].secondary:hover, button[disabled].stats-button:hover, button[disabled].btn-wizard:hover, button[disabled].secondary:focus, button[disabled].stats-button:focus, button[disabled].btn-wizard:focus, .button.disabled.secondary:hover, .disabled.secondary.flyout-checkout-button:hover, .disabled.secondary.follow-button:hover, .disabled.stats-button:hover, .disabled.btn-wizard:hover, .button.disabled.secondary:focus, .disabled.secondary.flyout-checkout-button:focus, .disabled.secondary.follow-button:focus, .disabled.stats-button:focus, .disabled.btn-wizard:focus, .button[disabled].secondary:hover, [disabled].secondary.flyout-checkout-button:hover, [disabled].secondary.follow-button:hover, [disabled].stats-button:hover, [disabled].btn-wizard:hover, .button[disabled].secondary:focus, [disabled].secondary.flyout-checkout-button:focus, [disabled].secondary.follow-button:focus, [disabled].stats-button:focus, [disabled].btn-wizard:focus {
         background-color: #eeeeee; }
     /* line 205, foundation\components\_buttons.scss */
-    button.disabled.success, button[disabled].success, .button.disabled.success, .disabled.success.follow-button, .disabled.success.stats-button, .disabled.success.btn-wizard, .button[disabled].success, [disabled].success.follow-button, [disabled].success.stats-button, [disabled].success.btn-wizard {
+    button.disabled.success, button[disabled].success, .button.disabled.success, .disabled.success.flyout-checkout-button, .disabled.success.follow-button, .disabled.success.stats-button, .disabled.success.btn-wizard, .button[disabled].success, [disabled].success.flyout-checkout-button, [disabled].success.follow-button, [disabled].success.stats-button, [disabled].success.btn-wizard {
       background-color: #5da423;
       border-color: #457a1a;
       color: white;
@@ -3272,13 +3277,13 @@ button, .button, .follow-button, .stats-button, .btn-wizard {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 135, foundation\components\_buttons.scss */
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .disabled.success.btn-wizard:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .disabled.success.btn-wizard:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, [disabled].success.btn-wizard:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus, [disabled].success.btn-wizard:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.flyout-checkout-button:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .disabled.success.btn-wizard:hover, .button.disabled.success:focus, .disabled.success.flyout-checkout-button:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .disabled.success.btn-wizard:focus, .button[disabled].success:hover, [disabled].success.flyout-checkout-button:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, [disabled].success.btn-wizard:hover, .button[disabled].success:focus, [disabled].success.flyout-checkout-button:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus, [disabled].success.btn-wizard:focus {
         color: white; }
       /* line 148, foundation\components\_buttons.scss */
-      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .disabled.success.btn-wizard:hover, .button.disabled.success:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .disabled.success.btn-wizard:focus, .button[disabled].success:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, [disabled].success.btn-wizard:hover, .button[disabled].success:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus, [disabled].success.btn-wizard:focus {
+      button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.flyout-checkout-button:hover, .disabled.success.follow-button:hover, .disabled.success.stats-button:hover, .disabled.success.btn-wizard:hover, .button.disabled.success:focus, .disabled.success.flyout-checkout-button:focus, .disabled.success.follow-button:focus, .disabled.success.stats-button:focus, .disabled.success.btn-wizard:focus, .button[disabled].success:hover, [disabled].success.flyout-checkout-button:hover, [disabled].success.follow-button:hover, [disabled].success.stats-button:hover, [disabled].success.btn-wizard:hover, .button[disabled].success:focus, [disabled].success.flyout-checkout-button:focus, [disabled].success.follow-button:focus, [disabled].success.stats-button:focus, [disabled].success.btn-wizard:focus {
         background-color: #5da423; }
     /* line 206, foundation\components\_buttons.scss */
-    button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled.alert.follow-button, .disabled.alert.stats-button, .disabled.alert.btn-wizard, .button[disabled].alert, [disabled].alert.follow-button, [disabled].alert.stats-button, [disabled].alert.btn-wizard {
+    button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled.alert.flyout-checkout-button, .disabled.alert.follow-button, .disabled.alert.stats-button, .disabled.alert.btn-wizard, .button[disabled].alert, [disabled].alert.flyout-checkout-button, [disabled].alert.follow-button, [disabled].alert.stats-button, [disabled].alert.btn-wizard {
       background-color: #c60f13;
       border-color: #970b0e;
       color: white;
@@ -3287,59 +3292,59 @@ button, .button, .follow-button, .stats-button, .btn-wizard {
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 135, foundation\components\_buttons.scss */
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .disabled.alert.btn-wizard:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .disabled.alert.btn-wizard:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, [disabled].alert.btn-wizard:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus, [disabled].alert.btn-wizard:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.flyout-checkout-button:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .disabled.alert.btn-wizard:hover, .button.disabled.alert:focus, .disabled.alert.flyout-checkout-button:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .disabled.alert.btn-wizard:focus, .button[disabled].alert:hover, [disabled].alert.flyout-checkout-button:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, [disabled].alert.btn-wizard:hover, .button[disabled].alert:focus, [disabled].alert.flyout-checkout-button:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus, [disabled].alert.btn-wizard:focus {
         color: white; }
       /* line 148, foundation\components\_buttons.scss */
-      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .disabled.alert.btn-wizard:hover, .button.disabled.alert:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .disabled.alert.btn-wizard:focus, .button[disabled].alert:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, [disabled].alert.btn-wizard:hover, .button[disabled].alert:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus, [disabled].alert.btn-wizard:focus {
+      button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.flyout-checkout-button:hover, .disabled.alert.follow-button:hover, .disabled.alert.stats-button:hover, .disabled.alert.btn-wizard:hover, .button.disabled.alert:focus, .disabled.alert.flyout-checkout-button:focus, .disabled.alert.follow-button:focus, .disabled.alert.stats-button:focus, .disabled.alert.btn-wizard:focus, .button[disabled].alert:hover, [disabled].alert.flyout-checkout-button:hover, [disabled].alert.follow-button:hover, [disabled].alert.stats-button:hover, [disabled].alert.btn-wizard:hover, .button[disabled].alert:focus, [disabled].alert.flyout-checkout-button:focus, [disabled].alert.follow-button:focus, [disabled].alert.stats-button:focus, [disabled].alert.btn-wizard:focus {
         background-color: #c60f13; }
 
 /* line 211, foundation\components\_buttons.scss */
-button, .button, .follow-button, .stats-button, .btn-wizard {
+button, .button, .flyout-checkout-button, .follow-button, .stats-button, .btn-wizard {
   padding-top: 0.8125rem;
   padding-bottom: 0.75rem;
   -webkit-appearance: none; }
   /* line 213, foundation\components\_buttons.scss */
-  button.tiny, .button.tiny, .tiny.follow-button, .tiny.stats-button, .tiny.btn-wizard {
+  button.tiny, .button.tiny, .tiny.flyout-checkout-button, .tiny.follow-button, .tiny.stats-button, .tiny.btn-wizard {
     padding-top: 0.5rem;
     padding-bottom: 0.4375rem;
     -webkit-appearance: none; }
   /* line 214, foundation\components\_buttons.scss */
-  button.small, button.stats-button, .button.small, .small.follow-button, .stats-button, .small.btn-wizard {
+  button.small, button.stats-button, .button.small, .small.flyout-checkout-button, .small.follow-button, .stats-button, .small.btn-wizard {
     padding-top: 0.65625rem;
     padding-bottom: 0.59375rem;
     -webkit-appearance: none; }
   /* line 215, foundation\components\_buttons.scss */
-  button.large, .button.large, .large.follow-button, .large.stats-button, .large.btn-wizard {
+  button.large, .button.large, .large.flyout-checkout-button, .large.follow-button, .large.stats-button, .large.btn-wizard {
     padding-top: 1.03125rem;
     padding-bottom: 1.03125rem;
     -webkit-appearance: none; }
 
 @media only screen {
   /* line 221, foundation\components\_buttons.scss */
-  button, .button, .follow-button, .stats-button, .btn-wizard {
+  button, .button, .flyout-checkout-button, .follow-button, .stats-button, .btn-wizard {
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-transition: background-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out;
     transition: background-color 300ms ease-out; }
     /* line 68, foundation\components\_global.scss */
-    button:active, .button:active, .follow-button:active, .stats-button:active, .btn-wizard:active {
+    button:active, .button:active, .flyout-checkout-button:active, .follow-button:active, .stats-button:active, .btn-wizard:active {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; } }
 @media only screen and (min-width: 768px) {
   /* line 238, foundation\components\_buttons.scss */
-  button, .button, .follow-button, .stats-button, .btn-wizard {
+  button, .button, .flyout-checkout-button, .follow-button, .stats-button, .btn-wizard {
     display: inline-block; } }
 /* line 249, foundation\components\_buttons.scss */
-a.button:hover, a.follow-button:hover, a.stats-button:hover, a.btn-wizard:hover {
+a.button:hover, a.flyout-checkout-button:hover, a.follow-button:hover, a.stats-button:hover, a.btn-wizard:hover {
   text-decoration: none; }
 
 /* line 255, foundation\components\_buttons.scss */
-.button.throbber, .throbber.follow-button, .throbber.stats-button, .throbber.btn-wizard {
+.button.throbber, .throbber.flyout-checkout-button, .throbber.follow-button, .throbber.stats-button, .throbber.btn-wizard {
   color: transparent;
   background: url("../images/loading.gif") center center no-repeat; }
   /* line 258, foundation\components\_buttons.scss */
-  .button.throbber:hover, .throbber.follow-button:hover, .throbber.stats-button:hover, .throbber.btn-wizard:hover {
+  .button.throbber:hover, .throbber.flyout-checkout-button:hover, .throbber.follow-button:hover, .throbber.stats-button:hover, .throbber.btn-wizard:hover {
     color: transparent; }
 
 /* line 265, foundation\components\_buttons.scss */
@@ -3406,7 +3411,7 @@ label {
   margin-bottom: 0.1875rem;
   /* Styles for required inputs */ }
   /* line 263, foundation\components\_forms.scss */
-  label.right, label.avatar-img {
+  label.right, label.avatar-img, label.flyout-checkout-button {
     float: none;
     text-align: right; }
   /* line 264, foundation\components\_forms.scss */
@@ -3441,7 +3446,7 @@ label {
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
 /* line 282, foundation\components\_forms.scss */
-.postfix.button, .postfix.follow-button, .postfix.stats-button, .postfix.btn-wizard {
+.postfix.button, .postfix.flyout-checkout-button, .postfix.follow-button, .postfix.stats-button, .postfix.btn-wizard {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -3450,7 +3455,7 @@ label {
   line-height: 2.125rem; }
 
 /* line 283, foundation\components\_forms.scss */
-.prefix.button, .prefix.follow-button, .prefix.stats-button, .prefix.btn-wizard {
+.prefix.button, .prefix.flyout-checkout-button, .prefix.follow-button, .prefix.stats-button, .prefix.btn-wizard {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -3459,7 +3464,7 @@ label {
   line-height: 2.125rem; }
 
 /* line 285, foundation\components\_forms.scss */
-.prefix.button.radius, .prefix.radius.follow-button, .prefix.radius.stats-button, .prefix.radius.btn-wizard {
+.prefix.button.radius, .prefix.radius.flyout-checkout-button, .prefix.radius.follow-button, .prefix.radius.stats-button, .prefix.radius.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 0.25rem;
@@ -3470,7 +3475,7 @@ label {
   border-top-left-radius: 0.25rem; }
 
 /* line 286, foundation\components\_forms.scss */
-.postfix.button.radius, .postfix.radius.follow-button, .postfix.radius.stats-button, .postfix.radius.btn-wizard {
+.postfix.button.radius, .postfix.radius.flyout-checkout-button, .postfix.radius.follow-button, .postfix.radius.stats-button, .postfix.radius.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 0.25rem;
@@ -3481,7 +3486,7 @@ label {
   border-bottom-right-radius: 0.25rem; }
 
 /* line 287, foundation\components\_forms.scss */
-.prefix.button.round, .prefix.round.follow-button, .prefix.round.stats-button, .prefix.round.btn-wizard {
+.prefix.button.round, .prefix.round.flyout-checkout-button, .prefix.round.follow-button, .prefix.round.stats-button, .prefix.round.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 62.5rem;
@@ -3492,7 +3497,7 @@ label {
   border-top-left-radius: 62.5rem; }
 
 /* line 288, foundation\components\_forms.scss */
-.postfix.button.round, .postfix.round.follow-button, .postfix.round.stats-button, .postfix.round.btn-wizard {
+.postfix.button.round, .postfix.round.flyout-checkout-button, .postfix.round.follow-button, .postfix.round.stats-button, .postfix.round.btn-wizard {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 62.5rem;
@@ -3795,106 +3800,119 @@ select {
 select::-ms-expand {
   display: none; }
 
-/*=========*/
-/* line 2, foundation\components\_freewall.scss */
-.freewall-padding {
-  padding-left: 10px;
-  padding-right: 10px; }
+/* line 1, foundation\components\_pinterest.scss */
+.mansonry-container {
+  margin-top: 16px; }
 
-/* line 7, foundation\components\_freewall.scss */
-.catalogue {
+/* line 5, foundation\components\_pinterest.scss */
+.grid-info {
+  text-align: left; }
+
+@media only screen and (min-width: 768px) {
+  /* line 9, foundation\components\_pinterest.scss */
+  .masonry-padding {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+/* line 16, foundation\components\_pinterest.scss */
+.box {
+  background-color: #f7f7f7; }
+
+/* line 20, foundation\components\_pinterest.scss */
+.box-image {
   padding: 10px;
-  background-color: #f7f7f7;
-  margin: 0 8px 10px 0;
-  display: inline-block; }
+  background-color: #f7f7f7; }
+  /* line 23, foundation\components\_pinterest.scss */
+  .box-image > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
 
-/* line 22, foundation\components\_freewall.scss */
+/* line 30, foundation\components\_pinterest.scss */
+.box-caption {
+  padding: 0 10px 10px !important; }
+
+/* line 34, foundation\components\_pinterest.scss */
 .designer-catalogue {
   width: 300px !important;
   height: 251px !important; }
 
-/* line 27, foundation\components\_freewall.scss */
+/* line 39, foundation\components\_pinterest.scss */
 .share-widget {
-  position: relative;
-  text-align: center; }
+  text-align: center;
+  z-index: 2; }
 
-/* line 32, foundation\components\_freewall.scss */
+/* line 44, foundation\components\_pinterest.scss */
 .browse-prod-img {
   display: inline-block; }
 
-/* line 38, foundation\components\_freewall.scss */
-.browse-social-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
-  text-align: right;
-  min-width: 120px; }
-
-/* line 47, foundation\components\_freewall.scss */
-.grid-social-buttons {
-  display: inline-block;
-  min-width: 100px; }
-
-@media only screen and (min-width: 768px) {
-  /* line 53, foundation\components\_freewall.scss */
-  .browse-social-container {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease; }
-
-  /* line 58, foundation\components\_freewall.scss */
-  .catalogue:hover > .share-widget > .browse-social-container {
-    visibility: visible;
-    opacity: 1; } }
 /*=========*/
-/* line 65, foundation\components\_freewall.scss */
+/* line 50, foundation\components\_pinterest.scss */
 .grid-image {
   width: 100%;
   max-width: 100%;
   display: block; }
 
-/* line 70, foundation\components\_freewall.scss */
+/* line 55, foundation\components\_pinterest.scss */
 .landscape {
   height: 142.333px; }
 
-/* line 74, foundation\components\_freewall.scss */
-.freewall-container {
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 16px; }
-  @media (min-width: 769px) {
-    /* line 74, foundation\components\_freewall.scss */
-    .freewall-container {
-      margin-top: 56px;
-      padding-left: 10px; } }
-
-/* line 86, foundation\components\_freewall.scss */
+/* line 60, foundation\components\_pinterest.scss */
 .grid-info > * {
   text-align: left; }
 
-/* line 92, foundation\components\_freewall.scss */
-.free-wall {
-  margin: 15px; }
-
-/* line 95, foundation\components\_freewall.scss */
-.brick {
-  width: 221.2px;
-  z-index: 2; }
-
-/* line 99, foundation\components\_freewall.scss */
+/* line 66, foundation\components\_pinterest.scss */
 .info {
   padding: 15px;
   color: #333; }
 
-/* line 103, foundation\components\_freewall.scss */
-.brick img {
+/* line 70, foundation\components\_pinterest.scss */
+.pin img {
   margin: 0px;
   padding: 0px;
   display: block; }
+
+/* line 2, foundation\components\_upsell.scss */
+.upsell-slider .slide {
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  border-right: none;
+  padding: 20px;
+  padding-bottom: 60px;
+  max-height: 350px;
+  overflow: hidden; }
+/* line 12, foundation\components\_upsell.scss */
+.upsell-slider > .slide > a > .bx-caption {
+  background: white;
+  text-align: center; }
+/* line 16, foundation\components\_upsell.scss */
+.upsell-slider > .slide > a > .bx-caption span {
+  font-family: 'futura';
+  font-size: 13px;
+  color: black;
+  width: 100%;
+  text-transform: uppercase;
+  line-height: 1.33;
+  font-weight: normal !important; }
+  /* line 24, foundation\components\_upsell.scss */
+  .upsell-slider > .slide > a > .bx-caption span > span {
+    display: inline; }
+
+/* line 31, foundation\components\_upsell.scss */
+#product-description-form .bx-wrapper img {
+  width: 100%; }
+
+/* line 35, foundation\components\_upsell.scss */
+#product-description-form .bx-wrapper .bx-viewport {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 101% !important;
+  height: 370px !important;
+  padding: 10px; }
+
+/* line 43, foundation\components\_upsell.scss */
+#product-description-form .bx-wrapper .bx-prev {
+  left: 30px !important; }
 
 /* Button Groups */
 /* line 72, foundation\components\_button-groups.scss */
@@ -3917,7 +3935,7 @@ select::-ms-expand {
     .button-group > *:first-child {
       margin-left: 0; }
   /* line 50, foundation\components\_button-groups.scss */
-  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .follow-button, .button-group.radius > *:first-child > .stats-button, .button-group.radius > *:first-child > .btn-wizard {
+  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .flyout-checkout-button, .button-group.radius > *:first-child > .follow-button, .button-group.radius > *:first-child > .stats-button, .button-group.radius > *:first-child > .btn-wizard {
     -moz-border-radius-bottomleft: 0.25rem;
     -moz-border-radius-topleft: 0.25rem;
     -webkit-border-bottom-left-radius: 0.25rem;
@@ -3925,7 +3943,7 @@ select::-ms-expand {
     border-bottom-left-radius: 0.25rem;
     border-top-left-radius: 0.25rem; }
   /* line 54, foundation\components\_button-groups.scss */
-  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .follow-button, .button-group.radius > *:last-child > .stats-button, .button-group.radius > *:last-child > .btn-wizard {
+  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .flyout-checkout-button, .button-group.radius > *:last-child > .follow-button, .button-group.radius > *:last-child > .stats-button, .button-group.radius > *:last-child > .btn-wizard {
     -moz-border-radius-topright: 0.25rem;
     -moz-border-radius-bottomright: 0.25rem;
     -webkit-border-top-right-radius: 0.25rem;
@@ -3933,7 +3951,7 @@ select::-ms-expand {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; }
   /* line 50, foundation\components\_button-groups.scss */
-  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .follow-button, .button-group.round > *:first-child > .stats-button, .button-group.round > *:first-child > .btn-wizard {
+  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .flyout-checkout-button, .button-group.round > *:first-child > .follow-button, .button-group.round > *:first-child > .stats-button, .button-group.round > *:first-child > .btn-wizard {
     -moz-border-radius-bottomleft: 62.5rem;
     -moz-border-radius-topleft: 62.5rem;
     -webkit-border-bottom-left-radius: 62.5rem;
@@ -3941,7 +3959,7 @@ select::-ms-expand {
     border-bottom-left-radius: 62.5rem;
     border-top-left-radius: 62.5rem; }
   /* line 54, foundation\components\_button-groups.scss */
-  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .follow-button, .button-group.round > *:last-child > .stats-button, .button-group.round > *:last-child > .btn-wizard {
+  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .flyout-checkout-button, .button-group.round > *:last-child > .follow-button, .button-group.round > *:last-child > .stats-button, .button-group.round > *:last-child > .btn-wizard {
     -moz-border-radius-topright: 62.5rem;
     -moz-border-radius-bottomright: 62.5rem;
     -webkit-border-top-right-radius: 62.5rem;
@@ -3952,43 +3970,43 @@ select::-ms-expand {
   .button-group.even-2 li {
     width: 50%; }
     /* line 63, foundation\components\_button-groups.scss */
-    .button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li .follow-button, .button-group.even-2 li .stats-button, .button-group.even-2 li .btn-wizard {
+    .button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li .flyout-checkout-button, .button-group.even-2 li .follow-button, .button-group.even-2 li .stats-button, .button-group.even-2 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation\components\_button-groups.scss */
   .button-group.even-3 li {
     width: 33.33333%; }
     /* line 63, foundation\components\_button-groups.scss */
-    .button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li .follow-button, .button-group.even-3 li .stats-button, .button-group.even-3 li .btn-wizard {
+    .button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li .flyout-checkout-button, .button-group.even-3 li .follow-button, .button-group.even-3 li .stats-button, .button-group.even-3 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation\components\_button-groups.scss */
   .button-group.even-4 li {
     width: 25%; }
     /* line 63, foundation\components\_button-groups.scss */
-    .button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li .follow-button, .button-group.even-4 li .stats-button, .button-group.even-4 li .btn-wizard {
+    .button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li .flyout-checkout-button, .button-group.even-4 li .follow-button, .button-group.even-4 li .stats-button, .button-group.even-4 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation\components\_button-groups.scss */
   .button-group.even-5 li {
     width: 20%; }
     /* line 63, foundation\components\_button-groups.scss */
-    .button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li .follow-button, .button-group.even-5 li .stats-button, .button-group.even-5 li .btn-wizard {
+    .button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li .flyout-checkout-button, .button-group.even-5 li .follow-button, .button-group.even-5 li .stats-button, .button-group.even-5 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation\components\_button-groups.scss */
   .button-group.even-6 li {
     width: 16.66667%; }
     /* line 63, foundation\components\_button-groups.scss */
-    .button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li .follow-button, .button-group.even-6 li .stats-button, .button-group.even-6 li .btn-wizard {
+    .button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li .flyout-checkout-button, .button-group.even-6 li .follow-button, .button-group.even-6 li .stats-button, .button-group.even-6 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation\components\_button-groups.scss */
   .button-group.even-7 li {
     width: 14.28571%; }
     /* line 63, foundation\components\_button-groups.scss */
-    .button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li .follow-button, .button-group.even-7 li .stats-button, .button-group.even-7 li .btn-wizard {
+    .button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li .flyout-checkout-button, .button-group.even-7 li .follow-button, .button-group.even-7 li .stats-button, .button-group.even-7 li .btn-wizard {
       width: 100%; }
   /* line 80, foundation\components\_button-groups.scss */
   .button-group.even-8 li {
     width: 12.5%; }
     /* line 63, foundation\components\_button-groups.scss */
-    .button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li .follow-button, .button-group.even-8 li .stats-button, .button-group.even-8 li .btn-wizard {
+    .button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li .flyout-checkout-button, .button-group.even-8 li .follow-button, .button-group.even-8 li .stats-button, .button-group.even-8 li .btn-wizard {
       width: 100%; }
 
 /* line 84, foundation\components\_button-groups.scss */
@@ -5003,6 +5021,14 @@ select::-ms-expand {
 .accordion input[type="checkbox"]:checked ~ article {
   min-height: 120px; }
 
+/* line 493, foundation\components\_section.scss */
+.help-accordion > label {
+  display: inline-block;
+  width: 100%; }
+  /* line 496, foundation\components\_section.scss */
+  .help-accordion > label:after {
+    display: block; }
+
 /* Wrapped around .top-bar to contain to grid width */
 /* line 67, foundation\components\_top-bar.scss */
 .contain-to-grid {
@@ -5045,7 +5071,7 @@ select::-ms-expand {
   .top-bar input {
     height: 2.45em; }
   /* line 108, foundation\components\_top-bar.scss */
-  .top-bar .button, .top-bar .follow-button, .top-bar .stats-button, .top-bar .btn-wizard {
+  .top-bar .button, .top-bar .flyout-checkout-button, .top-bar .follow-button, .top-bar .stats-button, .top-bar .btn-wizard {
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin-bottom: 0; }
@@ -5184,29 +5210,29 @@ select::-ms-expand {
       background: white;
       color: black; }
     /* line 280, foundation\components\_top-bar.scss */
-    .top-bar-section ul li > a.button, .top-bar-section ul li > a.follow-button, .top-bar-section ul li > a.stats-button, .top-bar-section ul li > a.btn-wizard {
+    .top-bar-section ul li > a.button, .top-bar-section ul li > a.flyout-checkout-button, .top-bar-section ul li > a.follow-button, .top-bar-section ul li > a.stats-button, .top-bar-section ul li > a.btn-wizard {
       background: black;
       font-size: 0.75rem; }
       /* line 283, foundation\components\_top-bar.scss */
-      .top-bar-section ul li > a.button.hover, .top-bar-section ul li > a.hover.follow-button, .top-bar-section ul li > a.hover.stats-button, .top-bar-section ul li > a.hover.btn-wizard {
+      .top-bar-section ul li > a.button.hover, .top-bar-section ul li > a.hover.flyout-checkout-button, .top-bar-section ul li > a.hover.follow-button, .top-bar-section ul li > a.hover.stats-button, .top-bar-section ul li > a.hover.btn-wizard {
         background: black; }
     /* line 287, foundation\components\_top-bar.scss */
-    .top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.follow-button, .top-bar-section ul li > a.stats-button, .top-bar-section ul li > a.btn-wizard {
+    .top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.flyout-checkout-button, .top-bar-section ul li > a.secondary.follow-button, .top-bar-section ul li > a.stats-button, .top-bar-section ul li > a.btn-wizard {
       background: #666666; }
       /* line 289, foundation\components\_top-bar.scss */
-      .top-bar-section ul li > a.button.secondary.hover, .top-bar-section ul li > a.secondary.hover.follow-button, .top-bar-section ul li > a.hover.stats-button, .top-bar-section ul li > a.hover.btn-wizard {
+      .top-bar-section ul li > a.button.secondary.hover, .top-bar-section ul li > a.secondary.hover.flyout-checkout-button, .top-bar-section ul li > a.secondary.hover.follow-button, .top-bar-section ul li > a.hover.stats-button, .top-bar-section ul li > a.hover.btn-wizard {
         background: #4d4d4d; }
     /* line 293, foundation\components\_top-bar.scss */
-    .top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.follow-button, .top-bar-section ul li > a.success.stats-button, .top-bar-section ul li > a.success.btn-wizard {
+    .top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.flyout-checkout-button, .top-bar-section ul li > a.success.follow-button, .top-bar-section ul li > a.success.stats-button, .top-bar-section ul li > a.success.btn-wizard {
       background: #5da423; }
       /* line 295, foundation\components\_top-bar.scss */
-      .top-bar-section ul li > a.button.success.hover, .top-bar-section ul li > a.success.hover.follow-button, .top-bar-section ul li > a.success.hover.stats-button, .top-bar-section ul li > a.success.hover.btn-wizard {
+      .top-bar-section ul li > a.button.success.hover, .top-bar-section ul li > a.success.hover.flyout-checkout-button, .top-bar-section ul li > a.success.hover.follow-button, .top-bar-section ul li > a.success.hover.stats-button, .top-bar-section ul li > a.success.hover.btn-wizard {
         background: #457a1a; }
     /* line 299, foundation\components\_top-bar.scss */
-    .top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.follow-button, .top-bar-section ul li > a.alert.stats-button, .top-bar-section ul li > a.alert.btn-wizard {
+    .top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.flyout-checkout-button, .top-bar-section ul li > a.alert.follow-button, .top-bar-section ul li > a.alert.stats-button, .top-bar-section ul li > a.alert.btn-wizard {
       background: #c60f13; }
       /* line 301, foundation\components\_top-bar.scss */
-      .top-bar-section ul li > a.button.alert.hover, .top-bar-section ul li > a.alert.hover.follow-button, .top-bar-section ul li > a.alert.hover.stats-button, .top-bar-section ul li > a.alert.hover.btn-wizard {
+      .top-bar-section ul li > a.button.alert.hover, .top-bar-section ul li > a.alert.hover.flyout-checkout-button, .top-bar-section ul li > a.alert.hover.follow-button, .top-bar-section ul li > a.alert.hover.stats-button, .top-bar-section ul li > a.alert.hover.btn-wizard {
         background: #970b0e; }
   /* line 309, foundation\components\_top-bar.scss */
   .top-bar-section ul li:hover > a {
@@ -5359,6 +5385,7 @@ header.navigation {
     /* line 436, foundation\components\_top-bar.scss */
     .top-bar input,
     .top-bar .button,
+    .top-bar .flyout-checkout-button,
     .top-bar .follow-button,
     .top-bar .stats-button,
     .top-bar .btn-wizard {
@@ -5496,11 +5523,11 @@ header.navigation {
       padding: 0 15px;
       height: 45px; }
     /* line 580, foundation\components\_top-bar.scss */
-    .top-bar-section ul.right li .dropdown, .top-bar-section ul.avatar-img li .dropdown {
+    .top-bar-section ul.right li .dropdown, .top-bar-section ul.avatar-img li .dropdown, .top-bar-section ul.flyout-checkout-button li .dropdown {
       left: auto;
       right: 0; }
       /* line 584, foundation\components\_top-bar.scss */
-      .top-bar-section ul.right li .dropdown li .dropdown, .top-bar-section ul.avatar-img li .dropdown li .dropdown {
+      .top-bar-section ul.right li .dropdown li .dropdown, .top-bar-section ul.avatar-img li .dropdown li .dropdown, .top-bar-section ul.flyout-checkout-button li .dropdown li .dropdown {
         right: 100%; }
 
   /* line 594, foundation\components\_top-bar.scss */
@@ -5664,85 +5691,89 @@ ul.user-setting {
   .user-setting-links > li a:hover {
     background-color: rgba(0, 0, 0, 0.25); }
 
-/* line 757, foundation\components\_top-bar.scss */
+/* line 763, foundation\components\_top-bar.scss */
+.flyout-scroll-text {
+  margin-top: 30px; }
+
+/* line 770, foundation\components\_top-bar.scss */
 .user-setting-labels {
   margin-top: 0.75rem; }
 
 @media screen and (max-width: 500px) {
-  /* line 760, foundation\components\_top-bar.scss */
+  /* line 773, foundation\components\_top-bar.scss */
   .user-setting-username {
     margin-top: 0 !important; } }
 
-/* line 767, foundation\components\_top-bar.scss */
+/* line 780, foundation\components\_top-bar.scss */
 .user-img-small {
   width: 19px;
   height: 19px; }
 
-/* line 772, foundation\components\_top-bar.scss */
+/* line 785, foundation\components\_top-bar.scss */
 .user-img {
   width: 150px;
   height: 150px; }
   @media screen and (max-width: 500px) {
-    /* line 772, foundation\components\_top-bar.scss */
+    /* line 785, foundation\components\_top-bar.scss */
     .user-img {
       width: 75px;
       height: 75px; } }
 
-/* line 782, foundation\components\_top-bar.scss */
+/* line 795, foundation\components\_top-bar.scss */
 .has-dropdown > ul.dropdown > li.js-generated {
   display: none; }
 
 @media screen and (max-width: 1062px) {
-  /* line 786, foundation\components\_top-bar.scss */
+  /* line 799, foundation\components\_top-bar.scss */
   .moved > ul.dropdown > li.js-generated {
     display: block; } }
 
 @media screen and (min-width: 1062px) {
-  /* line 793, foundation\components\_top-bar.scss */
+  /* line 806, foundation\components\_top-bar.scss */
   .meet-the-designers {
     min-width: 820px !important; }
 
-  /* line 794, foundation\components\_top-bar.scss */
+  /* line 807, foundation\components\_top-bar.scss */
   ul.meet-the-designers > li:not(.exclude) {
     width: 150px !important;
     float: left;
     margin-right: 10px; } }
-/* line 801, foundation\components\_top-bar.scss */
+/* line 814, foundation\components\_top-bar.scss */
 .flyout-holder {
   position: relative; }
 
-/* line 805, foundation\components\_top-bar.scss */
+/* line 818, foundation\components\_top-bar.scss */
 .view-all-container, .search-designers {
   width: 100%;
   height: auto; }
 
-/* line 810, foundation\components\_top-bar.scss */
+/* line 823, foundation\components\_top-bar.scss */
 .view-designers-menu-link {
   font-family: helvetica !important;
   font-weight: bold !important; }
   @media screen and (min-width: 1062px) {
-    /* line 810, foundation\components\_top-bar.scss */
+    /* line 823, foundation\components\_top-bar.scss */
     .view-designers-menu-link {
       text-align: center !important;
       margin-top: 10px;
       color: black !important; }
-      /* line 817, foundation\components\_top-bar.scss */
+      /* line 830, foundation\components\_top-bar.scss */
       .view-designers-menu-link:hover {
         color: black; } }
 
-/* line 827, foundation\components\_top-bar.scss */
+/* line 840, foundation\components\_top-bar.scss */
 .search-designers {
   background: black;
   padding-top: 10px; }
   @media screen and (min-width: 1062px) {
-    /* line 827, foundation\components\_top-bar.scss */
+    /* line 840, foundation\components\_top-bar.scss */
     .search-designers {
       margin-top: 10px;
       margin-bottom: 10px;
       padding-top: 0;
       background: white; } }
 
-/* line 839, foundation\components\_top-bar.scss */
+/* line 852, foundation\components\_top-bar.scss */
 .spacer {
   *zoom: 1;
   background: black;
@@ -5755,18 +5786,18 @@ ul.user-setting {
   .spacer:after {
     clear: both; }
   @media screen and (min-width: 1062px) {
-    /* line 839, foundation\components\_top-bar.scss */
+    /* line 852, foundation\components\_top-bar.scss */
     .spacer {
       background: white; } }
 
 @media screen and (min-width: 1062px) {
-  /* line 848, foundation\components\_top-bar.scss */
+  /* line 861, foundation\components\_top-bar.scss */
   .meet-the-designers {
     max-height: 500px;
     overflow-y: hidden; } }
 
 @media screen and (min-width: 1062px) {
-  /* line 855, foundation\components\_top-bar.scss */
+  /* line 868, foundation\components\_top-bar.scss */
   .mtd-container:hover > .meet-the-designers {
     overflow-y: auto; } }
 
@@ -6783,7 +6814,6 @@ form.custom {
     /* line 147, foundation\components\_pagination.scss */
     .paging {
       float: right;
-      margin-right: 10px;
       margin-bottom: 0.5rem;
       margin-top: 0;
       text-align: left; } }
@@ -6810,6 +6840,7 @@ form.custom {
   @media (min-width: 769px) {
     /* line 169, foundation\components\_pagination.scss */
     .pager {
+      display: inline-block;
       float: right; } }
   /* line 127, foundation\components\_global.scss */
   .pager:before, .pager:after {
@@ -6819,23 +6850,23 @@ form.custom {
   .pager:after {
     clear: both; }
 
-/* line 183, foundation\components\_pagination.scss */
+/* line 184, foundation\components\_pagination.scss */
 .pagerhidden a:before {
   color: rgba(0, 0, 0, 0.6) !important; }
 
-/* line 188, foundation\components\_pagination.scss */
+/* line 189, foundation\components\_pagination.scss */
 .paging .pagerprevious a, .pager .paging .pagerprevious a {
   margin: 0 4px; }
-  /* line 191, foundation\components\_pagination.scss */
+  /* line 192, foundation\components\_pagination.scss */
   .paging .pagerprevious a:before, .pager .paging .pagerprevious a:before {
     font-family: 'FontAwesome';
     content: "\f053";
     color: black; }
 
-/* line 198, foundation\components\_pagination.scss */
+/* line 199, foundation\components\_pagination.scss */
 .paging .pagernext a, .pager .paging .pagernext a {
   margin: 0 4px; }
-  /* line 201, foundation\components\_pagination.scss */
+  /* line 202, foundation\components\_pagination.scss */
   .paging .pagernext a:before, .pager .paging .pagernext a:before {
     font-family: 'FontAwesome';
     content: "\f054";
@@ -7417,82 +7448,83 @@ a.th {
   @media (min-width: 769px) {
     /* line 207, foundation\components\_custom.scss */
     .sorting, .price, .filter-holder {
+      display: inline-block;
       float: left; } }
-  /* line 215, foundation\components\_custom.scss */
+  /* line 216, foundation\components\_custom.scss */
   .sorting > .title, .price > .title, .filter-holder > .title {
     font-size: 80%; }
-  /* line 218, foundation\components\_custom.scss */
+  /* line 219, foundation\components\_custom.scss */
   .sorting > ul, .price > ul, .filter-holder > ul {
     display: inline-block;
     margin-left: -1.4rem; }
 
-/* line 225, foundation\components\_custom.scss */
+/* line 226, foundation\components\_custom.scss */
 .filter-holder {
   height: 29px; }
-  /* line 229, foundation\components\_custom.scss */
+  /* line 230, foundation\components\_custom.scss */
   .filter-holder > a {
     font-size: 13px; }
 
-/* line 234, foundation\components\_custom.scss */
+/* line 235, foundation\components\_custom.scss */
 .product-thumbs {
   margin-top: 0 !important; }
-  /* line 237, foundation\components\_custom.scss */
+  /* line 238, foundation\components\_custom.scss */
   .product-thumbs > li {
     margin-bottom: 0.625rem; }
 
-/* line 242, foundation\components\_custom.scss */
+/* line 243, foundation\components\_custom.scss */
 .product-main {
   margin-bottom: 0.625rem; }
 
-/* line 247, foundation\components\_custom.scss */
+/* line 248, foundation\components\_custom.scss */
 .product-detail {
   width: 100%; }
   @media only screen and (min-width: 1280px) {
-    /* line 247, foundation\components\_custom.scss */
+    /* line 248, foundation\components\_custom.scss */
     .product-detail {
       width: 50% !important; } }
 
-/* line 253, foundation\components\_custom.scss */
+/* line 254, foundation\components\_custom.scss */
 .product-detail > img {
   margin-bottom: 0.625rem; }
 
-/* line 263, foundation\components\_custom.scss */
+/* line 264, foundation\components\_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
-  /* line 265, foundation\components\_custom.scss */
+  /* line 266, foundation\components\_custom.scss */
   .in-the-press img {
     margin-top: 0.625rem; }
   @media screen and (min-width: 984px) and (max-width: 1304px) {
-    /* line 268, foundation\components\_custom.scss */
+    /* line 269, foundation\components\_custom.scss */
     .in-the-press .hidden-image {
       display: none; } }
 
-/* line 275, foundation\components\_custom.scss */
+/* line 276, foundation\components\_custom.scss */
 .product-title {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.625rem; }
 
-/* line 281, foundation\components\_custom.scss */
+/* line 282, foundation\components\_custom.scss */
 .product-sub-title {
   text-transform: uppercase;
   color: #666666;
   font-size: 0.875rem;
   line-height: 1.25rem; }
 
-/* line 288, foundation\components\_custom.scss */
+/* line 289, foundation\components\_custom.scss */
 .rate {
   font-family: futura;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 1rem; }
-  /* line 293, foundation\components\_custom.scss */
+  /* line 294, foundation\components\_custom.scss */
   .rate strong {
     font-weight: normal;
     font-family: Helvetica;
     font-size: 0.75rem; }
 
-/* line 300, foundation\components\_custom.scss */
+/* line 301, foundation\components\_custom.scss */
 .size {
   margin-top: 0;
   float: left;
@@ -7500,7 +7532,7 @@ a.th {
   text-transform: uppercase;
   margin-top: -7px; }
 
-/* line 308, foundation\components\_custom.scss */
+/* line 309, foundation\components\_custom.scss */
 .highlight-text {
   border: 1px solid black;
   color: #666666;
@@ -7508,46 +7540,46 @@ a.th {
   padding: 0.625rem;
   margin: 1rem 0; }
 
-/* line 316, foundation\components\_custom.scss */
+/* line 317, foundation\components\_custom.scss */
 .tab-content {
   color: #666666; }
 
-/* line 320, foundation\components\_custom.scss */
+/* line 321, foundation\components\_custom.scss */
 .product-options {
   padding: 0.5rem 0;
   margin-top: 1rem; }
   @media only screen and (min-width: 1440px) {
-    /* line 320, foundation\components\_custom.scss */
+    /* line 321, foundation\components\_custom.scss */
     .product-options {
       padding: 1.375rem 0; } }
 
-/* line 333, foundation\components\_custom.scss */
+/* line 334, foundation\components\_custom.scss */
 .add-buttons {
   margin-right: 20px; }
 
-/* line 337, foundation\components\_custom.scss */
+/* line 338, foundation\components\_custom.scss */
 .long-button {
   min-width: 185px; }
 
-/* line 340, foundation\components\_custom.scss */
+/* line 341, foundation\components\_custom.scss */
 .med-button {
   min-width: 150px; }
 
-/* line 344, foundation\components\_custom.scss */
+/* line 345, foundation\components\_custom.scss */
 .home-tt {
   line-height: 1.3; }
 
-/* line 347, foundation\components\_custom.scss */
+/* line 348, foundation\components\_custom.scss */
 .designer-name {
   text-align: left;
   font-size: 0.8125rem;
   font-weight: bold;
   text-transform: uppercase; }
-  /* line 352, foundation\components\_custom.scss */
+  /* line 353, foundation\components\_custom.scss */
   .designer-name:hover {
     text-decoration: underline; }
 
-/* line 357, foundation\components\_custom.scss */
+/* line 358, foundation\components\_custom.scss */
 .designer-about {
   font-family: Helvetica;
   font-weight: normal;
@@ -7558,83 +7590,83 @@ a.th {
   margin-bottom: 0.625rem;
   text-rendering: optimizeLegibility; }
 
-/* line 368, foundation\components\_custom.scss */
+/* line 369, foundation\components\_custom.scss */
 .more {
   height: auto !important; }
 
-/* line 372, foundation\components\_custom.scss */
-.small-text, .user-setting-username, .redeem {
+/* line 373, foundation\components\_custom.scss */
+.small-text, .flyout-scroll-text, .user-setting-username, .redeem {
   font-size: 0.6875rem;
   text-transform: uppercase;
   margin-top: 20px;
   white-space: nowrap; }
 
-/* line 379, foundation\components\_custom.scss */
+/* line 380, foundation\components\_custom.scss */
 .fixed-170 {
   width: 170px;
   margin: 0 0.625rem 0.75rem 0; }
 
-/* line 383, foundation\components\_custom.scss */
+/* line 384, foundation\components\_custom.scss */
 .fixed-360 {
   width: 360px; }
   @media screen and (max-width: 768px) {
-    /* line 383, foundation\components\_custom.scss */
+    /* line 384, foundation\components\_custom.scss */
     .fixed-360 {
       width: auto; } }
 
-/* line 390, foundation\components\_custom.scss */
-.left-margin {
+/* line 391, foundation\components\_custom.scss */
+.left-margin, .flyout-scroll-text {
   margin-left: 0.625rem; }
 
-/* line 393, foundation\components\_custom.scss */
-.right-margin, .pagerviewall, .ship-to {
+/* line 394, foundation\components\_custom.scss */
+.right-margin, .flyout-checkout-button, .pagerviewall, .ship-to {
   margin-right: 0.625rem; }
 
-/* line 397, foundation\components\_custom.scss */
-.top-margin, .errorSummary, .successMessage, .btn-wizard {
+/* line 398, foundation\components\_custom.scss */
+.top-margin, .flyout-checkout-button, .errorSummary, .successMessage, .btn-wizard {
   margin-top: 1rem; }
 
-/* line 401, foundation\components\_custom.scss */
+/* line 402, foundation\components\_custom.scss */
 .bottom-margin, #reveal-sidebar {
   margin-bottom: 1rem; }
 
-/* line 405, foundation\components\_custom.scss */
+/* line 406, foundation\components\_custom.scss */
 .filter-cancel-button {
   margin-bottom: 0.5rem; }
 
-/* line 408, foundation\components\_custom.scss */
+/* line 409, foundation\components\_custom.scss */
 .no-top {
   margin-top: 0 !important; }
 
-/* line 411, foundation\components\_custom.scss */
+/* line 412, foundation\components\_custom.scss */
 .no-bottom, .flag-menubar, .flag-footer, .invite-header {
   margin-bottom: 0 !important; }
 
-/* line 414, foundation\components\_custom.scss */
+/* line 415, foundation\components\_custom.scss */
 .no-left, .sidebar-active, .sidebar-actives {
   margin-left: 0 !important; }
 
-/* line 417, foundation\components\_custom.scss */
+/* line 418, foundation\components\_custom.scss */
 .no-right {
   margin-right: 0 !important; }
 
-/* line 421, foundation\components\_custom.scss */
+/* line 422, foundation\components\_custom.scss */
 .no-pad, .hero-carousel-title {
   padding: 0 !important; }
 
-/* line 425, foundation\components\_custom.scss */
+/* line 426, foundation\components\_custom.scss */
 .right-pad {
   padding: 0 0.46875rem 0 0 !important; }
 
-/* line 429, foundation\components\_custom.scss */
+/* line 430, foundation\components\_custom.scss */
 .register-button {
   margin-bottom: 0.5rem !important; }
 
-/* line 433, foundation\components\_custom.scss */
+/* line 434, foundation\components\_custom.scss */
 .in-the-press {
   margin-bottom: 0.625rem; }
 
-/* line 437, foundation\components\_custom.scss */
+/* line 438, foundation\components\_custom.scss */
 .social-buttons {
   height: 42px;
   *zoom: 1;
@@ -7650,102 +7682,102 @@ a.th {
   .social-buttons:after {
     clear: both; }
 
-/* line 446, foundation\components\_custom.scss */
+/* line 447, foundation\components\_custom.scss */
 .polyvore-button {
   margin-top: -24px;
   width: 32px;
   height: 32px;
   margin-left: -3px; }
 
-/* line 453, foundation\components\_custom.scss */
+/* line 454, foundation\components\_custom.scss */
 .homepage-wrapper {
   width: 100%;
   position: relative;
   margin: 0 auto;
   overflow-x: hidden; }
 
-/* line 459, foundation\components\_custom.scss */
+/* line 460, foundation\components\_custom.scss */
 .hotspot-holder {
   z-index: 96;
   width: 100%;
   position: relative; }
-  /* line 463, foundation\components\_custom.scss */
+  /* line 464, foundation\components\_custom.scss */
   .hotspot-holder > img {
     width: 100%; }
 
-/* line 468, foundation\components\_custom.scss */
+/* line 469, foundation\components\_custom.scss */
 .orders > * {
   font-size: 0.75rem; }
 
-/* line 474, foundation\components\_custom.scss */
+/* line 475, foundation\components\_custom.scss */
 .order-summary-image {
   max-width: 80px; }
 
-/* line 478, foundation\components\_custom.scss */
+/* line 479, foundation\components\_custom.scss */
 .responsive-table {
   overflow-x: auto; }
 
-/* line 483, foundation\components\_custom.scss */
+/* line 484, foundation\components\_custom.scss */
 .total {
   margin-bottom: 0; }
-  /* line 485, foundation\components\_custom.scss */
+  /* line 486, foundation\components\_custom.scss */
   .total > td {
     font-size: 0.75rem;
     text-transform: uppercase; }
 
-/* line 491, foundation\components\_custom.scss */
+/* line 492, foundation\components\_custom.scss */
 .total-table {
   min-width: 50%;
   width: 100%; }
 
-/* line 496, foundation\components\_custom.scss */
+/* line 497, foundation\components\_custom.scss */
 .total-table-width {
   width: 100%; }
   @media only screen and (min-width: 768px) {
-    /* line 496, foundation\components\_custom.scss */
+    /* line 497, foundation\components\_custom.scss */
     .total-table-width {
       width: 50%; } }
 
-/* line 503, foundation\components\_custom.scss */
+/* line 504, foundation\components\_custom.scss */
 .total-bill > td {
   font-weight: bold;
   color: black; }
-  /* line 506, foundation\components\_custom.scss */
+  /* line 507, foundation\components\_custom.scss */
   .total-bill > td:first-child {
     border-bottom-left-radius: 0.25rem; }
-  /* line 509, foundation\components\_custom.scss */
+  /* line 510, foundation\components\_custom.scss */
   .total-bill > td:last-child {
     border-bottom-right-radius: 0.25rem; }
 
-/* line 514, foundation\components\_custom.scss */
+/* line 515, foundation\components\_custom.scss */
 .coupon {
   max-width: 150px;
   margin-bottom: 0 !important; }
 
-/* line 519, foundation\components\_custom.scss */
+/* line 520, foundation\components\_custom.scss */
 .text {
   font-size: 0.75rem; }
 
-/* line 523, foundation\components\_custom.scss */
+/* line 524, foundation\components\_custom.scss */
 .info-text {
   font-size: 0.625rem;
   color: #666666;
   line-height: 1.5; }
 
-/* line 529, foundation\components\_custom.scss */
+/* line 530, foundation\components\_custom.scss */
 .highlight, .user-setting-username, .designer-nav-active, .redeem, .designer-stats, .filter-section-title > span {
   font-weight: bold; }
 
-/* line 534, foundation\components\_custom.scss */
+/* line 535, foundation\components\_custom.scss */
 .errorMessage {
   font-size: 0.75rem;
   color: #c60f13; }
 
-/* line 539, foundation\components\_custom.scss */
+/* line 540, foundation\components\_custom.scss */
 .error > label {
   display: none; }
 
-/* line 543, foundation\components\_custom.scss */
+/* line 544, foundation\components\_custom.scss */
 .shopping-block-img {
   width: 120px;
   float: left;
@@ -7755,12 +7787,12 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 543, foundation\components\_custom.scss */
+    /* line 544, foundation\components\_custom.scss */
     .shopping-block-img {
       margin: 0 auto;
       float: none !important; } }
 
-/* line 555, foundation\components\_custom.scss */
+/* line 556, foundation\components\_custom.scss */
 .shopping-block-desc {
   margin-left: 18px;
   float: left;
@@ -7768,22 +7800,29 @@ a.th {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1230px) {
-    /* line 555, foundation\components\_custom.scss */
+    /* line 556, foundation\components\_custom.scss */
     .shopping-block-desc {
       width: 100%;
       float: none !important;
       margin-left: 0; } }
   @media (max-width: 635px) {
-    /* line 555, foundation\components\_custom.scss */
+    /* line 556, foundation\components\_custom.scss */
     .shopping-block-desc {
       min-height: 180px; } }
 
-/* line 570, foundation\components\_custom.scss */
+/* line 571, foundation\components\_custom.scss */
+.cart-quantity-input {
+  width: 30px !important;
+  display: inline-block !important;
+  background-color: #ddd !important;
+  text-align: center; }
+
+/* line 578, foundation\components\_custom.scss */
 .product-details > span {
   display: block;
   margin-bottom: 8px; }
 
-/* line 575, foundation\components\_custom.scss */
+/* line 583, foundation\components\_custom.scss */
 .product-name {
   text-transform: uppercase;
   line-height: 1.5;
@@ -7791,15 +7830,15 @@ a.th {
   max-height: 36px;
   overflow: hidden; }
   @media screen and (min-width: 1230px) {
-    /* line 575, foundation\components\_custom.scss */
+    /* line 583, foundation\components\_custom.scss */
     .product-name {
       max-width: 180px; } }
   @media only screen and (min-width: 768px) {
-    /* line 575, foundation\components\_custom.scss */
+    /* line 583, foundation\components\_custom.scss */
     .product-name {
       max-width: 210px; } }
 
-/* line 589, foundation\components\_custom.scss */
+/* line 597, foundation\components\_custom.scss */
 .shopping-block {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -7820,37 +7859,37 @@ a.th {
   float: left;
   min-height: 307px; }
   @media screen and (max-width: 635px) {
-    /* line 589, foundation\components\_custom.scss */
+    /* line 597, foundation\components\_custom.scss */
     .shopping-block {
       width: 45%;
       float: none;
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 636px) and (max-width: 780px) {
-    /* line 589, foundation\components\_custom.scss */
+    /* line 597, foundation\components\_custom.scss */
     .shopping-block {
       width: 48%; } }
   @media screen and (min-width: 1230px) {
-    /* line 589, foundation\components\_custom.scss */
+    /* line 597, foundation\components\_custom.scss */
     .shopping-block {
       min-height: inherit; } }
-  /* line 620, foundation\components\_custom.scss */
+  /* line 628, foundation\components\_custom.scss */
   .shopping-block.full {
     width: 100% !important; }
-    /* line 622, foundation\components\_custom.scss */
+    /* line 630, foundation\components\_custom.scss */
     .shopping-block.full.shopping-block-img {
       min-width: 160px !important; }
     @media screen and (max-width: 1048px) {
-      /* line 626, foundation\components\_custom.scss */
+      /* line 634, foundation\components\_custom.scss */
       .shopping-block.full.shopping-block-desc {
         width: 50% !important;
         float: left; }
-      /* line 630, foundation\components\_custom.scss */
+      /* line 638, foundation\components\_custom.scss */
       .shopping-block.full.shopping-block-img {
         float: left !important;
         margin: 0 !important; } }
 
-/* line 638, foundation\components\_custom.scss */
+/* line 646, foundation\components\_custom.scss */
 .errorSummary {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -7868,12 +7907,12 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 646, foundation\components\_custom.scss */
+  /* line 654, foundation\components\_custom.scss */
   .errorSummary ul li {
     list-style: none;
     color: black; }
 
-/* line 653, foundation\components\_custom.scss */
+/* line 661, foundation\components\_custom.scss */
 .successMessage {
   font-size: 0.75rem !important;
   border-style: solid;
@@ -7891,17 +7930,17 @@ a.th {
   border-radius: 4px;
   color: black !important;
   font-weight: normal; }
-  /* line 661, foundation\components\_custom.scss */
+  /* line 669, foundation\components\_custom.scss */
   .successMessage ul li {
     list-style: none;
     color: black; }
 
-/* line 668, foundation\components\_custom.scss */
+/* line 676, foundation\components\_custom.scss */
 .thankyou {
   color: black;
   font: 3em futura; }
 
-/* line 674, foundation\components\_custom.scss */
+/* line 682, foundation\components\_custom.scss */
 .loading-indicator {
   height: 80px;
   width: 80px;
@@ -7912,7 +7951,7 @@ a.th {
   top: 0;
   left: 43%; }
 
-/* line 687, foundation\components\_custom.scss */
+/* line 695, foundation\components\_custom.scss */
 .promo-gallery {
   min-width: 420px;
   width: 100%;
@@ -7923,7 +7962,7 @@ a.th {
   margin: auto;
   overflow: hidden; }
 
-/* line 698, foundation\components\_custom.scss */
+/* line 706, foundation\components\_custom.scss */
 .promo-gallery .mask {
   overflow: hidden;
   position: relative;
@@ -7933,18 +7972,18 @@ a.th {
   min-height: 660px;
   max-height: 768px; }
 
-/* line 708, foundation\components\_custom.scss */
+/* line 716, foundation\components\_custom.scss */
 .cycle-slide-active > img {
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
-/* line 713, foundation\components\_custom.scss */
+/* line 721, foundation\components\_custom.scss */
 #smodal {
   position: absolute;
   padding: 8px;
   z-index: 700; }
 
-/* line 719, foundation\components\_custom.scss */
+/* line 727, foundation\components\_custom.scss */
 #smodal-overlay {
   position: fixed;
   top: 0;
@@ -7956,7 +7995,7 @@ a.th {
   filter: alpha(opacity=50);
   z-index: 700; }
 
-/* line 731, foundation\components\_custom.scss */
+/* line 739, foundation\components\_custom.scss */
 .box-bg {
   background: #fff no-repeat center top;
   width: 100%;
@@ -7969,17 +8008,17 @@ a.th {
   position: relative;
   padding: 10px; }
 
-/* line 744, foundation\components\_custom.scss */
+/* line 752, foundation\components\_custom.scss */
 .box-content, .box-content-marketing {
   height: 430px;
   border: 1px dashed grey; }
 
-/* line 749, foundation\components\_custom.scss */
+/* line 757, foundation\components\_custom.scss */
 .box-content2 {
   display: table;
   height: 100%; }
 
-/* line 754, foundation\components\_custom.scss */
+/* line 762, foundation\components\_custom.scss */
 .box-content2 .leftside, .box-content2 .genie-marketing {
   padding-left: 3%;
   width: 50%;
@@ -7988,10 +8027,10 @@ a.th {
   display: table-cell;
   vertical-align: middle; }
   @media screen and (max-width: 550px) {
-    /* line 754, foundation\components\_custom.scss */
+    /* line 762, foundation\components\_custom.scss */
     .box-content2 .leftside, .box-content2 .genie-marketing {
       display: none; }
-      /* line 763, foundation\components\_custom.scss */
+      /* line 771, foundation\components\_custom.scss */
       .box-content2 .leftside.show, .box-content2 .show.genie-marketing {
         display: block;
         width: 100%;
@@ -8004,7 +8043,7 @@ a.th {
         .box-content2 .leftside.show:after, .box-content2 .show.genie-marketing:after {
           clear: both; } }
 
-/* line 771, foundation\components\_custom.scss */
+/* line 779, foundation\components\_custom.scss */
 .box-content2 .rightside {
   padding-left: 10px;
   padding-right: 10px;
@@ -8013,16 +8052,16 @@ a.th {
   display: block;
   min-width: 250px; }
 
-/* line 780, foundation\components\_custom.scss */
+/* line 788, foundation\components\_custom.scss */
 .rightside-wrap {
   position: relative;
   width: 100%; }
 
-/* line 786, foundation\components\_custom.scss */
+/* line 794, foundation\components\_custom.scss */
 .box-content2 .chosen-container {
   width: 100% !important; }
 
-/* line 790, foundation\components\_custom.scss */
+/* line 798, foundation\components\_custom.scss */
 .card {
   position: absolute;
   top: 0;
@@ -8030,7 +8069,7 @@ a.th {
   width: 100%;
   -webkit-backface-visibility: hidden; }
 
-/* line 798, foundation\components\_custom.scss */
+/* line 806, foundation\components\_custom.scss */
 .front, .back, .side {
   z-index: 1;
   opacity: 0;
@@ -8045,13 +8084,21 @@ a.th {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear; }
 
-/* line 813, foundation\components\_custom.scss */
+/* line 821, foundation\components\_custom.scss */
 .show {
   z-index: 2;
   opacity: 1;
   visibility: visible; }
 
-/* line 819, foundation\components\_custom.scss */
+/* line 827, foundation\components\_custom.scss */
+.reveal-modal .show {
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  transform: translateZ(103px);
+  -webkit-transform: translateZ(103px); }
+
+/* line 835, foundation\components\_custom.scss */
 .login-flip {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -8059,7 +8106,7 @@ a.th {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 828, foundation\components\_custom.scss */
+/* line 844, foundation\components\_custom.scss */
 .f-signin, .g-signin {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
@@ -8070,13 +8117,13 @@ a.th {
   color: white;
   width: 50px; }
 
-/* line 837, foundation\components\_custom.scss */
+/* line 853, foundation\components\_custom.scss */
 .f-signin {
   background-color: #4863ae;
   padding-left: 0;
   padding-right: 10px; }
 
-/* line 842, foundation\components\_custom.scss */
+/* line 858, foundation\components\_custom.scss */
 .g-signin {
   background-color: #cd3a25;
   background-image: -moz-linear-gradient(top, #cd3a25, #cd3a25);
@@ -8087,227 +8134,225 @@ a.th {
   background-image: linear-gradient(top, #cd3a25, #cd3a25);
   background-repeat: repeat-x; }
 
-/* line 856, foundation\components\_custom.scss */
+/* line 872, foundation\components\_custom.scss */
 .login-modal-copy {
   font-weight: bold;
   font-size: 1rem; }
 
-/* line 863, foundation\components\_custom.scss */
+/* line 879, foundation\components\_custom.scss */
 .black, .footer-title, .ship-to, .side-nav-heading, .filter-section-title > span {
   color: black; }
 
-/* line 867, foundation\components\_custom.scss */
+/* line 883, foundation\components\_custom.scss */
 .white {
   color: white; }
 
-/* line 871, foundation\components\_custom.scss */
+/* line 887, foundation\components\_custom.scss */
 .login-social-buttons {
   display: inline-block;
   width: 100%; }
 
 /*-------------------------------Login Modal-------------------------------*/
 /*-------------------------------Modal for Add Credit card/Edit Address-------------------------------*/
-/* line 884, foundation\components\_custom.scss */
+/* line 900, foundation\components\_custom.scss */
 .va-top {
   vertical-align: top !important; }
 
-/* line 888, foundation\components\_custom.scss */
+/* line 904, foundation\components\_custom.scss */
 .ovya {
   overflow-y: auto; }
 
 /*-------------------------------Modal for Add Credit card/Edit Address-------------------------------*/
 /*----Hotspot Tooltips */
-/* line 897, foundation\components\_custom.scss */
+/* line 913, foundation\components\_custom.scss */
 .product-image, .home-designer-image {
   width: 100%; }
 
-/* line 902, foundation\components\_custom.scss */
+/* line 918, foundation\components\_custom.scss */
 .product-image {
   max-width: 200px; }
 
-/* line 905, foundation\components\_custom.scss */
+/* line 921, foundation\components\_custom.scss */
 .home-designer-image {
   max-width: 325px; }
 
 /* Disable hotspots <768px */
 @media screen and (max-width: 767px) {
-  /* line 912, foundation\components\_custom.scss */
+  /* line 928, foundation\components\_custom.scss */
   .hs-wrap {
     display: none !important; } }
 /*--------------Footer -----------------*/
-/* line 919, foundation\components\_custom.scss */
-footer {
+/* line 935, foundation\components\_custom.scss */
+footer.is-sticky {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 45px;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
   z-index: 900;
   -webkit-transform: translateZ(100px);
   transform: translateZ(100px); }
+  @media (orientation: landscape) and (max-width: 768px) {
+    /* line 935, foundation\components\_custom.scss */
+    footer.is-sticky {
+      display: none; } }
 
-/* line 932, foundation\components\_custom.scss */
-footer.is-open {
-  height: 325px; }
+@media (orientation: landscape) and (max-width: 768px) {
+  /* line 950, foundation\components\_custom.scss */
+  .show-for-small-landscape {
+    display: inherit !important; } }
+@media only screen and (min-width: 768px) {
+  /* line 950, foundation\components\_custom.scss */
+  .show-for-small-landscape {
+    display: none; } }
+@media only screen and (orientation: portrait) {
+  /* line 950, foundation\components\_custom.scss */
+  .show-for-small-landscape {
+    display: none; } }
 
-/* line 936, foundation\components\_custom.scss */
-.footer-open {
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-/* line 942, foundation\components\_custom.scss */
-.rotate-animate {
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out; }
-
-/* line 946, foundation\components\_custom.scss */
+/* line 962, foundation\components\_custom.scss */
 .footer-social-bar {
   margin: 0 !important; }
 
-/* line 951, foundation\components\_custom.scss */
+/* line 967, foundation\components\_custom.scss */
 .footer-links {
   margin-top: 0; }
 
-/* line 955, foundation\components\_custom.scss */
+/* line 971, foundation\components\_custom.scss */
 .footer-sublinks > ul {
   list-style: none; }
 
-/* line 960, foundation\components\_custom.scss */
+/* line 976, foundation\components\_custom.scss */
 .footer-sublink-list > li {
   font-family: helvetica;
   font-size: 13px;
   margin-top: 7px; }
-  /* line 965, foundation\components\_custom.scss */
+  /* line 981, foundation\components\_custom.scss */
   .footer-sublink-list > li a {
     color: black; }
 
-/* line 972, foundation\components\_custom.scss */
+/* line 988, foundation\components\_custom.scss */
 .r2s {
   text-transform: lowercase; }
 
-/* line 976, foundation\components\_custom.scss */
+/* line 992, foundation\components\_custom.scss */
 .multi-column-footer {
   background-color: #ddd;
   color: #fff; }
   @media only screen and (min-width: 768px) {
-    /* line 979, foundation\components\_custom.scss */
+    /* line 995, foundation\components\_custom.scss */
     .multi-column-footer > .row > .large-10 > .large-2, .multi-column-footer > .marketing-row > .large-10 > .large-2 {
       width: 25%; } }
 
-/* line 986, foundation\components\_custom.scss */
+/* line 1002, foundation\components\_custom.scss */
 .footer-title {
   font-family: helvetica;
   font-weight: bold;
   font-size: 13px;
   margin: 17px 0; }
 
-/* line 995, foundation\components\_custom.scss */
+/* line 1011, foundation\components\_custom.scss */
 .subscribe-copy {
   color: black;
   font-size: 13px;
   text-align: justify;
   max-width: 250px; }
 
-/* line 1002, foundation\components\_custom.scss */
+/* line 1018, foundation\components\_custom.scss */
 .cut-max-input {
   max-width: 250px; }
 
-/* line 1006, foundation\components\_custom.scss */
+/* line 1022, foundation\components\_custom.scss */
 .asc, .desc {
   color: black !important;
   font-weight: bold; }
 
-/* line 1011, foundation\components\_custom.scss */
+/* line 1027, foundation\components\_custom.scss */
 .navigation, .footer {
   width: 100%;
   background-color: black;
   min-width: 274px; }
 
-/* line 1023, foundation\components\_custom.scss */
+/* line 1039, foundation\components\_custom.scss */
 .footer-sprite {
   background-image: url("../images/footer-sprite.png");
   position: relative;
   display: inline-block;
   margin-top: 0; }
-  /* line 1028, foundation\components\_custom.scss */
+  /* line 1044, foundation\components\_custom.scss */
   .footer-sprite:not(:first-child) {
     margin-left: 1rem; }
 
-/* line 1033, foundation\components\_custom.scss */
+/* line 1049, foundation\components\_custom.scss */
 .footer-sprite, .footer-sprite-link {
   width: 22px;
   height: 22px; }
 
-/* line 1038, foundation\components\_custom.scss */
+/* line 1054, foundation\components\_custom.scss */
 .footer-sprite-link {
   position: absolute;
   top: 0;
   left: 0; }
 
-/* line 1044, foundation\components\_custom.scss */
+/* line 1060, foundation\components\_custom.scss */
 .facebook {
   background-position: 0px 0px; }
 
-/* line 1048, foundation\components\_custom.scss */
+/* line 1064, foundation\components\_custom.scss */
 .instagram {
   background-position: 0px -22px; }
 
-/* line 1052, foundation\components\_custom.scss */
+/* line 1068, foundation\components\_custom.scss */
 .pinterest {
   background-position: 0px -44px; }
 
-/* line 1056, foundation\components\_custom.scss */
+/* line 1072, foundation\components\_custom.scss */
 .tumblr {
   background-position: 0px -66px; }
 
-/* line 1060, foundation\components\_custom.scss */
+/* line 1076, foundation\components\_custom.scss */
 .twitter {
   background-position: 0px -88px; }
 
-/* line 1064, foundation\components\_custom.scss */
+/* line 1080, foundation\components\_custom.scss */
 .google-plus {
   background-position: 0px -110px; }
 
 /*--------------Footer -----------------*/
 /*---------------------Marketing Dialog-----------------------------*/
-/* line 1071, foundation\components\_custom.scss */
+/* line 1087, foundation\components\_custom.scss */
 .box-content-marketing {
   height: 460px; }
 
-/* line 1076, foundation\components\_custom.scss */
+/* line 1092, foundation\components\_custom.scss */
 .asterisk {
   display: inline-block;
   float: left; }
 
-/* line 1081, foundation\components\_custom.scss */
+/* line 1097, foundation\components\_custom.scss */
 .fine-print {
   float: left;
   width: 95%;
   margin-left: 10px;
   margin-top: -5px; }
-  /* line 1086, foundation\components\_custom.scss */
+  /* line 1102, foundation\components\_custom.scss */
   .fine-print > span {
     font-size: 10px; }
 
-/* line 1091, foundation\components\_custom.scss */
+/* line 1107, foundation\components\_custom.scss */
 .email-copy {
   font-size: 11px; }
 
-/* line 1095, foundation\components\_custom.scss */
+/* line 1111, foundation\components\_custom.scss */
 .invite-header {
   font-size: 14px;
   font-family: Helvetica; }
   @media screen and (max-width: 768px) {
-    /* line 1101, foundation\components\_custom.scss */
+    /* line 1117, foundation\components\_custom.scss */
     .invite-header:first-child {
       margin-top: 20px; } }
 
-/* line 1107, foundation\components\_custom.scss */
+/* line 1123, foundation\components\_custom.scss */
 .genie-marketing {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8315,57 +8360,57 @@ footer.is-open {
   background-size: cover;
   background: black url("../images/genie_marketing_main.jpg") no-repeat; }
   @media screen and (max-width: 730px) {
-    /* line 1107, foundation\components\_custom.scss */
+    /* line 1123, foundation\components\_custom.scss */
     .genie-marketing {
       display: none; } }
 
-/* line 1128, foundation\components\_custom.scss */
+/* line 1144, foundation\components\_custom.scss */
 .img-responsive {
   max-width: 100%; }
 
-/* line 1131, foundation\components\_custom.scss */
+/* line 1147, foundation\components\_custom.scss */
 .share-page-container {
   margin: 0 auto; }
 
-/* line 1136, foundation\components\_custom.scss */
+/* line 1152, foundation\components\_custom.scss */
 .share-page-right {
   width: 360px;
   padding-left: 50px; }
   @media screen and (max-width: 925px) {
-    /* line 1136, foundation\components\_custom.scss */
+    /* line 1152, foundation\components\_custom.scss */
     .share-page-right {
       padding-left: 0;
       width: auto; } }
 
-/* line 1145, foundation\components\_custom.scss */
+/* line 1161, foundation\components\_custom.scss */
 .marketing-row {
   margin-bottom: 20px;
   background-color: #ddd; }
 
-/* line 1152, foundation\components\_custom.scss */
+/* line 1168, foundation\components\_custom.scss */
 .table {
   display: table;
   margin: 0 auto;
   width: 80%;
   padding: 20px 0; }
   @media screen and (max-width: 900px) {
-    /* line 1152, foundation\components\_custom.scss */
+    /* line 1168, foundation\components\_custom.scss */
     .table {
       width: 100%; } }
 
-/* line 1162, foundation\components\_custom.scss */
+/* line 1178, foundation\components\_custom.scss */
 .table-left, .table-left-va-top {
   display: table-cell;
   vertical-align: middle;
   width: 50%; }
   @media screen and (max-width: 768px) {
-    /* line 1162, foundation\components\_custom.scss */
+    /* line 1178, foundation\components\_custom.scss */
     .table-left, .table-left-va-top {
       width: 100%;
       text-align: center;
       display: block; } }
 
-/* line 1173, foundation\components\_custom.scss */
+/* line 1189, foundation\components\_custom.scss */
 .table-right, .table-right-va-top {
   display: table-cell;
   vertical-align: middle;
@@ -8374,26 +8419,26 @@ footer.is-open {
   text-align: left;
   padding-left: 20px; }
   @media screen and (max-width: 768px) {
-    /* line 1173, foundation\components\_custom.scss */
+    /* line 1189, foundation\components\_custom.scss */
     .table-right, .table-right-va-top {
       width: 100%;
       display: block;
       padding: 20px; } }
 
-/* line 1188, foundation\components\_custom.scss */
+/* line 1204, foundation\components\_custom.scss */
 .table-left-va-top {
   vertical-align: top; }
   @media screen and (max-width: 768px) {
-    /* line 1188, foundation\components\_custom.scss */
+    /* line 1204, foundation\components\_custom.scss */
     .table-left-va-top {
       display: none; } }
 
-/* line 1195, foundation\components\_custom.scss */
+/* line 1211, foundation\components\_custom.scss */
 .table-right-va-top {
   vertical-align: top;
   height: 420px; }
 
-/* line 1202, foundation\components\_custom.scss */
+/* line 1218, foundation\components\_custom.scss */
 .static-login-container {
   overflow-x: hidden;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.9)), to(rgba(241, 241, 241, 0.9)));
@@ -8408,47 +8453,47 @@ footer.is-open {
   padding: 20px; }
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
-/* line 1216, foundation\components\_custom.scss */
+/* line 1232, foundation\components\_custom.scss */
 .designer-name, .prod-price, .prod-name, .prod-name-homepage, .shipped {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 1220, foundation\components\_custom.scss */
+/* line 1236, foundation\components\_custom.scss */
 .designer-name, .prod-price {
   color: black; }
 
-/* line 1225, foundation\components\_custom.scss */
+/* line 1241, foundation\components\_custom.scss */
 .prod-name, .prod-name-homepage {
   text-align: left;
   text-transform: capitalize;
   color: black;
-  max-width: 230px;
+  max-width: 180px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-/* line 1236, foundation\components\_custom.scss */
+/* line 1252, foundation\components\_custom.scss */
 .prod-name-homepage {
   display: block;
   max-width: auto; }
   @media screen and (min-width: 1200px) {
-    /* line 1236, foundation\components\_custom.scss */
+    /* line 1252, foundation\components\_custom.scss */
     .prod-name-homepage {
       max-width: 200px; } }
   @media screen and (max-width: 800px) {
-    /* line 1236, foundation\components\_custom.scss */
+    /* line 1252, foundation\components\_custom.scss */
     .prod-name-homepage {
       max-width: 150px; } }
 
-/* line 1248, foundation\components\_custom.scss */
+/* line 1264, foundation\components\_custom.scss */
 .shipped {
   color: #666666; }
 
-/* line 1255, foundation\components\_custom.scss */
+/* line 1271, foundation\components\_custom.scss */
 #profileLongStory > div:first-child {
   margin-top: 10px; }
 
-/* line 1259, foundation\components\_custom.scss */
+/* line 1275, foundation\components\_custom.scss */
 #profileLongStory > div {
   font-family: Helvetica;
   font-size: 12px;
@@ -8457,64 +8502,64 @@ footer.is-open {
 
 /*------------------------------------------Shopping Grid Items----------------------------*/
 /*----------Share For Product Detail ----*/
-/* line 1271, foundation\components\_custom.scss */
+/* line 1287, foundation\components\_custom.scss */
 .product-detail-share {
   display: inline-block;
   min-width: 180px; }
 
 /*---Search -----*/
-/* line 1280, foundation\components\_custom.scss */
+/* line 1296, foundation\components\_custom.scss */
 .search {
   list-style: none;
   width: 160px;
   overflow-x: hidden; }
-  /* line 1284, foundation\components\_custom.scss */
+  /* line 1300, foundation\components\_custom.scss */
   .search > li {
     text-transform: capitalize; }
 
 /*----------Grayscale images--------------*/
-/* line 1291, foundation\components\_custom.scss */
+/* line 1307, foundation\components\_custom.scss */
 .soldout, .soldout-product {
   font-size: 12px;
   text-align: center;
   background-color: rgba(102, 102, 102, 0.8);
   color: white;
-  width: 100%;
   z-index: 3;
-  padding: 2px;
+  padding: 10px;
   position: absolute;
-  top: 50%;
-  left: 0; }
-  /* line 1302, foundation\components\_custom.scss */
+  top: 40%;
+  left: 10px;
+  right: 10px; }
+  /* line 1318, foundation\components\_custom.scss */
   .soldout:before, .soldout-product:before {
     content: 'SOLD OUT'; }
 
-/* line 1307, foundation\components\_custom.scss */
+/* line 1323, foundation\components\_custom.scss */
 .soldout-product {
   padding: 2em;
   top: 46%; }
 
 /*-----Featured Designers Fancy Border Text -------*/
-/* line 1314, foundation\components\_custom.scss */
+/* line 1330, foundation\components\_custom.scss */
 .ovx {
   text-align: center;
   overflow-x: hidden; }
 
-/* line 1319, foundation\components\_custom.scss */
+/* line 1335, foundation\components\_custom.scss */
 .ovy {
   overflow-y: hidden; }
 
-/* line 1323, foundation\components\_custom.scss */
+/* line 1339, foundation\components\_custom.scss */
 .fancy, .featured-text {
   line-height: 0.5;
   text-align: center; }
 
-/* line 1327, foundation\components\_custom.scss */
+/* line 1343, foundation\components\_custom.scss */
 .fancy span, .featured-text span {
   display: inline-block;
   position: relative; }
 
-/* line 1331, foundation\components\_custom.scss */
+/* line 1347, foundation\components\_custom.scss */
 .fancy span:before, .featured-text span:before,
 .fancy span:after,
 .featured-text span:after {
@@ -8525,31 +8570,31 @@ footer.is-open {
   top: 0;
   width: 600px; }
 
-/* line 1340, foundation\components\_custom.scss */
+/* line 1356, foundation\components\_custom.scss */
 .fancy span:before, .featured-text span:before {
   right: 100%;
   margin-right: 15px; }
 
-/* line 1344, foundation\components\_custom.scss */
+/* line 1360, foundation\components\_custom.scss */
 .fancy span:after, .featured-text span:after {
   left: 100%;
   margin-left: 15px; }
 
-/* line 1349, foundation\components\_custom.scss */
+/* line 1365, foundation\components\_custom.scss */
 .featured-text {
   margin-top: 24px; }
   @media screen and (max-width: 369px) {
-    /* line 1349, foundation\components\_custom.scss */
+    /* line 1365, foundation\components\_custom.scss */
     .featured-text {
       line-height: 1; } }
 
 /*-----Featured Designers Fancy Border Text -------*/
 /*---Marketing Ticker ---*/
-/* line 1364, foundation\components\_custom.scss */
+/* line 1380, foundation\components\_custom.scss */
 .ticker > h4 {
   padding-top: 1.4rem;
   font-size: 16px; }
-/* line 1370, foundation\components\_custom.scss */
+/* line 1386, foundation\components\_custom.scss */
 .ticker > h5 {
   font-family: helvetica;
   font-size: 15px;
@@ -8558,34 +8603,34 @@ footer.is-open {
   z-index: 1;
   padding: 0 25px;
   color: black; }
-  /* line 1379, foundation\components\_custom.scss */
+  /* line 1395, foundation\components\_custom.scss */
   .ticker > h5 > * {
     color: black; }
 
-/* line 1385, foundation\components\_custom.scss */
+/* line 1401, foundation\components\_custom.scss */
 .ticker-container {
   background-color: #eeeeee !important;
   padding: 10px 0 !important; }
 
-/* line 1393, foundation\components\_custom.scss */
+/* line 1409, foundation\components\_custom.scss */
 .zero-height {
   height: 0; }
 
-/* line 1398, foundation\components\_custom.scss */
+/* line 1414, foundation\components\_custom.scss */
 .full-height {
   height: 100%; }
 
-/* line 1402, foundation\components\_custom.scss */
+/* line 1418, foundation\components\_custom.scss */
 .full-width {
   width: 100%; }
 
-/* line 1406, foundation\components\_custom.scss */
+/* line 1422, foundation\components\_custom.scss */
 .animate-ticker {
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   transition: all 300ms ease-out; }
 
-/* line 1410, foundation\components\_custom.scss */
+/* line 1426, foundation\components\_custom.scss */
 .side-nav-holder {
   padding: 20px;
   margin-bottom: 10px;
@@ -8599,31 +8644,90 @@ footer.is-open {
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem; }
   @media only screen and (min-width: 768px) {
-    /* line 1410, foundation\components\_custom.scss */
+    /* line 1426, foundation\components\_custom.scss */
     .side-nav-holder {
       height: 100%;
       padding-left: 10px;
       margin-bottom: 0; } }
 
-/* line 1429, foundation\components\_custom.scss */
+/* line 1445, foundation\components\_custom.scss */
 .side-nav > li:nth-child(n+2) {
   text-transform: uppercase;
   font-size: 12px; }
 
-/* line 1434, foundation\components\_custom.scss */
+/* line 1450, foundation\components\_custom.scss */
 .side-nav-heading {
   font-size: 16px !important;
   text-transform: uppercase; }
 
-/* line 1442, foundation\components\_custom.scss */
+/* line 1458, foundation\components\_custom.scss */
 .about-video {
   margin-top: 40px; }
 
-/* line 1448, foundation\components\_custom.scss */
+/* line 1465, foundation\components\_custom.scss */
+.news {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  padding: 20px;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.1), 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 1%;
+  margin-bottom: 2%;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out; }
+  @media only screen and (min-width: 768px) {
+    /* line 1465, foundation\components\_custom.scss */
+    .news {
+      width: 48%;
+      height: 280px;
+      overflow: hidden;
+      float: left;
+      max-width: 300px; } }
+  @media (min-width: 1024px) {
+    /* line 1465, foundation\components\_custom.scss */
+    .news {
+      width: 32%;
+      height: 280px;
+      overflow: hidden;
+      float: left;
+      max-width: 300px; } }
+  /* line 1497, foundation\components\_custom.scss */
+  .news:hover {
+    box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.1), 0px 2px 10px 0px rgba(0, 0, 0, 0.1); }
+
+/* line 1502, foundation\components\_custom.scss */
+.logo-publication {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  @media only screen and (min-width: 768px) {
+    /* line 1502, foundation\components\_custom.scss */
+    .logo-publication {
+      width: 100%; } }
+
+/* line 1510, foundation\components\_custom.scss */
+.news-quote {
+  font-family: futura;
+  font-size: 1rem;
+  max-height: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left !important; }
+  @media only screen and (min-width: 768px) {
+    /* line 1510, foundation\components\_custom.scss */
+    .news-quote {
+      position: absolute;
+      right: 20px;
+      left: 20px;
+      bottom: 20px; } }
+
+/* line 1525, foundation\components\_custom.scss */
 .help-container {
   position: relative; }
 
-/* line 1452, foundation\components\_custom.scss */
+/* line 1529, foundation\components\_custom.scss */
 .help-tabs {
   position: absolute;
   top: 0;
@@ -8633,39 +8737,43 @@ footer.is-open {
   padding-left: 20px;
   padding-bottom: 20px; }
 
-/* line 1462, foundation\components\_custom.scss */
+/* line 1539, foundation\components\_custom.scss */
 .hidden-help {
   display: none;
   z-index: 1; }
 
-/* line 1467, foundation\components\_custom.scss */
+/* line 1544, foundation\components\_custom.scss */
 .active-help {
   display: initial;
   z-index: 2; }
 
-/* line 1472, foundation\components\_custom.scss */
+/* line 1549, foundation\components\_custom.scss */
 .help-tabs p {
   text-align: justify; }
 
-/* line 1476, foundation\components\_custom.scss */
-.help-title, .help-title-main, .mob-category-name, .tile-context {
+/* line 1553, foundation\components\_custom.scss */
+.help-title, .mob-category-name, .tile-context {
   font-family: futura;
   font-size: 1rem;
   text-transform: uppercase; }
 
-/* line 1482, foundation\components\_custom.scss */
+/* line 1559, foundation\components\_custom.scss */
 .help-title-main {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 38px;
+  text-transform: capitalize;
+  font-style: italic;
+  line-height: 1.33;
   margin-top: 20px;
-  padding-left: 0.46875rem;
-  text-transform: uppercase; }
+  padding-left: 0.46875rem; }
 
-/* line 1494, foundation\components\_custom.scss */
+/* line 1574, foundation\components\_custom.scss */
 .marketing-image-container {
   margin-top: -180px;
   left: 0;
   width: 100%; }
 
-/* line 1500, foundation\components\_custom.scss */
+/* line 1580, foundation\components\_custom.scss */
 .marketing-image {
   max-width: 100%;
   width: 100%;
@@ -8675,15 +8783,15 @@ footer.is-open {
   background-size: cover;
   min-height: 200px; }
   @media (min-width: 590px) {
-    /* line 1500, foundation\components\_custom.scss */
+    /* line 1580, foundation\components\_custom.scss */
     .marketing-image {
       min-height: 240px; } }
   @media (min-width: 768px) {
-    /* line 1500, foundation\components\_custom.scss */
+    /* line 1580, foundation\components\_custom.scss */
     .marketing-image {
       min-height: 300px; } }
 
-/* line 1516, foundation\components\_custom.scss */
+/* line 1596, foundation\components\_custom.scss */
 .wide-image {
   width: 100%;
   max-width: 100%;
@@ -8691,41 +8799,45 @@ footer.is-open {
   min-height: 150px; }
 
 @media (max-width: 768px) {
-  /* line 1523, foundation\components\_custom.scss */
+  /* line 1603, foundation\components\_custom.scss */
   .marketing-logo {
     margin-top: 55px; } }
 
-/* line 1529, foundation\components\_custom.scss */
+/* line 1609, foundation\components\_custom.scss */
 .redeem-separator {
   padding-right: 5px;
   margin-right: 5px;
   margin-top: 24px; }
 
-/* line 1535, foundation\components\_custom.scss */
+/* line 1615, foundation\components\_custom.scss */
 .redeem-separator-line {
   border-right: 1px solid #000; }
 
-/* line 1539, foundation\components\_custom.scss */
+/* line 1619, foundation\components\_custom.scss */
 .redeem {
   margin-top: 10px; }
   @media (min-width: 300px) {
-    /* line 1539, foundation\components\_custom.scss */
+    /* line 1619, foundation\components\_custom.scss */
     .redeem {
       margin-top: 40px; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 1549, foundation\components\_custom.scss */
+  /* line 1629, foundation\components\_custom.scss */
   .check-level-layout {
     margin-top: 0.9375rem;
     margin-bottom: 2.1875rem !important; } }
 
-/* line 1556, foundation\components\_custom.scss */
+/* line 1636, foundation\components\_custom.scss */
 .wrap-text {
   white-space: normal; }
 
-/* line 1561, foundation\components\_custom.scss */
+/* line 1641, foundation\components\_custom.scss */
 .at_a11y {
   display: none; }
+
+/* line 1662, foundation\components\_custom.scss */
+.bx-wrapper .bx-controls-direction a {
+  z-index: 899 !important; }
 
 /* line 13, foundation\components\_media-object-plus.scss */
 .media,
@@ -8754,10 +8866,10 @@ h4.media-heading {
   color: black; }
 
 /* line 46, foundation\components\_media-object-plus.scss */
-.media > .left, .media > #reveal-sidebar, .media > .ship-to, .media > .redeem {
+.media > .left, .media > .flyout-scroll-text, .media > #reveal-sidebar, .media > .ship-to, .media > .redeem {
   margin-right: 10px; }
 /* line 49, foundation\components\_media-object-plus.scss */
-.media > .right, .media > .avatar-img {
+.media > .right, .media > .avatar-img, .media > .flyout-checkout-button {
   margin-left: 10px; }
 
 /* line 59, foundation\components\_media-object-plus.scss */
@@ -9421,6 +9533,90 @@ label[for^="new-filter"] {
 .flip-list > li {
   pointer-events: none; }
 
+/* line 1, foundation\components\_about-us-widget.scss */
+.homepage-spacing {
+  margin: 68.535px 0; }
+
+/* line 5, foundation\components\_about-us-widget.scss */
+.live-tile.slide {
+  border: none; }
+
+/* line 9, foundation\components\_about-us-widget.scss */
+.live-tile p {
+  padding: 0.5em !important; }
+
+/* line 13, foundation\components\_about-us-widget.scss */
+.tile-title-desktop {
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  padding-top: 10% !important;
+  color: white;
+  font-family: futura;
+  font-weight: normal;
+  font-size: 16px !important; }
+
+/* line 23, foundation\components\_about-us-widget.scss */
+.tile-border {
+  border: 1px solid #000 !important; }
+
+/* line 27, foundation\components\_about-us-widget.scss */
+.about-us-tile {
+  margin: 0.5% !important;
+  width: 15.5% !important; }
+
+/* line 32, foundation\components\_about-us-widget.scss */
+.center-tile {
+  width: 65%;
+  float: left;
+  margin: 0.5%; }
+
+/* line 38, foundation\components\_about-us-widget.scss */
+.hero-unit {
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+  text-transform: capitalize; }
+  /* line 42, foundation\components\_about-us-widget.scss */
+  .hero-unit:nth-of-type(1) {
+    line-height: 1.33; }
+
+/* line 47, foundation\components\_about-us-widget.scss */
+.about-us-static {
+  background: #222; }
+  /* line 49, foundation\components\_about-us-widget.scss */
+  .about-us-static p {
+    font-size: 0.8em !important; }
+
+/* line 54, foundation\components\_about-us-widget.scss */
+.about-us-tile .about-us-flip {
+  background: #ddd; }
+  /* line 56, foundation\components\_about-us-widget.scss */
+  .about-us-tile .about-us-flip p {
+    font-family: 'futura', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222; }
+  /* line 63, foundation\components\_about-us-widget.scss */
+  .about-us-tile .about-us-flip span {
+    font-family: 'futura', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #222; }
+  /* line 70, foundation\components\_about-us-widget.scss */
+  .about-us-tile .about-us-flip .flip-back {
+    background: #D5D6D7; }
+
+/* line 75, foundation\components\_about-us-widget.scss */
+.about-us-static p {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: lowercase;
+  text-align: center;
+  color: white;
+  font-style: italic; }
+
 /* line 1, foundation\components\_newsletter-signup.scss */
 .newsletter-modal {
   background: white;
@@ -9442,6 +9638,63 @@ label[for^="new-filter"] {
     /* line 11, foundation\components\_newsletter-signup.scss */
     .signup-copy {
       max-width: 250px; } }
+
+/* line 1, foundation\components\_marketing-view.scss */
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+/* line 13, foundation\components\_marketing-view.scss */
+.marketing-banner-image {
+  visibility: hidden; }
+
+/* line 17, foundation\components\_marketing-view.scss */
+.marketing-copy {
+  padding: 20px;
+  position: absolute;
+  top: 40%;
+  max-height: 320px;
+  max-width: 420px;
+  right: 0;
+  background: white; }
+
+/* line 27, foundation\components\_marketing-view.scss */
+.marketing-hero-unit {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  text-transform: capitalize; }
+  @media only screen and (min-width: 768px) {
+    /* line 27, foundation\components\_marketing-view.scss */
+    .marketing-hero-unit {
+      font-size: 38px; } }
+
+/* line 37, foundation\components\_marketing-view.scss */
+.bordered-marketing-copy {
+  padding: 20px;
+  border: 1px dashed #000; }
+
+/* line 42, foundation\components\_marketing-view.scss */
+.homepage-marketing-holder {
+  text-align: center;
+  position: relative; }
+  /* line 45, foundation\components\_marketing-view.scss */
+  .homepage-marketing-holder > .marketing-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background: rgba(0, 0, 0, 0.8); }
 
 @media only screen and (max-width: 767px) {
   /* line 131, foundation\components\_dropdown.scss */
@@ -9498,11 +9751,11 @@ label[for^="new-filter"] {
     left: 9px;
     z-index: 98; }
   /* line 94, foundation\components\_dropdown.scss */
-  .f-dropdown.right:before, .f-dropdown.avatar-img:before {
+  .f-dropdown.right:before, .f-dropdown.avatar-img:before, .f-dropdown.flyout-checkout-button:before {
     left: auto;
     right: 10px; }
   /* line 98, foundation\components\_dropdown.scss */
-  .f-dropdown.right:after, .f-dropdown.avatar-img:after {
+  .f-dropdown.right:after, .f-dropdown.avatar-img:after, .f-dropdown.flyout-checkout-button:after {
     left: auto;
     right: 9px; }
   /* line 142, foundation\components\_dropdown.scss */
